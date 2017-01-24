@@ -992,7 +992,7 @@ var fileNames = ["training.json", "research.json", "services.json", "other.json"
 var activityTypes = ["Training", "Research", "Services", "Other"];
 
 fileNames.forEach(function(fileName, i){
-	var activityType = activityTypes[i]
+  var activityType = activityTypes[i]
     d3.json(fileName, function(error, data) {
         if (error) return console.warn(error);
         data.forEach(function(d){
@@ -1206,7 +1206,7 @@ var tooltip = d3.select("div.doubleBarChartCont")
                         <li>
                             <i class="fa fa-caret-right" aria-hidden="true"></i>
                             <a href="http://www.hhs.gov/about/orgchart/">HHS Org Chart</a>
-                        </li>											 
+                        </li>                      
                         <li>
                             <i class="fa fa-caret-right" aria-hidden="true"></i>
                             <a href="http://www.hhs.gov/about/foa/index.html">HHS Agencies</a>
@@ -1226,7 +1226,7 @@ var tooltip = d3.select("div.doubleBarChartCont")
                         <li>
                             <i class="fa fa-caret-right" aria-hidden="true"></i>
                             <a href="http://www.health.gov/">Health.gov</a>
-                        </li>							
+                        </li>             
                     </ul>
                     <ul class="list list--primary">
                         <li>
@@ -1240,11 +1240,11 @@ var tooltip = d3.select("div.doubleBarChartCont")
                         <li>
                             <i class="fa fa-caret-right" aria-hidden="true"></i>
                             <a href="http://www.usa.gov/">USA.gov</a>
-                        </li>							
+                        </li>             
                         <li>
                             <i class="fa fa-caret-right" aria-hidden="true"></i>
                             <a href="http://www.grants.gov/web/grants/home.html">Grants.gov</a>
-                        </li>							
+                        </li>             
                         <li>
                             <i class="fa fa-caret-right" aria-hidden="true"></i>
                             <a href="https://www.healthcare.gov/">HealthCare.gov</a>
@@ -1264,7 +1264,7 @@ var tooltip = d3.select("div.doubleBarChartCont")
                         <li>
                             <i class="fa fa-caret-right" aria-hidden="true"></i>
                             <a href="http://www.sam.gov">System for Awards Management</a>
-                        </li>							
+                        </li>             
                     </ul> 
                 </div>
             </div>
@@ -1331,22 +1331,22 @@ var tooltip = d3.select("div.doubleBarChartCont")
                         <li>
                             <i class="fa fa-caret-right" aria-hidden="true"></i>
                             <a href="http://www.hrsa.gov/grants/index.html">Health Resources & Services Administration (HRSA)</a>
-                        </li>							                           
+                        </li>                                        
                         <li>
                             <i class="fa fa-caret-right" aria-hidden="true"></i>
                             <a href="http://www.ihs.gov/dgm/">Indian Health Service (IHS)</a>
-                        </li>	
+                        </li> 
                         <li>
                             <i class="fa fa-caret-right" aria-hidden="true"></i>
                             <a href="http://grants.nih.gov/grants/oer.htm">National Institutes of Health (NIH)</a>
-                        </li>	
+                        </li> 
                         <li>
                             <i class="fa fa-caret-right" aria-hidden="true"></i>
                             <a href="http://www.samhsa.gov/grants">Substance Abuse & Mental Health Services Administration (SAMHSA)</a>
-                        </li>								
+                        </li>               
                     </ul> 
                 </div>
-            </div>				
+            </div>        
         </div>
     </div>
     <div class="row">
