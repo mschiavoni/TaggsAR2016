@@ -1,17 +1,54 @@
 
 
-<chart numberPrefix="$" numberScaleValue="1000,1000,1000" numberScaleUnit="K,M,B" decimals="3" exportAtClient="0" exportAction="download" exportHandler="../FusionCharts/Export/Exported_Images/FCExporter.aspx" exportEnabled="0" baseFontColor="55554A" SYAxisName="No. Awards" PYAxisName="Award Amount" setAdaptiveYMin="1" caption="HHS: Total Award Amounts and Award Number" divLineAlpha="0" bgAlpha="100" borderAlpha="0" useRoundEdges="0" canvasBorderThickness="0" usePlotGradientColor="0" captionFontSize="30" captionFontColor="000000" xAxisNameFontSize="30" yAxisNameFontSize="20" SYAxisNameFontSize="20" valueFontSize="20" rotateValues="1" placeValuesInside="1" labelFontSize="20" showHoverEffect="1" columnHoverColor="cccccc" baseFontSize="20" showPlotBorder="0" canvasBgColor="white"  canvasBgAlpha="100" captionPadding="50" bgColor="#f7f9f9" showBorder="0" legendIconScale="2" divLineDashed="1" alternateHGridColor="#E0E0E0" 
-  plotSpacePercent="60"
-  labelPadding="20" 
-  chartLeftMargin="50"
-  chartRightMargin="50"
-  PYAxisNamePadding="60"
-  yAxisNamePadding="60"
-  showAlternateHGridColor="1"
-  alternateHGridAlpha="100"
+<chart numberPrefix="$" 
+    numberScaleValue="1000,1000,1000"
+     numberScaleUnit="K,M,B" 
+     decimals="3" exportAtClient="0" exportAction="download" exportHandler="../FusionCharts/Export/Exported_Images/FCExporter.aspx" exportEnabled="0" SYAxisName="No. Awards" PYAxisName="Award Amount" setAdaptiveYMin="1" caption="HHS: Total Award Amounts and Award Number" divLineAlpha="0" bgAlpha="100" borderAlpha="0" useRoundEdges="0" canvasBorderThickness="0" usePlotGradientColor="0"
+ 
+ captionFontColor="000000"
+ valueFontColor="ffffff"
+ baseFontColor="55554A"
+ 
+ captionPadding="50"
+ yAxisNamePadding="60"
+ PYAxisNamePadding="60"
+ labelPadding="20" 
+ 
+ captionFontSize="30" 
+ SYAxisNameFontSize="20" 
+ xAxisNameFontSize="30"
+ yAxisNameFontSize="20" 
+ valueFontSize="20"  
+ labelFontSize="20"
+ baseFontSize="20" 
+ 
+ rotateValues="1" 
+ placeValuesInside="1"
+ 
+ showHoverEffect="1"
+ columnHoverColor="#01538f"
+ 
+
+ showPlotBorder="0" 
+ showBorder="0"
+ 
+ canvasBgColor="white"
+ bgColor="#f7f9f9"
+ 
+ chartRightMargin="50"
+ 
+ canvasBgAlpha="100" 
+ legendIconScale="2"
+ divLineDashed="1"
+ alternateHGridColor="#E0E0E0" 
+ plotSpacePercent="60"
+ chartLeftMargin="50"
+ showAlternateHGridColor="1"
+ alternateHGridAlpha="100"
+ baseFont="Varela Round"
 
 
-  > 
+ > 
    <!--  
 xAxisNamePadding="50" 
 yAxisValuesPadding="20"
