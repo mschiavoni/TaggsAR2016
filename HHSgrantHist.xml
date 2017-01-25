@@ -38,9 +38,9 @@
  chartRightMargin="50"
  
  canvasBgAlpha="100" 
- legendIconScale="2"
+ legendIconScale="1"
  divLineDashed="1"
- alternateHGridColor="#E0E0E0" 
+ alternateHGridColor="#f1f1f1" 
  plotSpacePercent="60"
  chartLeftMargin="50"
  showAlternateHGridColor="1"
