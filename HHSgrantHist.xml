@@ -39,6 +39,10 @@
  
  canvasBgAlpha="100" 
  legendIconScale="1"
+legendBgColor="#f7f9f9"
+legendShadow="0"
+legendBorderThickness="0"
+
  divLineDashed="1"
  alternateHGridColor="#f1f1f1" 
  plotSpacePercent="60"

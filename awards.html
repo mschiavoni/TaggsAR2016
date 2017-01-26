@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>HHS TAGGS Annual Report</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>HHS TAGGS Annual Report</title>
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/styling.css">
-    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styling.css">
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.css' rel='stylesheet' />
-    <script src="d3.v3.min.js"></script>
-    <script src="https://d3js.org/d3-format.v1.min.js"></script>
-    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
-    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">x
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
-    <link rel="stylesheet" href="css/multiSelect.css">
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.css' rel='stylesheet' />
+  <script src="d3.v3.min.js"></script>
+  <script src="https://d3js.org/d3-format.v1.min.js"></script>
+  <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+  <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">x
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+  <link rel="stylesheet" href="css/multiSelect.css">
 
-    <script type="text/javascript">
+  <script type="text/javascript">
 
 // #3cb878
 // #00c6d7
@@ -28,15 +28,15 @@
 //#01579b
 
 FusionCharts.ready(function () {
-    var discretionaryChart = new FusionCharts({
-        type: 'multilevelpie',
-        renderAt: 'MLPChartContainer',
-        id : "myChart",
-        width: '100%',
-        height: '700',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
+  var discretionaryChart = new FusionCharts({
+    type: 'multilevelpie',
+    renderAt: 'MLPChartContainer',
+    id : "myChart",
+    width: '100%',
+    height: '700',
+    dataFormat: 'json',
+    dataSource: {
+      "chart": {
                 // "canvasBgAlpha": "0",
                 // "legendBgAlpha": "0",
                 "formatNumberScale": "1",
@@ -60,673 +60,691 @@ FusionCharts.ready(function () {
                 "toolTipBorderColor": "fffff",
                 "showToolTipShadow": "1",
                 "baseFontSize": "8"
-            },
-            "category": [
-            {
+              },
+              "category": [
+              {
                 "label": "Discretionary Award Dollars{br}$52,790,366,508",
                 "Color": "fffff",
 
                 "category": [
                 {
-                    "label": "Other",
-                    "toolText": "Other total is $8,097,509,257 {br}or 15.3 % of discretionary award dollars.  ",
-                    "value": "8097509257",
-                    "Color": "#00c6d7 ",
-                    "category": [
-                    {
-                       "toolText": "EVALUATION total award amount is $2,114,813 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within Other.  ",
-                       "value": "2114813",
-                       "Color": "#00c6d7 ",
-                       "category": [
-                       {
-                           "toolText": "CMS EVALUATION total award amount is $2,114,813 {br}or 0.0 % of discretionary award dollars {br}and 100.0 % of award dollars within EVALUATION.  ",
-                           "value": "2114813",
-                           "Color": "#00c6d7 "
-                       }]
-                   },{
-                     "toolText": "PLANNING total award amount is $4,332,233 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within Other.  ",
-                     "value": "4332233",
-                     "Color": "#00c6d7 ",
-                     "category": [
-                     {
-                       "toolText": "CDC PLANNING total award amount is $4,332,233 {br}or 0.0 % of discretionary award dollars {br}and 100.0 % of award dollars within PLANNING.  ",
-                       "value": "4332233",
-                       "Color": "#00c6d7 "
+                  "label": "Other",
+                  "toolText": "Other total is $8,097,509,257 {br}or 15.3 % of discretionary award dollars.  ",
+                  "value": "8097509257",
+                  "Color": "#00c6d7 ",
+                  "category": [
+                  {
+                   "toolText": "EVALUATION total award amount is $2,114,813 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within Other.  ",
+                   "value": "2114813",
+                   "Color": "#00c6d7 ",
+                   "category": [
+                   {
+                     "toolText": "CMS EVALUATION total award amount is $2,114,813 {br}or 0.0 % of discretionary award dollars {br}and 100.0 % of award dollars within EVALUATION.  ",
+                     "value": "2114813",
+                     "Color": "#00c6d7 "
                    }]
+                 },{
+                   "toolText": "PLANNING total award amount is $4,332,233 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within Other.  ",
+                   "value": "4332233",
+                   "Color": "#00c6d7 ",
+                   "category": [
+                   {
+                     "toolText": "CDC PLANNING total award amount is $4,332,233 {br}or 0.0 % of discretionary award dollars {br}and 100.0 % of award dollars within PLANNING.  ",
+                     "value": "4332233",
+                     "Color": "#00c6d7 "
+                   }]
+                 },{
+                   "toolText": "FELLOWSHIP\/SCHOLARSHIP\/STUDENT LOANS total award amount is $139,670,063 {br}or 0.3 % of discretionary award dollars {br}and 1.7 % of award dollars within Other.  ",
+                   "value": "139670063",
+                   "Color": "#00c6d7 ",
+                   "category": [
+                   {
+                     "toolText": "AHRQ FELLOWSHIP\/SCHOLARSHIP\/STUDENT LOANS total award amount is $425,001 {br}or 0.0 % of discretionary award dollars {br}and 0.3 % of award dollars within FELLOWSHIP\/SCHOLARSHIP\/STUDENT LOANS.  ",
+                     "value": "425001",
+                     "Color": "#00c6d7 "
+                   },{
+                     "toolText": "NIH FELLOWSHIP\/SCHOLARSHIP\/STUDENT LOANS total award amount is $139,245,062 {br}or 0.3 % of discretionary award dollars {br}and 99.7 % of award dollars within FELLOWSHIP\/SCHOLARSHIP\/STUDENT LOANS.  ",
+                     "value": "139245062",
+                     "Color": "#00c6d7 "
+                   }]
+                 },{
+                   "toolText": "KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION) total award amount is $279,818,289 {br}or 0.5 % of discretionary award dollars {br}and 3.5 % of award dollars within Other.  ",
+                   "value": "279818289",
+                   "Color": "#00c6d7 ",
+                   "category": [
+                   {
+                     "toolText": "SAMHSA KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION) total award amount is $850,000 {br}or 0.0 % of discretionary award dollars {br}and 0.3 % of award dollars within KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION).  ",
+                     "value": "850000",
+                     "Color": "#00c6d7 "
+                   },{
+                     "toolText": "NIH KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION) total award amount is $24,998,160 {br}or 0.0 % of discretionary award dollars {br}and 8.9 % of award dollars within KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION).  ",
+                     "value": "24998160",
+                     "Color": "#00c6d7 "
+                   },{
+                     "toolText": "AHRQ KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION) total award amount is $73,441,230 {br}or 0.1 % of discretionary award dollars {br}and 26.2 % of award dollars within KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION).  ",
+                     "value": "73441230",
+                     "Color": "#00c6d7 "
+                   },{
+                     "toolText": "CDC KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION) total award amount is $82,323,278 {br}or 0.2 % of discretionary award dollars {br}and 29.4 % of award dollars within KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION).  ",
+                     "value": "82323278",
+                     "Color": "#00c6d7 "
+                   },{
+                     "toolText": "FDA KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION) total award amount is $98,205,621 {br}or 0.2 % of discretionary award dollars {br}and 35.1 % of award dollars within KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION).  ",
+                     "value": "98205621",
+                     "Color": "#00c6d7 "
+                   }]
+                 },{
+                   "label": "OTHER",
+                   "toolText": "OTHER total award amount is $7,671,573,859 {br}or 14.5 % of discretionary award dollars {br}and 94.7 % of award dollars within Other.  ",
+                   "value": "7671573859",
+                   "Color": "#00c6d7 ",
+                   "category": [
+                   {
+                     "toolText": "DHHS\/OS OTHER total award amount is $7,294,979 {br}or 0.0 % of discretionary award dollars {br}and 0.1 % of award dollars within OTHER.  ",
+                     "value": "7294979",
+                     "Color": "#00c6d7 "
+                   },{
+                     "toolText": "NIH OTHER total award amount is $35,108,536 {br}or 0.1 % of discretionary award dollars {br}and 0.5 % of award dollars within OTHER.  ",
+                     "value": "35108536",
+                     "Color": "#00c6d7 "
+                   },{
+                     "toolText": "ACL OTHER total award amount is $134,718,964 {br}or 0.3 % of discretionary award dollars {br}and 1.8 % of award dollars within OTHER.  ",
+                     "value": "134718964",
+                     "Color": "#00c6d7 "
+                   },{
+                     "toolText": "CMS OTHER total award amount is $148,440,111 {br}or 0.3 % of discretionary award dollars {br}and 1.9 % of award dollars within OTHER.  ",
+                     "value": "148440111",
+                     "Color": "#00c6d7 "
+                   },{
+                     "toolText": "ACF OTHER total award amount is $181,935,692 {br}or 0.3 % of discretionary award dollars {br}and 2.4 % of award dollars within OTHER.  ",
+                     "value": "181935692",
+                     "Color": "#00c6d7 "
+                   },{
+                     "toolText": "CDC OTHER total award amount is $240,878,069 {br}or 0.5 % of discretionary award dollars {br}and 3.1 % of award dollars within OTHER.  ",
+                     "value": "240878069",
+                     "Color": "#00c6d7 "
+                   },{
+                     "label": "HRSA",
+                     "toolText": "HRSA OTHER total award amount is $6,923,197,508 {br}or 13.1 % of discretionary award dollars {br}and 90.2 % of award dollars within OTHER.  ",
+                     "value": "6923197508",
+                     "Color": "#00c6d7 "
+                   }]
+                 }]
                },{
-                 "toolText": "FELLOWSHIP\/SCHOLARSHIP\/STUDENT LOANS total award amount is $139,670,063 {br}or 0.3 % of discretionary award dollars {br}and 1.7 % of award dollars within Other.  ",
-                 "value": "139670063",
-                 "Color": "#00c6d7 ",
+                 "label": "Research",
+                 "toolText": "Research total is $22,653,491,033 {br}or 42.9 % of discretionary award dollars.  ",
+                 "value": "22653491033",
+                 "Color": "#fcb03b ",
                  "category": [
                  {
-                   "toolText": "AHRQ FELLOWSHIP\/SCHOLARSHIP\/STUDENT LOANS total award amount is $425,001 {br}or 0.0 % of discretionary award dollars {br}and 0.3 % of award dollars within FELLOWSHIP\/SCHOLARSHIP\/STUDENT LOANS.  ",
-                   "value": "425001",
-                   "Color": "#00c6d7 "
+                   "toolText": "SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $50,438,998 {br}or 0.1 % of discretionary award dollars {br}and 0.2 % of award dollars within Research.  ",
+                   "value": "50438998",
+                   "Color": "#fcb03b ",
+                   "category": [
+                   {
+                     "toolText": "HRSA SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $120,000 {br}or 0.0 % of discretionary award dollars {br}and 0.2 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  ",
+                     "value": "120000",
+                     "Color": "#fcb03b "
+                   },{
+                     "toolText": "DHHS\/OS SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $1,761,000 {br}or 0.0 % of discretionary award dollars {br}and 3.5 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  ",
+                     "value": "1761000",
+                     "Color": "#fcb03b "
+                   },{
+                     "toolText": "CMS SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $419,288 {br}or 0.0 % of discretionary award dollars {br}and 0.8 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  ",
+                     "value": "419288",
+                     "Color": "#fcb03b "
+                   },{
+                     "toolText": "ACL SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $14,767,917 {br}or 0.0 % of discretionary award dollars {br}and 29.3 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  ",
+                     "value": "14767917",
+                     "Color": "#fcb03b "
+                   },{
+                     "toolText": "ACF SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $33,370,793 {br}or 0.1 % of discretionary award dollars {br}and 66.2 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  ",
+                     "value": "33370793",
+                     "Color": "#fcb03b "
+                   }]
+                 },{
+                   "label": "SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS)",
+                   "toolText": "SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $22,603,052,035 {br}or 42.8 % of discretionary award dollars {br}and 99.8 % of award dollars within Research.  ",
+                   "value": "22603052035",
+                   "Color": "#fcb03b ",
+                   "category": [
+                   {
+                     "toolText": "HRSA SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $20,795 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS).  ",
+                     "value": "20795",
+                     "Color": "#fcb03b "
+                   },{
+                     "toolText": "FDA SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $82,824,678 {br}or 0.2 % of discretionary award dollars {br}and 0.4 % of award dollars within SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS).  ",
+                     "value": "82824678",
+                     "Color": "#fcb03b "
+                   },{
+                     "toolText": "AHRQ SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $98,931,593 {br}or 0.2 % of discretionary award dollars {br}and 0.4 % of award dollars within SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS).  ",
+                     "value": "98931593",
+                     "Color": "#fcb03b "
+                   },{
+                     "label": "CDC",
+                     "toolText": "CDC SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $900,156,343 {br}or 1.7 % of discretionary award dollars {br}and 4.0 % of award dollars within SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS).  ",
+                     "value": "900156343",
+                     "Color": "#fcb03b "
+                   },{
+                     "label": "NIH",
+                     "toolText": "NIH SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $21,521,118,626 {br}or 40.8 % of discretionary award dollars {br}and 95.2 % of award dollars within SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS).  ",
+                     "value": "21521118626",
+                     "Color": "#fcb03b "
+                   }]
+                 }]
                },{
-                   "toolText": "NIH FELLOWSHIP\/SCHOLARSHIP\/STUDENT LOANS total award amount is $139,245,062 {br}or 0.3 % of discretionary award dollars {br}and 99.7 % of award dollars within FELLOWSHIP\/SCHOLARSHIP\/STUDENT LOANS.  ",
-                   "value": "139245062",
-                   "Color": "#00c6d7 "
+                 "label": "Services",
+                 "toolText": "Services total is $19,875,978,678 {br}or 37.6 % of discretionary award dollars.  ",
+                 "value": "19875978678",
+                 "Color": "#3cb878 ",
+                 "category": [
+                 {
+                   "label": "DEMONSTRATION",
+                   "toolText": "DEMONSTRATION total award amount is $2,505,956,838 {br}or 4.8 % of discretionary award dollars {br}and 12.6 % of award dollars within Services.  ",
+                   "value": "2505956838",
+                   "Color": "#3cb878 ",
+                   "category": [
+                   {
+                     "toolText": "ACL DEMONSTRATION total award amount is $110,549,590 {br}or 0.2 % of discretionary award dollars {br}and 4.4 % of award dollars within DEMONSTRATION.  ",
+                     "value": "110549590",
+                     "Color": "#3cb878 "
+                   },{
+                     "toolText": "HRSA DEMONSTRATION total award amount is $116,073,096 {br}or 0.2 % of discretionary award dollars {br}and 4.6 % of award dollars within DEMONSTRATION.  ",
+                     "value": "116073096",
+                     "Color": "#3cb878 "
+                   },{
+                     "toolText": "DHHS\/OS DEMONSTRATION total award amount is $142,386,593 {br}or 0.3 % of discretionary award dollars {br}and 5.7 % of award dollars within DEMONSTRATION.  ",
+                     "value": "142386593",
+                     "Color": "#3cb878 "
+                   },{
+                     "toolText": "IHS DEMONSTRATION total award amount is $203,538,100 {br}or 0.4 % of discretionary award dollars {br}and 8.1 % of award dollars within DEMONSTRATION.  ",
+                     "value": "203538100",
+                     "Color": "#3cb878 "
+                   },{
+                     "toolText": "ACF DEMONSTRATION total award amount is $261,594,897 {br}or 0.5 % of discretionary award dollars {br}and 10.4 % of award dollars within DEMONSTRATION.  ",
+                     "value": "261594897",
+                     "Color": "#3cb878 "
+                   },{
+                     "label": "CMS",
+                     "toolText": "CMS DEMONSTRATION total award amount is $1,671,814,562 {br}or 3.2 % of discretionary award dollars {br}and 66.7 % of award dollars within DEMONSTRATION.  ",
+                     "value": "1671814562",
+                     "Color": "#3cb878 "
+                   }]
+                 },{
+                   "label": "HEALTH SERVICES",
+                   "toolText": "HEALTH SERVICES total award amount is $6,802,253,020 {br}or 12.9 % of discretionary award dollars {br}and 34.2 % of award dollars within Services.  ",
+                   "value": "6802253020",
+                   "Color": "#3cb878 ",
+                   "category": [
+                   {
+                     "toolText": "CMS HEALTH SERVICES total award amount is $428,766 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within HEALTH SERVICES.  ",
+                     "value": "428766",
+                     "Color": "#3cb878 "
+                   },{
+                     "toolText": "FDA HEALTH SERVICES total award amount is $400,000 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within HEALTH SERVICES.  ",
+                     "value": "400000",
+                     "Color": "#3cb878 "
+                   },{
+                     "toolText": "NIH HEALTH SERVICES total award amount is $4,217,793 {br}or 0.0 % of discretionary award dollars {br}and 0.1 % of award dollars within HEALTH SERVICES.  ",
+                     "value": "4217793",
+                     "Color": "#3cb878 "
+                   },{
+                     "toolText": "HRSA HEALTH SERVICES total award amount is $12,060,533 {br}or 0.0 % of discretionary award dollars {br}and 0.2 % of award dollars within HEALTH SERVICES.  ",
+                     "value": "12060533",
+                     "Color": "#3cb878 "
+                   },{
+                     "toolText": "DHHS\/OS HEALTH SERVICES total award amount is $305,559,562 {br}or 0.6 % of discretionary award dollars {br}and 4.5 % of award dollars within HEALTH SERVICES.  ",
+                     "value": "305559562",
+                     "Color": "#3cb878 "
+                   },{
+                     "toolText": "ACF HEALTH SERVICES total award amount is $350,023,616 {br}or 0.7 % of discretionary award dollars {br}and 5.2 % of award dollars within HEALTH SERVICES.  ",
+                     "value": "350023616",
+                     "Color": "#3cb878 "
+                   },{
+                     "label": "SAMHSA",
+                     "toolText": "SAMHSA HEALTH SERVICES total award amount is $994,909,236 {br}or 1.9 % of discretionary award dollars {br}and 14.6 % of award dollars within HEALTH SERVICES.  ",
+                     "value": "994909236",
+                     "Color": "#3cb878 "
+                   },{
+                     "label": "CDC",
+                     "toolText": "CDC HEALTH SERVICES total award amount is $5,134,653,514 {br}or 9.7 % of discretionary award dollars {br}and 75.5 % of award dollars within HEALTH SERVICES.  ",
+                     "value": "5134653514",
+                     "Color": "#3cb878 "
+                   }]
+                 },{
+                   "label": "SOCIAL SERVICES",
+                   "toolText": "SOCIAL SERVICES total award amount is $10,567,768,820 {br}or 20.0 % of discretionary award dollars {br}and 53.2 % of award dollars within Services.  ",
+                   "value": "10567768820",
+                   "Color": "#3cb878 ",
+                   "category": [
+                   {
+                     "toolText": "CMS SOCIAL SERVICES total award amount is ($159,790,349) {br}or -0.3 % of discretionary award dollars {br}and -1.5 % of award dollars within SOCIAL SERVICES.  ",
+                     "value": "-159790349",
+                     "Color": "#3cb878 "
+                   },{
+                     "toolText": "ACL SOCIAL SERVICES total award amount is $2,727,237 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within SOCIAL SERVICES.  ",
+                     "value": "2727237",
+                     "Color": "#3cb878 "
+                   },{
+                     "toolText": "CDC SOCIAL SERVICES total award amount is $30,418,467 {br}or 0.1 % of discretionary award dollars {br}and 0.3 % of award dollars within SOCIAL SERVICES.  ",
+                     "value": "30418467",
+                     "Color": "#3cb878 "
+                   },{
+                     "toolText": "NIH SOCIAL SERVICES total award amount is $459,318,386 {br}or 0.9 % of discretionary award dollars {br}and 4.4 % of award dollars within SOCIAL SERVICES.  ",
+                     "value": "459318386",
+                     "Color": "#3cb878 "
+                   },{
+                     "label": "HRSA",
+                     "toolText": "HRSA SOCIAL SERVICES total award amount is $618,044,551 {br}or 1.2 % of discretionary award dollars {br}and 5.8 % of award dollars within SOCIAL SERVICES.  ",
+                     "value": "618044551",
+                     "Color": "#3cb878 "
+                   },{
+                     "label": "ACF",
+                     "toolText": "ACF SOCIAL SERVICES total award amount is $9,617,050,528 {br}or 18.2 % of discretionary award dollars {br}and 91.0 % of award dollars within SOCIAL SERVICES.  ",
+                     "value": "9617050528",
+                     "Color": "#3cb878 "
+                   }]
+                 }]
+               },{
+                 "label": "Training",
+                 "toolText": "Training total is $2,163,387,540 {br}or 4.1 % of discretionary award dollars.  ",
+                 "value": "2163387540",
+                 "Color": "#6739b6 ",
+                 "category": [
+                 {
+                   "toolText": "TECHNICAL ASSISTANCE total award amount is $57,385,415 {br}or 0.1 % of discretionary award dollars {br}and 2.6 % of award dollars within Training.  ",
+                   "value": "57385415",
+                   "Color": "#6739b6 ",
+                   "category": [
+                   {
+                     "toolText": "DHHS\/OS TECHNICAL ASSISTANCE total award amount is ($380,430) {br}or 0.0 % of discretionary award dollars {br}and -0.7 % of award dollars within TECHNICAL ASSISTANCE.  ",
+                     "value": "-380430",
+                     "Color": "#6739b6 "
+                   },{
+                     "toolText": "CDC TECHNICAL ASSISTANCE total award amount is $921,500 {br}or 0.0 % of discretionary award dollars {br}and 1.6 % of award dollars within TECHNICAL ASSISTANCE.  ",
+                     "value": "921500",
+                     "Color": "#6739b6 "
+                   },{
+                     "toolText": "ACL TECHNICAL ASSISTANCE total award amount is $0 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within TECHNICAL ASSISTANCE.  ",
+                     "value": "0",
+                     "Color": "#6739b6 "
+                   },{
+                     "toolText": "ACF TECHNICAL ASSISTANCE total award amount is $5,198,599 {br}or 0.0 % of discretionary award dollars {br}and 9.1 % of award dollars within TECHNICAL ASSISTANCE.  ",
+                     "value": "5198599",
+                     "Color": "#6739b6 "
+                   },{
+                     "toolText": "SAMHSA TECHNICAL ASSISTANCE total award amount is $16,496,839 {br}or 0.0 % of discretionary award dollars {br}and 28.8 % of award dollars within TECHNICAL ASSISTANCE.  ",
+                     "value": "16496839",
+                     "Color": "#6739b6 "
+                   },{
+                     "toolText": "HRSA TECHNICAL ASSISTANCE total award amount is $35,148,907 {br}or 0.1 % of discretionary award dollars {br}and 61.2 % of award dollars within TECHNICAL ASSISTANCE.  ",
+                     "value": "35148907",
+                     "Color": "#6739b6 "
+                   }]
+                 },{
+                   "label": "TRAINING\/TRAINEESHIP",
+                   "toolText": "TRAINING\/TRAINEESHIP total award amount is $2,106,002,125 {br}or 4.0 % of discretionary award dollars {br}and 97.4 % of award dollars within Training.  ",
+                   "value": "2106002125",
+                   "Color": "#6739b6 ",
+                   "category": [
+                   {
+                     "toolText": "DHHS\/OS TRAINING\/TRAINEESHIP total award amount is $4,956,546 {br}or 0.0 % of discretionary award dollars {br}and 0.2 % of award dollars within TRAINING\/TRAINEESHIP.  ",
+                     "value": "4956546",
+                     "Color": "#6739b6 "
+                   },{
+                     "toolText": "SAMHSA TRAINING\/TRAINEESHIP total award amount is $9,837,557 {br}or 0.0 % of discretionary award dollars {br}and 0.5 % of award dollars within TRAINING\/TRAINEESHIP.  ",
+                     "value": "9837557",
+                     "Color": "#6739b6 "
+                   },{
+                     "toolText": "AHRQ TRAINING\/TRAINEESHIP total award amount is $26,380,748 {br}or 0.0 % of discretionary award dollars {br}and 1.2 % of award dollars within TRAINING\/TRAINEESHIP.  ",
+                     "value": "26380748",
+                     "Color": "#6739b6 "
+                   },{
+                     "toolText": "ACF TRAINING\/TRAINEESHIP total award amount is $25,097,917 {br}or 0.0 % of discretionary award dollars {br}and 1.2 % of award dollars within TRAINING\/TRAINEESHIP.  ",
+                     "value": "25097917",
+                     "Color": "#6739b6 "
+                   },{
+                     "toolText": "ACL TRAINING\/TRAINEESHIP total award amount is $30,545,505 {br}or 0.1 % of discretionary award dollars {br}and 1.4 % of award dollars within TRAINING\/TRAINEESHIP.  ",
+                     "value": "30545505",
+                     "Color": "#6739b6 "
+                   },{
+                     "toolText": "CDC TRAINING\/TRAINEESHIP total award amount is $33,333,995 {br}or 0.1 % of discretionary award dollars {br}and 1.6 % of award dollars within TRAINING\/TRAINEESHIP.  ",
+                     "value": "33333995",
+                     "Color": "#6739b6 "
+                   },{
+                     "label": "HRSA",
+                     "toolText": "HRSA TRAINING\/TRAINEESHIP total award amount is $628,526,721 {br}or 1.2 % of discretionary award dollars {br}and 29.8 % of award dollars within TRAINING\/TRAINEESHIP.  ",
+                     "value": "628526721",
+                     "Color": "#6739b6 "
+                   },{
+                     "label": "NIH",
+                     "toolText": "NIH TRAINING\/TRAINEESHIP total award amount is $1,347,323,136 {br}or 2.6 % of discretionary award dollars {br}and 64.0 % of award dollars within TRAINING\/TRAINEESHIP.  ",
+                     "value": "1347323136",
+                     "Color": "#6739b6 "
+                   }]
+                 }]
                }]
-           },{
-             "toolText": "KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION) total award amount is $279,818,289 {br}or 0.5 % of discretionary award dollars {br}and 3.5 % of award dollars within Other.  ",
-             "value": "279818289",
-             "Color": "#00c6d7 ",
-             "category": [
-             {
-               "toolText": "SAMHSA KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION) total award amount is $850,000 {br}or 0.0 % of discretionary award dollars {br}and 0.3 % of award dollars within KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION).  ",
-               "value": "850000",
-               "Color": "#00c6d7 "
-           },{
-               "toolText": "NIH KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION) total award amount is $24,998,160 {br}or 0.0 % of discretionary award dollars {br}and 8.9 % of award dollars within KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION).  ",
-               "value": "24998160",
-               "Color": "#00c6d7 "
-           },{
-               "toolText": "AHRQ KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION) total award amount is $73,441,230 {br}or 0.1 % of discretionary award dollars {br}and 26.2 % of award dollars within KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION).  ",
-               "value": "73441230",
-               "Color": "#00c6d7 "
-           },{
-               "toolText": "CDC KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION) total award amount is $82,323,278 {br}or 0.2 % of discretionary award dollars {br}and 29.4 % of award dollars within KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION).  ",
-               "value": "82323278",
-               "Color": "#00c6d7 "
-           },{
-               "toolText": "FDA KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION) total award amount is $98,205,621 {br}or 0.2 % of discretionary award dollars {br}and 35.1 % of award dollars within KDA (KNOWLEDGE\/DEVELOPMENT\/APPLICATION).  ",
-               "value": "98205621",
-               "Color": "#00c6d7 "
-           }]
-       },{
-         "label": "OTHER",
-         "toolText": "OTHER total award amount is $7,671,573,859 {br}or 14.5 % of discretionary award dollars {br}and 94.7 % of award dollars within Other.  ",
-         "value": "7671573859",
-         "Color": "#00c6d7 ",
-         "category": [
-         {
-           "toolText": "DHHS\/OS OTHER total award amount is $7,294,979 {br}or 0.0 % of discretionary award dollars {br}and 0.1 % of award dollars within OTHER.  ",
-           "value": "7294979",
-           "Color": "#00c6d7 "
-       },{
-           "toolText": "NIH OTHER total award amount is $35,108,536 {br}or 0.1 % of discretionary award dollars {br}and 0.5 % of award dollars within OTHER.  ",
-           "value": "35108536",
-           "Color": "#00c6d7 "
-       },{
-           "toolText": "ACL OTHER total award amount is $134,718,964 {br}or 0.3 % of discretionary award dollars {br}and 1.8 % of award dollars within OTHER.  ",
-           "value": "134718964",
-           "Color": "#00c6d7 "
-       },{
-           "toolText": "CMS OTHER total award amount is $148,440,111 {br}or 0.3 % of discretionary award dollars {br}and 1.9 % of award dollars within OTHER.  ",
-           "value": "148440111",
-           "Color": "#00c6d7 "
-       },{
-           "toolText": "ACF OTHER total award amount is $181,935,692 {br}or 0.3 % of discretionary award dollars {br}and 2.4 % of award dollars within OTHER.  ",
-           "value": "181935692",
-           "Color": "#00c6d7 "
-       },{
-           "toolText": "CDC OTHER total award amount is $240,878,069 {br}or 0.5 % of discretionary award dollars {br}and 3.1 % of award dollars within OTHER.  ",
-           "value": "240878069",
-           "Color": "#00c6d7 "
-       },{
-           "label": "HRSA",
-           "toolText": "HRSA OTHER total award amount is $6,923,197,508 {br}or 13.1 % of discretionary award dollars {br}and 90.2 % of award dollars within OTHER.  ",
-           "value": "6923197508",
-           "Color": "#00c6d7 "
-       }]
-   }]
-},{
-   "label": "Research",
-   "toolText": "Research total is $22,653,491,033 {br}or 42.9 % of discretionary award dollars.  ",
-   "value": "22653491033",
-   "Color": "#fcb03b ",
-   "category": [
-   {
-     "toolText": "SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $50,438,998 {br}or 0.1 % of discretionary award dollars {br}and 0.2 % of award dollars within Research.  ",
-     "value": "50438998",
-     "Color": "#fcb03b ",
-     "category": [
-     {
-       "toolText": "HRSA SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $120,000 {br}or 0.0 % of discretionary award dollars {br}and 0.2 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  ",
-       "value": "120000",
-       "Color": "#fcb03b "
-   },{
-       "toolText": "DHHS\/OS SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $1,761,000 {br}or 0.0 % of discretionary award dollars {br}and 3.5 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  ",
-       "value": "1761000",
-       "Color": "#fcb03b "
-   },{
-       "toolText": "CMS SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $419,288 {br}or 0.0 % of discretionary award dollars {br}and 0.8 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  ",
-       "value": "419288",
-       "Color": "#fcb03b "
-   },{
-       "toolText": "ACL SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $14,767,917 {br}or 0.0 % of discretionary award dollars {br}and 29.3 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  ",
-       "value": "14767917",
-       "Color": "#fcb03b "
-   },{
-       "toolText": "ACF SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $33,370,793 {br}or 0.1 % of discretionary award dollars {br}and 66.2 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  ",
-       "value": "33370793",
-       "Color": "#fcb03b "
-   }]
-},{
- "label": "SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS)",
- "toolText": "SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $22,603,052,035 {br}or 42.8 % of discretionary award dollars {br}and 99.8 % of award dollars within Research.  ",
- "value": "22603052035",
- "Color": "#fcb03b ",
- "category": [
- {
-   "toolText": "HRSA SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $20,795 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS).  ",
-   "value": "20795",
-   "Color": "#fcb03b "
-},{
-   "toolText": "FDA SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $82,824,678 {br}or 0.2 % of discretionary award dollars {br}and 0.4 % of award dollars within SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS).  ",
-   "value": "82824678",
-   "Color": "#fcb03b "
-},{
-   "toolText": "AHRQ SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $98,931,593 {br}or 0.2 % of discretionary award dollars {br}and 0.4 % of award dollars within SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS).  ",
-   "value": "98931593",
-   "Color": "#fcb03b "
-},{
-   "label": "CDC",
-   "toolText": "CDC SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $900,156,343 {br}or 1.7 % of discretionary award dollars {br}and 4.0 % of award dollars within SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS).  ",
-   "value": "900156343",
-   "Color": "#fcb03b "
-},{
-   "label": "NIH",
-   "toolText": "NIH SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $21,521,118,626 {br}or 40.8 % of discretionary award dollars {br}and 95.2 % of award dollars within SCIENTIFIC\/HEALTH RESEARCH (INCLUDES SURVEYS).  ",
-   "value": "21521118626",
-   "Color": "#fcb03b "
-}]
-}]
-},{
-   "label": "Services",
-   "toolText": "Services total is $19,875,978,678 {br}or 37.6 % of discretionary award dollars.  ",
-   "value": "19875978678",
-   "Color": "#3cb878 ",
-   "category": [
-   {
-     "label": "DEMONSTRATION",
-     "toolText": "DEMONSTRATION total award amount is $2,505,956,838 {br}or 4.8 % of discretionary award dollars {br}and 12.6 % of award dollars within Services.  ",
-     "value": "2505956838",
-     "Color": "#3cb878 ",
-     "category": [
-     {
-       "toolText": "ACL DEMONSTRATION total award amount is $110,549,590 {br}or 0.2 % of discretionary award dollars {br}and 4.4 % of award dollars within DEMONSTRATION.  ",
-       "value": "110549590",
-       "Color": "#3cb878 "
-   },{
-       "toolText": "HRSA DEMONSTRATION total award amount is $116,073,096 {br}or 0.2 % of discretionary award dollars {br}and 4.6 % of award dollars within DEMONSTRATION.  ",
-       "value": "116073096",
-       "Color": "#3cb878 "
-   },{
-       "toolText": "DHHS\/OS DEMONSTRATION total award amount is $142,386,593 {br}or 0.3 % of discretionary award dollars {br}and 5.7 % of award dollars within DEMONSTRATION.  ",
-       "value": "142386593",
-       "Color": "#3cb878 "
-   },{
-       "toolText": "IHS DEMONSTRATION total award amount is $203,538,100 {br}or 0.4 % of discretionary award dollars {br}and 8.1 % of award dollars within DEMONSTRATION.  ",
-       "value": "203538100",
-       "Color": "#3cb878 "
-   },{
-       "toolText": "ACF DEMONSTRATION total award amount is $261,594,897 {br}or 0.5 % of discretionary award dollars {br}and 10.4 % of award dollars within DEMONSTRATION.  ",
-       "value": "261594897",
-       "Color": "#3cb878 "
-   },{
-       "label": "CMS",
-       "toolText": "CMS DEMONSTRATION total award amount is $1,671,814,562 {br}or 3.2 % of discretionary award dollars {br}and 66.7 % of award dollars within DEMONSTRATION.  ",
-       "value": "1671814562",
-       "Color": "#3cb878 "
-   }]
-},{
- "label": "HEALTH SERVICES",
- "toolText": "HEALTH SERVICES total award amount is $6,802,253,020 {br}or 12.9 % of discretionary award dollars {br}and 34.2 % of award dollars within Services.  ",
- "value": "6802253020",
- "Color": "#3cb878 ",
- "category": [
- {
-   "toolText": "CMS HEALTH SERVICES total award amount is $428,766 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within HEALTH SERVICES.  ",
-   "value": "428766",
-   "Color": "#3cb878 "
-},{
-   "toolText": "FDA HEALTH SERVICES total award amount is $400,000 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within HEALTH SERVICES.  ",
-   "value": "400000",
-   "Color": "#3cb878 "
-},{
-   "toolText": "NIH HEALTH SERVICES total award amount is $4,217,793 {br}or 0.0 % of discretionary award dollars {br}and 0.1 % of award dollars within HEALTH SERVICES.  ",
-   "value": "4217793",
-   "Color": "#3cb878 "
-},{
-   "toolText": "HRSA HEALTH SERVICES total award amount is $12,060,533 {br}or 0.0 % of discretionary award dollars {br}and 0.2 % of award dollars within HEALTH SERVICES.  ",
-   "value": "12060533",
-   "Color": "#3cb878 "
-},{
-   "toolText": "DHHS\/OS HEALTH SERVICES total award amount is $305,559,562 {br}or 0.6 % of discretionary award dollars {br}and 4.5 % of award dollars within HEALTH SERVICES.  ",
-   "value": "305559562",
-   "Color": "#3cb878 "
-},{
-   "toolText": "ACF HEALTH SERVICES total award amount is $350,023,616 {br}or 0.7 % of discretionary award dollars {br}and 5.2 % of award dollars within HEALTH SERVICES.  ",
-   "value": "350023616",
-   "Color": "#3cb878 "
-},{
-   "label": "SAMHSA",
-   "toolText": "SAMHSA HEALTH SERVICES total award amount is $994,909,236 {br}or 1.9 % of discretionary award dollars {br}and 14.6 % of award dollars within HEALTH SERVICES.  ",
-   "value": "994909236",
-   "Color": "#3cb878 "
-},{
-   "label": "CDC",
-   "toolText": "CDC HEALTH SERVICES total award amount is $5,134,653,514 {br}or 9.7 % of discretionary award dollars {br}and 75.5 % of award dollars within HEALTH SERVICES.  ",
-   "value": "5134653514",
-   "Color": "#3cb878 "
-}]
-},{
- "label": "SOCIAL SERVICES",
- "toolText": "SOCIAL SERVICES total award amount is $10,567,768,820 {br}or 20.0 % of discretionary award dollars {br}and 53.2 % of award dollars within Services.  ",
- "value": "10567768820",
- "Color": "#3cb878 ",
- "category": [
- {
-   "toolText": "CMS SOCIAL SERVICES total award amount is ($159,790,349) {br}or -0.3 % of discretionary award dollars {br}and -1.5 % of award dollars within SOCIAL SERVICES.  ",
-   "value": "-159790349",
-   "Color": "#3cb878 "
-},{
-   "toolText": "ACL SOCIAL SERVICES total award amount is $2,727,237 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within SOCIAL SERVICES.  ",
-   "value": "2727237",
-   "Color": "#3cb878 "
-},{
-   "toolText": "CDC SOCIAL SERVICES total award amount is $30,418,467 {br}or 0.1 % of discretionary award dollars {br}and 0.3 % of award dollars within SOCIAL SERVICES.  ",
-   "value": "30418467",
-   "Color": "#3cb878 "
-},{
-   "toolText": "NIH SOCIAL SERVICES total award amount is $459,318,386 {br}or 0.9 % of discretionary award dollars {br}and 4.4 % of award dollars within SOCIAL SERVICES.  ",
-   "value": "459318386",
-   "Color": "#3cb878 "
-},{
-   "label": "HRSA",
-   "toolText": "HRSA SOCIAL SERVICES total award amount is $618,044,551 {br}or 1.2 % of discretionary award dollars {br}and 5.8 % of award dollars within SOCIAL SERVICES.  ",
-   "value": "618044551",
-   "Color": "#3cb878 "
-},{
-   "label": "ACF",
-   "toolText": "ACF SOCIAL SERVICES total award amount is $9,617,050,528 {br}or 18.2 % of discretionary award dollars {br}and 91.0 % of award dollars within SOCIAL SERVICES.  ",
-   "value": "9617050528",
-   "Color": "#3cb878 "
-}]
-}]
-},{
-   "label": "Training",
-   "toolText": "Training total is $2,163,387,540 {br}or 4.1 % of discretionary award dollars.  ",
-   "value": "2163387540",
-   "Color": "#6739b6 ",
-   "category": [
-   {
-     "toolText": "TECHNICAL ASSISTANCE total award amount is $57,385,415 {br}or 0.1 % of discretionary award dollars {br}and 2.6 % of award dollars within Training.  ",
-     "value": "57385415",
-     "Color": "#6739b6 ",
-     "category": [
-     {
-       "toolText": "DHHS\/OS TECHNICAL ASSISTANCE total award amount is ($380,430) {br}or 0.0 % of discretionary award dollars {br}and -0.7 % of award dollars within TECHNICAL ASSISTANCE.  ",
-       "value": "-380430",
-       "Color": "#6739b6 "
-   },{
-       "toolText": "CDC TECHNICAL ASSISTANCE total award amount is $921,500 {br}or 0.0 % of discretionary award dollars {br}and 1.6 % of award dollars within TECHNICAL ASSISTANCE.  ",
-       "value": "921500",
-       "Color": "#6739b6 "
-   },{
-       "toolText": "ACL TECHNICAL ASSISTANCE total award amount is $0 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within TECHNICAL ASSISTANCE.  ",
-       "value": "0",
-       "Color": "#6739b6 "
-   },{
-       "toolText": "ACF TECHNICAL ASSISTANCE total award amount is $5,198,599 {br}or 0.0 % of discretionary award dollars {br}and 9.1 % of award dollars within TECHNICAL ASSISTANCE.  ",
-       "value": "5198599",
-       "Color": "#6739b6 "
-   },{
-       "toolText": "SAMHSA TECHNICAL ASSISTANCE total award amount is $16,496,839 {br}or 0.0 % of discretionary award dollars {br}and 28.8 % of award dollars within TECHNICAL ASSISTANCE.  ",
-       "value": "16496839",
-       "Color": "#6739b6 "
-   },{
-       "toolText": "HRSA TECHNICAL ASSISTANCE total award amount is $35,148,907 {br}or 0.1 % of discretionary award dollars {br}and 61.2 % of award dollars within TECHNICAL ASSISTANCE.  ",
-       "value": "35148907",
-       "Color": "#6739b6 "
-   }]
-},{
- "label": "TRAINING\/TRAINEESHIP",
- "toolText": "TRAINING\/TRAINEESHIP total award amount is $2,106,002,125 {br}or 4.0 % of discretionary award dollars {br}and 97.4 % of award dollars within Training.  ",
- "value": "2106002125",
- "Color": "#6739b6 ",
- "category": [
- {
-   "toolText": "DHHS\/OS TRAINING\/TRAINEESHIP total award amount is $4,956,546 {br}or 0.0 % of discretionary award dollars {br}and 0.2 % of award dollars within TRAINING\/TRAINEESHIP.  ",
-   "value": "4956546",
-   "Color": "#6739b6 "
-},{
-   "toolText": "SAMHSA TRAINING\/TRAINEESHIP total award amount is $9,837,557 {br}or 0.0 % of discretionary award dollars {br}and 0.5 % of award dollars within TRAINING\/TRAINEESHIP.  ",
-   "value": "9837557",
-   "Color": "#6739b6 "
-},{
-   "toolText": "AHRQ TRAINING\/TRAINEESHIP total award amount is $26,380,748 {br}or 0.0 % of discretionary award dollars {br}and 1.2 % of award dollars within TRAINING\/TRAINEESHIP.  ",
-   "value": "26380748",
-   "Color": "#6739b6 "
-},{
-   "toolText": "ACF TRAINING\/TRAINEESHIP total award amount is $25,097,917 {br}or 0.0 % of discretionary award dollars {br}and 1.2 % of award dollars within TRAINING\/TRAINEESHIP.  ",
-   "value": "25097917",
-   "Color": "#6739b6 "
-},{
-   "toolText": "ACL TRAINING\/TRAINEESHIP total award amount is $30,545,505 {br}or 0.1 % of discretionary award dollars {br}and 1.4 % of award dollars within TRAINING\/TRAINEESHIP.  ",
-   "value": "30545505",
-   "Color": "#6739b6 "
-},{
-   "toolText": "CDC TRAINING\/TRAINEESHIP total award amount is $33,333,995 {br}or 0.1 % of discretionary award dollars {br}and 1.6 % of award dollars within TRAINING\/TRAINEESHIP.  ",
-   "value": "33333995",
-   "Color": "#6739b6 "
-},{
-   "label": "HRSA",
-   "toolText": "HRSA TRAINING\/TRAINEESHIP total award amount is $628,526,721 {br}or 1.2 % of discretionary award dollars {br}and 29.8 % of award dollars within TRAINING\/TRAINEESHIP.  ",
-   "value": "628526721",
-   "Color": "#6739b6 "
-},{
-   "label": "NIH",
-   "toolText": "NIH TRAINING\/TRAINEESHIP total award amount is $1,347,323,136 {br}or 2.6 % of discretionary award dollars {br}and 64.0 % of award dollars within TRAINING\/TRAINEESHIP.  ",
-   "value": "1347323136",
-   "Color": "#6739b6 "
-}]
-}]
-}]
-}]
-}
+             }]
+           }
 
-});
+         });
 
 discretionaryChart.render();
 });
 
 </script>
 <style>
-    .legend {
-        background-color: #fff;
-        border-radius: 3px;
-        bottom: 30px;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.10);
-        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        padding: 10px;
-        position: absolute;
-        right: 10px;
-        z-index: 1;}
-        .legend h4 {
-            margin: 0 0 10px;}
-            .legend div span {
-                border-radius: 50%;
-                display: inline-block;
-                height: 10px;
-                margin-right: 5px;
-                width: 10px;}
-                body {
-                    margin: 0;
-                    padding: 0;}
-                    #map {
-                        top: 0;
-                        bottom: 0;
-                        width: 100%;
-                        height: 760px;}
-                        .chart {
-                         margin: 100px 0 100px 0;}
-                         .chart .right {
-                            stroke: white;
-                            fill: #B71C1C;}
-                            .chart .left {
-                                stroke: white;
-                                fill: #0D47A1;}
-                                .chart rect:hover {
-                                    fill: #757575;}
-                                    .chart text {
-                                        fill: black;}
-                                        .chart text.name {
-                                            fill: black;}
-                                            .chart text.title {
-                                                fill: black;}
-                                                .toolTip {
-                                                    background-color: rgba(255, 255, 255, 0.9);
-                                                    height: 80px;
-                                                    border: 2px solid black;
-                                                    /*bottom: 0;*/
-                                                    width: 230px;
-                                                    /*left: -125px;*/
-                                                    font-size: 12px;
-                                                    line-height: 16px;
-                                                    padding: 10px;
-                                                    border-radius: 3px;
-                                                    color: #000;
-                                                    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-                                                    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-                                                    border: 1px solid rgba(200, 200, 200, 0.85);
-                                                    text-align: center;}
-                                                    .doubleBarChartCont {
-                                                     text-align: center;
-                                                     align-content: center;
-                                                     margin-right: 150px;}
-                                                     .fileNames {
-                                                         color: #0066FF;
-                                                         font-size: 24px;
-                                                         text-align:center;
-                                                         margin: 10px;} 
+  .legend {
+    background-color: #fff;
+    border-radius: 3px;
+    bottom: 30px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    z-index: 1;}
+    .legend h4 {
+      margin: 0 0 10px;}
+      .legend div span {
+        border-radius: 50%;
+        display: inline-block;
+        height: 10px;
+        margin-right: 5px;
+        width: 10px;}
+        body {
+          margin: 0;
+          padding: 0;}
+          #map {
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 760px;}
 
 
-                                                     </style>  
-                                                 </head>
-                                                 <body class=" ">
-                                                    <header class="header" id="site-header">
-                                                        <div class="container">
-                                                            <div class="header-content-wrapper">
-                                                                <div class="logo">
-                                                                    <a href="index.html" class="full-block-link"></a>
-                                                                    <img src="img/logo.png" alt="HHSTAGGS">
-                                                                    <div class="logo-text">
-                                                                        <div class="logo-title">TAGGS</div>
-                                                                        <div class="logo-sub-title">Annual Report 2016</div>
-                                                                    </div>
-                                                                </div>
-                                                                <nav id="primary-menu" class="primary-menu">
-                                                                    <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
-                                                                        <span class="mob-menu--title">Menu</span>
-                                                                        <span id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
-                                                                            <svg width="1000px" height="1000px">
-                                                                                <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-                                                                                <path id="pathE" d="M 300 500 L 700 500"></path>
-                                                                                <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-                                                                            </svg>
-                                                                        </span>
-                                                                    </a>
-                                                                    <ul class="primary-menu-menu">
-                                                                        <li class="menu-item-has-children">
-                                                                            <a href="index.html">Home</a>
-                                                                        </li>
-                                                                        <li class="">
-                                                                            <a href="awards.html" class="blue">Awards</a>
-                                                                        </li>
-                                                                        <li class="has-megamenu menu-item-has-children">
-                                                                            <a href="agencies.html">Agencies</a>
-                                                                            <div class="megamenu" style="background-image: url('img/menu-bg.png');">
-                                                                                <div class="megamenu-row">
-                                                                                    <div class="col4">
-                                                                                        <ul>
-                                                                                            <li class="megamenu-item-info">
-                                                                                                <h5 class="megamenu-item-info-title">HHS Agencies</h5>
-                                                                                                <p class="megamenu-item-info-text"> </p>
-                                                                                            </li>
+            /**** d3 double bar chart*/
+            .chart {
+             margin: 100px 0 100px 0;
+           }
+           .chart .right {
+            stroke: white;
+            fill: #B71C1C;
+          }
+          .chart .left {
+            stroke: white;
+            fill: #0D47A1;
+          }
+          .chart rect:hover {
+            fill: #757575;
+          }
+          .chart text {
+            fill: black;
+          }
+          .chart text.name {
+            fill: black;
+          }
+          .chart text.title {
+            fill: black;
+          }
 
-                                                                                            <li>
-                                                                                                <a href="agencies.html#ACF">ACF<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <a href="agencies.html#ACL">ACL<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <a href="agencies.html#AHRQ">AHRQ<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <a href="agencies.html#ASPE">ASPE<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
-
-                                                                                            <li>
-                                                                                                <a href="agencies.html#ASPR">ASPR<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
-
-                                                                                            <li>
-                                                                                                <a href="agencies.html#CDC">CDC<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
-
-                                                                                            <li>
-                                                                                                <a href="agencies.html#CMS">CMS<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
-
-                                                                                            <li>
-                                                                                                <a href="agencies.html#FDA">FDA<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
-                                                                                        </div>
-                                                                                        <div class="col4">
-                                                                                            <ul>
-                                                                                                <li class="megamenu-item-info">
-                                                                                                    <h5 class="megamenu-item-info-title"> </h5>
-                                                                                                    <p class="megamenu-item-info-text"> </p>
-                                                                                                </li>
+          .toolTip {
+            background-color: rgba(255, 255, 255, 0.9);
+            height: 150px;
+            border: 2px solid black;
+          width: 300px;
+          /*bottom: 0;
+          /*left: -125px;*/
+          font-size: 12px;
+          line-height: 16px;
+          padding: 10px;
+          border-radius: 3px;
+          color: #000;
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+          -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+          border: 1px solid rgba(200, 200, 200, 0.85);
+          text-align: center;
+        }
+        .doubleBarChartCont {
+         text-align: center;
+         align-content: center;
+         margin-right: 150px;
+       }
+       .fileNames {
+         color: #0066FF;
+         font-size: 24px;
+         text-align:center;
+         margin: 10px;
+       } 
+       .activityTypeTitle {
+        font-size: 20px;
+        color: orange;
+       }
 
 
-                                                                                                <li>
-                                                                                                    <a href="agencies.html#HRSA">HRSA<i class="taggsicon-right-arrow"></i></a>
-                                                                                                </li>
+     </style>  
+   </head>
+   <body class=" ">
+    <header class="header" id="site-header">
+      <div class="container">
+        <div class="header-content-wrapper">
+          <div class="logo">
+            <a href="index.html" class="full-block-link"></a>
+            <img src="img/logo.png" alt="HHSTAGGS">
+            <div class="logo-text">
+              <div class="logo-title">TAGGS</div>
+              <div class="logo-sub-title">Annual Report 2016</div>
+            </div>
+          </div>
+          <nav id="primary-menu" class="primary-menu">
+            <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+              <span class="mob-menu--title">Menu</span>
+              <span id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+                <svg width="1000px" height="1000px">
+                  <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                  <path id="pathE" d="M 300 500 L 700 500"></path>
+                  <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                </svg>
+              </span>
+            </a>
+            <ul class="primary-menu-menu">
+              <li class="menu-item-has-children">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="awards.html" class="blue">Awards</a>
+              </li>
+              <li class="has-megamenu menu-item-has-children">
+                <a href="agencies.html">Agencies</a>
+                <div class="megamenu" style="background-image: url('img/menu-bg.png');">
+                  <div class="megamenu-row">
+                    <div class="col4">
+                      <ul>
+                        <li class="megamenu-item-info">
+                          <h5 class="megamenu-item-info-title">HHS Agencies</h5>
+                          <p class="megamenu-item-info-text"> </p>
+                        </li>
 
-                                                                                                <li>
-                                                                                                    <a href="agencies.html#IHS">IHS<i class="taggsicon-right-arrow"></i></a>
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    <a href="agencies.html#NIH">NIH<i class="taggsicon-right-arrow"></i></a>
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    <a href="agencies.html#OASH">OASH<i class="taggsicon-right-arrow"></i></a>
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    <a href="agencies.html#OGA">OGA<i class="taggsicon-right-arrow"></i></a>
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    <a href="agencies.html#ONC">ONC<i class="taggsicon-right-arrow"></i></a>
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    <a href="agencies.html#SAMHSA">SAMHSA<i class="taggsicon-right-arrow"></i></a>
-                                                                                                </li>
-                                                                                            </ul>
-                                                                                        </div>
-                                                                                        <div class="col3">
-                                                                                            <ul>
-                                                                                                <li>
-                                                                                                    <div class="google-logo">
-                                                                                                        <img src="img/logo.png" alt="taggs">
-                                                                                                    </div>
-                                                                                                    <p class="google-text">HHS’ Tracking Accountability in Government Grants 
-                                                                                                        System (TAGGS) website provides access to detailed information on government grants
-                                                                                                        awarded.
-                                                                                                    </p>
-                                                                                                </li>
-                                                                                            </ul>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li class="">
-                                                                                <a href="#">Download</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </nav>
-                                                                    <div class="user-menu open-overlay">
-                                                                        <a href="#" class="user-menu-content  js-open-aside">
-                                                                            <span></span>
-                                                                            <span></span>
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </header>
-                                                        <div class="mCustomScrollbar" data-mcs-theme="dark">
-                                                            <div class="popup right-menu">
-                                                                <div class="right-menu-wrap">
-                                                                    <div class="us7er-menu-close js-close-aside">
-                                                                        <a href="#" class="user-menu-content  js-clode-aside">
-                                                                            <span></span>
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="logo">
-                                                                        <a href="index.html" class="full-block-link"></a>
-                                                                        <img src="img/logo.png" alt="HHSTAGGS">
-                                                                        <div class="logo-text">
-                                                                            <div class="logo-title">HHS TAGGS</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="widget ">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="content-wrapper">
-                                                            <section class="height-100 taggs-post imagebg cover cover-3" data-overlay="8">
-                                                                <div class="background-image-holder" style="background: url(&quot;img/hero952.jpg&quot;); opacity: 1;">
-                                                                    <img alt="image" src="img/hero952.jpg">
-                                                                </div>
-                                                                <div class="container pos-absolute pos-bottom text-center-xs">
-                                                                    <div class="row">
-                                                                        <div class="col-sm-6">
-                                                                            <img class="logo" alt="" src="img/taggslogoallwhite2.png">
-                                                                            <p class="lead">
-                                                                                Health and Human Services 
-                                                                                <br> AWARDS
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </section>
-                                                            <div class="container">
-                                                                <div class="row medium-padding120">
-                                                                    <div class="col-lg-12">
-                                                                        <div class="row mb30">
-                                                                            <div class="col-lg-12">
-                                                                                <h5>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam
-                                                                                    processus dynamicus, qui sequitur mutationem consuetudium lectorum.
-                                                                                </h5>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                                                <ul class="list list--secondary">
-                                                                                    <li>
-                                                                                        <i class="taggsicon-check"></i>
-                                                                                        <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                                                                                            euismod tincidunt ut laoreet dolore wisi enim ad minim veniam.
-                                                                                        </a>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                                                <ul class="list list--secondary">
-                                                                                    <li>
-                                                                                        <i class="taggsicon-check"></i>
-                                                                                        <a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum, anteposuerit
-                                                                                            litterarum formas duis dolore te feugait nulla facilisi.
-                                                                                        </a>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div id='map'></div>
-                                                            <script>
-                                                                mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw';
-                                                                var map = new mapboxgl.Map({
-                                                                    container: 'map',
-                                                                    style: 'mapbox://styles/mapbox/light-v9',
-                                                                    center: [-98, 38.88],
-                                                                    minZoom: 1,
-                                                                    zoom: 2
-                                                                });
+                        <li>
+                          <a href="agencies.html#ACF">ACF<i class="taggsicon-right-arrow"></i></a>
+                        </li>
+                        <li>
+                          <a href="agencies.html#ACL">ACL<i class="taggsicon-right-arrow"></i></a>
+                        </li>
+                        <li>
+                          <a href="agencies.html#AHRQ">AHRQ<i class="taggsicon-right-arrow"></i></a>
+                        </li>
+                        <li>
+                          <a href="agencies.html#ASPE">ASPE<i class="taggsicon-right-arrow"></i></a>
+                        </li>
 
-                                                                var zoomThreshold = 6;
+                        <li>
+                          <a href="agencies.html#ASPR">ASPR<i class="taggsicon-right-arrow"></i></a>
+                        </li>
 
-                                                                map.addControl(new mapboxgl.NavigationControl());
+                        <li>
+                          <a href="agencies.html#CDC">CDC<i class="taggsicon-right-arrow"></i></a>
+                        </li>
 
-                                                                map.on('load', function () {
+                        <li>
+                          <a href="agencies.html#CMS">CMS<i class="taggsicon-right-arrow"></i></a>
+                        </li>
+
+                        <li>
+                          <a href="agencies.html#FDA">FDA<i class="taggsicon-right-arrow"></i></a>
+                        </li>
+                      </div>
+                      <div class="col4">
+                        <ul>
+                          <li class="megamenu-item-info">
+                            <h5 class="megamenu-item-info-title"> </h5>
+                            <p class="megamenu-item-info-text"> </p>
+                          </li>
+
+
+                          <li>
+                            <a href="agencies.html#HRSA">HRSA<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+
+                          <li>
+                            <a href="agencies.html#IHS">IHS<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                          <li>
+                            <a href="agencies.html#NIH">NIH<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                          <li>
+                            <a href="agencies.html#OASH">OASH<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                          <li>
+                            <a href="agencies.html#OGA">OGA<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                          <li>
+                            <a href="agencies.html#ONC">ONC<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                          <li>
+                            <a href="agencies.html#SAMHSA">SAMHSA<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col3">
+                        <ul>
+                          <li>
+                            <div class="google-logo">
+                              <img src="img/logo.png" alt="taggs">
+                            </div>
+                            <p class="google-text">HHS’ Tracking Accountability in Government Grants 
+                              System (TAGGS) website provides access to detailed information on government grants
+                              awarded.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <a href="#">Download</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="user-menu open-overlay">
+              <a href="#" class="user-menu-content  js-open-aside">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="mCustomScrollbar" data-mcs-theme="dark">
+        <div class="popup right-menu">
+          <div class="right-menu-wrap">
+            <div class="us7er-menu-close js-close-aside">
+              <a href="#" class="user-menu-content  js-clode-aside">
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+            <div class="logo">
+              <a href="index.html" class="full-block-link"></a>
+              <img src="img/logo.png" alt="HHSTAGGS">
+              <div class="logo-text">
+                <div class="logo-title">HHS TAGGS</div>
+              </div>
+            </div>
+          </div>
+          <div class="widget ">
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <section class="height-100 taggs-post imagebg cover cover-3" data-overlay="8">
+          <div class="background-image-holder" style="background: url(&quot;img/hero952.jpg&quot;); opacity: 1;">
+            <img alt="image" src="img/hero952.jpg">
+          </div>
+          <div class="container pos-absolute pos-bottom text-center-xs">
+            <div class="row">
+              <div class="col-sm-6">
+                <img class="logo" alt="" src="img/taggslogoallwhite2.png">
+                <p class="lead">
+                  Health and Human Services 
+                  <br> AWARDS
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="container">
+          <div class="row medium-padding120">
+            <div class="col-lg-12">
+              <div class="row mb30">
+                <div class="col-lg-12">
+                  <h5>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam
+                    processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+                  </h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <ul class="list list--secondary">
+                    <li>
+                      <i class="taggsicon-check"></i>
+                      <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore wisi enim ad minim veniam.
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <ul class="list list--secondary">
+                    <li>
+                      <i class="taggsicon-check"></i>
+                      <a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum, anteposuerit
+                        litterarum formas duis dolore te feugait nulla facilisi.
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id='map'></div>
+        <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw';
+          var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/light-v9',
+            center: [-98, 38.88],
+            minZoom: 1,
+            zoom: 2
+          });
+
+          var zoomThreshold = 6;
+
+          map.addControl(new mapboxgl.NavigationControl());
+
+          map.on('load', function () {
 
         //map.addSource('population', {
         //    'type': 'vector',
@@ -738,35 +756,35 @@ discretionaryChart.render();
     //        data: 'http://localhost/MapBoxProject_Filter/geoJSONFiles/WorldMapHHS.geojson'
     //});
     map.addSource('HHSWorld', {
-        type: 'vector',
-        url: 'mapbox://gcline001.cixgd5uuv001m2ow3vn8p5szn-87bi9'
+      type: 'vector',
+      url: 'mapbox://gcline001.cixgd5uuv001m2ow3vn8p5szn-87bi9'
     });
     map.addLayer({
-        'id': 'worldAward',
-        'source': 'HHSWorld',
-        'source-layer': 'WorldMapHHS_1',
-        'maxzoom': zoomThreshold,
-        'type': 'fill',
-        'filter': ['==', 'class', 'country'],
-        'paint': {
-            'fill-color': {
-                property: 'awardDollars-hhs',
-                stops: [
-                [0, '#c9f1ff'],
-                [500000, '#C6DBEF'],
-                [750000, '#9ECAE1'],
-                [1000000, '#6BAED6'],
-                [2500000, '#2171B5'],
-                [50000000, '#08519C'],
-                [75000000, '#00c6d7'],
-                [10000000000, '#08306B'],
-                [25000000000, '#07153f']
-                ]
-            },
-            'fill-opacity': 0.92
-        }
+      'id': 'worldAward',
+      'source': 'HHSWorld',
+      'source-layer': 'WorldMapHHS_1',
+      'maxzoom': zoomThreshold,
+      'type': 'fill',
+      'filter': ['==', 'class', 'country'],
+      'paint': {
+        'fill-color': {
+          property: 'awardDollars-hhs',
+          stops: [
+          [0, '#c9f1ff'],
+          [500000, '#C6DBEF'],
+          [750000, '#9ECAE1'],
+          [1000000, '#6BAED6'],
+          [2500000, '#2171B5'],
+          [50000000, '#08519C'],
+          [75000000, '#00c6d7'],
+          [10000000000, '#08306B'],
+          [25000000000, '#07153f']
+          ]
+        },
+        'fill-opacity': 0.92
+      }
     });
-});
+  });
     //var stateLegendEl = document.getElementById('state-legend');
     //var countyLegendEl = document.getElementById('county-legend');
     //map.on('zoom', function () {
@@ -778,85 +796,90 @@ discretionaryChart.render();
     //        countyLegendEl.style.display = 'none';
     //    }
     //});
-</script>
-<div class="container-fluid">
+  </script>
+  <div class="container-fluid">
     <div class="row">
-        <div style="background: #3cb878; background-size: cover; padding:150px 15px; position: relative;">
-            <div style="max-width: 790px; text-align: center; margin: 0 auto; position: relative; z-index: 5;">
-                <div class="heading">
-                    <h4 class="heading-title" style="font-size: 48px; color: #fff; margin-bottom: 20px;">TAGGS AWARDS</h4>
-                    <div class="heading-line">
-                        <span class="short-line"></span>
-                        <span class="long-line"></span>
-                    </div>
-                    <p class="heading-text" style="color: #fff;">
-                       In FY 2016, the Department of Health and Human Services administered more grant dollars than all other federal agencies combined. 
-                       HHS awards formula/block, entitlement, discretionary grant awards and cooperative agreements. HHS awarded approximately $411 billion
-                       in grants for FY 2016. This included $50 billion in discretionary awards and $361 billion in formula/block and entitlement awards. 
-                   </p>
-                   <p class="heading-text" style="color: #fff;">
-                       CMS, which administers the Medicare and Medicaid Programs, awarded 77%, or $316 billion of the total HHS grants fund; however, 
-                       these awards are less than 2% of the total number of grants awarded by HHS. 
-                   </p>
-                   <p class="heading-text" style="color: #fff;">
-                       ACF had the second highest percentage of total HHS grant funds awarded at over 12%, or $50 billion. This represented about 10% 
-                       of the total number of grants awarded. NIH, which awarded about 5%, or $22 billion, of the total HHS grant funds, accounted for 
-                       65% of the total number of HHS grants.
-                   </p>
-               </div>
-           </div>
+      <div style="background: #3cb878; background-size: cover; padding:150px 15px; position: relative;">
+        <div style="max-width: 790px; text-align: center; margin: 0 auto; position: relative; z-index: 5;">
+          <div class="heading">
+            <h4 class="heading-title" style="font-size: 48px; color: #fff; margin-bottom: 20px;">TAGGS AWARDS</h4>
+            <div class="heading-line">
+              <span class="short-line"></span>
+              <span class="long-line"></span>
+            </div>
+            <p class="heading-text" style="color: #fff;">
+             In FY 2016, the Department of Health and Human Services administered more grant dollars than all other federal agencies combined. 
+             HHS awards formula/block, entitlement, discretionary grant awards and cooperative agreements. HHS awarded approximately $411 billion
+             in grants for FY 2016. This included $50 billion in discretionary awards and $361 billion in formula/block and entitlement awards. 
+           </p>
+           <p class="heading-text" style="color: #fff;">
+             CMS, which administers the Medicare and Medicaid Programs, awarded 77%, or $316 billion of the total HHS grants fund; however, 
+             these awards are less than 2% of the total number of grants awarded by HHS. 
+           </p>
+           <p class="heading-text" style="color: #fff;">
+             ACF had the second highest percentage of total HHS grant funds awarded at over 12%, or $50 billion. This represented about 10% 
+             of the total number of grants awarded. NIH, which awarded about 5%, or $22 billion, of the total HHS grant funds, accounted for 
+             65% of the total number of HHS grants.
+           </p>
+         </div>
        </div>
+     </div>
    </div>
+ </div>
+ <div class="container-fluid">
+  <div class="row">
+    <div style="background: #3F3F3F; background-size: cover; padding:150px 15px; position: relative;">
+      <div style="max-width: 790px; text-align: center; margin: 0 auto; position: relative; z-index: 5;">
+        <div class="heading">
+          <h4 class="heading-title" style="font-size: 48px; color: #fff; margin-bottom: 20px;">TAGGS AWARDS</h4>
+          <div class="heading-line">
+            <span class="short-line"></span>
+            <span class="long-line"></span>
+          </div>
+          <p class="heading-text" style="color: #fff;">
+           In FY 2016, the Department of Health and Human Services administered more grant dollars than all other federal agencies combined. 
+           HHS awards formula/block, entitlement, discretionary grant awards and cooperative agreements. HHS awarded approximately $411 billion
+           in grants for FY 2016. This included $50 billion in discretionary awards and $361 billion in formula/block and entitlement awards. 
+         </p>
+         <p class="heading-text" style="color: #fff;">
+           CMS, which administers the Medicare and Medicaid Programs, awarded 77%, or $316 billion of the total HHS grants fund; however, 
+           these awards are less than 2% of the total number of grants awarded by HHS. 
+         </p>
+         <p class="heading-text" style="color: #fff;">
+           ACF had the second highest percentage of total HHS grant funds awarded at over 12%, or $50 billion. This represented about 10% 
+           of the total number of grants awarded. NIH, which awarded about 5%, or $22 billion, of the total HHS grant funds, accounted for 
+           65% of the total number of HHS grants.
+         </p>
+       </div>
+     </div>
+     <div class="overlay"></div>
+   </div>
+ </div>
 </div>
 <div class="container-fluid">
-    <div class="row">
-        <div style="background: #3F3F3F; background-size: cover; padding:150px 15px; position: relative;">
-            <div style="max-width: 790px; text-align: center; margin: 0 auto; position: relative; z-index: 5;">
-                <div class="heading">
-                    <h4 class="heading-title" style="font-size: 48px; color: #fff; margin-bottom: 20px;">TAGGS AWARDS</h4>
-                    <div class="heading-line">
-                        <span class="short-line"></span>
-                        <span class="long-line"></span>
-                    </div>
-                    <p class="heading-text" style="color: #fff;">
-                       In FY 2016, the Department of Health and Human Services administered more grant dollars than all other federal agencies combined. 
-                       HHS awards formula/block, entitlement, discretionary grant awards and cooperative agreements. HHS awarded approximately $411 billion
-                       in grants for FY 2016. This included $50 billion in discretionary awards and $361 billion in formula/block and entitlement awards. 
-                   </p>
-                   <p class="heading-text" style="color: #fff;">
-                       CMS, which administers the Medicare and Medicaid Programs, awarded 77%, or $316 billion of the total HHS grants fund; however, 
-                       these awards are less than 2% of the total number of grants awarded by HHS. 
-                   </p>
-                   <p class="heading-text" style="color: #fff;">
-                       ACF had the second highest percentage of total HHS grant funds awarded at over 12%, or $50 billion. This represented about 10% 
-                       of the total number of grants awarded. NIH, which awarded about 5%, or $22 billion, of the total HHS grant funds, accounted for 
-                       65% of the total number of HHS grants.
-                   </p>
-               </div>
-           </div>
-           <div class="overlay"></div>
-       </div>
-   </div>
-</div>
-<div class="container-fluid">
-    <a href="">This will be a link to a table view!</a>
-    <div class="doubleBarChartCont"></div>
+  <a href="">This will be a link to a table view!</a>
+  <div class="doubleBarChartCont"></div>
 </div>
 <script aria-label="Top 5 CFDA horizontal bar chart showing Award Amount and Number of Awards" type="text/javascript">
+
+
+// *****  d3 HORIZONTAL BAR CHART *****
+// *****                          *****
+
 // **** Formats K, M, B ****
 Number.prototype.toReducedFormat = function(){
  if (this >= 1000000000) {
    return (this / 1000000000).toFixed(3) + "B"
-}
-else if (this >= 1000000) {
+ }
+ else if (this >= 1000000) {
    return (this / 1000000).toFixed(3) + "M"
-}
-else if (this >= 1000) {
+ }
+ else if (this >= 1000) {
    return (this / 1000).toFixed(3)+ "K"
+ }
+ return this;
 }
-return this;
-}
-// var format = d3.format(".2s"); 
+
 var labelArea = 160;
 var chart,
 width = 600,
@@ -875,78 +898,78 @@ var y = d3.scale.ordinal()
 
 function render(data, activityType) {
 
-    var ANArray = [];
-    data.forEach(addToANArray)
+  var ANArray = [];
+  data.forEach(addToANArray)
 
-    function addToANArray(data){
-        ANArray.push(data["award.number"])
-        
-    }
-    var ANmax = Math.max.apply(null, ANArray)
+  function addToANArray(data){
+    ANArray.push(data["award.number"])
 
-    var AAArray = [];
-    data.forEach(addToAAArray)
+  }
+  var ANmax = Math.max.apply(null, ANArray)
 
-    function addToAAArray(data){
-        AAArray.push(data["award.amount"])
+  var AAArray = [];
+  data.forEach(addToAAArray)
 
-    }
-    var AAmax = Math.max.apply(null, AAArray);
+  function addToAAArray(data){
+    AAArray.push(data["award.amount"])
+
+  }
+  var AAmax = Math.max.apply(null, AAArray);
 
 
-    var chart = d3.select("div.doubleBarChartCont")
-    .append("div").text(activityType)
-    .append('svg')
-    .attr('class', 'chart')
-    .attr('width', labelArea + width + width )
-    .attr('height', height);   
-    xFrom.domain([0, AAmax]);
-    xTo.domain([0, ANmax]);
-    y.domain(data.map(function (d) {
-        return d.programs;
-    }));
-    var yPosByIndex = function (d) {
-        return y(d.programs);
-    };
-    chart.selectAll("rect.left")
-    .data(data)
-    .enter().append("rect")
-    .on("mouseover", function(d){return tooltip.style("visibility", "visible").html(d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");})
-    .on("focus", function(d){return tooltip.style("visibility", "visible").html(d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");})
-    .on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
-    .on("mouseout", function(){return tooltip.style("visibility", "hidden");})
-    .attr("x", function (d) {
-        return width - xFrom(d[lCol]);
-    })
-    .attr("y", yPosByIndex)
-    .attr("class", "left")
-    .attr("width", function (d) {
-       if (xFrom(d[lCol]) < 2) return 2;
-       return xFrom(d[lCol]);
-   })
-    .attr("height", y.rangeBand())
-    .attr("tabindex", "0");
-    chart.selectAll("text.leftscore")
-    .data(data)
-    .enter().append("text")
-    .attr("x", function (d) {
-        return width - xFrom(d[lCol])-70;
-    })
-    .attr("y", function (d) {
-        return y(d.programs) + y.rangeBand() / 2;
-    })
-    .attr("dx", "20")
-    .attr("dy", ".36em")
-    .attr("text-anchor", "end")
-    .attr('class', 'leftscore')
-    .text(function(d){return d['formattedAwardAmount'];})
+  var chart = d3.select("div.doubleBarChartCont")
+  .append("div").text(activityType)
+  .append('svg')
+  .attr('class', 'chart')
+  .attr('width', labelArea + width + width )
+  .attr('height', height);   
+  xFrom.domain([0, AAmax]);
+  xTo.domain([0, ANmax]);
+  y.domain(data.map(function (d) {
+    return d.programs;
+  }));
+  var yPosByIndex = function (d) {
+    return y(d.programs);
+  };
+  chart.selectAll("rect.left")
+  .data(data)
+  .enter().append("rect")
+  .on("mouseover", function(d){return tooltip.style("visibility", "visible").html(d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");})
+  .on("focus", function(d){return tooltip.style("visibility", "visible").html(d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");})
+  .on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
+  .on("mouseout", function(){return tooltip.style("visibility", "hidden");})
+  .attr("x", function (d) {
+    return width - xFrom(d[lCol]);
+  })
+  .attr("y", yPosByIndex)
+  .attr("class", "left")
+  .attr("width", function (d) {
+   if (xFrom(d[lCol]) < 2) return 2;
+   return xFrom(d[lCol]);
+ })
+  .attr("height", y.rangeBand())
+  .attr("tabindex", "0");
+  chart.selectAll("text.leftscore")
+  .data(data)
+  .enter().append("text")
+  .attr("x", function (d) {
+    return width - xFrom(d[lCol])-70;
+  })
+  .attr("y", function (d) {
+    return y(d.programs) + y.rangeBand() / 2;
+  })
+  .attr("dx", "20")
+  .attr("dy", ".36em")
+  .attr("text-anchor", "end")
+  .attr('class', 'leftscore')
+  .text(function(d){return d['formattedAwardAmount'];})
     // .attr("tabindex", "0");
     chart.selectAll("text.name")
     .data(data)
     .enter().append("text")
     .attr("x", (labelArea / 2) + width)
     .attr("y", function (d) {
-        return y(d.programs) + y.rangeBand() / 2;
+      return y(d.programs) + y.rangeBand() / 2;
     })
     .attr("dy", ".20em")
     .attr("text-anchor", "middle")
@@ -964,7 +987,7 @@ function render(data, activityType) {
     .on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
     .on("mouseout", function(){return tooltip.style("visibility", "hidden");})
     .attr("width", function (d) {
-        return xTo(d[rCol]);
+      return xTo(d[rCol]);
     })
     .attr("height", y.rangeBand())
     .attr("tabindex", "0");
@@ -972,10 +995,10 @@ function render(data, activityType) {
     .data(data)
     .enter().append("text")
     .attr("x", function (d) {
-        return xTo(d[rCol]) + rightOffset+70;
+      return xTo(d[rCol]) + rightOffset+70;
     })
     .attr("y", function (d) {
-        return y(d.programs) + y.rangeBand() / 2;
+      return y(d.programs) + y.rangeBand() / 2;
     })
     .attr("dx", -5)
     .attr("dy", ".36em")
@@ -987,23 +1010,23 @@ function render(data, activityType) {
     chart.append("text").attr("x",width/3+rightOffset).attr("y", 12).attr("class","title").text("Award Number");
     chart.append("text").attr("x",width+labelArea/3).attr("y", 12).attr("class","title").text("Programs");
 
-}
-var fileNames = ["training.json", "research.json", "services.json", "other.json"];
-var activityTypes = ["Training", "Research", "Services", "Other"];
+  }
+  var fileNames = ["training.json", "research.json", "services.json", "other.json"];
+  var activityTypes = ["Training", "Research", "Services", "Other"];
 
-fileNames.forEach(function(fileName, i){
-	var activityType = activityTypes[i]
-    d3.json(fileName, function(error, data) {
-        if (error) return console.warn(error);
-        data.forEach(function(d){
-            d["award.number"] = +d["award.number"];
-            d["award.amount"] = +d["award.amount"];
-            d.formattedAwardAmount = d["award.amount"].toReducedFormat();
-        })
-        
-        render(data, activityType);
+  fileNames.forEach(function(fileName, i){
+   var activityType = activityTypes[i]
+   d3.json(fileName, function(error, data) {
+    if (error) return console.warn(error);
+    data.forEach(function(d){
+      d["award.number"] = +d["award.number"];
+      d["award.amount"] = +d["award.amount"];
+      d.formattedAwardAmount = d["award.amount"].toReducedFormat();
     })
-})
+
+    render(data, activityType);
+  })
+ })
 // ******** tool tip ********
 var tooltip = d3.select("div.doubleBarChartCont")
 .append("div")
@@ -1011,129 +1034,130 @@ var tooltip = d3.select("div.doubleBarChartCont")
 .style("z-index", "10")
 .attr("class", "toolTip")
 .style("visibility", "hidden") 
+// ***********
 </script>
 <div class="container-fluid">
-    <div class="row">
-        <div style="background: #fcb03b; background-size: cover; padding:150px 15px; position: relative;">
-            <div style="max-width: 790px; text-align: center; margin: 0 auto; position: relative; z-index: 5;">
-                <div class="heading">
-                    <h4 class="heading-title" style="font-size: 48px; color: #fff; margin-bottom: 20px;">TAGGS AWARDS</h4>
-                    <div class="heading-line">
-                        <span class="short-line"></span>
-                        <span class="long-line"></span>
-                    </div>
-                    <p class="heading-text" style="color: #fff;">
-                       Based on the HHS mission, grant program descriptions, and the CFDA guidelines, the TAGGS system uses 16
-                       activity types to characterize the nature of the grant being funded. For the purpose of this report, these
-                       16 have been grouped into four major activity types (Research, Services, Training, and Other). HHS OPDIVs
-                       self-select the activity type for awards based on the primary purpose of the grant. 
-                   </p>
-               </div>
-           </div>
+  <div class="row">
+    <div style="background: #fcb03b; background-size: cover; padding:150px 15px; position: relative;">
+      <div style="max-width: 790px; text-align: center; margin: 0 auto; position: relative; z-index: 5;">
+        <div class="heading">
+          <h4 class="heading-title" style="font-size: 48px; color: #fff; margin-bottom: 20px;">TAGGS AWARDS</h4>
+          <div class="heading-line">
+            <span class="short-line"></span>
+            <span class="long-line"></span>
+          </div>
+          <p class="heading-text" style="color: #fff;">
+           Based on the HHS mission, grant program descriptions, and the CFDA guidelines, the TAGGS system uses 16
+           activity types to characterize the nature of the grant being funded. For the purpose of this report, these
+           16 have been grouped into four major activity types (Research, Services, Training, and Other). HHS OPDIVs
+           self-select the activity type for awards based on the primary purpose of the grant. 
+         </p>
        </div>
+     </div>
    </div>
+ </div>
 </div>
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="opdiv-tables medium-padding120 bg-border-color contacts-shadow">
-            <div class="container">
+  <div class="row">
+    <div class="opdiv-tables medium-padding120 bg-border-color contacts-shadow">
+      <div class="container">
 
-                <div id="MLPChartContainer">Discrectionary Awards By Type</div>
+        <div id="MLPChartContainer">Discrectionary Awards By Type</div>
 
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 
 
 <div class="container">
-    <div class="row medium-padding120">
-        <div class="col-lg-12">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <ul class="list list--secondary">
-                        <li>
-                         <div class="hhs-text">
-                            Discretionary grants are those that permit the Federal Government, 
-                            according to specific authorizing legislation, to exercise judgment,
-                            or “discretion” in selecting the applicant/recipient organization, 
-                            through a competitive grant process.
-                        </div>
-                    </li>
-                </ul>
+  <div class="row medium-padding120">
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <ul class="list list--secondary">
+            <li>
+             <div class="hhs-text">
+              Discretionary grants are those that permit the Federal Government, 
+              according to specific authorizing legislation, to exercise judgment,
+              or “discretion” in selecting the applicant/recipient organization, 
+              through a competitive grant process.
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <ul class="list list--secondary">
-                    <li>
-                      <div class="hhs-text">
-                        Discretionary grants commonly support activities such as demonstration,
-                        research, training, service, and construction projects or programs. 
-                        Discretionary grants are sometimes referred to by the CFDA term “Project
-                        Grants.” 
-                    </div> 
-                </li>
-            </ul>
-        </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <ul class="list list--secondary">
+          <li>
+            <div class="hhs-text">
+              Discretionary grants commonly support activities such as demonstration,
+              research, training, service, and construction projects or programs. 
+              Discretionary grants are sometimes referred to by the CFDA term “Project
+              Grants.” 
+            </div> 
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
+  </div>
 </div>
 </div>
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="opdiv-tables medium-padding120 bg-border-color contacts-shadow">
-            <div class="container-fluid">
+  <div class="row">
+    <div class="opdiv-tables medium-padding120 bg-border-color contacts-shadow">
+      <div class="container-fluid">
 
 
-                <div>
-                    <div style= "width:150px; margin:20px auto;">
-                      <!-- Build your select: -->
-                      <select id="multiSelectDrop" multiple="multiple">
-                        <div class="container-fluid">
-                          <div class="row">
+        <div>
+          <div style= "width:150px; margin:20px auto;">
+            <!-- Build your select: -->
+            <select id="multiSelectDrop" multiple="multiple">
+              <div class="container-fluid">
+                <div class="row">
 
-                           <option class="selectOpt" selected="selected" value="HHSgrantHist">HHS</option>
-                           <option class="selectOpt" value="ACFgrantHist">ACF</option>
-                           <option class="selectOpt" value="ACLgrantHist">ACL</option>
-                           <option class="selectOpt" value="AHRQgrantHist">AHRQ</option>
-                           <option class="selectOpt" value="ASPEgrantHist">ASPE</option>
-                           <option class="selectOpt" value="ASPRgrantHist">ASPR</option>
-                           <option class="selectOpt" value="CDCgrantHist">CDC</option>
-                           <option class="selectOpt" value="CMSgrantHist">CMS</option>
-                           <option class="selectOpt" value="FDAgrantHist">FDA</option>
-                           <option class="selectOpt" value="HRSAgrantHist">HRSA</option>
-                           <option class="selectOpt" value="IHSgrantHist">IHS</option>
-                           <option class="selectOpt" value="NIHgrantHist">NIH</option>
-                           <option class="selectOpt" value="OASHgrantHist">OASH</option>
-                           <option class="selectOpt" value="OGAgrantHist">OGA</option>
-                           <option class="selectOpt" value="ONCgrantHist">ONC</option>
-                           <option class="selectOpt" value="SAMHSAgrantHist">SAMHSA</option>
-
-
-                       </div>
-                   </div>
-               </select>
-           </div>
+                 <option class="selectOpt" selected="selected" value="HHSgrantHist">HHS</option>
+                 <option class="selectOpt" value="ACFgrantHist">ACF</option>
+                 <option class="selectOpt" value="ACLgrantHist">ACL</option>
+                 <option class="selectOpt" value="AHRQgrantHist">AHRQ</option>
+                 <option class="selectOpt" value="ASPEgrantHist">ASPE</option>
+                 <option class="selectOpt" value="ASPRgrantHist">ASPR</option>
+                 <option class="selectOpt" value="CDCgrantHist">CDC</option>
+                 <option class="selectOpt" value="CMSgrantHist">CMS</option>
+                 <option class="selectOpt" value="FDAgrantHist">FDA</option>
+                 <option class="selectOpt" value="HRSAgrantHist">HRSA</option>
+                 <option class="selectOpt" value="IHSgrantHist">IHS</option>
+                 <option class="selectOpt" value="NIHgrantHist">NIH</option>
+                 <option class="selectOpt" value="OASHgrantHist">OASH</option>
+                 <option class="selectOpt" value="OGAgrantHist">OGA</option>
+                 <option class="selectOpt" value="ONCgrantHist">ONC</option>
+                 <option class="selectOpt" value="SAMHSAgrantHist">SAMHSA</option>
 
 
-           <div id="HHSgrantHist"></div>
-           <div id="ACFgrantHist"></div>
-           <div id="ACLgrantHist"></div>
-           <div id="AHRQgrantHist"></div>
-           <div id="ASPEgrantHist"></div>
-           <div id="ASPRgrantHist"></div>
-           <div id="CDCgrantHist"></div>
-           <div id="CMSgrantHist"></div>
-           <div id="FDAgrantHist"></div>
-           <div id="HRSAgrantHist"></div>
-           <div id="IHSgrantHist"></div>
-           <div id="NIHgrantHist"></div>
-           <div id="OASHgrantHist"></div>
-           <div id="OGAgrantHist"></div>
-           <div id="ONCgrantHist"></div>
-           <div id="SAMHSAgrantHist"></div>
+               </div>
+             </div>
+           </select>
+         </div>
+
+
+         <div id="HHSgrantHist"></div>
+         <div id="ACFgrantHist"></div>
+         <div id="ACLgrantHist"></div>
+         <div id="AHRQgrantHist"></div>
+         <div id="ASPEgrantHist"></div>
+         <div id="ASPRgrantHist"></div>
+         <div id="CDCgrantHist"></div>
+         <div id="CMSgrantHist"></div>
+         <div id="FDAgrantHist"></div>
+         <div id="HRSAgrantHist"></div>
+         <div id="IHSgrantHist"></div>
+         <div id="NIHgrantHist"></div>
+         <div id="OASHgrantHist"></div>
+         <div id="OGAgrantHist"></div>
+         <div id="ONCgrantHist"></div>
+         <div id="SAMHSAgrantHist"></div>
 
        </div>
 
@@ -1141,302 +1165,302 @@ var tooltip = d3.select("div.doubleBarChartCont")
 
 
 
+     </div>
    </div>
-</div>
-</div>
+ </div>
 </div>
 
 
 
 </div>
 <footer class="footer" id="site-footer">
-    <div class="container">
-        <div class="row">
-            <div class="info">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pr90">
-                    <div class="heading">
-                        <h3 class="heading-title">HHS TAGGS</h3>
-                        <div class="heading-line">
-                            <span class="short-line"></span>
-                            <span class="long-line"></span>
-                        </div>
-                        <p class="heading-text">HHS’ Tracking Accountability in Government Grants
-                          System (TAGGS) website provides access to detailed descriptions of grants,
-                          loans, aggregated direct payments and other types of financial assistance
-                          awarded by the HHS Operating Divisions (OPDIVs) and the Office of the 
-                          Secretary Staff Divisions (STAFFDIVs).
-                      </p>
-                  </div>
-                  <div class="socials">
-                    <a href="https://www.facebook.com/HHS" class="social__item">
-                        <img src="svg/circle-facebook.svg" alt="facebook">
-                    </a>
-                    <a href="https://twitter.com/hhsgov" class="social__item">
-                        <img src="svg/twitter.svg" alt="twitter">
-                    </a>
-                    <a href="https://plus.google.com/+HHS" class="social__item">
-                        <img src="svg/google.svg" alt="google">
-                    </a>
-                    <a href="https://www.youtube.com/user/USGOVHHS" class="social__item">
-                        <img src="svg/youtube.svg" alt="youtube">
-                    </a>
-                    <a href="http://hhs.gov/rss" class="social__item">
-                        <img src="svg/rss.svg" alt="rss">
-                    </a>
-                </div>
+  <div class="container">
+    <div class="row">
+      <div class="info">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pr90">
+          <div class="heading">
+            <h3 class="heading-title">HHS TAGGS</h3>
+            <div class="heading-line">
+              <span class="short-line"></span>
+              <span class="long-line"></span>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="services">
-                    <div class="heading">
-                        <h3 class="heading-title">HHS Links</h3>
-                        <div class="heading-line">
-                            <span class="short-line"></span>
-                            <span class="long-line"></span>
-                        </div>
-                    </div>
-                    <ul class="list list--primary pl20">
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.hhs.gov/">HHS</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.hhs.gov/about/">About HHS</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.hhs.gov/about/orgchart/">HHS Org Chart</a>
-                        </li>											 
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.hhs.gov/about/foa/index.html">HHS Agencies</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.hhs.gov/about/programs/">Programs & Services</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.hhs.gov/grants/grants/index.html ">Grants & Funding</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.hhs.gov/Accessibility.html">Accessibility</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.health.gov/">Health.gov</a>
-                        </li>							
-                    </ul>
-                    <ul class="list list--primary">
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="https://www.cfda.gov/">CFDA.gov</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.data.gov/">Data.gov</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.usa.gov/">USA.gov</a>
-                        </li>							
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.grants.gov/web/grants/home.html">Grants.gov</a>
-                        </li>							
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="https://www.healthcare.gov/">HealthCare.gov</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.usaspending.gov/">USASpending.gov</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.whitehouse.gov/">The White House</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.access-board.gov/">U.S. Access Board</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.sam.gov">System for Awards Management</a>
-                        </li>							
-                    </ul> 
-                </div>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                <div class="services">
-                    <div class="heading">
-                        <h3 class="heading-title">HHS Divisions</h3>
-                        <div class="heading-line">
-                            <span class="short-line"></span>
-                            <span class="long-line"></span>
-                        </div>
-                    </div>
-                    <ul class="list list--primary">
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.hhs.gov/ash/index.html">Office of the Assistant Secretary for Health (ASH)</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.hhs.gov/about/">Office of the Assistant Secretary for Planning & Evaluation (ASPE)</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.hhs.gov/about/orgchart/">Office of the Assistant Secretary for Planning & Evaluation (ASPE)</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.hhs.gov/about/foa/index.html">Office of the Assistant Secretary for Preparedness & Response (ASPR)</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.hhs.gov/about/programs/">Office of the National Coordinator for Health Information Technology (ONC)</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.acf.hhs.gov/grants">Administration for Children & Families (ACF)</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.acl.gov/Funding_Opportunities/Index.aspx">Administration for Community Living (ACL)</a>
-                        </li>                        
-                    </ul>
-                    <ul class="list list--primary">
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.ahrq.gov/funding/index.html">Agency for Healthcare Research & Quality (AHRQ)</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.atsdr.cdc.gov/funding.html">Agency for Toxic Substances & Disease Registry (ATSDR)</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.cdc.gov/grants/index.html">Centers for Disease Control & Prevention (CDC)</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.cms.gov/cciio/resources/funding-opportunities/index.html">Centers for Medicare & Medicaid Services (CMS)</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.fda.gov/AboutFDA/CentersOffices/OfficeofMedicalProductsandTobacco/AbouttheCenterforTobaccoProducts/ucm292048.htm">Food & Drug Administration (FDA)</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.hrsa.gov/grants/index.html">Health Resources & Services Administration (HRSA)</a>
-                        </li>							                           
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.ihs.gov/dgm/">Indian Health Service (IHS)</a>
-                        </li>	
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://grants.nih.gov/grants/oer.htm">National Institutes of Health (NIH)</a>
-                        </li>	
-                        <li>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://www.samhsa.gov/grants">Substance Abuse & Mental Health Services Administration (SAMHSA)</a>
-                        </li>								
-                    </ul> 
-                </div>
-            </div>				
+            <p class="heading-text">HHS’ Tracking Accountability in Government Grants
+              System (TAGGS) website provides access to detailed descriptions of grants,
+              loans, aggregated direct payments and other types of financial assistance
+              awarded by the HHS Operating Divisions (OPDIVs) and the Office of the 
+              Secretary Staff Divisions (STAFFDIVs).
+            </p>
+          </div>
+          <div class="socials">
+            <a href="https://www.facebook.com/HHS" class="social__item">
+              <img src="svg/circle-facebook.svg" alt="facebook">
+            </a>
+            <a href="https://twitter.com/hhsgov" class="social__item">
+              <img src="svg/twitter.svg" alt="twitter">
+            </a>
+            <a href="https://plus.google.com/+HHS" class="social__item">
+              <img src="svg/google.svg" alt="google">
+            </a>
+            <a href="https://www.youtube.com/user/USGOVHHS" class="social__item">
+              <img src="svg/youtube.svg" alt="youtube">
+            </a>
+            <a href="http://hhs.gov/rss" class="social__item">
+              <img src="svg/rss.svg" alt="rss">
+            </a>
+          </div>
         </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="services">
+            <div class="heading">
+              <h3 class="heading-title">HHS Links</h3>
+              <div class="heading-line">
+                <span class="short-line"></span>
+                <span class="long-line"></span>
+              </div>
+            </div>
+            <ul class="list list--primary pl20">
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.hhs.gov/">HHS</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.hhs.gov/about/">About HHS</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.hhs.gov/about/orgchart/">HHS Org Chart</a>
+              </li>											 
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.hhs.gov/about/foa/index.html">HHS Agencies</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.hhs.gov/about/programs/">Programs & Services</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.hhs.gov/grants/grants/index.html ">Grants & Funding</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.hhs.gov/Accessibility.html">Accessibility</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.health.gov/">Health.gov</a>
+              </li>							
+            </ul>
+            <ul class="list list--primary">
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="https://www.cfda.gov/">CFDA.gov</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.data.gov/">Data.gov</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.usa.gov/">USA.gov</a>
+              </li>							
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.grants.gov/web/grants/home.html">Grants.gov</a>
+              </li>							
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="https://www.healthcare.gov/">HealthCare.gov</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.usaspending.gov/">USASpending.gov</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.whitehouse.gov/">The White House</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.access-board.gov/">U.S. Access Board</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.sam.gov">System for Awards Management</a>
+              </li>							
+            </ul> 
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+          <div class="services">
+            <div class="heading">
+              <h3 class="heading-title">HHS Divisions</h3>
+              <div class="heading-line">
+                <span class="short-line"></span>
+                <span class="long-line"></span>
+              </div>
+            </div>
+            <ul class="list list--primary">
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.hhs.gov/ash/index.html">Office of the Assistant Secretary for Health (ASH)</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.hhs.gov/about/">Office of the Assistant Secretary for Planning & Evaluation (ASPE)</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.hhs.gov/about/orgchart/">Office of the Assistant Secretary for Planning & Evaluation (ASPE)</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.hhs.gov/about/foa/index.html">Office of the Assistant Secretary for Preparedness & Response (ASPR)</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.hhs.gov/about/programs/">Office of the National Coordinator for Health Information Technology (ONC)</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.acf.hhs.gov/grants">Administration for Children & Families (ACF)</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.acl.gov/Funding_Opportunities/Index.aspx">Administration for Community Living (ACL)</a>
+              </li>                        
+            </ul>
+            <ul class="list list--primary">
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.ahrq.gov/funding/index.html">Agency for Healthcare Research & Quality (AHRQ)</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.atsdr.cdc.gov/funding.html">Agency for Toxic Substances & Disease Registry (ATSDR)</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.cdc.gov/grants/index.html">Centers for Disease Control & Prevention (CDC)</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.cms.gov/cciio/resources/funding-opportunities/index.html">Centers for Medicare & Medicaid Services (CMS)</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.fda.gov/AboutFDA/CentersOffices/OfficeofMedicalProductsandTobacco/AbouttheCenterforTobaccoProducts/ucm292048.htm">Food & Drug Administration (FDA)</a>
+              </li>
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.hrsa.gov/grants/index.html">Health Resources & Services Administration (HRSA)</a>
+              </li>							                           
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.ihs.gov/dgm/">Indian Health Service (IHS)</a>
+              </li>	
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://grants.nih.gov/grants/oer.htm">National Institutes of Health (NIH)</a>
+              </li>	
+              <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="http://www.samhsa.gov/grants">Substance Abuse & Mental Health Services Administration (SAMHSA)</a>
+              </li>								
+            </ul> 
+          </div>
+        </div>				
+      </div>
     </div>
     <div class="row">
-        <div class="contacts">
-            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                <div class="contacts-item">
-                    <div class="icon js-animate-icon">
-                        <svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="  M45.1,44.2C42.9,42,39.6,40,37,42.6c-1.8,1.8-2.6,3.9-2.6,3.9s-4.3,2.3-11.7-5.2s-5.2-11.7-5.2-11.7s2.1-0.8,3.9-2.6  c2.6-2.6,0.6-5.9-1.7-8.1c-2.7-2.7-6.2-4.9-8.2-2.9c-3.7,3.7-4.4,8.4-4.4,8.4S9,35.5,18.7,45.3s20.9,11.6,20.9,11.6s4.7-0.7,8.4-4.4  C50,50.4,47.8,46.9,45.1,44.2z" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M18.4,12.2C22.2,9.5,26.9,8,32,8c13.3,0,24,10.8,24,24c0,4-1.3,9-4.4,12.2" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M27.3,55.6c-9.8-1.9-17.5-9.8-19.1-19.7" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M30,21c0,0,4.4,0,5.2,0c1.2,0,1.8,0.2,1.8,1.1s0,0.7,0,1.3c0,0.6,0,1.4-1.6,2.5c-2.3,1.6-5.6,3.8-5.6,5.1c0,1.6,0.7,2,1.8,2  s5.3,0,5.3,0" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M40,21c0,0,0,2.8,0,3.8S39.9,27,41.5,27c1.6,0,4.5,0,4.5,0v-6.1V33" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg>
-                    </div>
-                    <div class="content">
-                        <a href="#" class="title">1-877-696-6775​</a>
-                        <p class="sub-title">Toll Free Call</p>
-                    </div>
-                </div>
+      <div class="contacts">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="contacts-item">
+            <div class="icon js-animate-icon">
+              <svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="  M45.1,44.2C42.9,42,39.6,40,37,42.6c-1.8,1.8-2.6,3.9-2.6,3.9s-4.3,2.3-11.7-5.2s-5.2-11.7-5.2-11.7s2.1-0.8,3.9-2.6  c2.6-2.6,0.6-5.9-1.7-8.1c-2.7-2.7-6.2-4.9-8.2-2.9c-3.7,3.7-4.4,8.4-4.4,8.4S9,35.5,18.7,45.3s20.9,11.6,20.9,11.6s4.7-0.7,8.4-4.4  C50,50.4,47.8,46.9,45.1,44.2z" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M18.4,12.2C22.2,9.5,26.9,8,32,8c13.3,0,24,10.8,24,24c0,4-1.3,9-4.4,12.2" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M27.3,55.6c-9.8-1.9-17.5-9.8-19.1-19.7" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M30,21c0,0,4.4,0,5.2,0c1.2,0,1.8,0.2,1.8,1.1s0,0.7,0,1.3c0,0.6,0,1.4-1.6,2.5c-2.3,1.6-5.6,3.8-5.6,5.1c0,1.6,0.7,2,1.8,2  s5.3,0,5.3,0" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M40,21c0,0,0,2.8,0,3.8S39.9,27,41.5,27c1.6,0,4.5,0,4.5,0v-6.1V33" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg>
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                <div class="contacts-item">
-                    <div class="icon js-animate-icon">
-                        <svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" points="  54,17 32,36 10,17 " stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><line fill="none" stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="10.9" x2="26" y1="48" y2="36"/><path d="  M32.7,49H13c-2.2,0-4-1.8-4-4V19c0-2.2,1.8-4,4-4h38c2.2,0,4,1.8,4,4v15.5" fill="none" stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><circle cx="44.9" cy="43.1" fill="none" r="10.1" stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M44,41.4c0,0-1.3,3.4-0.9,5.1c0.4,1.7,2.6,2.1,3.7,1.1" fill="none" stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><g><circle cx="45.4" cy="38.3" fill="#DCE9EE" r="0.9"/><path d="M45.4,37.3c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9C46.4,37.8,46,37.3,45.4,37.3   L45.4,37.3z" fill="#f15b26"/></g></svg>
-                    </div>
-                    <div class="content">
-                        <a href="#" class="title">Email HHS</a>
-                        <p class="sub-title">Email Us</p>
-                    </div>
-                </div>
+            <div class="content">
+              <a href="#" class="title">1-877-696-6775​</a>
+              <p class="sub-title">Toll Free Call</p>
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                <div class="contacts-item">
-                    <div class="icon js-animate-icon">
-                        <svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><polygon fill="none" points="  38.7,36.4 56,32 38.7,27.6 42,22 36.4,25.3 32,8 27.6,25.3 22,22 25.3,27.6 8,32 25.3,36.4 22,42 27.6,38.7 32,56 36.4,38.7 42,42   " stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></polygon><circle cx="32" cy="32" fill="none" r="4" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></circle><path d="  M26.1,53.2c-7.9-2.2-13.9-8.6-15.6-16.7" fill="none" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path><path d="  M53.5,36.9c-1.8,8.1-8.2,14.6-16.3,16.5" fill="none" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path><path d="  M36.9,10.5c8.2,1.9,14.7,8.3,16.6,16.6" fill="none" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path><path d="  M10.5,27.1c1.9-8.2,8.3-14.6,16.4-16.5" fill="none" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path></svg>
-                    </div>
-                    <div class="content">
-                        <a href="#" class="title">S.W. Washington, D.C.</a>
-                        <p class="sub-title">200 Independence Avenue, 20201</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="contacts-item">
+            <div class="icon js-animate-icon">
+              <svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" points="  54,17 32,36 10,17 " stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><line fill="none" stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="10.9" x2="26" y1="48" y2="36"/><path d="  M32.7,49H13c-2.2,0-4-1.8-4-4V19c0-2.2,1.8-4,4-4h38c2.2,0,4,1.8,4,4v15.5" fill="none" stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><circle cx="44.9" cy="43.1" fill="none" r="10.1" stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M44,41.4c0,0-1.3,3.4-0.9,5.1c0.4,1.7,2.6,2.1,3.7,1.1" fill="none" stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><g><circle cx="45.4" cy="38.3" fill="#DCE9EE" r="0.9"/><path d="M45.4,37.3c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9C46.4,37.8,46,37.3,45.4,37.3   L45.4,37.3z" fill="#f15b26"/></g></svg>
+            </div>
+            <div class="content">
+              <a href="#" class="title">Email HHS</a>
+              <p class="sub-title">Email Us</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="contacts-item">
+            <div class="icon js-animate-icon">
+              <svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><polygon fill="none" points="  38.7,36.4 56,32 38.7,27.6 42,22 36.4,25.3 32,8 27.6,25.3 22,22 25.3,27.6 8,32 25.3,36.4 22,42 27.6,38.7 32,56 36.4,38.7 42,42   " stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></polygon><circle cx="32" cy="32" fill="none" r="4" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></circle><path d="  M26.1,53.2c-7.9-2.2-13.9-8.6-15.6-16.7" fill="none" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path><path d="  M53.5,36.9c-1.8,8.1-8.2,14.6-16.3,16.5" fill="none" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path><path d="  M36.9,10.5c8.2,1.9,14.7,8.3,16.6,16.6" fill="none" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path><path d="  M10.5,27.1c1.9-8.2,8.3-14.6,16.4-16.5" fill="none" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path></svg>
+            </div>
+            <div class="content">
+              <a href="#" class="title">S.W. Washington, D.C.</a>
+              <p class="sub-title">200 Independence Avenue, 20201</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-<div class="sub-footer">
+  </div>
+  <div class="sub-footer">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <span>
-                    Copyright © 2016 <a href="index.html" class="sub-footer__link">Taggs.HHS.gov</a>
-                </span>
-                <span></a></span>
-                <a class="back-to-top" href="#">
-                    <svg class="back-to-top">
-                        <use xlink:href="#to-top"></use>
-                    </svg>
-                </a>
-            </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <span>
+            Copyright © 2016 <a href="index.html" class="sub-footer__link">Taggs.HHS.gov</a>
+          </span>
+          <span></a></span>
+          <a class="back-to-top" href="#">
+            <svg class="back-to-top">
+              <use xlink:href="#to-top"></use>
+            </svg>
+          </a>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 </footer>
 <svg style="display:none;">
-    <symbol id="arrow-left" viewBox="122.9 388.2 184.3 85">
-        <path d="M124.1,431.3c0.1,2,1,3.8,2.4,5.2c0,0,0.1,0.1,0.1,0.1l34.1,34.1c1.6,1.6,3.7,2.5,5.9,2.5s4.3-0.9,5.9-2.4
-        c1.6-1.6,2.4-3.7,2.4-5.9s-0.9-3.9-2.4-5.5l-19.9-19.5h11.1c1.5,0,2.7-1.5,2.7-3c0-1.5-1.2-3-2.7-3h-17.6c-1.1,0-2.1,0.6-2.5,1.6
-        c-0.4,1-0.2,2.1,0.6,2.9l24.4,24.4c0.6,0.6,0.9,1.3,0.9,2.1s-0.3,1.6-0.9,2.1c-0.6,0.6-1.3,0.9-2.1,0.9s-1.6-0.3-2.1-0.9
-        l-34.2-34.2c0,0,0,0,0,0c-0.6-0.6-0.8-1.4-0.9-1.9c0,0,0,0,0,0c0-0.2,0-0.4,0-0.6c0.1-0.6,0.3-1.1,0.7-1.6c0-0.1,0.1-0.1,0.2-0.2
-        l34.1-34.1c0.6-0.6,1.3-0.9,2.1-0.9s1.6,0.3,2.1,0.9c0.6,0.6,0.9,1.3,0.9,2.1s-0.3,1.6-0.9,2.1l-24.4,24.4c-0.8,0.8-1,2-0.6,3
-        c0.4,1,1.4,1.7,2.5,1.7h125.7c1.5,0,2.7-1,2.7-2.5c0-1.5-1.2-2.5-2.7-2.5H152.6l19.9-20.1c1.6-1.6,2.4-3.8,2.4-6s-0.9-4.4-2.4-6
-        c-1.6-1.6-3.7-2.5-5.9-2.5s-4.3,0.9-5.9,2.4l-34.1,34.1c-0.2,0.2-0.3,0.3-0.5,0.5c-1.1,1.2-1.8,2.8-2,4.4
-        C124.1,430.2,124.1,430.8,124.1,431.3C124.1,431.3,124.1,431.3,124.1,431.3z"></path>
-        <path d="M283.3,427.9h14.2c1.7,0,3,1.3,3,3c0,1.7-1.4,3-3,3H175.1c-1.5,0-2.7,1.5-2.7,3c0,1.5,1.2,3,2.7,3h122.4
-        c4.6,0,8.4-3.9,8.4-8.5c0-4.6-3.8-8.5-8.4-8.5h-14.2c-1.5,0-2.7,1-2.7,2.5C280.7,426.9,281.8,427.9,283.3,427.9z"></path>
-    </symbol>
-    <symbol id="arrow-right" viewBox="122.9 388.2 184.3 85">
-        <path d="M305.9,430.2c-0.1-2-1-3.8-2.4-5.2c0,0-0.1-0.1-0.1-0.1l-34.1-34.1c-1.6-1.6-3.7-2.5-5.9-2.5c-2.2,0-4.3,0.9-5.9,2.4
-        c-1.6,1.6-2.4,3.7-2.4,5.9s0.9,4.1,2.4,5.7l19.9,19.6h-11.1c-1.5,0-2.7,1.5-2.7,3c0,1.5,1.2,3,2.7,3h17.6c1.1,0,2.1-0.7,2.5-1.7
-        c0.4-1,0.2-2.2-0.6-2.9l-24.4-24.5c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.6,0.9-2.1c0.6-0.6,1.3-0.9,2.1-0.9c0.8,0,1.6,0.3,2.1,0.9
-        l34.2,34.2c0,0,0,0,0,0c0.6,0.6,0.8,1.4,0.9,1.9c0,0,0,0,0,0c0,0.2,0,0.4,0,0.6c-0.1,0.6-0.3,1.1-0.7,1.6c0,0.1-0.1,0.1-0.2,0.2
-        l-34.1,34.1c-0.6,0.6-1.3,0.9-2.1,0.9s-1.6-0.3-2.1-0.9c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.6,0.9-2.1l24.4-24.4c0.8-0.8,1-1.9,0.6-2.9
-        c-0.4-1-1.4-1.6-2.5-1.6H158.1c-1.5,0-2.7,1-2.7,2.5c0,1.5,1.2,2.5,2.7,2.5h119.3l-19.9,20c-1.6,1.6-2.4,3.7-2.4,6s0.9,4.4,2.4,5.9
-        c1.6,1.6,3.7,2.5,5.9,2.5s4.3-0.9,5.9-2.4l34.1-34.1c0.2-0.2,0.3-0.3,0.5-0.5c1.1-1.2,1.8-2.8,2-4.4
-        C305.9,431.3,305.9,430.8,305.9,430.2C305.9,430.2,305.9,430.2,305.9,430.2z"></path>
-        <path d="M146.7,433.9h-14.2c-1.7,0-3-1.3-3-3c0-1.7,1.4-3,3-3h122.4c1.5,0,2.7-1.5,2.7-3c0-1.5-1.2-3-2.7-3H132.4
-        c-4.6,0-8.4,3.9-8.4,8.5c0,4.6,3.8,8.5,8.4,8.5h14.2c1.5,0,2.7-1,2.7-2.5C149.3,434.9,148.1,433.9,146.7,433.9z"></path>
-    </symbol>
-    <symbol id="to-top" viewBox="0 0 32 32">
-        <path d="M17,22 L25.0005601,22 C27.7616745,22 30,19.7558048 30,17 C30,14.9035809 28.7132907,13.1085075 26.8828633,12.3655101
-        L26.8828633,12.3655101 C26.3600217,9.87224935 24.1486546,8 21.5,8 C20.6371017,8 19.8206159,8.19871575 19.0938083,8.55288165
-        C17.8911816,6.43144875 15.6127573,5 13,5 C9.13400656,5 6,8.13400656 6,12 C6,12.1381509 6.00400207,12.275367 6.01189661,12.4115388
-        L6.01189661,12.4115388 C4.23965876,13.1816085 3,14.9491311 3,17 C3,19.7614237 5.23249418,22 7.99943992,22 L16,22 L16,16 L12.75,19.25
-        L12,18.5 L16.5,14 L21,18.5 L20.25,19.25 L17,16 L17,22 L17,22 Z M16,22 L16,27 L17,27 L17,22 L16,22 L16,22 Z" id="cloud-upload"></path>
-    </symbol>
+  <symbol id="arrow-left" viewBox="122.9 388.2 184.3 85">
+    <path d="M124.1,431.3c0.1,2,1,3.8,2.4,5.2c0,0,0.1,0.1,0.1,0.1l34.1,34.1c1.6,1.6,3.7,2.5,5.9,2.5s4.3-0.9,5.9-2.4
+    c1.6-1.6,2.4-3.7,2.4-5.9s-0.9-3.9-2.4-5.5l-19.9-19.5h11.1c1.5,0,2.7-1.5,2.7-3c0-1.5-1.2-3-2.7-3h-17.6c-1.1,0-2.1,0.6-2.5,1.6
+    c-0.4,1-0.2,2.1,0.6,2.9l24.4,24.4c0.6,0.6,0.9,1.3,0.9,2.1s-0.3,1.6-0.9,2.1c-0.6,0.6-1.3,0.9-2.1,0.9s-1.6-0.3-2.1-0.9
+    l-34.2-34.2c0,0,0,0,0,0c-0.6-0.6-0.8-1.4-0.9-1.9c0,0,0,0,0,0c0-0.2,0-0.4,0-0.6c0.1-0.6,0.3-1.1,0.7-1.6c0-0.1,0.1-0.1,0.2-0.2
+    l34.1-34.1c0.6-0.6,1.3-0.9,2.1-0.9s1.6,0.3,2.1,0.9c0.6,0.6,0.9,1.3,0.9,2.1s-0.3,1.6-0.9,2.1l-24.4,24.4c-0.8,0.8-1,2-0.6,3
+    c0.4,1,1.4,1.7,2.5,1.7h125.7c1.5,0,2.7-1,2.7-2.5c0-1.5-1.2-2.5-2.7-2.5H152.6l19.9-20.1c1.6-1.6,2.4-3.8,2.4-6s-0.9-4.4-2.4-6
+    c-1.6-1.6-3.7-2.5-5.9-2.5s-4.3,0.9-5.9,2.4l-34.1,34.1c-0.2,0.2-0.3,0.3-0.5,0.5c-1.1,1.2-1.8,2.8-2,4.4
+    C124.1,430.2,124.1,430.8,124.1,431.3C124.1,431.3,124.1,431.3,124.1,431.3z"></path>
+    <path d="M283.3,427.9h14.2c1.7,0,3,1.3,3,3c0,1.7-1.4,3-3,3H175.1c-1.5,0-2.7,1.5-2.7,3c0,1.5,1.2,3,2.7,3h122.4
+    c4.6,0,8.4-3.9,8.4-8.5c0-4.6-3.8-8.5-8.4-8.5h-14.2c-1.5,0-2.7,1-2.7,2.5C280.7,426.9,281.8,427.9,283.3,427.9z"></path>
+  </symbol>
+  <symbol id="arrow-right" viewBox="122.9 388.2 184.3 85">
+    <path d="M305.9,430.2c-0.1-2-1-3.8-2.4-5.2c0,0-0.1-0.1-0.1-0.1l-34.1-34.1c-1.6-1.6-3.7-2.5-5.9-2.5c-2.2,0-4.3,0.9-5.9,2.4
+    c-1.6,1.6-2.4,3.7-2.4,5.9s0.9,4.1,2.4,5.7l19.9,19.6h-11.1c-1.5,0-2.7,1.5-2.7,3c0,1.5,1.2,3,2.7,3h17.6c1.1,0,2.1-0.7,2.5-1.7
+    c0.4-1,0.2-2.2-0.6-2.9l-24.4-24.5c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.6,0.9-2.1c0.6-0.6,1.3-0.9,2.1-0.9c0.8,0,1.6,0.3,2.1,0.9
+    l34.2,34.2c0,0,0,0,0,0c0.6,0.6,0.8,1.4,0.9,1.9c0,0,0,0,0,0c0,0.2,0,0.4,0,0.6c-0.1,0.6-0.3,1.1-0.7,1.6c0,0.1-0.1,0.1-0.2,0.2
+    l-34.1,34.1c-0.6,0.6-1.3,0.9-2.1,0.9s-1.6-0.3-2.1-0.9c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.6,0.9-2.1l24.4-24.4c0.8-0.8,1-1.9,0.6-2.9
+    c-0.4-1-1.4-1.6-2.5-1.6H158.1c-1.5,0-2.7,1-2.7,2.5c0,1.5,1.2,2.5,2.7,2.5h119.3l-19.9,20c-1.6,1.6-2.4,3.7-2.4,6s0.9,4.4,2.4,5.9
+    c1.6,1.6,3.7,2.5,5.9,2.5s4.3-0.9,5.9-2.4l34.1-34.1c0.2-0.2,0.3-0.3,0.5-0.5c1.1-1.2,1.8-2.8,2-4.4
+    C305.9,431.3,305.9,430.8,305.9,430.2C305.9,430.2,305.9,430.2,305.9,430.2z"></path>
+    <path d="M146.7,433.9h-14.2c-1.7,0-3-1.3-3-3c0-1.7,1.4-3,3-3h122.4c1.5,0,2.7-1.5,2.7-3c0-1.5-1.2-3-2.7-3H132.4
+    c-4.6,0-8.4,3.9-8.4,8.5c0,4.6,3.8,8.5,8.4,8.5h14.2c1.5,0,2.7-1,2.7-2.5C149.3,434.9,148.1,433.9,146.7,433.9z"></path>
+  </symbol>
+  <symbol id="to-top" viewBox="0 0 32 32">
+    <path d="M17,22 L25.0005601,22 C27.7616745,22 30,19.7558048 30,17 C30,14.9035809 28.7132907,13.1085075 26.8828633,12.3655101
+    L26.8828633,12.3655101 C26.3600217,9.87224935 24.1486546,8 21.5,8 C20.6371017,8 19.8206159,8.19871575 19.0938083,8.55288165
+    C17.8911816,6.43144875 15.6127573,5 13,5 C9.13400656,5 6,8.13400656 6,12 C6,12.1381509 6.00400207,12.275367 6.01189661,12.4115388
+    L6.01189661,12.4115388 C4.23965876,13.1816085 3,14.9491311 3,17 C3,19.7614237 5.23249418,22 7.99943992,22 L16,22 L16,16 L12.75,19.25
+    L12,18.5 L16.5,14 L21,18.5 L20.25,19.25 L17,16 L17,22 L17,22 Z M16,22 L16,27 L17,27 L17,22 L16,22 L16,22 Z" id="cloud-upload"></path>
+  </symbol>
 </svg>
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
