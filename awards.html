@@ -1,3 +1,20 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @mschiavoni
+ Unwatch 3
+  Unstar 1
+  Fork 0 mschiavoni/TaggsAR2016
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
+Branch: master Find file Copy pathTaggsAR2016/awards.html
+c6d9e7f  14 seconds from now
+@mschiavoni mschiavoni Removal of Discretionary Award Text
+1 contributor
+RawBlameHistory     
+1568 lines (1490 sloc)  77.9 KB
 <!DOCTYPE html>
 <html lang="en">
 <head lang="en">
@@ -20,13 +37,11 @@
     <link rel="stylesheet" href="css/multiSelect.css">
    
    <script type="text/javascript">
-
 // #3cb878
 // #00c6d7
 // #fcb03b
 //#f15b26
 //#01579b
-
 FusionCharts.ready(function () {
     var discretionaryChart = new FusionCharts({
         type: 'multilevelpie',
@@ -65,7 +80,6 @@ FusionCharts.ready(function () {
             {
                 "label": "Discretionary Award Dollars{br}$52,790,366,508",
                 "Color": "fffff",
-
                 "category": [
                 {
                     "label": "Other",
@@ -426,12 +440,9 @@ FusionCharts.ready(function () {
 }]
 }]
 }
-
 });
-
 discretionaryChart.render();
 });
-
 </script>
      <style>
         .legend {
@@ -690,9 +701,22 @@ discretionaryChart.render();
         <div class="col-lg-12">
             <div class="row mb30">
                 <div class="col-lg-12">
-                    <h5>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam
-                        processus dynamicus, qui sequitur mutationem consuetudium lectorum.
-                    </h5>
+                <div class="heading">
+                    <h4 class="heading-title" style="font-size: 48px; color: #000; margin-bottom: 20px;">Awards by Location</h4>
+                    <div class="heading-line">
+                        <span class="short-line"></span>
+                        <span class="long-line"></span>
+                    </div>
+                    <p class="heading-text" style="color: #000;">
+					The maps in this section show data for awards that HHS made in FY 2016.  Darker colors indicate larger dollar amounts, according to the legend below.  
+					</p>
+                    <p class="heading-text" style="color: #000;">
+					Hover over a country to view the award dollars and number of awards.  For discretionary award data, click on the link at left.  To view award data by agency, click on an agency name in the dropdown box.
+					</P>
+                     <p class="heading-text" style="color: #000;">
+					Award data by continent is presented as a table beneath the world map.
+					</p>
+                </div>
                 </div>
             </div>
             <div class="row">
@@ -700,9 +724,11 @@ discretionaryChart.render();
                     <ul class="list list--secondary">
                         <li>
                             <i class="taggsicon-check"></i>
-                            <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut laoreet dolore wisi enim ad minim veniam.
-                            </a>
+                            <p>Awards By State:  From the map of the United States, use the mouse to zoom down to an individual state. 
+							Award data will display in a tooltip.  To view discretionary awards, click the link at left.  
+							Data for U.S. Territories is available as a table.  Note:  Data for other countries will not be available
+							at the state level and below.
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -710,13 +736,43 @@ discretionaryChart.render();
                     <ul class="list list--secondary">
                         <li>
                             <i class="taggsicon-check"></i>
-                            <a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum, anteposuerit
-                                litterarum formas duis dolore te feugait nulla facilisi.
-                            </a>
+                            <p>Awards by County: From any U.S. state, use the mouse to zoom down to any county in that state.  
+							Award data will display in a tooltip.  To view discretionary awards, click the link at left. 
+                            </p>
                         </li>
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div style="background: #3F3F3F; background-size: cover; padding:150px 15px; position: relative;">
+            <div style="max-width: 790px; text-align: center; margin: 0 auto; position: relative; z-index: 5;">
+                <div class="heading">
+                    <h4 class="heading-title" style="font-size: 48px; color: #fff; margin-bottom: 20px;">TAGGS AWARDS</h4>
+                    <div class="heading-line">
+                        <span class="short-line"></span>
+                        <span class="long-line"></span>
+                    </div>
+                    <p class="heading-text" style="color: #fff;">
+					In FY 2016, the Department of Health and Human Services administered more grant dollars than all other federal agencies combined. 
+					HHS awards formula/block, entitlement, discretionary grant awards and cooperative agreements. HHS awarded approximately $411 billion
+					in grants for FY 2016. This included $50 billion in discretionary awards and $361 billion in formula/block and entitlement awards. 
+					</p>
+					<p class="heading-text" style="color: #fff;">
+					CMS, which administers the Medicare and Medicaid Programs, awarded 77%, or $316 billion of the total HHS grants fund; however, 
+					these awards are less than 2% of the total number of grants awarded by HHS. 
+					</p>
+					<p class="heading-text" style="color: #fff;">
+					ACF had the second highest percentage of total HHS grant funds awarded at over 12%, or $50 billion. This represented about 10% 
+					of the total number of grants awarded. NIH, which awarded about 5%, or $22 billion, of the total HHS grant funds, accounted for 
+					65% of the total number of HHS grants.
+                    </p>
+                </div>
+            </div>
+            <div class="overlay"></div>
         </div>
     </div>
 </div>
@@ -744,7 +800,6 @@ discretionaryChart.render();
         //MapBox access token
         mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw';
         //L.mapbox.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw';
-
         //globals for the choropleth.  Look into using this method for color ranges.
         //var COLORS = ['#8c510a', '#d8b365', '#f6e8c3', '#c7eae5', '#5ab4ac', '#01665e'],
         //    BREAKS = [-1000, -500, 0, 500, 1000, 1500],
@@ -762,13 +817,11 @@ discretionaryChart.render();
         //var map = L.mapbox.map('map', 'gcline001.ciya6c5si007i33k1rpul4nwl-8svrb').setView([-98, 38.88], 2);
         
         //mapbox://styles/gcline001/ciy976ttz001h2sqjh2rir168
-
         var zoomThreshold = 3;
         // Add zoom and rotation controls to the map.
         map.addControl(new mapboxgl.NavigationControl());
         //Add legend control to the map.
         //map.addControl(new mapboxgl.LegendControl());
-
         //Map ID copied from MapBox Tileset goes here.
         map.on('load', function () {
             map.addSource('HHSWorld', {
@@ -795,7 +848,6 @@ discretionaryChart.render();
                             //[0, 'transparent'],
                             //[10000000, 'dodgerblue'],
                             //[50000000000, 'blue']
-
                             [0, 'transparent'],
                             [10000, 'DEEPSKYBLUE'],
                             [100000, 'DodgerBlue'],
@@ -805,7 +857,6 @@ discretionaryChart.render();
                             [100000000, 'MediumBlue'],//9
                             [500000000, 'DarkBlue'],
                             [500000000000, 'MidnightBlue']
-
                             //[BREAKS[0], COLORS[0]],
                             //[BREAKS[1], COLORS[1]],
                             //[BREAKS[2], COLORS[2]],
@@ -850,31 +901,24 @@ discretionaryChart.render();
                 }
             });
         });
-
         //// Create a popup, but don't add it to the map yet.
         //var popup = new mapboxgl.Popup({
         //    closeButton: false,
         //    closeOnClick: false
         //});
-
-
         map.on("mousemove", function (e) {
             //var features = map.queryRenderedFeatures(e.point, { layers: ["USStateAward"] });
             var features = map.queryRenderedFeatures(e.point, { layers: ["worldAward"] });
-
             //if (!features.length) {
             //    popup.remove();
             //    return;
             //}
-
             //var feature = features[0];
-
             //// Populate the popup and set its coordinates
             //// based on the feature found.
             //popup.setLngLat(feature.geometry.coordinates[0])
             //    .setHTML(feature.properties.name)
             //    .addTo(map);
-
             if (features.length) {
                 //show name and value in sidebar
                 document.getElementById('tooltip-name').innerHTML = "Country: " + features[0].properties.name;
@@ -891,9 +935,7 @@ discretionaryChart.render();
                 //document.getElementById('tooltip').innerHTML = "";
             }
         });
-
        
-
         //var stateLegendEl = document.getElementById('state-legend');
         //var countyLegendEl = document.getElementById('county-legend');
         //map.on('zoom', function () {
@@ -990,7 +1032,6 @@ width = 600,
 bar_height = 40,
 height = bar_height * 5;
 var rightOffset = width + labelArea;
-
 var lCol = "award.amount";
 var rCol = "award.number";
 var xFrom = d3.scale.linear()
@@ -999,24 +1040,18 @@ var xTo = d3.scale.linear()
 .range([0, 400]);
 var y = d3.scale.ordinal()
 .rangeBands([20, height]);
-
 function render(data, activityType) {
-
     var ANArray = [];
     data.forEach(addToANArray)
-
     function addToANArray(data){
         ANArray.push(data["award.number"])
         
     }
     var ANmax = Math.max.apply(null, ANArray)
-
     var AAArray = [];
     data.forEach(addToAAArray)
-
     function addToAAArray(data){
         AAArray.push(data["award.amount"])
-
     }
     var AAmax = Math.max.apply(null, AAArray);
 	
@@ -1113,11 +1148,9 @@ function render(data, activityType) {
     chart.append("text").attr("x",width/3).attr("y", 12).attr("class","title").text("Award Amount");
     chart.append("text").attr("x",width/3+rightOffset).attr("y", 12).attr("class","title").text("Award Number");
     chart.append("text").attr("x",width+labelArea/3).attr("y", 12).attr("class","title").text("Programs");
-
 }
 var fileNames = ["training.json", "research.json", "services.json", "other.json"];
 var activityTypes = ["Training", "Research", "Services", "Other"];
-
 fileNames.forEach(function(fileName, i){
 	var activityType = activityTypes[i]
     d3.json(fileName, function(error, data) {
@@ -1565,3 +1598,5 @@ var tooltip = d3.select("div.doubleBarChartCont")
 
 </body>
 </html>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
