@@ -474,6 +474,11 @@ discretionaryChart.render();
             stroke: white;
             fill: #0D47A1;
           }
+
+          .leftscore, .score, .name, .title {
+            font-size: 20px !important;
+          }
+
           .chart rect:hover {
             fill: #757575;
           }
@@ -516,8 +521,8 @@ discretionaryChart.render();
          margin: 10px;
        } 
        .activityTypeTitle {
-        font-size: 20px;
-        color: orange;
+        font-size: 30px;
+        color: black;
        }
 
 
@@ -918,7 +923,7 @@ function render(data, activityType) {
 
 
   var chart = d3.select("div.doubleBarChartCont")
-  .append("div").text(activityType)
+  .append("div").html('<span class="activityTypeTitle">' + activityType +'</span>')
   .append('svg')
   .attr('class', 'chart')
   .attr('width', labelArea + width + width )
@@ -1475,7 +1480,8 @@ var tooltip = d3.select("div.doubleBarChartCont")
 <script src="js/velocity.min.js"></script>
 <script src="js/ScrollMagic.min.js"></script>
 <script src="js/animation.velocity.min.js"></script>
-
+<script src="FusionCharts/js/fusioncharts.js"></script>
+<script src="FusionCharts/js/fusioncharts.charts.js"></script>
 
 </body>
 </html>
