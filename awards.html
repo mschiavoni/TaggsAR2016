@@ -37,7 +37,7 @@ FusionCharts.ready(function () {
     dataFormat: 'json',
     dataSource: {
       "chart": {
-                // "canvasBgAlpha": "0",
+                "canvasBgAlpha": "100",
                 // "legendBgAlpha": "0",
                 "formatNumberScale": "1",
                 "formatNumber": "1",
@@ -47,7 +47,7 @@ FusionCharts.ready(function () {
                 "bgAlpha": "0",
                 "plotHighlightEffect": "0",
                 "thousandSeparator": "1",
-                "pieBorderColor": "FFFFFF",
+                // "pieBorderColor": "FFFFFF",
                 "exportAtClient": "0",
                 "baseFontColor": "#330000",
                 "hoverFillColor": "f15b26",
@@ -59,7 +59,8 @@ FusionCharts.ready(function () {
                 "toolTipBgColor": "fffff",
                 "toolTipBorderColor": "fffff",
                 "showToolTipShadow": "1",
-                "baseFontSize": "8"
+                "baseFontSize": "10",
+                "baseFontColor": "#FAFAFA"
               },
               "category": [
               {
@@ -495,7 +496,7 @@ discretionaryChart.render();
           .toolTip {
             background-color: rgba(255, 255, 255, 0.9);
             height: 150px;
-            border: 2px solid black;
+            /*border: 2px solid black;*/
           width: 300px;
           /*bottom: 0;
           /*left: -125px;*/
@@ -522,7 +523,9 @@ discretionaryChart.render();
        } 
        .activityTypeTitle {
         font-size: 30px;
-        color: black;
+        color: #0D47A1;
+        margin-left: 145px;
+
        }
 
 
@@ -863,7 +866,16 @@ discretionaryChart.render();
 </div>
 <div class="container-fluid">
   <a href="">This will be a link to a table view!</a>
-  <div class="doubleBarChartCont"></div>
+<div class="heading">
+            <h4 class="heading-title" style="font-size: 48px; color: #01579b; margin-bottom: 20px;">Top 5 Discretionary Grant Programs for Research, Services</h4>
+            <h4 class="heading-title" style="font-size: 48px; color: #01579b; margin-bottom: 20px;">Top 5  Training and Other Activities</h4>
+            <div class="heading-line">
+              <span class="short-line"></span>
+              <span class="long-line"></span>
+            </div>
+ </div>
+  <div class="doubleBarChartCont">
+            
 </div>
 <script aria-label="Top 5 CFDA horizontal bar chart showing Award Amount and Number of Awards" type="text/javascript">
 
