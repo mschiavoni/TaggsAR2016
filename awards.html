@@ -18,15 +18,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">x
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
     <link rel="stylesheet" href="css/multiSelect.css">
-
-    <script type="text/javascript">
+   <script type="text/javascript">
 
 // #3cb878
 // #00c6d7
 // #fcb03b
 //#f15b26
 //#01579b
-
 FusionCharts.ready(function () {
     var discretionaryChart = new FusionCharts({
         type: 'multilevelpie',
@@ -65,7 +63,6 @@ FusionCharts.ready(function () {
             {
                 "label": "Discretionary Award Dollars{br}$52,790,366,508",
                 "Color": "fffff",
-
                 "category": [
                 {
                     "label": "Other",
@@ -426,12 +423,9 @@ FusionCharts.ready(function () {
 }]
 }]
 }
-
 });
-
 discretionaryChart.render();
 });
-
 </script>
 <style>
     .legend {
@@ -452,339 +446,467 @@ discretionaryChart.render();
                 height: 10px;
                 margin-right: 5px;
                 width: 10px;}
-                body {
-                    margin: 0;
-                    padding: 0;}
-                    #map {
-                        top: 0;
-                        bottom: 0;
-                        width: 100%;
-                        height: 760px;}
-                        .chart {
-                         margin: 100px 0 100px 0;}
-                         .chart .right {
-                            stroke: white;
-                            fill: #B71C1C;}
-                            .chart .left {
-                                stroke: white;
-                                fill: #0D47A1;}
-                                .chart rect:hover {
-                                    fill: #757575;}
-                                    .chart text {
-                                        fill: black;}
-                                        .chart text.name {
-                                            fill: black;}
-                                            .chart text.title {
-                                                fill: black;}
-                                                .toolTip {
-                                                    background-color: rgba(255, 255, 255, 0.9);
-                                                    height: 80px;
-                                                    border: 2px solid black;
-                                                    /*bottom: 0;*/
-                                                    width: 230px;
-                                                    /*left: -125px;*/
-                                                    font-size: 12px;
-                                                    line-height: 16px;
-                                                    padding: 10px;
-                                                    border-radius: 3px;
-                                                    color: #000;
-                                                    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-                                                    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-                                                    border: 1px solid rgba(200, 200, 200, 0.85);
-                                                    text-align: center;}
-                                                    .doubleBarChartCont {
-                                                     text-align: center;
-                                                     align-content: center;
-                                                     margin-right: 150px;}
-                                                     .fileNames {
-                                                         color: #0066FF;
-                                                         font-size: 24px;
-                                                         text-align:center;
-                                                         margin: 10px;} 
+        body {
+            margin: 0;
+            padding: 0;}
+        #map {
+            top: 0;
+            bottom: 0;
+            width: 100%;
+			height: 760px;}
+		.chart {
+			margin: 100px 0 100px 0;}
+        .chart .right {
+            stroke: white;
+            fill: #B71C1C;}
+        .chart .left {
+            stroke: white;
+            fill: #0D47A1;}
+        .chart rect:hover {
+            fill: #757575;}
+        .chart text {
+            fill: black;}
+        .chart text.name {
+            fill: black;}
+        .chart text.title {
+            fill: black;}
+        .toolTip {
+            background-color: rgba(255, 255, 255, 0.9);
+            height: 80px;
+            border: 2px solid black;
+            /*bottom: 0;*/
+            width: 230px;
+            /*left: -125px;*/
+            font-size: 12px;
+            line-height: 16px;
+            padding: 10px;
+            border-radius: 3px;
+            color: #000;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(200, 200, 200, 0.85);
+            text-align: center;}
+        .doubleBarChartCont {
+			text-align: center;
+			align-content: center;
+			margin-right: 150px;}
+		.fileNames {
+			color: #0066FF;
+			font-size: 24px;
+			text-align:center;
+			margin: 10px;} 
+           #sidebar {
+            top: 15px;
+            left: 15px;
+            bottom: 15px;
+            width: 250px;
+            overflow: auto;
+            background: rgba(255, 255, 255, 0.8);
+            font-family: "Arial";
+            padding-left: 10px;
+        }					
+</style>  
+</head>
+<body class=" ">
+<header class="header" id="site-header">
+    <div class="container">
+            <div class="header-content-wrapper">
+                <div class="logo">
+                    <a href="index.html" class="full-block-link"></a>
+                    <img src="img/logo.png" alt="HHSTAGGS">
+                    <div class="logo-text">
+                        <div class="logo-title">TAGGS</div>
+                        <div class="logo-sub-title">Annual Report 2016</div>
+                    </div>
+                </div>
+                 <nav id="primary-menu" class="primary-menu">
+                    <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+                        <span class="mob-menu--title">Menu</span>
+                        <span id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+                            <svg width="1000px" height="1000px">
+                                <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                                <path id="pathE" d="M 300 500 L 700 500"></path>
+                                <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="primary-menu-menu">
+                        <li class="menu-item-has-children">
+                            <a href="index.html">Home</a>
+                        </li>
+						<li class="">
+                            <a href="awards.html" class="blue">Awards</a>
+                        </li>
+                        <li class="has-megamenu menu-item-has-children">
+                            <a href="agencies.html">Agencies</a>
+                            <div class="megamenu" style="background-image: url('img/menu-bg.png');">
+                                <div class="megamenu-row">
+                                    <div class="col4">
+                                        <ul>
+                                            <li class="megamenu-item-info">
+                                                <h5 class="megamenu-item-info-title">HHS Agencies</h5>
+                                                <p class="megamenu-item-info-text"> </p>
+                                            </li>
+
+                                            <li>
+                                                <a href="agencies.html#ACF">ACF<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="agencies.html#ACL">ACL<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+											                                            <li>
+                                                <a href="agencies.html#AHRQ">AHRQ<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="agencies.html#ASPE">ASPE<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="agencies.html#ASPR">ASPR<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="agencies.html#CDC">CDC<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="agencies.html#CMS">CMS<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+											
+                                            <li>
+                                                <a href="agencies.html#FDA">FDA<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+                                    </div>
+                                    <div class="col4">
+                                        <ul>
+                                            <li class="megamenu-item-info">
+                                                <h5 class="megamenu-item-info-title"> </h5>
+                                                <p class="megamenu-item-info-text"> </p>
+                                            </li>
 
 
-                                                     </style>  
-                                                 </head>
-                                                 <body class=" ">
-                                                    <header class="header" id="site-header">
-                                                        <div class="container">
-                                                            <div class="header-content-wrapper">
-                                                                <div class="logo">
-                                                                    <a href="index.html" class="full-block-link"></a>
-                                                                    <img src="img/logo.png" alt="HHSTAGGS">
-                                                                    <div class="logo-text">
-                                                                        <div class="logo-title">TAGGS</div>
-                                                                        <div class="logo-sub-title">Annual Report 2016</div>
-                                                                    </div>
-                                                                </div>
-                                                                <nav id="primary-menu" class="primary-menu">
-                                                                    <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
-                                                                        <span class="mob-menu--title">Menu</span>
-                                                                        <span id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
-                                                                            <svg width="1000px" height="1000px">
-                                                                                <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-                                                                                <path id="pathE" d="M 300 500 L 700 500"></path>
-                                                                                <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-                                                                            </svg>
-                                                                        </span>
-                                                                    </a>
-                                                                    <ul class="primary-menu-menu">
-                                                                        <li class="menu-item-has-children">
-                                                                            <a href="index.html">Home</a>
-                                                                        </li>
-                                                                        <li class="">
-                                                                            <a href="awards.html" class="blue">Awards</a>
-                                                                        </li>
-                                                                        <li class="has-megamenu menu-item-has-children">
-                                                                            <a href="agencies.html">Agencies</a>
-                                                                            <div class="megamenu" style="background-image: url('img/menu-bg.png');">
-                                                                                <div class="megamenu-row">
-                                                                                    <div class="col4">
-                                                                                        <ul>
-                                                                                            <li class="megamenu-item-info">
-                                                                                                <h5 class="megamenu-item-info-title">HHS Agencies</h5>
-                                                                                                <p class="megamenu-item-info-text"> </p>
-                                                                                            </li>
+                                            <li>
+                                                <a href="agencies.html#HRSA">HRSA<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
 
-                                                                                            <li>
-                                                                                                <a href="agencies.html#ACF">ACF<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <a href="agencies.html#ACL">ACL<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <a href="agencies.html#AHRQ">AHRQ<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <a href="agencies.html#ASPE">ASPE<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
+                                            <li>
+                                                <a href="agencies.html#IHS">IHS<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+											 <li>
+                                                <a href="agencies.html#NIH">NIH<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="agencies.html#OASH">OASH<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="agencies.html#OGA">OGA<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="agencies.html#ONC">ONC<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="agencies.html#SAMHSA">SAMHSA<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col3">
+                                        <ul>
+                                            <li>
+                                                <div class="google-logo">
+                                                    <img src="img/logo.png" alt="taggs">
+                                                </div>
+                                                <p class="google-text">HHS’ Tracking Accountability in Government Grants 
+												System (TAGGS) website provides access to detailed information on government grants
+												awarded.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <a href="#">Download</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user-menu open-overlay">
+                    <a href="#" class="user-menu-content  js-open-aside">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+    </div>
+</header>
+<div class="mCustomScrollbar" data-mcs-theme="dark">
+    <div class="popup right-menu">
+        <div class="right-menu-wrap">
+            <div class="us7er-menu-close js-close-aside">
+                <a href="#" class="user-menu-content  js-clode-aside">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class="logo">
+                <a href="index.html" class="full-block-link"></a>
+                <img src="img/logo.png" alt="HHSTAGGS">
+                <div class="logo-text">
+                    <div class="logo-title">HHS TAGGS</div>
+                </div>
+            </div>
+        </div>
+        <div class="widget ">
+        </div>
+    </div>
+</div>
+<div class="content-wrapper">
+<section class="height-100 taggs-post imagebg cover cover-3" data-overlay="8">
+                <div class="background-image-holder" style="background: url(&quot;img/hero952.jpg&quot;); opacity: 1;">
+                    <img alt="image" src="img/hero952.jpg">
+                </div>
+                <div class="container pos-absolute pos-bottom text-center-xs">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img class="logo" alt="" src="img/taggslogoallwhite2.png">
+                            <p class="lead">
+                                Health and Human Services 
+                                <br> AWARDS
+                            </p>
+                        </div>
+                </div>
+        </div>
+</section>
+<div class="container">
+    <div class="row medium-padding120">
+        <div class="col-lg-12">
+            <div class="row mb30">
+                <div class="col-lg-12">
+                <div class="heading">
+                    <h4 class="heading-title" style="font-size: 48px; color: #000; margin-bottom: 20px;">Awards by Location</h4>
+                    <div class="heading-line">
+                        <span class="short-line"></span>
+                        <span class="long-line"></span>
+                    </div>
+                    <p class="heading-text" style="color: #000;">
+					The maps in this section show data for awards that HHS made in FY 2016.  Darker colors indicate larger dollar amounts, according to the legend below.  
+					</p>
+                    <p class="heading-text" style="color: #000;">
+					Hover over a country to view the award dollars and number of awards.  For discretionary award data, click on the link at left.  To view award data by agency, click on an agency name in the dropdown box.
+					</P>
+                     <p class="heading-text" style="color: #000;">
+					Award data by continent is presented as a table beneath the world map.
+					</p>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <ul class="list list--secondary">
+                        <li>
+                            <i class="taggsicon-check"></i>
+                            <p>Awards By State:  From the map of the United States, use the mouse to zoom down to an individual state. 
+							Award data will display in a tooltip.  To view discretionary awards, click the link at left.  
+							Data for U.S. Territories is available as a table.  Note:  Data for other countries will not be available
+							at the state level and below.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <ul class="list list--secondary">
+                        <li>
+                            <i class="taggsicon-check"></i>
+                            <p>Awards by County: From any U.S. state, use the mouse to zoom down to any county in that state.  
+							Award data will display in a tooltip.  To view discretionary awards, click the link at left. 
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                                                                                            <li>
-                                                                                                <a href="agencies.html#ASPR">ASPR<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
 
-                                                                                            <li>
-                                                                                                <a href="agencies.html#CDC">CDC<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
-
-                                                                                            <li>
-                                                                                                <a href="agencies.html#CMS">CMS<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
-
-                                                                                            <li>
-                                                                                                <a href="agencies.html#FDA">FDA<i class="taggsicon-right-arrow"></i></a>
-                                                                                            </li>
-                                                                                        </div>
-                                                                                        <div class="col4">
-                                                                                            <ul>
-                                                                                                <li class="megamenu-item-info">
-                                                                                                    <h5 class="megamenu-item-info-title"> </h5>
-                                                                                                    <p class="megamenu-item-info-text"> </p>
-                                                                                                </li>
-
-
-                                                                                                <li>
-                                                                                                    <a href="agencies.html#HRSA">HRSA<i class="taggsicon-right-arrow"></i></a>
-                                                                                                </li>
-
-                                                                                                <li>
-                                                                                                    <a href="agencies.html#IHS">IHS<i class="taggsicon-right-arrow"></i></a>
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    <a href="agencies.html#NIH">NIH<i class="taggsicon-right-arrow"></i></a>
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    <a href="agencies.html#OASH">OASH<i class="taggsicon-right-arrow"></i></a>
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    <a href="agencies.html#OGA">OGA<i class="taggsicon-right-arrow"></i></a>
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    <a href="agencies.html#ONC">ONC<i class="taggsicon-right-arrow"></i></a>
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    <a href="agencies.html#SAMHSA">SAMHSA<i class="taggsicon-right-arrow"></i></a>
-                                                                                                </li>
-                                                                                            </ul>
-                                                                                        </div>
-                                                                                        <div class="col3">
-                                                                                            <ul>
-                                                                                                <li>
-                                                                                                    <div class="google-logo">
-                                                                                                        <img src="img/logo.png" alt="taggs">
-                                                                                                    </div>
-                                                                                                    <p class="google-text">HHS’ Tracking Accountability in Government Grants 
-                                                                                                        System (TAGGS) website provides access to detailed information on government grants
-                                                                                                        awarded.
-                                                                                                    </p>
-                                                                                                </li>
-                                                                                            </ul>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li class="">
-                                                                                <a href="#">Download</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </nav>
-                                                                    <div class="user-menu open-overlay">
-                                                                        <a href="#" class="user-menu-content  js-open-aside">
-                                                                            <span></span>
-                                                                            <span></span>
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </header>
-                                                        <div class="mCustomScrollbar" data-mcs-theme="dark">
-                                                            <div class="popup right-menu">
-                                                                <div class="right-menu-wrap">
-                                                                    <div class="us7er-menu-close js-close-aside">
-                                                                        <a href="#" class="user-menu-content  js-clode-aside">
-                                                                            <span></span>
-                                                                            <span></span>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="logo">
-                                                                        <a href="index.html" class="full-block-link"></a>
-                                                                        <img src="img/logo.png" alt="HHSTAGGS">
-                                                                        <div class="logo-text">
-                                                                            <div class="logo-title">HHS TAGGS</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="widget ">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="content-wrapper">
-                                                            <section class="height-100 taggs-post imagebg cover cover-3" data-overlay="8">
-                                                                <div class="background-image-holder" style="background: url(&quot;img/hero952.jpg&quot;); opacity: 1;">
-                                                                    <img alt="image" src="img/hero952.jpg">
-                                                                </div>
-                                                                <div class="container pos-absolute pos-bottom text-center-xs">
-                                                                    <div class="row">
-                                                                        <div class="col-sm-6">
-                                                                            <img class="logo" alt="" src="img/taggslogoallwhite2.png">
-                                                                            <p class="lead">
-                                                                                Health and Human Services 
-                                                                                <br> AWARDS
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </section>
-                                                            <div class="container">
-                                                                <div class="row medium-padding120">
-                                                                    <div class="col-lg-12">
-                                                                        <div class="row mb30">
-                                                                            <div class="col-lg-12">
-                                                                                <h5>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam
-                                                                                    processus dynamicus, qui sequitur mutationem consuetudium lectorum.
-                                                                                </h5>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                                                <ul class="list list--secondary">
-                                                                                    <li>
-                                                                                        <i class="taggsicon-check"></i>
-                                                                                        <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                                                                                            euismod tincidunt ut laoreet dolore wisi enim ad minim veniam.
-                                                                                        </a>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                                                <ul class="list list--secondary">
-                                                                                    <li>
-                                                                                        <i class="taggsicon-check"></i>
-                                                                                        <a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum, anteposuerit
-                                                                                            litterarum formas duis dolore te feugait nulla facilisi.
-                                                                                        </a>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div id='map'></div>
-                                                            <script>
-                                                                mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw';
-                                                                var map = new mapboxgl.Map({
-                                                                    container: 'map',
-                                                                    style: 'mapbox://styles/mapbox/light-v9',
-                                                                    center: [-98, 38.88],
-                                                                    minZoom: 1,
-                                                                    zoom: 2
-                                                                });
-
-                                                                var zoomThreshold = 6;
-
-                                                                map.addControl(new mapboxgl.NavigationControl());
-
-                                                                map.on('load', function () {
-
-        //map.addSource('population', {
-        //    'type': 'vector',
-        //    'url': 'mapbox://mapbox.660ui7x6'
-        //});
-
-    //    map.addSource('HHSWorld', {
-    //        type: 'geojson',
-    //        data: 'http://localhost/MapBoxProject_Filter/geoJSONFiles/WorldMapHHS.geojson'
-    //});
-    map.addSource('HHSWorld', {
-        type: 'vector',
-        url: 'mapbox://gcline001.cixgd5uuv001m2ow3vn8p5szn-87bi9'
-    });
-    map.addLayer({
-        'id': 'worldAward',
-        'source': 'HHSWorld',
-        'source-layer': 'WorldMapHHS_1',
-        'maxzoom': zoomThreshold,
-        'type': 'fill',
-        'filter': ['==', 'class', 'country'],
-        'paint': {
-            'fill-color': {
-                property: 'awardDollars-hhs',
-                stops: [
-                [0, '#c9f1ff'],
-                [500000, '#C6DBEF'],
-                [750000, '#9ECAE1'],
-                [1000000, '#6BAED6'],
-                [2500000, '#2171B5'],
-                [50000000, '#08519C'],
-                [75000000, '#00c6d7'],
-                [10000000000, '#08306B'],
-                [25000000000, '#07153f']
-                ]
-            },
-            'fill-opacity': 0.92
+    <!--<style>
+        .mapboxgl-popup {
+            max-width: 400px;
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
         }
-    });
-});
-    //var stateLegendEl = document.getElementById('state-legend');
-    //var countyLegendEl = document.getElementById('county-legend');
-    //map.on('zoom', function () {
-    //    if (map.getZoom() > zoomThreshold) {
-    //        stateLegendEl.style.display = 'none';
-    //        countyLegendEl.style.display = 'block';
-    //    } else {
-    //        stateLegendEl.style.display = 'block';
-    //        countyLegendEl.style.display = 'none';
-    //    }
-    //});
-</script>
+    </style>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <!--LightWorldAndUS-->
+    <div id='map'></div>
+    <div id='sidebar'>
+        <h1>2016 HHS Total Award Dollars</h1>
+        <div id="tooltip-name"></div>
+        <div id='tooltip'></div>
+    </div>
+    <!--<script id="popup-template" type="text/template">
+        <h2>{{state}}</h2>
+        <strong>Award Dollars: </strong>{{awarddollars_hhs}}
+        <br>
+    </script>-->
+    <script>
+        //MapBox access token
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw';
+        //L.mapbox.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw';
+        //globals for the choropleth.  Look into using this method for color ranges.
+        //var COLORS = ['#8c510a', '#d8b365', '#f6e8c3', '#c7eae5', '#5ab4ac', '#01665e'],
+        //    BREAKS = [-1000, -500, 0, 500, 1000, 1500],
+        //    FILTERUSE;
+        var COLORS = ['transparent', '#d8b365', '#f6e8c3', '#c7eae5', '#5ab4ac', '#01665e'];
+        var BREAKS = [0, 1000, 10000, 1000000, 1000000000, 10000000000];
+        //create a map using the Mapbox Light theme, zoomed out to show world view
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/light-v9',
+            center: [-98, 38.88],
+            minZoom: 2,
+            zoom: 1
+        });
+        //var map = L.mapbox.map('map', 'gcline001.ciya6c5si007i33k1rpul4nwl-8svrb').setView([-98, 38.88], 2);
+        
+        //mapbox://styles/gcline001/ciy976ttz001h2sqjh2rir168
+        var zoomThreshold = 3;
+        // Add zoom and rotation controls to the map.
+        map.addControl(new mapboxgl.NavigationControl());
+        //Add legend control to the map.
+        //map.addControl(new mapboxgl.LegendControl());
+        //Map ID copied from MapBox Tileset goes here.
+        map.on('load', function () {
+            map.addSource('HHSWorld', {
+                type: 'vector',
+                url: 'mapbox://gcline001.ciya6c5si007i33k1rpul4nwl-8svrb'
+            });
+            //Norway = 10,000
+            //Kazakhstan = 75,000
+            //Brazil = 8,025,250
+            //Kenya = 140,411,934
+            // color is proportionally interpolated between two colors.
+            map.addLayer({
+                'id': 'worldAward',
+                'source': 'HHSWorld',
+                'source-layer': 'WorldMapAndUSstatesHHS_R3',
+                'maxzoom': zoomThreshold,
+                'type': 'fill',
+                'filter': ['==', 'class', 'country'],
+                'paint': {
+                    'fill-color': {
+                        property: 'awarddollars_hhs',
+                        type: 'interval',
+                        stops: [
+                            //[0, 'transparent'],
+                            //[10000000, 'dodgerblue'],
+                            //[50000000000, 'blue']
+                            [0, 'transparent'],
+                            [10000, 'DEEPSKYBLUE'],
+                            [100000, 'DodgerBlue'],
+                            [500000, 'MediumSlateBlue'],
+                            [10000000, 'RoyalBlue'],
+                            [50000000, 'Blue'],
+                            [100000000, 'MediumBlue'],//9
+                            [500000000, 'DarkBlue'],
+                            [500000000000, 'MidnightBlue']
+                            //[BREAKS[0], COLORS[0]],
+                            //[BREAKS[1], COLORS[1]],
+                            //[BREAKS[2], COLORS[2]],
+                            //[BREAKS[3], COLORS[3]],
+                            //[BREAKS[4], COLORS[4]],
+                            //[BREAKS[5], COLORS[5]]
+                        ]
+                        
+                    },
+                  'fill-opacity': .6
+                }
+            });
+            //1576137643 Idaho
+            //73211506394 California
+            map.addLayer({
+                'id': 'USStateAward',
+                'source': 'HHSWorld',
+                'source-layer': 'WorldMapAndUSstatesHHS_R3',
+                'minzoom': zoomThreshold,
+                'type': 'fill',
+                'filter': ['==', 'class', 'state'],
+                //'style':'style1'
+                'paint': {
+                    'fill-color': {
+                        property: 'awarddollars_hhs',
+                        stops: [
+                                    //[1000000000, 'LIGHTSKYBLUE'],
+                                    //[10000000000, 'dodgerblue'],
+                                    //[70000000000, 'blue']
+                                    [0, 'transparent'],
+                                    [1000000000, '#f7fbff'],
+                                    [2000000000, '#deebf7'],
+                                    [3000000000, '#c6dbef'],
+                                    [5000000000, '#9ecae1'],
+                                    [10000000000, '#6baed6'],
+                                    [30000000000, '#4292c6'],
+                                    [50000000000, '#2171b5'],
+                                    [80000000000, '#084594']
+                                ]
+                    },
+                'fill-opacity': 0.7
+                }
+            });
+        });
+        //// Create a popup, but don't add it to the map yet.
+        //var popup = new mapboxgl.Popup({
+        //    closeButton: false,
+        //    closeOnClick: false
+        //});
+        map.on("mousemove", function (e) {
+            //var features = map.queryRenderedFeatures(e.point, { layers: ["USStateAward"] });
+            var features = map.queryRenderedFeatures(e.point, { layers: ["worldAward"] });
+            //if (!features.length) {
+            //    popup.remove();
+            //    return;
+            //}
+            //var feature = features[0];
+            //// Populate the popup and set its coordinates
+            //// based on the feature found.
+            //popup.setLngLat(feature.geometry.coordinates[0])
+            //    .setHTML(feature.properties.name)
+            //    .addTo(map);
+            if (features.length) {
+                //show name and value in sidebar
+                document.getElementById('tooltip-name').innerHTML = "Country: " + features[0].properties.name;
+                //document.getElementById('tooltip-name').innerHTML = "State: " + features[0].properties.name;
+                var value = features[0].properties.awarddollars_hhs;
+                var num = '$' + value.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+                document.getElementById('tooltip').innerHTML = "Total: " + num;
+                //for troubleshooting - show complete features info
+                //document.getElementById('tooltip').innerHTML = JSON.stringify(features, null, 2);
+                //document.getElementById('tooltip').innerHTML = JSON.stringify(features.properties, null, 2);
+            } else {
+                //if not hovering over a feature set tooltip to empty
+                document.getElementById('tooltip-name').innerHTML = "";
+                //document.getElementById('tooltip').innerHTML = "";
+            }
+        });
+       
+        //var stateLegendEl = document.getElementById('state-legend');
+        //var countyLegendEl = document.getElementById('county-legend');
+        //map.on('zoom', function () {
+        //    if (map.getZoom() > zoomThreshold) {
+        //        stateLegendEl.style.display = 'none';
+        //        countyLegendEl.style.display = 'block';
+        //    } else {
+        //        stateLegendEl.style.display = 'block';
+        //        countyLegendEl.style.display = 'none';
+        //    }
+        //});
+    </script>
 <div class="container-fluid">
     <div class="row">
         <div style="background: #3cb878; background-size: cover; padding:150px 15px; position: relative;">
             <div style="max-width: 790px; text-align: center; margin: 0 auto; position: relative; z-index: 5;">
                 <div class="heading">
-                    <h4 class="heading-title" style="font-size: 48px; color: #fff; margin-bottom: 20px;">TAGGS AWARDS</h4>
+                    <h4 class="heading-title" style="font-size: 48px; color: #fff; margin-bottom: 20px;">Table of Awards by Location</h4>
                     <div class="heading-line">
                         <span class="short-line"></span>
                         <span class="long-line"></span>
@@ -807,6 +929,12 @@ discretionaryChart.render();
            </div>
        </div>
    </div>
+					Table will go Here..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 <div class="container-fluid">
     <div class="row">
@@ -863,7 +991,6 @@ width = 600,
 bar_height = 40,
 height = bar_height * 5;
 var rightOffset = width + labelArea;
-
 var lCol = "award.amount";
 var rCol = "award.number";
 var xFrom = d3.scale.linear()
@@ -872,24 +999,18 @@ var xTo = d3.scale.linear()
 .range([0, 400]);
 var y = d3.scale.ordinal()
 .rangeBands([20, height]);
-
 function render(data, activityType) {
-
     var ANArray = [];
     data.forEach(addToANArray)
-
     function addToANArray(data){
         ANArray.push(data["award.number"])
         
     }
     var ANmax = Math.max.apply(null, ANArray)
-
     var AAArray = [];
     data.forEach(addToAAArray)
-
     function addToAAArray(data){
         AAArray.push(data["award.amount"])
-
     }
     var AAmax = Math.max.apply(null, AAArray);
 
@@ -986,11 +1107,9 @@ function render(data, activityType) {
     chart.append("text").attr("x",width/3).attr("y", 12).attr("class","title").text("Award Amount");
     chart.append("text").attr("x",width/3+rightOffset).attr("y", 12).attr("class","title").text("Award Number");
     chart.append("text").attr("x",width+labelArea/3).attr("y", 12).attr("class","title").text("Programs");
-
 }
 var fileNames = ["training.json", "research.json", "services.json", "other.json"];
 var activityTypes = ["Training", "Research", "Services", "Other"];
-
 fileNames.forEach(function(fileName, i){
   var activityType = activityTypes[i]
     d3.json(fileName, function(error, data) {
@@ -1045,8 +1164,6 @@ var tooltip = d3.select("div.doubleBarChartCont")
         </div>
     </div>
 </div>
-
-
 
 <div class="container">
     <div class="row medium-padding120">

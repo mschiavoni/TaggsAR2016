@@ -20,108 +20,200 @@
   position: relative;
   align-content: center;
 }
-.branch {
-  position: relative;
-  margin-left: 200px;
+#taggs-org-chart{
+  background:#f7f9f9;
+  padding:20px 20px 40px 20px;
+  margin-bottom:2em;
 }
-.branch.text:after {
-  display: none;
+figure ul,
+figure ul li,
+figure ul li a{
+  position:relative;
 }
-
-.branch:after {
-  content: "";
-  width: 19px;
-  border-top: 2px solid #cdcdcd;
-  position: absolute;
-  left: -34px;
-  top: 50%;
-}
-
-.entry {
-  position: relative;
-  min-height: 60px;
-}
-.entry:before {
-  content: "";
-  height: 100%;
-  border-left: 2px solid #cdcdcd;
-  position: absolute;
-  left: -15px;
-}
-.entry:after {
-  content: "";
-  position: absolute;
-  left: -20px;
-  top: 50%;
-  width: 12px;
-  height: 12px;
-  margin-top: -5px;
-  border-radius: 100%;
-  background: #cdcdcd;
-}
-.entry:first-child:before {
-  width: 0;
-  height: 50%;
-  top: 50%;
-  border-radius: 0 0 0 0;
-}
-.entry:last-child:before {
-  width: 0;
-  height: 50%;
-  border-radius: 0 0 0 0;
-}
-.entry.sole:before {
-  display: none;
-}
-.entry.sole:after {
-  display: none;
-}
-.entry.sole.empty:before {
-  display: block;
-  border-left: none;
-  border-top: 2px solid #cdcdcd;
-  width: 25px;
-}
-.entry.sole.empty:after {
-  display: block;
-  height: 0;
-  border-left: none;
-  border-top: 2px solid #cdcdcd;
-  width: 25px;
-  left: 144px;
-  margin-top: 0;
-}
-
-.label {
-  display: block;
-  min-width: 130px;
-  padding: 5px 3px;
-  line-height: 30px;
-  text-align: center;
-  border: 2px solid #f5ab39;
-  border-radius: 0;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: 0px;
-  border-left-width: 8px;
-}
-.label.text {
-  border-color: transparent;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 3px;
-  text-align: left;
-  color: #868686;
-  left: -31px;
-}
-.label.empty {
+figure ul{
   padding: 0;
-  border-width: 0;
-  border-top-width: 2px;
-  margin-top: 0;
+  margin: 0;
+  list-style: none;   
+}
+figure ul li{
+  padding:10px 0;
+}
+figure ul li a{
+  display: block;
+  border: 4px solid;
+  text-align: center;
+  color:#fff;
+  font-weight:bold;
+  font-size: .8em;
+  height: 80px;
+  overflow: hidden;
+}
+figure ul li a:hover{
+  color:#fff;
+  text-decoration:none;
+}
+figure ul li a > span{
+  display:block;
+  min-height:100%;
+  padding-top:20px;
+  overflow:hidden;
+  transition:all ease .4s;
+  text-shadow:rgba(0,0,0,0.5) 1px 1px 1px;
+}
+figure ul > li a:hover > span{
+  background:#222;
+}
+figure small{
+  display:block;
+  font-weight:normal;
+}
+figure > ul > li > div > a{
+  width:20%;
+  margin:0 auto 15px auto;
+}
+figure > ul > li > div:after{
+  content:"";
+  width:calc(50%);
+  height:25px;
+  margin:0 auto;
+  position:absolute;
+  border-left:4px solid;
+  top:90px;
+  left:calc(50% - 2px);
+  display:block;
+  z-index:0;
+}
+figure > ul > li > ul:after{ /* horizontal line connecting boxes under head honcho (and vertical lines on the far left and right) */
+  content:"";
+  width:calc(100% - 30px - 248px + 4px);
+  height:20px;
+  margin:0 auto;
+  position:absolute;
+  border:4px solid;
+  border-bottom:none;
+  top:10px;
+  left:calc(15px + 124px - 2px);
+  display:block;
+  z-index:0;
+}
+figure > ul > li > ul > li{
+  z-index:1;
+}
+figure > ul > li > ul > li:first-of-type:before,
+figure > ul > li > ul > li:last-of-type:before{ /* hiding vertical lines on the far left and right */
+  border-left:transparent;
+}
+figure > ul > li > ul > li:before{ /* vertical lines connecting boxes to horizontal line under head honcho */
+  content:"";
+  border-left:4px solid;
+  position:relative;
+  display:block;
+  min-height:20px;
+  margin-left:calc(50% - 2px);
+}
+figure > ul > li > ul > li > ul{ /* vertical line connecting boxes under a director (level 2) */
+  border-left: 4px solid;
+}
+figure > ul > li > ul > li > ul > li{ /* horizontal line connect level 3 boxes to vertical line under director (level 2) */
+  border-top: 4px solid;
+  top:50px;
+}
+figure ul > li > ul > li > ul > li > a{ /* level 3 boxes and below... */
+  right:-30px;
+  top:-50px;
+  width:calc(100% - 30px);
 }
 
+figure > ul > li ul > li > ul > li > ul{ /* vertical line connecting boxes under a level 3 box */
+  border-left: 4px solid;
+  right:-30px;
+  top:-50px;
+  width:calc(100% - 30px);
+  padding-top: 10px;
+}
+figure ul > li > ul > li > ul > li.taggs-org-branch-end{ /* hiding the bottom section of the vertical line above */
+  border-left: 4px solid #fff;
+  right:4px;
+  width:calc(100% + 4px);
+}
+figure ul > li > ul > li > ul > li > ul > li{ /* horizontal line connect level 4 boxes to vertical line under level 3 box */
+  border-top: 4px solid;
+  top:50px;
+}
+@media all and (max-width: 1200px){
+  figure > ul > li > div > a{
+    width:100%;
+    margin:0 auto;
+  }
+  figure > ul > li > ul{ /* vertical line under head honcho (level 1) */
+    border-left: 4px solid;
+  }
+  figure > ul > li > ul > li{ /* horizontal line connecting level 2 boxes to vertical line under head honcho (level 1) */
+    border-top: 4px solid;
+    top:50px;
+  }
+  figure > ul > li > div:after,
+  figure > ul > li > ul:after,
+  figure > ul > li > ul > li:first-of-type:before,
+  figure > ul > li > ul > li:last-of-type:before,
+  figure > ul > li > ul > li:before{
+    display: none;
+  }
+  figure > ul > li > ul > li.col-lg-2{
+    padding-right:0;
+    padding-left:30px;
+  }
+  figure > ul > li > ul > li > a,
+  figure > ul > li > ul > li > ul{
+    top:-50px;
+  }
+  figure ul > li > ul > li.taggs-org-branch-end:last-of-type{ /* hiding the bottom section of the vertical line above */
+    border-left: 4px solid #fff;
+    right:4px;
+    width:calc(100% + 4px);
+  }
+}
+figure ul li a,
+figure > ul > li > ul,
+figure > ul > li > ul:after,
+figure > ul > li > div:after,
+figure > ul > li > ul > li,
+figure > ul > li > ul > li:before,
+figure > ul > li > ul > li > ul,              
+figure > ul > li > ul > li > ul > li,         
+figure > ul > li ul > li > ul > li > ul,      
+figure ul > li > ul > li > ul > li > ul > li{ 
+  border-color: #f1f1f1;
+}
+
+#taggs-org-chart,
+figure ul > li > ul > li > ul > li.taggs-org-branch-end{
+  background: #f7f9f9;
+}
+figure ul li a{ background:#858587;} 
+figure > ul > li > ul > li:nth-of-type(1) a{  background:#00a6de; }
+figure > ul > li > ul > li:nth-of-type(1) a:hover{ color:#00a6de; }
+figure > ul > li > ul > li:nth-of-type(2) a{  background:#66d43d; }
+figure > ul > li > ul > li:nth-of-type(2) a:hover{ color:#66d43d; }
+figure > ul > li > ul > li:nth-of-type(3) a{  background:#f7a30a; }
+figure > ul > li > ul > li:nth-of-type(3) a:hover{ color:#f7a30a; }
+figure > ul > li > ul > li:nth-of-type(4) a{  background:#8c42ad; }
+figure > ul > li > ul > li:nth-of-type(4) a:hover{ color:#bf75df; }
+figure > ul > li > ul > li:nth-of-type(5) a{  background:#de5433; }
+figure > ul > li > ul > li:nth-of-type(5) a:hover{ color:#ef6544; }/* 1 step lighter */
+
+figure > ul > li > ul > li > a > span{
+  background:rgba(0,0,0,0);
+}
+figure > ul > li > ul > li > ul > li > a > span{
+  background:rgba(0,0,0,0.2);
+}
+figure > ul > li > ul > li > ul > li > ul > li > a > span{
+  background:rgba(0,0,0,0.4);
+}
+figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
+  background:rgba(0,0,0,0.6);
+}
      </style>
 
 	
@@ -424,119 +516,65 @@
 <div class="container-fluid">
     <div class="row">
         <div class="opdiv-tables medium-padding120 bg-border-color contacts-shadow">
-            <div class="container">
+			
+<div class="container-fluid">
+<div class="row">
+  <div id="taggs-org-chart">
+    <figure class="clearfix">
+        <ul>
+            <li class="taggs-org-branch-end"><div><a href="#"><span>The Secretary/ Deputy Secretary/ Chief of Staff <small>HHS Organization</small></span></a></div>
+                <ul>
+                    <li class="col-lg-2 taggs-org-branch-end"><a href="#"><span>Office of <br />Health Reform (OHR)</span></a>
 
+                    </li>
+                    <li class="col-lg-3 taggs-org-branch-end"><a href="#"><span>Office of <br />the Secretary</span></a>
+                        <ul>
+                            <li><a href="#"><span>Office of the Assistant<br /> Secretary for Administration (ASA)</span></a></li>
+                            <li><a href="#"><span>Office of the Assistant <br />Secretary for Financial Resources (ASFR)</span></a></li>
+                            <li><a href="#"><span>Office of the Assistant <br />Secretary for Health (OASH)</span></a></li>
+                            <li><a href="#"><span>Office of the Assistant <br />Secretary for Legislation (ASL)</span></a></li>
+                            <li><a href="#"><span>Office of the Assistant <br />Secretary for Planning & Evaluation (ASPE)</span></a></li>
+                            <li><a href="#"><span>Office of the Assistant <br />Secretary for Preparedness & Response (ASPR)</span></a></li>
+                            <li><a href="#"><span>Office of the Assistant <br />Secretary for Public Affairs (ASPA)</span></a></li>
+                            <li><a href="#"><span>Office for <br />Civil Rights (OCR)</span></a></li>
+                            <li><a href="#"><span>Departmental <br />Appeals Board (DAB)</span></a></li>
+                            <li><a href="#"><span>Office for the<br /> General Counsel (OGC)</span></a></li>
+                            <li><a href="#"><span>Office for <br />Global Affairs (OGA)</span></a></li>
+                            <li><a href="#"><span>Office of Inspector<br /> General (OIG)</span></a></li>
+                            <li><a href="#"><span>Office for Medicare<br /> Hearing & Appeals (OMHA)</span></a></li>
+                            <li><a href="#"><span>Office for the National Coordinator for<br /> Health Information Technology (ONC)</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="col-lg-2 taggs-org-branch-end"><a href="#"><span>Office of Intergovernmental <br />& External Affairs (IEA)</span></a>
 
-<div class="wrapper">
-  <div class="label"><p>The Secretary<br />Deputy Secretary<br />Chief of Staff</p></div>
-  <div class="branch">
-    <div class="entry">
-      <div class="label">Office of the Secretary</div>
-      <div class="branch">
-        <div class="entry sole empty">
-          <div class="label empty"></div>
-          <div class="branch lv3">
-		<div class="entry">
-          <div class="label">Office of the Assistant Secretary for Administration (ASA)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Office of the Assistant Secretary for Financial Resources (ASFR)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Office of the Assistant Secretary for Health (OASH)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Office of the Assistant Secretary for Legislation (ASL)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Office of the Assistant Secretary for Planning & Evaluation (ASPE)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Office of the Assistant Secretary for Preparedness & Response (ASPR)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Office of the Assistant Secretary for Public Affairs (ASPA)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Office for Civil Rights (OCR)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Departmental Appeals Board (DAB)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Office for the General Counsel (OGC)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Office for Global Affairs (OGA)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Office of Inspector General (OIG)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Office for Medicare Hearing & Appeals (OMHA)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Office for the National Coordinator for Health Information Technology(ONC)</div>
-        </div>		
-          </div>
-        </div>
-      </div>
-    </div>
-	    <div class="entry">
-      <div class="label">The Executive Secretariat (ES)</div>
-    </div>
-    <div class="entry">
-      <div class="label">Office of Health Reform (OHR)</div>
-    </div>
-    <div class="entry">
-      <div class="label">Office of Intergovernmental & External Affairs (IEA)</div>
-    </div>	
-    <div class="entry">
-      <div class="label">OperatingDivisions</div>
-      <div class="branch lv2">
-		<div class="entry">
-          <div class="label">Office of the Assistant Secretary for Children & Families (ACF)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Office of the Assistant Secretary for Community Living (ACL)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Agency for Healthcare Research & Quality (AHRQ)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Agency for Toxic Substance & Disease Registry (ATSDR)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Centers for Disease Control & Prevention (CDC)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Centers for Medicare & Medicaid Services (CMS)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Food & Drug Administration (FDA)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Health Resources & Services Administration (HRSA)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Indian Health Services (IHS)</div>
-        </div>
-		<div class="entry">
-          <div class="label">National Institutes of Health (NIH)</div>
-        </div>
-		<div class="entry">
-          <div class="label">Substance Abuse & Mental Health Services Administrations (SAMHSA)</div>
-        </div>		
-      </div>
-    </div>
-
+                    </li>
+                    <li class="col-lg-3 taggs-org-branch-end"><a href="#"><span>Operating <br />Divisions</span></a>
+                    	<ul>
+                    		<li><a href="#"><span>Office of the Assistant<br /> Secretary for Children & Families (ACF)</span></a></li>
+                    		<li><a href="#"><span>Office of the Assistant Secretary<br /> for Community Living (ACL)</span></a></li>
+                            <li><a href="#"><span>Agency for Healthcare<br /> Research & Quality (AHRQ)</span></a></li>
+                            <li><a href="#"><span>Agency for Toxic Substance<br /> & Disease Registry (ATSDR)/span></a></li>
+                            <li><a href="#"><span>Centers for Disease<br /> Control & Prevention (CDC)</span></a></li>
+                            <li><a href="#"><span>Centers for Medicare<br /> & Medicaid Services (CMS)</span></a></li>
+                            <li><a href="#"><span>Food & Drug<br /> Administration (FDA)</span></a></li>
+                            <li><a href="#"><span>Health Resources <br />& Services Administration (HRSA)</span></a></li>
+                            <li><a href="#"><span>Indian Health<br /> Services (IHS)</span></a></li>
+                            <li><a href="#"><span>National Institutes<br /> of Health (NIH)</span></a></li>
+                            <li><a href="#"><span>Substance Abuse & Mental <br />Health Services Administrations (SAMHSA)<span></a></li>
+                    	</ul>
+                    </li>
+                    <li class="col-lg-2 taggs-org-branch-end"><a href="#"><span>The Executive <br />Secretariat (ES)</span></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </figure>
+</div>
   </div>
-</div>
-            </div>
-        </div>
+  </div>
+  </div>
     </div>
-</div>
-
+	  </div>
 
 <div class="container">
 	<div class="row medium-padding100">
