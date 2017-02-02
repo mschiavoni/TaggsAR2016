@@ -15,8 +15,7 @@
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.css' rel='stylesheet' />
   <script src="d3.v3.min.js"></script>
   <script src="https://d3js.org/d3-format.v1.min.js"></script>
-  <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
-  <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">x
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
   <link rel="stylesheet" href="css/multiSelect.css">
@@ -124,6 +123,7 @@
         font-size: 30px;
         color: #0D47A1;
         margin-left: 145px;
+        position: absolute;
 
        }
 		
@@ -368,14 +368,15 @@
           map.addControl(new mapboxgl.NavigationControl());
 
           map.on('load', function () {
+          })
+</script>
 
-<<<<<<< HEAD
-    <!--<style>
+    <style>
         .mapboxgl-popup {
             max-width: 400px;
             font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
         }
-    </style>-->
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
     <!--LightWorldAndUS-->
     <div id='map'></div>
@@ -1269,8 +1270,10 @@ var tooltip = d3.select("div.doubleBarChartCont")
 <script src="js/velocity.min.js"></script>
 <script src="js/ScrollMagic.min.js"></script>
 <script src="js/animation.velocity.min.js"></script>
+
 <script src="FusionCharts/js/fusioncharts.js"></script>
 <script src="FusionCharts/js/fusioncharts.charts.js"></script>
+
 
 </body>
 </html>
