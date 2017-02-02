@@ -380,11 +380,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
     <!--LightWorldAndUS-->
     <div id='map'></div>
-    <div id='sidebar'>
-        <h1>2016 HHS Total Award Dollars</h1>
-        <div id="tooltip-name"></div>
-        <div id='tooltip'></div>
-    </div>
+
     <!--<script id="popup-template" type="text/template">
         <h2>{{state}}</h2>
         <strong>Award Dollars: </strong>{{awarddollars_hhs}}
@@ -500,7 +496,7 @@
         //    closeButton: false,
         //    closeOnClick: false
         //});
-        map.on("mousemove", function (e) {
+       map.on("mousemove", function (e) {
             //var features = map.queryRenderedFeatures(e.point, { layers: ["USStateAward"] });
             var features = map.queryRenderedFeatures(e.point, { layers: ["worldAward"] });
             //if (!features.length) {
@@ -530,66 +526,10 @@
             }
         });
        
-        //var stateLegendEl = document.getElementById('state-legend');
-        //var countyLegendEl = document.getElementById('county-legend');
-        //map.on('zoom', function () {
-        //    if (map.getZoom() > zoomThreshold) {
-        //        stateLegendEl.style.display = 'none';
-        //        countyLegendEl.style.display = 'block';
-        //    } else {
-        //        stateLegendEl.style.display = 'block';
-        //        countyLegendEl.style.display = 'none';
-        //    }
-        //});
     </script>
 
       
-<!-- =======
-    //    map.addSource('HHSWorld', {
-    //        type: 'geojson',
-    //        data: 'http://localhost/MapBoxProject_Filter/geoJSONFiles/WorldMapHHS.geojson'
-    //});
-    map.addSource('HHSWorld', {
-      type: 'vector',
-      url: 'mapbox://gcline001.cixgd5uuv001m2ow3vn8p5szn-87bi9'
-    });
-    map.addLayer({
-      'id': 'worldAward',
-      'source': 'HHSWorld',
-      'source-layer': 'WorldMapHHS_1',
-      'maxzoom': zoomThreshold,
-      'type': 'fill',
-      'filter': ['==', 'class', 'country'],
-      'paint': {
-        'fill-color': {
-          property: 'awardDollars-hhs',
-          stops: [
-          [0, '#c9f1ff'],
-          [500000, '#C6DBEF'],
-          [750000, '#9ECAE1'],
-          [1000000, '#6BAED6'],
-          [2500000, '#2171B5'],
-          [50000000, '#08519C'],
-          [75000000, '#00c6d7'],
-          [10000000000, '#08306B'],
-          [25000000000, '#07153f']
-          ]
-        },
-        'fill-opacity': 0.92
-      }
-    });
-  });
-    //var stateLegendEl = document.getElementById('state-legend');
-    //var countyLegendEl = document.getElementById('county-legend');
-    //map.on('zoom', function () {
-    //    if (map.getZoom() > zoomThreshold) {
-    //        stateLegendEl.style.display = 'none';
-    //        countyLegendEl.style.display = 'block';
-    //    } else {
-    //        stateLegendEl.style.display = 'block';
-    //        countyLegendEl.style.display = 'none';
-    //    }
-    //}); -->
+
 
   <div class="container-fluid">
     <div class="row">
