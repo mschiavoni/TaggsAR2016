@@ -2410,3 +2410,30 @@ body.overlay-enable:before {
 .swiper-container.auto-height .swiper-slide {
     height:auto !important;}
 	
+.w-tags {
+    margin-bottom: 10px;
+}
+.w-tags {
+    margin-left: 10px;
+}
+
+.w-tags {
+    overflow: hidden;
+}
+.widget {
+    margin-bottom: 40px;
+}
+.widget {
+    margin-left: 115px;
+}
+.w-tags .tags-wrap a {
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #acacac;
+    border: 2px solid #dddede;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    transition: all .3s ease;
+}	
