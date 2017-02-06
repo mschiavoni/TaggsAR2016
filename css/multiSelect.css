@@ -20,10 +20,9 @@
     background: #f7f9f9; 
     color: #01538f !important;
     border: 5px solid #01538f;
-    border-radius: 0px;
+    border-radius: 50px;
     transition: all 2s ease;
     font-size: 25px;
-
   }
   .btn-default:hover{
     color: #f7f9f9 !important;
