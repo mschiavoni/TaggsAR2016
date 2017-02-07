@@ -2425,9 +2425,7 @@ body.overlay-enable:before {
 .widget {
     margin-bottom: 40px;
 }
-.widget {
-    margin-left: 115px;
-}
+
 .w-tags .tags-wrap a {
     padding: 10px 15px;
     font-size: 15px;
