@@ -2,20 +2,23 @@
 
 $(document).ready(function() {
 
-
+// *****DISCRETIONARY MULTI LEVEL PIE *****
 
 FusionCharts.ready(function () {
   var discretionaryChart = new FusionCharts({
     "type": 'multilevelpie',
     "renderAt": 'MLPChartContainer',
-    "id": "myChart",
+    "id": "mlpchart",
    "width": '100%',
     "height": '700',
     "dataFormat": 'xmlurl',
-    "dataSource": 'HHSMLPChart.xml'
+    "dataSource": 'xmlFiles/HHSMLPChart.xml'
 });
   discretionaryChart.render();
 })
+
+
+// ***** MULTI SELECT GRANT HIST CHART *****
 
   // On page load, we hardcode the rendering of the first graph in the list.
   renderChart('HHSgrantHist');
@@ -24,7 +27,7 @@ FusionCharts.ready(function () {
   /**
    * function to gather the data and render a chart at a given location.
    *
-   * @method renderChart
+   *  renderChart
 {String} dataSource - both the id of the div and the name of the xml.
    */
   function renderChart(dataSource){
@@ -35,7 +38,7 @@ FusionCharts.ready(function () {
         "width": "100%",
         "height": "500",
         "dataFormat": "xmlurl",
-        "dataSource": dataSource + ".xml"
+        "dataSource": "xmlFiles/" + dataSource + ".xml"
       });
       myChart.render();
     });
@@ -57,6 +60,22 @@ FusionCharts.ready(function () {
       $("#" + selectedID).empty()
     }
   });
+
+
+// ***** HEAT MAP *****
+
+FusionCharts.ready(function () {
+  var HHSmultiAgencyHeatMap = new FusionCharts({
+    "type": 'heatmap',
+    "renderAt": 'HHSmultiAgencyHeatMap',
+    "id": "myChart2",
+   "width": '100%',
+    "height": '1400',
+    "dataFormat": 'xmlurl',
+    "dataSource": 'xmlFiles/HHSmultiAgencyHeatMap.xml'
+});
+  HHSmultiAgencyHeatMap.render();
+})
 
 
 });
