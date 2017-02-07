@@ -264,6 +264,8 @@ select {
   background-color: #fff; }
 .bg-border-color {
   background-color: #f7f9f9; }
+  .bg-bordertwo-color {
+  background-color: #dae3e6; }
 .facebook-bg-color {
   background-color: #3a589b; }
 .twitter-bg-color {
@@ -2423,9 +2425,7 @@ body.overlay-enable:before {
 .widget {
     margin-bottom: 40px;
 }
-.widget {
-    margin-left: 115px;
-}
+
 .w-tags .tags-wrap a {
     padding: 10px 15px;
     font-size: 15px;
