@@ -65,16 +65,16 @@ FusionCharts.ready(function () {
 // ***** HEAT MAP *****
 
 FusionCharts.ready(function () {
-  var HHSmultiAgencyHeatMap = new FusionCharts({
+  var HHSMultiAgencyHeatMap = new FusionCharts({
     "type": 'heatmap',
-    "renderAt": 'HHSmultiAgencyHeatMap',
+    "renderAt": 'HHSMultiAgencyHeatMap',
     "id": "myChart2",
    "width": '100%',
     "height": '1400',
     "dataFormat": 'xmlurl',
-    "dataSource": 'xmlFiles/HHSmultiAgencyHeatMap.xml'
+    "dataSource": 'xmlFiles/HHSMultiAgencyHeatMap.xml'
 });
-  HHSmultiAgencyHeatMap.render();
+  HHSMultiAgencyHeatMap.render();
 })
 
 
