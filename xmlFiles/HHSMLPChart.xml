@@ -22,7 +22,7 @@
      toolTipBgColor="fffff"
      toolTipBorderColor="fffff"
      showToolTipShadow="1"
-     canvasBgAlpha="0"
+     canvasBgAlpha="1"
      baseFontSize="15"
      ><category label='Discretionary Award Dollars{br}$52,790,366,508' Color="ffffff">
      <category label='Other' value='8097509257' toolText='Other total is $8,097,509,257 {br}or 15.3 % of discretionary award dollars.  ' Color='#00c6d7 ' >
