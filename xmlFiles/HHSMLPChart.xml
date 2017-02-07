@@ -1,7 +1,9 @@
 
 <chart 
      bgColor="f7f9f9"
-     bgAlpha="1"
+     bgAlpha="0"
+     canvasBgAlpha="0"
+     canvasBgColor="black"
      legendBgAlpha="0"
      formatNumberScale="1"
      formatNumber="1"
