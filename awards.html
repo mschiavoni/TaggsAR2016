@@ -603,6 +603,7 @@
         // if ('center' === "") {
         //   $('div.daLegend2').addClass('displayLegend')
         // }
+        // look at documentatoin change in mapbox on zoom  toggle class?
 
 
        // ***************SECOND MAP JS
@@ -1042,7 +1043,7 @@ function render(data, activityType) {
     .text(function(d){return d[rCol].toLocaleString();})
     // .attr("tabindex", "0");
     chart.append("text").attr("x",width/3).attr("y", 15).attr("class","title").text("Award Amount");
-    chart.append("text").attr("x",width/3+rightOffset).attr("y", 15).attr("class","title").text("Award Number");
+    chart.append("text").attr("x",width/3+rightOffset).attr("y", 15).attr("class","title").text("No. Awards");
     chart.append("text").attr("x",width+labelArea/3).attr("y", 15).attr("class","title").text("Programs");
 
   }
