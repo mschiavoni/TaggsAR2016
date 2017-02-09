@@ -24,6 +24,10 @@
 
   </script>
   <style>
+
+
+
+
     .legend {
       background-color: #fff;
       border-radius: 3px;
@@ -128,10 +132,9 @@
     color: #0D47A1;
     margin-left: 2%;
     position: absolute;
+
   }
-a {
-    color: #2f2c2c ;
-}
+
 </style>  
 </head>
 <body class=" ">
@@ -600,7 +603,6 @@ a {
         // if ('center' === "") {
         //   $('div.daLegend2').addClass('displayLegend')
         // }
-        // look at documentatoin change in mapbox on zoom  toggle class?
 
 
        // ***************SECOND MAP JS
@@ -719,14 +721,16 @@ a {
 
         <div class="container-fluid">
           <div class="row">
-            <div style="background: #ffffff; background-size: cover; padding:150px 15px; position: relative;">
+            <div style="background: #3cb878; background-size: cover; padding:150px 15px; position: relative;">
               <div style="max-width: 790px; text-align: center; margin: 0 auto; position: relative; z-index: 5;">
                 <div class="heading">
-                  <h4 class="heading-title" style="font-size: 48px; color: #000000; margin-bottom: 20px;">Fusion Heatmap</h4>
+                  <h4 class="heading-title" style="font-size: 48px; color: #fff; margin-bottom: 20px;">Fusion Heatmap</h4>
                   <div class="heading-line">
                     <span class="short-line"></span>
                     <span class="long-line"></span>
                   </div>
+<!-- <<<<<<< HEAD
+======= -->
 
                   <p>The heat map below compares the top recipients that received $300 million or more award dollars 
 				  from multiple agencies.  Darker colors indicate higher dollar amounts; lighter colors designate lower
@@ -737,10 +741,9 @@ a {
                 </div>
               </div>
             </div>
-          <div id="HHSMultiAgencyHeatMap">HHSMultiAgencyHeatMap</div>			
-			
           </div>
-		  
+
+          <div id="HHSMultiAgencyHeatMap">HHSMultiAgencyHeatMap</div>
         </div>
 
 
@@ -1039,7 +1042,7 @@ function render(data, activityType) {
     .text(function(d){return d[rCol].toLocaleString();})
     // .attr("tabindex", "0");
     chart.append("text").attr("x",width/3).attr("y", 15).attr("class","title").text("Award Amount");
-    chart.append("text").attr("x",width/3+rightOffset).attr("y", 15).attr("class","title").text("No. Awards");
+    chart.append("text").attr("x",width/3+rightOffset).attr("y", 15).attr("class","title").text("Award Number");
     chart.append("text").attr("x",width+labelArea/3).attr("y", 15).attr("class","title").text("Programs");
 
   }
