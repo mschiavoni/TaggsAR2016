@@ -211,6 +211,7 @@ figure > ul > li > ul > li > ul > li > ul > li > a > span{
 figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
   background:rgba(0,0,0,0.6);
 }
+
      </style>
 
 	
@@ -636,7 +637,7 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                         <div class="heading align-center">
-                            <h4 class="h1 heading-title">TAGGS 2016 Overview</h4>
+                            <h4 class="h1 heading-title">2016 OPDIV Totals and Changes</h4>
                             <div class="heading-line">
                                 <span class="short-line"></span>
                                 <span class="long-line"></span>
@@ -831,7 +832,7 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
             margin-bottom: 7px;}       
         .taggs-overlay p {
             margin: 0;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 1.45em;}
         .taggs-overlaySVG {
             width: 970px;
@@ -880,9 +881,8 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
 			top: 0px;
 			left: 890px;}
        .taggs-deficitCircle {
-            stroke-width: 2;
-            stroke: #999;
-            stroke-dasharray: 4 4;
+            stroke-width: 7;
+            stroke: #acceff;
             fill: none;}       
         #taggs-colorKey {
             position: absolute;
@@ -1051,19 +1051,19 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
             line-height: 1.45em;
             font-style: italic;}
         .change-decrease3 {
-            background-color: #c6dbef;}        
+            background-color: #ca4445;}        
         .change-decrease2 {
-            background-color: #9ecae1;}        
+            background-color: #ee9586;}        
         .change-decrease1 {
-            background-color: #6baed6;}        
+            background-color: #e4b7b2;}        
         .change-same {
-            background-color: #4292c6;}       
+            background-color: #c5d8de;}       
         .change-increase1 {
-            background-color: #2171b5;}        
+            background-color: #8EC6F5;}        
         .change-increase2 {
-            background-color: #08519c;}       
+            background-color: #107BE8;}       
         .change-increase3 {
-            background-color: #08306b;}        
+            background-color: #01579b;}        
         .change-decrease3 span.label {
             color: #eeb0a2;}        
         .change-decrease2 span.label {
@@ -1080,6 +1080,7 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
             color: #08306b;}
 		div#interactiveFreeFormMain {
 			margin-top: 20px;}
+
 	</style>
     <div class="taggs">
         <div id="taggs-chartFrame">
@@ -1651,8 +1652,8 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                         return 3;
                     }
                 },
-                fillColor: d3.scale.ordinal().domain([-3, -2, -1, 0, 1, 2, 3]).range(["#ca4445", "#ee9586", "#e4b7b2", "#AAA", "#8EC6F5", "#107BE8", "#1855AD"]),
-                strokeColor: d3.scale.ordinal().domain([-3, -2, -1, 0, 1, 2, 3]).range(["#ca4445", "#ee9586", "#e4b7b2", "#AAA", "#0069ff", "#107BE8", "#1855AD"]),
+                fillColor: d3.scale.ordinal().domain([-3, -2, -1, 0, 1, 2, 3]).range(["#ca4445", "#ee9586", "#e4b7b2", "#c5d8de", "#8EC6F5", "#107BE8", "#01579b"]),
+                strokeColor: d3.scale.ordinal().domain([-3, -2, -1, 0, 1, 2, 3]).range(["#ca4445", "#ee9586", "#e4b7b2", "#c5d8de", "#0069ff", "#107BE8", "#01579b"]),
                 getFillColor: null,
                 getStrokeColor: null,
                 pFormat: d3.format("+.1%"),
@@ -2009,9 +2010,7 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                         })
                         .start();
                 },
-                // ---------
-                //Last Thing
-                // ---------
+              
                 totalSort: function(alpha) {
                     var that = this;
                     return function(d) {
