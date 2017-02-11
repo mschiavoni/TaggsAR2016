@@ -20,8 +20,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
   <link rel="stylesheet" href="css/styling.css">
   <link rel="stylesheet" href="css/multiSelect.css">
+
+  <script type="text/javascript"></script> 
   <style>
- [data-overlay="8"]:before {
+  .wrapper {
+  position: relative;
+}
+.wrapper-center {
+  position: relative;
+  align-content: center;
+}
+	[data-overlay="8"]:before {
     content: '';
     position: absolute;
     top: 0;
@@ -84,7 +93,7 @@
     position: absolute;
     bottom: 220px;
     margin-left: 400px;
-}
+}  
 	</style>
 </head>
 <body class=" ">
@@ -214,7 +223,7 @@
       </div>
     </header>
 
-    <div class="content-wrapper">
+<div class="content-wrapper">
             <section class="imagebg videobg height-100" data-overlay="8">
 			       <div class="container pos-vertical-center">
                     <div class="row">
@@ -233,7 +242,8 @@
                 </video>
           
 
-            </section>
+            </section>	
+			
       <div class="container">
         <div class="row medium-padding120">
           <div class="col-lg-12">
@@ -271,7 +281,14 @@
                    Award data will display in a tooltip.  To view discretionary awards, click the link at left. 
                </p>
              </li>
-             <li><div style= "width:150px; margin:20px auto;">
+
+           </ul>
+         </div>
+       </div>
+	   <div class="row">
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                <li>
+			 <div style= "width:150px; margin:40px auto;">
             <select id="mapDrop">
 
                  <option class="radioOpt" value="awarddollars_hhs">HHS</option>
@@ -294,10 +311,10 @@
            </select>
 
 
-         </div></li>
-           </ul>
          </div>
-       </div>
+		 </li>
+		 </div>
+		 </div>
      </div>
    </div>
  </div>
@@ -1434,6 +1451,7 @@ var tooltip = d3.select("div.doubleBarChartCont")
 <script src="FusionCharts/js/fusioncharts.js"></script>
 <script src="FusionCharts/js/fusioncharts.widgets.js"></script>
 <script src="FusionCharts/js/fusioncharts.charts.js"></script>
+
 
 </body>
 </html>
