@@ -1,0 +1,557 @@
+<chart decimals='3' numberScaleValue='1000,1000,1000' numberScaleUnit='K,M,B' exportAtClient='0' exportHandler='../FusionCharts/Export/Exported_Images/FCExporter.aspx' exportAction='download' exportEnabled='0' baseFontColor='55554A' caption='HHS Total Award Amounts' bgAlpha='0' showBorder='1' borderAlpha='0' animation='1' baseFontSize="20">
+  <dataset>
+    <set rowId='OPDIV' columnId='ACF' value='1' trLabel='ACF' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='ACL' value='1' tlLabel='ACL' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='AHRQ' value='1' tlLabel='AHRQ' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='ASPE' value='1' tlLabel='ASPE' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='ASPR' value='1' tlLabel='ASPR' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='CDC' value='1' tlLabel='CDC' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='CMS' value='1' tlLabel='CMS' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='FDA' value='1' tlLabel='FDA' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='HRSA' value='1' tlLabel='HRSA' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='IHS' value='1' tlLabel='IHS' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='NIH' value='1' tlLabel='NIH' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='OASH' value='1' tlLabel='OASH' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='OGA' value='1' tlLabel='OGA' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='ONC' value='1' tlLabel='ONC' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='SAMHSA' value='1' tlLabel='SAMHSA' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='Rank' value='1' tlLabel='Rank' alpha='0' showValue='0' />
+    <set rowId='OPDIV' columnId='Total $' value='0' tlLabel='Total $' alpha='0' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='ACF' value='0' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='ACL' value='198000' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='AHRQ' value='6079048' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='ASPR' value='4589000' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='CDC' value='85749787' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='CMS' value='1866790' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='FDA' value='1708546' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='HRSA' value='7586557' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='IHS' value='0' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='NIH' value='616254670' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='OASH' value='880072' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='OGA' value='0' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='ONC' value='0' showValue='0' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='Rank' value='10' alpha='0' showValue='1' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='SAMHSA' value='598934' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='ACF' value='1124390' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='ACL' value='2024998' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='AHRQ' value='4028510' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='CDC' value='46519883' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='CMS' value='3734742' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='FDA' value='3940416' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='HRSA' value='19688906' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='NIH' value='576375917' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='OASH' value='1912185' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='Rank' value='10' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='SAMHSA' value='1411875' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='ACF' value='839974' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='ACL' value='4544675' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='AHRQ' value='3797713' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='CDC' value='61795782' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='CMS' value='9919102' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='FDA' value='424680' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='HRSA' value='34793371' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='NIH' value='400416050' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='OASH' value='163222' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='Rank' value='10' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='SAMHSA' value='313927' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='ACF' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='ACL' value='2669092' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='AHRQ' value='3393362' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='ASPE' value='1900000' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='CDC' value='2696682' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='CMS' value='998960' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='FDA' value='142068' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='HRSA' value='5300734' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='IHS' value='198682' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='NIH' value='281749238' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='OASH' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='Rank' value='10' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='SAMHSA' value='1079945' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='ACF' value='1432910' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='ACL' value='586999' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='AHRQ' value='1491511' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='CDC' value='2691007' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='CMS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='FDA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='HRSA' value='8690941' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='NIH' value='378608844' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='OASH' value='499709' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='Rank' value='9' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='SAMHSA' value='9129743' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='ACF' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='ACL' value='1469946' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='AHRQ' value='5625038' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='CDC' value='9446756' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='CMS' value='2711231' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='FDA' value='1138482' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='HRSA' value='1918858' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='NIH' value='479792542' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='OASH' value='567117' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='Rank' value='9' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='SAMHSA' value='102000' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='ACF' value='249063' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='ACL' value='547000' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='AHRQ' value='10139592' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='CDC' value='9525518' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='CMS' value='1104189' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='FDA' value='888921' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='HRSA' value='10539700' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='NIH' value='404436399' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='OASH' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='Rank' value='9' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='SAMHSA' value='124195' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='ACF' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='ACL' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='AHRQ' value='541951' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='CDC' value='3222450' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='CMS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='FDA' value='450000' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='HRSA' value='7477751' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='NIH' value='144053026' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='OASH' value='300000' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='ONC' value='404110' showValue='0' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='Rank' value='9' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='SAMHSA' value='1627044' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='ACF' value='203055' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='ACL' value='0' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='AHRQ' value='0' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='ASPR' value='2500000' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='CDC' value='162957875' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='CMS' value='0' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='FDA' value='1343691' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='HRSA' value='182902531' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='IHS' value='0' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='NIH' value='0' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='OASH' value='1350199' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='OGA' value='325000' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='ONC' value='0' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='Rank' value='8' alpha='0' showValue='1' />
+    <set rowId='California Dept of Public Health' columnId='SAMHSA' value='680000' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='ACF' value='6792000' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='ACL' value='547000' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='AHRQ' value='1918188' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='CDC' value='0' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='CMS' value='0' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='FDA' value='645459' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='HRSA' value='21895878' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='IHS' value='0' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='NIH' value='144833585' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='OASH' value='0' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='OGA' value='0' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='ONC' value='274965' showValue='0' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='Rank' value='8' alpha='0' showValue='1' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='SAMHSA' value='599860' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='ACF' value='25000' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='ACL' value='924764' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='AHRQ' value='2681594' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='CDC' value='5276700' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='CMS' value='0' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='FDA' value='9461270' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='HRSA' value='2608235' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='IHS' value='0' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='NIH' value='397896514' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='OASH' value='0' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='OGA' value='0' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='ONC' value='0' showValue='0' />
+    <set rowId='DUKE UNIVERSITY' columnId='Rank' value='8' alpha='0' showValue='1' />
+    <set rowId='DUKE UNIVERSITY' columnId='SAMHSA' value='499768' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='ACF' value='874354' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='ACL' value='449083' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='AHRQ' value='8204509' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='CDC' value='997897' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='CMS' value='0' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='FDA' value='0' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='HRSA' value='2670544' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='IHS' value='0' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='NIH' value='300358166' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='OASH' value='375000' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='OGA' value='0' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='ONC' value='0' showValue='0' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='Rank' value='8' alpha='0' showValue='1' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='SAMHSA' value='598965' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='ACF' value='365560' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='ACL' value='545773' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='AHRQ' value='6824916' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='CDC' value='2808032' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='CMS' value='0' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='FDA' value='489999' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='HRSA' value='7334512' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='IHS' value='0' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='NIH' value='180797006' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='OASH' value='0' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='OGA' value='0' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='ONC' value='0' showValue='0' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='Rank' value='8' alpha='0' showValue='1' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='SAMHSA' value='689703' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='ACF' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='ACL' value='1805851' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='AHRQ' value='1474046' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='CDC' value='5453825' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='CMS' value='55442' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='FDA' value='249996' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='HRSA' value='6698800' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='NIH' value='228849232' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='OASH' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='Rank' value='8' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='SAMHSA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='ACF' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='ACL' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='AHRQ' value='100000' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='CDC' value='2057412' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='CMS' value='2006330' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='FDA' value='799940' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='HRSA' value='4142851' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='NIH' value='405880559' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='OASH' value='421270' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='Rank' value='8' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='SAMHSA' value='314992' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='ACF' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='ACL' value='1357101' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='AHRQ' value='1618972' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='CDC' value='6491551' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='CMS' value='8587169' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='FDA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='HRSA' value='4040432' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='NIH' value='179721062' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='OASH' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='Rank' value='8' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='SAMHSA' value='989803' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='ACF' value='5378787' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='ACL' value='1487302' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='AHRQ' value='189172' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='CDC' value='1110400' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='CMS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='FDA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='HRSA' value='2761683' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='NIH' value='206790177' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='OASH' value='1869252' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='Rank' value='8' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='SAMHSA' value='1199725' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='ACF' value='579548' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='ACL' value='0' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='AHRQ' value='1744716' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='CDC' value='7112615' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='CMS' value='1444930' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='FDA' value='0' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='HRSA' value='3015645' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='IHS' value='0' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='NIH' value='396107569' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='OASH' value='0' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='OGA' value='0' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='ONC' value='0' showValue='0' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='Rank' value='8' alpha='0' showValue='1' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='SAMHSA' value='283875' showValue='0' />
+    <set rowId='YALE UNIVERSITY' columnId='ACF' value='250000' showValue='0' />
+    <set rowId='YALE UNIVERSITY' columnId='AHRQ' value='4938113' showValue='0' />
+    <set rowId='YALE UNIVERSITY' columnId='CDC' value='2192957' showValue='0' />
+    <set rowId='YALE UNIVERSITY' columnId='CMS' value='2094230' showValue='0' />
+    <set rowId='YALE UNIVERSITY' columnId='FDA' value='1553664' showValue='0' />
+    <set rowId='YALE UNIVERSITY' columnId='HRSA' value='1112256' showValue='0' />
+    <set rowId='YALE UNIVERSITY' columnId='NIH' value='407207703' showValue='0' />
+    <set rowId='YALE UNIVERSITY' columnId='SAMHSA' value='1100000' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='ACF' value='0' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='ACL' value='453282' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='AHRQ' value='684744' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='CDC' value='4584300' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='CMS' value='0' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='FDA' value='485550' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='HRSA' value='1028040' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='IHS' value='0' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='NIH' value='174061354' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='OASH' value='0' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='OGA' value='0' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='ONC' value='0' showValue='0' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='Rank' value='7' alpha='0' showValue='1' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='SAMHSA' value='101724' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='ACF' value='0' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='ACL' value='250000' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='AHRQ' value='0' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='CDC' value='102143441' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='CMS' value='21007606' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='FDA' value='1118999' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='HRSA' value='181740229' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='IHS' value='0' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='NIH' value='10070000' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='OASH' value='1500697' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='OGA' value='0' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='ONC' value='0' showValue='0' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='Rank' value='7' alpha='0' showValue='1' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='SAMHSA' value='0' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='ACF' value='0' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='ACL' value='886474' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='AHRQ' value='479285' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='CDC' value='5762936' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='CMS' value='4301423' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='FDA' value='0' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='HRSA' value='1044711' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='IHS' value='0' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='NIH' value='278381849' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='OASH' value='0' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='OGA' value='0' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='ONC' value='0' showValue='0' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='Rank' value='7' alpha='0' showValue='1' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='SAMHSA' value='202317' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='ACF' value='0' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='ACL' value='1648814' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='AHRQ' value='3484966' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='CDC' value='66440' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='CMS' value='755321' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='FDA' value='198120' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='HRSA' value='4003491' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='IHS' value='0' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='NIH' value='162177029' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='OASH' value='0' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='OGA' value='0' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='ONC' value='0' showValue='0' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='Rank' value='7' alpha='0' showValue='1' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='SAMHSA' value='0' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='ACF' value='911448' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='ACL' value='577216' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='AHRQ' value='5227381' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='CDC' value='4743191' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='CMS' value='0' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='FDA' value='340829' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='HRSA' value='1082846' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='IHS' value='0' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='NIH' value='188581068' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='OASH' value='0' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='OGA' value='0' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='ONC' value='0' showValue='0' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='Rank' value='7' alpha='0' showValue='1' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='SAMHSA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='ACF' value='894938' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='ACL' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='AHRQ' value='2463548' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='CDC' value='3872560' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='CMS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='FDA' value='250000' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='HRSA' value='1064191' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='NIH' value='158237937' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='OASH' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='Rank' value='7' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='SAMHSA' value='399962' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='ACF' value='65000' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='ACL' value='1846998' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='AHRQ' value='9209515' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='CDC' value='5023582' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='CMS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='FDA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='HRSA' value='10360469' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='NIH' value='205826697' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='OASH' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='Rank' value='7' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='SAMHSA' value='500000' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='ACF' value='998350' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='ACL' value='150000' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='AHRQ' value='929062' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='CDC' value='3093823' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='CMS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='FDA' value='1920853' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='HRSA' value='3282933' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='NIH' value='149019108' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='OASH' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='Rank' value='7' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='SAMHSA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='ACF' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='ACL' value='547000' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='AHRQ' value='186685' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='CDC' value='8460078' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='CMS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='FDA' value='877995' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='HRSA' value='4939503' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='NIH' value='139719210' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='OASH' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='Rank' value='7' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='SAMHSA' value='1237147' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='ACF' value='1981447' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='ACL' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='AHRQ' value='2475471' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='CDC' value='44411039' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='CMS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='FDA' value='1964849' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='HRSA' value='1581299' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='NIH' value='137794486' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='OASH' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='Rank' value='7' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='SAMHSA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='ACF' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='ACL' value='3611066' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='AHRQ' value='3370826' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='CDC' value='6806682' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='CMS' value='215000' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='FDA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='HRSA' value='7753782' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='NIH' value='475328420' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='OASH' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='Rank' value='7' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='SAMHSA' value='910051' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='ACF' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='ACL' value='547000' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='AHRQ' value='944789' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='ASPE' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='ASPR' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='CDC' value='3823238' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='CMS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='FDA' value='510000' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='HRSA' value='3456750' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='IHS' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='NIH' value='141796641' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='OASH' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='OGA' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='ONC' value='0' showValue='0' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='Rank' value='7' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='SAMHSA' value='900000' showValue='0' />
+    <set rowId='California Dept of Public Health' columnId='Total $' value='352262351' alpha='0' showValue='1' />
+    <set rowId='CASE WESTERN RESERVE UNIVERSITY' columnId='Total $' value='181398994' alpha='0' showValue='1' />
+    <set rowId='CHILDRENandapos;S HOSPITAL CORPORATION' columnId='Total $' value='177506935' alpha='0' showValue='1' />
+    <set rowId='DUKE UNIVERSITY' columnId='Total $' value='419373845' alpha='0' showValue='1' />
+    <set rowId='HEALTH RESEARCH, INC - ALBANY DIVISION' columnId='Total $' value='317830972' alpha='0' showValue='1' />
+    <set rowId='ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI' columnId='Total $' value='291058995' alpha='0' showValue='1' />
+    <set rowId='INDIANA UNIVERSITY, BLOOMINGTON' columnId='Total $' value='172334181' alpha='0' showValue='1' />
+    <set rowId='JOHNS HOPKINS UNIVERSITY' columnId='Total $' value='725511404' alpha='0' showValue='1' />
+    <set rowId='NEW YORK UNIVERSITY MEDICAL CENTER' columnId='Total $' value='201463979' alpha='0' showValue='1' />
+    <set rowId='NORTHWESTERN UNIVERSITY' columnId='Total $' value='314528518' alpha='0' showValue='1' />
+    <set rowId='OREGON HEALTH andamp; SCIENCE UNIVERSITY' columnId='Total $' value='199855501' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF ALABAMA AT BIRMINGHAM' columnId='Total $' value='244587192' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' columnId='Total $' value='403039987' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN DIEGO' columnId='Total $' value='415723354' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' columnId='Total $' value='660761822' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF CHICAGO' columnId='Total $' value='167183136' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF COLORADO DENVER' columnId='Total $' value='232832261' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF FLORIDA' columnId='Total $' value='159394129' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF IOWA' columnId='Total $' value='155967618' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS' columnId='Total $' value='190116899' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF MASSACHUSETTS' columnId='Total $' value='196979691' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF MICHIGAN' columnId='Total $' value='502771970' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL' columnId='Total $' value='437554577' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF PITTSBURGH' columnId='Total $' value='497995827' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF ROCHESTER' columnId='Total $' value='151978418' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF SOUTHERN CALIFORNIA' columnId='Total $' value='220786498' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF UTAH' columnId='Total $' value='158054411' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF WASHINGTON' columnId='Total $' value='517008496' alpha='0' showValue='1' />
+    <set rowId='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' columnId='Total $' value='300128763' alpha='0' showValue='1' />
+    <set rowId='WASHINGTON UNIVERSITY' columnId='Total $' value='410288674' alpha='0' showValue='1' />
+    <set rowId='YALE UNIVERSITY' columnId='Total $' value='0' alpha='0' showValue='1' />
+  </dataset>
+  <colorRange gradient='0'>
+    <color code='#00cc00' maxValue='2500000' minValue='1' />
+    <color code='#009900' maxValue='10000000' minValue='2500000' />
+    <color code='#006600' maxValue='700000000' minValue='10000000' />
+  </colorRange>
+  <styles>
+    <definition>
+      <style name='PlotShadow' type='Shadow' color='262626' alpha='50' />
+      <style name='CaptionFont' type='font' font='Segoe UI' size='20' color='FFFFFF' bgColor='2467A7' />
+      <style name='LabelFont' type='font' font='Verdana' size='11' color='505050' bold='1' />
+    </definition>
+    <application>
+      <apply toObject='DATAPLOT' styles='PlotShadow' />
+      <apply toObject='CAPTION' styles='CaptionFont' />
+      <apply toObject='DataLabels' styles='LabelFont' />
+    </application>
+  </styles>
+</chart>
