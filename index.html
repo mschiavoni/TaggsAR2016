@@ -713,8 +713,8 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
 	<div id="interactiveFreeFormMain">
 	<style type='text/css'>
 	        #taggs-chartFrame {
-            width: 1100px;
-            height: 650px;
+            width: 1200px;
+            height: 780px;
             -webkit-transition: height ease-in-out 1s;
             -moz-transition: height ease-in-out 1s;
             -o-transition: height ease-in-out 1s;
@@ -741,7 +741,8 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
             z-index: 10;
             width: 100%;
             height: 100%;
-            overflow: hidden;}
+            overflow: hidden;
+			margin-top: 70px;}
         #taggs-chartCanvas svg {
             height: 100%;
             overflow: hidden;
@@ -805,7 +806,16 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
             text-align: center;
             overflow: hidden;
             font-weight: bold;}
-        #taggs-tooltip .taggs-change {
+        #taggs-tooltip .taggs-awards {
+            padding-left: 10px;
+            font-size: 16px;
+            text-align: right;
+            overflow: hidden;
+            font-weight: bold;
+            color: #666;
+            text-align: center;
+            display: inline;}
+			  #taggs-tooltip .taggs-change {
             padding-left: 10px;
             font-size: 16px;
             text-align: right;
@@ -924,8 +934,8 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
             width: 100px;}       
 		.taggs-decreasesLabel {
 			position: absolute;
-			top: 490px;
-			left: 680px;
+            top: 620px;
+         	left: 680px;
 			width: 60px;
 			border-top: dashed 1px rgba(0, 0, 0, 0.2);}       
         .taggs-decreasesLabel span {
@@ -1027,7 +1037,7 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
             width: 340px;} 
         .taggs-discretionaryAside {
             position: absolute;
-            left: 800px;
+            left: 1000px;
             top: 120px;
             width: 130px;}
         .taggs-mandatoryAside {
@@ -1137,8 +1147,10 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
             color: #d3dbc9;} 
         .change-increase3 span.label {
             color: #08306b;}
-		div#interactiveFreeFormMain {
-			margin-top: 20px;}
+div#interactiveFreeFormMain {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
 
 	</style>
     <div class="taggs">
@@ -1159,6 +1171,7 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                         <div class="taggs-rule"></div>
                         <div class="taggs-name"></div>
                         <div class="taggs-discretion"></div>
+                        <div class="taggs-awards"></div>						
                         <div class="taggs-valuesContainer">
                             <span class="taggs-value"></span>
                             <span class="taggs-change"></span>
@@ -1248,63 +1261,7 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
     <script type="text/javascript" charset="utf-8">
         var taggs = taggs || {};
         taggs.budget_array_data = [{
-            "name": "OGA",
-            "positions": {
-                "total": {
-                    "x": 308,
-                    "y": 229
-                },
-                "department": {
-                    "x": 318,
-                    "y": 610
-                }
-            },
-            "id": 302,
-            "budget_2015": 180,
-            "change": 6.010017629,
-            "budget_2016": 1000,
-            "department": "OGA",
-            "discretion": "Discretionary"
-        }, 
-		{
-            "name": "ASPE",
-            "positions": {
-                "total": {
-                    "x": 683,
-                    "y": 298
-                },
-                "department": {
-                    "x": 202,
-                    "y": 610
-                }
-            },
-            "id": 465,
-            "budget_2015": 3000,
-            "change": 0.0204081632653061,
-            "budget_2016": 3000,
-            "department": "ASPE",
-            "discretion": "Non-Discretionary"
-        }, 		
-		{
-            "name": "NIH",
-            "positions": {
-                "total": {
-                    "x": 570,
-                    "y": 340
-                },
-                "department": {
-                    "x": 415,
-                    "y": 225
-                }
-            },
-            "id": 406,
-            "budget_2015": 22000000,
-            "change": 0.0,
-            "budget_2016": 22000000,
-            "department": "NIH",
-            "discretion": "Non-Discretionary"
-        }, {
-            "name": "ACF",
+            "name": "ACF Non-Discretionary",
             "positions": {
                 "total": {
                     "x": 563,
@@ -1312,17 +1269,18 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                 },
                 "department": {
                     "x": 150,
-                    "y": 225
+                    "y": 169
                 }
             },
             "id": 309,
-            "budget_2015": 50000000,
-            "change": 0.70,
-            "budget_2016": 50000000,
+            "budget_2015": 39894476,
+            "change": 0.02,
+            "budget_2016": 40626359,
+			"awards": 200,
             "department": "ACF",
             "discretion": "Non-Discretionary"
         }, {
-            "name": "CMS",
+            "name": "CMS Non-Discretionary",
             "positions": {
                 "total": {
                     "x": 316,
@@ -1333,14 +1291,15 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                     "y": 225
                 }
             },          
-            "id": 10,
-            "budget_2015": 10000000,
-            "change": 0.00730593607305936,
-            "budget_2016": 10000000,
+            "id": 10,      
+            "budget_2015": 312000000,
+            "change": 0.16,
+            "budget_2016": 361000000,
+			"awards": 200,
             "department": "CMS",
-            "discretion": "Discretionary"
+            "discretion": "Non-Discretionary"
         }, {
-            "name": "HRSA",
+            "name": "HRSA Non-Discretionary",
             "positions": {
                 "total": {
                     "x": 465,
@@ -1352,13 +1311,14 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                 }
             },
             "id": 9,
-            "budget_2015": 9000000,
-            "change": -0.0602409638554217,
-            "budget_2016": 9000000,
+            "budget_2015": 518503,
+            "change": -0.03,
+            "budget_2016": 518428,
+			"awards": 200,
             "department": "HRSA",
-            "discretion": "Discretionary"
+            "discretion": "Non-Discretionary"
         }, {
-            "name": "CDC",
+            "name": "CDC Non-Discretionary",
             "positions": {
                 "total": {
                     "x": 441,
@@ -1369,14 +1329,15 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                     "y": 460
                 }
             },
-            "id": 186,
-            "budget_2015": 6000000,
-            "change": -0.732895970009372,
-            "budget_2016": 6000000,
+            "id": 186,     
+            "budget_2015": 139870,
+            "change": 0.02,
+            "budget_2016": 142850,
+			"awards": 200,
             "department": "CDC",
-            "discretion": "Discretionary"
+            "discretion": "Non-Discretionary"
         }, {
-            "name": "ACL",
+            "name": "ACL Non-Discretionary",
             "positions": {
                 "total": {
                     "x": 316,
@@ -1387,14 +1348,15 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                     "y": 460
                 }
             },
-            "id": 126,
-            "budget_2015": 2000000,
-            "change": 0.0526315789473684,
-            "budget_2016": 2000000,
+            "id": 196,
+            "budget_2015": 14650563,
+            "change": 0.07,
+            "budget_2016": 15623145,
+			"awards": 200,
             "department": "ACL",
-            "discretion": "Discretionary"
+            "discretion": "Non-Discretionary"
         }, {
-            "name": "SAMHSA",
+            "name": "SAMHSA Non-Discretionary",
             "positions": {
                 "total": {
                     "x": 465,
@@ -1406,13 +1368,14 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                 }
             },
             "id": 366,
-            "budget_2015": 3000000,
-            "change": 0.0117737634731663,
-            "budget_2016": 3000000,
+            "budget_2015": 22422319,
+            "change": 0.04,
+            "budget_2016": 23248449,
+			"awards": 200,
             "department": "SAMHSA",
-            "discretion": "Non-Discretionary"
+            "discretion": "Non-Non-Discretionary"
         }, {
-            "name": "IHS",
+            "name": "IHS Non-Discretionary",
             "positions": {
                 "total": {
                     "x": 292,
@@ -1424,13 +1387,207 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                 }
             },
             "id": 171,
-            "budget_2015": 2000000,
-            "change": 0.0332225913621262,
-            "budget_2016": 2000000,
+            "budget_2015": 21303523,
+            "change": 0.06,
+            "budget_2016": 22531886,
+			"awards": 200,
+            "department": "IHS",
+            "discretion": "Non-Discretionary"
+        }, 
+		{
+            "name": "OGA Discretionary",
+            "positions": {
+                "total": {
+                    "x": 308,
+                    "y": 229
+                },
+                "department": {
+                    "x": 318,
+                    "y": 610
+                }
+            },
+            "id": 900,
+            "budget_2015": 1264,
+            "change": 0.03,
+            "budget_2016": 1300,
+			"awards": 200,
+            "department": "OGA",
+            "discretion": "Discretionary"
+        }, 
+		{
+            "name": "ASPE Discretionary",
+            "positions": {
+                "total": {
+                    "x": 683,
+                    "y": 298
+                },
+                "department": {
+                    "x": 202,
+                    "y": 610
+                }
+            },
+            "id": 901,
+            "budget_2015": 2725,
+            "change": 0.0204081632653061,
+            "budget_2016": 1900,
+			"awards": 200,
+            "department": "ASPE",
+            "discretion": "Discretionary"
+        }, 		
+		{
+            "name": "NIH Discretionary",
+            "positions": {
+                "total": {
+                    "x": 570,
+                    "y": 340
+                },
+                "department": {
+                    "x": 415,
+                    "y": 225
+                }
+            },
+            "id": 902,
+            "budget_2015": 10000000,
+            "change": 0.07,
+            "budget_2016": 23423188,
+			"awards": 200,
+            "department": "NIH",
+            "discretion": "Discretionary"
+        }, {
+            "name": "ACF Discretionary",
+            "positions": {
+                "total": {
+                    "x": 563,
+                    "y": 212
+                },
+                "department": {
+                    "x": 150,
+                    "y": 225
+                }
+            },
+            "id": 903,
+            "budget_2015": 10187505,
+            "change": 0.06,
+            "budget_2016": 12000000,
+			"awards": 200,
+            "department": "ACF",
+            "discretion": "Discretionary"
+        }, {
+            "name": "CMS Discretionary",
+            "positions": {
+                "total": {
+                    "x": 316,
+                    "y": 261
+                },
+                "department": {
+                    "x": 679,
+                    "y": 225
+                }
+            },          
+            "id": 904,
+            "budget_2015": 153824,
+            "change": 0.08,
+            "budget_2016": 166357,
+			"awards": 200,
+            "department": "CMS",
+            "discretion": "Discretionary"
+        }, {
+            "name": "HRSA Discretionary",
+            "positions": {
+                "total": {
+                    "x": 465,
+                    "y": 465
+                },
+                "department": {
+                    "x": 945,
+                    "y": 225
+                }
+            },
+            "id": 905,
+            "budget_2015": 8082986,
+            "change": 0.01,
+            "budget_2016": 8145844,
+			"awards": 200,
+            "department": "HRSA",
+            "discretion": "Discretionary"
+        }, {
+            "name": "CDC Discretionary",
+            "positions": {
+                "total": {
+                    "x": 441,
+                    "y": 471
+                },
+                "department": {
+                    "x": 101,
+                    "y": 460
+                }
+            },
+            "id": 906,
+            "budget_2015": 5213666,
+            "change": 0.14,
+            "budget_2016": 5918935,
+			"awards": 200,
+            "department": "CDC",
+            "discretion": "Discretionary"
+        }, {
+            "name": "ACL Discretionary",
+            "positions": {
+                "total": {
+                    "x": 316,
+                    "y": 186
+                },
+                "department": {
+                    "x": 395,
+                    "y": 460
+                }
+            },
+            "id": 907,
+            "budget_2015": 537700,
+            "change": 0.0,
+            "budget_2016": 290394,
+			"awards": 200,
+            "department": "ACL",
+            "discretion": "Discretionary"
+        }, {
+            "name": "SAMHSA Discretionary",
+            "positions": {
+                "total": {
+                    "x": 465,
+                    "y": 313
+                },
+                "department": {
+                    "x": 248,
+                    "y": 460
+                }
+            },
+            "id": 908,
+            "budget_2015": 34190,
+            "change": 0.07,
+            "budget_2016": 100010,
+			"awards": 200,
+            "department": "SAMHSA",
+            "discretion": "Discretionary"
+        }, {
+            "name": "IHS Discretionary",
+            "positions": {
+                "total": {
+                    "x": 292,
+                    "y": 281
+                },
+                "department": {
+                    "x": 545,
+                    "y": 460
+                }
+            },
+            "id": 909,
+            "budget_2015": 199240,
+            "change": 0.02,
+            "budget_2016": 203508,
+			"awards": 200,
             "department": "IHS",
             "discretion": "Discretionary"
         }, {
-            "name": "FDA",
+            "name": "FDA Discretionary",
             "positions": {
                 "total": {
                     "x": 678,
@@ -1441,14 +1598,15 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                     "y": 610
                 }
             },
-            "id": 120,
-            "budget_2015": 152000,
-            "change": 0.0523003472222222,
-            "budget_2016": 152000,
+            "id": 910,
+            "budget_2015": 151916,
+            "change": 0.19,
+            "budget_2016": 180996,
+			"awards": 200,
             "department": "FDA",
             "discretion": "Discretionary"
         }, {
-            "name": "OASH",
+            "name": "OASH Discretionary",
             "positions": {
                 "total": {
                     "x": 384,
@@ -1459,14 +1617,15 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                     "y": 460
                 }
             },
-            "id": 95,
-            "budget_2015": 410000,
-            "change": -0.076662908680947,
-            "budget_2016": 410000,
+            "id": 911,
+            "budget_2015": 443413,
+            "change": -0.09,
+            "budget_2016": 402836,
             "department": "OASH",
+			"awards": 200,
             "discretion": "Discretionary"
         }, {
-            "name": "AHRQ",
+            "name": "AHRQ Discretionary",
             "positions": {
                 "total": {
                     "x": 10431,
@@ -1477,14 +1636,15 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                     "y": 460
                 }
             },
-			 "id": 282,
-            "budget_2015": 212000,
-            "change": -0.0384384384384384,
-            "budget_2016": 212000,
+			 "id": 912,
+            "budget_2015": 211965,
+            "change": -0.06,
+            "budget_2016": 199178,
             "department": "AHRQ",
+			"awards": 200,
             "discretion": "Discretionary"
         }, {
-            "name": "ASPR",
+            "name": "ASPR Discretionary",
             "positions": {
                 "total": {
                     "x": 288,
@@ -1495,14 +1655,15 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                     "y": 460
                 }
             },
-            "id": 56,
-            "budget_2015": 219000,
-            "change": 0.913669064748201,
-            "budget_2016": 219000,
+            "id": 913,
+            "budget_2015": 216039,
+            "change": 0.00,
+            "budget_2016": 52103,
+			"awards": 200,
             "department": "ASPR",
             "discretion": "Discretionary"
         }, {
-            "name": "ONC",
+            "name": "ONC Discretionary",
             "positions": {
                 "total": {
                     "x": 396,
@@ -1513,10 +1674,11 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                     "y": 610
                 }
             },
-            "id": 195,
-            "budget_2015": -37000,
-            "change": 2.0,
-            "budget_2016": -37000,
+            "id": 914,
+            "budget_2015": 34190,
+            "change": -2.0,
+            "budget_2016": -2961,
+			"awards": 200,
             "department": "ONC",
             "discretion": "Discretionary"
         }];
@@ -1942,6 +2104,7 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
                             d3.select("#taggs-tooltip .taggs-discretion").text(that.discretionFormat(d.discretion))
                             d3.select("#taggs-tooltip .taggs-department").text(d.group)
                             d3.select("#taggs-tooltip .taggs-value").html("$" + that.bigFormat(d.value))
+							d3.select("#taggs-tooltip .taggs-awards").html("#" + that.bigFormat(d.value))
                             var pctchngout = that.pctFormat(d.change)
                             if (d.change == "N.A.") {
                                 pctchngout = "N.A."
