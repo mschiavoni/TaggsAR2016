@@ -13,6 +13,10 @@
  bgAngle='360'
  bgAlpha='0'
  borderAlpha='0'
+ valueBorderAlpha='100'
+ valueBorderPadding='5'
+ valueBorderRadius='6'
+ valueBorderDashGap='2'
  bgColor='E5E3D1'
  animation='1'
  enableSmartLabels='1'
@@ -27,12 +31,11 @@
     <set isSliced='1' label='CDC' value='1595200570' />
     <styles>
         <definition>
-            <style name='PlotShadow' type='Shadow' color='262626' alpha='0' />
             <style name='CaptionFont' type='font' font='Varela Round' size='22' color='FFFFFF' bgColor='2467A7' />
-            <style name='LabelFont' type='font' font='Varela Round' size='14' color='505050' bold='1' />
+            <style name='LabelFont' type='font' font='Varela Round' size='14' color='505050' bold='0' />
         </definition>
         <application>
-            <apply toObject='DATAPLOT' styles='PlotShadow' />
+            <apply toObject='DATAPLOT'/>
             <apply toObject='CAPTION' styles='CaptionFont' />
             <apply toObject='DataLabels' styles='LabelFont' />
         </application>
