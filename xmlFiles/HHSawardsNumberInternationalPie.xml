@@ -1,6 +1,7 @@
 <chart
  showShadow= '0'
  use3DLighting='0'
+ radius3D='0'
  showBorder='0'
  numberScaleValue='1000,1000,1000'
  numberScaleUnit='K,M,B'
