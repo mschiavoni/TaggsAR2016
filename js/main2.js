@@ -17,6 +17,33 @@ FusionCharts.ready(function () {
   discretionaryChart.render();
 });
 
+FusionCharts.ready(function () {
+  var discretionaryChart = new FusionCharts({
+    "type": 'pie2d',
+    "renderAt": 'HHSawardsNumber',
+    "id": "hhsawardsnumber",
+    "width": '100%',
+    "height": '600',
+    "dataFormat": 'xmlurl',
+    "dataSource": 'xmlFiles/HHSawardsNumberInternationalPie.xml'
+  });
+  discretionaryChart.render();
+});
+
+FusionCharts.ready(function () {
+  var discretionaryChart = new FusionCharts({
+    "type": 'pie2d',
+    "renderAt": 'HHSgrantDollars',
+    "id": "hhsgrantdollars",
+    "width": '100%',
+    "height": '600',
+    "dataFormat": 'xmlurl',
+    "dataSource": 'xmlFiles/HHSgrantDollarsInternationalPie.xml'
+  });
+  discretionaryChart.render();
+});
+
+
 
 // ***** MULTI SELECT GRANT HIST CHART *****
 
