@@ -2577,13 +2577,13 @@ border-color: #0049bf;
 .primary-menu-menu>li>.megamenu .hhs-logo {
     margin-bottom: 15px
 }
-.primary-menu-menu>li>.megamenu .hhs-text {
+.primary-menu-menu>li>.megamenu .hhstaggs-text {
     font-size: 14px;
     color: #4e4e4e
 }
 @media (max-width:768px) {
 
-    .primary-menu-responsive.primary-menu .hhs-text {
+    .primary-menu-responsive.primary-menu .hhstaggs-text {
         margin-bottom: 120px
     }
     }
