@@ -14,7 +14,7 @@
  exportEnabled='0'
  caption='HHS Total Award Amounts'
  bgAngle='360'
- bgAlpha='0'
+ bgAlpha='100'
  borderAlpha='0'
  valueBorderAlpha='100'
  valueBorderPadding='5'
