@@ -1,4 +1,6 @@
 <chart
+ showShadow= '0',
+ showBorder='0',
  numberScaleValue='1000,1000,1000'
  numberScaleUnit='K,M,B'
  baseFontColor='55554A'
