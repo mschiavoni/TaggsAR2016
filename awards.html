@@ -21,7 +21,6 @@
   <link rel="stylesheet" href="css/styling.css">
   <link rel="stylesheet" href="css/multiSelect.css">
 
-  <script type="text/javascript"></script> 
   <style>
   .wrapper {
   position: relative;
@@ -466,176 +465,6 @@
 <script src="js/jquery-2.1.4.min.js"></script>
 <script>
   mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw';
-
-
-
- function createMapBox(awarddollars_opdiv){
-
-  var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/light-v9',
-    center: [-98, 38.88],
-    minZoom: 1,
-    zoom: 1
-  });
-
-  var zoomThreshold = 6;
-
-  map.addControl(new mapboxgl.NavigationControl());
-
-  map.on('load', function () {
-  })
-
-  var COLORS = ['transparent', '#d8b365', '#f6e8c3', '#c7eae5', '#5ab4ac', '#01665e'];
-  var BREAKS = [0, 1000, 10000, 1000000, 1000000000, 10000000000];
-        //create a map using the Mapbox Light theme, zoomed out to show world view
-        var map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/mapbox/light-v9',
-          center: [-98, 38.88],
-          minZoom: 2,
-          zoom: 1
-        });
-        //var map = L.mapbox.map('map', 'gcline001.ciya6c5si007i33k1rpul4nwl-8svrb').setView([-98, 38.88], 2);
-        
-        //mapbox://styles/gcline001/ciy976ttz001h2sqjh2rir168
-        var zoomThreshold = 3;
-
-        // Add zoom and rotation controls to the map.
-        map.addControl(new mapboxgl.NavigationControl());
-        //Add legend control to the map.
-        //map.addControl(new mapboxgl.LegendControl());
-        //Map ID copied from MapBox Tileset goes here.
-        map.on('load', function () {
-          map.addSource('HHSWorld', {
-            type: 'vector',
-            url: 'mapbox://gcline001.ciyym049p00le2qo6chtx6x6b-8nq3n'
-          });
-            //Norway = 10,000
-            //Kazakhstan = 75,000
-            //Brazil = 8,025,250
-            //Kenya = 140,411,934
-            // color is proportionally interpolated between two colors.
-            map.addLayer({
-              'id': 'worldAward',
-              'source': 'HHSWorld',
-              'source-layer': 'WorldMapAndUSstatesALL_R0',
-              'maxzoom': zoomThreshold,
-              'type': 'fill',
-              'filter': ['==', 'class', 'country'],
-              'paint': {
-                'fill-color': {
-                  property: awarddollars_opdiv,
-                  type: 'interval',
-                  stops: [
-                            //[0, 'transparent'],
-                            //[10000000, 'dodgerblue'],
-                            //[50000000000, 'blue']
-                            [0, 'transparent'],
-                            [10000, 'DEEPSKYBLUE'],
-                            [100000, 'DodgerBlue'],
-                            [500000, 'MediumSlateBlue'],
-                            [10000000, 'RoyalBlue'],
-                            [50000000, 'Blue'],
-                            [100000000, 'MediumBlue'],//9
-                            [500000000, 'DarkBlue'],
-                            [500000000000, 'MidnightBlue']
-                            //[BREAKS[0], COLORS[0]],
-                            //[BREAKS[1], COLORS[1]],
-                            //[BREAKS[2], COLORS[2]],
-                            //[BREAKS[3], COLORS[3]],
-                            //[BREAKS[4], COLORS[4]],
-                            //[BREAKS[5], COLORS[5]]
-                            ]
-
-                          },
-                          'fill-opacity': .6
-                        }
-                      });
-            //1576137643 Idaho
-            //73211506394 California
-            map.addLayer({
-              'id': 'USStateAward',
-              'source': 'HHSWorld',
-              'source-layer': 'WorldMapAndUSstatesALL_R0',
-              'minzoom': zoomThreshold,
-              'type': 'fill',
-              'filter': ['==', 'class', 'state'],
-                //'style':'style1'
-                'paint': {
-                  'fill-color': {
-                    property: awarddollars_opdiv,
-                    stops: [
-                                    //[1000000000, 'LIGHTSKYBLUE'],
-                                    //[10000000000, 'dodgerblue'],
-                                    //[70000000000, 'blue']
-                                    [0, 'transparent'],
-                                    [1000000000, '#f7fbff'],
-                                    [2000000000, '#deebf7'],
-                                    [3000000000, '#c6dbef'],
-                                    [5000000000, '#9ecae1'],
-                                    [10000000000, '#6baed6'],
-                                    [30000000000, '#4292c6'],
-                                    [50000000000, '#2171b5'],
-                                    [80000000000, '#084594']
-                                    ]
-                                  },
-                                  'fill-opacity': 0.7
-                                }
-                              });
-          });
-// *** change in legend on zoom ***
-
-var worldLegend = document.getElementById('worldLegend');
-var stateLegend = document.getElementById('stateLegend');
-    stateLegend.style.display = 'none';
-map.on('zoom', function() {
-    if (map.getZoom() > 3) {
-        worldLegend.style.display = 'none';
-        stateLegend.style.display = 'block';
-    } else {
-        worldLegend.style.display = 'block';
-        stateLegend.style.display = 'none';
-    }
-});
-        //// Create a popup, but don't add it to the map yet.
-        //var popup = new mapboxgl.Popup({
-        //    closeButton: false,
-        //    closeOnClick: false
-        //});
-        // map.on("mousemove", function (e) {
-        //     //var features = map.queryRenderedFeatures(e.point, { layers: ["USStateAward"] });
-        //     var features = map.queryRenderedFeatures(e.point, { layers: ["worldAward"] });
-        //     //if (!features.length) {
-        //     //    popup.remove();
-        //     //    return;
-        //     //}
-        //     //var feature = features[0];
-        //     //// Populate the popup and set its coordinates
-        //     //// based on the feature found.
-        //     //popup.setLngLat(feature.geometry.coordinates[0])
-        //     //    .setHTML(feature.properties.name)
-        //     //    .addTo(map);
-        //     if (features.length) {
-        //         //show name and value in sidebar
-        //         document.getElementById('tooltip-name').innerHTML = "Country: " + features[0].properties.name;
-        //         //document.getElementById('tooltip-name').innerHTML = "State: " + features[0].properties.name;
-        //         var value = features[0].properties.awarddollars_hhs;
-        //         var num = '$' + value.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
-        //         document.getElementById('tooltip').innerHTML = "Total: " + num;
-        //         //for troubleshooting - show complete features info
-        //         //document.getElementById('tooltip').innerHTML = JSON.stringify(features, null, 2);
-        //         //document.getElementById('tooltip').innerHTML = JSON.stringify(features.properties, null, 2);
-        //       } else {
-        //         //if not hovering over a feature set tooltip to empty
-        //         document.getElementById('tooltip-name').innerHTML = "";
-        //         //document.getElementById('tooltip').innerHTML = "";
-        //       }
-        //     });
-
- }
-
-    createMapBox("awarddollars_hhs")
 
 
        // ***************SECOND MAP JS
@@ -1488,7 +1317,8 @@ var tooltip = d3.select("div.doubleBarChartCont")
 <script src="js/parallax.js"></script>
 <script src="js/main.js"></script>
 <script src="js/main2.js"></script>
-
+<script src="js/awardsByLocation_All.js"></script>
+<script src="js/awardsByLocation_Disc.js"></script>
 <script src="js/velocity.min.js"></script>
 <script src="js/ScrollMagic.min.js"></script>
 <script src="js/animation.velocity.min.js"></script>
