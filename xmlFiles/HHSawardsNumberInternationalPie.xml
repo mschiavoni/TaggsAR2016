@@ -3,6 +3,7 @@
  numberScaleUnit='K,M,B'
  baseFontColor='55554A'
  decimals='0'
+ baseFontSize='14'
  exportHandler='../FusionCharts/Export/Exported_Images/FCExporter.aspx'
  exportAction='download'
  exportAtClient='0'
@@ -13,6 +14,10 @@
  borderAlpha='0'
  bgColor='E5E3D1'
  animation='1'
+ valueBorderAlpha='100'
+ valueBorderPadding='5'
+ valueBorderRadius='6'
+ valueBorderDashGap='2'
  enableSmartLabels='1'
  startingAngle='70'
  enableRotation='1'>
@@ -23,10 +28,10 @@
 <set isSliced='1' label='FDA' value='15' />
 <set isSliced='1' label='NIH' value='436' />
 <set isSliced='1' label='CDC' value='533' />
-<styles><definition><style name='PlotShadow' type='Shadow' color='262626' alpha='0' />
+<styles><definition>
 <style name='CaptionFont' type='font' font='Varela Round' size='20' color='FFFFFF' bgColor='2467A7' />
-<style name='LabelFont' type='font' font='Varela Round' size='14' color='505050' bold='1' /></definition>
-<application><apply toObject='DATAPLOT' styles='PlotShadow' />
+<style name='LabelFont' type='font' font='Varela Round' size='14' color='505050' bold='0' /></definition>
+<application><apply toObject='DATAPLOT' />
 <apply toObject='CAPTION' styles='CaptionFont' />
 <apply toObject='DataLabels' styles='LabelFont' />
 </application></styles></chart>
