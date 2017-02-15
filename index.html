@@ -9,8 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	
 	
-	     <style>
-
+<style>
 .wrapper {
   position: relative;
 }
@@ -38,11 +37,10 @@ figure ul li{
 }
 figure ul li a{
   display: block;
-  border: 4px solid;
+  border: 2px solid;
   text-align: center;
   color:#fff;
-  font-weight:bold;
-  font-size: .8em;
+  font-size: 1.06em;
   height: 80px;
   overflow: hidden;
 }
@@ -53,7 +51,7 @@ figure ul li a:hover{
 figure ul li a > span{
   display:block;
   min-height:100%;
-  padding-top:20px;
+  padding-top:15px;
   overflow:hidden;
   transition:all ease .4s;
 }
@@ -275,6 +273,25 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
     bottom: 220px;
     margin-left: 400px;
 }
+#imageWrapper {
+	position: relative; display: block;
+} 
+#bottomImage {
+    width: 100%;
+    height: 100%;
+    transition: none;
+    text-align: center;
+    line-height: 0px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 0;
+    max-width: none!important;
+    transition: none;
+    border: none;
+    background-color: #f7f9f9;
+    margin-top: -200px;
+}
      </style>
 
 	
@@ -428,8 +445,8 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
 
             </section>	
 
-<div class="container-fluid">
-	<div class="row medium-padding120 bg-border-color">
+<div class="container-fluid ">
+	<div class="row medium-padding120 bg-border-color ">
 		<div class="container">
 			<div class="taggs-facts-ver2">
             <div class="row mb30 ">
@@ -506,7 +523,9 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
 		</div>
 	</div>
 </div>
-
+<div id="imageWrapper bg-border-color">
+    <img src="img/slide12.png" width="100" height="100" id="bottomImage" alt="" />
+</div>
 <div class="container-fluid">
     <div class="row medium-padding120 bg-orange-color">
         <div class="container">
@@ -640,7 +659,7 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
 	<style type='text/css'>
 	        #taggs-chartFrame {
             width: 1200px;
-            height: 780px;
+            height: 750px;
             -webkit-transition: height ease-in-out 1s;
             -moz-transition: height ease-in-out 1s;
             -o-transition: height ease-in-out 1s;
@@ -668,10 +687,12 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
             width: 100%;
             height: 100%;
             overflow: hidden;
-			margin-top: 70px;}
+			margin-top: 80px;}
         #taggs-chartCanvas svg {
             height: 100%;
             overflow: hidden;
+			padding-top: 50px;
+			margin-left: 20px;
             config/ assets.yml settings.yml}
         #taggs-tooltipContainer {
             position: absolute;
@@ -844,14 +865,14 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
 		.taggs-aside {
 			position: absolute;
 			width: 125px;
-			left: 1000px;
-			top: 275px;
+            left: 1075px;
+            top: 297px;
 			text-align: center;}  
 		.taggs-increasesLabel {
-			position: absolute;
-			top: 100px;
-			left: 680px;
-			width: 60px;
+            position: absolute;
+			top: 155px;
+            left: 725px;
+            width: 100px;
 			border-top: dashed 1px rgba(0, 0, 0, 0.2);}
         .taggs-increasesLabel span {
             position: absolute;
@@ -860,9 +881,9 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
             width: 100px;}       
 		.taggs-decreasesLabel {
 			position: absolute;
-            top: 620px;
-         	left: 680px;
-			width: 60px;
+            top: 670px;
+            left: 725px;
+			width: 100px;
 			border-top: dashed 1px rgba(0, 0, 0, 0.2);}       
         .taggs-decreasesLabel span {
             position: absolute;
@@ -871,18 +892,18 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
             width: 100px;}       
 		#taggs-deficitCircle {
 			position: absolute;
-			width: 650px;
-			height: 650px;
+			width: 600px;
+			height: 600px;
 			top: 0px;
-			left: 890px;}
+			left: 940px;}
        .taggs-deficitCircle {
             stroke-width: 7;
             stroke: #acceff;
             fill: none;}       
         #taggs-colorKey {
             position: absolute;
-            top: 210px;
-            left: 10px;
+            top: 250px;
+            left: 0px;
             width: 200px;
             margin: 0;
             padding: 0;
@@ -963,12 +984,12 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
             width: 340px;} 
         .taggs-discretionaryAside {
             position: absolute;
-            left: 800px;
+            left: 960px;
             top: 120px;
             width: 130px;}
         .taggs-mandatoryAside {
             position: absolute;
-            left: 30px;
+            left: -60px;
             top: 120px;
             width: 140px;}        
         #taggs-discretionaryIntro {
@@ -986,9 +1007,9 @@ figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span{
             font-size: 10px;}        
         .taggs-discretionaryTick {
             position: absolute;
-            border-top: dashed 1px #CCC;
-            left: 60px;
-            width: 900px;}       
+            border-top: dashed 1px #565656;
+            left: 0px;
+            width: 1120px;}       
         .taggs-discretionaryTick p {
             font-size: 10px;
             text-align: left;
@@ -1143,11 +1164,11 @@ div#interactiveFreeFormMain {
                                 <li></li>
                             </ul>
                             <ul class="taggs-colorLabels">
-                                <li>&ndash;25%</li>
-                                <li>&ndash;5%</li>
+                                <li>&ndash;7%</li>
+                                <li>&ndash;3%</li>
                                 <li>0</li>
-                                <li>+5%</li>
-                                <li>+25%</li>
+                                <li>+3%</li>
+                                <li>+7%</li>
                             </ul>
                         </div>
                     </div>
@@ -1194,8 +1215,8 @@ div#interactiveFreeFormMain {
                     "y": 212
                 },
                 "department": {
-                    "x": 150,
-                    "y": 169
+                    "x": 395,
+                    "y": 135
                 }
             },
             "id": 309,
@@ -1213,8 +1234,8 @@ div#interactiveFreeFormMain {
                     "y": 261
                 },
                 "department": {
-                    "x": 679,
-                    "y": 225
+                    "x": 130,
+                    "y": 135
                 }
             },          
             "id": 10,      
@@ -1232,13 +1253,13 @@ div#interactiveFreeFormMain {
                     "y": 465
                 },
                 "department": {
-                    "x": 945,
-                    "y": 225
+                    "x": 932,
+                    "y": 110
                 }
             },
             "id": 9,
             "budget_2015": 518503,
-            "change": -0.03,
+            "change": -0.01454318,
             "budget_2016": 518428,
 			"awards": 200,
             "department": "HRSA",
@@ -1251,8 +1272,8 @@ div#interactiveFreeFormMain {
                     "y": 471
                 },
                 "department": {
-                    "x": 101,
-                    "y": 460
+                    "x": 115,
+                    "y": 470
                 }
             },
             "id": 186,     
@@ -1270,14 +1291,14 @@ div#interactiveFreeFormMain {
                     "y": 186
                 },
                 "department": {
-                    "x": 395,
+                    "x": 547,
                     "y": 460
                 }
             },
             "id": 196,
-            "budget_2015": 14650563,
+            "budget_2015": 1465056,
             "change": 0.07,
-            "budget_2016": 15623145,
+            "budget_2016": 1562314,
 			"awards": 200,
             "department": "ACL",
             "discretion": "Non-Discretionary"
@@ -1289,14 +1310,14 @@ div#interactiveFreeFormMain {
                     "y": 313
                 },
                 "department": {
-                    "x": 248,
+                    "x": 335,
                     "y": 460
                 }
             },
             "id": 366,
-            "budget_2015": 22422319,
+            "budget_2015": 2242231,
             "change": 0.04,
-            "budget_2016": 23248449,
+            "budget_2016": 2324844,
 			"awards": 200,
             "department": "SAMHSA",
             "discretion": "Non-Discretionary"
@@ -1308,14 +1329,14 @@ div#interactiveFreeFormMain {
                     "y": 281
                 },
                 "department": {
-                    "x": 545,
+                    "x": 760,
                     "y": 460
                 }
             },
             "id": 171,
-            "budget_2015": 21303523,
+            "budget_2015": 2130352,
             "change": 0.06,
-            "budget_2016": 22531886,
+            "budget_2016": 2253188,
 			"awards": 200,
             "department": "IHS",
             "discretion": "Non-Discretionary"
@@ -1328,7 +1349,7 @@ div#interactiveFreeFormMain {
                     "y": 229
                 },
                 "department": {
-                    "x": 318,
+                    "x": 821,
                     "y": 610
                 }
             },
@@ -1348,13 +1369,13 @@ div#interactiveFreeFormMain {
                     "y": 298
                 },
                 "department": {
-                    "x": 202,
+                    "x": 640,
                     "y": 610
                 }
             },
             "id": 901,
             "budget_2015": 2725,
-            "change": 0.0204081632653061,
+            "change": -0.3030,
             "budget_2016": 1900,
 			"awards": 200,
             "department": "ASPE",
@@ -1368,8 +1389,8 @@ div#interactiveFreeFormMain {
                     "y": 340
                 },
                 "department": {
-                    "x": 415,
-                    "y": 225
+                    "x": 670,
+                    "y": 125
                 }
             },
             "id": 902,
@@ -1387,14 +1408,14 @@ div#interactiveFreeFormMain {
                     "y": 212
                 },
                 "department": {
-                    "x": 150,
-                    "y": 225
+                    "x": 395,
+                    "y": 135
                 }
             },
             "id": 903,
-            "budget_2015": 10187505,
+            "budget_2015": 96002044,
             "change": 0.06,
-            "budget_2016": 12000000,
+            "budget_2016": 10187505,
 			"awards": 200,
             "department": "ACF",
             "discretion": "Discretionary"
@@ -1406,14 +1427,14 @@ div#interactiveFreeFormMain {
                     "y": 261
                 },
                 "department": {
-                    "x": 679,
-                    "y": 225
+                    "x": 130,
+                    "y": 135
                 }
             },          
             "id": 904,
-            "budget_2015": 153824,
+            "budget_2015": 1538246,
             "change": 0.08,
-            "budget_2016": 166357,
+            "budget_2016": 1663575,
 			"awards": 200,
             "department": "CMS",
             "discretion": "Discretionary"
@@ -1425,8 +1446,8 @@ div#interactiveFreeFormMain {
                     "y": 465
                 },
                 "department": {
-                    "x": 945,
-                    "y": 225
+                    "x": 932,
+                    "y": 110
                 }
             },
             "id": 905,
@@ -1444,8 +1465,8 @@ div#interactiveFreeFormMain {
                     "y": 471
                 },
                 "department": {
-                    "x": 101,
-                    "y": 460
+                    "x": 115,
+                    "y": 470
                 }
             },
             "id": 906,
@@ -1463,13 +1484,13 @@ div#interactiveFreeFormMain {
                     "y": 186
                 },
                 "department": {
-                    "x": 395,
+                    "x": 547,
                     "y": 460
                 }
             },
             "id": 907,
             "budget_2015": 537700,
-            "change": 0.0,
+            "change": -0.45993,
             "budget_2016": 290394,
 			"awards": 200,
             "department": "ACL",
@@ -1482,7 +1503,7 @@ div#interactiveFreeFormMain {
                     "y": 313
                 },
                 "department": {
-                    "x": 248,
+                    "x": 335,
                     "y": 460
                 }
             },
@@ -1501,7 +1522,7 @@ div#interactiveFreeFormMain {
                     "y": 281
                 },
                 "department": {
-                    "x": 545,
+                    "x": 760,
                     "y": 460
                 }
             },
@@ -1520,8 +1541,8 @@ div#interactiveFreeFormMain {
                     "y": 254
                 },
                 "department": {
-                    "x": 89,
-                    "y": 610
+                    "x": 455,
+                    "y": 628
                 }
             },
             "id": 910,
@@ -1539,8 +1560,8 @@ div#interactiveFreeFormMain {
                     "y": 457
                 },
                 "department": {
-                    "x": 695,
-                    "y": 460
+                    "x": 980,
+                    "y": 440
                 }
             },
             "id": 911,
@@ -1558,8 +1579,8 @@ div#interactiveFreeFormMain {
                     "y": -95
                 },
                 "department": {
-                    "x": 995,
-                    "y": 460
+                    "x": 278,
+                    "y": 626
                 }
             },
 			 "id": 912,
@@ -1577,13 +1598,13 @@ div#interactiveFreeFormMain {
                     "y": 317
                 },
                 "department": {
-                    "x": 850,
-                    "y": 460
+                    "x": 96,
+                    "y": 622
                 }
             },
             "id": 913,
             "budget_2015": 216039,
-            "change": 0.00,
+            "change": -0.75882,
             "budget_2016": 52103,
 			"awards": 200,
             "department": "ASPR",
@@ -1596,7 +1617,7 @@ div#interactiveFreeFormMain {
                     "y": 114
                 },
                 "department": {
-                    "x": 433,
+                    "x": 1000,
                     "y": 610
                 }
             },
@@ -1611,77 +1632,77 @@ div#interactiveFreeFormMain {
         taggs.category_list = ["ACF", "CMS", "NIH", "HRSA", "CDC", "SAMHSA", "ACL", "IHS", "OASH", "ASPR", "AHRQ", "FDA", "ASPE", "OGA", "ONC"];
         taggs.category_data = [{
             "label": "ACF",
-            "total": 50000000,
+            "total": 50813864242,
             "num_children": 26,
             "short_label": "ACF"
         }, {
             "label": "CMS",
-            "total": 10000000,
+            "total": 362757036925,
             "num_children": 8,
             "short_label": "CMS"
         }, {
             "label": "NIH",
-            "total": 22000000,
+            "total": 23423188571,
             "num_children": 13,
             "short_label": "NIH"
         }, {
             "label": "HRSA",
-            "total": 9000000,
+            "total": 8664272974,
             "num_children": 16,
             "short_label": "HRSA"
         }, {
             "label": "CDC",
-            "total": 6000000,
+            "total": 6061794329,
             "num_children": 45,
             "short_label": "CDC"
         }, {
             "label": "SAMHSA",
-            "total": 3000000,
+            "total": 3324948380,
             "num_children": 15,
             "short_label": "SAMHSA"
         }, {
             "label": "ACL",
-            "total": 2000000,
+            "total": 1852709195,
             "num_children": 9,
             "short_label": "ACL"
         }, {
             "label": "IHS",
-            "total": 2000000,
+            "total": 2456726728,
             "num_children": 2,
             "short_label": "IHS"
         }, {
             "label": "OASH",
-            "total": 410000,
+            "total": 402836397,
             "num_children": 20,
             "short_label": "OASH"
         }, {
             "label": "ASPR",
-            "total": 219000,
+            "total": 52103566,
             "num_children": 9,
             "short_label": "ASPR"
         }, {
             "label": "AHRQ",
-            "total": 212000,
+            "total": 199178572,
             "num_children": 18,
             "short_label": "AHRQ"
         }, {
             "label": "FDA",
-            "total": 152000,
+            "total": 180996807,
             "num_children": 31,
             "short_label": "FDA"
         }, {
             "label": "ASPE",
-            "total": 3000,
+            "total": 1900000,
             "num_children": 21,
             "short_label": "ASPE"
         }, {
             "label": "OGA",
-            "total": 1000,
+            "total": 1300000,
             "num_children": 15,
             "short_label": "OGA"
         }, {
             "label": "ONC",
-            "total": -37000,
+            "total": -2961087,
             "num_children": 23,
             "short_label": "ONC"
         }];
@@ -1751,7 +1772,7 @@ div#interactiveFreeFormMain {
             return {
                 $j: jQuery,
                 width: 1100,
-                height: 900,
+                height: 1000,
                 groupPadding: 10,
                 totalValue: 3700000000,
                 deficitValue: 901000000,
@@ -1779,28 +1800,28 @@ div#interactiveFreeFormMain {
                 circle: {},
                 gravity: null,
                 charge: null,
-                changeTickValues: [-0.25, -0.15, -0.05, 0.05, 0.15, 0.25],
+                changeTickValues: [-0.12, -0.08, -0.04, 0.04, 0.8, 0.12],
                 categorizeChange: function(c) {
                     if (isNaN(c)) {
                         return 0;
-                    } else if (c < -0.25) {
+                    } else if (c < -0.08) {
                         return -3;
-                    } else if (c < -0.05) {
+                    } else if (c < -0.04) {
                         return -2;
                     } else if (c < -0.001) {
                         return -1;
                     } else if (c <= 0.001) {
                         return 0;
-                    } else if (c <= 0.05) {
+                    } else if (c <= 0.04) {
                         return 1;
-                    } else if (c <= 0.25) {
+                    } else if (c <= 0.08) {
                         return 2;
                     } else {
                         return 3;
                     }
                 },
-                fillColor: d3.scale.ordinal().domain([-3, -2, -1, 0, 1, 2, 3]).range(["#ca4445", "#ee9586", "#e4b7b2", "#c5d8de", "#8EC6F5", "#107BE8", "#01579b"]),
-                strokeColor: d3.scale.ordinal().domain([-3, -2, -1, 0, 1, 2, 3]).range(["#ca4445", "#ee9586", "#e4b7b2", "#c5d8de", "#0069ff", "#107BE8", "#01579b"]),
+                fillColor: d3.scale.ordinal().domain([-3, -2, -1, 0, 1, 2, 3]).range(["#ca4445", "#ee9586", "#ffd7d3", "#c5d8de", "#8EC6F5", "#107BE8", "#01579b"]),
+                strokeColor: d3.scale.ordinal().domain([-3, -2, -1, 0, 1, 2, 3]).range(["#ffd7d3", "#ca4445", "#ca4445", "#c5d8de", "#0069ff", "#01579b", "#8EC6F5"]),
                 getFillColor: null,
                 getStrokeColor: null,
                 pFormat: d3.format("+.1%"),
@@ -1823,7 +1844,7 @@ div#interactiveFreeFormMain {
                         return d
                     }
                 },
-                rScale: d3.scale.pow().exponent(0.2).domain([100, 1000000000]).range([1, 160]),
+                rScale: d3.scale.pow().exponent(0.2).domain([100, 1000000000]).range([1, 182]),
                 radiusScale: null,
                 changeScale: d3.scale.linear().domain([-0.28, 0.28]).range([620, 180]).clamp(true),
                 sizeScale: d3.scale.linear().domain([0, 110]).range([0, 1]),
@@ -1861,9 +1882,9 @@ div#interactiveFreeFormMain {
                     taggs.category_data.sort(function(a, b) {
                         return b['total'] - a['total'];
                     });
-                    var columns = [4, 7, 9, 9]
-                    rowPadding = [150, 100, 90, 80, 70],
-                        rowPosition = [220, 450, 600, 720, 817],
+                    var columns = [4, 5, 6, 9]
+                    rowPadding = [150, 120, 100, 80, 70],
+                        rowPosition = [250, 580, 760, 80, 890],
                         rowOffsets = [130, 80, 60, 45, 48]
                     currentX = 0,
                         currentY = 0;
@@ -1954,17 +1975,17 @@ div#interactiveFreeFormMain {
                         .classed('taggs-discretionaryZeroTick', true)
                     d3.select("#taggs-discretionaryOverlay").append("div")
                         .html("<p>+26% or higher</p>")
-                        .style("top", this.changeScale(100) + 'px')
+                        .style("top", this.changeScale(50) + 'px')
                         .classed('taggs-discretionaryTickLabel', true)
                     d3.select("#taggs-discretionaryOverlay").append("div")
                         .html("<p>&minus;26% or lower</p>")
-                        .style("top", this.changeScale(-100) + 'px')
+                        .style("top", this.changeScale(-50) + 'px')
                         .classed('taggs-discretionaryTickLabel', true)                  
                     d3.select("#taggs-deficitCircle").append("circle")
                         .attr('r', this.radiusScale(this.deficitValue))
                         .attr('class', "taggs-deficitCircle")
-                        .attr('cx', 160)
-                        .attr('cy', 160);
+                        .attr('cx', 190)
+                        .attr('cy', 190);
                     d3.select("#taggs-scaleKey").append("circle")
                         .attr('r', this.radiusScale(100000000))
                         .attr('class', "taggs-scaleKeyCircle")
@@ -2011,7 +2032,7 @@ div#interactiveFreeFormMain {
                         .style("fill", function(d) {
                             return that.getFillColor(d);
                         })
-                        .style("stroke-width", 1)
+                        .style("stroke-width", 2)
                         .attr('id', function(d) {
                             return 'taggs-circle' + d.sid
                         })
@@ -2022,7 +2043,7 @@ div#interactiveFreeFormMain {
                             var el = d3.select(this)
                             var xpos = Number(el.attr('cx'))
                             var ypos = (el.attr('cy') - d.radius - 10)
-                            el.style("stroke", "#000").style("stroke-width", 3);
+                            el.style("stroke", "#3cb878").style("stroke-width", 4);
                             d3.select("#taggs-tooltip").style('top', ypos + "px").style('left', xpos + "px").style('display', 'block')
                                 .classed('taggs-plus', (d.changeCategory > 0))
                                 .classed('taggs-minus', (d.changeCategory < 0));
@@ -2219,7 +2240,7 @@ div#interactiveFreeFormMain {
                             }
                             return;
                         }
-                        if (d.discretion === "Discretionary") {
+                        if (d.discretion === "Discretionary" ) {
                             targetY = that.changeScale(d.change);
                             targetX = 100 + that.groupScale(d.group) * (that.width - 120);
                             if (isNaN(targetY)) {
@@ -2379,35 +2400,35 @@ div#interactiveFreeFormMain {
                     this.currentOverlay = $j("#taggs-totalOverlay");
                     this.currentOverlay.delay(300).fadeIn(500);
                     $j("#taggs-chartFrame").css({
-                        'height': 550
+                        'height': 750
                     });
                 } else if (tabIndex === 1) {
                     taggs.c.mandatoryLayout();
                     this.currentOverlay = $j("#taggs-mandatoryOverlay");
                     this.currentOverlay.delay(300).fadeIn(500);
                     $j("#taggs-chartFrame").css({
-                        'height': 550
+                        'height': 750
                     });
                 } else if (tabIndex === 2) {
                     taggs.c.discretionaryLayout();
                     this.currentOverlay = $j("#taggs-discretionaryOverlay");
                     this.currentOverlay.delay(300).fadeIn(500);
                     $j("#taggs-chartFrame").css({
-                        'height': 650
+                        'height': 750
                     });
                 } else if (tabIndex === 4) {
                     taggs.c.comparisonLayout();
                     this.currentOverlay = $j("#taggs-comparisonOverlay");
                     this.currentOverlay.delay(300).fadeIn(500);
                     $j("#taggs-chartFrame").css({
-                        'height': 650
+                        'height': 750
                     });
                 } else if (tabIndex === 3) {
                     taggs.c.departmentLayout();
                     this.currentOverlay = $j("#taggs-departmentOverlay");
                     this.currentOverlay.delay(300).fadeIn(500);
                     $j("#taggs-chartFrame").css({
-                        'height': 850
+                        'height': 750
                     });
                 }
             }
@@ -2448,48 +2469,48 @@ div#interactiveFreeFormMain {
   <div id="taggs-org-chart">
     <figure class="clearfix">
         <ul>
-            <li class="taggs-org-branch-end"><div><a href="#"><span>The Secretary/ Deputy Secretary/ Chief of Staff <small>HHS Organization</small></span></a></div>
+            <li class="taggs-org-branch-end"><div><a href="#"><span>The Secretary/ Deputy Secretary/ Chief of Staff<small></small></span></a></div>
                 <ul>
-                    <li class="col-lg-2 taggs-org-branch-end"><a href="#"><span>Office of <br />Health Reform (OHR)</span></a>
+                    <li class="col-lg-2 taggs-org-branch-end"><a href="#"><span>Office of<br />Health Reform (OHR)</span></a>
 
                     </li>
                     <li class="col-lg-3 taggs-org-branch-end"><a href="#"><span>Office of <br />the Secretary</span></a>
                         <ul>
                             <li><a href="#"><span>Office of the Assistant<br /> Secretary for Administration (ASA)</span></a></li>
-                            <li><a href="#"><span>Office of the Assistant <br />Secretary for Financial Resources (ASFR)</span></a></li>
-                            <li><a href="#"><span>Office of the Assistant <br />Secretary for Health (OASH)</span></a></li>
-                            <li><a href="#"><span>Office of the Assistant <br />Secretary for Legislation (ASL)</span></a></li>
-                            <li><a href="#"><span>Office of the Assistant <br />Secretary for Planning & Evaluation (ASPE)</span></a></li>
-                            <li><a href="#"><span>Office of the Assistant <br />Secretary for Preparedness & Response (ASPR)</span></a></li>
-                            <li><a href="#"><span>Office of the Assistant <br />Secretary for Public Affairs (ASPA)</span></a></li>
-                            <li><a href="#"><span>Office for <br />Civil Rights (OCR)</span></a></li>
-                            <li><a href="#"><span>Departmental <br />Appeals Board (DAB)</span></a></li>
+                            <li><a href="#"><span>Office of the Assistant<br />Secretary for Financial Resources (ASFR)</span></a></li>
+                            <li><a href="#"><span>Office of the Assistant<br />Secretary for Health (OASH)</span></a></li>
+                            <li><a href="#"><span>Office of the Assistant<br />Secretary for Legislation (ASL)</span></a></li>
+                            <li><a href="#"><span>Office of the Assistant<br />Secretary for Planning & Evaluation (ASPE)</span></a></li>
+                            <li><a href="#"><span>Office of the Assistant<br />Secretary for Preparedness & Response (ASPR)</span></a></li>
+                            <li><a href="#"><span>Office of the Assistant<br />Secretary for Public Affairs (ASPA)</span></a></li>
+                            <li><a href="#"><span>Office for<br />Civil Rights (OCR)</span></a></li>
+                            <li><a href="#"><span>Departmental<br />Appeals Board (DAB)</span></a></li>
                             <li><a href="#"><span>Office for the<br /> General Counsel (OGC)</span></a></li>
-                            <li><a href="#"><span>Office for <br />Global Affairs (OGA)</span></a></li>
-                            <li><a href="#"><span>Office of Inspector<br /> General (OIG)</span></a></li>
-                            <li><a href="#"><span>Office for Medicare<br /> Hearing & Appeals (OMHA)</span></a></li>
+                            <li><a href="#"><span>Office for<br />Global Affairs (OGA)</span></a></li>
+                            <li><a href="#"><span>Office of Inspector<br />General (OIG)</span></a></li>
+                            <li><a href="#"><span>Office for Medicare<br />Hearing & Appeals (OMHA)</span></a></li>
                             <li><a href="#"><span>Office for the National Coordinator for<br /> Health Information Technology (ONC)</span></a></li>
                         </ul>
                     </li>
-                    <li class="col-lg-2 taggs-org-branch-end"><a href="#"><span>Office of Intergovernmental <br />& External Affairs (IEA)</span></a>
+                    <li class="col-lg-2 taggs-org-branch-end"><a href="#"><span>Office of Intergovernmental<br />& External Affairs (IEA)</span></a>
 
                     </li>
-                    <li class="col-lg-3 taggs-org-branch-end"><a href="#"><span>Operating <br />Divisions</span></a>
+                    <li class="col-lg-3 taggs-org-branch-end"><a href="#"><span>Operating<br />Divisions</span></a>
                     	<ul>
-                    		<li><a href="#"><span>Office of the Assistant<br /> Secretary for Children & Families (ACF)</span></a></li>
-                    		<li><a href="#"><span>Office of the Assistant Secretary<br /> for Community Living (ACL)</span></a></li>
-                            <li><a href="#"><span>Agency for Healthcare<br /> Research & Quality (AHRQ)</span></a></li>
-                            <li><a href="#"><span>Agency for Toxic Substance<br /> & Disease Registry (ATSDR)/span></a></li>
-                            <li><a href="#"><span>Centers for Disease<br /> Control & Prevention (CDC)</span></a></li>
-                            <li><a href="#"><span>Centers for Medicare<br /> & Medicaid Services (CMS)</span></a></li>
-                            <li><a href="#"><span>Food & Drug<br /> Administration (FDA)</span></a></li>
-                            <li><a href="#"><span>Health Resources <br />& Services Administration (HRSA)</span></a></li>
-                            <li><a href="#"><span>Indian Health<br /> Services (IHS)</span></a></li>
-                            <li><a href="#"><span>National Institutes<br /> of Health (NIH)</span></a></li>
-                            <li><a href="#"><span>Substance Abuse & Mental <br />Health Services Administrations (SAMHSA)<span></a></li>
+                    		<li><a href="#"><span>Office of the Assistant<br />Secretary for Children & Families (ACF)</span></a></li>
+                    		<li><a href="#"><span>Office of the Assistant Secretary<br />for Community Living (ACL)</span></a></li>
+                            <li><a href="#"><span>Agency for Healthcare<br />Research & Quality (AHRQ)</span></a></li>
+                            <li><a href="#"><span>Agency for Toxic Substance<br />& Disease Registry (ATSDR)</a></li>
+                            <li><a href="#"><span>Centers for Disease<br />Control & Prevention (CDC)</span></a></li>
+                            <li><a href="#"><span>Centers for Medicare<br />& Medicaid Services (CMS)</span></a></li>
+                            <li><a href="#"><span>Food & Drug<br />Administration (FDA)</span></a></li>
+                            <li><a href="#"><span>Health Resources<br />& Services Administration (HRSA)</span></a></li>
+                            <li><a href="#"><span>Indian Health<br />Services (IHS)</span></a></li>
+                            <li><a href="#"><span>National Institutes<br />of Health (NIH)</span></a></li>
+                            <li><a href="#"><span>Substance Abuse & Mental<br />Health Services Administrations (SAMHSA)<span></a></li>
                     	</ul>
                     </li>
-                    <li class="col-lg-2 taggs-org-branch-end"><a href="#"><span>The Executive <br />Secretariat (ES)</span></a>
+                    <li class="col-lg-2 taggs-org-branch-end"><a href="#"><span>The Executive<br />Secretariat (ES)</span></a>
                     </li>
                 </ul>
             </li>
