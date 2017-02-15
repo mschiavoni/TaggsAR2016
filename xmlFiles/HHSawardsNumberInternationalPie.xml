@@ -1,4 +1,5 @@
 <chart
+       
  showShadow= '0'
  use3DLighting='0'
  radius3D='0'
@@ -15,7 +16,7 @@
  caption='HHS Total Number of Awards'
  bgAngle='360'
  bgAlpha='0'
- borderAlpha='0'
+ borderAlpha='20'
  bgColor='E5E3D1'
  animation='1'
  valueBorderAlpha='100'
