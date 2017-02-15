@@ -87,14 +87,25 @@ $('#multiSelectDrop').multiselect();
   });
 
 
+  $('#masterSelect').multiselect();
 
-$('#mapDrop').multiselect();
-
-  // set function to render graphs on change
-  $('#mapDrop').on("change", function(){
-    var selectedID = this.value.toLowerCase();
-    createMapBox(selectedID)
+  $('#masterSelect').on("change", function(){
+    var selectedOpdiv = this.value.toLowerCase();
+    console.log('selectedOpdiv', selectedOpdiv)
+    setOpdiv(selectedOpdiv)
   });
+  
+  function setOpdiv(selectedOpdiv){
+    var selection = selectedOpdiv.toUpperCase() + "grantHist";
+    var selection2 = "awarddollars_" + selectedOpdiv.toUpperCase();
+
+
+    $('input:checkbox[value=' + selection + ']').click()
+
+
+    $('input:radio[value=' + selection2 + ']').click()
+
+}
 
 });
 
