@@ -1,0 +1,32 @@
+<chart
+ numberScaleValue='1000,1000,1000'
+ numberScaleUnit='K,M,B'
+ baseFontColor='55554A'
+ decimals='0'
+ exportHandler='../FusionCharts/Export/Exported_Images/FCExporter.aspx'
+ exportAction='download'
+ exportAtClient='0'
+ exportEnabled='0'
+ caption='HHS Total Number of Awards'
+ bgAngle='360'
+ bgAlpha='0'
+ borderAlpha='0'
+ bgColor='E5E3D1'
+ animation='1'
+ enableSmartLabels='1'
+ startingAngle='70'
+ enableRotation='1'>
+<set isSliced='1' label='SAMHSA' value='1' />
+<set isSliced='1' label='OASH' value='1' />
+<set isSliced='1' label='ASPR' value='1' />
+<set isSliced='1' label='HRSA' value='2' />
+<set isSliced='1' label='FDA' value='15' />
+<set isSliced='1' label='NIH' value='436' />
+<set isSliced='1' label='CDC' value='533' />
+<styles><definition><style name='PlotShadow' type='Shadow' color='262626' alpha='50' />
+<style name='CaptionFont' type='font' size='20' color='FFFFFF' bgColor='2467A7' />
+<style name='LabelFont' type='font' size='11' color='505050' bold='1' /></definition>
+<application><apply toObject='DATAPLOT' styles='PlotShadow' />
+<apply toObject='CAPTION' styles='CaptionFont' />
+<apply toObject='DataLabels' styles='LabelFont' />
+</application></styles></chart>
