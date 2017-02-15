@@ -15,7 +15,7 @@
  exportEnabled='0'
  caption='HHS Total Number of Awards'
  bgAngle='360'
- bgAlpha='0'
+ bgAlpha='100'
  borderAlpha='20'
  bgColor='f7f9f9'
  animation='1'
