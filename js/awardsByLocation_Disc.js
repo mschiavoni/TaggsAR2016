@@ -137,7 +137,7 @@ function createMapBox2(awarddollars_opdiv){
 
       var feature = features[0];
 
-      var value = feature.properties.awarddollars_opdivs;
+      var value = feature.properties.awarddollars_hhs;
       var num = '$' + value.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
       popup1
       .setLngLat(map.unproject(e.point))
