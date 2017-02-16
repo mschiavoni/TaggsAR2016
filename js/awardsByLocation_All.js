@@ -1,15 +1,6 @@
 // 'use strict'
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw'
 
-$('#mapDrop').multiselect();
-
-  // set function to render graphs on change
-  $('#mapDrop').on("change", function(){
-    var selectedID = this.value.toLowerCase();
-    createMapBox(selectedID)
-  });
-
-
 var COLORS = ['transparent', 'DEEPSKYBLUE', 'DodgerBlue', 'MediumSlateBlue', 'RoyalBlue', 'Blue', 'DarkBlue'];
 
 var BREAKS_WORLD_hhs = [0, 1, 400000, 1300000, 4400000, 160000000, 4893101782];
@@ -17,22 +8,36 @@ var BREAKS_USA_hhs = [0, 1, 10000000, 35000000, 130000000, 1200000000, 587589109
 var BREAKS_WORLD = [0, 1, 400000, 1300000, 4400000, 160000000, 4893101782];
 var BREAKS_USA = [0, 1, 10000000, 35000000, 130000000, 1200000000, 58758910941];
 
-var currentAwards = "awarddollars_hhs";
+$('#mapDrop').multiselect();
 
-function createMapBox(awarddollars_opdiv){
+  // set function to render graphs on change
+  $('#mapDrop').on("change", function(){
+    var selectedID = this.value.toLowerCase();
+    var selectedAwardType = $('input[name="awards"]:checked').attr("id")
+    if (selectedAwardType === "totalAwards"){
+    createMapBox(selectedID)
+    } else {
+      createMapBox2(selectedID)
+    }
+  });
+
+
+
+
   $('input[name="awards"]').click(function(){
     var mapFile = this.value
+    var currentSelectedOpdiv = $('.radioOpt:checked').val().toLowerCase()
     console.log('mapFile', mapFile)
     if (mapFile === 'mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e'){
-      createMapBox(currentAwards)
-
+      createMapBox(currentSelectedOpdiv)
     } else {
-
-      createMapBox2(awarddollars_opdiv)
+      createMapBox2(currentSelectedOpdiv)
 
     }
 
   })
+
+function createMapBox(awarddollars_opdiv){
 
   var map = new mapboxgl.Map({
     container: 'map',
@@ -138,9 +143,10 @@ function createMapBox(awarddollars_opdiv){
       }
 
       var feature = features[0];
+      console.log(feature)
 console.log('ad', awarddollars_opdiv)
 
-      var value = feature.properties.awarddollars_hhs;
+      var value = feature.properties[awarddollars_opdiv];
 
       var num = '$' + value.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
       popup1
@@ -170,6 +176,6 @@ console.log('ad', awarddollars_opdiv)
   })
 }
 
-createMapBox(currentAwards)
+createMapBox("awarddollars_hhs")
 
 

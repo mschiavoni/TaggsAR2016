@@ -101,7 +101,7 @@ function createMapBox2(awarddollars_opdiv){
       }
     }, 'water');
 
-    console.log('6')
+
 
     var popup1 = new mapboxgl.Popup({
       id: "popup-1",
@@ -136,8 +136,8 @@ function createMapBox2(awarddollars_opdiv){
       }
 
       var feature = features[0];
-
-      var value = feature.properties.awarddollars_hhs;
+console.log("awarddollars_opdiv", awarddollars_opdiv)
+      var value = feature.properties[awarddollars_opdiv];
       var num = '$' + value.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
       popup1
       .setLngLat(map.unproject(e.point))

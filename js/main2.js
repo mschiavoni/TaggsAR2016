@@ -100,9 +100,8 @@ $('#multiSelectDrop').multiselect();
     var selection2 = "awarddollars_" + selectedOpdiv.toUpperCase();
 
 
+    $('.selectOpt input:checked').click()
     $('input:checkbox[value=' + selection + ']').click()
-
-
     $('input:radio[value=' + selection2 + ']').click()
 
 }
