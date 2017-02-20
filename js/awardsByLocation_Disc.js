@@ -14,7 +14,7 @@ var COLORS = ['transparent', 'DEEPSKYBLUE', 'DodgerBlue', 'MediumSlateBlue', 'Ro
 
 
 
-function createMapBox2(awarddollars_opdiv){
+function createMapBox2(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
   console.log('3')
   console.log('awarddollars_opdiv', awarddollars_opdiv)
 

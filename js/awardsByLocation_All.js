@@ -5,8 +5,8 @@ var COLORS = ['transparent', 'DEEPSKYBLUE', 'DodgerBlue', 'MediumSlateBlue', 'Ro
 
 // var BREAKS_WORLD_hhs = [0, 1, 400000, 1300000, 4400000, 160000000, 4893101782];
 // var BREAKS_USA_hhs = [0, 1, 10000000, 35000000, 130000000, 1200000000, 58758910941];  
-var BREAKS_WORLD = [0, 1, 400000, 1300000, 4400000, 160000000, 4893101782];
-var BREAKS_USA = [0, 1, 10000000, 35000000, 130000000, 1200000000, 58758910941];
+// var BREAKS_WORLD = [0, 1, 400000, 1300000, 4400000, 160000000, 4893101782];
+// var BREAKS_USA = [0, 1, 10000000, 35000000, 130000000, 1200000000, 58758910941];
 
 var allBreaks = {}
 
@@ -75,7 +75,6 @@ allBreaks.BREAKS_DISC_ONC_WORLD = [0, , , , , , -2961087];
 allBreaks.BREAKS_DISC_SAMHSA_USA = [0, 7995653, 11386834, 15733837, 20478945, 26423435, 75231849];
 allBreaks.BREAKS_DISC_SAMHSA_WORLD = [0, , , , , 249796, 999853629];
 
-
 // ***** Legend scales
 
 
@@ -101,13 +100,19 @@ function updateLegend(arrState, arrWorld) {
     var selectedAwardType = $('input[name="awards"]:checked').attr("id")
     var selectedOpdiv = this.value.toLowerCase();
     var selectedKey = selectedOpdiv.split("_")[1]
-    
     getLegend(selectedKey,selectedAwardType)
+
     
     if (selectedAwardType === "totalAwards"){
-      createMapBox(selectedOpdiv)
+      var stateBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_USA"]
+      var worldBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_WORLD"]
+      console.log(worldBreaks)
+      console.log("BREAKS_ALL_" + selectedKey.toUpperCase() + "_WORLD")
+      createMapBox(selectedOpdiv, worldBreaks, stateBreaks)
     } else {
-      createMapBox2(selectedOpdiv)
+      var stateBreaks = allBreaks["BREAKS_DISC_" + selectedKey.toUpperCase() + "_USA"]
+      var worldBreaks = allBreaks["BREAKS_DISC_" + selectedKey.toUpperCase() + "_WORLD"]
+      createMapBox2(selectedOpdiv, worldBreaks, stateBreaks)
     }
   });
 
@@ -122,104 +127,108 @@ function updateLegend(arrState, arrWorld) {
     getLegend(selectedKey,selectedAwardType)
 
     if (selectedAwardType === "totalAwards"){
-      createMapBox(selectedOpdiv)
+      var stateBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_USA"]
+      var worldBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_WORLD"]
+      createMapBox(selectedOpdiv, worldBreaks, stateBreaks)
     } else {
-      createMapBox2(selectedOpdiv)
-
+      var stateBreaks = allBreaks["BREAKS_DISC_" + selectedKey.toUpperCase() + "_USA"]
+      var worldBreaks = allBreaks["BREAKS_DISC_" + selectedKey.toUpperCase() + "_WORLD"]
+      createMapBox2(selectedOpdiv, worldBreaks, stateBreaks)
     }
-
-  })
-
-  function getLegend(opdiv, type) {
-
-    var legendWorld = 'Legend_World_'
-    var legendState = 'Legend_State_'
-
-    if (type === "totalAwards") {
-      legendWorld += "All_"
-      legendState += "All_"
-    } else {
-      legendWorld += "Discretionary_"
-      legendState += "Discretionary_"
-    }
-
-    legendWorld += opdiv.toUpperCase() + ".txt"
-
-    legendState += opdiv.toUpperCase() + ".txt"
+  });
 
 
-    $.get('./Legend_World_Discretionary_aLL/' + legendWorld , function(data) {
-      function toNumber(num){
-        return Number(num)
-      }
-      var arrWorld = data.split("|").map(toNumber)
-      arrWorld[0]= 0;
 
-      $.get('./Legend_World_Discretionary_aLL/' + legendState , function(data) {
-        var arrState = data.split("|").map(toNumber)
-        arrState[0]= 0;
-        updateLegend(arrState, arrWorld)
-      });
+function getLegend(opdiv, type) {
 
-    });
+  var legendWorld = 'Legend_World_'
+  var legendState = 'Legend_State_'
 
-
+  if (type === "totalAwards") {
+    legendWorld += "All_"
+    legendState += "All_"
+  } else {
+    legendWorld += "Discretionary_"
+    legendState += "Discretionary_"
   }
 
-  function createMapBox(awarddollars_opdiv){
+  legendWorld += opdiv.toUpperCase() + ".txt"
 
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/light-v9',
-      center: [-98, 38.88],
-      minZoom: 2,
-      zoom: 1
+  legendState += opdiv.toUpperCase() + ".txt"
+
+
+  $.get('./Legend_World_Discretionary_aLL/' + legendWorld , function(data) {
+    function toNumber(num){
+      return Number(num)
+    }
+    var arrWorld = data.split("|").map(toNumber)
+    arrWorld[0]= 0;
+
+    $.get('./Legend_World_Discretionary_aLL/' + legendState , function(data) {
+      var arrState = data.split("|").map(toNumber)
+      arrState[0]= 0;
+      updateLegend(arrState, arrWorld)
     });
 
-    var zoomThreshold = 3;
+  });
 
-    map.addControl(new mapboxgl.NavigationControl());
 
-    map.on('load', function () {
+}
 
-      map.addSource('HHSWorld', {
-        type: 'vector',
-        url: 'mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e'
-      });
+function createMapBox(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
 
-      map.addLayer({
-        'id': 'worldAward',
-        'source': 'HHSWorld',
-        'source-layer': 'WorldAndUSStates_All',
-        'maxzoom': zoomThreshold,
-        'type': 'fill',
-        'filter': ['==', 'class', 'country'],
-        'paint': {
-          'fill-color': {
-            property: awarddollars_opdiv,
-            type: 'interval',
-            stops: [
-            [BREAKS_WORLD[0], COLORS[0]],
-            [BREAKS_WORLD[1], COLORS[1]],
-            [BREAKS_WORLD[2], COLORS[2]],
-            [BREAKS_WORLD[3], COLORS[3]],
-            [BREAKS_WORLD[4], COLORS[4]],
-            [BREAKS_WORLD[5], COLORS[5]],
-            [BREAKS_WORLD[6], COLORS[6]]
-            ]
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v9',
+    center: [-98, 38.88],
+    minZoom: 2,
+    zoom: 1
+  });
 
-          },
-          'fill-opacity': 1
-        }
-      }, 'place_label_country_small_s');
+  var zoomThreshold = 3;
 
-      map.addLayer({
-        'id': 'USStateAward',
-        'source': 'HHSWorld',
-        'source-layer': 'WorldAndUSStates_All',
-        'minzoom': zoomThreshold,
-        'type': 'fill',
-        'filter': ['==', 'class', 'state'],
+  map.addControl(new mapboxgl.NavigationControl());
+
+  map.on('load', function () {
+
+    map.addSource('HHSWorld', {
+      type: 'vector',
+      url: 'mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e'
+    });
+
+    map.addLayer({
+      'id': 'worldAward',
+      'source': 'HHSWorld',
+      'source-layer': 'WorldAndUSStates_All',
+      'maxzoom': zoomThreshold,
+      'type': 'fill',
+      'filter': ['==', 'class', 'country'],
+      'paint': {
+        'fill-color': {
+          property: awarddollars_opdiv,
+          type: 'interval',
+          stops: [
+          [BREAKS_WORLD[0], COLORS[0]],
+          [BREAKS_WORLD[1], COLORS[1]],
+          [BREAKS_WORLD[2], COLORS[2]],
+          [BREAKS_WORLD[3], COLORS[3]],
+          [BREAKS_WORLD[4], COLORS[4]],
+          [BREAKS_WORLD[5], COLORS[5]],
+          [BREAKS_WORLD[6], COLORS[6]]
+          ]
+
+        },
+        'fill-opacity': 1
+      }
+    }, 'place_label_country_small_s');
+
+    map.addLayer({
+      'id': 'USStateAward',
+      'source': 'HHSWorld',
+      'source-layer': 'WorldAndUSStates_All',
+      'minzoom': zoomThreshold,
+      'type': 'fill',
+      'filter': ['==', 'class', 'state'],
                 //'style':'style1'
                 'paint': {
                   'fill-color': {
@@ -239,54 +248,54 @@ function updateLegend(arrState, arrWorld) {
               }, 'water');
 
 
-      var popup1 = new mapboxgl.Popup({
-        id: "popup-1",
-        setStyle: {
-          Position: "absolute",
-          bottom: "85px",
-          left: "50px",
-          backgroundColor: "black",
-          padding: "8px",
-          border: "1px solid #ccc"
-        },
-        closeButton: false,
-        closeOnClick: false
-      });
+    var popup1 = new mapboxgl.Popup({
+      id: "popup-1",
+      setStyle: {
+        Position: "absolute",
+        bottom: "85px",
+        left: "50px",
+        backgroundColor: "black",
+        padding: "8px",
+        border: "1px solid #ccc"
+      },
+      closeButton: false,
+      closeOnClick: false
+    });
 
 
-      map.on('mousemove', function (e) {
-        var zoom = map.getZoom();
-        var zoomLayer;
-        if (zoom <= zoomThreshold)
-          { zoomLayer = 'worldAward'; }
-        else
-          { zoomLayer = 'USStateAward'; }
+    map.on('mousemove', function (e) {
+      var zoom = map.getZoom();
+      var zoomLayer;
+      if (zoom <= zoomThreshold)
+        { zoomLayer = 'worldAward'; }
+      else
+        { zoomLayer = 'USStateAward'; }
 
-        features = map.queryRenderedFeatures(e.point, { layers: [zoomLayer] });
+      features = map.queryRenderedFeatures(e.point, { layers: [zoomLayer] });
 
-        map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+      map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
 
-        if (!features.length) {
-          popup1.remove();
-          return;
-        }
+      if (!features.length) {
+        popup1.remove();
+        return;
+      }
 
-        var feature = features[0];
-        console.log(feature)
-        console.log('ad', awarddollars_opdiv)
+      var feature = features[0];
+      console.log(feature)
+      console.log('ad', awarddollars_opdiv)
 
-        var value = feature.properties[awarddollars_opdiv];
+      var value = feature.properties[awarddollars_opdiv];
 
-        var num = '$' + value.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
-        popup1
-        .setLngLat(map.unproject(e.point))
-        .setHTML(
-          "Recipient: " + feature.properties.name
-          + "<br>"
-          + "Total Award Amount: " + num
-          )
-        .addTo(map);
-      });
+      var num = '$' + value.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+      popup1
+      .setLngLat(map.unproject(e.point))
+      .setHTML(
+        "Recipient: " + feature.properties.name
+        + "<br>"
+        + "Total Award Amount: " + num
+        )
+      .addTo(map);
+    });
 
 // **update legend
 var worldLegend = document.getElementById('worldLegend');
@@ -303,8 +312,8 @@ map.on('zoom', function() {
 });
 
 })
-  }
+}
 
-  createMapBox("awarddollars_hhs")
+createMapBox("awarddollars_hhs", allBreaks.BREAKS_ALL_HHS_WORLD, allBreaks.BREAKS_ALL_HHS_USA)
 
 
