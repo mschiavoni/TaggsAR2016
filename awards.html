@@ -22,469 +22,514 @@
   <link rel="stylesheet" href="css/multiSelect.css">
 
   <style>
-  .wrapper {
-  position: relative;
-}
-.wrapper-center {
-  position: relative;
-  align-content: center;
-}
-[data-overlay="8"]:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-	background: -webkit-gradient(linear, left center, right center, from(#FF001E),color-stop(100%, #0268b9));
-    background: -webkit-linear-gradient(left,#FF001E ,#0268b9 160%);
-    background: linear-gradient(to right,#FF001E ,#0268b9 40%);
-    opacity: 0.67;}
-[data-overlay="6"]:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-image: linear-gradient(to bottom right,rgba(1, 87, 155, 1),rgba(198, 40, 40, 1));
-    opacity: 0.89;}
-.image-bg div[class*="col-"] {
-    position: relative;
-    z-index: 3;
-}
-.v-align-transform {
-    position: relative;
-    transform: translate3d(0, -50%, 0);
-    -webkit-transform: translate3d(0, -50%, 0);
-    top: 50%;
-    z-index: 2;
-}
-.fs-vid-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-.overlay .fs-vid-background::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #222222;
-    opacity: 0.5;
-    z-index: 2;
-}
-*::before, *::after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.imagebg .container {
-    z-index: 9992;
-    display: inline-block;
-    position: absolute;
-    bottom: 220px;
-    margin-left: 400px;
-}  
-.btn-default {
-    background: #f7f9f9;
-    color: #000000 !important;
-    border: 1px solid #AAA;
-    transition: all 2s ease;
-    font-size: 24px;
-    border-radius: 4px 0 0 4px !important;
-    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
-}
-.btn {
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px 50px;
-    font-size: 24px;
-    line-height: 1;
-    text-transform: uppercase;
-    font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #fff;
-    border-radius: 50px;
-    position: relative;
-    transition: all .3s ease;
-    text-align: center;
-}
-.btn-default:hover {
-    color: #000000 !important;
-    background-color: #e9e9e9;
-    border: 1px solid #909090;
-}
- .mapboxgl-popup {
-    max-width: 400px;
-    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-}
-#imageWrapper {
-    position: relative;
-    display: inline-block;
-}
-#bottomImage {
-    width: 101%;
-    height: 100%;
-    transition: none;
-    text-align: center;
-    line-height: 0px;
-    border-width: 0px;
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 0;
-    max-width: none!important;
-    transition: none;
-    border: none;
-    background-color: #1f1f1f;
-    margin-top: -200px;
-}	  
-.mt-60 {
-    margin-top: -60px;
-}	  
-	</style>
-</head>
-<body class=" ">
-<header class="header" id="site-header">
-    <div class="container">
+    .wrapper {
+      position: relative;
+    }
+    .wrapper-center {
+      position: relative;
+      align-content: center;
+    }
+    [data-overlay="8"]:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: -webkit-gradient(linear, left center, right center, from(#FF001E),color-stop(100%, #0268b9));
+      background: -webkit-linear-gradient(left,#FF001E ,#0268b9 160%);
+      background: linear-gradient(to right,#FF001E ,#0268b9 40%);
+      opacity: 0.67;}
+      [data-overlay="6"]:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-image: linear-gradient(to bottom right,rgba(1, 87, 155, 1),rgba(198, 40, 40, 1));
+        opacity: 0.89;}
+        .image-bg div[class*="col-"] {
+          position: relative;
+          z-index: 3;
+        }
+        .v-align-transform {
+          position: relative;
+          transform: translate3d(0, -50%, 0);
+          -webkit-transform: translate3d(0, -50%, 0);
+          top: 50%;
+          z-index: 2;
+        }
+        .fs-vid-background {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 2;
+        }
+        .overlay .fs-vid-background::before {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #222222;
+          opacity: 0.5;
+          z-index: 2;
+        }
+        *::before, *::after {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        .imagebg .container {
+          z-index: 9992;
+          display: inline-block;
+          position: absolute;
+          bottom: 220px;
+          margin-left: 400px;
+        }  
+        .btn-default {
+          background: #f7f9f9;
+          color: #000000 !important;
+          border: 1px solid #AAA;
+          transition: all 2s ease;
+          font-size: 24px;
+          border-radius: 4px 0 0 4px !important;
+          box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+        }
+        .btn {
+          cursor: pointer;
+          display: inline-block;
+          text-decoration: none;
+          padding: 12px 50px;
+          font-size: 24px;
+          line-height: 1;
+          text-transform: uppercase;
+          font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;
+          color: #fff;
+          border-radius: 50px;
+          position: relative;
+          transition: all .3s ease;
+          text-align: center;
+        }
+        .btn-default:hover {
+          color: #000000 !important;
+          background-color: #e9e9e9;
+          border: 1px solid #909090;
+        }
+        .mapboxgl-popup {
+          max-width: 400px;
+          font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        }
+        #imageWrapper {
+          position: relative;
+          display: inline-block;
+        }
+        #bottomImage {
+          width: 101%;
+          height: 100%;
+          transition: none;
+          text-align: center;
+          line-height: 0px;
+          border-width: 0px;
+          margin: 0px;
+          padding: 0px;
+          margin-bottom: 0;
+          max-width: none!important;
+          transition: none;
+          border: none;
+          background-color: #1f1f1f;
+          margin-top: -200px;
+        }	  
+        .mt-60 {
+          margin-top: -60px;
+        }	  
+      </style>
+    </head>
+    <body class=" ">
+      <header class="header" id="site-header">
+        <div class="container">
 
-            <div class="header-content-wrapper">
-                <div class="logo">
-                    <a href="index.html" class="full-block-link"></a>
-                    <img src="img/logo.png" alt="HHSTAGGS">
-                    <div class="logo-text">
-                        <div class="logo-title">TAGGS</div>
-                        <div class="logo-sub-title">Annual Report 2016</div>
-                    </div>
-                </div>
-                 <nav id="primary-menu" class="primary-menu">
-                    <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
-                        <span class="mob-menu--title">Menu</span>
-                        <span id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
-                            <svg width="1000px" height="1000px">
-                                <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-                                <path id="pathE" d="M 300 500 L 700 500"></path>
-                                <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-                            </svg>
-                        </span>
-                    </a>
-                    <ul class="primary-menu-menu">
-                        <li class="menu-item-has-children">
-                            <a href="index.html">Home</a>
-                        </li>
-						<li class="">
-                            <a href="awards.html" class="blue">Awards</a>
-                        </li>
-                        <li class="has-megamenu menu-item-has-children">
-                            <a href="agencies.html">Agencies</a>
-                            <div class="megamenu" style="background-image: url('img/menu-bg.png');">
-                                <div class="megamenu-row">
-                                    <div class="col4">
-                                        <ul>
-                                            <li class="megamenu-item-info">
-                                                <h5 class="megamenu-item-info-title">HHS Agencies</h5>
-                                                <p class="megamenu-item-info-text"> </p>
-                                            </li>
-                                            <li>
-                                                <a href="agencies.html#ACF">ACF<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="agencies.html#ACL">ACL<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-											<li>
-                                                <a href="agencies.html#AHRQ">AHRQ<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="agencies.html#ASPE">ASPE<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="agencies.html#ASPR">ASPR<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="agencies.html#CDC">CDC<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="agencies.html#CMS">CMS<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-											
-                                            <li>
-                                                <a href="agencies.html#FDA">FDA<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col4">
-                                        <ul>
-                                            <li class="megamenu-item-info">
-                                                <h5 class="megamenu-item-info-title"> </h5>
-                                                <p class="megamenu-item-info-text"> </p>
-                                            </li>
-
-
-                                            <li>
-                                                <a href="agencies.html#HRSA">HRSA<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="agencies.html#IHS">IHS<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-											 <li>
-                                                <a href="agencies.html#NIH">NIH<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="agencies.html#OASH">OASH<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="agencies.html#OGA">OGA<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="agencies.html#ONC">ONC<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="agencies.html#SAMHSA">SAMHSA<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col3">
-                                        <ul>
-                                            <li>
-                                                <div class="hhs-logo">
-                                                    <img src="img/logo.png" alt="taggs">
-                                                </div>
-                                                <p class="hhstaggs-text">HHS’ Tracking Accountability in Government Grants 
-												System (TAGGS) website provides access to detailed information on government grants
-												awarded.
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="">
-                            <a href="#">Download</a>
-                        </li>
-                    </ul>
-                </nav>
+          <div class="header-content-wrapper">
+            <div class="logo">
+              <a href="index.html" class="full-block-link"></a>
+              <img src="img/logo.png" alt="HHSTAGGS">
+              <div class="logo-text">
+                <div class="logo-title">TAGGS</div>
+                <div class="logo-sub-title">Annual Report 2016</div>
+              </div>
             </div>
-    </div>
-</header>
+            <nav id="primary-menu" class="primary-menu">
+              <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+                <span class="mob-menu--title">Menu</span>
+                <span id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+                  <svg width="1000px" height="1000px">
+                    <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                    <path id="pathE" d="M 300 500 L 700 500"></path>
+                    <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                  </svg>
+                </span>
+              </a>
+              <ul class="primary-menu-menu">
+                <li class="menu-item-has-children">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="">
+                  <a href="awards.html" class="blue">Awards</a>
+                </li>
+                <li class="has-megamenu menu-item-has-children">
+                  <a href="agencies.html">Agencies</a>
+                  <div class="megamenu" style="background-image: url('img/menu-bg.png');">
+                    <div class="megamenu-row">
+                      <div class="col4">
+                        <ul>
+                          <li class="megamenu-item-info">
+                            <h5 class="megamenu-item-info-title">HHS Agencies</h5>
+                            <p class="megamenu-item-info-text"> </p>
+                          </li>
+                          <li>
+                            <a href="agencies.html#ACF">ACF<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                          <li>
+                            <a href="agencies.html#ACL">ACL<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                          <li>
+                            <a href="agencies.html#AHRQ">AHRQ<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                          <li>
+                            <a href="agencies.html#ASPE">ASPE<i class="taggsicon-right-arrow"></i></a>
+                          </li>
 
-<div class="content-wrapper">
-            <section class="imagebg videobg height-100" data-overlay="8">
-			       <div class="container pos-vertical-center">
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 text-center">
-                            <img class="logo" alt="" src="img/taggslogoallwhite3.png">
-                                <h1>Awards
-                                <br>
-                            </h1>
-                        </div>
+                          <li>
+                            <a href="agencies.html#ASPR">ASPR<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+
+                          <li>
+                            <a href="agencies.html#CDC">CDC<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+
+                          <li>
+                            <a href="agencies.html#CMS">CMS<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+
+                          <li>
+                            <a href="agencies.html#FDA">FDA<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col4">
+                        <ul>
+                          <li class="megamenu-item-info">
+                            <h5 class="megamenu-item-info-title"> </h5>
+                            <p class="megamenu-item-info-text"> </p>
+                          </li>
+
+
+                          <li>
+                            <a href="agencies.html#HRSA">HRSA<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+
+                          <li>
+                            <a href="agencies.html#IHS">IHS<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                          <li>
+                            <a href="agencies.html#NIH">NIH<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                          <li>
+                            <a href="agencies.html#OASH">OASH<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                          <li>
+                            <a href="agencies.html#OGA">OGA<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                          <li>
+                            <a href="agencies.html#ONC">ONC<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                          <li>
+                            <a href="agencies.html#SAMHSA">SAMHSA<i class="taggsicon-right-arrow"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col3">
+                        <ul>
+                          <li>
+                            <div class="hhs-logo">
+                              <img src="img/logo.png" alt="taggs">
+                            </div>
+                            <p class="hhstaggs-text">HHS’ Tracking Accountability in Government Grants 
+                              System (TAGGS) website provides access to detailed information on government grants
+                              awarded.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                </div>
-                <video autoplay loop muted>
-                    <source src="video/video.webm" type="video/webm">
-                    <source src="video/video.mp4" type="video/mp4">
-                    <source src="video/video.ogv" type="video/ogg">
+                  </div>
+                </li>
+                <li class="">
+                  <a href="#">Download</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="content-wrapper">
+        <section class="imagebg videobg height-100" data-overlay="8">
+          <div class="container pos-vertical-center">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3 text-center">
+                <img class="logo" alt="" src="img/taggslogoallwhite3.png">
+                <h1>Awards
+                  <br>
+                </h1>
+              </div>
+            </div>
+          </div>
+          <video autoplay loop muted>
+            <source src="video/video.webm" type="video/webm">
+              <source src="video/video.mp4" type="video/mp4">
+                <source src="video/video.ogv" type="video/ogg">
                 </video>
-          
 
-            </section>	
-			
-      <div class="container">
-        <div class="row medium-padding120">
-          <div class="col-lg-12">
-		            <div style= "width:150px; margin:40px auto;">
-                            <select id="masterSelect" style="display: block">
-                             <option class="masterOpt" checked="checked" value="hhs">HHS</option>
-                             <option class="masterOpt" value="ACF">ACF</option>
-                             <option class="masterOpt" value="ACL">ACL</option>
-                             <option class="masterOpt" value="AHRQ">AHRQ</option>
-                             <option class="masterOpt" value="ASPE">ASPE</option>
-                             <option class="masterOpt" value="ASPR">ASPR</option>
-                             <option class="masterOpt" value="CDC">CDC</option>
-                             <option class="masterOpt" value="CMS">CMS</option>
-                             <option class="masterOpt" value="FDA">FDA</option>
-                             <option class="masterOpt" value="HRSA">HRSA</option>
-                             <option class="masterOpt" value="IHS">IHS</option>
-                             <option class="masterOpt" value="NIH">NIH</option>
-                             <option class="masterOpt" value="OASH">OASH</option>
-                             <option class="masterOpt" value="OGA">OGA</option>
-                             <option class="masterOpt" value="ONC">ONC</option>
-                             <option class="masterOpt" value="SAMHSA">SAMHSA</option>
-                           </select>
 
-                         </div>
-            <div class="row mb30">
-              <div class="col-lg-12">
-                <div class="heading">
-                  <h4 class="heading-title" style="font-size: 48px; color: #000; margin-bottom: 20px;">Awards by Location</h4>
-                  <div class="heading-line">
-                    <span class="short-line"></span>
-                    <span class="long-line"></span>
+              </section>	
+
+              <div class="container">
+                <div class="row medium-padding120">
+                  <div class="col-lg-12">
+                    <div style= "width:150px; margin:40px auto;">
+                      <select id="masterSelect" style="display: block">
+                       <option class="masterOpt" checked="checked" value="hhs">HHS</option>
+                       <option class="masterOpt" value="ACF">ACF</option>
+                       <option class="masterOpt" value="ACL">ACL</option>
+                       <option class="masterOpt" value="AHRQ">AHRQ</option>
+                       <option class="masterOpt" value="ASPE">ASPE</option>
+                       <option class="masterOpt" value="ASPR">ASPR</option>
+                       <option class="masterOpt" value="CDC">CDC</option>
+                       <option class="masterOpt" value="CMS">CMS</option>
+                       <option class="masterOpt" value="FDA">FDA</option>
+                       <option class="masterOpt" value="HRSA">HRSA</option>
+                       <option class="masterOpt" value="IHS">IHS</option>
+                       <option class="masterOpt" value="NIH">NIH</option>
+                       <option class="masterOpt" value="OASH">OASH</option>
+                       <option class="masterOpt" value="OGA">OGA</option>
+                       <option class="masterOpt" value="ONC">ONC</option>
+                       <option class="masterOpt" value="SAMHSA">SAMHSA</option>
+                     </select>
+
+                   </div>
+                   <div class="row mb30">
+                    <div class="col-lg-12">
+                      <div class="heading">
+                        <h4 class="heading-title" style="font-size: 48px; color: #000; margin-bottom: 20px;">Awards by Location</h4>
+                        <div class="heading-line">
+                          <span class="short-line"></span>
+                          <span class="long-line"></span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-               </div>
-             </div>
-           </div>
-           <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <ul class="list list--secondary">
-                <li>
-                  <i class="taggsicon-check"></i>
-                  <p>The maps in this section show data for awards that HHS made in FY 2016.  Darker colors indicate larger dollar amounts, according to the legend below. 
-				  Hover over a country to view the award dollars and number of awards.  For discretionary award data, click on the link at left. 
-				   To view award data by agency, click on an agency name in the dropdown box.   Award data by continent is presented as a table beneath the world map.
-                 </p>
-               </li>
-             </ul>
-           </div>
-           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <ul class="list list--secondary">
-              <li>
-                <i class="taggsicon-check"></i>
-                <p>Awards By State:  From the map of the United States, use the mouse to zoom down to an individual state. 
-                   Award data will display in a tooltip.  To view discretionary awards, click the link at left.  
-                   Data for U.S. Territories is available as a table.  Note:  Data for other countries will not be available
-                   at the state level and below.  Awards by County: From any U.S. state, use the mouse to zoom down to any county in that state.  
-                   Award data will display in a tooltip.  To view discretionary awards, click the link at left. 
-               </p>
-             </li>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <ul class="list list--secondary">
+                        <li>
+                          <i class="taggsicon-check"></i>
+                          <p>The maps in this section show data for awards that HHS made in FY 2016.  Darker colors indicate larger dollar amounts, according to the legend below. 
+                            Hover over a country to view the award dollars and number of awards.  For discretionary award data, click on the link at left. 
+                            To view award data by agency, click on an agency name in the dropdown box.   Award data by continent is presented as a table beneath the world map.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <ul class="list list--secondary">
+                        <li>
+                          <i class="taggsicon-check"></i>
+                          <p>Awards By State:  From the map of the United States, use the mouse to zoom down to an individual state. 
+                           Award data will display in a tooltip.  To view discretionary awards, click the link at left.  
+                           Data for U.S. Territories is available as a table.  Note:  Data for other countries will not be available
+                           at the state level and below.  Awards by County: From any U.S. state, use the mouse to zoom down to any county in that state.  
+                           Award data will display in a tooltip.  To view discretionary awards, click the link at left. 
+                         </p>
+                       </li>
 
-           </ul>
-         </div>
-       </div>
-	   <div class="row">
-           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		        <form>
+                     </ul>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <form>
 
-              <input type="radio" name="awards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="awardRadioBtn" id="totalAwards">
-                         <label for="totalAwards">
-                           Total Awards
-                         </label>
+                      <input type="radio" name="awards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="awardRadioBtn" id="totalAwards">
+                      <label for="totalAwards">
+                       Total Awards
+                     </label>
 
-                          <input type="radio" name="awards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="discAwards">
-                          <label for="discretionaryAwards">   
-                          Discretionary Awards  
-                          </label>
-                       
-                        </form>
-			 <div style= "width:150px; margin:40px auto;">
-            <select id="mapDrop">
+                     <input type="radio" name="awards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="discAwards">
+                     <label for="discretionaryAwards">   
+                      Discretionary Awards  
+                    </label>
 
-                 <option class="radioOpt" value="awarddollars_HHS">HHS</option>
-                 <option class="radioOpt" value="awarddollars_ACF">ACF</option>
-                 <option class="radioOpt" value="awarddollars_ACL">ACL</option>
-                 <option class="radioOpt" value="awarddollars_AHRQ">AHRQ</option>
-                 <option class="radioOpt" value="awarddollars_ASPE">ASPE</option>
-                 <option class="radioOpt" value="awarddollars_ASPR">ASPR</option>
-                 <option class="radioOpt" value="awarddollars_CDC">CDC</option>
-                 <option class="radioOpt" value="awarddollars_CMS">CMS</option>
-                 <option class="radioOpt" value="awarddollars_FDA">FDA</option>
-                 <option class="radioOpt" value="awarddollars_HRSA">HRSA</option>
-                 <option class="radioOpt" value="awarddollars_IHS">IHS</option>
-                 <option class="radioOpt" value="awarddollars_NIH">NIH</option>
-                 <option class="radioOpt" value="awarddollars_OASH">OASH</option>
-                 <option class="radioOpt" value="awarddollars_OGA">OGA</option>
-                 <option class="radioOpt" value="awarddollars_ONC">ONC</option>
-                 <option class="radioOpt" value="awarddollars_SAMHSA">SAMHSA</option>
-
-           </select>
-
-
-         </div>
-		 </div>
-		 </div>
-     </div>
-   </div>
- </div>
-
-
- <div id='map'>
-  <div id='worldLegend' class='legend'>
-    <h4>(W)Dollars</h4>
-    <h4>Awarded</h4>
-    <div><span class="worldLegendText" style='background-color: DEEPSKYBLUE'></span></div>
-    <div><span class="worldLegendText" style='background-color: DodgerBlue'></span></div>
-    <div><span class="worldLegendText" style='background-color: MediumSlateBlue'></span></div>
-    <div><span class="worldLegendText" style='background-color: RoyalBlue'></span></div>
-    <div><span class="worldLegendText" style='background-color: Blue'></span></div>
-    <div><span class="worldLegendText" style='background-color: MediumBlue'></span></div>
-    <div><span class="worldLegendText" style='background-color: DarkBlue'></span></div>
-    <div><span class="worldLegendText" style='background-color: MidnightBlue'></span></div>
-
-
-  </div>
-
-  <div id='stateLegend' class='legend'>
-    <h4>(S)Dollars</h4>
-    <h4>Awarded</h4>
-    <div><span class="stateLegendText" style='background-color: #f7fbff; border: 1px solid #cccccc'></span></div>
-    <div><span class="stateLegendText" style='background-color: #deebf7'></span></div>
-    <div><span class="stateLegendText" style='background-color: #c6dbef'></span></div>
-    <div><span class="stateLegendText" style='background-color: #6baed6'></span></div>
-    <div><span class="stateLegendText" style='background-color: #4292c6'></span></div>
-    <div><span class="stateLegendText" style='background-color: #2171b5'></span></div>
-    <div><span class="stateLegendText" style='background-color: #084594'></span></div>
-
-  </div>
-</div>
-
- <div class="container">
-        <div class="row medium-padding120">
-          <div class="col-lg-12">
-            <div class="row mb30">
-              <div class="col-lg-12">
-                <div class="heading">
-                  <h4 class="heading-title" style="font-size: 48px; color: #000; margin-bottom: 20px;">Top Discretionary Award Recipients</h4>
-                  <div class="heading-line">
-                    <span class="short-line"></span>
-                    <span class="long-line"></span>
-                  </div>
-               </div>
-             </div>
-           </div>
-           <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <p>The U.S. map below shows the top 50 discretionary award recipients by agency and location.  
-				  Hover over a colored dot to see award detail, including the recipient rank within the agency.  
-				  The legend at lower right shows agency colors.
-                 </p>
-            <p>Awards By State:  From the map of the United States, use the mouse to zoom down to an individual state. 
-             Award data will display in a tooltip.  To view discretionary awards, click the link at left.  
-             Data for U.S. Territories is available as a table.  Note:  Data for other countries will not be available
-             at the state level and below.
-           </p>
-          <p>Awards by County: From any U.S. state, use the mouse to zoom down to any county in that state.  
-           Award data will display in a tooltip.  To view discretionary awards, click the link at left. 
-         </p>		
-         <p>
-         <form>
-
-              <input type="radio" name="awards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="awardRadioBtn" id="topInt">
-                         <label for="totalAwards">
-                           Total Awards
-                         </label>
-
-                          <input type="radio" name="awards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="topNat">
-                          <label for="discretionaryAwards">   
-                          Discretionary Awards  
-                          </label>
-                       
                   </form>
-              </p>   
+                  <div style= "width:150px; margin:40px auto;">
+                    <select id="mapDrop">
+
+                     <option class="radioOpt" value="awarddollars_HHS">HHS</option>
+                     <option class="radioOpt" value="awarddollars_ACF">ACF</option>
+                     <option class="radioOpt" value="awarddollars_ACL">ACL</option>
+                     <option class="radioOpt" value="awarddollars_AHRQ">AHRQ</option>
+                     <option class="radioOpt" value="awarddollars_ASPE">ASPE</option>
+                     <option class="radioOpt" value="awarddollars_ASPR">ASPR</option>
+                     <option class="radioOpt" value="awarddollars_CDC">CDC</option>
+                     <option class="radioOpt" value="awarddollars_CMS">CMS</option>
+                     <option class="radioOpt" value="awarddollars_FDA">FDA</option>
+                     <option class="radioOpt" value="awarddollars_HRSA">HRSA</option>
+                     <option class="radioOpt" value="awarddollars_IHS">IHS</option>
+                     <option class="radioOpt" value="awarddollars_NIH">NIH</option>
+                     <option class="radioOpt" value="awarddollars_OASH">OASH</option>
+                     <option class="radioOpt" value="awarddollars_OGA">OGA</option>
+                     <option class="radioOpt" value="awarddollars_ONC">ONC</option>
+                     <option class="radioOpt" value="awarddollars_SAMHSA">SAMHSA</option>
+
+                   </select>
+
+
+                 </div>
+               </div>
+             </div>
            </div>
+         </div>
+       </div>
+
+
+       <div id='map'>
+        <div id='worldLegend' class='legend'>
+          <h4>(W)Dollars</h4>
+          <h4>Awarded</h4>
+          <div>
+            <span style='background-color: #f7fbff; border: 1px solid #cccccc'></span>
+            <span class="worldLegendText"></span>
+          </div>
+          <div>
+
+            <span style='background-color: DEEPSKYBLUE'></span>
+            <span class="worldLegendText"></span>
+          </div>
+          <div>
+            <span style='background-color: DodgerBlue'></span>
+            <span class="worldLegendText"></span>
+          </div>
+          <div>
+            <span style='background-color: MediumSlateBlue'></span>
+            <span class="worldLegendText"></span>
+          </div>
+          <div>
+            <span style='background-color: RoyalBlue'></span>
+            <span class="worldLegendText"></span>
+          </div>
+          <div>
+            <span style='background-color: Blue'></span>
+            <span class="worldLegendText"></span>
+          </div>
+          <div>
+            <span style='background-color: DarkBlue'></span>
+            <span class="worldLegendText"></span>
+          </div>
+          <div>
+
+
+          </div>
+
+          <div id='stateLegend' class='legend'>
+            <h4>(S)Dollars</h4>
+            <h4>Awarded</h4>
+            <div>
+              <span class="stateLegendColor" style='background-color: #f7fbff; border: 1px solid #cccccc'></span>
+              <span class="stateLegendText" ></span>
+            </div>
+            <div>
+              <span class="stateLegendColor" style='background-color: #deebf7'></span>
+              <span class="stateLegendText" ></span>
+            </div>
+            <div>
+             <span class="stateLegendColor" style='background-color: #c6dbef'></span>
+             <span class="stateLegendText" ></span>
+           </div>
+           <div>
+             <span class="stateLegendColor" style='background-color: #6baed6'></span>
+             <span class="stateLegendText" ></span>
+           </div>
+           <div>
+             <span class="stateLegendColor" style='background-color: #4292c6'></span>
+             <span class="stateLegendText" ></span>
+           </div>
+           <div>
+             <span class="stateLegendColor" style='background-color: #2171b5'></span>
+             <span class="stateLegendText" ></span>
+           </div>
+           <div>
+             <span class="stateLegendColor" style='background-color: #084594'></span>
+             <span class="stateLegendText" ></span>
+           </div>
+
+         </div>
        </div>
      </div>
-</div>
+     
+
+     <div class="container">
+      <div class="row medium-padding120">
+        <div class="col-lg-12">
+          <div class="row mb30">
+            <div class="col-lg-12">
+              <div class="heading">
+                <h4 class="heading-title" style="font-size: 48px; color: #000; margin-bottom: 20px;">Top Discretionary Award Recipients</h4>
+                <div class="heading-line">
+                  <span class="short-line"></span>
+                  <span class="long-line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <p>The U.S. map below shows the top 50 discretionary award recipients by agency and location.  
+                Hover over a colored dot to see award detail, including the recipient rank within the agency.  
+                The legend at lower right shows agency colors.
+              </p>
+              <p>Awards By State:  From the map of the United States, use the mouse to zoom down to an individual state. 
+               Award data will display in a tooltip.  To view discretionary awards, click the link at left.  
+               Data for U.S. Territories is available as a table.  Note:  Data for other countries will not be available
+               at the state level and below.
+             </p>
+             <p>Awards by County: From any U.S. state, use the mouse to zoom down to any county in that state.  
+               Award data will display in a tooltip.  To view discretionary awards, click the link at left. 
+             </p>		
+             <p>
+               <form>
+
+                <input type="radio" name="awards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="awardRadioBtn" id="topInt">
+                <label for="totalAwards">
+                 Total Awards
+               </label>
+
+               <input type="radio" name="awards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="topNat">
+               <label for="discretionaryAwards">   
+                Discretionary Awards  
+              </label>
+
+            </form>
+          </p>   
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -616,7 +661,7 @@
             .addTo(map2);
           });
 
-       </script>
+        </script>
 
         <div class="container-fluid">
           <div class="row">
@@ -631,19 +676,19 @@
                   </div>
                   <p class="heading-text" style="color: #fff;">
                    In FY 2016, the Department of Health and Human Services administered more grant dollars than all other federal agencies combined.
-				   HHS awards formula/block, entitlement, discretionary grant awards and cooperative agreements. HHS awarded approximately $462 billion
-				   in grants for FY 2016. This included $55 billion in discretionary awards and $407 billion in formula/block and entitlement awards.
- 
+                   HHS awards formula/block, entitlement, discretionary grant awards and cooperative agreements. HHS awarded approximately $462 billion
+                   in grants for FY 2016. This included $55 billion in discretionary awards and $407 billion in formula/block and entitlement awards.
+
                  </p>
                  <p class="heading-text" style="color: #fff;">
-					CMS, which administers the Medicare and Medicaid Programs, awarded 78%, or $360 billion of the total HHS grants fund; however, 
-					these awards are less than 2% of the total number of grants awarded by HHS.
+                   CMS, which administers the Medicare and Medicaid Programs, awarded 78%, or $360 billion of the total HHS grants fund; however, 
+                   these awards are less than 2% of the total number of grants awarded by HHS.
 
                  </p>
                  <p class="heading-text" style="color: #fff;">
                    ACF had the second highest percentage of total HHS grant funds awarded at over 12%, or $51 billion.
-				   This represented about 9% of the total number of grants awarded. NIH, which awarded about 4%, or nearly $24 billion, 
-				   of the total HHS grant funds, accounted for 66% of the total number of HHS grants.
+                   This represented about 9% of the total number of grants awarded. NIH, which awarded about 4%, or nearly $24 billion, 
+                   of the total HHS grant funds, accounted for 66% of the total number of HHS grants.
 
                  </p>
                </div>
@@ -653,86 +698,86 @@
            </div>
          </div>
        </div>
-	   
-<div id="imageWrapper">
-    <img src="img/slide17.png" width="100" height="100" id="bottomImage" alt="" />
-</div>	   	   
-	   
-<div class="container-fluid">
-    <div class="row">
-        <div class="opdiv-tables medium-padding120 bg-green-color contacts-shadow">
+
+       <div id="imageWrapper">
+        <img src="img/slide17.png" width="100" height="100" id="bottomImage" alt="" />
+      </div>	   	   
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="opdiv-tables medium-padding120 bg-green-color contacts-shadow">
             <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                  <div class="heading align-center">
+                    <h4 class="h1 heading-title">Discretionary Grants</h4>
+                    <div class="heading-line">
+                      <span class="short-line"></span>
+                      <span class="long-line"></span>
+                    </div>
+                    <p class="heading-text white">
+                     Discretionary grants are those that permit the Federal Government, 
+                     according to specific authorizing legislation, to exercise judgment,
+                     or “discretion” in selecting the applicant/recipient organization, 
+                     through a competitive grant process.    </p>       
+                     <p class="heading-text white">							
+                       Discretionary grants commonly support activities such as demonstration,
+                       research, training, service, and construction projects or programs. 
+                       Discretionary grants are sometimes referred to by the CFDA term “Project
+                       Grants.”</p>  
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+
+
+         <div class="container-fluid">
+          <div class="row">
+            <div class="opdiv-tables medium-padding120 bg-border-color">
+              <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                        <div class="heading align-center">
-                            <h4 class="h1 heading-title">Discretionary Grants</h4>
-                            <div class="heading-line">
-                                <span class="short-line"></span>
-                                <span class="long-line"></span>
-                            </div>
-                            <p class="heading-text white">
-							Discretionary grants are those that permit the Federal Government, 
-							according to specific authorizing legislation, to exercise judgment,
-							or “discretion” in selecting the applicant/recipient organization, 
-							through a competitive grant process.    </p>       
-                            <p class="heading-text white">							
-							Discretionary grants commonly support activities such as demonstration,
-							research, training, service, and construction projects or programs. 
-							Discretionary grants are sometimes referred to by the CFDA term “Project
-							Grants.”</p>  
+                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                    <div class="heading align-center">
+                      <div class="heading">
+                        <h4 class="heading-title" style="font-size: 48px; color: #01579b; margin-bottom: 20px;">Top 5 Discretionary Grant Programs</h4>
+                        <div class="heading-line">
+                          <span class="short-line"></span>
+                          <span class="long-line"></span>
                         </div>
-                    </div>
-                </div>
-				</div>
-				</div>
-				</div>
-				</div>
-
-
-	   
-	<div class="container-fluid">
-    <div class="row">
-        <div class="opdiv-tables medium-padding120 bg-border-color">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                        <div class="heading align-center">
-        <div class="heading">
-          <h4 class="heading-title" style="font-size: 48px; color: #01579b; margin-bottom: 20px;">Top 5 Discretionary Grant Programs</h4>
-          <div class="heading-line">
-            <span class="short-line"></span>
-            <span class="long-line"></span>
-          </div>
-                    </div>
+                      </div>
 
 
 
-                    <p class="heading-text">
-                     Grant awards are classified by a 5-digit CFDA program number and program name. These CFDA awards are 
-                     organized into major activity types: Research, Services, Training, and Other Activities.
-                   </p> 
-                   <p class="heading-text">							
-                     The interactive bar charts below show the Top 5 CFDA awards for each major activity type. The number of 
-                     awards in thousands is shown in the blue bars. The award dollars in billions are represented as gold bars,
-                     with the largest shown at the left of the chart. The CFDA number and program name are shown at the bottom of each set of bars.
-                     In the legend, click on Number of Awards to see only the blue bars display in the chart. Click on Total Award Amount 
-                     to see only the gold bars. 
-                   </p>  
-  
+                      <p class="heading-text">
+                       Grant awards are classified by a 5-digit CFDA program number and program name. These CFDA awards are 
+                       organized into major activity types: Research, Services, Training, and Other Activities.
+                     </p> 
+                     <p class="heading-text">							
+                       The interactive bar charts below show the Top 5 CFDA awards for each major activity type. The number of 
+                       awards in thousands is shown in the blue bars. The award dollars in billions are represented as gold bars,
+                       with the largest shown at the left of the chart. The CFDA number and program name are shown at the bottom of each set of bars.
+                       In the legend, click on Number of Awards to see only the blue bars display in the chart. Click on Total Award Amount 
+                       to see only the gold bars. 
+                     </p>  
+
+                   </div>
                  </div>
                </div>
              </div>
            </div>
          </div>
        </div>
-     </div>
 
 
        <div class="container-fluid pb30 bg-border-color mt-60">
         <div aria-label="Top 5 CFDA horizontal bar chart showing Award Amount and Number of Awards" class="doubleBarChartCont"></div>
 
 
-      <script  type="text/javascript">
+        <script  type="text/javascript">
 
 
 // *****  d3 HORIZONTAL BAR CHART *****
@@ -934,50 +979,50 @@ var tooltip = d3.select("div.doubleBarChartCont")
 </div>
 
 
-   <div class="container-fluid">
-    <div class="row">
-      <div class="opdiv-tables medium-padding120 bg-border-color contacts-shadow">
-        <div class="container">
+<div class="container-fluid">
+  <div class="row">
+    <div class="opdiv-tables medium-padding120 bg-border-color contacts-shadow">
+      <div class="container">
 
-          <div id="MLPChartContainer">Discrectionary Awards By Type</div>
+        <div id="MLPChartContainer">Discrectionary Awards By Type</div>
 
-        </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="container-fluid">
-    <div class="row">
-        <div class="opdiv-tables medium-padding120 bg-bordertwo-color contacts-shadow">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                        <div class="heading align-center">
-                            <h4 class="h1 heading-title">Award History</h4>
-                            <div class="heading-line">
-                                <span class="short-line"></span>
-                                <span class="long-line"></span>
-                            </div>
-                            <p class="heading-text">
-							The Total Award Amounts and Award Number chart shows the number of awards in thousands and the amount
-							of award dollars in billions that HHS granted during the last 5 fiscal years. The number of awards is
-							shown in the blue bars. The award dollars are represented as gold bars. Data for the current fiscal year,
-							at the far right of the chart, are depicted in brighter colors.
+<div class="container-fluid">
+  <div class="row">
+    <div class="opdiv-tables medium-padding120 bg-bordertwo-color contacts-shadow">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+            <div class="heading align-center">
+              <h4 class="h1 heading-title">Award History</h4>
+              <div class="heading-line">
+                <span class="short-line"></span>
+                <span class="long-line"></span>
+              </div>
+              <p class="heading-text">
+               The Total Award Amounts and Award Number chart shows the number of awards in thousands and the amount
+               of award dollars in billions that HHS granted during the last 5 fiscal years. The number of awards is
+               shown in the blue bars. The award dollars are represented as gold bars. Data for the current fiscal year,
+               at the far right of the chart, are depicted in brighter colors.
 
-							Hover over any bar to see a tool tip that shows award or dollar data.
+               Hover over any bar to see a tool tip that shows award or dollar data.
 
-							In the legend, click on Number of Awards to see only the gold bars display in the chart.
-							Click on Total Award Amount to see only the blue bars.
-                            </p>
-                        </div>
-                    </div>
+               In the legend, click on Number of Awards to see only the gold bars display in the chart.
+               Click on Total Award Amount to see only the blue bars.
+             </p>
+           </div>
          </div>
        </div>
      </div>
    </div>
  </div>
+</div>
 
- <div class="container-fluid">
+<div class="container-fluid">
   <div class="row">
     <div class="opdiv-tables medium-padding120 bg-border-color contacts-shadow">
       <div class="container-fluid">
@@ -1040,34 +1085,34 @@ var tooltip = d3.select("div.doubleBarChartCont")
  </div>
 </div>
 
-      <div class="container">
-        <div class="row medium-padding120">
-          <div class="col-lg-12">
-            <div class="row mb30">
-              <div class="col-lg-12">
-                <div class="heading">
-                  <h4 class="heading-title" style="font-size: 48px; color: #000; margin-bottom: 20px;">HHS International Awards</h4>
-                  <div class="heading-line">
-                    <span class="short-line"></span>
-                    <span class="long-line"></span>
-                  </div>
-               </div>
-             </div>
-           </div>
-           <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="container">
+  <div class="row medium-padding120">
+    <div class="col-lg-12">
+      <div class="row mb30">
+        <div class="col-lg-12">
+          <div class="heading">
+            <h4 class="heading-title" style="font-size: 48px; color: #000; margin-bottom: 20px;">HHS International Awards</h4>
+            <div class="heading-line">
+              <span class="short-line"></span>
+              <span class="long-line"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div id="HHSawardsNumber">HHS Total International Number of Awards</div>
 
-           </div>
-           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div id="HHSgrantDollars">HHS Total International Award Amounts</div>
 
-         </div>
-       </div>
-     </div>
-   </div>
- </div>       
-	       
+        </div>
+      </div>
+    </div>
+  </div>
+</div>       
+
 
 </div>
 <footer class="footer" id="site-footer">
