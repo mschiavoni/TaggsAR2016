@@ -5,8 +5,8 @@ var COLORS = ['transparent', 'DEEPSKYBLUE', 'DodgerBlue', 'MediumSlateBlue', 'Ro
 
 // var BREAKS_WORLD_hhs = [0, 1, 400000, 1300000, 4400000, 160000000, 4893101782];
 // var BREAKS_USA_hhs = [0, 1, 10000000, 35000000, 130000000, 1200000000, 58758910941];  
-// var BREAKS_WORLD = [0, 1, 400000, 1300000, 4400000, 160000000, 4893101782];
-// var BREAKS_USA = [0, 1, 10000000, 35000000, 130000000, 1200000000, 58758910941];
+var BREAKS_WORLD = [0, 1, 400000, 1300000, 4400000, 160000000, 4893101782];
+var BREAKS_USA = [0, 1, 10000000, 35000000, 130000000, 1200000000, 58758910941];
 
 
 var BREAKS_ALL_ACF_USA = [0, 154731510, 328023652, 512039832, 794767868, 1237205349, 8535511793];
@@ -77,33 +77,29 @@ var BREAKS_DISC_SAMHSA_WORLD = [0, , , , , 249796, 999853629];
 
 // ***** Legend scales
 
-$.get('Legend_area_type_opdiv.txt', function(data) {
-var arr = data.split("|");;
-arr[0]= 0
 
 $('#mapDrop').multiselect();
-});
 
- $(".stateLegendText").each(function(i){
-      // if total is "checked" then total var 
-      $(this).text(BREAKS_USA[i].toReducedFormat())
-      // if disc is "checked" then disc var
-      $(this).text(BREAKS_USA[i].toReducedFormat())
+function updateLegend(arrState, arrWorld) {
+
+  $(".stateLegendText").each(function(i){
+      $(this).text(arrState[i].toReducedFormat())
+
     })
 
-    $(".worldLegendText").each(function(i){
-      // if total is "checked" then total var 
-      $(this).text(BREAKS_WORLD[i].toReducedFormat())
-      // if disc is "checked" then disc var
-      $(this).text(BREAKS_WORLD[i].toReducedFormat())
+  $(".worldLegendText").each(function(i){
+      $(this).text(arrWorld[i].toReducedFormat())
+
     })
+}
+
 
   // set function to render graphs on change
   $('#mapDrop').on("change", function(){
     var selectedID = this.value.toLowerCase();
     var selectedAwardType = $('input[name="awards"]:checked').attr("id")
     if (selectedAwardType === "totalAwards"){
-    createMapBox(selectedID)
+      createMapBox(selectedID)
     } else {
       createMapBox2(selectedID)
     }
@@ -113,10 +109,10 @@ $('#mapDrop').multiselect();
 
 
   $('input[name="awards"]').click(function(){
-    var mapFile = this.value
+    var selectedID = this.id
     var currentSelectedOpdiv = $('.radioOpt:checked').val().toLowerCase()
-    console.log('mapFile', mapFile)
-    if (mapFile === 'mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e'){
+
+    if (selectedID === "totalAwards"){
       createMapBox(currentSelectedOpdiv)
     } else {
       createMapBox2(currentSelectedOpdiv)
@@ -125,60 +121,98 @@ $('#mapDrop').multiselect();
 
   })
 
-function createMapBox(awarddollars_opdiv){
+  function getLegend(opdiv, type) {
 
-  var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/light-v9',
-    center: [-98, 38.88],
-    minZoom: 2,
-    zoom: 1
-  });
+    var legendWorld = 'Legend_World_'
+    var legendState = 'Legend_State_'
 
-  var zoomThreshold = 3;
+    if (type === "totalAwards") {
+      legendWorld += "All_"
+      legendState += "All_"
+    } else {
+      legendWorld += "Discretionary_"
+      legendState += "Discretionary_"
+    }
 
-  map.addControl(new mapboxgl.NavigationControl());
+    legendWorld += opdiv.toUpperCase() + ".txt"
 
-  map.on('load', function () {
+    legendState += opdiv.toUpperCase() + ".txt"
 
-    map.addSource('HHSWorld', {
-      type: 'vector',
-      url: 'mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e'
+
+    $.get('./Legend_World_Discretionary_aLL/' + legendWorld , function(data) {
+      function toNumber(num){
+        return Number(num)
+      }
+      var arrWorld = data.split("|").map(toNumber)
+      arrWorld[0]= 0;
+
+      $.get('./Legend_World_Discretionary_aLL/' + legendState , function(data) {
+        var arrState = data.split("|").map(toNumber)
+        arrState[0]= 0;
+        updateLegend(arrState, arrWorld)
+      });
+
     });
 
-    map.addLayer({
-      'id': 'worldAward',
-      'source': 'HHSWorld',
-      'source-layer': 'WorldAndUSStates_All',
-      'maxzoom': zoomThreshold,
-      'type': 'fill',
-      'filter': ['==', 'class', 'country'],
-      'paint': {
-        'fill-color': {
-          property: awarddollars_opdiv,
-          type: 'interval',
-          stops: [
-          [BREAKS_WORLD[0], COLORS[0]],
-          [BREAKS_WORLD[1], COLORS[1]],
-          [BREAKS_WORLD[2], COLORS[2]],
-          [BREAKS_WORLD[3], COLORS[3]],
-          [BREAKS_WORLD[4], COLORS[4]],
-          [BREAKS_WORLD[5], COLORS[5]],
-          [BREAKS_WORLD[6], COLORS[6]]
-          ]
 
-        },
-        'fill-opacity': 1
-      }
-    }, 'place_label_country_small_s');
+  }
 
-    map.addLayer({
-      'id': 'USStateAward',
-      'source': 'HHSWorld',
-      'source-layer': 'WorldAndUSStates_All',
-      'minzoom': zoomThreshold,
-      'type': 'fill',
-      'filter': ['==', 'class', 'state'],
+  getLegend("HHS")
+
+  function createMapBox(awarddollars_opdiv){
+
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/light-v9',
+      center: [-98, 38.88],
+      minZoom: 2,
+      zoom: 1
+    });
+
+    var zoomThreshold = 3;
+
+    map.addControl(new mapboxgl.NavigationControl());
+
+    map.on('load', function () {
+
+      map.addSource('HHSWorld', {
+        type: 'vector',
+        url: 'mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e'
+      });
+
+      map.addLayer({
+        'id': 'worldAward',
+        'source': 'HHSWorld',
+        'source-layer': 'WorldAndUSStates_All',
+        'maxzoom': zoomThreshold,
+        'type': 'fill',
+        'filter': ['==', 'class', 'country'],
+        'paint': {
+          'fill-color': {
+            property: awarddollars_opdiv,
+            type: 'interval',
+            stops: [
+            [BREAKS_WORLD[0], COLORS[0]],
+            [BREAKS_WORLD[1], COLORS[1]],
+            [BREAKS_WORLD[2], COLORS[2]],
+            [BREAKS_WORLD[3], COLORS[3]],
+            [BREAKS_WORLD[4], COLORS[4]],
+            [BREAKS_WORLD[5], COLORS[5]],
+            [BREAKS_WORLD[6], COLORS[6]]
+            ]
+
+          },
+          'fill-opacity': 1
+        }
+      }, 'place_label_country_small_s');
+
+      map.addLayer({
+        'id': 'USStateAward',
+        'source': 'HHSWorld',
+        'source-layer': 'WorldAndUSStates_All',
+        'minzoom': zoomThreshold,
+        'type': 'fill',
+        'filter': ['==', 'class', 'state'],
                 //'style':'style1'
                 'paint': {
                   'fill-color': {
@@ -198,72 +232,72 @@ function createMapBox(awarddollars_opdiv){
               }, 'water');
 
 
-    var popup1 = new mapboxgl.Popup({
-      id: "popup-1",
-      setStyle: {
-        Position: "absolute",
-        bottom: "85px",
-        left: "50px",
-        backgroundColor: "black",
-        padding: "8px",
-        border: "1px solid #ccc"
-      },
-      closeButton: false,
-      closeOnClick: false
-    });
+      var popup1 = new mapboxgl.Popup({
+        id: "popup-1",
+        setStyle: {
+          Position: "absolute",
+          bottom: "85px",
+          left: "50px",
+          backgroundColor: "black",
+          padding: "8px",
+          border: "1px solid #ccc"
+        },
+        closeButton: false,
+        closeOnClick: false
+      });
 
 
-    map.on('mousemove', function (e) {
-      var zoom = map.getZoom();
-      var zoomLayer;
-      if (zoom <= zoomThreshold)
-        { zoomLayer = 'worldAward'; }
-      else
-        { zoomLayer = 'USStateAward'; }
+      map.on('mousemove', function (e) {
+        var zoom = map.getZoom();
+        var zoomLayer;
+        if (zoom <= zoomThreshold)
+          { zoomLayer = 'worldAward'; }
+        else
+          { zoomLayer = 'USStateAward'; }
 
-      features = map.queryRenderedFeatures(e.point, { layers: [zoomLayer] });
+        features = map.queryRenderedFeatures(e.point, { layers: [zoomLayer] });
 
-      map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+        map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
 
-      if (!features.length) {
-        popup1.remove();
-        return;
-      }
+        if (!features.length) {
+          popup1.remove();
+          return;
+        }
 
-      var feature = features[0];
-      console.log(feature)
-console.log('ad', awarddollars_opdiv)
+        var feature = features[0];
+        console.log(feature)
+        console.log('ad', awarddollars_opdiv)
 
-      var value = feature.properties[awarddollars_opdiv];
+        var value = feature.properties[awarddollars_opdiv];
 
-      var num = '$' + value.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
-      popup1
-      .setLngLat(map.unproject(e.point))
-      .setHTML(
-        "Recipient: " + feature.properties.name
-        + "<br>"
-        + "Total Award Amount: " + num
-        )
-      .addTo(map);
-    });
+        var num = '$' + value.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+        popup1
+        .setLngLat(map.unproject(e.point))
+        .setHTML(
+          "Recipient: " + feature.properties.name
+          + "<br>"
+          + "Total Award Amount: " + num
+          )
+        .addTo(map);
+      });
 
 // **update legend
-    var worldLegend = document.getElementById('worldLegend');
-    var stateLegend = document.getElementById('stateLegend');
+var worldLegend = document.getElementById('worldLegend');
+var stateLegend = document.getElementById('stateLegend');
+stateLegend.style.display = 'none';
+map.on('zoom', function() {
+  if (map.getZoom() > 3) {
+    worldLegend.style.display = 'none';
+    stateLegend.style.display = 'block';
+  } else {
+    worldLegend.style.display = 'block';
     stateLegend.style.display = 'none';
-    map.on('zoom', function() {
-      if (map.getZoom() > 3) {
-        worldLegend.style.display = 'none';
-        stateLegend.style.display = 'block';
-      } else {
-        worldLegend.style.display = 'block';
-        stateLegend.style.display = 'none';
-      }
-    });
+  }
+});
 
-  })
-}
+})
+  }
 
-createMapBox("awarddollars_hhs")
+  createMapBox("awarddollars_hhs")
 
 
