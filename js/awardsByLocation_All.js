@@ -75,6 +75,18 @@ allBreaks.BREAKS_DISC_ONC_WORLD = [0, , , , , , -2961087];
 allBreaks.BREAKS_DISC_SAMHSA_USA = [0, 7995653, 11386834, 15733837, 20478945, 26423435, 75231849];
 allBreaks.BREAKS_DISC_SAMHSA_WORLD = [0, , , , , 249796, 999853629];
 
+
+for (var key in allBreaks) {
+ var breaks = allBreaks[key];
+ for (var i = 0; i < breaks.length; i++) {
+   var num = breaks[i];
+   if (!num){
+     breaks[i] = 0
+   }
+ }
+ allBreaks[key] = breaks;
+}
+
 // ***** Legend scales
 
 
