@@ -314,7 +314,7 @@ var worldLegend = document.getElementById('worldLegend');
 var stateLegend = document.getElementById('stateLegend');
 stateLegend.style.display = 'none';
 map.on('zoom', function() {
-  if (map.getZoom() > 3) {
+  if (map.getZoom() >= 3) {
     worldLegend.style.display = 'none';
     stateLegend.style.display = 'block';
   } else {
@@ -327,5 +327,5 @@ map.on('zoom', function() {
 }
 
 createMapBox("awarddollars_hhs", allBreaks.BREAKS_ALL_HHS_WORLD, allBreaks.BREAKS_ALL_HHS_USA)
-
+getLegend("HHS")
 
