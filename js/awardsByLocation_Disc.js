@@ -4,10 +4,15 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wO
 
 var COLORS = ['transparent', 'DEEPSKYBLUE', 'DodgerBlue', 'MediumSlateBlue', 'RoyalBlue', 'Blue', 'DarkBlue'];
 
-var BREAKS_WORLD_hhs = [0, 1, 400000, 1300000, 4400000, 160000000, 4893101782];
-var BREAKS_USA_hhs = [0, 1, 10000000, 35000000, 130000000, 1200000000, 58758910941];  
-var BREAKS_WORLD = [0, 1, 400000, 1300000, 4400000, 160000000, 4893101782];
-var BREAKS_USA = [0, 1, 10000000, 35000000, 130000000, 1200000000, 58758910941];
+// var BREAKS_WORLD_hhs = [0, 1, 400000, 1300000, 4400000, 160000000, 4893101782];
+// var BREAKS_USA_hhs = [0, 1, 10000000, 35000000, 130000000, 1200000000, 58758910941];  
+// var BREAKS_WORLD = [0, 1, 400000, 1300000, 4400000, 160000000, 4893101782];
+
+// var BREAKS_USA = [0, 1, 10000000, 35000000, 130000000, 1200000000, 58758910941];
+
+
+
+
 
 function createMapBox2(awarddollars_opdiv){
   console.log('3')
@@ -40,6 +45,9 @@ function createMapBox2(awarddollars_opdiv){
   map.addControl(new mapboxgl.NavigationControl());
 
   map.on('load', function () {
+
+   
+
 
     map.addSource('HHSWorld', {
       type: 'vector',
@@ -136,7 +144,7 @@ function createMapBox2(awarddollars_opdiv){
       }
 
       var feature = features[0];
-console.log("awarddollars_opdiv", awarddollars_opdiv)
+      console.log("awarddollars_opdiv", awarddollars_opdiv)
       var value = feature.properties[awarddollars_opdiv];
       var num = '$' + value.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
       popup1
@@ -148,6 +156,8 @@ console.log("awarddollars_opdiv", awarddollars_opdiv)
         )
       .addTo(map);
     });
+
+
 
 
     var worldLegend = document.getElementById('worldLegend');
