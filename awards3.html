@@ -200,18 +200,29 @@
     bottom: -54px;
 }
 .search-widget {
-    width: 1060px;
+    width: 990px;
     height: 90px;
-    padding: 36px 0 0 62px;
+    padding: 36px 0 0 52px;
     border-radius: 20px;
     position: absolute;
     left: 50%;
-    margin-left: -525px;
+    margin-left: -485px;
     background: no-repeat center,linear-gradient(to right, #05e6aa, #1cbdf9);
-    background-size: cover;
     margin-top: -45px;
 }
-
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    height: 44px;
+    font-weight: bold;
+    line-height: 32px;
+    font-size: 18px;
+    color: #ffffff;
+    margin-right: 20px;
+    padding-top: 10px;
+}
 
 .btn-default {
     background: #ffffff;
@@ -272,34 +283,17 @@ button, html [type="button"], [type="reset"], [type="submit"] {
     /* border-radius: 4px 0 0 4px !important; */
     /* box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2); */
 }
-.search-widget {
-    width: 1060px;
-    height: 90px;
-    padding: 36px 0 0 62px;
-    border-radius: 20px;
-    position: absolute;
-    left: 50%;
-    margin-left: -525px;
-    background: no-repeat center,linear-gradient(to right, #05e6aa, #1cbdf9);
-    background-size: cover;
-    margin-top: -45px;
-}
-
-
-
-
-
 .banner .search-widget {
-    bottom: -40px;
+    bottom: -54px;
 }
 .search-widget {
-    width: 1060px;
+    width: 990px;
     height: 90px;
-    padding: 20px 0 0 80px;
+    padding: 20px 0 0 72px;
     border-radius: 20px;
     position: absolute;
     left: 50%;
-    margin-left: -535px;
+    margin-left: -485px;
     background: no-repeat center,linear-gradient(to right, #05e6aa, #1cbdf9);
     background-size: cover;
     margin-top: -45px;
@@ -328,182 +322,350 @@ button, html [type="button"], [type="reset"], [type="submit"] {
     /* border-radius: 4px 0 0 4px !important; */
     /* box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2); */
 }
-
-
 #map, #map2 {
     top: 0;
     bottom: 0;
     width: 100%;
     height: 89vh;
 }
-
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 150px;
-    padding: 5px 16px;
-    margin: 2px 0 0;
-    font-size: 14px;
-    text-align: left;
-    list-style: none;
-    background-color: #069ce4;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+.checkbox label, .radio label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 1.17em;
 }
 
-.checkbox, .radio {
+.checkbox {
+    padding-left: 20px;
+}
+.checkbox label {
+    display: inline-block;
+    vertical-align: middle;
     position: relative;
+    padding-left: 5px;
+}
+.checkbox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    border-radius: 0px;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+.checkbox label::after {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0;
+    margin-left: -20px;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-size: 11px;
+    color: #555555;
+}
+.checkbox input[type="checkbox"],
+.checkbox input[type="radio"] {
+    opacity: 0;
+    z-index: 1;
+}
+.checkbox input[type="checkbox"]:focus + label::before,
+.checkbox input[type="radio"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.checkbox input[type="checkbox"]:checked + label::after,
+.checkbox input[type="radio"]:checked + label::after {
+    font-family: "FontAwesome";
+    content: "\f00c";
+}
+.checkbox input[type="checkbox"]:indeterminate + label::after,
+.checkbox input[type="radio"]:indeterminate + label::after {
     display: block;
+    content: "";
+    width: 10px;
+    height: 3px;
+    background-color: #555555;
+    border-radius: 2px;
+    margin-left: -16.5px;
     margin-top: 7px;
-    margin-bottom: 10px;
+}
+.checkbox input[type="checkbox"]:disabled + label,
+.checkbox input[type="radio"]:disabled + label {
+    opacity: 0.65;
+}
+.checkbox input[type="checkbox"]:disabled + label::before,
+.checkbox input[type="radio"]:disabled + label::before {
+    background-color: #eeeeee;
+    cursor: not-allowed;
+}
+.checkbox.checkbox-circle label::before {
+    border-radius: 50%;
+}
+.checkbox.checkbox-inline {
+    margin-top: 0;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + label::before,
+.checkbox-primary input[type="radio"]:checked + label::before {
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.checkbox-primary input[type="checkbox"]:checked + label::after,
+.checkbox-primary input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.checkbox-danger input[type="checkbox"]:checked + label::before,
+.checkbox-danger input[type="radio"]:checked + label::before {
+    background-color: #d9534f;
+    border-color: #d9534f;
+}
+.checkbox-danger input[type="checkbox"]:checked + label::after,
+.checkbox-danger input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.checkbox-info input[type="checkbox"]:checked + label::before,
+.checkbox-info input[type="radio"]:checked + label::before {
+    background-color: #5bc0de;
+    border-color: #5bc0de;
+}
+.checkbox-info input[type="checkbox"]:checked + label::after,
+.checkbox-info input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.checkbox-warning input[type="checkbox"]:checked + label::before,
+.checkbox-warning input[type="radio"]:checked + label::before {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+}
+.checkbox-warning input[type="checkbox"]:checked + label::after,
+.checkbox-warning input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.checkbox-success input[type="checkbox"]:checked + label::before,
+.checkbox-success input[type="radio"]:checked + label::before {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+.checkbox-success input[type="checkbox"]:checked + label::after,
+.checkbox-success input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.checkbox-primary input[type="checkbox"]:indeterminate + label::before,
+.checkbox-primary input[type="radio"]:indeterminate + label::before {
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.checkbox-primary input[type="checkbox"]:indeterminate + label::after,
+.checkbox-primary input[type="radio"]:indeterminate + label::after {
+    background-color: #fff;
+}
+
+.checkbox-danger input[type="checkbox"]:indeterminate + label::before,
+.checkbox-danger input[type="radio"]:indeterminate + label::before {
+    background-color: #d9534f;
+    border-color: #d9534f;
+}
+
+.checkbox-danger input[type="checkbox"]:indeterminate + label::after,
+.checkbox-danger input[type="radio"]:indeterminate + label::after {
+    background-color: #fff;
+}
+
+.checkbox-info input[type="checkbox"]:indeterminate + label::before,
+.checkbox-info input[type="radio"]:indeterminate + label::before {
+    background-color: #5bc0de;
+    border-color: #5bc0de;
+}
+
+.checkbox-info input[type="checkbox"]:indeterminate + label::after,
+.checkbox-info input[type="radio"]:indeterminate + label::after {
+    background-color: #fff;
+}
+
+.checkbox-warning input[type="checkbox"]:indeterminate + label::before,
+.checkbox-warning input[type="radio"]:indeterminate + label::before {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+}
+
+.checkbox-warning input[type="checkbox"]:indeterminate + label::after,
+.checkbox-warning input[type="radio"]:indeterminate + label::after {
+    background-color: #fff;
+}
+
+.checkbox-success input[type="checkbox"]:indeterminate + label::before,
+.checkbox-success input[type="radio"]:indeterminate + label::before {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+
+.checkbox-success input[type="checkbox"]:indeterminate + label::after,
+.checkbox-success input[type="radio"]:indeterminate + label::after {
+    background-color: #fff;
 }
 
 .radio {
+    padding-left: 20px;
+}
+.radio label {
     display: inline-block;
-    font-size: 18px;
-    line-height: 40px;
-    cursor: pointer;
-    padding-bottom: 3px;
-	color: #ffffff !important;
-
-}
-
-
-.radio:hover .inner {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-  opacity: .5;
-}
-
-.radio input {
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-}
-
-.radio input:checked + .outer .inner {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
-}
-
-.radio input:checked + .outer { border: 3px solid #f08b3b; }
-
-.radio input:focus + .outer .inner {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
-  background-color: #e67012;
-}
-
-.radio .outer {
-  width: 20px;
-  height: 20px;
-  display: block;
-  float: left;
-  margin: 10px 9px 10px 10px;
-  border: 3px solid #0c70b4;
-  border-radius: 50%;
-  background-color: #fff;
-}
-
-.radio .inner {
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-  width: 16px;
-  height: 16px;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  display: block;
-  margin: 2px;
-  border-radius: 50%;
-  background-color: #f08b3b;
-  opacity: 0;
-}
-input[type="radio"],
-input[type="checkbox"] {
-  display: none;
-}
-input[type="radio"] + label, input[type="checkbox"] + label {
+    vertical-align: middle;
     position: relative;
+    padding-left: 5px;
+    color: #ffffff;	
+}
+.radio label::before {
+    content: "";
     display: inline-block;
-    padding-left: 1.3em;
-    margin-right: 0.95em;
-    cursor: pointer;
-    line-height: 1em;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    margin-top: 15px;
-    font-size: 17px;
-    color: #ffffff;
+    width: 19px;
+    height: 19px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out;
+	margin-top: -7px;
+}
+.radio label::after {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 13px;
+    height: 13px;
+    left: 8px;
+    top: 7px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: #555555;
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+	margin-top: 10px;
+}
+ .radio input[type=radio], .radio-inline input[type=radio] {
+    position: absolute;
+    margin-left: -12px;
+    margin-top: 16px;
+}
+.radio input[type="radio"] {
+    opacity: 0;
+    z-index: 1;
+}
+.radio input[type="radio"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.radio input[type="radio"]:checked + label::after {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+.radio input[type="radio"]:disabled + label {
+    opacity: 0.65;
+}
+.radio input[type="radio"]:disabled + label::before {
+    cursor: not-allowed;
+}
+.radio.radio-inline {
+    margin-top: 0;
 }
 
-
-
-input[type="radio"] + label:before,
-input[type="checkbox"] + label:before,
-input[type="radio"] + label:after,
-input[type="checkbox"] + label:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1em;
-  height: 1em;
-  text-align: center;
-  color: white;
-  font-family: Times;
-  border-radius: 50%;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+.radio-primary input[type="radio"] + label::after {
+    background-color: #337ab7;
 }
-input[type="radio"] + label:before {
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em white;
+.radio-primary input[type="radio"]:checked + label::before {
+    border-color: #337ab7;
 }
-input[type="radio"] + label:hover:before {
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 1em #c6c6c6;
-}
-input[type="radio"]:checked + label:before {
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em #f79420;
-}
-input[type="checkbox"] + label:before {
-  content: '✗';
-  border-radius: 4px;
-  background-color: white;
-  color: white;
-}
-input[type="checkbox"] + label:hover:before {
-  color: #f0f0f0;
-}
-input[type="checkbox"]:checked + label:before {
-  background-color: white;
-  color: #f79420;
-}
-@media (min-width: 1200px) {
- }
-form {
-    margin-left: 110px;
+.radio-primary input[type="radio"]:checked + label::after {
+    background-color: #337ab7;
 }
 
+.radio-danger input[type="radio"] + label::after {
+    background-color: #d9534f;
+}
+.radio-danger input[type="radio"]:checked + label::before {
+    border-color: #d9534f;
+}
+.radio-danger input[type="radio"]:checked + label::after {
+    background-color: #d9534f;
+}
+
+.radio-info input[type="radio"] + label::after {
+    background-color: #5bc0de;
+}
+.radio-info input[type="radio"]:checked + label::before {
+    border-color: #5bc0de;
+}
+.radio-info input[type="radio"]:checked + label::after {
+    background-color: #5bc0de;
+}
+
+.radio-warning input[type="radio"] + label::after {
+    background-color: #f0ad4e;
+}
+.radio-warning input[type="radio"]:checked + label::before {
+    border-color: #f0ad4e;
+}
+.radio-warning input[type="radio"]:checked + label::after {
+    background-color: #f0ad4e;
+}
+
+.radio-success input[type="radio"] + label::after {
+    background-color: #5cb85c;
+}
+.radio-success input[type="radio"]:checked + label::before {
+    border-color: #5cb85c;
+}
+.radio-success input[type="radio"]:checked + label::after {
+    background-color: #5cb85c;
+}
+
+input[type="checkbox"].styled:checked + label:after,
+input[type="radio"].styled:checked + label:after {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+}
+input[type="checkbox"] .styled:checked + label::before,
+input[type="radio"] .styled:checked + label::before {
+    color: #fff;
+}
+input[type="checkbox"] .styled:checked + label::after,
+input[type="radio"] .styled:checked + label::after {
+    color: #fff;
+}
+
+.multiselect-container>li>a>label {
+
+    font-size: 1.3em;
+}
 	</style>
 </head>
 <body class=" ">
@@ -655,36 +817,7 @@ form {
 
             </section>	
 			
-<!-- <section class="candidates-search-bar">
-<div class="container">
-<form action="#">
-<div class="row">
-<div class="col-md-3 col-xs-6 ">
-		 <div class="btn-group">
-		 <button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="HHS" aria-expanded="false">
-		 <span class="multiselect-selected-text">HHS</span>
-		 <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="radioOpt active"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_HHS"> HHS</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_ACF"> ACF</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_ACL"> ACL</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_AHRQ"> AHRQ</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_ASPE"> ASPE</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_ASPR"> ASPR</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_CDC"> CDC</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_CMS"> CMS</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_FDA"> FDA</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_HRSA"> HRSA</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_IHS"> IHS</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_NIH"> NIH</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_OASH"> OASH</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_OGA"> OGA</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_ONC"> ONC</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_SAMHSA"> SAMHSA</label></a></li></ul>
-		 </div>
-		 </div>
-<div class="col-md-6 col-md-offset-3 col-xs-6">
-		        <form>
-
-              <input type="radio" name="awards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="awardRadioBtn" id="totalAwards">
-                         <label for="totalAwards">
-                           Total Awards
-                         </label>
-
-                          <input type="radio" name="awards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="discAwards">
-                          <label for="discretionaryAwards">   
-                          Discretionary Awards  
-                          </label>
-                       
-                        </form></div>
-</div>
-</form>
-</div>
-</section> -->		
-	
+			
       <div class="container">
         <div class="row medium-padding120">
           <div class="col-lg-12">
@@ -747,14 +880,10 @@ form {
            </ul>
          </div>
        </div>
-		  
-	  <!--  <div class="row">
+	   <div class="row">
            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-
-  
-						
-            <div style= "width:150px; ">
+			 <div style= "width:150px; ">
             <select id="mapDrop">
 
                  <option class="radioOpt" value="awarddollars_HHS">HHS</option>
@@ -780,14 +909,14 @@ form {
          </div>
 		 </div>
 		 </div>
-		  -->
      </div>
    </div>
  </div>
 
 
- <section class="banner">
+<section class="banner">
 
+			<!-- SEARCH WIDGET -->
 	<div class="search-widget">
         <div class="search-box-inner">
             <div class="container">
@@ -801,27 +930,31 @@ form {
 		 <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="radioOpt active"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_HHS"> HHS</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_ACF"> ACF</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_ACL"> ACL</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_AHRQ"> AHRQ</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_ASPE"> ASPE</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_ASPR"> ASPR</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_CDC"> CDC</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_CMS"> CMS</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_FDA"> FDA</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_HRSA"> HRSA</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_IHS"> IHS</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_NIH"> NIH</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_OASH"> OASH</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_OGA"> OGA</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_ONC"> ONC</label></a></li><li class="radioOpt"><a tabindex="0"><label class="radio"><input type="radio" value="awarddollars_SAMHSA"> SAMHSA</label></a></li></ul>
 		 </div>
 			</div>
-			
-			
-			<div class="col-md-7 col-md-offset-1 col-sm-9">
-		       		        <form>
+			<div class="col-md-5  col-sm-7">
+		        <form>
+               <div class="radio radio-info radio-inline">
 
-
-   <input type="radio" name="awards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="awardRadioBtn" id="totalAwards">
-  <label for="totalAwards">Total Awards</label>
-
-  <input type="radio" name="awards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="discAwards">
-  <label for="awards">Discretionary Awards </label>
-
-                        </form>		
+              <input type="radio" name="awards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="awardRadioBtn" id="totalAwards">
+                         <label for="totalAwards">
+                           Total Awards
+                         </label>
+						</div>
+                          <div class="radio radio-inline">
+                          <input type="radio" name="awards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="discAwards">
+                          <label for="discretionaryAwards">   
+                          Discretionary Awards  
+                          </label>
+                       </div>
+                        </form>
+						</div>	
 		</div>
 		</div>
 			</div>
 		</div>
-		</div>
-		</div>
+			</div>
+			<!-- /SEARCH WIDGET -->
 		</section>
-		
+ 
 
  <div id='map'>
   <div id='worldLegend' class='legend'>
@@ -1019,6 +1152,7 @@ form {
        </script>
 
 
+		
 	   
         <div class="container-fluid">
           <div class="row">
