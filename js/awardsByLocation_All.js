@@ -89,37 +89,29 @@ for (var key in allBreaks) {
 
 // ***** Legend scales
 
-
 $('#mapDrop').multiselect();
 
 function updateLegend(arrState, arrWorld) {
 
   $(".stateLegendText").each(function(i){
     $(this).text(arrState[i].toReducedFormat())
-
   })
 
   $(".worldLegendText").each(function(i){
     $(this).text(arrWorld[i].toReducedFormat())
-
   })
 }
 
-
-  // set function to render graphs on change
   $('#mapDrop').on("change", function(){
 
     var selectedAwardType = $('input[name="awards"]:checked').attr("id")
     var selectedOpdiv = this.value.toLowerCase();
     var selectedKey = selectedOpdiv.split("_")[1]
     getLegend(selectedKey,selectedAwardType)
-
     
     if (selectedAwardType === "totalAwards"){
       var stateBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_USA"]
       var worldBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_WORLD"]
-      console.log(worldBreaks)
-      console.log("BREAKS_ALL_" + selectedKey.toUpperCase() + "_WORLD")
       createMapBox(selectedOpdiv, worldBreaks, stateBreaks)
     } else {
       var stateBreaks = allBreaks["BREAKS_DISC_" + selectedKey.toUpperCase() + "_USA"]
@@ -127,8 +119,6 @@ function updateLegend(arrState, arrWorld) {
       createMapBox2(selectedOpdiv, worldBreaks, stateBreaks)
     }
   });
-
-
 
 
   $('input[name="awards"]').click(function(){
@@ -165,7 +155,6 @@ function getLegend(opdiv, type) {
   }
 
   legendWorld += opdiv.toUpperCase() + ".txt"
-
   legendState += opdiv.toUpperCase() + ".txt"
 
 
@@ -200,6 +189,8 @@ function createMapBox(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
   var zoomThreshold = 3;
 
   map.addControl(new mapboxgl.NavigationControl());
+
+ //***** CREATE THE NEW TABLE HERE ******
 
   map.on('load', function () {
 

@@ -2065,6 +2065,7 @@ div#interactiveFreeFormMain {
                             var ypos = (el.attr('cy') - d.radius - 10)
                             el.style("stroke", "#3cb878").style("stroke-width", 4);
                             d3.select("#taggs-tooltip").style('top', ypos + "px").style('left', xpos + "px").style('display', 'block')
+                            // d3.select("#taggs-tooltip").style('top', ypos + "px").style('left', xpos + "px").style('display', 'block')
                                 .classed('taggs-plus', (d.changeCategory > 0))
                                 .classed('taggs-minus', (d.changeCategory < 0));
                             d3.select("#taggs-tooltip .taggs-name").html(that.nameFormat(d.name))
@@ -2260,9 +2261,9 @@ div#interactiveFreeFormMain {
                             }
                             return;
                         }
-                        if (d.discretion === "Discretionary" ) {
+                        if (d.discretion === "Discretionary"  || d.discretion === "Non-Discretionary") {
                             targetY = that.changeScale(d.change);
-                            targetX = 100 + that.groupScale(d.group) * (that.width - 120);
+                            targetX = 150 + that.groupScale(d.group) * (that.width - 120);
                             if (isNaN(targetY)) {
                                 targetY = that.centerY
                             };
@@ -2272,9 +2273,11 @@ div#interactiveFreeFormMain {
                             if (targetY < 80) {
                                 targetY = 80
                             };
-                        } else if ((d.discretion === "Non-Discretionary") || (d.discretion === "Net interest")) {
-                            targetX = -300 + Math.random() * 100;
-                            targetY = d.y;
+                        // } else if ((d.discretion === "Non-Discretionary")) {
+                        //   // || (d.discretion === "Net interest"))
+                        //     targetX = d.x;
+                        //     // targetX = 550 + Math.random() * 100;
+                        //     targetY = d.y;
                         } else {
                             targetX = 0
                         };

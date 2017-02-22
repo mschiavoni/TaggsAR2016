@@ -371,7 +371,7 @@
                        Total Awards
                      </label>
 
-                     <input type="radio" name="awards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="discAwards">
+                     <input type="radio" name="awards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="discretionaryAwards">
                      <label for="discretionaryAwards">   
                       Discretionary Awards  
                     </label>
@@ -410,8 +410,8 @@
 
        <div id='map'>
         <div id='worldLegend' class='legend'>
-          <h4>(W)Dollars</h4>
-          <h4>Awarded</h4>
+          <h4>Award</h4>
+          <h4>Spending</h4>
           <div>
             <span style='background-color: #f7fbff; border: 1px solid #cccccc'></span>
             <span class="worldLegendText"></span>
@@ -447,8 +447,8 @@
           </div>
 
           <div id='stateLegend' class='legend'>
-            <h4>(S)Dollars</h4>
-            <h4>Awarded</h4>
+            <h4>Award</h4>
+            <h4>Spending</h4>
             <div>
               <span class="stateLegendColor" style='background-color: #f7fbff; border: 1px solid #cccccc'></span>
               <span class="stateLegendText" ></span>
@@ -850,8 +850,8 @@ function render(data, activityType) {
   chart.selectAll("rect.left")
   .data(data)
   .enter().append("rect")
-  .on("mouseover", function(d){return tooltip.style("visibility", "visible").html(d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");})
-  .on("focus", function(d){return tooltip.style("visibility", "visible").html(d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");})
+  .on("mouseover", function(d){return tooltip.style("visibility", "visible").html("Program Name:\n" + d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");})
+  .on("focus", function(d){return tooltip.style("visibility", "visible").html("Program Name:\n" + d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");})
   .on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
   .on("mouseout", function(){return tooltip.style("visibility", "hidden");})
   .attr("x", function (d) {
@@ -899,8 +899,8 @@ function render(data, activityType) {
     .attr("x", rightOffset)
     .attr("y", yPosByIndex)
     .attr("class", "right")
-    .on("mouseover", function(d){return tooltip.style("visibility", "visible").html(d.progName  + "<br>" + d["award.number"] + " Awards");})
-    .on("focus", function(d){return tooltip.style("visibility", "visible").html(d.progName  + "<br>" + d["award.number"] + " Awards");})
+    .on("mouseover", function(d){return tooltip.style("visibility", "visible").html("Program Name:" + d.progName  + "<br>" + d["award.number"] + " Awards");})
+    .on("focus", function(d){return tooltip.style("visibility", "visible").html("Program Name:" + d.progName  + "<br>" + d["award.number"] + " Awards");})
     .on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
     .on("mouseout", function(){return tooltip.style("visibility", "hidden");})
     .attr("width", function (d) {
