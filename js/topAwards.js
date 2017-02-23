@@ -1,9 +1,9 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw';
 
 
-  $('input[name="topAwards"]').click(function(){
-    var selectedRecipientType = this.id
-    console.log(selectedRecipientType)
+$('input[name="topAwards"]').click(function(){
+  var selectedRecipientType = this.id
+  console.log(selectedRecipientType)
     // var selectedOpdiv = $('.radioOpt:checked').val().toLowerCase()
     // var selectedKey = selectedOpdiv.split("_")[1]
 
@@ -24,13 +24,13 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wO
 function createMapBoxTop(){
 
 
-      var map2 = new mapboxgl.Map({
-        container: 'map2',
-        style: 'mapbox://styles/mapbox/light-v9',
-        center: [-98, 38.88],
-        minZoom: 2,
-        zoom: 3
-      });
+  var map2 = new mapboxgl.Map({
+    container: 'map2',
+    style: 'mapbox://styles/mapbox/light-v9',
+    center: [-98, 38.88],
+    minZoom: 2,
+    zoom: 3
+  });
         // Add zoom and rotation controls to the map.
         map2.addControl(new mapboxgl.NavigationControl());
         //Map ID copied from MapBox Tileset goes here.
