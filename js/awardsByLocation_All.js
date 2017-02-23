@@ -1,7 +1,7 @@
 // 'use strict'
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw'
 
-var COLORS = ['transparent', 'DEEPSKYBLUE', 'DodgerBlue', 'MediumSlateBlue', 'RoyalBlue', 'Blue', 'DarkBlue'];
+var COLORS = ['#f7fcf0', '#ccebc5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081'];
 
 // var BREAKS_WORLD_hhs = [0, 1, 400000, 1300000, 4400000, 160000000, 4893101782];
 // var BREAKS_USA_hhs = [0, 1, 10000000, 35000000, 130000000, 1200000000, 58758910941];  
@@ -319,4 +319,3 @@ map.on('zoom', function() {
 
 createMapBox("awarddollars_hhs", allBreaks.BREAKS_ALL_HHS_WORLD, allBreaks.BREAKS_ALL_HHS_USA)
 getLegend("HHS")
-
