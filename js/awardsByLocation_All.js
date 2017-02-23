@@ -84,7 +84,10 @@ for (var key in allBreaks) {
 
 // ***** Legend scales
 
-$('#mapDrop').multiselect();
+$('#mapDrop').multiselect({
+  maxHeight: 400,
+  dropUp: true
+});
 
 function updateLegend(arrState, arrWorld) {
 
