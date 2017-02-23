@@ -293,7 +293,7 @@
             width: 100%;
             background: -webkit-gradient(linear, left center, right center, from(#FF001E), color-stop(100%, #0268b9));
             background: -webkit-linear-gradient(left, #FF001E, #0268b9 160%);
-            background: linear-gradient(to right, #FF001E, #0268b9 40%);
+            background: linear-gradient(to right, #FF001E, #003dc7 40%);
             opacity: 0.67;
         }
         
@@ -408,6 +408,92 @@
             margin-top: 0px;
             color: #3cb878;
         }
+		.block_title_box {
+    text-align: center;
+	}
+	
+.block_title, .copy_block {
+    width: 70%;
+    max-width: 1100px;
+}
+.block_title {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 30px;
+}
+.block_title {
+    padding: 15px 5% 25px;
+    position: relative;
+    /* width: 74%; */
+    margin: auto;
+    margin-bottom: 160px;
+    display: inline-block;
+}
+
+.block_title .lines.line_lt {
+    left: 0;
+    top: 0;
+    width: 50%;
+}
+.block_title .lines {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+}
+
+.block_title .lines span {
+    background: rgba(255,255,255,.6);
+}
+.block_title .lines.line_lt span, .block_title .lines.line_rt span, .block_title .lines.line_rb span {
+    left: auto;
+    right: 0;
+}
+.color_alternate .block_title .lines span {
+    background-color: #28dde0;
+}
+.block_title .lines span {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.block_title .lines.line_l {
+    left: -8px;
+    top: 0;
+    height: 100%;
+}
+.block_title .lines {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+}
+.block_title .lines.line_lb {
+    left: 0;
+    bottom: 0;
+    width: 35.5%;
+}
+.block_title .lines.line_rt {
+    right: 0;
+    top: 0;
+    width: 21%;
+}
+.block_title .lines.line_r {
+    right: -8px;
+    top: 0;
+    height: 100%;
+}
+.block_title .lines.line_rb {
+    right: 0;
+    bottom: 0;
+    width: 50%;
+}
+.block_title h1 {
+    font-size: 48px;
+    color: #28dde0;
+}
+
     </style>
 
 </head>
@@ -541,11 +627,22 @@
         <section class="imagebg videobg height-100" data-overlay="8">
             <div class="container pos-vertical-center">
                 <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3 text-center">
-                        <img class="logo" alt="" src="img/taggslogoallwhite3.png">
-                        <h1>Health and Human Services 
-                                <br>2016 TAGGS Annual Report
-                            </h1>
+                    <div class="col-sm-8 col-sm-offset-2 text-center">
+					
+			<div class="block_title_box ">
+				<a href="http://taggs.hhs.gov">
+			<div class="block_title">
+            <div class="lines line_lt"><span style="width: 100%;"></span></div>
+            <div class="lines line_l"><span style="height: 100%;"></span></div>
+            <div class="lines line_lb"><span style="width: 100%;"></span></div>
+            <div class="lines line_rt"><span style="width: 100%;"></span></div>
+            <div class="lines line_r"><span style="height: 100%;"></span></div>
+            <div class="lines line_rb"><span style="width: 100%;"></span></div>
+            <h1 style="opacity: 1;">2016 TAGGS Annual Report</h1></div>
+				</a>
+			</div>		
+					
+
                     </div>
                 </div>
             </div>
@@ -888,12 +985,13 @@
                                     padding: 0 0 0;
                                     z-index: 100;
                                     position: absolute;
-                                    width: 1000px;
+                                    width: 1000px;			
+									border-radius: 22px;
                                 }
                                 
                                 .taggs-navigation {
-                                    padding-left: 260px;
-                                }
+									margin-left: 300px;
+								}
                                 
                                 .taggs-navigation li {
                                     color: #757575;
@@ -906,15 +1004,22 @@
                                     border-left: solid 1px #CCC;
                                     background: #f9f9f9;
                                     margin: 0 0;
+									border-radius: 50px;
+									margin-left: 5px;
+
                                 }
                                 
                                 .taggs-navigation li:first-of-type {
                                     border-radius: 4px 0 0 4px;
+									border-radius: 50px;
+									margin-left: 5px;
                                 }
                                 
                                 .taggs-navigation li:last-of-type {
                                     border-right: solid 1px #CCC;
                                     border-radius: 0 4px 4px 0;
+									border-radius: 50px;
+									margin-left: 5px;
                                 }
                                 
                                 .taggs-navigation li.selected {
@@ -922,6 +1027,7 @@
                                     background: #e9e9e9;
                                     border-color: #AAA;
                                     box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+									border-radius: 50px;
                                 }
                                 
                                 #taggs-categoryBrowser li {
@@ -1369,6 +1475,7 @@
                                     margin-top: 20px;
                                     margin-bottom: 50px;
                                 }
+								
                             </style>
                             <div class="taggs">
                                 <div id="taggs-chartFrame">
@@ -1378,7 +1485,6 @@
                                             <ul class="taggs-navigation clearfix">
                                                 <li id="taggs-nav-all">Overview</li>
                                                 <li id="taggs-nav-mandatory">Types of Funding</li>
-                                                <li id="taggs-nav-discretionary">Changes</li>
                                                 <li id="taggs-nav-deparment">OPDIV Totals</li>
                                             </ul>
                                         </div>
@@ -9132,7 +9238,7 @@
                                     negativeSuffix = ""
                                     if (n < 0) {
                                         negativePrefix = "";
-                                        negativeSuffix = " in income"
+                                        negativeSuffix = " below zero"
                                         n = -n
                                     };
                                     if (n >= 1000000000000) {
@@ -9812,7 +9918,7 @@
                                             $j("#taggs-chartFrame").css({
                                                 'height': 750
                                             });
-                                        } else if (tabIndex === 2) {
+                                        } else if (tabIndex === 3) {
                                             taggs.c.discretionaryLayout();
                                             this.currentOverlay = $j("#taggs-discretionaryOverlay");
                                             this.currentOverlay.delay(300).fadeIn(500);
@@ -9826,7 +9932,7 @@
                                             $j("#taggs-chartFrame").css({
                                                 'height': 750
                                             });
-                                        } else if (tabIndex === 3) {
+                                        } else if (tabIndex === 2) {
                                             taggs.c.departmentLayout();
                                             this.currentOverlay = $j("#taggs-departmentOverlay");
                                             this.currentOverlay.delay(300).fadeIn(500);
