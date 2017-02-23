@@ -1109,8 +1109,8 @@
 		 
         <div id='map'>
             <div id='worldLegend' class='legend'>
-                <h4>(W)Dollars</h4>
-                <h4>Awarded</h4>
+                <h4>Award</h4>
+                <h4>Spending</h4>
                 <div><span style='background-color: DEEPSKYBLUE'></span>$10 k</div>
                 <div><span style='background-color: DodgerBlue'></span>$100 k</div>
                 <div><span style='background-color: MediumSlateBlue'></span>$500 K</div>
@@ -1123,8 +1123,8 @@
             </div>
 
             <div id='stateLegend' class='legend'>
-                <h4>(S)Dollars</h4>
-                <h4>Awarded</h4>
+                <h4>Award</h4>
+                <h4>Spending</h4>
                 <div><span style='background-color: #f7fbff; border: 1px solid #cccccc'></span>$0 M</div>
                 <div><span style='background-color: #deebf7'></span>$10 M</div>
                 <div><span style='background-color: #c6dbef'></span>$20 M</div>
@@ -1247,104 +1247,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
         <script src="js/jquery-2.1.4.min.js"></script>
-        <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw';
-
-            // ***************SECOND MAP JS
-
-            var map2 = new mapboxgl.Map({
-                container: 'map2',
-                style: 'mapbox://styles/mapbox/light-v9',
-                center: [-108, 38.88],
-                minZoom: 3,
-                zoom: 3
-            });
-            // Add zoom and rotation controls to the map.
-            map2.addControl(new mapboxgl.NavigationControl());
-            //Map ID copied from MapBox Tileset goes here.
-            map2.on('load', function() {
-                map2.addSource('USRecip', {
-                    type: 'vector',
-                    url: 'mapbox://gcline001.ciynofkku00203upim49ilv7s-0m2mz'
-                });
-                // color is proportionally interpolated between two colors.
-                map2.addLayer({
-                    'id': 'us_recipients',
-                    'source': 'USRecip',
-                    'source-layer': 'USRecipLatLong_R1',
-                    //'maxzoom': zoomThreshold,
-                    'type': 'circle',
-                    //'filter': ['==', 'class', 'country'],
-                    'circle-opacity': 0.1,
-                    'paint': {
-                        // make circles larger as the user zooms from z12 to z22
-                        'circle-radius': {
-                            'base': 6,
-                            'stops': [
-                                [13, 9],
-                                [22, 100]
-                            ]
-                        },
-                        // color circles by agency, using data-driven styles
-                        'circle-color': {
-                            property: 'org_acronym',
-                            type: 'categorical',
-                            stops: [
-                                ['ACF', '#1976D2'],
-                                ['ACL', '#2196F3'],
-                                ['AHRQ', '#64B5F6'],
-                                ['ASPE', '#0288D1'],
-                                ['ASPR', '#03A9F4'],
-                                ['CDC', '#4FC3F7'],
-                                ['CMS', '#0097A7'],
-                                ['FDA', '#00BCD4'],
-                                ['HRSA', '#4DD0E1'],
-                                ['IHS', '#00897B'],
-                                ['NIH', '#26A69A'],
-                                ['OASH', '#81C784'],
-                                ['OGA', '#9FA8DA'],
-                                ['ONC', '#5C6BC0'],
-                                ['SAMHSA', '#4CAF50']
-                            ]
-                        }
-                    }
-                });
-            });
-
-            // Create a popup, but don't add it to the map yet.
-            var popup = new mapboxgl.Popup({
-                closeButton: false,
-                closeOnClick: false
-            });
-
-            map2.on('mousemove', function(e) {
-                var features = map2.queryRenderedFeatures(e.point, {
-                    layers: ['us_recipients']
-                });
-                // Change the cursor style as a UI indicator.
-                map2.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
-
-                if (!features.length) {
-                    popup.remove();
-                    return;
-                }
-
-                var feature = features[0];
-
-                // Populate the popup and set its coordinates
-                // based on the feature found.
-
-                var value = feature.properties.total_award_amount;
-                var num = '$' + value.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
-
-                popup.setLngLat(feature.geometry.coordinates)
-                    .setHTML(
-                        "Recipient: " + feature.properties.recip_name + "<br>" + "City: " + feature.properties.recip_city + "<br>" + "Agency: " + feature.properties.org_acronym + "<br>" + "Total Award Amount: " + num + "<br>" + "No. of Awards: " + feature.properties.total_number_awards + "<br>" + "Top 50 Rank within Agency: " + feature.properties.total_award_amount_rank + " of 50"
-                    )
-                    .addTo(map2);
-            });
-        </script>
-		
+       
 		
         <section class="banner">
 			<div class="map-nav">
@@ -1353,18 +1256,20 @@
 				<div class="map-box map show-map-box">
 				<div class="row">
 
-                          <div class="col-md-7 col-md-offset-3 col-sm-7">
+
+
+  <div class="col-md-7 col-md-offset-1 col-sm-7">
                                     <form>
                                         <div class="radio radio-info radio-inline">
-                                            <input type="radio" name="awards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="awardRadioBtn" id="totalAwards">
-                                            <label for="totalAwards">
-                                                Top 50 U.S.
+                                            <input type="radio" name="topAwards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="topAwardsRadioBtn" id="topAwards">
+                                            <label for="topAwards">
+                                                Top U.S. Awards
                                             </label>
                                         </div>
                                         <div class="radio radio-inline">
-                                            <input type="radio" name="awards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="discAwards">
-                                            <label for="discretionaryAwards">
-                                                Top 50 International
+                                            <input type="radio" name="topAwards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="topAwardsIntRadioBtn" id="topAwardsInt">
+                                            <label for="topAwardsInt">
+                                                Top International
                                             </label>
                                         </div>
                                     </form>
@@ -1634,7 +1539,7 @@
                         // .attr("tabindex", "0");
                     chart.append("text").attr("x", width / 3).attr("y", 15).attr("class", "title").text("Award Amount");
                     chart.append("text").attr("x", width / 3 + rightOffset).attr("y", 15).attr("class", "title").text("Number of Awards");
-                    chart.append("text").attr("x", width + labelArea / 3).attr("y", 15).attr("class", "title").text("Programs");
+                    chart.append("text").attr("x", width + labelArea / 3).attr("y", 15).attr("class", "title").text("CFDA Number");
 
                 }
 
@@ -2122,9 +2027,11 @@
         <script src="js/plugins.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/main2.js"></script>
         <script src="js/awardsByLocation_All.js"></script>
         <script src="js/awardsByLocation_Disc.js"></script>
+        <script src="js/topAwards.js"></script>
+        <script src="js/topAwardsInt.js"></script>
+        <script src="js/main2.js"></script>
         <script src="js/velocity.min.js"></script>
         <script src="js/ScrollMagic.min.js"></script>
         <script src="js/animation.velocity.min.js"></script>

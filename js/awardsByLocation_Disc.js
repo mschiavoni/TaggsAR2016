@@ -2,7 +2,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw'
 
 
-var COLORS = ['#f7fcf0', '#ccebc5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081'];
+var COLORS = ['transparent', 'DEEPSKYBLUE', 'DodgerBlue', 'MediumSlateBlue', 'RoyalBlue', 'Blue', 'DarkBlue'];
 
 function createMapBox2(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
 
@@ -33,8 +33,6 @@ function createMapBox2(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
   map.addControl(new mapboxgl.NavigationControl());
 
   map.on('load', function () {
-
-   
 
 
     map.addSource('HHSWorld', {
@@ -70,7 +68,6 @@ function createMapBox2(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
       }
     }, 'place_label_country_small_s');
 
-    console.log('5')
 
     map.addLayer({
       'id': 'USStateAward',
@@ -132,7 +129,6 @@ function createMapBox2(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
       }
 
       var feature = features[0];
-      console.log("awarddollars_opdiv", awarddollars_opdiv)
       var value = feature.properties[awarddollars_opdiv];
       var num = '$' + value.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
       popup1
@@ -164,3 +160,6 @@ function createMapBox2(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
 
   })
 }
+
+
+
