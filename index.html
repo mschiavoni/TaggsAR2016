@@ -9489,6 +9489,7 @@
                                                     change: n['change'],
                                                     changeCategory: this.categorizeChange(n['change']),
                                                     value: n[this.currentYearDataColumn],
+                                                    typeFund: n['discretion'],
                                                     name: n['name'],
                                                     discretion: n['discretion'],
                                                     percentTotal:n['percentTotal'],
@@ -9609,7 +9610,7 @@
                                                     d3.select("#taggs-tooltip .taggs-discretion").text(that.discretionFormat(d.discretion))
                                                     d3.select("#taggs-tooltip .taggs-department").text(d.group)
                                                     d3.select("#taggs-tooltip .taggs-value").html("$" + that.bigFormat(d.value))
-                                                    d3.select("#taggs-tooltip .taggs-percentTotal").text("% of HHS Total Non-Discretionary Dollars: " + that.numFormat(d.percentTotal) + "%")
+                                                    d3.select("#taggs-tooltip .taggs-percentTotal").text("% of HHS Total " + d.typeFund + " " + that.numFormat(d.percentTotal) + "%")
                                                     d3.select("#taggs-tooltip .taggs-totalNumAwards16").text("Total No. of Awards: " + that.numFormat(d.totalNumAwards16))
                                                     d3.select("#taggs-tooltip .taggs-percentTotalNum").text("% of Total No. of Awards: " + that.numFormat(d.percentTotalNum) + "%")
                                                     var pctchngout = that.pctFormat(d.change)
