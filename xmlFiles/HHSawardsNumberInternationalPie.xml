@@ -1,5 +1,4 @@
-<chart
-       
+<chart     
  showShadow= '0'
  use3DLighting='0'
  radius3D='0'
@@ -25,7 +24,8 @@
  valueBorderDashGap='2'
  enableSmartLabels='1'
  startingAngle='70'
- enableRotation='1'>
+ enableRotation='1'
+ palettecolors="#f8bd19,#e44a00,#008ee4,#33bdda,#6baa01,#583e78,#399CC6">
 <set isSliced='1' label='SAMHSA' value='1' />
 <set isSliced='1' label='OASH' value='1' />
 <set isSliced='1' label='ASPR' value='1' />
