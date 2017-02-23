@@ -220,11 +220,11 @@
             margin: 0 auto;
         }
         
-        .banner .search-widget {
+        .banner .map-nav {
             bottom: -54px;
         }
         
-        .search-widget {
+        .map-nav {
             width: 990px;
             height: 90px;
             padding: 36px 0 0 52px;
@@ -319,22 +319,23 @@
             /* box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2); */
         }
         
-        .banner .search-widget {
-            bottom: -54px;
-        }
+		.banner .map-nav {
+			bottom: -45px;
+			box-shadow: 20px 0 50px rgba(0, 0, 0, 0.18);
+		}
         
-        .search-widget {
-            width: 990px;
-            height: 90px;
-            padding: 20px 0 0 72px;
-            border-radius: 20px;
-            position: absolute;
-            left: 50%;
-            margin-left: -485px;
-            background: no-repeat center, linear-gradient(to right, #05e6aa, #1cbdf9);
-            background-size: cover;
-            margin-top: -45px;
-        }
+		.map-nav {
+			width: 1200px;
+			height: 90px;
+			padding: 20px 0 0 72px;
+			border-radius: 24px;
+			position: absolute;
+			left: 50%;
+			margin-left: -598px;
+			background: no-repeat center, linear-gradient(to right, #05e6aa, #1cbdf9);
+			background-size: cover;
+			margin-top: -40px;
+		}
         
         .btn {
             cursor: pointer;
@@ -747,6 +748,29 @@
         .multiselect-container>li>a>label {
             font-size: 1.3em;
         }
+		.medium-padding20 {
+			padding: 20px 0;
+		}
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+.multiselect-container>li>a>label.radio, .multiselect-container>li>a>label.checkbox {
+    margin: 0;
+    color: #262626;
+    text-align: center;
+}
+.heading {
+    position: relative;
+    text-align: center;
+    z-index: 0;
+}
+.bg-border-three-color {
+    background-color: #ffffff;
+}
+
     </style>
 </head>
 
@@ -895,10 +919,26 @@
 
         </section>
 
+		
+<div class="container-fluid">
+    <div class="row medium-padding20 bg-border-color contacts-shadow">
         <div class="container">
-            <div class="row medium-padding120">
-                <div class="col-lg-12">
-                    <div style="width:150px; margin:40px auto;">
+            <div class="row">
+                <div class="awards-nav">
+                    <div class="col-md-9 col-sm-12 col-xs-12">
+                        <div class="awards-item">
+                            <div class="content">
+                                <a href="#" class="title">Text Here</a>
+                                <p class="sub-title">More Text here</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="awards-item">
+
+						<div style="">
                         <select id="masterSelect" style="display: block">
                             <option class="masterOpt" checked="checked" value="hhs">HHS</option>
                             <option class="masterOpt" value="ACF">ACF</option>
@@ -919,6 +959,17 @@
                         </select>
 
                     </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="row medium-padding120">
+                <div class="col-lg-12">
                     <div class="row mb30">
                         <div class="col-lg-12">
                             <div class="heading">
@@ -958,67 +1009,8 @@
             </div>
         </div>
 
-        <section class="banner">
 
-            <!-- SEARCH WIDGET -->
-<div class="search-widget">
-<div class="search-box-inner">
-<div class="container">
-<div class="search-box map show-search-box">
-<div class="row">
-<div class="col-md-3 col-sm-3">
-
-        <div style= "width:150px; margin:40px auto;">
-                    <select id="mapDrop">
-
-                     <option class="radioOpt" value="awarddollars_HHS">HHS</option>
-                     <option class="radioOpt" value="awarddollars_ACF">ACF</option>
-                     <option class="radioOpt" value="awarddollars_ACL">ACL</option>
-                     <option class="radioOpt" value="awarddollars_AHRQ">AHRQ</option>
-                     <option class="radioOpt" value="awarddollars_ASPE">ASPE</option>
-                     <option class="radioOpt" value="awarddollars_ASPR">ASPR</option>
-                     <option class="radioOpt" value="awarddollars_CDC">CDC</option>
-                     <option class="radioOpt" value="awarddollars_CMS">CMS</option>
-                     <option class="radioOpt" value="awarddollars_FDA">FDA</option>
-                     <option class="radioOpt" value="awarddollars_HRSA">HRSA</option>
-                     <option class="radioOpt" value="awarddollars_IHS">IHS</option>
-                     <option class="radioOpt" value="awarddollars_NIH">NIH</option>
-                     <option class="radioOpt" value="awarddollars_OASH">OASH</option>
-                     <option class="radioOpt" value="awarddollars_OGA">OGA</option>
-                     <option class="radioOpt" value="awarddollars_ONC">ONC</option>
-                     <option class="radioOpt" value="awarddollars_SAMHSA">SAMHSA</option>
-
-                   </select>
-
-
-                 </div>
-
-                                </div>
-                                <div class="col-md-5  col-sm-7">
-
-                                    <form>
-                                        <div class="radio radio-info radio-inline">
-                                            <input type="radio" name="awards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="awardRadioBtn" id="totalAwards">
-                                            <label for="totalAwards">
-                                                Total Awards
-                                            </label>
-                                        </div>
-                                        <div class="radio radio-inline">
-                                            <input type="radio" name="awards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="discAwards">
-                                            <label for="discretionaryAwards">
-                                                Discretionary Awards
-                                            </label>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /SEARCH WIDGET -->
-        </section>
-
+		 
         <div id='map'>
             <div id='worldLegend' class='legend'>
                 <h4>(W)Dollars</h4>
@@ -1048,6 +1040,65 @@
             </div>
         </div>
 
+	        <section class="banner">
+			<div class="map-nav">
+			<div class="map-box-inner">
+				<div class="container">
+				<div class="map-box map show-map-box">
+				<div class="row">
+				<div class="col-md-3 col-sm-3">
+
+				<div style= "width:150px; ">
+                    <select id="mapDrop">
+
+                     <option class="radioOpt" value="awarddollars_HHS">HHS</option>
+                     <option class="radioOpt" value="awarddollars_ACF">ACF</option>
+                     <option class="radioOpt" value="awarddollars_ACL">ACL</option>
+                     <option class="radioOpt" value="awarddollars_AHRQ">AHRQ</option>
+                     <option class="radioOpt" value="awarddollars_ASPE">ASPE</option>
+                     <option class="radioOpt" value="awarddollars_ASPR">ASPR</option>
+                     <option class="radioOpt" value="awarddollars_CDC">CDC</option>
+                     <option class="radioOpt" value="awarddollars_CMS">CMS</option>
+                     <option class="radioOpt" value="awarddollars_FDA">FDA</option>
+                     <option class="radioOpt" value="awarddollars_HRSA">HRSA</option>
+                     <option class="radioOpt" value="awarddollars_IHS">IHS</option>
+                     <option class="radioOpt" value="awarddollars_NIH">NIH</option>
+                     <option class="radioOpt" value="awarddollars_OASH">OASH</option>
+                     <option class="radioOpt" value="awarddollars_OGA">OGA</option>
+                     <option class="radioOpt" value="awarddollars_ONC">ONC</option>
+                     <option class="radioOpt" value="awarddollars_SAMHSA">SAMHSA</option>
+
+                   </select>
+
+                 </div>
+
+                      </div>
+                          <div class="col-md-7 col-md-offset-1 col-sm-7">
+                                    <form>
+                                        <div class="radio radio-info radio-inline">
+                                            <input type="radio" name="awards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="awardRadioBtn" id="totalAwards">
+                                            <label for="totalAwards">
+                                                Total Awards
+                                            </label>
+                                        </div>
+                                        <div class="radio radio-inline">
+                                            <input type="radio" name="awards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="discAwards">
+                                            <label for="discretionaryAwards">
+                                                Discretionary Awards
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+	
+		
+		
+		
         <div class="container">
             <div class="row medium-padding120">
                 <div class="col-lg-12">
@@ -1108,8 +1159,8 @@
             var map2 = new mapboxgl.Map({
                 container: 'map2',
                 style: 'mapbox://styles/mapbox/light-v9',
-                center: [-98, 38.88],
-                minZoom: 2,
+                center: [-108, 38.88],
+                minZoom: 3,
                 zoom: 3
             });
             // Add zoom and rotation controls to the map.
@@ -1128,13 +1179,13 @@
                     //'maxzoom': zoomThreshold,
                     'type': 'circle',
                     //'filter': ['==', 'class', 'country'],
-                    'circle-opacity': 0.8,
+                    'circle-opacity': 0.1,
                     'paint': {
                         // make circles larger as the user zooms from z12 to z22
                         'circle-radius': {
-                            'base': 3,
+                            'base': 6,
                             'stops': [
-                                [12, 10],
+                                [13, 9],
                                 [22, 100]
                             ]
                         },
@@ -1143,21 +1194,21 @@
                             property: 'org_acronym',
                             type: 'categorical',
                             stops: [
-                                ['ACF', '#FF8000'],
-                                ['ACL', '#FFFF00'],
-                                ['AHRQ', '#80FF00'],
-                                ['ASPE', '#00CC00'],
-                                ['ASPR', '#DAF7A6'],
-                                ['CDC', '#0066CC'],
-                                ['CMS', '#0000CC'],
-                                ['FDA', '#7F00FF'],
-                                ['HRSA', '#B266FF'],
-                                ['IHS', '#990099'],
-                                ['NIH', '#CC0066'],
-                                ['OASH', '#808080'],
-                                ['OGA', '#663300'],
-                                ['ONC', '#666600'],
-                                ['SAMHSA', '#FF99FF']
+                                ['ACF', '#1976D2'],
+                                ['ACL', '#2196F3'],
+                                ['AHRQ', '#64B5F6'],
+                                ['ASPE', '#0288D1'],
+                                ['ASPR', '#03A9F4'],
+                                ['CDC', '#4FC3F7'],
+                                ['CMS', '#0097A7'],
+                                ['FDA', '#00BCD4'],
+                                ['HRSA', '#4DD0E1'],
+                                ['IHS', '#00897B'],
+                                ['NIH', '#26A69A'],
+                                ['OASH', '#81C784'],
+                                ['OGA', '#9FA8DA'],
+                                ['ONC', '#5C6BC0'],
+                                ['SAMHSA', '#4CAF50']
                             ]
                         }
                     }
@@ -1197,6 +1248,37 @@
                     .addTo(map2);
             });
         </script>
+		
+		
+        <section class="banner">
+			<div class="map-nav">
+			<div class="map-box-inner">
+				<div class="container">
+				<div class="map-box map show-map-box">
+				<div class="row">
+
+                          <div class="col-md-7 col-md-offset-3 col-sm-7">
+                                    <form>
+                                        <div class="radio radio-info radio-inline">
+                                            <input type="radio" name="awards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="awardRadioBtn" id="totalAwards">
+                                            <label for="totalAwards">
+                                                Top 50 U.S.
+                                            </label>
+                                        </div>
+                                        <div class="radio radio-inline">
+                                            <input type="radio" name="awards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="discAwards">
+                                            <label for="discretionaryAwards">
+                                                Top 50 International
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
 
         <div class="container-fluid">
             <div class="row">
@@ -1543,7 +1625,7 @@
 
             <div class="container-fluid">
                 <div class="row">
-                    <div class="opdiv-tables medium-padding120 bg-border-color contacts-shadow">
+                    <div class="opdiv-tables medium-padding120 bg-border-three-color contacts-shadow">
                         <div class="container-fluid">
                             <div>
 
