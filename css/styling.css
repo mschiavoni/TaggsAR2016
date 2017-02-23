@@ -1124,7 +1124,6 @@ tbody.collapse.in {
   cursor: pointer; }
   .heading {
   position: relative;
-  z-index: 5;
   text-align: center;}
   .heading .heading-title {
     font-weight: 400;
