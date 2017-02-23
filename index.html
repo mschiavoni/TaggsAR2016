@@ -1389,6 +1389,7 @@
                                                 <div class="taggs-name"></div>
                                                 <div class="taggs-discretion"></div>
                                                 <div class="taggs-awards"></div>
+                                                <div class="taggs-percentTotal"></div>
                                                 <div class="taggs-valuesContainer">
                                                     <span class="taggs-value"></span>
                                                     <span class="taggs-change"></span>
@@ -1472,424 +1473,451 @@
                             <script type="text/javascript">
                                 var taggs = taggs || {};
                                 taggs.budget_array_data = [{
-                                    "name": "ACF Non-Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 563,
-                                            "y": 212
-                                        },
-                                        "department": {
-                                            "x": 395,
-                                            "y": 135
-                                        }
-                                    },
-                                    "id": 309,
-                                    "budget_2015": 39894476,
-                                    "change": 0.02,
-                                    "budget_2016": 40626359,
-                                    "awards": 200,
-                                    "department": "ACF",
-                                    "discretion": "Non-Discretionary"
-                                }, {
-                                    "name": "CMS Non-Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 316,
-                                            "y": 261
-                                        },
-                                        "department": {
-                                            "x": 130,
-                                            "y": 184
-                                        }
-                                    },
-                                    "id": 10,
-                                    "budget_2015": 312000000,
-                                    "change": 0.16,
-                                    "budget_2016": 361000000,
-                                    "awards": 200,
-                                    "department": "CMS",
-                                    "discretion": "Non-Discretionary"
-                                }, {
-                                    "name": "HRSA Non-Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 465,
-                                            "y": 465
-                                        },
-                                        "department": {
-                                            "x": 932,
-                                            "y": 110
-                                        }
-                                    },
-                                    "id": 9,
-                                    "budget_2015": 518503,
-                                    "change": -0.01454318,
-                                    "budget_2016": 518428,
-                                    "awards": 200,
-                                    "department": "HRSA",
-                                    "discretion": "Non-Discretionary"
-                                }, {
-                                    "name": "CDC Non-Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 441,
-                                            "y": 471
-                                        },
-                                        "department": {
-                                            "x": 102,
-                                            "y": 470
-                                        }
-                                    },
-                                    "id": 186,
-                                    "budget_2015": 139870,
-                                    "change": 0.02,
-                                    "budget_2016": 142850,
-                                    "awards": 200,
-                                    "department": "CDC",
-                                    "discretion": "Non-Discretionary"
-                                }, {
-                                    "name": "ACL Non-Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 316,
-                                            "y": 186
-                                        },
-                                        "department": {
-                                            "x": 746,
-                                            "y": 460
-                                        }
-                                    },
-                                    "id": 196,
-                                    "budget_2015": 1465056,
-                                    "change": 0.07,
-                                    "budget_2016": 1562314,
-                                    "awards": 200,
-                                    "department": "ACL",
-                                    "discretion": "Non-Discretionary"
-                                }, {
-                                    "name": "SAMHSA Non-Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 465,
-                                            "y": 313
-                                        },
-                                        "department": {
-                                            "x": 312,
-                                            "y": 460
-                                        }
-                                    },
-                                    "id": 366,
-                                    "budget_2015": 2242231,
-                                    "change": 0.04,
-                                    "budget_2016": 2324844,
-                                    "awards": 200,
-                                    "department": "SAMHSA",
-                                    "discretion": "Non-Discretionary"
-                                }, {
-                                    "name": "IHS Non-Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 292,
-                                            "y": 281
-                                        },
-                                        "department": {
-                                            "x": 528,
-                                            "y": 460
-                                        }
-                                    },
-                                    "id": 171,
-                                    "budget_2015": 2130352,
-                                    "change": 0.06,
-                                    "budget_2016": 2253188,
-                                    "awards": 200,
-                                    "department": "IHS",
-                                    "discretion": "Non-Discretionary"
-                                }, {
-                                    "name": "OGA Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 308,
-                                            "y": 229
-                                        },
-                                        "department": {
-                                            "x": 800,
-                                            "y": 612
-                                        }
-                                    },
-                                    "id": 900,
-                                    "budget_2015": 1264,
-                                    "change": 0.03,
-                                    "budget_2016": 1300,
-                                    "awards": 200,
-                                    "department": "OGA",
-                                    "discretion": "Discretionary"
-                                }, {
-                                    "name": "ASPE Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 683,
-                                            "y": 298
-                                        },
-                                        "department": {
-                                            "x": 620,
-                                            "y": 616
-                                        }
-                                    },
-                                    "id": 901,
-                                    "budget_2015": 2725,
-                                    "change": -0.3030,
-                                    "budget_2016": 1900,
-                                    "awards": 200,
-                                    "department": "ASPE",
-                                    "discretion": "Discretionary"
-                                }, {
-                                    "name": "NIH Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 570,
-                                            "y": 340
-                                        },
-                                        "department": {
-                                            "x": 665,
-                                            "y": 125
-                                        }
-                                    },
-                                    "id": 902,
-                                    "budget_2015": 10000000,
-                                    "change": 0.07,
-                                    "budget_2016": 23423188,
-                                    "awards": 200,
-                                    "department": "NIH",
-                                    "discretion": "Discretionary"
-                                }, {
-                                    "name": "ACF Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 563,
-                                            "y": 212
-                                        },
-                                        "department": {
-                                            "x": 395,
-                                            "y": 135
-                                        }
-                                    },
-                                    "id": 903,
-                                    "budget_2015": 96002044,
-                                    "change": 0.06,
-                                    "budget_2016": 10187505,
-                                    "awards": 200,
-                                    "department": "ACF",
-                                    "discretion": "Discretionary"
-                                }, {
-                                    "name": "CMS Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 316,
-                                            "y": 261
-                                        },
-                                        "department": {
-                                            "x": 130,
-                                            "y": 184
-                                        }
-                                    },
-                                    "id": 904,
-                                    "budget_2015": 1538246,
-                                    "change": 0.08,
-                                    "budget_2016": 1663575,
-                                    "awards": 200,
-                                    "department": "CMS",
-                                    "discretion": "Discretionary"
-                                }, {
-                                    "name": "HRSA Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 465,
-                                            "y": 465
-                                        },
-                                        "department": {
-                                            "x": 932,
-                                            "y": 110
-                                        }
-                                    },
-                                    "id": 905,
-                                    "budget_2015": 8082986,
-                                    "change": 0.01,
-                                    "budget_2016": 8145844,
-                                    "awards": 200,
-                                    "department": "HRSA",
-                                    "discretion": "Discretionary"
-                                }, {
-                                    "name": "CDC Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 441,
-                                            "y": 471
-                                        },
-                                        "department": {
-                                            "x": 102,
-                                            "y": 470
-                                        }
-                                    },
-                                    "id": 906,
-                                    "budget_2015": 5213666,
-                                    "change": 0.14,
-                                    "budget_2016": 5918935,
-                                    "awards": 200,
-                                    "department": "CDC",
-                                    "discretion": "Discretionary"
-                                }, {
-                                    "name": "ACL Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 316,
-                                            "y": 186
-                                        },
-                                        "department": {
-                                            "x": 746,
-                                            "y": 460
-                                        }
-                                    },
-                                    "id": 907,
-                                    "budget_2015": 537700,
-                                    "change": -0.45993,
-                                    "budget_2016": 290394,
-                                    "awards": 200,
-                                    "department": "ACL",
-                                    "discretion": "Discretionary"
-                                }, {
-                                    "name": "SAMHSA Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 465,
-                                            "y": 313
-                                        },
-                                        "department": {
-                                            "x": 312,
-                                            "y": 460
-                                        }
-                                    },
-                                    "id": 908,
-                                    "budget_2015": 34190,
-                                    "change": 0.07,
-                                    "budget_2016": 100010,
-                                    "awards": 200,
-                                    "department": "SAMHSA",
-                                    "discretion": "Discretionary"
-                                }, {
-                                    "name": "IHS Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 292,
-                                            "y": 281
-                                        },
-                                        "department": {
-                                            "x": 528,
-                                            "y": 460
-                                        }
-                                    },
-                                    "id": 909,
-                                    "budget_2015": 199240,
-                                    "change": 0.02,
-                                    "budget_2016": 203508,
-                                    "awards": 200,
-                                    "department": "IHS",
-                                    "discretion": "Discretionary"
-                                }, {
-                                    "name": "FDA Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 678,
-                                            "y": 254
-                                        },
-                                        "department": {
-                                            "x": 260,
-                                            "y": 634
-                                        }
-                                    },
-                                    "id": 910,
-                                    "budget_2015": 151916,
-                                    "change": 0.19,
-                                    "budget_2016": 180996,
-                                    "awards": 200,
-                                    "department": "FDA",
-                                    "discretion": "Discretionary"
-                                }, {
-                                    "name": "OASH Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 384,
-                                            "y": 457
-                                        },
-                                        "department": {
-                                            "x": 960,
-                                            "y": 440
-                                        }
-                                    },
-                                    "id": 911,
-                                    "budget_2015": 443413,
-                                    "change": -0.09,
-                                    "budget_2016": 402836,
-                                    "department": "OASH",
-                                    "awards": 200,
-                                    "discretion": "Discretionary"
-                                }, {
-                                    "name": "AHRQ Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 10431,
-                                            "y": -95
-                                        },
-                                        "department": {
-                                            "x": 80,
-                                            "y": 633
-                                        }
-                                    },
-                                    "id": 912,
-                                    "budget_2015": 211965,
-                                    "change": -0.06,
-                                    "budget_2016": 199178,
-                                    "department": "AHRQ",
-                                    "awards": 200,
-                                    "discretion": "Discretionary"
-                                }, {
-                                    "name": "ASPR Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 288,
-                                            "y": 317
-                                        },
-                                        "department": {
-                                            "x": 440,
-                                            "y": 630
-                                        }
-                                    },
-                                    "id": 913,
-                                    "budget_2015": 216039,
-                                    "change": -0.75882,
-                                    "budget_2016": 52103,
-                                    "awards": 200,
-                                    "department": "ASPR",
-                                    "discretion": "Discretionary"
-                                }, {
-                                    "name": "ONC Discretionary",
-                                    "positions": {
-                                        "total": {
-                                            "x": 396,
-                                            "y": 114
-                                        },
-                                        "department": {
-                                            "x": 980,
-                                            "y": 613
-                                        }
-                                    },
-                                    "id": 914,
-                                    "budget_2015": 34190,
-                                    "change": -2.0,
-                                    "budget_2016": -2961,
-                                    "awards": 200,
-                                    "department": "ONC",
-                                    "discretion": "Discretionary"
-                                }];
+                                             "name": "ACF Non-Discretionary",
+            "positions": {
+                "total": {
+                    "x": 563,
+                    "y": 212
+                },
+                "department": {
+                    "x": 395,
+                    "y": 135
+                }
+            },
+            "id": 309,
+            "budget_2015": 39894476,
+            "change": 0.02,
+            "budget_2016": 40626359,
+      "awards": 200,
+            "department": "ACF",
+            "discretion": "Non-Discretionary",
+            "percentTotal": 8.8282
+
+        }, {
+            "name": "CMS Non-Discretionary",
+            "positions": {
+                "total": {
+                    "x": 316,
+                    "y": 261
+                },
+                "department": {
+                    "x": 130,
+                    "y": 184
+                }
+            },          
+            "id": 10,      
+            "budget_2015": 312000000,
+            "change": 0.16,
+            "budget_2016": 361000000,
+      "awards": 200,
+            "department": "CMS",
+            "discretion": "Non-Discretionary",
+            "percentTotal": 78.4662
+        }, {
+            "name": "HRSA Non-Discretionary",
+            "positions": {
+                "total": {
+                    "x": 465,
+                    "y": 465
+                },
+                "department": {
+                    "x": 932,
+                    "y": 110
+                }
+            },
+            "id": 9,
+            "budget_2015": 518503,
+            "change": -0.01454318,
+            "budget_2016": 518428,
+      "awards": 200,
+            "department": "HRSA",
+            "discretion": "Non-Discretionary",
+            "percentTotal": 0.1127
+        }, {
+            "name": "CDC Non-Discretionary",
+            "positions": {
+                "total": {
+                    "x": 441,
+                    "y": 471
+                },
+                "department": {
+                    "x": 102,
+                    "y": 470
+                }
+            },
+            "id": 186,     
+            "budget_2015": 139870,
+            "change": 0.02,
+            "budget_2016": 142850,
+      "awards": 200,
+            "department": "CDC",
+            "discretion": "Non-Discretionary",
+            "percentTotal": 0.0310
+        }, {
+            "name": "ACL Non-Discretionary",
+            "positions": {
+                "total": {
+                    "x": 316,
+                    "y": 186
+                },
+                "department": {
+                    "x": 746,
+                    "y": 460
+                }
+            },
+            "id": 196,
+            "budget_2015": 1465056,
+            "change": 0.07,
+            "budget_2016": 1562314,
+      "awards": 200,
+            "department": "ACL",
+            "discretion": "Non-Discretionary",
+            "percentTotal": 0.3395
+        }, {
+            "name": "SAMHSA Non-Discretionary",
+            "positions": {
+                "total": {
+                    "x": 465,
+                    "y": 313
+                },
+                "department": {
+                    "x": 312,
+                    "y": 460
+                }
+            },
+            "id": 366,
+            "budget_2015": 2242231,
+            "change": 0.04,
+            "budget_2016": 2324844,
+      "awards": 200,
+            "department": "SAMHSA",
+            "discretion": "Non-Discretionary",
+            "percentTotal": 0.5052
+        }, {
+            "name": "IHS Non-Discretionary",
+            "positions": {
+                "total": {
+                    "x": 292,
+                    "y": 281
+                },
+                "department": {
+                    "x": 528,
+                    "y": 460
+                }
+            },
+            "id": 171,
+            "budget_2015": 2130352,
+            "change": 0.06,
+            "budget_2016": 2253188,
+      "awards": 200,
+            "department": "IHS",
+            "discretion": "Non-Discretionary",
+            "percentTotal": 0.4896
+        }, 
+    {
+            "name": "OGA Discretionary",
+            "positions": {
+                "total": {
+                    "x": 308,
+                    "y": 229
+                },
+                "department": {
+                    "x": 800,
+                    "y": 612
+                }
+            },
+            "id": 900,
+            "budget_2015": 1264,
+            "change": 0.03,
+            "budget_2016": 1300,
+      "awards": 200,
+            "department": "OGA",
+            "discretion": "Discretionary",
+            "percentTotal": 0.0003
+        }, 
+    {
+            "name": "ASPE Discretionary",
+            "positions": {
+                "total": {
+                    "x": 683,
+                    "y": 298
+                },
+                "department": {
+                    "x": 620,
+                    "y": 616
+                }
+            },
+            "id": 901,
+            "budget_2015": 2725,
+            "change": -0.3030,
+            "budget_2016": 1900,
+      "awards": 200,
+            "department": "ASPE",
+            "discretion": "Discretionary",
+            "percentTotal": 0.0004
+        },    
+    {
+            "name": "NIH Discretionary",
+            "positions": {
+                "total": {
+                    "x": 570,
+                    "y": 340
+                },
+                "department": {
+                    "x": 665,
+                    "y": 125
+                }
+            },
+            "id": 902,
+            "budget_2015": 10000000,
+            "change": 0.07,
+            "budget_2016": 23423188,
+      "awards": 200,
+            "department": "NIH",
+            "discretion": "Discretionary",
+            "percentTotal": 5.0899
+
+        }, {
+            "name": "ACF Discretionary",
+            "positions": {
+                "total": {
+                    "x": 563,
+                    "y": 212
+                },
+                "department": {
+                    "x": 395,
+                    "y": 135
+                }
+            },
+            "id": 903,
+            "budget_2015": 96002044,
+            "change": 0.06,
+            "budget_2016": 10187505,
+      "awards": 200,
+            "department": "ACF",
+            "discretion": "Discretionary",
+            "percentTotal": 2.2138
+        }, {
+            "name": "CMS Discretionary",
+            "positions": {
+                "total": {
+                    "x": 316,
+                    "y": 261
+                },
+                "department": {
+                    "x": 130,
+                    "y": 184
+                }
+            },          
+            "id": 904,
+            "budget_2015": 1538246,
+            "change": 0.08,
+            "budget_2016": 1663575,
+      "awards": 200,
+            "department": "CMS",
+            "discretion": "Discretionary",
+            "percentTotal": 0.3615
+        }, {
+            "name": "HRSA Discretionary",
+            "positions": {
+                "total": {
+                    "x": 465,
+                    "y": 465
+                },
+                "department": {
+                    "x": 932,
+                    "y": 110
+                }
+            },
+            "id": 905,
+            "budget_2015": 8082986,
+            "change": 0.01,
+            "budget_2016": 8145844,
+      "awards": 200,
+            "department": "HRSA",
+            "discretion": "Discretionary",
+            "percentTotal": 1.7701
+        }, {
+            "name": "CDC Discretionary",
+            "positions": {
+                "total": {
+                    "x": 441,
+                    "y": 471
+                },
+                "department": {
+                    "x": 102,
+                    "y": 470
+                }
+            },
+            "id": 906,
+            "budget_2015": 5213666,
+            "change": 0.14,
+            "budget_2016": 5918935,
+      "awards": 200,
+            "department": "CDC",
+            "discretion": "Discretionary",
+            "percentTotal": 1.2862
+        }, {
+            "name": "ACL Discretionary",
+            "positions": {
+                "total": {
+                    "x": 316,
+                    "y": 186
+                },
+                "department": {
+                    "x": 746,
+                    "y": 460
+                }
+            },
+            "id": 907,
+            "budget_2015": 537700,
+            "change": -0.45993,
+            "budget_2016": 290394,
+      "awards": 200,
+            "department": "ACL",
+            "discretion": "Discretionary",
+            "percentTotal": 0.0631
+        }, {
+            "name": "SAMHSA Discretionary",
+            "positions": {
+                "total": {
+                    "x": 465,
+                    "y": 313
+                },
+                "department": {
+                    "x": 312,
+                    "y": 460
+                }
+            },
+            "id": 908,
+            "budget_2015": 34190,
+            "change": 0.07,
+            "budget_2016": 100010,
+      "awards": 200,
+            "department": "SAMHSA",
+            "discretion": "Discretionary",
+            "percentTotal": 0.2173
+        }, {
+            "name": "IHS Discretionary",
+            "positions": {
+                "total": {
+                    "x": 292,
+                    "y": 281
+                },
+                "department": {
+                    "x": 528,
+                    "y": 460
+                }
+            },
+            "id": 909,
+            "budget_2015": 199240,
+            "change": 0.02,
+            "budget_2016": 203508,
+      "awards": 200,
+            "department": "IHS",
+            "discretion": "Discretionary",
+            "percentTotal": 0.0442
+        }, {
+            "name": "FDA Discretionary",
+            "positions": {
+                "total": {
+                    "x": 678,
+                    "y": 254
+                },
+                "department": {
+                    "x": 260,
+                    "y": 634
+                }
+            },
+            "id": 910,
+            "budget_2015": 151916,
+            "change": 0.19,
+            "budget_2016": 180996,
+      "awards": 200,
+            "department": "FDA",
+            "discretion": "Discretionary",
+            "percentTotal": 0.0393
+        }, {
+            "name": "OASH Discretionary",
+            "positions": {
+                "total": {
+                    "x": 384,
+                    "y": 457
+                },
+                "department": {
+                    "x": 960,
+                    "y": 440
+                }
+            },
+            "id": 911,
+            "budget_2015": 443413,
+            "change": -0.09,
+            "budget_2016": 402836,
+            "department": "OASH",
+      "awards": 200,
+            "discretion": "Discretionary",
+            "percentTotal": 0.0875
+        }, {
+            "name": "AHRQ Discretionary",
+            "positions": {
+                "total": {
+                    "x": 10431,
+                    "y": -95
+                },
+                "department": {
+                    "x": 80,
+                    "y": 633
+                }
+            },
+       "id": 912,
+            "budget_2015": 211965,
+            "change": -0.06,
+            "budget_2016": 199178,
+            "department": "AHRQ",
+      "awards": 200,
+            "discretion": "Discretionary",
+            "percentTotal": 0.0433
+        }, {
+            "name": "ASPR Discretionary",
+            "positions": {
+                "total": {
+                    "x": 288,
+                    "y": 317
+                },
+                "department": {
+                    "x": 440,
+                    "y": 630
+                }
+            },
+            "id": 913,
+            "budget_2015": 216039,
+            "change": -0.75882,
+            "budget_2016": 52103,
+      "awards": 200,
+            "department": "ASPR",
+            "discretion": "Discretionary",
+            "percentTotal": 0.0113
+        }, {
+            "name": "ONC Discretionary",
+            "positions": {
+                "total": {
+                    "x": 396,
+                    "y": 114
+                },
+                "department": {
+                    "x": 980,
+                    "y": 613
+                }
+            },
+            "id": 914,
+            "budget_2015": 34190,
+            "change": -2.0,
+            "budget_2016": -2961,
+      "awards": 200,
+            "department": "ONC",
+            "discretion": "Discretionary",
+            "percentTotal": -0.0006
+        }];
                                 taggs.category_list = ["ACF", "CMS", "NIH", "HRSA", "CDC", "SAMHSA", "ACL", "IHS", "OASH", "ASPR", "AHRQ", "FDA", "ASPE", "OGA", "ONC"];
                                 taggs.category_data = [{
                                     "label": "ACF",
@@ -9425,6 +9453,7 @@
                                                     d3.select("#taggs-tooltip .taggs-department").text(d.group)
                                                     d3.select("#taggs-tooltip .taggs-value").html("$" + that.bigFormat(d.value))
                                                     d3.select("#taggs-tooltip .taggs-awards").html("#" + that.bigFormat(d.value))
+                                                    d3.select("#taggs-tooltip .taggs-percentTotal").html(that.bigFormat(d.value) + "%")
                                                     var pctchngout = that.pctFormat(d.change)
                                                     if (d.change == "N.A.") {
                                                         pctchngout = "N.A."
@@ -10172,27 +10201,27 @@
     <svg style="display:none;">
         <symbol id="arrow-left" viewBox="122.9 388.2 184.3 85">
             <path d="M124.1,431.3c0.1,2,1,3.8,2.4,5.2c0,0,0.1,0.1,0.1,0.1l34.1,34.1c1.6,1.6,3.7,2.5,5.9,2.5s4.3-0.9,5.9-2.4
-    c1.6-1.6,2.4-3.7,2.4-5.9s-0.9-3.9-2.4-5.5l-19.9-19.5h11.1c1.5,0,2.7-1.5,2.7-3c0-1.5-1.2-3-2.7-3h-17.6c-1.1,0-2.1,0.6-2.5,1.6
-    c-0.4,1-0.2,2.1,0.6,2.9l24.4,24.4c0.6,0.6,0.9,1.3,0.9,2.1s-0.3,1.6-0.9,2.1c-0.6,0.6-1.3,0.9-2.1,0.9s-1.6-0.3-2.1-0.9
-    l-34.2-34.2c0,0,0,0,0,0c-0.6-0.6-0.8-1.4-0.9-1.9c0,0,0,0,0,0c0-0.2,0-0.4,0-0.6c0.1-0.6,0.3-1.1,0.7-1.6c0-0.1,0.1-0.1,0.2-0.2
-    l34.1-34.1c0.6-0.6,1.3-0.9,2.1-0.9s1.6,0.3,2.1,0.9c0.6,0.6,0.9,1.3,0.9,2.1s-0.3,1.6-0.9,2.1l-24.4,24.4c-0.8,0.8-1,2-0.6,3
-    c0.4,1,1.4,1.7,2.5,1.7h125.7c1.5,0,2.7-1,2.7-2.5c0-1.5-1.2-2.5-2.7-2.5H152.6l19.9-20.1c1.6-1.6,2.4-3.8,2.4-6s-0.9-4.4-2.4-6
-    c-1.6-1.6-3.7-2.5-5.9-2.5s-4.3,0.9-5.9,2.4l-34.1,34.1c-0.2,0.2-0.3,0.3-0.5,0.5c-1.1,1.2-1.8,2.8-2,4.4
-    C124.1,430.2,124.1,430.8,124.1,431.3C124.1,431.3,124.1,431.3,124.1,431.3z"></path>
+        c1.6-1.6,2.4-3.7,2.4-5.9s-0.9-3.9-2.4-5.5l-19.9-19.5h11.1c1.5,0,2.7-1.5,2.7-3c0-1.5-1.2-3-2.7-3h-17.6c-1.1,0-2.1,0.6-2.5,1.6
+        c-0.4,1-0.2,2.1,0.6,2.9l24.4,24.4c0.6,0.6,0.9,1.3,0.9,2.1s-0.3,1.6-0.9,2.1c-0.6,0.6-1.3,0.9-2.1,0.9s-1.6-0.3-2.1-0.9
+        l-34.2-34.2c0,0,0,0,0,0c-0.6-0.6-0.8-1.4-0.9-1.9c0,0,0,0,0,0c0-0.2,0-0.4,0-0.6c0.1-0.6,0.3-1.1,0.7-1.6c0-0.1,0.1-0.1,0.2-0.2
+        l34.1-34.1c0.6-0.6,1.3-0.9,2.1-0.9s1.6,0.3,2.1,0.9c0.6,0.6,0.9,1.3,0.9,2.1s-0.3,1.6-0.9,2.1l-24.4,24.4c-0.8,0.8-1,2-0.6,3
+        c0.4,1,1.4,1.7,2.5,1.7h125.7c1.5,0,2.7-1,2.7-2.5c0-1.5-1.2-2.5-2.7-2.5H152.6l19.9-20.1c1.6-1.6,2.4-3.8,2.4-6s-0.9-4.4-2.4-6
+        c-1.6-1.6-3.7-2.5-5.9-2.5s-4.3,0.9-5.9,2.4l-34.1,34.1c-0.2,0.2-0.3,0.3-0.5,0.5c-1.1,1.2-1.8,2.8-2,4.4
+        C124.1,430.2,124.1,430.8,124.1,431.3C124.1,431.3,124.1,431.3,124.1,431.3z"></path>
             <path d="M283.3,427.9h14.2c1.7,0,3,1.3,3,3c0,1.7-1.4,3-3,3H175.1c-1.5,0-2.7,1.5-2.7,3c0,1.5,1.2,3,2.7,3h122.4
-    c4.6,0,8.4-3.9,8.4-8.5c0-4.6-3.8-8.5-8.4-8.5h-14.2c-1.5,0-2.7,1-2.7,2.5C280.7,426.9,281.8,427.9,283.3,427.9z"></path>
+        c4.6,0,8.4-3.9,8.4-8.5c0-4.6-3.8-8.5-8.4-8.5h-14.2c-1.5,0-2.7,1-2.7,2.5C280.7,426.9,281.8,427.9,283.3,427.9z"></path>
         </symbol>
         <symbol id="arrow-right" viewBox="122.9 388.2 184.3 85">
             <path d="M305.9,430.2c-0.1-2-1-3.8-2.4-5.2c0,0-0.1-0.1-0.1-0.1l-34.1-34.1c-1.6-1.6-3.7-2.5-5.9-2.5c-2.2,0-4.3,0.9-5.9,2.4
-    c-1.6,1.6-2.4,3.7-2.4,5.9s0.9,4.1,2.4,5.7l19.9,19.6h-11.1c-1.5,0-2.7,1.5-2.7,3c0,1.5,1.2,3,2.7,3h17.6c1.1,0,2.1-0.7,2.5-1.7
-    c0.4-1,0.2-2.2-0.6-2.9l-24.4-24.5c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.6,0.9-2.1c0.6-0.6,1.3-0.9,2.1-0.9c0.8,0,1.6,0.3,2.1,0.9
-    l34.2,34.2c0,0,0,0,0,0c0.6,0.6,0.8,1.4,0.9,1.9c0,0,0,0,0,0c0,0.2,0,0.4,0,0.6c-0.1,0.6-0.3,1.1-0.7,1.6c0,0.1-0.1,0.1-0.2,0.2
-    l-34.1,34.1c-0.6,0.6-1.3,0.9-2.1,0.9s-1.6-0.3-2.1-0.9c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.6,0.9-2.1l24.4-24.4c0.8-0.8,1-1.9,0.6-2.9
-    c-0.4-1-1.4-1.6-2.5-1.6H158.1c-1.5,0-2.7,1-2.7,2.5c0,1.5,1.2,2.5,2.7,2.5h119.3l-19.9,20c-1.6,1.6-2.4,3.7-2.4,6s0.9,4.4,2.4,5.9
-    c1.6,1.6,3.7,2.5,5.9,2.5s4.3-0.9,5.9-2.4l34.1-34.1c0.2-0.2,0.3-0.3,0.5-0.5c1.1-1.2,1.8-2.8,2-4.4
-    C305.9,431.3,305.9,430.8,305.9,430.2C305.9,430.2,305.9,430.2,305.9,430.2z"></path>
+        c-1.6,1.6-2.4,3.7-2.4,5.9s0.9,4.1,2.4,5.7l19.9,19.6h-11.1c-1.5,0-2.7,1.5-2.7,3c0,1.5,1.2,3,2.7,3h17.6c1.1,0,2.1-0.7,2.5-1.7
+        c0.4-1,0.2-2.2-0.6-2.9l-24.4-24.5c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.6,0.9-2.1c0.6-0.6,1.3-0.9,2.1-0.9c0.8,0,1.6,0.3,2.1,0.9
+        l34.2,34.2c0,0,0,0,0,0c0.6,0.6,0.8,1.4,0.9,1.9c0,0,0,0,0,0c0,0.2,0,0.4,0,0.6c-0.1,0.6-0.3,1.1-0.7,1.6c0,0.1-0.1,0.1-0.2,0.2
+        l-34.1,34.1c-0.6,0.6-1.3,0.9-2.1,0.9s-1.6-0.3-2.1-0.9c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.6,0.9-2.1l24.4-24.4c0.8-0.8,1-1.9,0.6-2.9
+        c-0.4-1-1.4-1.6-2.5-1.6H158.1c-1.5,0-2.7,1-2.7,2.5c0,1.5,1.2,2.5,2.7,2.5h119.3l-19.9,20c-1.6,1.6-2.4,3.7-2.4,6s0.9,4.4,2.4,5.9
+        c1.6,1.6,3.7,2.5,5.9,2.5s4.3-0.9,5.9-2.4l34.1-34.1c0.2-0.2,0.3-0.3,0.5-0.5c1.1-1.2,1.8-2.8,2-4.4
+        C305.9,431.3,305.9,430.8,305.9,430.2C305.9,430.2,305.9,430.2,305.9,430.2z"></path>
             <path d="M146.7,433.9h-14.2c-1.7,0-3-1.3-3-3c0-1.7,1.4-3,3-3h122.4c1.5,0,2.7-1.5,2.7-3c0-1.5-1.2-3-2.7-3H132.4
-    c-4.6,0-8.4,3.9-8.4,8.5c0,4.6,3.8,8.5,8.4,8.5h14.2c1.5,0,2.7-1,2.7-2.5C149.3,434.9,148.1,433.9,146.7,433.9z"></path>
+        c-4.6,0-8.4,3.9-8.4,8.5c0,4.6,3.8,8.5,8.4,8.5h14.2c1.5,0,2.7-1,2.7-2.5C149.3,434.9,148.1,433.9,146.7,433.9z"></path>
         </symbol>
         <symbol id="to-top" viewBox="0 0 32 32">
             <path d="M17,22 L25.0005601,22 C27.7616745,22 30,19.7558048 30,17 C30,14.9035809 28.7132907,13.1085075 26.8828633,12.3655101

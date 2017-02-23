@@ -25,7 +25,8 @@
  valueBorderDashGap='2'
  enableSmartLabels='1'
  startingAngle='70'
- enableRotation='1'>
+ enableRotation='1'
+ paletteColors="#008ee4,#6baa01,#f8bd19,#e44a00,#33bdd">
 <set isSliced='1' label='SAMHSA' value='1' />
 <set isSliced='1' label='OASH' value='1' />
 <set isSliced='1' label='ASPR' value='1' />

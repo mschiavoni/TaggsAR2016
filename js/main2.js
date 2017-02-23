@@ -104,10 +104,18 @@ $('#multiSelectDrop').multiselect();
 
 
     $('.selectOpt input:checked').click()
-    $('input:checkbox[value=' + selection + ']').click()
-    $('input:radio[value=' + selection2 + ']').click()
+    $('.selectOpt input:checkbox[value=' + selection + ']').click()
+    $('.radioOpt input:radio[value=' + selection2 + ']').click()
 
-}
+  }
+
+
+  if (window.location.search) {
+     $('.masterOpt input:radio[value=' + window.location.search.substring(1).toUpperCase() + ']').click()
+  }
+
+
+
 
 });
 
