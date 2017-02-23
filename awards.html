@@ -925,12 +925,12 @@ function render(data, activityType) {
     // .attr("tabindex", "0");
     chart.append("text").attr("x",width/3).attr("y", 15).attr("class","title").text("Award Amount");
     chart.append("text").attr("x",width/3+rightOffset).attr("y", 15).attr("class","title").text("Number of Awards");
-    chart.append("text").attr("x",width+labelArea/3).attr("y", 15).attr("class","title").text("Programs");
+    chart.append("text").attr("x",width+labelArea/3).attr("y", 15).attr("class","title").text("CFDA #");
 
   }
 
-  var fileNames = ["training.json", "research.json", "services.json", "other.json", "trainingInt.json", "researchInt.json", "servicesInt.json", "otherInt.json"];
-  var activityTypes = ["Training", "Research", "Services", "Other", "Training (International)", "Research (International)", "Services (International)", "Other (International)"];
+    var fileNames = ["training.json", "trainingInt.json","research.json", "researchInt.json", "services.json", "servicesInt.json", "other.json",  "otherInt.json"];
+    var activityTypes = ["Training", "Training (International)", "Research", "Research (International)", "Services", "Services (International)", "Other", "Other (International)"];
 
   fileNames.forEach(function(fileName, i){
    var activityType = activityTypes[i]
