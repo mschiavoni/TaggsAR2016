@@ -770,6 +770,92 @@
 .bg-border-three-color {
     background-color: #ffffff;
 }
+		.block_title_box {
+    text-align: center;
+	}
+	
+.block_title, .copy_block {
+    width: 70%;
+    max-width: 1100px;
+}
+.block_title {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 30px;
+}
+.block_title {
+    padding: 15px 5% 25px;
+    position: relative;
+    /* width: 74%; */
+    margin: auto;
+    margin-bottom: 160px;
+    display: inline-block;
+}
+
+.block_title .lines.line_lt {
+    left: 0;
+    top: 0;
+    width: 50%;
+}
+.block_title .lines {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+}
+
+.block_title .lines span {
+    background: rgba(255,255,255,.6);
+}
+.block_title .lines.line_lt span, .block_title .lines.line_rt span, .block_title .lines.line_rb span {
+    left: auto;
+    right: 0;
+}
+.color_alternate .block_title .lines span {
+    background-color: #28dde0;
+}
+.block_title .lines span {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.block_title .lines.line_l {
+    left: -8px;
+    top: 0;
+    height: 100%;
+}
+.block_title .lines {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+}
+.block_title .lines.line_lb {
+    left: 0;
+    bottom: 0;
+    width: 35.5%;
+}
+.block_title .lines.line_rt {
+    right: 0;
+    top: 0;
+    width: 21%;
+}
+.block_title .lines.line_r {
+    right: -8px;
+    top: 0;
+    height: 100%;
+}
+.block_title .lines.line_rb {
+    right: 0;
+    bottom: 0;
+    width: 50%;
+}
+.block_title h1 {
+    font-size: 78px;
+    color: #28dde0;
+}
+
 
     </style>
 </head>
@@ -903,12 +989,22 @@
         <section class="imagebg videobg height-100" data-overlay="8">
             <div class="container pos-vertical-center">
                 <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3 text-center">
-                        <img class="logo" alt="" src="img/taggslogoallwhite3.png">
-                        <h1>Awards
-                                <br>
-                            </h1>
+            <div class="col-sm-8 col-sm-offset-2 text-center">	
+			<div class="block_title_box ">
+				<a href="http://taggs.hhs.gov">
+			<div class="block_title">
+            <div class="lines line_lt"><span style="width: 100%;"></span></div>
+            <div class="lines line_l"><span style="height: 100%;"></span></div>
+            <div class="lines line_lb"><span style="width: 100%;"></span></div>
+            <div class="lines line_rt"><span style="width: 100%;"></span></div>
+            <div class="lines line_r"><span style="height: 100%;"></span></div>
+            <div class="lines line_rb"><span style="width: 100%;"></span></div>
+            <h1 style="opacity: 1;">Awards</h1></div>
+				</a>
+			</div>			
+
                     </div>
+					
                 </div>
             </div>
             <video autoplay loop muted>
