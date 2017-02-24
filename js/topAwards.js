@@ -1,22 +1,24 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw';
 
+var topLegend = document.getElementById('topLegend');
+var topIntLegend = document.getElementById('topIntLegend');
+
+      $('#topIntLegend').css("display", "none")
 
 $('input[name="topAwards"]').click(function(){
   var selectedRecipientType = this.id
-  console.log(selectedRecipientType)
-    // var selectedOpdiv = $('.radioOpt:checked').val().toLowerCase()
-    // var selectedKey = selectedOpdiv.split("_")[1]
 
-    // getLegend(selectedKey,selectedAwardType)
 
     if (selectedRecipientType === "topAwards"){
-      // var stateBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_USA"]
-      // var worldBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_WORLD"]
+
       createMapBoxTop()
+    $('#topIntLegend').css("display", "none")
+     $('#topLegend').css("display", "block")
     } else {
-      // var stateBreaks = allBreaks["BREAKS_DISC_" + selectedKey.toUpperCase() + "_USA"]
-      // var worldBreaks = allBreaks["BREAKS_DISC_" + selectedKey.toUpperCase() + "_WORLD"]
+
       createMapBoxTopInt()
+     $('#topLegend').css("display", "none")
+     $('#topIntLegend').css("display", "block")
     }
   });
 
@@ -117,12 +119,13 @@ function createMapBoxTop(){
               + "<br>"
               + "No. of Awards: " + feature.properties.total_number_awards
               + "<br>"
-              + "Top 50 Rank within Agency: " + feature.properties.total_award_amount_rank + " of 50"
+              + "Rank within Agency: " + feature.properties.total_award_amount_rank
               )
             .addTo(map2);
           });
 
-      }
+
+}
 
 
-      createMapBoxTop()
+createMapBoxTop()
