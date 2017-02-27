@@ -92,7 +92,6 @@
         }
         
         figure > ul > li > ul:after {
-            /* horizontal line connecting boxes under head honcho (and vertical lines on the far left and right) */
             content: "";
             width: calc(100% - 30px - 248px + 4px);
             height: 20px;
@@ -112,12 +111,10 @@
         
         figure > ul > li > ul > li:first-of-type:before,
         figure > ul > li > ul > li:last-of-type:before {
-            /* hiding vertical lines on the far left and right */
             border-left: transparent;
         }
         
         figure > ul > li > ul > li:before {
-            /* vertical lines connecting boxes to horizontal line under head honcho */
             content: "";
             border-left: 4px solid;
             position: relative;
@@ -127,25 +124,21 @@
         }
         
         figure > ul > li > ul > li > ul {
-            /* vertical line connecting boxes under a director (level 2) */
             border-left: 4px solid;
         }
         
         figure > ul > li > ul > li > ul > li {
-            /* horizontal line connect level 3 boxes to vertical line under director (level 2) */
             border-top: 4px solid;
             top: 50px;
         }
         
         figure ul > li > ul > li > ul > li > a {
-            /* level 3 boxes and below... */
             right: -30px;
             top: -50px;
             width: calc(100% - 30px);
         }
         
         figure > ul > li ul > li > ul > li > ul {
-            /* vertical line connecting boxes under a level 3 box */
             border-left: 4px solid;
             right: -30px;
             top: -50px;
@@ -154,14 +147,12 @@
         }
         
         figure ul > li > ul > li > ul > li.taggs-org-branch-end {
-            /* hiding the bottom section of the vertical line above */
             border-left: 4px solid #fff;
             right: 4px;
             width: calc(100% + 4px);
         }
         
         figure ul > li > ul > li > ul > li > ul > li {
-            /* horizontal line connect level 4 boxes to vertical line under level 3 box */
             border-top: 4px solid;
             top: 50px;
         }
@@ -172,11 +163,9 @@
                 margin: 0 auto;
             }
             figure > ul > li > ul {
-                /* vertical line under head honcho (level 1) */
                 border-left: 4px solid;
             }
             figure > ul > li > ul > li {
-                /* horizontal line connecting level 2 boxes to vertical line under head honcho (level 1) */
                 border-top: 4px solid;
                 top: 50px;
             }
@@ -213,8 +202,8 @@
         figure > ul > li > ul > li > ul > li,
         figure > ul > li ul > li > ul > li > ul,
         figure ul > li > ul > li > ul > li > ul > li {
-            border-color: #f1f1f1;
-            border-radius: 10px;
+	 border-color: #ffffff;
+   	 border-radius: 28px;
         }
         
         #taggs-org-chart,
@@ -272,15 +261,15 @@
         }
         
         figure > ul > li > ul > li > ul > li > a > span {
-            background: rgba(0, 0, 0, 0.2);
-        }
-        
+    	    background: rgba(0, 0, 0, 0);
+	}
+	    
         figure > ul > li > ul > li > ul > li > ul > li > a > span {
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0);
         }
         
         figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span {
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0);
         }
         
         [data-overlay="8"]:before {
