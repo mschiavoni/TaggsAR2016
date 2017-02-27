@@ -61,21 +61,21 @@ function createMapBoxTop(){
                       property: 'org_acronym',
                       type: 'categorical',
                       stops: [
-                      ['ACF', '#FF8000'],
-                      ['ACL', '#FFFF00'],
-                      ['AHRQ', '#80FF00'],
-                      ['ASPE', '#00CC00'],
-                      ['ASPR', '#DAF7A6'],
-                      ['CDC', '#0066CC'],
-                      ['CMS', '#0000CC'],
-                      ['FDA', '#7F00FF'],
-                      ['HRSA', '#B266FF'],
-                      ['IHS', '#990099'],
-                      ['NIH', '#CC0066'],
-                      ['OASH', '#808080'],
-                      ['OGA', '#663300'],
-                      ['ONC', '#666600'],
-                      ['SAMHSA', '#FF99FF']
+                                ['ACF', '#1976D2'],
+                                ['ACL', '#2196F3'],
+                                ['AHRQ', '#64B5F6'],
+                                ['ASPE', '#0288D1'],
+                                ['ASPR', '#03A9F4'],
+                                ['CDC', '#4FC3F7'],
+                                ['CMS', '#0097A7'],
+                                ['FDA', '#00BCD4'],
+                                ['HRSA', '#4DD0E1'],
+                                ['IHS', '#00897B'],
+                                ['NIH', '#26A69A'],
+                                ['OASH', '#81C784'],
+                                ['OGA', '#9FA8DA'],
+                                ['ONC', '#5C6BC0'],
+                                ['SAMHSA', '#4CAF50']
                       ]
                     }
                   }
