@@ -423,7 +423,6 @@ h6, .h6 {
     .list > li {
       font-size: 14px; } }
   .list > li a, .list > li li {
-    color: #a1a1a1;
     display: block;
     overflow: hidden; }
   .list > li i {
@@ -437,7 +436,7 @@ h6, .h6 {
 .list--secondary i {
   color: #c62828; }
 .list--primary a:hover, .list--primary li:hover {
-  color: #88fffd; }
+  color: #00ADEF; }
 .list--primary i {
   color: #ffc875; }
 .list--standard a:hover, .list--standard li:hover {
@@ -1868,9 +1867,9 @@ tbody.collapse.in {
       color: #fff; }
     .footer .contacts .contacts-item .content .sub-title {
       opacity: .4; }
-  .footer a {
-    color: rgba(255, 255, 255, 0.35);
-    transition: all .3s ease; }
+.footer a {
+    color: rgb(255, 255, 255);
+    transition: all .3s ease;}
     .footer a:hover {
       color: #4cc2c0; }
   .footer .sub-footer {
