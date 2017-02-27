@@ -37,13 +37,13 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wO
                         property: 'org_acronym',
                         type: 'categorical',
                         stops: [
-                            ['ASPR', '#DAF7A6'],
-                            ['CDC', '#0066CC'],
-                            ['FDA', '#7F00FF'],
-                            ['HRSA', '#B266FF'],
-                            ['NIH', '#CC0066'],
-                            ['OASH', '#808080'],
-                            ['SAMHSA', '#FF99FF']
+                            ['ASPR', '#03A9F4'],
+                            ['CDC', '#4FC3F7'],
+                            ['FDA', '#00BCD4'],
+                            ['HRSA', '#4DD0E1'],
+                            ['NIH', '#26A69A'],
+                            ['OASH', '#81C784'],
+                            ['SAMHSA', '#4CAF50']
                         ]
                     }
                 }
@@ -95,4 +95,3 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wO
             });
 
             }
-
