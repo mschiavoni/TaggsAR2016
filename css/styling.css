@@ -1868,7 +1868,7 @@ tbody.collapse.in {
     .footer .contacts .contacts-item .content .sub-title {
       opacity: .4; }
 .footer a {
-    color: rgb(255, 255, 255);
+    color: #FFFFFF;
     transition: all .3s ease;}
     .footer a:hover {
       color: #4cc2c0; }
