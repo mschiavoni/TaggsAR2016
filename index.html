@@ -1168,14 +1168,25 @@
                                     fill: none;
                                 }
                                 
-                                #taggs-colorKey {
+                                #taggs-colorKey, #taggs-colorKey2, #taggs-colorKey3 {
                                     position: absolute;
-                                    top: 250px;
-                                    left: 0px;
                                     width: 200px;
                                     margin: 0;
                                     padding: 0;
                                     overflow: hidden;
+                                }
+
+                                #taggs-colorKey {
+                                    top: 250px;
+                                    left: 0px;
+                                }
+                                 #taggs-colorKey2 {
+                                    top: 390px;
+                                    left: -62px;
+                                }
+                                #taggs-colorKey3 {
+                                    top: 325px;
+                                    right: -109px;
                                 }
                                 
                                 #taggs-sizeKey {
@@ -1214,16 +1225,16 @@
                                     fill: none;
                                 }
                                 
-                                #taggs-colorKey ul {
+                                #taggs-colorKey ul, #taggs-colorKey2 ul, #taggs-colorKey3 ul {
                                     margin: 0;
                                     padding: 0;
                                 }
                                 
-                                #taggs-colorKey p {
+                                #taggs-colorKey p, #taggs-colorKey2 p, #taggs-colorKey3 p{
                                     margin-bottom: 8px;
                                 }
                                 
-                                #taggs-colorKey li {
+                                #taggs-colorKey li, #taggs-colorKey2 li, #taggs-colorKey3 li {
                                     background-image: none;
                                     padding: 0;
                                     margin: 0;
@@ -1516,9 +1527,9 @@
                                                     <span>Largest Cuts</span>
                                                 </div>
                                                 <div id="taggs-colorKey">
-                                                    <p></p>
-                                                    <div id="taggs-sizeKey">
-                                                    </div>
+                                                    <!-- <p></p> -->
+                                                   <!--  <div id="taggs-sizeKey">
+                                                    </div> -->
                                                     <p>Color shows amount of change from 2015 to 2016.</p>
                                                     <ul class="taggs-colorSwatches">
                                                         <li class="change-decrease3"></li>
@@ -1554,6 +1565,31 @@
                                                 </div>
                                                 <div class="taggs-discretionaryExplainer">
                                                 </div>
+                                                <div id="taggs-colorKey2">
+                                                    <p>Color shows amount of change from 2015 to 2016.</p>
+                                                    <ul class="taggs-colorSwatches">
+                                                        <li class="change-decrease3"></li>
+                                                        <li class="change-decrease2"></li>
+                                                        <li class="change-decrease1"></li>
+                                                        <li class="change-increase1"></li>
+                                                        <li class="change-increase2"></li>
+                                                        <li class="change-increase3"></li>
+                                                    </ul>
+                                                    <ul class="taggs-colorTicks">
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                    <ul class="taggs-colorLabels">
+                                                        <li>&ndash;7%</li>
+                                                        <li>&ndash;3%</li>
+                                                        <li>0</li>
+                                                        <li>+3%</li>
+                                                        <li>+7%</li>
+                                                    </ul>
+                                                </div>
                                                 <div class="taggs-discretionaryAside">
                                                     <h5>Discretionary</h5>
                                                     <p><strong style="font-size:16px;padding-bottom:4px;display:block;">total amount</strong></p>
@@ -1573,7 +1609,34 @@
                                                 <h5></h5>
                                             </div>
                                         </div>
-                                        <div id="taggs-chartCanvas"></div>
+                                        <div id="taggs-colorKey3">
+                                                    <p>Color shows amount of change from 2015 to 2016.</p>
+                                                    <ul class="taggs-colorSwatches">
+                                                        <li class="change-decrease3"></li>
+                                                        <li class="change-decrease2"></li>
+                                                        <li class="change-decrease1"></li>
+                                                        <li class="change-increase1"></li>
+                                                        <li class="change-increase2"></li>
+                                                        <li class="change-increase3"></li>
+                                                    </ul>
+                                                    <ul class="taggs-colorTicks">
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                    <ul class="taggs-colorLabels">
+                                                        <li>&ndash;7%</li>
+                                                        <li>&ndash;3%</li>
+                                                        <li>0</li>
+                                                        <li>+3%</li>
+                                                        <li>+7%</li>
+                                                    </ul>
+                                                    </div>
+                                        <div id="taggs-chartCanvas">
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -9601,9 +9664,11 @@
                                                 .on("mouseover", function(d, i) {
                                                     var el = d3.select(this)
                                                     var xpos = Number(el.attr('cx'))
+
                                                     var ypos = (el.attr('cy') - d.radius - 10)
+                                                    console.log(ypos)
                                                     el.style("stroke", "#3cb878").style("stroke-width", 4);
-                                                    d3.select("#taggs-tooltip").style('top', ypos + "px").style('left', xpos + "px").style('display', 'block')
+                                                    d3.select("#taggs-tooltip").style('top', ypos + 120 + "px").style('left', xpos + "px").style('display', 'block')
                                                         .classed('taggs-plus', (d.changeCategory > 0))
                                                         .classed('taggs-minus', (d.changeCategory < 0));
                                                     d3.select("#taggs-tooltip .taggs-name").html(that.nameFormat(d.name))

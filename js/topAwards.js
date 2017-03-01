@@ -1,62 +1,95 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw';
 
+var map2;
 var topLegend = document.getElementById('topLegend');
 var topIntLegend = document.getElementById('topIntLegend');
+var topOptions = document.getElementsByClassName('topMapOpt')
 
-      $('#topIntLegend').css("display", "none")
+
+$('#map2Drop').multiselect({
+  maxHeight: 400,
+  dropUp: true
+}).on("change", changeOpdivs)
+
+
+function changeOpdivs() {
+  var opdivsOn = [];
+  for (var i= 0; i < topOptions.length; i++) {
+    if(topOptions[i].checked) {
+      opdivsOn.push(topOptions[i].value);
+    }
+  }
+
+  console.log(opdivsOn)
+
+  map2.featureLayer.setFilter(function(f){
+    return opdivsOn.indexOf(f.properties['org_acronym']) !== -1;
+  })
+  return false;
+}
+
+// changeOpdivs()
+
+
+$('#topIntLegend').css("display", "none")
 
 $('input[name="topAwards"]').click(function(){
   var selectedRecipientType = this.id
 
 
-    if (selectedRecipientType === "topAwards"){
+  if (selectedRecipientType === "topAwards"){
 
-      createMapBoxTop()
+    createMapBoxTop()
     $('#topIntLegend').css("display", "none")
-     $('#topLegend').css("display", "block")
-    } else {
+    $('#topLegend').css("display", "block")
+  } else {
 
-      createMapBoxTopInt()
-     $('#topLegend').css("display", "none")
-     $('#topIntLegend').css("display", "block")
-    }
-  });
+    createMapBoxTopInt()
+    $('#topLegend').css("display", "none")
+    $('#topIntLegend').css("display", "block")
+  }
+});
 
 
 function createMapBoxTop(){
 
 
-  var map2 = new mapboxgl.Map({
+  map2 = new mapboxgl.Map({
     container: 'map2',
     style: 'mapbox://styles/mapbox/light-v9',
     center: [-98, 38.88],
     minZoom: 2,
     zoom: 3
   });
-        // Add zoom and rotation controls to the map.
+
+
+
+
+
+
         map2.addControl(new mapboxgl.NavigationControl());
-        //Map ID copied from MapBox Tileset goes here.
+
         map2.on('load', function () {
           map2.addSource('USRecip', {
             type: 'vector',
             url: 'mapbox://gcline001.ciynofkku00203upim49ilv7s-0m2mz'
           });
-            // color is proportionally interpolated between two colors.
+
             map2.addLayer({
               'id': 'us_recipients',
               'source': 'USRecip',
               'source-layer': 'USRecipLatLong_R1',
-                //'maxzoom': zoomThreshold,
+
                 'type': 'circle',
-                //'filter': ['==', 'class', 'country'],
+
                 'circle-opacity': 0.8,
                 'paint': {
-                    // make circles larger as the user zooms from z12 to z22
+
                     'circle-radius': {
                       'base': 3,
                       'stops': [[12, 10], [22, 100]]
                     },
-                    // color circles by agency, using data-driven styles
+
                     'circle-color': {
                       property: 'org_acronym',
                       type: 'categorical',
@@ -82,7 +115,7 @@ function createMapBoxTop(){
                 });
           });
 
-        // Create a popup, but don't add it to the map yet.
+
         var popup = new mapboxgl.Popup({
           closeButton: false,
           closeOnClick: false
@@ -90,7 +123,7 @@ function createMapBoxTop(){
 
         map2.on('mousemove', function (e) {
           var features = map2.queryRenderedFeatures(e.point, { layers: ['us_recipients'] });
-            // Change the cursor style as a UI indicator.
+
             map2.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
 
             if (!features.length) {
@@ -100,8 +133,7 @@ function createMapBoxTop(){
 
             var feature = features[0];
 
-            // Populate the popup and set its coordinates
-            // based on the feature found.
+
 
             var value = feature.properties.total_award_amount;
             var num = '$' + value.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
@@ -125,7 +157,7 @@ function createMapBoxTop(){
           });
 
 
-}
+      }
 
 
-createMapBoxTop()
+      createMapBoxTop()
