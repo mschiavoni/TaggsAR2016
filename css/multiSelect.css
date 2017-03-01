@@ -9,25 +9,19 @@
   }
 
 
-  /* custom styles */
-  @import url(http://fonts.googleapis.com/css?family=Lato);
-
-  body{
-    font-family:Lato, sans-serif;
-  }
-
   .btn-default{
-    background: #f7f9f9; 
-    color: #01538f !important;
-    border: 5px solid #01538f;
-    border-radius: 50px;
+    background: #00a8ff; 
+    color: #ffffff !important;
+    border: 2px solid #00a8ff;
     transition: all 2s ease;
-    font-size: 25px;
+    font-size: 20px;
+	-webkit-border-radius: 25rem;
+    border-radius: 25rem;
   }
   .btn-default:hover{
     color: #f7f9f9 !important;
-    background-color: #01538f;
-    border: 5px solid #01538f;
+    background-color: #3959d5;
+    border: 2px solid #01538f;
   }
 
   .btn-default:focus {
@@ -57,7 +51,17 @@
   transform: scale(1.5);
 }
 
-/*#masterSelect {
-  display: block !important;
-}*/
-
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 45px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #fff;
+    position: relative;
+    transition: all .3s ease;
+    text-align: center;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);
+}
