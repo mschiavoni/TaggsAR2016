@@ -1,10 +1,39 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw';
         //create a map using the Mapbox Light theme, zoomed out to show world view
-        
+     
+
+
+
+var map2;
+
+
+$('#map2DropInt').multiselect({
+  maxHeight: 400,
+  dropUp: true,
+  includeSelectAllOption: true,
+  selectAllText:'HHS (Select All)'
+}).on("change", changeIntOpdivs)
+
+
+function changeIntOpdivs() {
+var topIntOptions = $('.topIntMapOpt input:checked')
+  var intOpdivsOn = [];
+  for (var i= 0; i < topIntOptions.length; i++) {
+    intOpdivsOn.push(topIntOptions[i].value);
+  }
+
+
+  map2.setFilter('foreign_recipients', ["in", 'org_acronym'].concat(intOpdivsOn))
+    // return opdivsOn.indexOf(f.properties['org_acronym']) !== -1;
+  return false;
+}
+
+
+
  function createMapBoxTopInt() {
 
 
-        var map2 = new mapboxgl.Map({
+     map2 = new mapboxgl.Map({
             container: 'map2',
             style: 'mapbox://styles/mapbox/light-v9',
             center: [-98, 38.88],

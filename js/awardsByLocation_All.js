@@ -1,4 +1,4 @@
-// 'use strict'
+ // 'use strict'
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw'
 
 var COLORS = ['#f7fcf0', '#ccebc5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081'];
