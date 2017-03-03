@@ -1497,10 +1497,10 @@
                     .data(data)
                     .enter().append("rect")
                     .on("mouseover", function(d) {
-                        return tooltip.style("visibility", "visible").html(d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");
+                        return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");
                     })
                     .on("focus", function(d) {
-                        return tooltip.style("visibility", "visible").html(d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");
+                        return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");
                     })
                     .on("mousemove", function() {
                         return tooltip.style("top", (d3.event.pageY - 10) + "px").style("left", (d3.event.pageX + 10) + "px");
@@ -1558,10 +1558,11 @@
                         .attr("y", yPosByIndex)
                         .attr("class", "right")
                         .on("mouseover", function(d) {
-                            return tooltip.style("visibility", "visible").html(d.progName + "<br>" + d["award.number"] + " Awards");
+                            return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + d["award.number"] + " Awards");
                         })
                         .on("focus", function(d) {
-                            return tooltip.style("visibility", "visible").html(d.progName + "<br>" + d["award.number"] + " Awards");
+                            return tooltip.style("visibility", "visible").html(
+                                "Program: " + d.progName + "<br>" + d["award.number"] + " Awards");
                         })
                         .on("mousemove", function() {
                             return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px");
