@@ -7,7 +7,7 @@
  numberScaleUnit='K,M,B'
  baseFontColor='55554A'
  decimals='0'
- baseFontSize='14'
+ baseFontSize='16'
  exportHandler='../FusionCharts/Export/Exported_Images/FCExporter.aspx'
  exportAction='download'
  exportAtClient='0'
