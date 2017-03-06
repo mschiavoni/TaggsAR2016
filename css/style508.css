@@ -1,0 +1,24 @@
+/*..bg-primary-color {
+  background-color: #3F3F3F; }
+.bg-secondary-color {
+  background-color: #3F3F3F; }
+.bg-orange-color {
+  background-color: #3F3F3F; }
+.bg-orangedark-color {
+  background-color: #3F3F3F; }
+bg-green-color {
+  background-color: #3F3F3F; }*/
+#imageWrapper {
+    display: none;
+}
+.heading .heading-title {
+    color: #000000;
+}
+.white {
+    color: #000000;
+}
+figure ul li a {
+    color: #000;
+    font-size: 0.98em;
+    font-weight: bold;
+}
