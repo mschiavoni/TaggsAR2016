@@ -2586,3 +2586,12 @@ border-color: #0049bf;
         margin-bottom: 120px
     }
     }
+.btn-default {
+    background: #44bfff;
+    color: #ffffff !important;
+    border: 2px solid #00a8ff;
+    transition: all 2s ease;
+    font-size: 20px;
+    -webkit-border-radius: 25rem;
+    border-radius: 25rem;
+}
