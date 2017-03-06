@@ -661,19 +661,20 @@ img {
   line-height: 48px;
   text-transform: lowercase;}
 .btn {
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  padding: 25px 50px;
-  font-size: 15px;
-  line-height: 1;
-  text-transform: uppercase;
-  font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #fff;
-  border-radius: 50px;
-  position: relative;
-  transition: all .3s ease;
-  text-align: center; }
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 25px 50px;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #fff;
+    border-radius: 50px;
+    position: relative;
+    transition: all .3s ease;
+    text-align: center;
+}
   @media (max-width: 768px) {
     .btn {
       padding: 15px 35px;
