@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/styling.css">
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" title="blue" href="css/styling.css">
+   <link rel="stylesheet" type="text/css" title="blue" href="css/styling.css">
 <link rel="alternate stylesheet" type="text/css" title="pink" href="css/style508.css">
 <script>
 var style_cookie_name = "style" ;
@@ -67,9 +67,33 @@ function get_cookie ( cookie_name )
     }
     return '' ;
 }
-</script>   
-	<style>
-        .wrapper {
+</script>
+<style>
+form {
+    display: inline-block;
+}
+input#blue {
+    padding: 4px 12px;
+    background: #44bfff;
+    color: #ffffff !important;
+    border: 2px solid #00a8ff;
+    transition: all 2s ease;
+    font-size: 16px;
+    -webkit-border-radius: 25rem;
+    border-radius: 25rem;
+    margin-left: 10px;
+}
+input#pink {
+    padding: 4px 12px;
+    background: #44bfff;
+    color: #ffffff !important;
+    border: 2px solid #00a8ff;
+    transition: all 2s ease;
+    font-size: 16px;
+    -webkit-border-radius: 25rem;
+    border-radius: 25rem;
+}
+.wrapper {
             position: relative;
         }
         
@@ -244,7 +268,6 @@ function get_cookie ( cookie_name )
                 top: -50px;
             }
             figure ul > li > ul > li.taggs-org-branch-end:last-of-type {
-                /* hiding the bottom section of the vertical line above */
                 border-left: 4px solid #fff;
                 right: 4px;
                 width: calc(100% + 4px);
@@ -313,7 +336,6 @@ function get_cookie ( cookie_name )
         figure > ul > li > ul > li:nth-of-type(5) a:hover {
             color: #ef6544;
         }
-        /* 1 step lighter */
         
         figure > ul > li > ul > li > a > span {
             background: rgba(0, 0, 0, 0);
@@ -389,13 +411,6 @@ function get_cookie ( cookie_name )
             background: #222222;
             opacity: 0.5;
             z-index: 2;
-        }
-        
-        *::before,
-        *::after {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
         }
         
         .imagebg .container {
@@ -569,7 +584,7 @@ input#pink {
 
 </head>
 
-<body class=" ">
+<body onload="set_style_from_cookie()">
     <header class="header" id="site-header">
         <div class="container">
 
