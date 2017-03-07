@@ -52,6 +52,7 @@
 }
 
 
+
 .btn-default {
     background: #01579b;
     color: #ffffff !important;
@@ -62,5 +63,9 @@
     border-radius: 25rem;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);
 }
+.open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    color: #ffffff;
+    background-color: #0D47A1;
+    border-color: #0D47A1;
 
 
