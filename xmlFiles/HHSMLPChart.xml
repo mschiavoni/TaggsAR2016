@@ -1,6 +1,6 @@
 <chart 
      bgColor="#dae3e6"
-     fill='#dae3e6' 
+     fill="#dae3e6" 
      bgAlpha="1"
      legendBgAlpha="0"
      formatNumberScale="1"
