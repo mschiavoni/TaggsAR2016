@@ -9,19 +9,21 @@
   }
 
 
-  .btn-default{
-    background: #44bfff; 
+.btn-default {
+    background: #01579b;
     color: #ffffff !important;
-    border: 2px solid #00a8ff;
+    border: 2px solid #01579b;
     transition: all 2s ease;
     font-size: 20px;
-	-webkit-border-radius: 25rem;
+    -webkit-border-radius: 25rem;
     border-radius: 25rem;
-  }
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);	
+}
   .btn-default:hover{
-    color: #f7f9f9 !important;
-    background-color: #3959d5;
-    border: 2px solid #01538f;
+    color: #ffffff !important;
+    background-color: #0D47A1;
+    border: 2px solid #0D47A1;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,.19), 0 3px 6px 0 rgba(0,0,0,.26)	  
   }
 
   .btn-default:focus {
