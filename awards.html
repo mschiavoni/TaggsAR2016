@@ -179,10 +179,11 @@
 
         .banner .map-nav {
          bottom: -45px;
-         box-shadow: 20px 0 50px rgba(0, 0, 0, 0.18);
-     }
+        /* box-shadow: 20px 6px 50px 0 rgba(0, 0, 0, 0.19); */
+        box-shadow: 0 19px 19px 0 rgba(0,0,0,.3), 0 15px 6px 0 rgba(0,0,0,.22);
+        }
      
-     .map-nav {
+    /*  .map-nav {
          width: 1200px;
          height: 90px;
          padding: 20px 0 0 72px;
@@ -193,38 +194,21 @@
          background: no-repeat center, linear-gradient(to right, #4DD0E1, #1565C0);
 	 background-size: cover;
          margin-top: -40px;
-     }
-     
-
-
-
-      /* .btn {
-        cursor: pointer;
-        display: inline-block;
-        text-decoration: none;
-        padding: 12px 50px;
-        font-size: 24px;
-        line-height: 1;
-        text-transform: uppercase;
-        font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;
-        color: #fff;*/
-        /* border-radius: 50px; */
-       /* position: relative;
-        transition: all .3s ease;
-        text-align: center;
-    }
-    */
-   /* .btn-default {
-        background: #ffffff;
-        color: #000000 !important;
-        border: 1px solid #4e3838;
-        transition: all 2s ease;
-        font-size: 24px;*/
-        /* border-radius: 4px 0 0 4px !important; */
-        /* box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2); */
-    /*}*/
-    
-/*>>>>>>> ashley*/
+     }  */
+	    
+.map-nav {
+    width: 1200px;
+    height: 90px;
+    padding: 20px 0 0 72px;
+    border-radius: 24px;
+    position: absolute;
+    left: 50%;
+    margin-left: -598px;
+    background: no-repeat center, linear-gradient(to right, #b0cce7, #1565C0);
+    background-size: cover;
+    margin-top: -40px;
+}	    
+	    
     #map,
     #map2 {
         top: 0;
@@ -559,7 +543,6 @@
     vertical-align: middle;
     /*box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);*/
 }
-/*>>>>>>> ashley*/
 .multiselect-container>li>a>label.radio, .multiselect-container>li>a>label.checkbox {
     margin: 0;
     color: #262626;
@@ -661,7 +644,15 @@
 .bg-borderthree-color {
     background-color: #ffffff;
 }
-
+p.sub-title {
+    margin-top: -10px;
+    font-size: 17px;
+}
+rect {
+    stroke: none;
+    fill-opacity: 1;
+    fill: rgb(218, 227, 230);
+}	    
 </style>
 </head>
 
@@ -829,8 +820,8 @@
                                     <div class="col-md-9 col-sm-12 col-xs-12">
                                         <div class="awards-item">
                                             <div class="content">
-                                                <a href="#" class="title">Text Here</a>
-                                                <p class="sub-title">More Text here</p>
+                                                <p class="title">To view an individual agency's award data, select an agency in the drop down box.</p>
+                                                <p class="sub-title">Location, CFDA Number, and 5-year history will display in selected maps & charts.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -885,13 +876,15 @@
                         </div>
                         <div class="row">
                         <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-				 <p class="heading-text">The maps in this section show data for awards that HHS made in FY 2016. 
-					 Darker colors indicate larger dollar amounts, according to the legend below. 
-					 Hover over a country to view the award dollars and number of awards. 
-					 For discretionary award data, click on the Discretionary Awards radio button below.
-					 To view award data by agency, click on an agency name in the dropdown box at right.
-					 Awards By State: From the map of the United States, use the mouse to zoom down to an individual state. 
-					 Award data will display in a tooltip. To view discretionary awards, click the Discretionary Awards radio button.  
+				 <p class="heading-text">
+					The maps in this section show data for awards that HHS made in FY 2016. Darker colors indicate larger dollar amounts, 
+					according to the legend below. Hover over a country to view the award dollars and number of awards. For discretionary
+					award data, click on the Discretionary Awards radio button below. To view award data by agency, click on an agency name
+					in the dropdown box at right.   				 
+				</p>
+				 <p class="heading-text">
+					Awards By State: From the map of the United States, zoom down to an individual state. Award
+					data will display in a tooltip. To view discretionary awards, click the Discretionary Awards radio button. 				 
 				</p>
 				</div>
              
@@ -1011,18 +1004,15 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <p>The U.S. map below shows the top 50 discretionary award recipients by agency and location. 
-				Hover over a colored dot to see award detail, including the recipient rank within the agency.
-				The legend at lower right shows agency colors. 
+						<p class="heading-text">
+							The U.S. map below shows the top discretionary award recipients by agency and location. Hover over a colored dot to 
+							see award detail, including the recipient rank within the agency. The legend at lower right shows agency colors. 
                         </p>
-                        <p>Awards By State: From the map of the United States, zoom down to an individual state.
-				Award data will display in a tooltip.  International Awards: View top international discretionary 
-				awards by clicking on the Top International radio button below.  North American awards will display.
-				Drag the screen to the left or right to see other continents.  Mouse over a colored dot to see award
-				detail.
-
+                        <p class="heading-text">
+							Awards By State: From the map of the United States, zoom down to an individual state. Award data will display in a 
+							tooltip.  International Awards: View top international discretionary awards by clicking on the Top International 
+							radio button below.  North American awards will display.  Drag the screen to the left or right to see other continents.  Mouse over a colored dot to see award detail.
                         </p>
-                      
                     </div>
                 </div>
             </div>
@@ -1075,7 +1065,12 @@
                 <div class="map-box map show-map-box">
                     <div class="row">
 
+<!-- <<<<<<< HEAD -->
                       <div class="col-md-7 col-md-offset-1 col-sm-7">
+<!-- ======= -->
+                                <div class="col-md-3 col-sm-3">
+
+<!-- >>>>>>> 182dcc2b589c403ade3370f77f946f1adb0270fc -->
                        <div 
                        style= "width:150px; ">
                         <select id="map2Drop" class="visible"  multiple="multiple">
@@ -1099,8 +1094,7 @@
 
                  </div>
 
-                    <div 
-                       style= "width:150px; ">
+                    <div style= "width:150px; ">
                         <select id="map2DropInt" class="visible"  multiple="multiple">
 
                          <option type="checkbox" class="topIntMapOpt" name="topFilter2" value="ASPR">ASPR</option>
@@ -1117,13 +1111,15 @@
                      </select>
 
                  </div>
+				 </div>
+				  <div class="col-md-7 col-md-offset-1 col-sm-7">
+
                  <form>
                     <div class="radio radio-info radio-inline">
                         <input type="radio" name="topAwards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="topAwardsRadioBtn" id="topAwards">
                         <label for="topAwards">
                             Top U.S. Awards
                         </label>
-<!-- >>>>>>> ashley -->
                     </div>
                     <div class="radio radio-inline">
                         <input type="radio" name="topAwards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="topAwardsIntRadioBtn" id="topAwardsInt">
@@ -1190,7 +1186,7 @@
                             <p class="heading-text white">
                                 Discretionary grants are those that permit the Federal Government, according to specific authorizing legislation, to exercise judgment, or “discretion” in selecting the applicant/recipient organization, through a competitive grant process. </p>
                                 <p class="heading-text white">
-                                    Discretionary grants commonly support activities such as demonstration, research, training, service, and construction projects or programs. Discretionary grants are sometimes referred to by the CFDA term “Project Grants.”
+                                Discretionary grants commonly support activities such as demonstration, research, training, service, and construction projects or programs. Discretionary grants are sometimes referred to by the CFDA term “Project Grants.”
                                 </p>
                             </div>
                         </div>
@@ -1208,7 +1204,7 @@
                         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                             <div class="heading align-center">
                                 <div class="heading">
-                                    <h4 class="heading-title" style="font-size: 48px; color: #2f2c2c; margin-bottom: 20px;">Top 5 Discretionary Grant Programs</h4>
+                                    <h4 class="heading-title" style="font-size: 48px; color: #2f2c2c; margin-bottom: 20px;">Top 5 Discretionary Grants</h4>
                                     <div class="heading-line">
                                         <span class="short-line"></span>
                                         <span class="long-line"></span>
@@ -1216,14 +1212,13 @@
                                 </div>
 
                                 <p class="heading-text">
-					Grant awards are classified by a 5-digit CFDA number and name. These CFDA awards 
-					are organized into major activity types: Research, Services, Training, and Other Activities. 
+									Grant awards are classified by a 5-digit CFDA number and name. These CFDA awards are organized into major 
+									activity types: Research, Services, Training, and Other Activities. 
                                 </p>
                                 <p class="heading-text">
-				The interactive bar charts below show the Top 5 CFDA awards for each major activity type.  
-				The blue bars indicate the award dollars.  The red bars show the number of awards. 
-				Hover over a bar to view the CFDA name.                                 
-				    </p>
+									The interactive bar charts below show the Top 5 CFDA awards for each major activity type.  The blue bars 
+									indicate the award dollars.  The red bars show the number of awards.  Hover over a bar to view the CFDA name.                                 
+								</p>
                             </div>
                         </div>
                     </div>
@@ -1429,17 +1424,19 @@
                 </script>
                 <div class="container-fluid">
                     <div class="row">
-                        <div style="background: #fcb03b; background-size: cover; padding:150px 15px; position: relative;">
+			<div class="opdiv-tables medium-padding120 bg-bordertwo-color contacts-shadow">
                             <div style="max-width: 790px; text-align: center; margin: 0 auto; position: relative; z-index: 5;">
                                 <div class="heading">
-                                    <h4 class="heading-title" style="font-size: 48px; color: #fff; margin-bottom: 20px;">Discretionary Award Types</h4>
+                                    <h4 class="h1 heading-title">Discretionary Award Types</h4>
                                     <div class="heading-line">
                                         <span class="short-line"></span>
                                         <span class="long-line"></span>
                                     </div>
-                                    <p class="heading-text" style="color: #fff;">
-                                        Based on the HHS mission, grant program descriptions, and the CFDA guidelines, the TAGGS system uses 16 activity types to characterize the nature of the grant being funded. For the purpose of this report, these 16 have been grouped into four major activity types (Research, Services, Training, and Other). HHS OPDIVs self-select the activity type for awards based on the primary purpose of the grant.
-
+                                    <p class="heading-text">
+										Based on the HHS mission, grant program descriptions, and the CFDA guidelines, the TAGGS system uses 
+										activity types to characterize the nature of the grant being funded. For the purpose of this report the 
+										activity types have been grouped into four major types (Research, Services, Training, and Other). HHS
+										OPDIVs self-select the activity type for awards based on the primary purpose of the grant.
                                     </p>
                                 </div>
                             </div>
@@ -1449,10 +1446,10 @@
 
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="opdiv-tables medium-padding120 bg-borderthree-color contacts-shadow">
+                        <div class="opdiv-tables medium-padding120 bg-bordertwo-color">
                             <div class="container">
 
-                                <div id="MLPChartContainer">Discrectionary Awards By Type</div>
+                                <div id="MLPChartContainer">Discrectionary Awards Types</div>
 
                             </div>
                         </div>
@@ -1461,7 +1458,7 @@
 
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="opdiv-tables medium-padding120 bg-bordertwo-color contacts-shadow">
+                        <div class="opdiv-tables medium-padding120 bg-orange-color contacts-shadow">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
@@ -1472,8 +1469,17 @@
                                                 <span class="long-line"></span>
                                             </div>
                                             <p class="heading-text">
-                                                The Total Award Amounts and Award Number chart shows the number of awards in thousands and the amount of award dollars in billions that HHS granted during the last 5 fiscal years. The number of awards is shown in the blue bars. The award dollars are represented as gold bars. Data for the current fiscal year, at the far right of the chart, are depicted in brighter colors. Hover over any bar to see a tool tip that shows award or dollar data. In the legend, click on Number of Awards to see only the gold bars display in the chart. Click on Total Award Amount to see only the blue bars.
-                                            </p>
+												The Total Award Amounts and Award Number chart shows the number of and the amount of award 
+												dollars that HHS granted during the last 5 fiscal years. The number of awards is shown in the
+												blue bars. The award dollars are represented as gold bars. Data for the current fiscal year, at
+												the far right of the chart, are depicted in brighter colors. Hover over any bar to see a tool tip
+												that shows award or dollar data. In the legend, click on Number of Awards to see only the gold bars
+												display in the chart. Click on Total Award Amount to see only the blue bars.     
+											</p>
+											<p class="heading-text">
+												To view award history for one or more agencies, select from the drop down box above.  Award history
+												charts will display beneath each other in the order selected.    
+											</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1550,17 +1556,27 @@
                                             <span class="short-line"></span>
                                             <span class="long-line"></span>
                                         </div>
+										<p class="heading-text">
+										HHS agencies have a long history of granting awards to international recipients, in support of a variety
+										of healthcare and humanitarian efforts. These include genetic and immunological research, disease prevention,
+										human development, and bolstering public health. 
+										</p>
+									<p class="heading-text">The pie charts below contrast agencies that spent the largest amount of FY 2016 
+									international grant funds against those agencies awarding the largest number of FY 2016 international grant
+									awards.  Hover over each section of the chart to view the percentage of dollars that the selected agency’s 
+									grants comprised of all HHS agency grant dollars. 
+									</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div id="HHSawardsNumber">HHS Total International Number of Awards</div>
-
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                </div>                              
+                            </div>
+							<div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div id="HHSgrantDollars">HHS Total International Award Amounts</div>
-
                                 </div>
                             </div>
                         </div>

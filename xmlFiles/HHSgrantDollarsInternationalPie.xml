@@ -5,8 +5,8 @@
  numberPrefix='$'
  numberScaleValue='1000,1000,1000'
  numberScaleUnit='K,M,B'
- baseFontColor='55554A'
- baseFontSize='14'
+ baseFontColor='#55554A'
+ baseFontSize='16'
  decimals='0'
  exportHandler='../FusionCharts/Export/Exported_Images/FCExporter.aspx'
  exportAction='download'
@@ -20,10 +20,13 @@
  valueBorderPadding='5'
  valueBorderRadius='6'
  valueBorderDashGap='2'
- bgColor='f7f9f9'
+ bgColor='#f7f9f9'
  animation='1'
  enableSmartLabels='1'
- startingAngle='70'
+ startingAngle="70"
+ width="100%"
+ height="850" 
+ theme="fint"    
  enableRotation='1'>
     <set isSliced='1' label='SAMHSA' value='249796' />
     <set isSliced='1' label='OASH' value='100353' />
@@ -34,8 +37,8 @@
     <set isSliced='1' label='CDC' value='1595200570' />
     <styles>
         <definition>
-            <style name='CaptionFont' type='font' font='Varela Round' size='22' color='FFFFFF' bgColor='2467A7' />
-            <style name='LabelFont' type='font' font='Varela Round' size='14' color='505050' bold='0' />
+            <style name='CaptionFont' type='font' font='Verdana' size='22' color='FFFFFF' bgColor='2467A7' />
+            <style name='LabelFont' type='font' font='Verdana' size='16' color='505050' bold='1' />
         </definition>
         <application>
             <apply toObject='DATAPLOT'/>

@@ -5,9 +5,9 @@
  showBorder='0'
  numberScaleValue='1000,1000,1000'
  numberScaleUnit='K,M,B'
- baseFontColor='55554A'
+ baseFontColor='#55554A'
  decimals='0'
- baseFontSize='14'
+ baseFontSize='16'
  exportHandler='../FusionCharts/Export/Exported_Images/FCExporter.aspx'
  exportAction='download'
  exportAtClient='0'
@@ -16,7 +16,7 @@
  bgAngle='360'
  bgAlpha='100'
  borderAlpha='20'
- bgColor='f7f9f9'
+ bgColor='#f7f9f9'
  animation='1'
  valueBorderAlpha='100'
  valueBorderPadding='5'
@@ -25,6 +25,9 @@
  enableSmartLabels='1'
  startingAngle='70'
  enableRotation='1'
+ width='100%'
+ height='850' 
+ theme="fint"       
  palettecolors="#f8bd19,#e44a00,#008ee4,#33bdda,#6baa01,#583e78,#399CC6">
 <set isSliced='1' label='SAMHSA' value='1' />
 <set isSliced='1' label='OASH' value='1' />
@@ -34,8 +37,8 @@
 <set isSliced='1' label='NIH' value='436' />
 <set isSliced='1' label='CDC' value='533' />
 <styles><definition>
-<style name='CaptionFont' type='font' font='Varela Round' size='20' color='FFFFFF' bgColor='2467A7' />
-<style name='LabelFont' type='font' font='Varela Round' size='14' color='505050' bold='0' /></definition>
+<style name='CaptionFont' type='font' font='Verdana' size='22' color='FFFFFF' bgColor='2467A7' />
+<style name='LabelFont' type='font' font='Verdana' size='16' color='505050' bold='0' /></definition>
 <application><apply toObject='DATAPLOT' />
 <apply toObject='CAPTION' styles='CaptionFont' />
 <apply toObject='DataLabels' styles='LabelFont' />

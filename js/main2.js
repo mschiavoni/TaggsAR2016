@@ -13,7 +13,7 @@ FusionCharts.ready(function () {
     "renderAt": 'MLPChartContainer',
     "id": "mlpchart",
     "width": '100%',
-    "height": '700',
+    "height": '850',
     "dataFormat": 'xmlurl',
     "dataSource": 'xmlFiles/HHSMLPChart.xml'
   });
@@ -26,7 +26,7 @@ FusionCharts.ready(function () {
     "renderAt": 'HHSawardsNumber',
     "id": "hhsawardsnumber",
     "width": '100%',
-    "height": '600',
+    "height": '850',
     "dataFormat": 'xmlurl',
     "dataSource": 'xmlFiles/HHSawardsNumberInternationalPie.xml'
   });
@@ -39,7 +39,7 @@ FusionCharts.ready(function () {
     "renderAt": 'HHSgrantDollars',
     "id": "hhsgrantdollars",
     "width": '100%',
-    "height": '600',
+    "height": '850',
     "dataFormat": 'xmlurl',
     "dataSource": 'xmlFiles/HHSgrantDollarsInternationalPie.xml'
   });
@@ -64,7 +64,7 @@ function renderChart(dataSource){
       "type": 'mscombidy2d',
       "renderAt": dataSource,
       "width": "100%",
-      "height": "500",
+      "height": "550",
       "dataFormat": "xmlurl",
       "dataSource": "xmlFiles/" + dataSource + ".xml"
     });
