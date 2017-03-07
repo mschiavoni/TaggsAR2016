@@ -94,7 +94,7 @@ $('#multiSelectDrop').multiselect();
 
   $('#masterSelect').on("change", function(){
     var selectedOpdiv = this.value.toLowerCase();
-    console.log('selectedOpdiv', selectedOpdiv)
+
     setOpdiv(selectedOpdiv)
   });
   
@@ -102,11 +102,10 @@ $('#multiSelectDrop').multiselect();
     var selection = selectedOpdiv.toUpperCase() + "grantHist";
     var selection2 = "awarddollars_" + selectedOpdiv.toUpperCase();
 
-
     $('.selectOpt input:checked').click()
     $('.selectOpt input:checkbox[value=' + selection + ']').click()
     $('.radioOpt input:radio[value=' + selection2 + ']').click()
-
+    $('.topMapOpt input:checkbox[value=' + selectedOpdiv.toUpperCase() + ']').click()
   }
 
 
