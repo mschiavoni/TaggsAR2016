@@ -37,8 +37,8 @@
 <set isSliced='1' label='NIH' value='436' />
 <set isSliced='1' label='CDC' value='533' />
 <styles><definition>
-<style name='CaptionFont' type='font' font='Verdana' size='22' color='FFFFFF' bgColor='2467A7' />
-<style name='LabelFont' type='font' font='Verdana' size='16' color='505050' bold='0' /></definition>
+<style name='CaptionFont' type='font' size='22' color='FFFFFF' bgColor='2467A7' />
+<style name='LabelFont' type='font' size='16' color='505050' bold='0' /></definition>
 <application><apply toObject='DATAPLOT' />
 <apply toObject='CAPTION' styles='CaptionFont' />
 <apply toObject='DataLabels' styles='LabelFont' />
