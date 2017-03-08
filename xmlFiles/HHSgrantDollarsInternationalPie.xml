@@ -26,6 +26,7 @@
  startingAngle="70"
  width="100%"
  height="850" 
+ paletteColors='#3F51B5,#00bf4f,#00aeff,#fbbc05,#ea4335,#7045ff,#0097A7'       
  theme="fint"    
  enableRotation='1'>
     <set isSliced='1' label='SAMHSA' value='249796' />
