@@ -21,7 +21,7 @@ FusionCharts.ready(function () {
 });
 
 FusionCharts.ready(function () {
-  var discretionaryChart = new FusionCharts({
+  var pieAwardsChart = new FusionCharts({
     "type": 'pie2d',
     "renderAt": 'HHSawardsNumber',
     "id": "hhsawardsnumber",
@@ -30,11 +30,11 @@ FusionCharts.ready(function () {
     "dataFormat": 'xmlurl',
     "dataSource": 'xmlFiles/HHSawardsNumberInternationalPie.xml'
   });
-  discretionaryChart.render();
+ pieAwardsChart.render();
 });
 
 FusionCharts.ready(function () {
-  var discretionaryChart = new FusionCharts({
+  var pieGrantChart = new FusionCharts({
     "type": 'pie2d',
     "renderAt": 'HHSgrantDollars',
     "id": "hhsgrantdollars",
@@ -43,21 +43,32 @@ FusionCharts.ready(function () {
     "dataFormat": 'xmlurl',
     "dataSource": 'xmlFiles/HHSgrantDollarsInternationalPie.xml'
   });
-  discretionaryChart.render();
+  pieGrantChart.render();
 });
+
+
+FusionCharts.ready(function () {
+  var multiAgencyChart = new FusionCharts({
+    "type": 'treemap',
+    "renderAt": 'HHSMultiAgency',
+    "id": "multiAgency",
+    "width": '100%',
+    "height": '850',
+    "dataFormat": 'xmlurl',
+    "dataSource": 'xmlFiles/HHSMultiAgency_Recipienttreemap.xml'
+  });
+  multiAgencyChart.render();
+});
+
+
+
 
 
 
 // ***** MULTI SELECT GRANT HIST CHART *****
 
-  // On page load, we hardcode the rendering of the first graph in the list.
-  renderChart('HHSgrantHist');
-  /**
-   * function to gather the data and render a chart at a given location.
-   *
-   *  renderChart
-{String} dataSource - both the id of the div and the name of the xml.
-*/
+renderChart('HHSgrantHist');
+ 
 function renderChart(dataSource){
   FusionCharts.ready(function () {
     var myChart = new FusionCharts({

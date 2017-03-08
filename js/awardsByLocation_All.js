@@ -165,6 +165,9 @@ $('#mapLinkState').attr("href", linkState)
 
 // hide and show each class to toggle on map zoom level
 
+
+
+
 function getLegend(opdiv, type) {
 
   var legendWorld = 'Legend_World_'
