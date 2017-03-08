@@ -652,7 +652,24 @@ rect {
     stroke: none;
     fill-opacity: 1;
     fill: rgb(218, 227, 230);
-}	    
+}	 
+tablelink2 {
+
+}   
+a#mapLinkWorld {
+    border-style: solid;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+}
+a#mapLinkState {
+    border-style: solid;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+}
 </style>
 </head>
 
@@ -959,7 +976,7 @@ rect {
                                  </div>
 
                              </div>
-                             <div class="col-md-7 col-md-offset-1 col-sm-7">
+                             <div class="col-md-5 col-sm-7">
                                 <form>
                                     <div class="radio radio-info radio-inline">
                                         <input type="radio" name="awards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="awardRadioBtn" id="totalAwards">
@@ -975,10 +992,13 @@ rect {
                                     </div>
                                 </form>
                             </div>
-                        <a id="mapLinkWorld" content="html" charset="utf-8" href="CountryStateMapAwardsFiles_HTML/World_All_HHS.html"> World Table View</a> 
+						<div class="col-md-3 col-sm-3">
+                        <a id="mapLinkWorld" class="tablelink2" content="html" charset="utf-8" href="CountryStateMapAwardsFiles_HTML/World_All_HHS.html"> World Table View</a> 
                         
-                        <a id="mapLinkState" content="html" charset="utf-8" href="CountryStateMapAwardsFiles_HTML/World_All_HHS.html">State Table View</a>
-                        </div>
+                        <a id="mapLinkState" class="tablelink2" content="html" charset="utf-8" href="CountryStateMapAwardsFiles_HTML/World_All_HHS.html">State Table View</a>
+						</div>
+                        
+						</div>						
                     </div>
                 </div>
             </div>
