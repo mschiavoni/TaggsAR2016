@@ -168,11 +168,16 @@ select {
   @media (max-width: 800px) {
     .medium-padding100 {
       padding: 35px 0; } }
+
 .medium-padding120 {
   padding: 120px 0; }
+
   @media (max-width: 800px) {
     .medium-padding120 {
       padding: 35px 0; } }
+.medium-padding20 {
+    padding: 20px 0;
+}
 .pr20 {
     padding-right: 30px !important;
 }
