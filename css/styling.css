@@ -175,8 +175,8 @@ select {
   @media (max-width: 800px) {
     .medium-padding120 {
       padding: 35px 0; } }
-.medium-padding20 {
-    padding: 20px 0;
+.medium-padding100b {
+    padding: 0 0 100px;
 }
 .pr20 {
     padding-right: 30px !important;
