@@ -35,7 +35,6 @@
                     parentLabelLineHeight='20'
                     plotbordercolor='ffffff'
                     plotborderalpha='100'
-
                     plothighlighteffect='fadeout'
                     plotToolText='$label Total Grant Dollars: $datavalue Percent Change: $svalue%'
                     showBorder='0'
