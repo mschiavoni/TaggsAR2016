@@ -168,11 +168,16 @@ select {
   @media (max-width: 800px) {
     .medium-padding100 {
       padding: 35px 0; } }
+
 .medium-padding120 {
   padding: 120px 0; }
+
   @media (max-width: 800px) {
     .medium-padding120 {
       padding: 35px 0; } }
+.medium-padding100b {
+    padding: 0 0 100px;
+}
 .pr20 {
     padding-right: 30px !important;
 }
@@ -261,11 +266,16 @@ select {
 .bg-green-color {
   background-color: #3cb878; }
 .bg-white-color {
-  background-color: #fff; }
+  background-color: #ffffff; }
 .bg-border-color {
-  background-color: #f7f9f9; }
+  background-color: #FAFAFA; }
   .bg-bordertwo-color {
-  background-color: #dae3e6; }
+  background-color: #ECEFF1; }
+.bg-black-color {
+  background-color: #3F3F3F; }
+
+
+
 .facebook-bg-color {
   background-color: #3a589b; }
 .twitter-bg-color {
