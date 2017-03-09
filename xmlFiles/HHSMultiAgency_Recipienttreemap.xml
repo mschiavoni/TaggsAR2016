@@ -37,7 +37,7 @@
                     plotborderalpha='100'
 
                     plothighlighteffect='fadeout'
-                    plotToolText='Agency: $label Total Grant Dollars: $datavalue Percent Change: $svalue%'
+                    plotToolText='$label Total Grant Dollars: $datavalue Percent Change: $svalue%'
                     showBorder='0'
                     showChildLabels='1'
                     shownavigationbar='0'
