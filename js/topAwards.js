@@ -165,5 +165,5 @@ function changeOpdivs() {
     }
 
 
-    createMapBoxTop('multiselect-all')
+    createMapBoxTop('select-all-value')
 
