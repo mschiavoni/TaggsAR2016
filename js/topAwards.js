@@ -18,7 +18,7 @@ $('#map2Drop').multiselect({
   dropUp: true,
   includeSelectAllOption: true,
   selectAllText:'HHS (Select All)',
-  selectAllValue: 'select-all-value'
+  selectAllValue: 'HHS'
 }).on("change", changeOpdivs)
 
 
@@ -30,7 +30,6 @@ function changeOpdivs() {
   }
 
   map2.setFilter('us_recipients', ["in", 'org_acronym'].concat(opdivsOn))
-    // return opdivsOn.indexOf(f.properties['org_acronym']) !== -1;
     return false;
   }
 
@@ -165,5 +164,5 @@ function changeOpdivs() {
     }
 
 
-    createMapBoxTop('select-all-value')
+    createMapBoxTop('HHS')
 
