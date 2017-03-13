@@ -164,5 +164,5 @@ function changeOpdivs() {
     }
 
 
-    createMapBoxTop('HHS')
+    createMapBoxTop()
 

@@ -4,7 +4,6 @@ $(document).ready(function() {
 
 
 
-
 // *****DISCRETIONARY MULTI LEVEL PIE *****
 
 FusionCharts.ready(function () {
@@ -117,9 +116,8 @@ $('#multiSelectDrop').multiselect();
     $('.selectOpt input:checkbox[value=' + selection + ']').click()
     $('.radioOpt input:radio[value=' + selection2 + ']').click()
     $('.topMapOpt input:checkbox[value=' + selectedOpdiv.toUpperCase() + ']').click()
-    // $('.topMapIntOpt input:checkbox[value="select-all-value"]').click()
-    $('.topMapIntOpt input:checkbox[value="select-all-value"]').click()
-    $('.topMapIntOpt input:checkbox[value=' + selectedOpdiv.toUpperCase() +']').click()
+    $('.topMapOpt input:checkbox[value="HHS"]').click()
+    // $('.topMapIntOpt input:checkbox[value=' + selectedOpdiv.toUpperCase() +']').click()
   }
 
 
