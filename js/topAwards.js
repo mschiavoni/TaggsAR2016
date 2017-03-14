@@ -29,8 +29,15 @@ function changeOpdivs() {
     opdivsOn.push(topOptions[i].value);
   }
 
+ 
   map2.setFilter('us_recipients', ["in", 'org_acronym'].concat(opdivsOn))
     return false;
+
+ if (opdivsOn.length === 1){
+  getLinkTop(topOptions)
+}
+
+
   }
 
 
@@ -40,6 +47,7 @@ function changeOpdivs() {
   $('input[name="topAwards"]').click(function(){
     var selectedRecipientType = this.id
 
+   
 
     if (selectedRecipientType === "topAwards"){
 
@@ -48,6 +56,9 @@ function changeOpdivs() {
       $('#topLegend').css("display", "block")
       $('.dropDown2').css("display", "none")
       $('.dropDown1').css("display", "block")
+      $('#topAwardsLink').css('display', 'block')
+      $('#topAwardsLink').css('display', 'block')
+      $('#topAwardsLinkInt').css('display', 'none')
 
     } else {
 
@@ -56,8 +67,33 @@ function changeOpdivs() {
       $('#topIntLegend').css("display", "block")
       $('.dropDown1').css("display", "none" )
       $('.dropDown2').css("display", "block" )
+      $('#topAwardsLink').css('display', 'none')
+      $('#topAwardsLinkInt').css('display', 'block')
+
     }
   });
+
+
+function getLinkTop(opdiv){
+ var linkAll = "Top50_Recipients_Discretionary_";
+ var linkInt =  "International_Recipients_Discretionary";
+ 
+//  if (type === "topAwards") {
+//   linkAll += "Discretionary_"
+
+// } else {
+//   linkAll += "Discretionary_"
+//   linkInt += "Discretionary_"
+// }
+
+linkAll = "Top50_Recipients_Discretionary_All/" + linkAll + opdiv.toUpperCase() + ".html"
+linkInt = "International_Recipients_Discretionary_All/" + linkInt + opdiv.toUpperCase() + ".html"
+
+
+$('#topAwardsLinkInt').attr("href", linkInt)
+$('#topAwardsLink').attr("href", linkAll)
+
+};
 
 
   function createMapBoxTop(){

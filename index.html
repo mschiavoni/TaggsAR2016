@@ -65,10 +65,10 @@
         }
         
         figure ul > li a:hover > span {
-           background: rgba(34, 34, 34, 0.18);
-       }      
+         background: rgba(34, 34, 34, 0.18);
+     }      
 
-       figure small {
+     figure small {
         display: block;
         font-weight: normal;
     }
@@ -189,7 +189,7 @@
             right: 4px;
             width: calc(100% + 4px);
         }
-/*<<<<<<< HEAD*/
+        /*<<<<<<< HEAD*/
     }
 
     figure ul li a,
@@ -211,185 +211,63 @@
     background: #dae3e6;
 }
 /*=======*/
-        
-        figure ul > li > ul > li > ul > li > ul > li {
-            border-top: 4px solid;
-            top: 50px;
-        }
-        
-        @media all and (max-width: 1200px) {
-            figure > ul > li > div > a {
-                width: 100%;
-                margin: 0 auto;
-            }
-            figure > ul > li > ul {
-                border-left: 4px solid;
-            }
-            figure > ul > li > ul > li {
-                border-top: 4px solid;
-                top: 50px;
-            }
-            figure > ul > li > div:after,
-            figure > ul > li > ul:after,
-            figure > ul > li > ul > li:first-of-type:before,
-            figure > ul > li > ul > li:last-of-type:before,
-            figure > ul > li > ul > li:before {
-                display: none;
-            }
-            figure > ul > li > ul > li.col-lg-2 {
-                padding-right: 0;
-                padding-left: 30px;
-            }
-            figure > ul > li > ul > li > a,
-            figure > ul > li > ul > li > ul {
-                top: -50px;
-            }
-            figure ul > li > ul > li.taggs-org-branch-end:last-of-type {
-                border-left: 4px solid #fff;
-                right: 4px;
-                width: calc(100% + 4px);
-            }
-        }
-        
-        figure ul li a,
-        figure > ul > li > ul,
-        figure > ul > li > ul:after,
-        figure > ul > li > div:after,
-        figure > ul > li > ul > li,
-        figure > ul > li > ul > li:before,
-        figure > ul > li > ul > li > ul,
-        figure > ul > li > ul > li > ul > li,
-        figure > ul > li ul > li > ul > li > ul,
-        figure ul > li > ul > li > ul > li > ul > li {
-	 border-color: #ffffff;
-   	 border-radius: 28px;
-        }
-        
-       #taggs-org-chart, figure ul > li > ul > li > ul > li.taggs-org-branch-end {
-            background: #ECEFF1;
-        }
-        
-        figure ul li a {
-            background: #2E3E4E;
-        }
-        
-        figure > ul > li > ul > li:nth-of-type(1) a {
-            background: #00adef;
-        }
-        
-        figure > ul > li > ul > li:nth-of-type(1) a:hover {
-            color: #00adef;
-        }
-        
-        figure > ul > li > ul > li:nth-of-type(2) a {
-            background: #3cb879;
-        }
-        
-        figure > ul > li > ul > li:nth-of-type(2) a:hover {
-            color: #3cb879;
-        }
-        
-        figure > ul > li > ul > li:nth-of-type(3) a {
-            background: #fcaf3b;
-        }
-        
-        figure > ul > li > ul > li:nth-of-type(3) a:hover {
-            color: #fcaf3b;
-        }
-        
-        figure > ul > li > ul > li:nth-of-type(4) a {
-            background: #6739b6;
-        }
-        
-        figure > ul > li > ul > li:nth-of-type(4) a:hover {
-            color: #bf75df;
-        }
-        
-        figure > ul > li > ul > li:nth-of-type(5) a {
-            background: #f15b26;
-        }
-        
-        figure > ul > li > ul > li:nth-of-type(5) a:hover {
-            color: #ef6544;
-        }
-        /* 1 step lighter */
-        
-        figure > ul > li > ul > li > a > span {
-            background: rgba(0, 0, 0, 0);
-        }
-        
-        figure > ul > li > ul > li > ul > li > a > span {
-    	    background: rgba(0, 0, 0, 0);
-	}
-	    
-        figure > ul > li > ul > li > ul > li > ul > li > a > span {
-            background: rgba(0, 0, 0, 0);
-        }
-        
-        figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span {
-            background: rgba(0, 0, 0, 0);
-        }
-        
-        [data-overlay="8"]:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: -webkit-gradient(linear, left center, right center, from(#FF001E), color-stop(100%, #0268b9));
-            background: -webkit-linear-gradient(left, #FF001E, #0268b9 160%);
-            background: linear-gradient(to right, #FF001E, #003dc7 40%);
-            opacity: 0.67;
-        }
-        
-        [data-overlay="6"]:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-image: linear-gradient(to bottom right, rgba(1, 87, 155, 1), rgba(198, 40, 40, 1));
-            opacity: 0.89;
-        }
-        
-        .image-bg div[class*="col-"] {
-            position: relative;
-            z-index: 3;
-        }
-        
-        .v-align-transform {
-            position: relative;
-            transform: translate3d(0, -50%, 0);
-            -webkit-transform: translate3d(0, -50%, 0);
-            top: 50%;
-            z-index: 2;
-        }
-        
-        .fs-vid-background {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: 2;
-        }
-        
-        .overlay .fs-vid-background::before {
-            position: absolute;
-            content: '';
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background: #222222;
-            opacity: 0.5;
-            z-index: 2;
-        }
->>>>>>> 9f8513905f79cb9ceec381fb48a92d1638a57636
+
+figure ul > li > ul > li > ul > li > ul > li {
+    border-top: 4px solid;
+    top: 50px;
+}
+
+@media all and (max-width: 1200px) {
+    figure > ul > li > div > a {
+        width: 100%;
+        margin: 0 auto;
+    }
+    figure > ul > li > ul {
+        border-left: 4px solid;
+    }
+    figure > ul > li > ul > li {
+        border-top: 4px solid;
+        top: 50px;
+    }
+    figure > ul > li > div:after,
+    figure > ul > li > ul:after,
+    figure > ul > li > ul > li:first-of-type:before,
+    figure > ul > li > ul > li:last-of-type:before,
+    figure > ul > li > ul > li:before {
+        display: none;
+    }
+    figure > ul > li > ul > li.col-lg-2 {
+        padding-right: 0;
+        padding-left: 30px;
+    }
+    figure > ul > li > ul > li > a,
+    figure > ul > li > ul > li > ul {
+        top: -50px;
+    }
+    figure ul > li > ul > li.taggs-org-branch-end:last-of-type {
+        border-left: 4px solid #fff;
+        right: 4px;
+        width: calc(100% + 4px);
+    }
+}
+
+figure ul li a,
+figure > ul > li > ul,
+figure > ul > li > ul:after,
+figure > ul > li > div:after,
+figure > ul > li > ul > li,
+figure > ul > li > ul > li:before,
+figure > ul > li > ul > li > ul,
+figure > ul > li > ul > li > ul > li,
+figure > ul > li ul > li > ul > li > ul,
+figure ul > li > ul > li > ul > li > ul > li {
+  border-color: #ffffff;
+  border-radius: 28px;
+}
+
+#taggs-org-chart, figure ul > li > ul > li > ul > li.taggs-org-branch-end {
+    background: #ECEFF1;
+}
 
 figure ul li a {
     background: #2E3E4E;
@@ -442,6 +320,128 @@ figure > ul > li > ul > li > a > span {
 
 figure > ul > li > ul > li > ul > li > a > span {
    background: rgba(0, 0, 0, 0);
+}
+
+figure > ul > li > ul > li > ul > li > ul > li > a > span {
+    background: rgba(0, 0, 0, 0);
+}
+
+figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span {
+    background: rgba(0, 0, 0, 0);
+}
+
+[data-overlay="8"]:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: -webkit-gradient(linear, left center, right center, from(#FF001E), color-stop(100%, #0268b9));
+    background: -webkit-linear-gradient(left, #FF001E, #0268b9 160%);
+    background: linear-gradient(to right, #FF001E, #003dc7 40%);
+    opacity: 0.67;
+}
+
+[data-overlay="6"]:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgba(1, 87, 155, 1), rgba(198, 40, 40, 1));
+    opacity: 0.89;
+}
+
+.image-bg div[class*="col-"] {
+    position: relative;
+    z-index: 3;
+}
+
+.v-align-transform {
+    position: relative;
+    transform: translate3d(0, -50%, 0);
+    -webkit-transform: translate3d(0, -50%, 0);
+    top: 50%;
+    z-index: 2;
+}
+
+.fs-vid-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.overlay .fs-vid-background::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #222222;
+    opacity: 0.5;
+    z-index: 2;
+}
+>>>>>>> 9f8513905f79cb9ceec381fb48a92d1638a57636
+
+figure ul li a {
+    background: #2E3E4E;
+}
+
+figure > ul > li > ul > li:nth-of-type(1) a {
+    background: #00adef;
+}
+
+figure > ul > li > ul > li:nth-of-type(1) a:hover {
+    color: #00adef;
+}
+
+figure > ul > li > ul > li:nth-of-type(2) a {
+    background: #3cb879;
+}
+
+figure > ul > li > ul > li:nth-of-type(2) a:hover {
+    color: #3cb879;
+}
+
+figure > ul > li > ul > li:nth-of-type(3) a {
+    background: #fcaf3b;
+}
+
+figure > ul > li > ul > li:nth-of-type(3) a:hover {
+    color: #fcaf3b;
+}
+
+figure > ul > li > ul > li:nth-of-type(4) a {
+    background: #6739b6;
+}
+
+figure > ul > li > ul > li:nth-of-type(4) a:hover {
+    color: #bf75df;
+}
+
+figure > ul > li > ul > li:nth-of-type(5) a {
+    background: #f15b26;
+}
+
+figure > ul > li > ul > li:nth-of-type(5) a:hover {
+    color: #ef6544;
+}
+/* 1 step lighter */
+
+figure > ul > li > ul > li > a > span {
+    background: rgba(0, 0, 0, 0);
+}
+
+figure > ul > li > ul > li > ul > li > a > span {
+ background: rgba(0, 0, 0, 0);
 }
 
 figure > ul > li > ul > li > ul > li > ul > li > a > span {
@@ -656,6 +656,10 @@ figure ul li a {
     color: #28dde0;
 }
 
+.footnote {
+    margin: 0px 40px 20px 0px;
+}
+
 </style>
 
 </head>
@@ -791,9 +795,9 @@ figure ul li a {
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 text-center">
 
-                     <div class="block_title_box ">
+                       <div class="block_title_box ">
                         <a href="http://taggs.hhs.gov">
-                         <div class="block_title">
+                           <div class="block_title">
                             <div class="lines line_lt"><span style="width: 100%;"></span></div>
                             <div class="lines line_l"><span style="height: 100%;"></span></div>
                             <div class="lines line_lb"><span style="width: 100%;"></span></div>
@@ -828,17 +832,17 @@ figure ul li a {
                                                 <span class="long-line"></span>
                                             </div>
                                             <p>The mission of the U.S. Department of Health and Human Services (HHS) is to enhance 
-                                               the health and well-being of Americans by providing for effective health and human services 
-                                               and by fostering sound, sustained advances in the sciences underlying medicine, public health,
-                                               and social services. In support of its mission, HHS manages hundreds of programs which awards 
-                                               approximately over 78,000 grants annually. Tracking and accounting for HHS grant spending and 
-                                               providing high quality data to the public and external stakeholders is critical to fulfilling 
-                                               HHS's mission and strategic goals. 
-                                           </p>
-                                       </div>
-                                   </div>
-                               </div>
-                               <div class="row">
+                                             the health and well-being of Americans by providing for effective health and human services 
+                                             and by fostering sound, sustained advances in the sciences underlying medicine, public health,
+                                             and social services. In support of its mission, HHS manages hundreds of programs which awards 
+                                             approximately over 78,000 grants annually. Tracking and accounting for HHS grant spending and 
+                                             providing high quality data to the public and external stakeholders is critical to fulfilling 
+                                             HHS's mission and strategic goals. 
+                                         </p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                     <div class="taggs-facts-content">
                                         <div class="heading">
@@ -954,783 +958,783 @@ figure ul li a {
                                         tools to customize and display information, as well as download graphs and data.
                                     </p>
                                     <p class="heading-text white">
-                                       Tracking Accountability in Government Grants System (TAGGS) The Tracking Accountability in Government Grants 
-                                       System (TAGGS) is a robust reporting tool developed by the Office of Grants and Acquisition Policy and 
-                                       Accountability (OGAPA) in 1995. The TAGGS database is a central repository for grants awarded by the HHS OPDIVs,
-                                       and STAFFDIVs. In addition to award data that is submitted twice a week by the OPDIVs, TAGGS also receives 
-                                       recipients’ demographic information, and the grant program description information from the Catalog of Federal 
-                                       Domestic Assistance (CFDA) website.  </p>
+                                     Tracking Accountability in Government Grants System (TAGGS) The Tracking Accountability in Government Grants 
+                                     System (TAGGS) is a robust reporting tool developed by the Office of Grants and Acquisition Policy and 
+                                     Accountability (OGAPA) in 1995. The TAGGS database is a central repository for grants awarded by the HHS OPDIVs,
+                                     and STAFFDIVs. In addition to award data that is submitted twice a week by the OPDIVs, TAGGS also receives 
+                                     recipients’ demographic information, and the grant program description information from the Catalog of Federal 
+                                     Domestic Assistance (CFDA) website.  </p>
 
-                                   <p class="heading-text white">In addition to grants, HHS agencies also provide Financial Assistance data to TAGGS. CMS, NIH and HRSA made 7,820 financial assistance awards totaling over $674 billion in Medicare outlays and loan repayments.
+                                     <p class="heading-text white">In addition to grants, HHS agencies also provide Financial Assistance data to TAGGS. CMS, NIH and HRSA made 7,820 financial assistance awards totaling over $674 billion in Medicare outlays and loan repayments.
 
 
-                                   </p>
-                                   <p class="heading-text white">
-                                       HHS remains committed to increasing transparency of federal funds and to show where and how the money is spent. 
-                                       Through the TAGGS public website (taggs.hhs.gov) potential and current grant recipients, other executive agencies,
-                                       congressional offices, HHS staff, and other interested parties can access the site for a variety of informational
-                                       purposes. Commonly searched data fields include: Congressional District, program name, recipient name, recipient 
-                                       location, awarding OPDIV, transaction amount and fiscal year.                                 
-                                   </p>
-                                   <p class="heading-text white">
-                                       The annual report data reflects award transactions made during FY 2016, and may not exactly correspond to the
-                                       HHS FY 2016 budget and accounting records based on the following assumptions:                                
-                                   </p>
-                                   <ul class="list list--secondary">
-                                    <li>
-                                        <i class="taggsicon-check"></i>
-                                        <p class="heading-text white">1. Award data may include de-obligations of prior years in addition to current year funds; 
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <i class="taggsicon-check"></i>
-                                        <p class="heading-text white">2. Costs of personnel in lieu of cash are recorded as personnel costs in accounting records; and 
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <i class="taggsicon-check"></i>
-                                        <p class="heading-text white">3. Joint agency programs are only recorded if they originated at HHS. 
-                                        </p>
-                                    </li>
-                                </ul>
+                                     </p>
+                                     <p class="heading-text white">
+                                         HHS remains committed to increasing transparency of federal funds and to show where and how the money is spent. 
+                                         Through the TAGGS public website (taggs.hhs.gov) potential and current grant recipients, other executive agencies,
+                                         congressional offices, HHS staff, and other interested parties can access the site for a variety of informational
+                                         purposes. Commonly searched data fields include: Congressional District, program name, recipient name, recipient 
+                                         location, awarding OPDIV, transaction amount and fiscal year.                                 
+                                     </p>
+                                     <p class="heading-text white">
+                                         The annual report data reflects award transactions made during FY 2016, and may not exactly correspond to the
+                                         HHS FY 2016 budget and accounting records based on the following assumptions:                                
+                                     </p>
+                                     <ul class="list list--secondary">
+                                        <li>
+                                            <i class="taggsicon-check"></i>
+                                            <p class="heading-text white">1. Award data may include de-obligations of prior years in addition to current year funds; 
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <i class="taggsicon-check"></i>
+                                            <p class="heading-text white">2. Costs of personnel in lieu of cash are recorded as personnel costs in accounting records; and 
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <i class="taggsicon-check"></i>
+                                            <p class="heading-text white">3. Joint agency programs are only recorded if they originated at HHS. 
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="opdiv-tables medium-padding120 bg-border-color contacts-shadow">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                                <div class="heading align-center">
-                                    <h4 class="h1 heading-title">2016 OPDIV Totals and Changes</h4>
-                                    <div class="heading-line">
-                                        <span class="short-line"></span>
-                                        <span class="long-line"></span>
-                                    </div>
-                                    <p class="heading-text">The animated charts below present different views of HHS grant spending in FY 2016.  
-                                       Click on a button to review each chart. 
-                                   </p>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="opdiv-tables medium-padding120 bg-border-color contacts-shadow">
                         <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                                    <div class="heading align-center">
+                                        <h4 class="h1 heading-title">2016 OPDIV Totals and Changes</h4>
+                                        <div class="heading-line">
+                                            <span class="short-line"></span>
+                                            <span class="long-line"></span>
+                                        </div>
+                                        <p class="heading-text">The animated charts below present different views of HHS grant spending in FY 2016.  
+                                         Click on a button to review each chart. 
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="row">
+                            <div class="container">
+                            </div>
                         </div>
-                    </div>
-                    <div id="interactiveFreeFormMain">
-                        <style type='text/css'>
-                            #taggs-chartFrame {
-                                width: 1200px;
-                                height: 750px;
-                                -webkit-transition: height ease-in-out 1s;
-                                -moz-transition: height ease-in-out 1s;
-                                -o-transition: height ease-in-out 1s;
-                                -ms-transition: height ease-in-out 1s;
+                        <div id="interactiveFreeFormMain">
+                            <style type='text/css'>
+                                #taggs-chartFrame {
+                                    width: 1200px;
+                                    height: 750px;
+                                    -webkit-transition: height ease-in-out 1s;
+                                    -moz-transition: height ease-in-out 1s;
+                                    -o-transition: height ease-in-out 1s;
+                                    -ms-transition: height ease-in-out 1s;
+                                }
+
+                                #taggs-chart {
+                                    position: relative;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+
+                                #taggs-error {}
+
+                                #taggs-error p {
+                                    text-align: center;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    margin: 10px;
+                                    border: solid 1px #CCC;
+                                    background: #ffd;
+                                    padding: 10px;
+                                }
+
+                                #taggs-error a {
+                                    text-decoration: underline;
+                                }
+
+                                #taggs-chartCanvas {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    z-index: 10;
+                                    width: 100%;
+                                    height: 100%;
+                                    overflow: hidden;
+                                    margin-top: 80px;
+                                }
+
+                                #taggs-chartCanvas svg {
+                                    height: 100%;
+                                    overflow: hidden;
+                                    padding-top: 50px;
+                                    padding-left: 20px;
+                                    config/ assets.yml settings.yml
+                                }
+
+                                #taggs-tooltipContainer {
+                                    position: absolute;
+                                    bottom: 0;
+                                    width: 230px;
+                                    left: -125px;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    padding: 10px;
+                                    border-radius: 3px;
+                                    background: rgba(255, 255, 255, 0.9);
+                                    color: #000;
+                                    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+                                    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+                                    border: 1px solid rgba(200, 200, 200, 0.85);
+                                    text-align: center;
+                                }
+
+                                #taggs-tooltip {
+                                    text-align: center;
+                                    z-index: 1000;
+                                    position: absolute;
+                                    display: none;
+                                }
+
+                                #taggs-tooltip .taggs-tail {
+                                    position: absolute;
+                                    bottom: -8px;
+                                    left: 105px;
+                                    width: 40px;
+                                    height: 8px;
+                                    background: url(img/endtail-white.png) 50% 0%;
+                                }
+
+                                #taggs-tooltip .taggs-department {
+                                    text-transform: uppercase;
+                                    text-align: left;
+                                    font-size: 10px;
+                                    margin-bottom: 2px;
+                                    color: #666;
+                                    text-align: center;
+                                }
+
+                                #taggs-tooltip .taggs-rule {
+                                    height: 1px;
+                                    margin: 1px auto 3px;
+                                    background: #ddd;
+                                    width: 130px;
+                                }
+
+                                #taggs-tooltip .taggs-discretion {
+                                    color: #666;
+                                    font-size: 11px;
+                                    text-align: center;
+                                    font-style: italic;
+                                }
+
+                                #taggs-tooltip .taggs-name {
+                                    text-align: left;
+                                    font-size: 13px;
+                                    /*  width:170px;*/
+                                    text-align: center;
+                                }
+
+                                #taggs-tooltip .taggs-value {
+                                    /*  position:absolute;*/
+                                    text-align: center;
+                                    right: 10px;
+                                    top: 28px;
+                                    font-size: 16px;
+                                    /*  width:100px;*/
+                                    text-align: center;
+                                    overflow: hidden;
+                                    font-weight: bold;
+                                }
+
+                                #taggs-tooltip .taggs-awards {
+                                    padding-left: 10px;
+                                    font-size: 16px;
+                                    text-align: right;
+                                    overflow: hidden;
+                                    font-weight: bold;
+                                    color: #666;
+                                    text-align: center;
+                                    display: inline;
+                                }
+
+                                #taggs-tooltip .taggs-change {
+                                    padding-left: 10px;
+                                    font-size: 16px;
+                                    text-align: right;
+                                    overflow: hidden;
+                                    font-weight: bold;
+                                    color: #666;
+                                    text-align: center;
+                                    display: inline;
+                                }
+
+                                #taggs-tooltip .taggs-valuesContainer {
+                                    padding-top: 7px;
+                                }
+
+                                #taggs-tooltip.taggs-minus .taggs-change {
+                                    color: #900;
+                                }
+
+                                #taggs-tooltip.taggs-plus .taggs-change {
+                                    color: #090;
+                                }
+
+                                .taggs-navBar {
+                                    border-top: solid 1px #DDD;
+                                    padding: 0 0 0;
+                                    z-index: 100;
+                                    position: absolute;
+                                    width: 1000px;			
+                                    border-radius: 22px;
+                                }
+
+                                .taggs-navigation {
+                                 margin-left: 300px;
+                             }
+
+                             .taggs-navigation li {
+                                color: #757575;
+                                font-size: 17px;
+                                cursor: pointer;
+                                float: left;
+                                padding: 12px 22px;
+                                border-top: solid 1px #CCC;
+                                border-bottom: solid 1px #CCC;
+                                border-left: solid 1px #CCC;
+                                background: #f9f9f9;
+                                margin: 0 0;
+                                border-radius: 50px;
+                                margin-left: 5px;
+
                             }
 
-                            #taggs-chart {
-                                position: relative;
-                                width: 100%;
-                                height: 100%;
+                            .taggs-navigation li:first-of-type {
+                                border-radius: 4px 0 0 4px;
+                                border-radius: 50px;
+                                margin-left: 5px;
                             }
 
-                            #taggs-error {}
-
-                            #taggs-error p {
-                                text-align: center;
-                                font-size: 16px;
-                                line-height: 20px;
-                                margin: 10px;
-                                border: solid 1px #CCC;
-                                background: #ffd;
-                                padding: 10px;
+                            .taggs-navigation li:last-of-type {
+                                border-right: solid 1px #CCC;
+                                border-radius: 0 4px 4px 0;
+                                border-radius: 50px;
+                                margin-left: 5px;
                             }
 
-                            #taggs-error a {
-                                text-decoration: underline;
-                            }
-
-                            #taggs-chartCanvas {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                z-index: 10;
-                                width: 100%;
-                                height: 100%;
-                                overflow: hidden;
-                                margin-top: 80px;
-                            }
-
-                            #taggs-chartCanvas svg {
-                                height: 100%;
-                                overflow: hidden;
-                                padding-top: 50px;
-                                padding-left: 20px;
-                                config/ assets.yml settings.yml
-                            }
-
-                            #taggs-tooltipContainer {
-                                position: absolute;
-                                bottom: 0;
-                                width: 230px;
-                                left: -125px;
-                                font-size: 12px;
-                                line-height: 16px;
-                                padding: 10px;
-                                border-radius: 3px;
-                                background: rgba(255, 255, 255, 0.9);
+                            .taggs-navigation li.selected {
                                 color: #000;
-                                box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-                                -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-                                border: 1px solid rgba(200, 200, 200, 0.85);
-                                text-align: center;
+                                background: #e9e9e9;
+                                border-color: #AAA;
+                                box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+                                border-radius: 50px;
                             }
 
-                            #taggs-tooltip {
-                                text-align: center;
-                                z-index: 1000;
+                            #taggs-categoryBrowser li {
+                                cursor: pointer;
+                                background-image: none;
+                                background-color: none;
+                                border-bottom: solid 1px #f0f0f0;
+                                padding: 3px;
+                                margin: 0 0 1px 0;
+                            }
+
+                            #taggs-categoryBrowser li:hover {
+                                background-color: #f3f3f3;
+                            }
+
+                            span.noWrap.feedback {
+                                white-space: normal;
+                            }
+
+                            #interactiveFooter {
+                                border-top: 1px solid #DDDDDD;
+                                margin-top: 10px;
+                                padding-top: 12px !important;
+                            }
+
+                            div.storyHeader h1 {
+                                font-size: 26px!important;
+                                margin-bottom: 4px!important;
+                                margin-top: 3px!important;
+                            }
+
+                            .ledeStory div.storySummary .summary {
+                                line-height: 25px;
+                                font-size: 15px;
+                            }
+
+                            .ledeStory .insetHFullWidth .storyHeader .dateline {
+                                line-height: 2.4em;
+                                margin-bottom: 3px;
+                                margin-top: 0px;
+                            }
+
+                            .insetHFullWidth #articleToolsTop {
+                                margin-bottom: 0;
+                                margin-top: 0px;
+                            }
+
+                            #taggs-overlays {
+                                position: absolute;
+                                z-index: 40;
+                            }
+
+                            .taggs-overlay {
                                 position: absolute;
                                 display: none;
-                            }
-
-                            #taggs-tooltip .taggs-tail {
-                                position: absolute;
-                                bottom: -8px;
-                                left: 105px;
-                                width: 40px;
-                                height: 8px;
-                                background: url(img/endtail-white.png) 50% 0%;
-                            }
-
-                            #taggs-tooltip .taggs-department {
-                                text-transform: uppercase;
-                                text-align: left;
-                                font-size: 10px;
-                                margin-bottom: 2px;
                                 color: #666;
+                            }
+
+                            .taggs-overlay h5 {
+                                font-size: 16px;
+                                line-height: 16px;
+                                margin-bottom: 7px;
+                            }
+
+                            .taggs-overlay p {
+                                margin: 0;
+                                font-size: 14px;
+                                line-height: 1.45em;
+                            }
+
+                            .taggs-overlaySVG {
+                                width: 970px;
+                                height: 850px;
+                                position: absolute;
+                                z-index: 0;
+                            }
+
+                            .taggs-overview {
+                                position: absolute;
+                                width: 275px;
+                                top: 130px;
+                                left: 10px;
+                            }
+
+                            .taggs-overview p {
+                                font-size: 13px;
+                            }
+
+                            .taggs-aside {
+                                position: absolute;
+                                width: 125px;
+                                left: 1075px;
+                                top: 297px;
                                 text-align: center;
                             }
 
-                            #taggs-tooltip .taggs-rule {
-                                height: 1px;
-                                margin: 1px auto 3px;
-                                background: #ddd;
+                            .taggs-increasesLabel {
+                                position: absolute;
+                                top: 155px;
+                                left: 725px;
+                                width: 100px;
+                                border-top: dashed 1px rgba(0, 0, 0, 0.2);
+                            }
+
+                            .taggs-increasesLabel span {
+                                position: absolute;
+                                right: -105px;
+                                top: -10px;
+                                width: 100px;
+                            }
+
+                            .taggs-decreasesLabel {
+                                position: absolute;
+                                top: 670px;
+                                left: 725px;
+                                width: 100px;
+                                border-top: dashed 1px rgba(0, 0, 0, 0.2);
+                            }
+
+                            .taggs-decreasesLabel span {
+                                position: absolute;
+                                right: -105px;
+                                top: -10px;
+                                width: 100px;
+                            }
+
+                            #taggs-deficitCircle {
+                                position: absolute;
+                                width: 600px;
+                                height: 600px;
+                                top: 0px;
+                                left: 940px;
+                            }
+
+                            .taggs-deficitCircle {
+                                stroke-width: 7;
+                                stroke: #acceff;
+                                fill: none;
+                            }
+
+                            #taggs-colorKey, #taggs-colorKey2, #taggs-colorKey3 {
+                                position: absolute;
+                                width: 200px;
+                                margin: 0;
+                                padding: 0;
+                                overflow: hidden;
+                            }
+
+                            #taggs-colorKey {
+                                top: 250px;
+                                left: 0px;
+                            }
+                            #taggs-colorKey2 {
+                                top: 390px;
+                                left: -62px;
+                            }
+                            #taggs-colorKey3 {
+                                left: 1300px;
+                                bottom: -820px;
+                            }
+
+                            #taggs-sizeKey {
+                                position: relative;
+                                height: 110px;
+                                width: 200px;
+                            }
+
+                            #taggs-scaleKey {
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                            }
+
+                            .taggs-circleKeyLabel {
+                                position: absolute;
+                                border-top: solid 1px #DDD;
+                                width: 40px;
+                            }
+
+                            #taggs-sizeKey .taggs-circleKeyLabel span {
+                                font-size: 10px;
+                                color: #999;
+                                position: absolute;
+                                display: block;
+                                left: 45px;
+                                top: -8px;
+                                width: 80px;
+                                z-index: 100;
+                            }
+
+                            .taggs-scaleKeyCircle {
+                                stroke-width: 1;
+                                stroke: #999;
+                                stroke-dasharray: 2 2;
+                                fill: none;
+                            }
+
+                            #taggs-colorKey ul, #taggs-colorKey2 ul, #taggs-colorKey3 ul {
+                                margin: 0;
+                                padding: 0;
+                            }
+
+                            #taggs-colorKey p, #taggs-colorKey2 p, #taggs-colorKey3 p{
+                                margin-bottom: 8px;
+                            }
+
+                            #taggs-colorKey li, #taggs-colorKey2 li, #taggs-colorKey3 li {
+                                background-image: none;
+                                padding: 0;
+                                margin: 0;
+                                float: left;
+                                display: block;
+                                height: 100%;
+                            }
+
+                            .taggs-colorSwatches {
+                                width: 100%;
+                                height: 10px;
+                            }
+
+                            .taggs-colorSwatches li {
+                                width: 16%;
+                                border-right: solid white 1px;
+                            }
+
+                            .taggs-colorTicks {
+                                height: 6px;
+                            }
+
+                            .taggs-colorTicks li {
+                                width: 16%;
+                                border-right: solid #CCC 1px;
+                            }
+
+                            .taggs-colorLabels {
+                                margin-top: 3px;
+                                height: 20px;
+                                position: relative;
+                                left: 8%;
+                            }
+
+                            .taggs-colorLabels li {
+                                width: 16%;
+                                text-align: center;
+                                font-size: 10px;
+                                line-height: 1em;
+                                padding: 4px 0 0 0!important;
+                                margin: 0;
+                            }
+
+                            #taggs-mandatoryOverlay {}
+
+                            .taggs-discretionaryExplainer {
+                                text-align: center;
+                                left: 550px;
+                                top: 100px;
+                                position: absolute;
+                                width: 340px;
+                            }
+
+                            .taggs-mandatoryExplainer {
+                                text-align: center;
+                                left: 150px;
+                                top: 110px;
+                                position: absolute;
+                                width: 340px;
+                            }
+
+                            .taggs-discretionaryAside {
+                                position: absolute;
+                                left: 960px;
+                                top: 120px;
                                 width: 130px;
                             }
 
-                            #taggs-tooltip .taggs-discretion {
-                                color: #666;
-                                font-size: 11px;
+                            .taggs-mandatoryAside {
+                                position: absolute;
+                                left: -60px;
+                                top: 120px;
+                                width: 140px;
+                            }
+
+                            #taggs-discretionaryIntro {
+                                top: 120px;
+                                left: 10px;
+                                width: 500px;
+                                position: absolute;
+                            }
+
+                            .taggs-discretionaryTickLabel {
+                                width: 200px;
+                                position: absolute;
+                                left: 10px;
+                            }
+
+                            .taggs-discretionaryTickLabel p {
+                                position: relative;
+                                top: -6px;
+                                font-size: 10px;
+                            }
+
+                            .taggs-discretionaryTick {
+                                position: absolute;
+                                border-top: dashed 1px #565656;
+                                left: 0px;
+                                width: 1120px;
+                            }
+
+                            .taggs-discretionaryTick p {
+                                font-size: 10px;
+                                text-align: left;
+                                position: absolute;
+                                left: -50px;
+                                width: 40px;
+                                top: -8px;
+                            }
+
+                            .taggs-discretionaryZeroTick {
+                                border-top: solid 1px #AAA;
+                                left: 10px;
+                                width: 950px;
+                            }
+
+                            .taggs-departmentAnnotation {
+                                position: absolute;
+                                z-index: 1000;
+                            }
+
+                            .taggs-departmentAnnotation p {
+                                font-size: 12px;
+                                line-height: 1.2em;
                                 text-align: center;
+                                margin: 0;
+                                padding: 0;
+                            }
+
+                            .taggs-departmentAnnotation p.total {
+                                font-weight: bold;
+                                margin-bottom: 0.3em;
+                                color: #000;
+                            }
+
+                            .taggs-departmentAnnotation p.total {
+                                font-weight: bold;
+                            }
+
+                            .taggs-departmentAnnotation.taggs-row0 p {
+                                font-size: 14px;
+                            }
+
+                            .taggs-departmentAnnotation.taggs-row0 p.total {
+                                font-size: 16px;
+                            }
+
+                            .taggs-departmentAnnotation.taggs-row1 p {
+                                font-size: 11px;
+                            }
+
+                            .taggs-departmentAnnotation.taggs-row1 p.total {
+                                font-size: 13px;
+                            }
+
+                            .taggs-departmentAnnotation.taggs-row2 p {
+                                font-size: 10px;
+                            }
+
+                            .taggs-departmentAnnotation.taggs-row2 p.total {
+                                font-size: 12px;
+                            }
+
+                            .taggs-departmentAnnotation.taggs-row3 p {
+                                font-size: 10px;
+                            }
+
+                            .taggs-departmentAnnotation.taggs-row3 p.total {
+                                font-size: 12px;
+                            }
+
+                            .taggs-departmentAnnotation.taggs-row4 p {
+                                font-size: 10px;
+                            }
+
+                            .taggs-departmentAnnotation.taggs-row4 p.total {
+                                font-size: 12px;
+                            }
+
+                            #taggs-departmentOverlay p.taggs-emptyCircleLabel {
+                                position: absolute;
+                                left: 125px;
+                                top: 280px;
+                                width: 80px;
+                                text-align: center;
+                                color: #999;
+                                font-size: 11px;
+                                line-height: 1.45em;
                                 font-style: italic;
                             }
 
-                            #taggs-tooltip .taggs-name {
-                                text-align: left;
-                                font-size: 13px;
-                                /*  width:170px;*/
-                                text-align: center;
+                            .change-decrease3 {
+                                background-color: #ca4445;
                             }
 
-                            #taggs-tooltip .taggs-value {
-                                /*  position:absolute;*/
-                                text-align: center;
-                                right: 10px;
-                                top: 28px;
-                                font-size: 16px;
-                                /*  width:100px;*/
-                                text-align: center;
-                                overflow: hidden;
-                                font-weight: bold;
+                            .change-decrease2 {
+                                background-color: #ee9586;
                             }
 
-                            #taggs-tooltip .taggs-awards {
-                                padding-left: 10px;
-                                font-size: 16px;
-                                text-align: right;
-                                overflow: hidden;
-                                font-weight: bold;
-                                color: #666;
-                                text-align: center;
-                                display: inline;
+                            .change-decrease1 {
+                                background-color: #ffd7d3;
                             }
 
-                            #taggs-tooltip .taggs-change {
-                                padding-left: 10px;
-                                font-size: 16px;
-                                text-align: right;
-                                overflow: hidden;
-                                font-weight: bold;
-                                color: #666;
-                                text-align: center;
-                                display: inline;
+                            .change-same {
+                                background-color: #c5d8de;
                             }
 
-                            #taggs-tooltip .taggs-valuesContainer {
-                                padding-top: 7px;
+                            .change-increase1 {
+                                background-color: #8EC6F5;
                             }
 
-                            #taggs-tooltip.taggs-minus .taggs-change {
-                                color: #900;
+                            .change-increase2 {
+                                background-color: #51a7ff;
                             }
 
-                            #taggs-tooltip.taggs-plus .taggs-change {
-                                color: #090;
+                            .change-increase3 {
+                                background-color: #01579b;
                             }
 
-                            .taggs-navBar {
-                                border-top: solid 1px #DDD;
-                                padding: 0 0 0;
-                                z-index: 100;
-                                position: absolute;
-                                width: 1000px;			
-                                border-radius: 22px;
+                            .change-decrease3 span.label {
+                                color: #eeb0a2;
                             }
 
-                            .taggs-navigation {
-                               margin-left: 300px;
-                           }
-
-                           .taggs-navigation li {
-                            color: #757575;
-                            font-size: 17px;
-                            cursor: pointer;
-                            float: left;
-                            padding: 12px 22px;
-                            border-top: solid 1px #CCC;
-                            border-bottom: solid 1px #CCC;
-                            border-left: solid 1px #CCC;
-                            background: #f9f9f9;
-                            margin: 0 0;
-                            border-radius: 50px;
-                            margin-left: 5px;
-
-                        }
-
-                        .taggs-navigation li:first-of-type {
-                            border-radius: 4px 0 0 4px;
-                            border-radius: 50px;
-                            margin-left: 5px;
-                        }
-
-                        .taggs-navigation li:last-of-type {
-                            border-right: solid 1px #CCC;
-                            border-radius: 0 4px 4px 0;
-                            border-radius: 50px;
-                            margin-left: 5px;
-                        }
-
-                        .taggs-navigation li.selected {
-                            color: #000;
-                            background: #e9e9e9;
-                            border-color: #AAA;
-                            box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
-                            border-radius: 50px;
-                        }
-
-                        #taggs-categoryBrowser li {
-                            cursor: pointer;
-                            background-image: none;
-                            background-color: none;
-                            border-bottom: solid 1px #f0f0f0;
-                            padding: 3px;
-                            margin: 0 0 1px 0;
-                        }
-
-                        #taggs-categoryBrowser li:hover {
-                            background-color: #f3f3f3;
-                        }
-
-                        span.noWrap.feedback {
-                            white-space: normal;
-                        }
-
-                        #interactiveFooter {
-                            border-top: 1px solid #DDDDDD;
-                            margin-top: 10px;
-                            padding-top: 12px !important;
-                        }
-
-                        div.storyHeader h1 {
-                            font-size: 26px!important;
-                            margin-bottom: 4px!important;
-                            margin-top: 3px!important;
-                        }
-
-                        .ledeStory div.storySummary .summary {
-                            line-height: 25px;
-                            font-size: 15px;
-                        }
-
-                        .ledeStory .insetHFullWidth .storyHeader .dateline {
-                            line-height: 2.4em;
-                            margin-bottom: 3px;
-                            margin-top: 0px;
-                        }
-
-                        .insetHFullWidth #articleToolsTop {
-                            margin-bottom: 0;
-                            margin-top: 0px;
-                        }
-
-                        #taggs-overlays {
-                            position: absolute;
-                            z-index: 40;
-                        }
-
-                        .taggs-overlay {
-                            position: absolute;
-                            display: none;
-                            color: #666;
-                        }
-
-                        .taggs-overlay h5 {
-                            font-size: 16px;
-                            line-height: 16px;
-                            margin-bottom: 7px;
-                        }
-
-                        .taggs-overlay p {
-                            margin: 0;
-                            font-size: 14px;
-                            line-height: 1.45em;
-                        }
-
-                        .taggs-overlaySVG {
-                            width: 970px;
-                            height: 850px;
-                            position: absolute;
-                            z-index: 0;
-                        }
-
-                        .taggs-overview {
-                            position: absolute;
-                            width: 275px;
-                            top: 130px;
-                            left: 10px;
-                        }
-
-                        .taggs-overview p {
-                            font-size: 13px;
-                        }
-
-                        .taggs-aside {
-                            position: absolute;
-                            width: 125px;
-                            left: 1075px;
-                            top: 297px;
-                            text-align: center;
-                        }
-
-                        .taggs-increasesLabel {
-                            position: absolute;
-                            top: 155px;
-                            left: 725px;
-                            width: 100px;
-                            border-top: dashed 1px rgba(0, 0, 0, 0.2);
-                        }
-
-                        .taggs-increasesLabel span {
-                            position: absolute;
-                            right: -105px;
-                            top: -10px;
-                            width: 100px;
-                        }
-
-                        .taggs-decreasesLabel {
-                            position: absolute;
-                            top: 670px;
-                            left: 725px;
-                            width: 100px;
-                            border-top: dashed 1px rgba(0, 0, 0, 0.2);
-                        }
-
-                        .taggs-decreasesLabel span {
-                            position: absolute;
-                            right: -105px;
-                            top: -10px;
-                            width: 100px;
-                        }
-
-                        #taggs-deficitCircle {
-                            position: absolute;
-                            width: 600px;
-                            height: 600px;
-                            top: 0px;
-                            left: 940px;
-                        }
-
-                        .taggs-deficitCircle {
-                            stroke-width: 7;
-                            stroke: #acceff;
-                            fill: none;
-                        }
-
-                        #taggs-colorKey, #taggs-colorKey2, #taggs-colorKey3 {
-                            position: absolute;
-                            width: 200px;
-                            margin: 0;
-                            padding: 0;
-                            overflow: hidden;
-                        }
-
-                        #taggs-colorKey {
-                            top: 250px;
-                            left: 0px;
-                        }
-                        #taggs-colorKey2 {
-                            top: 390px;
-                            left: -62px;
-                        }
-                        #taggs-colorKey3 {
-                            left: 1300px;
-                            bottom: -820px;
-                        }
-
-                        #taggs-sizeKey {
-                            position: relative;
-                            height: 110px;
-                            width: 200px;
-                        }
-
-                        #taggs-scaleKey {
-                            width: 100%;
-                            height: 100%;
-                            position: absolute;
-                        }
-
-                        .taggs-circleKeyLabel {
-                            position: absolute;
-                            border-top: solid 1px #DDD;
-                            width: 40px;
-                        }
-
-                        #taggs-sizeKey .taggs-circleKeyLabel span {
-                            font-size: 10px;
-                            color: #999;
-                            position: absolute;
-                            display: block;
-                            left: 45px;
-                            top: -8px;
-                            width: 80px;
-                            z-index: 100;
-                        }
-
-                        .taggs-scaleKeyCircle {
-                            stroke-width: 1;
-                            stroke: #999;
-                            stroke-dasharray: 2 2;
-                            fill: none;
-                        }
-
-                        #taggs-colorKey ul, #taggs-colorKey2 ul, #taggs-colorKey3 ul {
-                            margin: 0;
-                            padding: 0;
-                        }
-
-                        #taggs-colorKey p, #taggs-colorKey2 p, #taggs-colorKey3 p{
-                            margin-bottom: 8px;
-                        }
-
-                        #taggs-colorKey li, #taggs-colorKey2 li, #taggs-colorKey3 li {
-                            background-image: none;
-                            padding: 0;
-                            margin: 0;
-                            float: left;
-                            display: block;
-                            height: 100%;
-                        }
-
-                        .taggs-colorSwatches {
-                            width: 100%;
-                            height: 10px;
-                        }
-
-                        .taggs-colorSwatches li {
-                            width: 16%;
-                            border-right: solid white 1px;
-                        }
-
-                        .taggs-colorTicks {
-                            height: 6px;
-                        }
-
-                        .taggs-colorTicks li {
-                            width: 16%;
-                            border-right: solid #CCC 1px;
-                        }
-
-                        .taggs-colorLabels {
-                            margin-top: 3px;
-                            height: 20px;
-                            position: relative;
-                            left: 8%;
-                        }
-
-                        .taggs-colorLabels li {
-                            width: 16%;
-                            text-align: center;
-                            font-size: 10px;
-                            line-height: 1em;
-                            padding: 4px 0 0 0!important;
-                            margin: 0;
-                        }
-
-                        #taggs-mandatoryOverlay {}
-
-                        .taggs-discretionaryExplainer {
-                            text-align: center;
-                            left: 550px;
-                            top: 100px;
-                            position: absolute;
-                            width: 340px;
-                        }
-
-                        .taggs-mandatoryExplainer {
-                            text-align: center;
-                            left: 150px;
-                            top: 110px;
-                            position: absolute;
-                            width: 340px;
-                        }
-
-                        .taggs-discretionaryAside {
-                            position: absolute;
-                            left: 960px;
-                            top: 120px;
-                            width: 130px;
-                        }
-
-                        .taggs-mandatoryAside {
-                            position: absolute;
-                            left: -60px;
-                            top: 120px;
-                            width: 140px;
-                        }
-
-                        #taggs-discretionaryIntro {
-                            top: 120px;
-                            left: 10px;
-                            width: 500px;
-                            position: absolute;
-                        }
-
-                        .taggs-discretionaryTickLabel {
-                            width: 200px;
-                            position: absolute;
-                            left: 10px;
-                        }
-
-                        .taggs-discretionaryTickLabel p {
-                            position: relative;
-                            top: -6px;
-                            font-size: 10px;
-                        }
-
-                        .taggs-discretionaryTick {
-                            position: absolute;
-                            border-top: dashed 1px #565656;
-                            left: 0px;
-                            width: 1120px;
-                        }
-
-                        .taggs-discretionaryTick p {
-                            font-size: 10px;
-                            text-align: left;
-                            position: absolute;
-                            left: -50px;
-                            width: 40px;
-                            top: -8px;
-                        }
-
-                        .taggs-discretionaryZeroTick {
-                            border-top: solid 1px #AAA;
-                            left: 10px;
-                            width: 950px;
-                        }
-
-                        .taggs-departmentAnnotation {
-                            position: absolute;
-                            z-index: 1000;
-                        }
-
-                        .taggs-departmentAnnotation p {
-                            font-size: 12px;
-                            line-height: 1.2em;
-                            text-align: center;
-                            margin: 0;
-                            padding: 0;
-                        }
-
-                        .taggs-departmentAnnotation p.total {
-                            font-weight: bold;
-                            margin-bottom: 0.3em;
-                            color: #000;
-                        }
-
-                        .taggs-departmentAnnotation p.total {
-                            font-weight: bold;
-                        }
-
-                        .taggs-departmentAnnotation.taggs-row0 p {
-                            font-size: 14px;
-                        }
-
-                        .taggs-departmentAnnotation.taggs-row0 p.total {
-                            font-size: 16px;
-                        }
-
-                        .taggs-departmentAnnotation.taggs-row1 p {
-                            font-size: 11px;
-                        }
-
-                        .taggs-departmentAnnotation.taggs-row1 p.total {
-                            font-size: 13px;
-                        }
-
-                        .taggs-departmentAnnotation.taggs-row2 p {
-                            font-size: 10px;
-                        }
-
-                        .taggs-departmentAnnotation.taggs-row2 p.total {
-                            font-size: 12px;
-                        }
-
-                        .taggs-departmentAnnotation.taggs-row3 p {
-                            font-size: 10px;
-                        }
-
-                        .taggs-departmentAnnotation.taggs-row3 p.total {
-                            font-size: 12px;
-                        }
-
-                        .taggs-departmentAnnotation.taggs-row4 p {
-                            font-size: 10px;
-                        }
-
-                        .taggs-departmentAnnotation.taggs-row4 p.total {
-                            font-size: 12px;
-                        }
-
-                        #taggs-departmentOverlay p.taggs-emptyCircleLabel {
-                            position: absolute;
-                            left: 125px;
-                            top: 280px;
-                            width: 80px;
-                            text-align: center;
-                            color: #999;
-                            font-size: 11px;
-                            line-height: 1.45em;
-                            font-style: italic;
-                        }
-
-                        .change-decrease3 {
-                            background-color: #ca4445;
-                        }
-
-                        .change-decrease2 {
-                            background-color: #ee9586;
-                        }
-
-                        .change-decrease1 {
-                            background-color: #ffd7d3;
-                        }
-
-                        .change-same {
-                            background-color: #c5d8de;
-                        }
-
-                        .change-increase1 {
-                            background-color: #8EC6F5;
-                        }
-
-                        .change-increase2 {
-                            background-color: #51a7ff;
-                        }
-
-                        .change-increase3 {
-                            background-color: #01579b;
-                        }
-
-                        .change-decrease3 span.label {
-                            color: #eeb0a2;
-                        }
-
-                        .change-decrease2 span.label {
-                            color: #f8d0ca;
-                        }
-
-                        .change-decrease1 span.label {
-                            color: #f3dfdd;
-                        }
-
-                        .change-same span.label {
-                            color: #FFFFFF;
-                        }
-
-                        .change-increase1 span.label {
-                            color: #e2e8db;
-                        }
-
-                        .change-increase2 span.label {
-                            color: #d3dbc9;
-                        }
-
-                        .change-increase3 span.label {
-                            color: #08306b;
-                        }
-
-                        div#interactiveFreeFormMain {
-                            margin-top: 20px;
-                            margin-bottom: 50px;
-                        }
-
-                    </style>
-                    <div class="taggs">
-                        <div id="taggs-chartFrame">
-                            <div id="taggs-chart">
-                                <div class="taggs-navBar">
-                                    <div id="taggs-search" style="display:none;"></div>
-                                    <ul class="taggs-navigation clearfix">
-                                        <li id="taggs-nav-all">Overview</li>
-                                        <li id="taggs-nav-mandatory">Types of Funding</li>
-                                        <li id="taggs-nav-deparment">Agency Totals</li>
-                                    </ul>
-                                </div>
-                                <div id="taggs-tooltip">
-                                    <div id="taggs-tooltipContainer">
-                                        <div class="taggs-department"></div>
-                                        <div class="taggs-rule"></div>
-                                        <!-- <div class="taggs-name"></div> -->
-                                        <div class="taggs-discretion"></div>
-                                        <div class="taggs-percentTotal"></div>
-                                        <div class="taggs-totalNumAwards16"></div>
-                                        <div class="taggs-percentTotalNum"></div>
-                                        <div class="taggs-valuesContainer">
-                                            <span class="taggs-value"></span>
-                                            <span class="taggs-change"></span>
-                                        </div>
-                                        <div class="taggs-chart"></div>
-                                        <div class="taggs-tail"></div>
+                            .change-decrease2 span.label {
+                                color: #f8d0ca;
+                            }
+
+                            .change-decrease1 span.label {
+                                color: #f3dfdd;
+                            }
+
+                            .change-same span.label {
+                                color: #FFFFFF;
+                            }
+
+                            .change-increase1 span.label {
+                                color: #e2e8db;
+                            }
+
+                            .change-increase2 span.label {
+                                color: #d3dbc9;
+                            }
+
+                            .change-increase3 span.label {
+                                color: #08306b;
+                            }
+
+                            div#interactiveFreeFormMain {
+                                margin-top: 20px;
+                                margin-bottom: 50px;
+                            }
+
+                        </style>
+                        <div class="taggs">
+                            <div id="taggs-chartFrame">
+                                <div id="taggs-chart">
+                                    <div class="taggs-navBar">
+                                        <div id="taggs-search" style="display:none;"></div>
+                                        <ul class="taggs-navigation clearfix">
+                                            <li id="taggs-nav-all">Overview</li>
+                                            <li id="taggs-nav-mandatory">Types of Funding</li>
+                                            <li id="taggs-nav-deparment">Agency Totals</li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div id="taggs-overlays">
-                                    <div class="taggs-overlay" id="taggs-totalOverlay">
-                                        <div class="taggs-overview">
+                                    <div id="taggs-tooltip">
+                                        <div id="taggs-tooltipContainer">
+                                            <div class="taggs-department"></div>
+                                            <div class="taggs-rule"></div>
+                                            <!-- <div class="taggs-name"></div> -->
+                                            <div class="taggs-discretion"></div>
+                                            <div class="taggs-percentTotal"></div>
+                                            <div class="taggs-totalNumAwards16"></div>
+                                            <div class="taggs-percentTotalNum"></div>
+                                            <div class="taggs-valuesContainer">
+                                                <span class="taggs-value"></span>
+                                                <span class="taggs-change"></span>
+                                            </div>
+                                            <div class="taggs-chart"></div>
+                                            <div class="taggs-tail"></div>
                                         </div>
-                                        <div class="taggs-increasesLabel">
-                                            <span>Largest Increases</span>
-                                        </div>
-                                        <div class="taggs-decreasesLabel">
-                                            <span>Largest Cuts</span>
-                                        </div>
-                                        <div id="taggs-colorKey">
-                                            <!-- <p></p> -->
+                                    </div>
+                                    <div id="taggs-overlays">
+                                        <div class="taggs-overlay" id="taggs-totalOverlay">
+                                            <div class="taggs-overview">
+                                            </div>
+                                            <div class="taggs-increasesLabel">
+                                                <span>Largest Increases</span>
+                                            </div>
+                                            <div class="taggs-decreasesLabel">
+                                                <span>Largest Cuts</span>
+                                            </div>
+                                            <div id="taggs-colorKey">
+                                                <!-- <p></p> -->
                                                    <!--  <div id="taggs-sizeKey">
                                                </div> -->
                                                <p>Color shows amount of change from 2015 to 2016.</p>
@@ -1843,6 +1847,12 @@ figure ul li a {
                                 </div>
                             </div>
                         </div>
+
+                        <div class="footnote">
+                            During previous fiscal years, ONC awarded 18 grants totaling $9, 261,000.  Those awards were de-obligated during FY 2016, so the dollar figures in the ONC charts and tables appear as negative values.
+                        </div>
+
+
                     </div>
                     <script type="text/javascript">
                         var taggs = taggs || {};
@@ -10288,14 +10298,14 @@ if (!!document.createElementNS && !!document.createElementNS('http://www.w3.org/
                         <span class="long-line"></span>
                     </div>
                     <p>HHS is comprised of OPDIVs and STAFFDIVs, each with its own unique mission. The organization chart below presents
-                     the overall structure of HHS during FY 2016. The OPDIVs/STAFFDIVs are responsible for administering and managing 
-                     approximately 522 grant programs which are described in the Catalog of Federal Domestic Assistance (CFDA). Note that in
-                     this report, Agency for Toxic Substances and Disease Registry awards are included in the Centers for Disease Control and 
-                     Prevention grant funding data. 
-                 </p>
-             </div>
-         </div>
-         <div class="container-fluid">
+                       the overall structure of HHS during FY 2016. The OPDIVs/STAFFDIVs are responsible for administering and managing 
+                       approximately 522 grant programs which are described in the Catalog of Federal Domestic Assistance (CFDA). Note that in
+                       this report, Agency for Toxic Substances and Disease Registry awards are included in the Centers for Disease Control and 
+                       Prevention grant funding data. 
+                   </p>
+               </div>
+           </div>
+           <div class="container-fluid">
             <div class="row">
                 <div id="taggs-org-chart">
                     <figure class="clearfix">
@@ -10349,18 +10359,18 @@ if (!!document.createElementNS && !!document.createElementNS('http://www.w3.org/
                     </figure>
                 </div>
                 <div class="col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-12 col-xs-12">
-                   <p> 
-                       *Components of the Public Health Service
-                   </p>
-                   <p>
-                       #Administratively-supported by the Office of the Assistant Secretary for Health
-                   </p>
-                   <p>To learn more and to find links to home pages and sub-charts, visit the <a href="http://www.hhs.gov/about/agencies/orgchart/index.html">text version of the 2016 HHS Organizational Chart.</a>   
-                   </p>
-               </div>			    
-           </div>
-       </div>
-   </div>
+                 <p> 
+                     *Components of the Public Health Service
+                 </p>
+                 <p>
+                     #Administratively-supported by the Office of the Assistant Secretary for Health
+                 </p>
+                 <p>To learn more and to find links to home pages and sub-charts, visit the <a href="http://www.hhs.gov/about/agencies/orgchart/index.html">text version of the 2016 HHS Organizational Chart.</a>   
+                 </p>
+             </div>			    
+         </div>
+     </div>
+ </div>
 </div>
 </div>
 
