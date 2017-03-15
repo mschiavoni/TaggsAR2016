@@ -29,8 +29,18 @@ function changeOpdivs() {
     opdivsOn.push(topOptions[i].value);
   }
 
+  var topOptionsInt = $('.topIntMapOpt input:checked')
+  var opdivsOnInt = [];
+  for (var i= 0; i < topOptionsInt.length; i++) {
+    opdivsOnInt.push(topOptionsInt[i].value);
+  }
+
  if (opdivsOn.length === 1){
   getLinkTop(opdivsOn[0])
+}
+
+if (opdivsOnInt.length === 1){
+  getLinkTopInt(opdivsOnInt[0])
 }
  
   map2.setFilter('us_recipients', ["in", 'org_acronym'].concat(opdivsOn))
@@ -76,22 +86,22 @@ function changeOpdivs() {
 
 function getLinkTop(opdiv){
  var linkAll = "Top50_Recipients_Discretionary_";
- var linkInt =  "International_Recipients_Discretionary";
- 
-//  if (type === "topAwards") {
-//   linkAll += "Discretionary_"
-
-// } else {
-//   linkAll += "Discretionary_"
-//   linkInt += "Discretionary_"
-// }
+ // var linkInt =  "International_Recipients_Discretionary";
 
 linkAll = "Top50_Recipients_Discretionary_All/" + linkAll + opdiv.toUpperCase() + ".html"
-linkInt = "International_Recipients_Discretionary_All/" + linkInt + opdiv.toUpperCase() + ".html"
+// linkInt = "International_Recipients_Discretionary_All/" + linkInt + opdiv.toUpperCase() + ".html"
 
 
-$('#topAwardsLinkInt').attr("href", linkInt)
+// $('#topAwardsLinkInt').attr("href", linkInt)
 $('#topAwardsLink').attr("href", linkAll)
+
+};
+
+function getLinkTopInt(opdiv){
+ var linkInt =  "International_Recipients_Discretionary";
+linkInt = "International_Recipients_Discretionary_All/" + linkInt + opdiv.toUpperCase() + ".html"
+$('#topAwardsLinkInt').attr("href", linkInt)
+
 
 };
 
@@ -197,8 +207,14 @@ $('#topAwardsLink').attr("href", linkAll)
       });
 
 
-    }
+    if (window.location.search) {
 
+     $('.masterOpt input:radio[value=' + window.location.search.substring(1).toUpperCase() + ']').click()
+
+  }
+
+
+    }
 
     createMapBoxTop()
 

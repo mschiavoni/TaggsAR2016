@@ -1,7 +1,8 @@
 
 
 $(document).ready(function() {
- $('input:checkbox[value="selectAll"]').click()
+
+
 
 
 // *****DISCRETIONARY MULTI LEVEL PIE *****
@@ -29,7 +30,7 @@ FusionCharts.ready(function () {
     "dataFormat": 'xmlurl',
     "dataSource": 'xmlFiles/HHSawardsNumberInternationalPie.xml'
   });
- pieAwardsChart.render();
+  pieAwardsChart.render();
 });
 
 FusionCharts.ready(function () {
@@ -67,7 +68,7 @@ FusionCharts.ready(function () {
 // ***** MULTI SELECT GRANT HIST CHART *****
 
 renderChart('HHSgrantHist');
- 
+
 function renderChart(dataSource){
   FusionCharts.ready(function () {
     var myChart = new FusionCharts({
@@ -118,18 +119,22 @@ $('#multiSelectDrop').multiselect();
     $('.topMapOpt input:checked').click()
     $('.topMapOpt input:checkbox[value=' + selectedOpdiv.toUpperCase() + ']').click()
     $('input:checkbox[value="selectAll"]').click()
+
+
     // $('.topMapIntOpt input:checkbox[value=' + selectedOpdiv.toUpperCase() +']').click()
   }
 
 
+
+
+
   if (window.location.search) {
-setTimeout(function(){
+    setTimeout(function(){  
      $('.masterOpt input:radio[value=' + window.location.search.substring(1).toUpperCase() + ']').click()
-   }, 5000);
+
+   }, 10000);
+
   }
-
-
-
 
 
 });
