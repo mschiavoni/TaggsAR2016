@@ -18,7 +18,7 @@ $('#map2Drop').multiselect({
   dropUp: true,
   includeSelectAllOption: true,
   selectAllText:'HHS (Select All)',
-  selectAllValue: 'HHS'
+  selectAllValue: 'selectAll'
 }).on("change", changeOpdivs)
 
 

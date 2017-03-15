@@ -1,15 +1,15 @@
 <chart
 
                     captionFontSize='16'
-                    canvasBorderColor='ffffff'
-                    canvasbgcolor='000000'
+                    canvasBorderColor='#ffffff'
+                    canvasbgcolor='#000000'
                     algorithm='squarified'
                     animation='1'
                     bgAlpha ='100'
-                    bgColor='f7f9f9'
+                    bgColor='#f7f9f9'
                     borderAlpha='0'
                     chartBottomMargin='10'
-                    defaultParentBgColor='ededde'
+                    defaultParentBgColor='#ededde'
                     hidetitle='0'
                     highlightParentsOnHover='1'
                     horizontalpadding='0'
@@ -19,13 +19,13 @@
                     labelGlowRadius='0'
                     labelFontBold='0'
                     labelFontSize='16'
-                    labelFontColor='000000'
+                    labelFontColor='#000000'
                     legendBgAlpha='0'
                     legendBorderAlpha='0'
                     legendcaption='Growth in Award Amount - Compared to previous year'
                     legendcaptionfontsize='12'
                     legenditemfontbold='0'
-                    legenditemfontcolor='3d5c5c'
+                    legenditemfontcolor='#3d5c5c'
                     legenditemfontsize='12'
                     legendpadding='0'
                     legendPointerHeight='0'
@@ -33,17 +33,17 @@
                     legendscalelinethickness='0'
                     legendShadow='1'
                     parentLabelLineHeight='20'
-                    plotbordercolor='ffffff'
+                    plotbordercolor='#ffffff'
                     plotborderalpha='100'
                     plothighlighteffect='fadeout'
                     plotToolText='$label Total Grant Dollars: $datavalue Percent Change: $svalue%'
                     showBorder='0'
                     showChildLabels='1'
-                    shownavigationbar='0'
+                    showNavigationBar='1'
                     showLegend='1'
                     enablesmartlabels='0'
                     showpercentintooltip='1'
-                    toolTipBgColor='ffffff'
+                    toolTipBgColor='#ffffff'
                     toolTipBorderAlpha='0'
                     verticalpadding='20'
                     numberprefix='$'
@@ -184,7 +184,7 @@
     </set>
   </set>
   <colorrange mapbypercent='1' gradient='1' minvalue='-25' code='#d64646' startlabel='Decline' endlabel='Rise'>
-    <color code='ffffff' maxvalue='0' label='Static' />
+    <color code='#ffffff' maxvalue='0' label='Static' />
     <color code='#6d9ae0' maxvalue='25' label='AVERAGE' />
   </colorrange>
 </chart>

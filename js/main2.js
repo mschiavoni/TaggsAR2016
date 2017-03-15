@@ -1,7 +1,7 @@
 
 
 $(document).ready(function() {
-
+ $('input:checkbox[value="selectAll"]').click()
 
 
 // *****DISCRETIONARY MULTI LEVEL PIE *****
@@ -115,8 +115,9 @@ $('#multiSelectDrop').multiselect();
     $('.selectOpt input:checked').click()
     $('.selectOpt input:checkbox[value=' + selection + ']').click()
     $('.radioOpt input:radio[value=' + selection2 + ']').click()
+    $('topMapOpt input:checked').click()
     $('.topMapOpt input:checkbox[value=' + selectedOpdiv.toUpperCase() + ']').click()
-    $('.topMapOpt input:checkbox[value="HHS"]').click()
+    $('input:checkbox[value="selectAll"]').click()
     // $('.topMapIntOpt input:checkbox[value=' + selectedOpdiv.toUpperCase() +']').click()
   }
 
