@@ -1,7 +1,6 @@
 
 <chart toolTipBorderColor="FFFFFFFF" numberPrefix='$' formatNumber='1' numberScaleValue='1000,1000,1000' numberScaleUnit='K,M,B' decimals='3' alternateHGridAlpha='100' alternateHGridColor='#ECEFF1' legendIconScale='1' showAlternateHGridColor='1' legendBgColor='#ffffff' legendShadow='0' legendBorderThickness='0' exportAtClient='0' exportAction='download' exportHandler='../FusionCharts/Export/Exported_Images/FCExporter.aspx' exportEnabled='0' baseFontSize='20' baseFont='Varela Round' baseFontColor='55554A' chartLeftMargin='50' plotSpacePercent='60' chartRightMargin='50' captionPadding='50' labelPadding='20' yAxisNamePadding='60' divLineIsDashed='1' SYAxisName='No. Awards' showBorder='0' PYAxisName='Award Amount' setAdaptiveYMin='1' caption='HHS: Total Award Amounts and Award Number' animation='1' placeValuesInside='1' rotateValues='1' divLineAlpha='0' canvasBgAlpha='100' canvasBgColor='white' bgAlpha='100' bgColor='#f7f9f9' borderAlpha='0' useRoundEdges='0' showPlotBorder='0' canvasBorderThickness='0' captionFontColor='000000' captionFontSize='30' columnHoverColor='#01538f' labelFontSize='20' PYAxisNamePadding='60' showHoverEffect='1' SYAxisNameFontSize='30' usePlotGradientColor='0' valueFontColor='ffffff' valueFontSize='20' xAxisNameFontSize='30' yAxisNameFontSize='30'>
     <categories>
-        <category label='2011' />
         <category label='2012' />
         <category label='2013' />
         <category label='2014' />
@@ -10,7 +9,6 @@
         <vLine />
     </categories>
     <dataset renderAs='Column' parentYAxis='S' seriesName='Number of Awards'>
-        <set value='77480' color='#00adef' alpha='70' />
         <set value='77319' color='#00adef' alpha='70' />
         <set value='75862' color='#00adef' alpha='70' />
         <set value='75522' color='#00adef' alpha='70' />
@@ -18,7 +16,6 @@
         <set value='78341' color='#00adef' />
     </dataset>
     <dataset renderAs='Column' parentYAxis='P' seriesName='Total Award Amount'>
-        <set value='3.84650641E+11' color='#fcb03b' alpha='70' />
         <set value='3.47195343E+11' color='#fcb03b' alpha='70' />
         <set value='3.44560959E+11' color='#fcb03b' alpha='70' />
         <set value='4.05905768E+11' color='#fcb03b' alpha='70' />
