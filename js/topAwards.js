@@ -29,16 +29,16 @@ function changeOpdivs() {
     opdivsOn.push(topOptions[i].value);
   }
 
+ if (opdivsOn.length === 1){
+  getLinkTop(opdivsOn[0])
+}
  
   map2.setFilter('us_recipients', ["in", 'org_acronym'].concat(opdivsOn))
     return false;
 
- if (opdivsOn.length === 1){
-  getLinkTop(topOptions)
-}
-
 
   }
+
 
 
   

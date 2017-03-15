@@ -115,7 +115,7 @@ $('#multiSelectDrop').multiselect();
     $('.selectOpt input:checked').click()
     $('.selectOpt input:checkbox[value=' + selection + ']').click()
     $('.radioOpt input:radio[value=' + selection2 + ']').click()
-    $('topMapOpt input:checked').click()
+    $('.topMapOpt input:checked').click()
     $('.topMapOpt input:checkbox[value=' + selectedOpdiv.toUpperCase() + ']').click()
     $('input:checkbox[value="selectAll"]').click()
     // $('.topMapIntOpt input:checkbox[value=' + selectedOpdiv.toUpperCase() +']').click()
@@ -123,8 +123,11 @@ $('#multiSelectDrop').multiselect();
 
 
   if (window.location.search) {
+setTimeout(function(){
      $('.masterOpt input:radio[value=' + window.location.search.substring(1).toUpperCase() + ']').click()
+   }, 5000);
   }
+
 
 
 
