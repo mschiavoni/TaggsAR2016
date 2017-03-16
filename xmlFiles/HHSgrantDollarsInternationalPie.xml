@@ -23,7 +23,7 @@
  bgColor='#ffffff'
  animation='1'
  enableSmartLabels='1'
- startingAngle="70"
+ startingAngle="140"
  width="100%"
  height="870" 
  paletteColors='#00bf4f,#3F51B5,#00aeff,#0097A7,#ff5216,#13ce67,#1fb6ff'       
