@@ -10,7 +10,7 @@
 
 
 .btn-default {
-    background: #01579b;
+    background: #1fb6ff;
     color: #ffffff !important;
     border: 2px solid #01579b;
     transition: all 2s ease;
@@ -21,8 +21,8 @@
 }
   .btn-default:hover{
     color: #ffffff !important;
-    background-color: #0D47A1;
-    border: 2px solid #0D47A1;
+    background-color: #1fb6ff;
+    border: 2px solid #1fb6ff;
     box-shadow: 0 3px 6px 0 rgba(0,0,0,.19), 0 3px 6px 0 rgba(0,0,0,.26)	  
   }
 
@@ -56,9 +56,9 @@
 
 
 .btn-default {
-    background: #01579b;
+    background: #1fb6ff;
     color: #ffffff !important;
-    border: 2px solid #01579b;
+    border: 2px solid #1fb6ff;
     transition: all 2s ease;
     font-size: 20px;
     -webkit-border-radius: 25rem;
@@ -67,7 +67,7 @@
 }
 .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
     color: #ffffff;
-    background-color: #0D47A1;
-    border-color: #0D47A1;
+    background-color: #1fb6ff;
+    border-color: #1fb6ff;
 
 

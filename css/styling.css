@@ -99,7 +99,7 @@ select {
 .secondary {
   color: #f15b26 !important; }
 .green {
-  color: #3cb878 !important; }
+  color: #13cd67 !important; }
 .orange {
   color: #fcb03b !important; }
 .semitransparent-white {
@@ -255,26 +255,64 @@ select {
   @media (max-width: 800px) {
     .mb60 {
       margin-bottom: 35px; } }
+	  
 .bg-primary-color {
-  background-color: #4cc2c0; }
+  background-color: #0a9aff; }
+  
 .bg-secondary-color {
   background-color: #f15b26; }
+  
 .bg-orange-color {
-  background-color: #fcb03b; }
+  background-color: #fec200; }
+  
 .bg-orangedark-color {
-  background-color: #ff9700; }
+  background-color: #ffc107; }
+  
 .bg-green-color {
-  background-color: #3cb878; }
+  background-color: #13cd67; }
+  .bg-greentwo-color {
+  background-color: #29d67b; }
+  .bg-greenthree-color {
+  background-color: #13cd67; }
+  
+  
 .bg-white-color {
   background-color: #ffffff; }
+  
 .bg-border-color {
   background-color: #FAFAFA; }
+  
   .bg-bordertwo-color {
   background-color: #ECEFF1; }
+  
 .bg-black-color {
   background-color: #3F3F3F; }
 
+.bg-blacktwo-color {
+  background-color: #1F1F1F; }  
+    
+.bg-borderthree-color {
+  background-color: #eef2f5; }
+  
+.bg-borderfour-color {
+  background-color: #f7f7f7; }
+  .bg-borderten-color {
+  background-color: #cfd8dc; }
+  
+  .bg-borderfive-color {
+  background-color: #eef0fc; }
+   .bg-bordersix-color {
+  background-color: #EEEEEE; } 
+  
+  .bg-purple-color {
+  background-color: #9013fe; }
+  .bg-red-color {
+  background-color: #3F3F3F; }
+  .bg-greentwo-color {
+  background-color: #46d07a; }
 
+.bg-redorange-color {
+  background-color: #ee5139; }
 
 .facebook-bg-color {
   background-color: #3a589b; }
@@ -286,12 +324,14 @@ select {
   background-color: #ea4335; }
 .pinterest-bg-color {
   background-color: #ca2127; }
- h1, .h1 {
+h1, .h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 400;
   color: #2f2c2c;
   font-family: 'Montserrat', sans-serif; }
+}
+
   h1 a, .h1 a {
     color: inherit; }
   @media (max-width: 800px) {
@@ -307,11 +347,11 @@ select {
     h1, .h1 {
       font-size: 24px; } }
 h2, .h2 {
-  margin: 0;
-  font-size: 42px;
-  font-weight: 400;
-  color: #2f2c2c;
-  font-family: 'Montserrat', sans-serif; }
+     margin: 0 !important;
+    font-size: 84px !important;
+    font-weight: bold !important;
+    color: #2196F3 !important;
+    font-family: 'Montserrat', sans-serif !important;}
   h2 a, .h2 a {
     color: inherit; }
   @media (max-width: 800px) {
@@ -594,7 +634,7 @@ img {
     border: 0;}
 .imagebg:not(.image--light) {
     color: #fff;
-    opacity: .9;}
+    opacity: 1;}
 .cover-3 .pos-bottom {
     margin-bottom: 9.75em;}
 .imagebg .container {
@@ -622,14 +662,28 @@ img {
 .lead:last-child {
     margin-bottom: 175px;}
 .lead {
-    font-size: 1.9975em;
+    font-size: 1.4975em;
     line-height: 1.69565217em;}
 .lead {
     margin-bottom: 1.1304347826087em;
     font-weight: 400;}	
 .imagebg:not(.image--light) p {
-    opacity: .9;}
-.imagebg:not(.image--light) h1, .imagebg:not(.image--light) h2, .imagebg:not(.image--light) h3, .imagebg:not(.image--light) h4, .imagebg:not(.image--light) h5, .imagebg:not(.image--light) h6, .imagebg:not(.image--light) p, .imagebg:not(.image--light) ul, .imagebg:not(.image--light) blockquote {
+	color: #2b2b2b;
+	margin-bottom: 1em !important;
+    font-weight: 400 !important;
+    font-size: 44px !important;
+    line-height: 1.29565217em !important;
+    margin-left: 15px !important;
+	
+	}
+.imagebg:not(.image--light) h1, 
+.imagebg:not(.image--light) h2, 
+.imagebg:not(.image--light) h3, 
+.imagebg:not(.image--light) h4, 
+.imagebg:not(.image--light) h5, 
+.imagebg:not(.image--light) h6, 
+.imagebg:not(.image--light) ul, 
+.imagebg:not(.image--light) blockquote {
     color: #fff;}
 [data-overlay="8"]:before {
     content: '';
@@ -2164,11 +2218,9 @@ body.overlay-enable:before {
       .contacts .contacts-item .content .sub-title {
         font-size: 13px; } }
 .contacts-shadow {
-   /* box-shadow: 40px 0 80px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);
-    box-shadow: 0 10px 10px 0 rgba(0,0,0,.19), 0 6px 3px 0 rgba(0,0,0,.23);*/
-    box-shadow: 0 14px 14px 0 rgba(0,0,0,.25), 0 10px 5px 0 rgba(0,0,0,.22);
+    /* box-shadow: 0 14px 14px 0 rgba(0,0,0,.25), 0 10px 5px 0 rgba(0,0,0,.22); */
     /* box-shadow: 0 19px 19px 0 rgba(0,0,0,.3), 0 15px 6px 0 rgba(0,0,0,.22); */
+    box-shadow: 0 19px 33px 0 rgba(0, 0, 0, 0.13), 0 15px 17px 0 rgba(0, 0, 0, 0.15);
 }
  textarea {
   width: 100%;
@@ -2588,7 +2640,7 @@ border-color: #0049bf;
 .footer .info .services .list--primary > li i {
     margin-right: 10px;
     margin-top: 0px;
-    color: #3cb878;
+    color: #13cd67;
 }
 .primary-menu-menu>li>.megamenu .hhs-logo {
     margin-bottom: 15px
