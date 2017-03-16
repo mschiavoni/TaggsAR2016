@@ -296,8 +296,9 @@ select {
   
 .bg-borderfour-color {
   background-color: #f7f7f7; }
-  .bg-borderten-color {
-  background-color: #cfd8dc; }
+
+.bg-borderten-color {
+    background-color: #e1f5fe;}
   
   .bg-borderfive-color {
   background-color: #eef0fc; }
