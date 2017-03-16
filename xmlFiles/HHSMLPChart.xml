@@ -27,7 +27,7 @@
      canvasBgAlpha="0"
      baseFontSize="14"
       width="100%"
-      height="900" 
+      height="870" 
      ><category label='Discretionary Award Dollars{br}$52,790,366,508' Color="#fafafa">
      <category label='Other' value='8097509257' toolText='Other total is $8,097,509,257 {br}or 15.3 % of discretionary award dollars.  ' Color='#1fb6ff ' >
      <category value='2114813' toolText='EVALUATION total award amount is $2,114,813 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within Other.  ' Color='#00c6d7 '>
