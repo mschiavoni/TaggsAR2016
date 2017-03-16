@@ -556,91 +556,7 @@
 .bg-border-three-color {
     background-color: #ffffff;
 }
-.block_title_box {
-    text-align: center;
-}
 
-.block_title, .copy_block {
-    width: 70%;
-    max-width: 1100px;
-}
-.block_title {
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-bottom: 30px;
-}
-.block_title {
-    padding: 15px 5% 25px;
-    position: relative;
-    /* width: 74%; */
-    margin: auto;
-    margin-bottom: 160px;
-    display: inline-block;
-}
-
-.block_title .lines.line_lt {
-    left: 0;
-    top: 0;
-    width: 50%;
-}
-.block_title .lines {
-    width: 8px;
-    height: 8px;
-    position: absolute;
-}
-
-.block_title .lines span {
-    background: rgba(255,255,255,.6);
-}
-.block_title .lines.line_lt span, .block_title .lines.line_rt span, .block_title .lines.line_rb span {
-    left: auto;
-    right: 0;
-}
-.color_alternate .block_title .lines span {
-    background-color: #28dde0;
-}
-.block_title .lines span {
-    background: #fff;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.block_title .lines.line_l {
-    left: -8px;
-    top: 0;
-    height: 100%;
-}
-.block_title .lines {
-    width: 8px;
-    height: 8px;
-    position: absolute;
-}
-.block_title .lines.line_lb {
-    left: 0;
-    bottom: 0;
-    width: 35.5%;
-}
-.block_title .lines.line_rt {
-    right: 0;
-    top: 0;
-    width: 21%;
-}
-.block_title .lines.line_r {
-    right: -8px;
-    top: 0;
-    height: 100%;
-}
-.block_title .lines.line_rb {
-    right: 0;
-    bottom: 0;
-    width: 50%;
-}
-.block_title h1 {
-    font-size: 78px;
-    color: #28dde0;
-}
 .bg-borderthree-color {
     background-color: #ffffff;
 }
@@ -674,7 +590,7 @@ a#mapLinkState {
 </head>
 
 <body class=" ">
-    <header class="header" id="site-header">
+    <header class="header contacts-shadow" id="site-header">
         <div class="container">
 
             <div class="header-content-wrapper">
@@ -799,38 +715,30 @@ a#mapLinkState {
     </header>
 
     <div class="content-wrapper">
-        <section class="imagebg videobg height-100" data-overlay="8">
-            <div class="container pos-vertical-center">
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2 text-center">	
-                     <div class="block_title_box ">
-                        <a href="http://taggs.hhs.gov">
-                         <div class="block_title">
-                            <div class="lines line_lt"><span style="width: 100%;"></span></div>
-                            <div class="lines line_l"><span style="height: 100%;"></span></div>
-                            <div class="lines line_lb"><span style="width: 100%;"></span></div>
-                            <div class="lines line_rt"><span style="width: 100%;"></span></div>
-                            <div class="lines line_r"><span style="height: 100%;"></span></div>
-                            <div class="lines line_rb"><span style="width: 100%;"></span></div>
-                            <h1 style="opacity: 1;">Awards</h1></div>
-                        </a>
-                    </div>			
 
+			 <section class="height-100 imagebg cover cover-3" data-overlay="4" >
+                <div class="background-image-holder">
+                    <img alt="image" src="img/hero200.jpg" />
                 </div>
-                
-            </div>
-        </div>
-        <video autoplay loop muted>
-            <source src="video/video.webm" type="video/webm">
-                <source src="video/video.mp4" type="video/mp4">
-                    <source src="video/video.ogv" type="video/ogg">
-                    </video>
-
-                </section>
+                <div class="container pos-absolute pos-bottom text-center-xs">
+                    <div class="row">
+                        <div class="col-sm-6">
+							<h2>
+                               Awards
+                            </h2>
+                            <p class="lead">
+                                Health & Human Services
+                            </p>
+ 
+                        </div>
+                    </div>
+                </div>
+            </section>
+	  
 
                 
                 <div class="container-fluid">
-                    <div class="row medium-padding20 bg-border-color contacts-shadow">
+                    <div class="row medium-padding20 bg-borderten-color contacts-shadow">
                         <div class="container">
                             <div class="row">
                                 <div class="awards-nav">
@@ -838,7 +746,7 @@ a#mapLinkState {
                                         <div class="awards-item">
                                             <div class="content">
                                                 <p class="title">To view an individual agency's award data, select an agency in the drop down box.</p>
-                                                <p class="sub-title">Location and 5-year history will display in selected maps & charts.</p>
+                                                <p class="sub-title">Location, CFDA Number, and 5-year history will display in selected maps & charts.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -896,7 +804,7 @@ a#mapLinkState {
                                <p class="heading-text">
                                    The maps in this section show data for awards that HHS made in FY 2016. Darker colors indicate larger dollar amounts, 
                                    according to the legend below. Hover over a country to view the award dollars and number of awards. For discretionary
-                                   award data, click on the Discretionary Awards radio button below. To view award data by agency, click on an agency name in the dropdown box.   				 
+                                   award data, click on the Discretionary Awards radio button below. To view award data by agency, click on an agency name in the dropdown box   				 
                                </p>
                                <p class="heading-text">
                                    Awards By State: From the map of the United States, zoom down to an individual state. Award
@@ -1024,7 +932,7 @@ a#mapLinkState {
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <p class="heading-text">
-                     The U.S. map  shows the top discretionary award recipients by agency and location. Hover over a colored dot to 
+                     The U.S. map  shows the top discretionary award recipients by agency and location<sup>1</sup>. Hover over a colored dot to 
                      see award detail, including the recipient rank within the agency. The legend at lower right shows agency colors. 
                  </p>
                  <p class="heading-text">
@@ -1032,7 +940,10 @@ a#mapLinkState {
                      tooltip.  International Awards: View top international discretionary awards by clicking on the Top International 
                      radio button.  North American awards will display.  Drag the screen to the left or right to see other continents.  Hover over a colored dot to see award detail.
                  </p>
-             </div>
+				  <p class="heading-text">
+				 <sup>1</sup>Within this report, the recipient’s location is determined by their legal business address, which does not necessarily reflect the location where the performance occurred.
+                 </p>
+			 </div>
          </div>
      </div>
  </div>
@@ -1216,7 +1127,7 @@ a#mapLinkState {
 
     <div class="container-fluid">
         <div class="row">
-            <div class="opdiv-tables medium-padding120 bg-border-color">
+            <div class="opdiv-tables medium-padding120 bg-white-color">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
@@ -1245,7 +1156,7 @@ a#mapLinkState {
        </div>
    </div>
 
-   <div class="container-fluid pb30 bg-border-color mt-60">
+   <div class="container-fluid pb30 bg-white-color mt-60">
     <div aria-label="Top 5 CFDA horizontal bar chart showing Award Amount and Number of Awards" class="doubleBarChartCont"></div>
 
     <div class="col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-12 col-xs-12">
@@ -1448,7 +1359,7 @@ a#mapLinkState {
                 </script>
                 <div class="container-fluid">
                     <div class="row">
-                     <div class="opdiv-tables medium-padding120 bg-bordertwo-color contacts-shadow">
+                     <div class="opdiv-tables medium-padding120 bg-border-color contacts-shadow">
                         <div style="max-width: 790px; text-align: center; margin: 0 auto; position: relative; z-index: 5;">
                             <div class="heading">
                                 <h4 class="h1 heading-title">Discretionary Award Types</h4>
@@ -1470,7 +1381,7 @@ a#mapLinkState {
 
           <div class="container-fluid">
             <div class="row">
-                <div class="opdiv-tables medium-padding100b bg-bordertwo-color">
+                <div class="opdiv-tables medium-padding100b bg-border-color">
                     <div class="container">
 
                         <div id="MLPChartContainer">Discrectionary Awards Types</div>
@@ -1494,7 +1405,7 @@ a#mapLinkState {
                                     </div>
                                     <p class="heading-text">
                                         The Total Award Amounts and Award Number chart shows the number of and the amount of award 
-                                        dollars that HHS granted during the last 5 fiscal years. The number of awards is shown in the
+                                        dollars that HHS granted during the last 6 fiscal years. The number of awards is shown in the
                                         blue bars. The award dollars are represented as gold bars. Data for the current fiscal year, at
                                         the far right of the chart, are depicted in brighter colors. Hover over any bar to see a tool tip
                                         that shows award or dollar data. In the legend, click on Number of Awards to see only the gold bars
