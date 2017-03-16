@@ -50,7 +50,7 @@
                     numberScaleUnit=', K, M, B'
                     numberScaleValue='1, 1000, 1000, 1000'
                     forcenmberscale='1'>
-  <set label='HHS' fillcolor='#cccccc' value='3969041390'>
+  <set label='HHS' fillcolor='#ffffff' value='3969041390'>
     <set label='CURATORS OF THE UNIVERSITY OF MISSOURI' fillcolor='#F44336' value='48242941' svalue='-1.9'>
       <set label='SAMHSA' value='1001044' svalue='-57.3' fillcolor='#d64646'></set>
       <set label='OASH' value='500000' svalue=''></set>
