@@ -6,7 +6,7 @@
                     algorithm='squarified'
                     animation='1'
                     bgAlpha ='100'
-                    bgColor='#f7f9f9'
+                    bgColor='#ffffff'
                     borderAlpha='0'
                     chartBottomMargin='10'
                     defaultParentBgColor='#ededde'
@@ -50,45 +50,45 @@
                     numberScaleUnit=', K, M, B'
                     numberScaleValue='1, 1000, 1000, 1000'
                     forcenmberscale='1'>
-  <set label='HHS' fillcolor='#cccccc' value='3969041390'>
-    <set label='CURATORS OF THE UNIVERSITY OF MISSOURI' fillcolor='#d87171' value='48242941' svalue='-1.9'>
+  <set label='HHS' fillcolor='#ffffff' value='3969041390'>
+    <set label='CURATORS OF THE UNIVERSITY OF MISSOURI' fillcolor='#F44336' value='48242941' svalue='-1.9'>
       <set label='SAMHSA' value='1001044' svalue='-57.3' fillcolor='#d64646'></set>
       <set label='OASH' value='500000' svalue=''></set>
       <set label='NIH' value='39726923' svalue='7.9'></set>
-      <set label='HRSA' value='3189463' svalue='42.3' fillcolor='#6d9ae0'></set>
-      <set label='FDA' value='26499' svalue='27.4' fillcolor='#6d9ae0'></set>
+      <set label='HRSA' value='3189463' svalue='42.3' fillcolor='#2962FF'></set>
+      <set label='FDA' value='26499' svalue='27.4' fillcolor='#2962FF'></set>
       <set label='CMS' value='1074154' svalue='-71.8' fillcolor='#d64646'></set>
       <set label='CDC' value='275000' svalue=''></set>
       <set label='AHRQ' value='1350300' svalue='2.2'></set>
       <set label='ACL' value='999926' svalue='-35.9' fillcolor='#d64646'></set>
       <set label='ACF' value='99632' svalue='-66.7' fillcolor='#d64646'></set>
     </set>
-    <set label='JOHNS HOPKINS UNIVERSITY' fillcolor='#d87171' value='725511404' svalue='18.5'>
-      <set label='SAMHSA' value='598934' svalue='43' fillcolor='#6d9ae0'></set>
+    <set label='JOHNS HOPKINS UNIVERSITY' fillcolor='#F44336' value='725511404' svalue='18.5'>
+      <set label='SAMHSA' value='598934' svalue='43' fillcolor='#2962FF'></set>
       <set label='ONC' value='0' svalue=''></set>
       <set label='OASH' value='880072' svalue='-79.3' fillcolor='#d64646'></set>
       <set label='NIH' value='616254670' svalue='13.4'></set>
       <set label='HRSA' value='7586557' svalue='-6.2'></set>
       <set label='FDA' value='1708546' svalue='.3'></set>
       <set label='CMS' value='1866790' svalue='-39.7' fillcolor='#d64646'></set>
-      <set label='CDC' value='85749787' svalue='93.1' fillcolor='#6d9ae0'></set>
-      <set label='ASPR' value='4589000' svalue='218.7' fillcolor='#6d9ae0'></set>
+      <set label='CDC' value='85749787' svalue='93.1' fillcolor='#2962FF'></set>
+      <set label='ASPR' value='4589000' svalue='218.7' fillcolor='#2962FF'></set>
       <set label='AHRQ' value='6079048' svalue='19.8'></set>
       <set label='ACL' value='198000' svalue='-50' fillcolor='#d64646'></set>
     </set>
-    <set label='UNIVERSITY OF ARIZONA' fillcolor='#d87171' value='95748378' svalue='9.9'>
+    <set label='UNIVERSITY OF ARIZONA' fillcolor='#F44336' value='95748378' svalue='9.9'>
       <set label='SAMHSA' value='399573' svalue='0'></set>
       <set label='NIH' value='84087527' svalue='12.5'></set>
       <set label='IHS' value='0' svalue='-100' fillcolor='#d64646'></set>
-      <set label='HRSA' value='7906929' svalue='35.9' fillcolor='#6d9ae0'></set>
-      <set label='FDA' value='350000' svalue='40' fillcolor='#6d9ae0'></set>
+      <set label='HRSA' value='7906929' svalue='35.9' fillcolor='#2962FF'></set>
+      <set label='FDA' value='350000' svalue='40' fillcolor='#2962FF'></set>
       <set label='CMS' value='537916' svalue='-20.7'></set>
       <set label='CDC' value='1700471' svalue='-11.1'></set>
       <set label='AHRQ' value='-5656' svalue='-100' fillcolor='#d64646'></set>
       <set label='ACL' value='40000' svalue='-95.9' fillcolor='#d64646'></set>
       <set label='ACF' value='731618' svalue='-39' fillcolor='#d64646'></set>
     </set>
-    <set label='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' fillcolor='#d87171' value='403039987' svalue='1.7'>
+    <set label='UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS' fillcolor='#F44336' value='403039987' svalue='1.7'>
       <set label='SAMHSA' value='9129743' svalue='14.1'></set>
       <set label='OASH' value='499709' svalue=''></set>
       <set label='NIH' value='378608844' svalue='2.2'></set>
@@ -96,39 +96,39 @@
       <set label='FDA' value='0' svalue='-100' fillcolor='#d64646'></set>
       <set label='CMS' value='-91677' svalue=''></set>
       <set label='CDC' value='2691007' svalue='-28.2' fillcolor='#d64646'></set>
-      <set label='AHRQ' value='1491511' svalue='64.1' fillcolor='#6d9ae0'></set>
+      <set label='AHRQ' value='1491511' svalue='64.1' fillcolor='#2962FF'></set>
       <set label='ACL' value='586999' svalue='-39.1' fillcolor='#d64646'></set>
       <set label='ACF' value='1432910' svalue=''></set>
     </set>
     <set label='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' value='660761822' svalue='5.9'>
       <set label='SAMHSA' value='1411875' svalue='2'></set>
-      <set label='OASH' value='1912185' svalue='25.8' fillcolor='#6d9ae0'></set>
+      <set label='OASH' value='1912185' svalue='25.8' fillcolor='#2962FF'></set>
       <set label='NIH' value='576375917' svalue='3'></set>
       <set label='HRSA' value='19688906' svalue='-4'></set>
       <set label='FDA' value='3940416' svalue='17'></set>
       <set label='CMS' value='3734742' svalue='5.6'></set>
-      <set label='CDC' value='46519883' svalue='60.7' fillcolor='#6d9ae0'></set>
-      <set label='AHRQ' value='4028510' svalue='31.4' fillcolor='#6d9ae0'></set>
+      <set label='CDC' value='46519883' svalue='60.7' fillcolor='#2962FF'></set>
+      <set label='AHRQ' value='4028510' svalue='31.4' fillcolor='#2962FF'></set>
       <set label='ACL' value='2024998' svalue='13.9'></set>
-      <set label='ACF' value='1124390' svalue='273.1' fillcolor='#6d9ae0'></set>
+      <set label='ACF' value='1124390' svalue='273.1' fillcolor='#2962FF'></set>
     </set>
     <set label='UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION' value='120218641' svalue='7.6'>
       <set label='SAMHSA' value='977181' svalue='4.9'></set>
       <set label='NIH' value='96082286' svalue='3.8'></set>
       <set label='HRSA' value='7243226' svalue='2.8'></set>
-      <set label='FDA' value='4425424' svalue='295.3' fillcolor='#6d9ae0'></set>
+      <set label='FDA' value='4425424' svalue='295.3' fillcolor='#2962FF'></set>
       <set label='CMS' value='530784' svalue='-24.2'></set>
       <set label='CDC' value='10090350' svalue='14.7'></set>
-      <set label='AHRQ' value='47864' svalue='100' fillcolor='#6d9ae0'></set>
-      <set label='ACL' value='796526' svalue='35.9' fillcolor='#6d9ae0'></set>
-      <set label='ACF' value='25000' svalue='100' fillcolor='#6d9ae0'></set>
+      <set label='AHRQ' value='47864' svalue='100' fillcolor='#2962FF'></set>
+      <set label='ACL' value='796526' svalue='35.9' fillcolor='#2962FF'></set>
+      <set label='ACF' value='25000' svalue='100' fillcolor='#2962FF'></set>
     </set>
     <set label='UNIVERSITY OF MICHIGAN' value='502771970' svalue='4.5'>
-      <set label='SAMHSA' value='102000' svalue='100' fillcolor='#6d9ae0'></set>
-      <set label='OASH' value='567117' svalue='100' fillcolor='#6d9ae0'></set>
+      <set label='SAMHSA' value='102000' svalue='100' fillcolor='#2962FF'></set>
+      <set label='OASH' value='567117' svalue='100' fillcolor='#2962FF'></set>
       <set label='NIH' value='479792542' svalue='7.1'></set>
       <set label='HRSA' value='1918858' svalue='-70.3' fillcolor='#d64646'></set>
-      <set label='FDA' value='1138482' svalue='32.1' fillcolor='#6d9ae0'></set>
+      <set label='FDA' value='1138482' svalue='32.1' fillcolor='#2962FF'></set>
       <set label='CMS' value='2711231' svalue='-26.3' fillcolor='#d64646'></set>
       <set label='CDC' value='9446756' svalue='2.6'></set>
       <set label='AHRQ' value='5625038' svalue='-39.4' fillcolor='#d64646'></set>
@@ -138,16 +138,16 @@
       <set label='SAMHSA' value='124195' svalue='-92.8' fillcolor='#d64646'></set>
       <set label='NIH' value='404436399' svalue='7.7'></set>
       <set label='HRSA' value='10539700' svalue='-9.1'></set>
-      <set label='FDA' value='888921' svalue='81.1' fillcolor='#6d9ae0'></set>
+      <set label='FDA' value='888921' svalue='81.1' fillcolor='#2962FF'></set>
       <set label='CMS' value='1104189' svalue='-34.5' fillcolor='#d64646'></set>
       <set label='CDC' value='9525518' svalue='7.1'></set>
-      <set label='AHRQ' value='10139592' svalue='51.9' fillcolor='#6d9ae0'></set>
+      <set label='AHRQ' value='10139592' svalue='51.9' fillcolor='#2962FF'></set>
       <set label='ACL' value='547000' svalue='.2'></set>
       <set label='ACF' value='249063' svalue='.7'></set>
     </set>
     <set label='UNIVERSITY OF UTAH' value='158054411' svalue='9.8'>
-      <set label='SAMHSA' value='1627044' svalue='58.4' fillcolor='#6d9ae0'></set>
-      <set label='ONC' value='404110' svalue='100' fillcolor='#6d9ae0'></set>
+      <set label='SAMHSA' value='1627044' svalue='58.4' fillcolor='#2962FF'></set>
+      <set label='ONC' value='404110' svalue='100' fillcolor='#2962FF'></set>
       <set label='OASH' value='300000' svalue='-50' fillcolor='#d64646'></set>
       <set label='NIH' value='144053026' svalue='12.7'></set>
       <set label='HRSA' value='7477751' svalue='-7.2'></set>
@@ -162,9 +162,9 @@
       <set label='NIH' value='400416050' svalue='-5.5'></set>
       <set label='HRSA' value='34793371' svalue='.2'></set> 
       <!-- hrsa used to be white ***** had no fill color -->
-      <set label='FDA' value='424680' svalue='751.4' fillcolor='#6d9ae0'></set>
-      <set label='CMS' value='9919102' svalue='81' fillcolor='#6d9ae0'></set>
-      <set label='CDC' value='61795782' svalue='94.1' fillcolor='#6d9ae0'></set>
+      <set label='FDA' value='424680' svalue='751.4' fillcolor='#2962FF'></set>
+      <set label='CMS' value='9919102' svalue='81' fillcolor='#2962FF'></set>
+      <set label='CDC' value='61795782' svalue='94.1' fillcolor='#2962FF'></set>
       <set label='AHRQ' value='3797713' svalue='-16'></set>
       <set label='ACL' value='4544675' svalue='-48.2' fillcolor='#d64646'></set>
       <set label='ACF' value='839974' svalue='.2'></set>
@@ -177,14 +177,14 @@
       <set label='HRSA' value='5300734' svalue='5.5'></set>
       <set label='FDA' value='142068' svalue='-45.6' fillcolor='#d64646'></set>
       <set label='CMS' value='998960' svalue='.1'></set>
-      <set label='CDC' value='2696682' svalue='27.7' fillcolor='#6d9ae0'></set>
-      <set label='ASPE' value='1900000' svalue='68.1' fillcolor='#6d9ae0'></set>
+      <set label='CDC' value='2696682' svalue='27.7' fillcolor='#2962FF'></set>
+      <set label='ASPE' value='1900000' svalue='68.1' fillcolor='#2962FF'></set>
       <set label='AHRQ' value='3393362' svalue='-32.9' fillcolor='#d64646'></set>
       <set label='ACL' value='2669092' svalue='-28.5' fillcolor='#d64646'></set>
     </set>
   </set>
   <colorrange mapbypercent='1' gradient='1' minvalue='-25' code='#d64646' startlabel='Decline' endlabel='Rise'>
     <color code='#ffffff' maxvalue='0' label='Static' />
-    <color code='#6d9ae0' maxvalue='25' label='AVERAGE' />
+    <color code='#2962FF' maxvalue='25' label='AVERAGE' />
   </colorrange>
 </chart>

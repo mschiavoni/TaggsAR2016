@@ -296,8 +296,9 @@ select {
   
 .bg-borderfour-color {
   background-color: #f7f7f7; }
-  .bg-borderten-color {
-  background-color: #cfd8dc; }
+
+.bg-borderten-color {
+    background-color: #e1f5fe;}
   
   .bg-borderfive-color {
   background-color: #eef0fc; }
@@ -2673,3 +2674,11 @@ border-color: #0049bf;
 p.heading-text {
   margin-bottom: 0px !important;
 }
+.medium-padding60 {
+  padding: 60px 0; }
+
+.medium-margin60 {
+  margin: 60px 0; }
+
+.row.medium-margin60 {
+  margin: 60px 0; }
