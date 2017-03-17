@@ -23,26 +23,25 @@ $('#map2Drop').multiselect({
 
 
 function changeOpdivs() {
+
+
+
   var topOptions = $('.topMapOpt input:checked')
   var opdivsOn = [];
   for (var i= 0; i < topOptions.length; i++) {
     opdivsOn.push(topOptions[i].value);
   }
 
-  var topOptionsInt = $('.topIntMapOpt input:checked')
-  var opdivsOnInt = [];
-  for (var i= 0; i < topOptionsInt.length; i++) {
-    opdivsOnInt.push(topOptionsInt[i].value);
-  }
-
  if (opdivsOn.length === 1){
   getLinkTop(opdivsOn[0])
+
+} else {
+  $('#topAwardsLink').attr("href", "Top50_Recipients_Discretionary_All/Top50_Recipients_Discretionary_HHS.html" )
+
 }
 
-if (opdivsOnInt.length === 1){
-  getLinkTopInt(opdivsOnInt[0])
-}
- 
+
+
   map2.setFilter('us_recipients', ["in", 'org_acronym'].concat(opdivsOn))
     return false;
 
@@ -53,11 +52,10 @@ if (opdivsOnInt.length === 1){
 
   
   $('#topIntLegend').css("display", "none")
+  $('#topAwardsLinkInt').css('display', 'none')
 
   $('input[name="topAwards"]').click(function(){
     var selectedRecipientType = this.id
-
-   
 
     if (selectedRecipientType === "topAwards"){
 
@@ -86,22 +84,8 @@ if (opdivsOnInt.length === 1){
 
 function getLinkTop(opdiv){
  var linkAll = "Top50_Recipients_Discretionary_";
- // var linkInt =  "International_Recipients_Discretionary";
-
 linkAll = "Top50_Recipients_Discretionary_All/" + linkAll + opdiv.toUpperCase() + ".html"
-// linkInt = "International_Recipients_Discretionary_All/" + linkInt + opdiv.toUpperCase() + ".html"
-
-
-// $('#topAwardsLinkInt').attr("href", linkInt)
 $('#topAwardsLink').attr("href", linkAll)
-
-};
-
-function getLinkTopInt(opdiv){
- var linkInt =  "International_Recipients_Discretionary";
-linkInt = "International_Recipients_Discretionary_All/" + linkInt + opdiv.toUpperCase() + ".html"
-$('#topAwardsLinkInt').attr("href", linkInt)
-
 
 };
 

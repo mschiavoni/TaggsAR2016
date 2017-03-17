@@ -23,12 +23,28 @@ var topIntOptions = $('.topIntMapOpt input:checked')
   }
 
 
+if (intOpdivsOn.length === 1){
+  getLinkTopInt(intOpdivsOn[0])
+  console.log('opdivOnInt', intOpdivsOn[0])
+} else {
+$('#topAwardsLinkInt').attr("href", "International_Recipients_Discretionary_All/International_Recipients_DiscretionaryHHS.html" )
+
+}
+
+
   map2.setFilter('foreign_recipients', ["in", 'org_acronym'].concat(intOpdivsOn))
     // return opdivsOn.indexOf(f.properties['org_acronym']) !== -1;
   return false;
 }
 
+function getLinkTopInt(opdiv){
+ var linkInt =  "International_Recipients_Discretionary";
+linkInt = "International_Recipients_Discretionary_All/" + linkInt + opdiv.toUpperCase() + ".html"
+console.log(linkInt)
+$('#topAwardsLinkInt').attr("href", linkInt)
 
+
+};
 
  function createMapBoxTopInt() {
 
