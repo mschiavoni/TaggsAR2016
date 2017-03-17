@@ -36,7 +36,7 @@ function changeOpdivs() {
   getLinkTop(opdivsOn[0])
 
 } else {
-  $('#topAwardsLink').attr("href", "Top50_Recipients_Discretionary_All/Top50_Recipients_Discretionary_HHS.html" )
+  $('#topAwardsLink').attr("href", "Top50_Recipients_Discretionary_ALL/Top50_Recipients_Discretionary_HHS.html" )
 
 }
 
@@ -84,7 +84,7 @@ function changeOpdivs() {
 
 function getLinkTop(opdiv){
  var linkAll = "Top50_Recipients_Discretionary_";
-linkAll = "Top50_Recipients_Discretionary_All/" + linkAll + opdiv.toUpperCase() + ".html"
+linkAll = "Top50_Recipients_Discretionary_ALL/" + linkAll + opdiv.toUpperCase() + ".html"
 $('#topAwardsLink').attr("href", linkAll)
 
 };
