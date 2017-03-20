@@ -56,18 +56,20 @@
 
 
 .btn-default {
-    background: #1fb6ff;
-    color: #ffffff !important;
-    border: 2px solid #1fb6ff;
+    background: #fec200;
+    color: #000000 !important;
+    border: 2px solid #fec200;
     transition: all 2s ease;
     font-size: 20px;
     -webkit-border-radius: 25rem;
     border-radius: 25rem;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);
+    /* box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24); */
 }
-.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
-    color: #ffffff;
-    background-color: #1fb6ff;
-    border-color: #1fb6ff;
 
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    color: #000000;
+    background-color: #ffc80a;
+    border-color: #ffc80a;
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,.25), 0 10px 5px 0 rgba(0,0,0,.22);}
 
