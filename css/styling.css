@@ -2661,8 +2661,9 @@ border-color: #0049bf;
     }
 
 
-.cfdaFootnote {
-    font-size: 18px !important;
+.Footnote {
+    font-size: 16px !important;
+    padding: 10px 0 20px;
 }
 
 .bubbleFootnote{
