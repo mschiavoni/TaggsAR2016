@@ -2660,7 +2660,10 @@ border-color: #0049bf;
     }
     }
 
-
+p.Footnote {
+    font-size: 16px !important;
+    padding: 10px 0 20px;	
+}
 .Footnote {
     font-size: 16px !important;
     padding: 10px 0 20px;
