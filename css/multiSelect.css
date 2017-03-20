@@ -10,9 +10,9 @@
 
 
 .btn-default {
-    background: #1fb6ff;
-    color: #ffffff !important;
-    border: 2px solid #01579b;
+    background: #fec200;
+    color: #000000 !important;
+    border: 2px solid #fec200;
     transition: all 2s ease;
     font-size: 20px;
     -webkit-border-radius: 25rem;
@@ -20,20 +20,26 @@
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);	
 }
   .btn-default:hover{
-    color: #ffffff !important;
-    background-color: #1fb6ff;
-    border: 2px solid #1fb6ff;
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,.19), 0 3px 6px 0 rgba(0,0,0,.26)	  
+    background: #fec200; 
+    color: #000000 !important;
+    background-color: #fec200;
+    border: 2px solid #fec200;
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,.25), 0 10px 5px 0 rgba(0,0,0,.22);
   }
 
   .btn-default:focus {
-    color: black;
+    background: #fec200; 
+    color: #000000;
+    border: 2px solid #fec200;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23)
   }
 
   .open>.dropdown-toggle.btn-default {
-    color: #01538f;
-    background-color: #f7f9f9;
-    border-color: #01538f;
+    background: #fec200; 
+    color: #000000;
+    background-color: #fec200;
+    border: 2px solid #fec200;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23)
   }
 
   .multiselect-container>li>a>label.checkbox {
@@ -71,5 +77,6 @@
     color: #000000;
     background-color: #ffc80a;
     border-color: #ffc80a;
-    box-shadow: 0 14px 14px 0 rgba(0,0,0,.25), 0 10px 5px 0 rgba(0,0,0,.22);}
+    box-shadow: 0 14px 14px 0 rgba(0,0,0,.25), 0 10px 5px 0 rgba(0,0,0,.22);
+}
 
