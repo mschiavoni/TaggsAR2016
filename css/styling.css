@@ -2221,7 +2221,8 @@ body.overlay-enable:before {
 .contacts-shadow {
     /* box-shadow: 0 14px 14px 0 rgba(0,0,0,.25), 0 10px 5px 0 rgba(0,0,0,.22); */
     /* box-shadow: 0 19px 19px 0 rgba(0,0,0,.3), 0 15px 6px 0 rgba(0,0,0,.22); */
-    box-shadow: 0 19px 33px 0 rgba(0, 0, 0, 0.13), 0 15px 17px 0 rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 19px 33px 0 rgba(0, 0, 0, 0.13), 0 15px 17px 0 rgba(0, 0, 0, 0.15); */
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
  textarea {
   width: 100%;
