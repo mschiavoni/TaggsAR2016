@@ -2659,7 +2659,11 @@ border-color: #0049bf;
         margin-bottom: 120px
     }
     }
-
+p.OrgFootnote {
+    font-size: 16px !important;
+    padding: 10px 0 0px;
+    line-height: 8px;
+}
 p.Footnote {
     font-size: 16px !important;
     padding: 10px 0 0px;
