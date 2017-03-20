@@ -2669,7 +2669,10 @@ p.Footnote {
     font-size: 16px !important;
     padding: 10px 0 20px;
 }
-
+.cfdaFootnote {
+    font-size: 16px !important;
+    padding-bottom: 60px;
+}
 .bubbleFootnote{
      margin: 105px 0px 60px;
 }
