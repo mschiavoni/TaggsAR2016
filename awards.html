@@ -558,9 +558,14 @@
 .bg-borderthree-color {
     background-color: #ffffff;
 }
+p.title {
+    color: #000000;
+}
 p.sub-title {
+    color: #263238;
     margin-top: -10px;
     font-size: 17px;
+	
 }
 rect {
     stroke: none;
@@ -604,9 +609,7 @@ a#topAwardsLinkInt {
     border-radius: 25rem;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);	
 }
- .content-wrapper {
-    background-color: #fafafa;
-}
+
 </style>
 </head>
 
@@ -1173,23 +1176,10 @@ a#topAwardsLinkInt {
                            </div>
                        </div>
                    </div>
-	    <div aria-label="Top 5 CFDA horizontal bar chart showing Award Amount and Number of Awards" class="doubleBarChartCont"></div>
-		
-			
-               </div>
-           </div>
-       </div>
-   </div>
+				     <div class="row">
 
-   <div class="container-fluid pb30 bg-white-color mt-60">
     <div aria-label="Top 5 CFDA horizontal bar chart showing Award Amount and Number of Awards" class="doubleBarChartCont"></div>
-
-    <div class="col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-12 col-xs-12">
-        <p class="cfdaFootnote">
-           ** "Other" programs include construction projects; grants for the planning and development of health programs and health resources; evaluations; and health infrastructure awards. 
-        </p>
-    </div>
-
+				 
     <script type="text/javascript">
         Number.prototype.toReducedFormat = function() {
             if (this >= 1000000000) {
@@ -1381,7 +1371,23 @@ a#topAwardsLinkInt {
                     .attr("class", "toolTip")
                     .style("visibility", "hidden")
                     // ***********
-                </script>
+                </script> 
+				 </div>
+
+               </div>
+			   
+           </div>
+       </div>
+   </div>
+
+   <div class="container-fluid pb30 bg-white-color mt-60">
+
+    <div class="col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-12 col-xs-12">
+        <p class="cfdaFootnote">
+           ** "Other" programs include construction projects; grants for the planning and development of health programs and health resources; evaluations; and health infrastructure awards. 
+        </p>
+    </div>
+
 				</div>
 				
                 <div class="container-fluid">
