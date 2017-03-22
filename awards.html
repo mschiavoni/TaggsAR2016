@@ -570,7 +570,7 @@ rect {
     fill: rgb(218, 227, 230);
 }	 
   
-a#mapLinkWorld {
+a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
     border-style: solid;
     color: #81d4fa;
     padding: 10px;
@@ -578,14 +578,14 @@ a#mapLinkWorld {
     display: inline-block;
     border-radius: 25rem;	
 }
-a#mapLinkState {
+/*a#mapLinkState {
     border-style: solid;
     color: #81d4fa;
     padding: 10px;
     text-align: center;
     display: inline-block;
     border-radius: 25rem;	
-}
+}*/
 </style>
 </head>
 
@@ -1192,7 +1192,7 @@ a#mapLinkState {
         var y = d3.scale.ordinal()
         .rangeBands([20, height]);
 
-        function render(data, activityType) {
+        function render(data, activityType, tableLink) {
 
             var ANArray = [];
             data.forEach(addToANArray)
@@ -1213,7 +1213,7 @@ a#mapLinkState {
             var AAmax = Math.max.apply(null, AAArray);
 
             var chart = d3.select("div.doubleBarChartCont")
-            .append("div").html('<span class="activityTypeTitle">' + activityType + '</span>')
+            .append("div").html('<span class="activityTypeTitle">' + activityType + '</span> <br> <p class="cfdaTableLink">' + tableLink + '</p>' )
             .append('svg')
             .attr('class', 'chart')
             .attr('width', labelArea + width + width)
@@ -1324,18 +1324,21 @@ a#mapLinkState {
                         .text(function(d) {
                             return d[rCol].toLocaleString();
                         })
+
                         // .attr("tabindex", "0");
                         chart.append("text").attr("x", width / 3).attr("y", 15).attr("class", "title").text("Award Amount");
                         chart.append("text").attr("x", width / 3 + rightOffset + 10).attr("y", 15).attr("class", "title").text("Number of Awards");
                         chart.append("text").attr("x", width + labelArea / 3 - 40).attr("y", 15).attr("class", "title").text("CFDA Number");
-
                     }
 
                     var fileNames = ["training.json", "trainingInt.json","research.json", "researchInt.json", "services.json", "servicesInt.json", "other.json",  "otherInt.json"];
                     var activityTypes = ["Training", "Training (International)", "Research", "Research (International)", "Services", "Services (International)", "Other", "Other (International)"];
 
+                    var tableLinks = ['<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscTraining.html" target="_blank" class="cfdaTableLink">View Table</a>', '<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalTraining.html" class="cfdaTableLink">View Table</a>', '<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscResearch.html" class="cfdaTableLink">View Table</a>', '<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalResearch.html" class="cfdaTableLink">View Table</a>', '<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscServices.html" class="cfdaTableLink">View Table</a>', '<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalServices.html" class="cfdaTableLink">View Table</a>', '<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscOther.html" class="cfdaTableLink">View Table</a>', '<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalOther.html" class="cfdaTableLink">View Table</a>' ];
+
                     fileNames.forEach(function(fileName, i) {
                         var activityType = activityTypes[i]
+                        var tableLink = tableLinks[i]
                         d3.json(fileName, function(error, data) {
                             if (error) return console.warn(error);
                             data.forEach(function(d) {
@@ -1345,7 +1348,7 @@ a#mapLinkState {
 
                             })
 
-                            render(data, activityType);
+                            render(data, activityType, tableLink);
                         })
                     })
                     // ******** tool tip ********
@@ -1548,6 +1551,10 @@ a#mapLinkState {
               <!--   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> -->
                     <div id="HHSMultiAgency">HHS Agencies with Multiple Recipients</div>
                 <!-- </div>                               -->
+            </div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a href="/DataFiles/MultiAgencyRecipientTreeMap/RecipientsMultiAgency508table.html" target="_blank">View Table</a>
+            <div>
+                
             </div>
         </div>
     </div>
