@@ -115,9 +115,9 @@ $('#topAwardsLink').attr("href", linkAll)
           'source-layer': 'USRecipLatLong_R1',
           'type': 'circle',
                 'paint': {
-                    'circle-opacity': 0.4,
+                    'circle-opacity': 0.48,
             'circle-radius': {
-              'base': 3,
+              'base': 5,
               'stops': [[12, 10], [22, 100]]
             },
 
