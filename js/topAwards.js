@@ -113,12 +113,9 @@ $('#topAwardsLink').attr("href", linkAll)
           'id': 'us_recipients',
           'source': 'USRecip',
           'source-layer': 'USRecipLatLong_R1',
-
           'type': 'circle',
-
-          'circle-opacity': 0.4,
-          'paint': {
-
+                'paint': {
+                    'circle-opacity': 0.4,
             'circle-radius': {
               'base': 3,
               'stops': [[12, 10], [22, 100]]
