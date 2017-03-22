@@ -116,7 +116,7 @@ $('#topAwardsLink').attr("href", linkAll)
 
           'type': 'circle',
 
-          'circle-opacity': 0.5,
+          'circle-opacity': 0.4,
           'paint': {
 
             'circle-radius': {
