@@ -64,7 +64,6 @@ FusionCharts.ready(function () {
 
 
 
-
 // ***** MULTI SELECT GRANT HIST CHART *****
 
 renderChart('HHSgrantHist');
@@ -79,25 +78,32 @@ function renderChart(dataSource){
       "dataFormat": "xmlurl",
       "dataSource": "xmlFiles/" + dataSource + ".xml"
     });
-    myChart.render();
+    myChart.render()
   });
 }
 
 
-$('#multiSelectDrop').multiselect();
 
+$('#multiSelectDrop').multiselect();
   // set function to render graphs on change
   $('.selectOpt input[type="checkbox"]').on("change", function(){
     // gather selectedID. This value corresponds to the XML filename as well as the id of the div we render at.
     var selectedID = this.value;
+    console.log(selectedID)
+// var selectedLink = '<a href="DataFiles/GrantHistoryBarChart/' + selectedID + 'grantHistTable.html" class="grantHistTableLink">View Table</a>'
     // if event target is checked, render it's corresponding graph.
     if (this.checked) {
       renderChart(selectedID)
+     $("#" + selectedID + "-link").removeClass('hidden')
+     $("#" + selectedID + "-link").show()
     }
-    // if it is unchecked, remove it's corresponding graph.
     else {
       $("#" + selectedID).empty()
+      $("#" + selectedID + "-link").hide()
     }
+
+ 
+
   });
 
 
@@ -120,8 +126,6 @@ $('#multiSelectDrop').multiselect();
     $('.topMapOpt input:checkbox[value=' + selectedOpdiv.toUpperCase() + ']').click()
     $('input:checkbox[value="selectAll"]').click()
 
-
-    // $('.topMapIntOpt input:checkbox[value=' + selectedOpdiv.toUpperCase() +']').click()
   }
 
 

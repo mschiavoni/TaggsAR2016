@@ -570,7 +570,7 @@ rect {
     fill: rgb(218, 227, 230);
 }	 
   
-a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
+a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt,  a#topAwardsExcelLink, a#topAwardsExcelLinkInt, a#mapExcelLinkWorld, a#mapExcelLinkState {
     border-style: solid;
     color: #81d4fa;
     padding: 10px;
@@ -904,6 +904,11 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
                         
                         <a id="mapLinkState" target="_blank" class="tablelink2" content="html" charset="utf-8" href="CountryStateMapAwardsFiles_HTML/World_All_HHS.html">State Table View</a>
 						</div>
+                        <div class="col-md-3 col-sm-3">
+                        <a id="mapExcelLinkWorld" target="_blank" class="tablelink2" content="html" charset="utf-8" href="CountryStateMapAwardsFiles_HTML/World_All_HHS.html"> Excel Table</a> 
+                        
+                        <a id="mapExcelLinkState" target="_blank" class="tablelink2" content="html" charset="utf-8" href="CountryStateMapAwardsFiles_HTML/World_All_HHS.html">Excel Table</a>
+                        </div>
                         
 						</div>						
                     </div>
@@ -1054,8 +1059,12 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
                     </div>
                 </form>
                 <div class="col-md-3 col-sm-3">
-                <a href="Top50_Recipients_Discretionary_All/Top50_Recipients_Discretionary_HHS.html" id="topAwardsLink" target="_blank" content="html" charset="utf-8" class="tablelink2">View Table 50</a>
-                <a href="International_Recipients_Discretionary_ALL/International_Recipients_DiscretionaryHHS.html" id="topAwardsLinkInt" target="_blank" content="html" charset="utf-8" class="tablelink2">View Table Int</a>
+                <a href="/DataFiles/Top50_Recipients_Discretionary_All/Top50_Recipients_Discretionary_HHS.html" id="topAwardsLink" target="_blank" content="html" charset="utf-8" class="tablelink2">View Table 50</a>
+                <a href="/DataFiles/International_Recipients_Discretionary_ALL/International_Recipients_DiscretionaryHHS.html" id="topAwardsLinkInt" target="_blank" content="html" charset="utf-8" class="tablelink2">View Table Int</a>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                <a href="/DataFiles/Top50_Recipients_Discretionary_All/Top50_Recipients_Discretionary_HHS.html" id="topAwardsExcelLink" target="_blank" content="html" charset="utf-8" class="tablelink2">Excel Table</a>
+                <a href="/DataFiles/International_Recipients_Discretionary_ALL/International_Recipients_DiscretionaryHHS.html" id="topAwardsExcelLinkInt" target="_blank" content="html" charset="utf-8" class="tablelink2">Excel Table</a>
                 </div>
             </div>
         </div>
@@ -1192,7 +1201,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
         var y = d3.scale.ordinal()
         .rangeBands([20, height]);
 
-        function render(data, activityType, tableLink) {
+        function render(data, activityType, tableLink, cfdaExcelLink) {
 
             var ANArray = [];
             data.forEach(addToANArray)
@@ -1213,7 +1222,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
             var AAmax = Math.max.apply(null, AAArray);
 
             var chart = d3.select("div.doubleBarChartCont")
-            .append("div").html('<span class="activityTypeTitle">' + activityType + '</span> <br> <p class="cfdaTableLink">' + tableLink + '</p>' )
+            .append("div").html('<span class="activityTypeTitle">' + activityType + '</span> <br>'+ tableLink + cfdaExcelLink)
             .append('svg')
             .attr('class', 'chart')
             .attr('width', labelArea + width + width)
@@ -1229,18 +1238,18 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
             chart.selectAll("rect.left")
             .data(data)
             .enter().append("rect")
-            .on("mouseover", function(d) {
-                return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");
-            })
-            .on("focus", function(d) {
-                return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");
-            })
-            .on("mousemove", function() {
-                return tooltip.style("top", (d3.event.pageY - 10) + "px").style("left", (d3.event.pageX + 10) + "px");
-            })
-            .on("mouseout", function() {
-                return tooltip.style("visibility", "hidden");
-            })
+            // .on("mouseover", function(d) {
+            //     return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");
+            // })
+            // .on("focus", function(d) {
+            //     return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + d.formattedAwardAmount + "\nin USD");
+            // })
+            // .on("mousemove", function() {
+            //     return tooltip.style("top", (d3.event.pageY - 10) + "px").style("left", (d3.event.pageX + 10) + "px");
+            // })
+            // .on("mouseout", function() {
+            //     return tooltip.style("visibility", "hidden");
+            // })
             .attr("x", function(d) {
                 return width - xFrom(d[lCol]);
             })
@@ -1283,6 +1292,18 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
                     .text(function(d) {
                         return d.programs;
                     })
+                    .on("mouseover", function(d) {
+                        return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + d["award.number"] + " Awards <br>" + d.formattedAwardAmount + "\nin USD");
+                    })
+                    .on("focus", function(d) {
+                        return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + + d["award.number"] + " Awards <br>" + d.formattedAwardAmount + "\nin USD");
+                    })
+                    .on("mousemove", function() {
+                        return tooltip.style("top", (d3.event.pageY - 10) + "px").style("left", (d3.event.pageX + 10) + "px");
+                    })
+                    .on("mouseout", function() {
+                        return tooltip.style("visibility", "hidden");
+                    })
                         // .attr("tabindex", "0");
                         chart.selectAll("rect.right")
                         .data(data)
@@ -1290,19 +1311,19 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
                         .attr("x", rightOffset)
                         .attr("y", yPosByIndex)
                         .attr("class", "right")
-                        .on("mouseover", function(d) {
-                            return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + d["award.number"] + " Awards");
-                        })
-                        .on("focus", function(d) {
-                            return tooltip.style("visibility", "visible").html(
-                                "Program: " + d.progName + "<br>" + d["award.number"] + " Awards");
-                        })
-                        .on("mousemove", function() {
-                            return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px");
-                        })
-                        .on("mouseout", function() {
-                            return tooltip.style("visibility", "hidden");
-                        })
+                        // .on("mouseover", function(d) {
+                        //     return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + d["award.number"] + " Awards");
+                        // })
+                        // .on("focus", function(d) {
+                        //     return tooltip.style("visibility", "visible").html(
+                        //         "Program: " + d.progName + "<br>" + d["award.number"] + " Awards");
+                        // })
+                        // .on("mousemove", function() {
+                        //     return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px");
+                        // })
+                        // .on("mouseout", function() {
+                        //     return tooltip.style("visibility", "hidden");
+                        // })
                         .attr("width", function(d) {
                             return xTo(d[rCol]);
                         })
@@ -1328,17 +1349,26 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
                         // .attr("tabindex", "0");
                         chart.append("text").attr("x", width / 3).attr("y", 15).attr("class", "title").text("Award Amount");
                         chart.append("text").attr("x", width / 3 + rightOffset + 10).attr("y", 15).attr("class", "title").text("Number of Awards");
-                        chart.append("text").attr("x", width + labelArea / 3 - 40).attr("y", 15).attr("class", "title").text("CFDA Number");
+                        chart.append("text").attr("x", width + labelArea / 3 - 40).attr("y", 15).attr("class", "title").text("CFDA Number")
                     }
 
                     var fileNames = ["training.json", "trainingInt.json","research.json", "researchInt.json", "services.json", "servicesInt.json", "other.json",  "otherInt.json"];
                     var activityTypes = ["Training", "Training (International)", "Research", "Research (International)", "Services", "Services (International)", "Other", "Other (International)"];
 
-                    var tableLinks = ['<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscTraining.html" target="_blank" class="cfdaTableLink">View Table</a>', '<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalTraining.html" class="cfdaTableLink">View Table</a>', '<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscResearch.html" class="cfdaTableLink">View Table</a>', '<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalResearch.html" class="cfdaTableLink">View Table</a>', '<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscServices.html" class="cfdaTableLink">View Table</a>', '<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalServices.html" class="cfdaTableLink">View Table</a>', '<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscOther.html" class="cfdaTableLink">View Table</a>', '<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalOther.html" class="cfdaTableLink">View Table</a>' ];
+                    var tableLinks = ['<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscTraining.html" target="_blank" class="cfdaTableLink">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalTraining.html" target="_blank" class="cfdaTableLink">View Table</a>','<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscResearch.html" class="cfdaTableLink" target="blank">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalResearch.html" class="cfdaTableLink" target="blank">View Table</a>','<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscServices.html" class="cfdaTableLink" target="_blank">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalServices.html" class="cfdaTableLink" target="_blank">View Table</a>','<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscOther.html" class="cfdaTableLink" target="_blank">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalOther.html" class="cfdaTableLink" target="_blank">View Table</a>' ];
+                     var cfdaExcelLinks = ['<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>',
+                          '<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>',
+                          '<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>',
+                          '<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>',
+                          '<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>',
+                          '<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>',
+                          '<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>',
+                          '<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>'];
 
                     fileNames.forEach(function(fileName, i) {
                         var activityType = activityTypes[i]
                         var tableLink = tableLinks[i]
+                        var cfdaExcelLink = cfdaExcelLinks[i]
                         d3.json(fileName, function(error, data) {
                             if (error) return console.warn(error);
                             data.forEach(function(d) {
@@ -1348,7 +1378,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
 
                             })
 
-                            render(data, activityType, tableLink);
+                            render(data, activityType, tableLink, cfdaExcelLink);
                         })
                     })
                     // ******** tool tip ********
@@ -1389,6 +1419,10 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
 
                         <div id="MLPChartContainer">Discrectionary Awards Types</div>
 
+                    </div>  
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="/DataFiles/MulitLevelPieChart" target="_blank">View Table</a>
+                        <a href="" target="_blank" class="excelLink">View Excel</a>
                     </div>
                 </div>
             </div>
@@ -1461,24 +1495,55 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
                         </div>
                         <div class="row medium-margin60">
 
-                            <div id="HHSgrantHist"></div>
-                            <div id="ACFgrantHist"></div>
-                            <div id="ACLgrantHist"></div>
-                            <div id="AHRQgrantHist"></div>
-                            <div id="ASPEgrantHist"></div>
-                            <div id="ASPRgrantHist"></div>
-                            <div id="CDCgrantHist"></div>
-                            <div id="CMSgrantHist"></div>
-                            <div id="FDAgrantHist"></div>
-                            <div id="HRSAgrantHist"></div>
-                            <div id="IHSgrantHist"></div>
-                            <div id="NIHgrantHist"></div>
-                            <div id="OASHgrantHist"></div>
-                            <div id="OGAgrantHist"></div>
-                            <div id="ONCgrantHist"></div>
-                            <div id="SAMHSAgrantHist"></div>
-                       
-					   </div>
+                            <div id="HHSgrantHist">
+                            </div>
+                                <div id="HHSgrantHist-link"><a href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" id="HHSLink">View Table HHS</a></div>
+                            <div id="ACFgrantHist">
+                            </div>
+                                <div id="ACFgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/ACFgrantHistTable.html" target="_blank"  id="ACFLink">View Table</a></div>
+                            <div id="ACLgrantHist">
+                            </div>
+                                <div id="ACLgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/ACLgrantHistTable.html" target="_blank"  id="ACLLink">View Table</a></div>
+                            <div id="AHRQgrantHist">
+                            </div>
+                                <div id="AHRQgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/AHRQgrantHistTable.html" target="_blank"  id="AHRQLink">View Table</a></div>
+                            <div id="ASPEgrantHist">
+                            </div>
+                                <div id="ASPEgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/ASPEgrantHistTable.html" target="_blank"  id="ASPELink">View Table</a></div>
+                            <div id="ASPRgrantHist">
+                            </div>
+                                <div id="ASPRgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/ASPRgrantHistTable.html" target="_blank"  id="ASPRLink">View Table</a></div>
+                            <div id="CDCgrantHist">
+                            </div>
+                                <div id="CDCgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/CDCgrantHistTable.html" target="_blank"  class="CDCLink">View Table</a></div>
+                            <div id="CMSgrantHist">
+                            </div>
+                                <div id="CMSgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/CMSgrantHistTable.html" target="_blank"  class="CDSLink">View Table</a></div>
+                            <div id="FDAgrantHist">
+                            </div>
+                                <div id="FDAgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/FDAgrantHistTable.html" target="_blank"  class="FDALink">View Table</a></div>
+                            <div id="HRSAgrantHist">
+                            </div>
+                                <div id="HRSAgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/HRSAgrantHistTable.html" target="_blank"  class="HRSALink">View Table</a></div>
+                            <div id="IHSgrantHist">
+                            </div>
+                                <div id="IHSgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/IHSgrantHistTable.html" target="_blank"  class="IHSLink">View Table</a></div>
+                            <div id="NIHgrantHist">
+                            </div>
+                                <div id="NIHgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/NIHgrantHistTable.html" target="_blank"  class="NIHLink">View Table</a></div>
+                            <div id="OASHgrantHist">
+                            </div>
+                                <div id="OASHgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/OASHgrantHistTable.html" target="_blank"  class="OASHLink">View Table</a></div>
+                            <div id="OGAgrantHist">
+                            </div>
+                                <div id="OGAgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/OGAgrantHistTable.html" target="_blank"  class="OGALink">View Table</a></div>
+                            <div id="ONCgrantHist">
+                            </div>
+                                <div id="ONCgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/ONCgrantHistTable.html" target="_blank"  class="ONCLink">View Table</a></div>
+                            <div id="SAMHSAgrantHist">
+                            </div>
+                                <div id="SAMHSAgrantHist-link" class="hidden"><a href="/DataFiles/GrantHistoryBarChart/SAMHSAgrantHistTable.html" target="_blank"  class="SAMHSALink">View Table</a></div>               
+                       </div>
 
                         </div>
 
@@ -1514,11 +1579,15 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
                <div class="row medium-margin60">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div id="HHSawardsNumber">HHS Total International Number of Awards</div>
+                    <a href="/DataFiles/InternationalPieChart/HHSawardsNumberInternationalPieTable.html" class="pieChartLinks pieTableLink">View Table</a>
+                    <a href="" class="pieChartLinks pieExcelLink excelLink">View Excel</a>
                 </div>                              
             </div>
             <div class="row medium-margin60">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div id="HHSgrantDollars">HHS Total International Award Amounts</div>
+                    <a href="/DataFiles/InternationalPieChart/HHSgrantDollarsInternationalPieTable.html" class="pieChartLinks pieTableLink">View Table</a>
+                    <a href="" class="pieChartLinks pieExcelLink excelLink">View Excel</a>
                 </div>
             </div>
         </div>
@@ -1551,8 +1620,10 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt {
               <!--   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> -->
                     <div id="HHSMultiAgency">HHS Agencies with Multiple Recipients</div>
                 <!-- </div>                               -->
-            </div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <a href="/DataFiles/MultiAgencyRecipientTreeMap/RecipientsMultiAgency508table.html" target="_blank">View Table</a>
+             <a href="" target="_blank" class="excelLink">View Excel</a>
             <div>
                 
             </div>

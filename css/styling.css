@@ -2566,14 +2566,17 @@ border-color: #0049bf;
     font-weight: bold;
 }
 
-    .chart rect:hover {
+   /* .chart rect:hover {
       fill: #757575;
-    }
+    }*/
     .chart text {
       fill: black;
     }
     .chart text.name {
       fill: black;
+    }
+    .chart text.name:hover {
+      cursor: pointer;
     }
     .chart text.title {
       fill: black;
@@ -2699,4 +2702,11 @@ p.heading-text {
 .row.medium-margin60 {
   margin: 60px 0; }
 
+.pieTableLinks {
+margin-left: 41%
+}
+
+.excelLink {
+  margin-left: 10px;
+}
 

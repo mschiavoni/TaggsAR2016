@@ -25,10 +25,8 @@ var topIntOptions = $('.topIntMapOpt input:checked')
 
 if (intOpdivsOn.length === 1){
   getLinkTopInt(intOpdivsOn[0])
-  console.log('opdivOnInt', intOpdivsOn[0])
 } else {
-$('#topAwardsLinkInt').attr("href", "International_Recipients_Discretionary_All/International_Recipients_DiscretionaryHHS.html" )
-
+$('#topAwardsLinkInt').attr("href", "/DataFiles/International_Recipients_Discretionary_ALL/International_Recipients_DiscretionaryHHS.html" )
 }
 
 
@@ -39,8 +37,7 @@ $('#topAwardsLinkInt').attr("href", "International_Recipients_Discretionary_All/
 
 function getLinkTopInt(opdiv){
  var linkInt =  "International_Recipients_Discretionary";
-linkInt = "International_Recipients_Discretionary_All/" + linkInt + opdiv.toUpperCase() + ".html"
-console.log(linkInt)
+linkInt = "/DataFiles/International_Recipients_Discretionary_ALL/" + linkInt + opdiv.toUpperCase() + ".html"
 $('#topAwardsLinkInt').attr("href", linkInt)
 
 

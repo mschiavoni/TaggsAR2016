@@ -330,20 +330,29 @@ function createMapBox(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
   var stateLegend = document.getElementById('stateLegend');
   var stateButton =  $('#mapLinkState');
   var worldButton =  $('#mapLinkWorld');
+  var stateExcel =  $('#mapExcelLinkState');
+  var worldExcel =  $('#mapExcelLinkWorld');
 
   stateLegend.style.display = 'none';
   $(stateButton).css("display", "none");
+  $(stateExcel).css("display", "none");
   map.on('zoom', function() {
     if (map.getZoom() >= 3) {
      $(stateButton).css("display", "block");
      $(worldButton).css("display", "none");
+     $(stateExcel).css("display", "block");
+     $(worldExcel).css("display", "none");
      worldLegend.style.display = 'none';
-     stateLegend.style.display = 'block';
+     stateLegend.style.display = 'block'; 
+    
    } else {
     $(stateButton).css("display", "none");
-    $(worldButton).css("display", "block");
+    $(worldButton).css("display", "block"); 
+    $(stateExcel).css("display", "none");
+    $(worldExcel).css("display", "block");
     worldLegend.style.display = 'block';
     stateLegend.style.display = 'none';
+   
   }
 });
 
