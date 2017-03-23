@@ -125,7 +125,7 @@
             max-width: none!important;
             transition: none;
             border: none;
-            background-color: #1f1f1f;
+            background-color: #ffffff;
             margin-top: -180px;
         }
         
@@ -144,6 +144,7 @@
             max-width: 1200px;
             width: 100%;
             margin: 0 auto;
+	        z-index: 99999;
         }
         
         .banner .map-nav {
@@ -180,7 +181,8 @@
         .banner .map-nav {
            bottom: -45px;
            /* box-shadow: 20px 6px 50px 0 rgba(0, 0, 0, 0.19); */
-           box-shadow: 0 19px 19px 0 rgba(0,0,0,.3), 0 15px 6px 0 rgba(0,0,0,.22);
+           /* box-shadow: 0 19px 19px 0 rgba(0,0,0,.3), 0 15px 6px 0 rgba(0,0,0,.22); */
+	   box-shadow: 0 15px 24px rgba(0, 0, 0, 0.12), 0 19px 76px rgba(0, 0, 0, 0.1);
        }
 
     /*  .map-nav {
@@ -206,16 +208,17 @@
     margin-left: -598px;
     background-size: cover;
     margin-top: -40px;
-    background: no-repeat center, linear-gradient(to right, #263238, #263238);
+    background: no-repeat center, linear-gradient(to right, #ffffff, #ffffff);
 } 
 
-    #map,
-    #map2 {
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        height: 87vh;
-    }
+   #map, #map2 {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 88vh;
+    border-top: solid 10px #546E7A;
+    border-bottom: solid 10px #546E7A;
+}
     
     .checkbox label,
     .radio label {
@@ -399,7 +402,7 @@
         vertical-align: middle;
         position: relative;
         padding-left: 5px;
-        color: #ffffff;
+        color: #000000;
     }
     
     .radio label::before {
@@ -409,7 +412,7 @@
         height: 19px;
         left: 0;
         margin-left: -20px;
-        border: 1px solid #cccccc;
+        border: 2px solid #1fb6ff;
         border-radius: 50%;
         background-color: #fff;
         -webkit-transition: border 0.15s ease-in-out;
@@ -425,7 +428,7 @@
         width: 13px;
         height: 13px;
         left: 8px;
-        top: 7px;
+        top: 6px;
         margin-left: -20px;
         border-radius: 50%;
         background-color: #555555;
@@ -478,40 +481,39 @@
     }
     
     .radio-primary input[type="radio"] + label::after {
-        background-color: #337ab7;
+        background-color: #1fb6ff;
     }
     
     .radio-primary input[type="radio"]:checked + label::before {
-        border-color: #337ab7;
+        border-color: #1fb6ff;
     }
     
     .radio-primary input[type="radio"]:checked + label::after {
-        background-color: #337ab7;
+        background-color: #1fb6ff;
     }
 
     .radio-info input[type="radio"] + label::after {
-        background-color: #5bc0de;
+        background-color: #2196F3;
     }
     
     .radio-info input[type="radio"]:checked + label::before {
-        border-color: #5bc0de;
+        border-color: #1fb6ff;
     }
     
     .radio-info input[type="radio"]:checked + label::after {
-        background-color: #5bc0de;
+        background-color: #2196F3;
     }
-    
 
     .radio-success input[type="radio"] + label::after {
-        background-color: #5cb85c;
+        background-color: #2196F3;
     }
     
     .radio-success input[type="radio"]:checked + label::before {
-        border-color: #5cb85c;
+        border-color: #1fb6ff;
     }
     
     .radio-success input[type="radio"]:checked + label::after {
-        background-color: #5cb85c;
+        background-color: #2196F3;
     }
     
     input[type="checkbox"].styled:checked + label:after,
@@ -533,10 +535,9 @@
     .multiselect-container>li>a>label {
         font-size: 1.3em;
     }
-    .medium-padding20 {
-
-     padding: 20px 0;
- }
+.medium-padding20 {
+    padding: 25px 0 10px;
+}
  .btn-group, .btn-group-vertical {
     position: relative;
     display: block;
@@ -560,9 +561,14 @@
 .bg-borderthree-color {
     background-color: #ffffff;
 }
+p.title {
+    color: #000000;
+}
 p.sub-title {
+    color: #263238;
     margin-top: -10px;
     font-size: 17px;
+	
 }
 rect {
     stroke: none;
@@ -572,20 +578,56 @@ rect {
   
 a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt,  a#topAwardsExcelLink, a#topAwardsExcelLinkInt, a#mapExcelLinkWorld, a#mapExcelLinkState {
     border-style: solid;
-    color: #81d4fa;
+    color: #263238;
     padding: 10px;
     text-align: center;
     display: inline-block;
-    border-radius: 25rem;	
+    border-radius: 25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);	
 }
 /*a#mapLinkState {
     border-style: solid;
-    color: #81d4fa;
+    color: #263238;
     padding: 10px;
     text-align: center;
     display: inline-block;
+    border-radius: 25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);	
+}
+a#topAwardsLink {
+    border-style: solid;
+    color: #263238;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);	
+}
+a#topAwardsLinkInt {
+    border-style: solid;
+    color: #263238;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+<<<<<<< HEAD
     border-radius: 25rem;	
 }*/
+/*=======
+    border-radius: 25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);	
+}*/
+
+/**************CHECK THIS*/
+.bg-navblue-color {
+  background-color: #ffffff;
+}
+.medium-padding160 {
+    padding: 160px 0 120px;
+}
+.medium-paddingwave2 {
+    padding: 80px 0 160px;
+}
+
 </style>
 </head>
 
@@ -716,9 +758,9 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt,  a#topAward
 
     <div class="content-wrapper">
 
-			 <section class="height-100 imagebg cover cover-3" data-overlay="4" >
+			 <section class="height-100 imagebg cover cover-3 shadow-3" data-overlay="4" >
                 <div class="background-image-holder">
-                    <img alt="image" src="img/hero200.jpg" />
+                    <img alt="image" src="img/hero400.jpg" />
                 </div>
                 <div class="container pos-absolute pos-bottom text-center-xs">
                     <div class="row">
@@ -738,7 +780,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt,  a#topAward
 
                 
                 <div class="container-fluid">
-                    <div class="row medium-padding20 bg-borderten-color contacts-shadow">
+                    <div class="row medium-padding20 bg-navblue-color shadow-2">
                         <div class="container">
                             <div class="row">
                                 <div class="awards-nav">
@@ -921,7 +963,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt,  a#topAward
 
 
 <div class="container">
-    <div class="row medium-padding120">
+    <div class="row medium-padding160">
         <div class="col-lg-12">
             <div class="row mb30">
                 <div class="col-lg-12">
@@ -958,20 +1000,20 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt,  a#topAward
 
     <div id='topLegend' class='legend'>
         <h4>Agency</h4>
-        <div><span style='background-color: #1976D2'></span>ACF</div>
-        <div><span style='background-color: #2196F3'></span>ACL</div>
-        <div><span style='background-color: #64B5F6'></span>AHRQ</div>
-        <div><span style='background-color: #0288D1'></span>ASPE</div>
-        <div><span style='background-color: #4FC3F7'></span>CDC</div>
-        <div><span style='background-color: #0097A7'></span>CMS</div>
-        <div><span style='background-color: #00BCD4'></span>FDA</div>
-        <div><span style='background-color: #4DD0E1'></span>HRSA</div>
-        <div><span style='background-color: #00897B'></span>IHS</div>
-        <div><span style='background-color: #26A69A'></span>NIH</div>
-        <div><span style='background-color: #81C784'></span>OASH</div>
-        <div><span style='background-color: #9FA8DA'></span>OGA</div>
-        <div><span style='background-color: #5C6BC0'></span>ONC</div>
-        <div><span style='background-color: #4CAF50'></span>SAMHSA</div>
+        <div><span style='background-color: #94B1FF'></span>ACF</div>
+        <div><span style='background-color: #497AFF'></span>ACL</div>
+        <div><span style='background-color: #245AFF'></span>AHRQ</div>
+        <div><span style='background-color: #80C8F5'></span>ASPE</div>
+        <div><span style='background-color: #0089E7'></span>CDC</div>
+        <div><span style='background-color: #80DCEA'></span>CMS</div>
+        <div><span style='background-color: #26C3DA'></span>FDA</div>
+        <div><span style='background-color: #00B1CF'></span>HRSA</div>
+        <div><span style='background-color: #80DFD2'></span>IHS</div>
+        <div><span style='background-color: #26C9B3'></span>NIH</div>
+        <div><span style='background-color: #00B99D'></span>OASH</div>
+        <div><span style='background-color: #80E4A9'></span>OGA</div>
+        <div><span style='background-color: #26D06D'></span>ONC</div>
+        <div><span style='background-color: #00C24C'></span>SAMHSA</div>
     </div>
 
     <div id='topIntLegend' class='legend'>
@@ -1042,7 +1084,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt,  a#topAward
 
                    </div>
                </div>
-               <div class="col-md-7 col-md-offset-1 col-sm-7">
+               <div class="col-md-5 col-md-offset-1 col-sm-7">
 
                    <form>
                     <div class="radio radio-info radio-inline">
@@ -1058,6 +1100,8 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt,  a#topAward
                         </label>
                     </div>
                 </form>
+				</div>
+				
                 <div class="col-md-3 col-sm-3">
                 <a href="/DataFiles/Top50_Recipients_Discretionary_All/Top50_Recipients_Discretionary_HHS.html" id="topAwardsLink" target="_blank" content="html" charset="utf-8" class="tablelink2">View Table 50</a>
                 <a href="/DataFiles/International_Recipients_Discretionary_ALL/International_Recipients_DiscretionaryHHS.html" id="topAwardsLinkInt" target="_blank" content="html" charset="utf-8" class="tablelink2">View Table Int</a>
@@ -1071,47 +1115,54 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt,  a#topAward
     </div>
 </div>
 </div>
-</div>
 </section>
 
-<div class="container-fluid">
-    <div class="row">
 
-        <div style="background: #3F3F3F; background-size: cover; padding:150px 15px; position: relative;">
-            <div style="max-width: 790px; text-align: center; margin: 0 auto; position: relative; z-index: 5;">
-                <div class="heading">
-                    <h4 class="heading-title" style="font-size: 48px; color: #fff; margin-bottom: 20px;">TAGGS AWARDS</h4>
-                    <div class="heading-line">
-                        <span class="short-line"></span>
-                        <span class="long-line"></span>
-                    </div>
-                    <p class="heading-text" style="color: #fff;">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="opdiv-tables medium-padding160 bg-white-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                            <div class="heading align-center">
+                                <div class="heading">
+                                    <h4 class="heading-title" style="font-size: 48px; color: #2f2c2c; margin-bottom: 20px;">TAGGS AWARDS</h4>
+                                    <div class="heading-line">
+                                        <span class="short-line"></span>
+                                        <span class="long-line"></span>
+                                    </div>
+                                </div>
+
+                             <p class="heading-text">
                         In FY 2016, the Department of Health and Human Services administered more grant dollars than all other federal agencies combined. HHS awards formula/block, entitlement, discretionary grant awards and cooperative agreements. HHS awarded approximately $462 billion in grants for FY 2016. This included $55 billion in discretionary awards and $407 billion in formula/block and entitlement awards.
 
                     </p>
-                    <p class="heading-text" style="color: #fff;">
+                    <p class="heading-text" >
                         CMS, which administers the Medicare and Medicaid Programs, awarded 78%, or $360 billion of the total HHS grants fund; however, these awards are less than 2% of the total number of grants awarded by HHS.
 
                     </p>
-                    <p class="heading-text" style="color: #fff;">
+                    <p class="heading-text" >
                         ACF had the second highest percentage of total HHS grant funds awarded at over 12%, or $51 billion. This represented about 9% of the total number of grants awarded. NIH, which awarded about 4%, or nearly $24 billion, of the total HHS grant funds, accounted for 66% of the total number of HHS grants.
 
                     </p>
-                </div>
-            </div>
-            <div class="overlay"></div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
 
-        </div>
-    </div>
-</div>
+
 
 <div id="imageWrapper">
-    <img src="img/slide18.png" width="100" height="100" id="bottomImage" alt="" />
+    <img src="img/graph2.png" width="100" height="100" id="bottomImage" alt="" />
 </div>
 
 <div class="container-fluid">
     <div class="row">
-        <div class="opdiv-tables medium-padding120 bg-green-color contacts-shadow">
+        <div class="opdiv-tables medium-paddingwave2 bg-green-color contacts-shadow">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
@@ -1390,6 +1441,8 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt,  a#topAward
                     .style("visibility", "hidden")
                     // ***********
                 </script>
+				</div>
+				
                 <div class="container-fluid">
                     <div class="row">
                      <div class="opdiv-tables medium-padding120 bg-border-color contacts-shadow">
@@ -1550,9 +1603,9 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt,  a#topAward
                     </div>
                 </div>
             </div>
-        </div>
 
         <div class="container">
+
             <div class="row medium-padding120">
                 <div class="col-lg-12">
                     <div class="row mb30">
@@ -1596,7 +1649,8 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt,  a#topAward
 
 
 <div class="container">
-    <div class="row medium-padding120 bg-white-color">
+
+    <div class="row ">
         <div class="col-lg-12">
             <div class="row mb30">
                 <div class="col-lg-12">
@@ -1616,10 +1670,8 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt,  a#topAward
                     </div>
                 </div>
             </div>
-            <div class="row">
-              <!--   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> -->
-                    <div id="HHSMultiAgency">HHS Agencies with Multiple Recipients</div>
-                <!-- </div>                               -->
+            <div class="row medium-padding80">
+                    <div id="HHSMultiAgency">HHS Agencies with Multiple Recipients</div>                             
                 </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <a href="/DataFiles/MultiAgencyRecipientTreeMap/RecipientsMultiAgency508table.html" target="_blank">View Table</a>
@@ -1631,6 +1683,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt,  a#topAward
     </div>
 </div>
 
+</div>
 
 
 

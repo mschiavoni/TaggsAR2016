@@ -117,14 +117,11 @@ $('#topAwardsLink').attr("href", linkAll)
           'id': 'us_recipients',
           'source': 'USRecip',
           'source-layer': 'USRecipLatLong_R1',
-
           'type': 'circle',
-
-          'circle-opacity': 0.8,
-          'paint': {
-
+                'paint': {
+                    'circle-opacity': 0.48,
             'circle-radius': {
-              'base': 3,
+              'base': 5,
               'stops': [[12, 10], [22, 100]]
             },
 
@@ -132,21 +129,21 @@ $('#topAwardsLink').attr("href", linkAll)
               property: 'org_acronym',
               type: 'categorical',
               stops: [
-              ['ACF', '#1976D2'],
-              ['ACL', '#2196F3'],
-              ['AHRQ', '#64B5F6'],
-              ['ASPE', '#0288D1'],
-              ['ASPR', '#03A9F4'],
-              ['CDC', '#4FC3F7'],
-              ['CMS', '#0097A7'],
-              ['FDA', '#00BCD4'],
-              ['HRSA', '#4DD0E1'],
-              ['IHS', '#00897B'],
-              ['NIH', '#26A69A'],
-              ['OASH', '#81C784'],
-              ['OGA', '#9FA8DA'],
-              ['ONC', '#5C6BC0'],
-              ['SAMHSA', '#4CAF50']
+              ['ACF', '#94B1FF'],
+              ['ACL', '#497AFF'],
+              ['AHRQ', '#245AFF'],
+              ['ASPE', '#80C8F5'],
+              ['ASPR', '#26A2ED'],
+              ['CDC', '#0089E7'],
+              ['CMS', '#80DCEA'],
+              ['FDA', '#26C3DA'],
+              ['HRSA', '#00B1CF'],
+              ['IHS', '#80DFD2'],
+              ['NIH', '#26C9B3'],
+              ['OASH', '#00B99D'],
+              ['OGA', '#80E4A9'],
+              ['ONC', '#26D06D'],
+              ['SAMHSA', '#00C24C']
               ]
             }
           }
