@@ -1262,7 +1262,9 @@ tbody.collapse.in {
 .header .logo {
     margin-bottom: 0;
     margin-right: 40px;
-    float: left;}
+    float: left;
+    margin-top: -10px;
+}
     @media (max-width: 768px) {
       .header .logo {
         float: left;
