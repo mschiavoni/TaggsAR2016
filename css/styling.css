@@ -348,11 +348,12 @@ h1, .h1 {
     h1, .h1 {
       font-size: 24px; } }
 h2, .h2 {
-     margin: 0 !important;
-    font-size: 84px !important;
+    margin: 0 !important;
+    font-size: 54px !important;
     font-weight: bold !important;
     color: #2196F3 !important;
-    font-family: 'Montserrat', sans-serif !important;}
+    font-family: 'Montserrat', sans-serif !important;
+}
   h2 a, .h2 a {
     color: inherit; }
   @media (max-width: 800px) {
