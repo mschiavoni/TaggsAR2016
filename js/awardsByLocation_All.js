@@ -143,19 +143,23 @@ $('input[name="awards"]').click(function(){
 
 function getLink(opdiv, type){
  var linkState = "USA_";
- var linkWorld =  "World_";
+ var linkWorld = "World_";
  
  if (type === "totalAwards") {
-  linkState += "All_"
-  linkWorld += "All_"
+  linkState += "All/USA_All_"
+  linkWorld += "All/World_All_"
 
 } else {
-  linkState += "Discretionary_"
-  linkWorld += "Discretionary_"
+  linkState += "Discretionary/USA_Discretionary_"
+  linkWorld += "Discretionary/World_Discretionary_"
 }
 
-linkState = "CountryStateMapAwardsFiles_HTML/" + linkState + opdiv.toUpperCase() + ".html"
-linkWorld = "CountryStateMapAwardsFiles_HTML/" + linkWorld + opdiv.toUpperCase() + ".html"
+
+linkState = "/DataFiles/Maps/AwardsByLocation/US/" + linkState + opdiv.toUpperCase() + ".html"
+linkWorld = "/DataFiles/Maps/AwardsByLocation/World/" + linkWorld + opdiv.toUpperCase() + ".html"
+
+// linkState = "CountryStateMapAwardsFiles_HTML/" + linkState + opdiv.toUpperCase() + ".html"
+// linkWorld = "CountryStateMapAwardsFiles_HTML/" + linkWorld + opdiv.toUpperCase() + ".html"
 
 
 $('#mapLinkWorld').attr("href", linkWorld)

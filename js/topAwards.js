@@ -36,10 +36,9 @@ function changeOpdivs() {
   getLinkTop(opdivsOn[0])
 
 } else {
-  $('#topAwardsLink').attr("href", "/DataFiles/Top50_Recipients_Discretionary_All/Top50_Recipients_Discretionary_HHS.html" )
+  $('#topAwardsLink').attr("href", "/DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryUS/Top50_Recipients_Discretionary_US_HHS.html" )
 
 }
-
 
 
   map2.setFilter('us_recipients', ["in", 'org_acronym'].concat(opdivsOn))
@@ -87,8 +86,8 @@ function changeOpdivs() {
 
 
 function getLinkTop(opdiv){
- var linkAll = "Top50_Recipients_Discretionary_";
-linkAll = "/DataFiles/Top50_Recipients_Discretionary_All/" + linkAll + opdiv.toUpperCase() + ".html"
+ var linkAll = "Top50_Recipients_Discretionary_US_";
+linkAll = "/DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryUS/" + linkAll + opdiv.toUpperCase() + ".html"
 $('#topAwardsLink').attr("href", linkAll)
 
 };
