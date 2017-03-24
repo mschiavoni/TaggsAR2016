@@ -1422,7 +1422,9 @@ tbody.collapse.in {
 .logo .logo-text .logo-title {
     font-size: 40px;
     text-transform: uppercase;
-    color: #1a45a7;}
+    color: #1a45a7;
+    font-family: 'Open Sans', sans-serif;
+}
 .logo .logo-text .logo-sub-title {
     font-size: 10px;
     text-transform: uppercase;
