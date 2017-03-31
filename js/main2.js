@@ -2,6 +2,30 @@
 
 $(document).ready(function() {
 
+  var typesFundTitleND = $('#typesFundTitleND')
+     var typesFundTitleD = $('#typesFundTitleD')
+  var typesFundToolTipND =   $('#typesFundTTcontND')
+  var typesFundToolTipD =   $('#typesFundTTcontD')
+
+
+ typesFundTitleND.on("mouseover", function() {
+                return typesFundToolTipND.css("visibility", "visible");
+            })
+            .on("focus", function() {
+                return typesFundToolTipND.css("visibility", "visible");
+            })
+            .on("mouseout", function() {
+                return typesFundToolTipND.css("visibility", "hidden");
+            })
+   typesFundTitleD.on("mouseover", function() {
+                return typesFundToolTipD.css("visibility", "visible");
+            })
+            .on("focus", function() {
+                return typesFundToolTipD.css("visibility", "visible");
+            })
+            .on("mouseout", function() {
+                return typesFundToolTipD.css("visibility", "hidden");
+            })
 
 
 

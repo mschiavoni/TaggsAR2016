@@ -590,9 +590,7 @@ h2, .h2 {
     font-size: 28px !important;
     line-height: 1.29565217em !important;
 }	    
-.mt-100 {
-    margin-top: 100px;
-}	   
+	   
 </style>
 
 </head>
@@ -951,7 +949,7 @@ h2, .h2 {
 							   <p> <b>Overview:</b> Click on a button to review each chart. The chart shows HHS grants spending by agency compared to FY 2015.  
 							    The circle size shows the relative dollar amount.  Dark colors indicate a big change from the previous year. 
 							    Light colors reflect a small change.  Hover over a circle to view total and discretionary award data.</p>
-                                                    <p> <b>Types of Funding:</b> The charts show HHS spending by agency on discretionary and non-Discretionary grants.  
+                                                    <p> <b>Types of Funding:</b> The charts show HHS spending by agency on discretionary and non-Discretionary grants. Hover over the the two types of funding to view the definition of each. 
 							    Hover over a circle to view detailed data.</p>
                                                      <p><b>Agency Totals:</b> The charts show HHS discretionary and non-discretionary spending by agency compared to FY 2015.
 							    Agencies showing two circles made both types of awards.  Hover over any circle to view detailed data.
@@ -1144,9 +1142,9 @@ h2, .h2 {
                         cursor: pointer;
                         float: left;
                         padding: 14px 40px;
-                        border-top: solid 2px #cfd8dc;
-                        border-bottom: solid 2px #cfd8dc;
-                        border-left: solid 2px #cfd8dc;
+                        border-top: solid 2px #a0aec5;
+                        border-bottom: solid 2px #a0aec5;
+                        border-left: solid 2px #a0aec5;
                         background: #ffffff;
                         box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);
                         <!-- border-radius: 0 !important; -->
@@ -1159,33 +1157,33 @@ h2, .h2 {
                  li#taggs-nav-mandatory.selected {
                      border-radius: 0px !important;
                      color: #ffffff;
-                     background: #cfd8dc;
+                     background: #a0aec5;
                  }
 
 
                  li#taggs-nav-deparment.selected {
                     color: #ffffff;
-                    background: #cfd8dc;
+                    background: #a0aec5;
                     border-radius: 0 60px 60px 0 !important;
                 }
 
                 .taggs-navigation li:last-of-type {
-                    border-right: solid 2px #cfd8dc;
+                    border-right: solid 2px #a0aec5;
                     border-radius: 0px 60px 60px 0px;
                 }
 
                 .taggs-navigation li:last-of-type {
                     color: #2b2b2b;
                     background: #ffffff;
-                    border-color: #cfd8dc;
+                    border-color: #a0aec5;
                     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);
                     border-radius: 0 60px 60px 0;
                 }
 
                 .taggs-navigation li.selected {
                     color: #ffffff;
-                    background: #cfd8dc;
-                    border-color: #cfd8dc;
+                    background: #a0aec5;
+                    border-color: #a0aec5;
                     border-radius: 60px 0 0 60px;
                 }
 
@@ -1720,9 +1718,11 @@ h2, .h2 {
                                         <div class="taggs-mandatoryExplainer">
                                         </div>
                                         <div class="taggs-mandatoryAside">
-                                            <h5>Non-discretionary award</h5>
+                                            <h5 id="typesFundTitleND">Non-discretionary award</h5>
                                             <p><strong style="font-size:16px;padding-bottom:4px;display:block;">total amount</strong></p>
+                                            <div id="typesFundTTcontND" tabindex="0">
                                             <p>An award made by an HHS awarding agency in keeping with specific statutory authority under which the agency has no ability to exercise judgment (“discretion”), due to “mandatory” award requirements, in selecting the applicant/recipient organization through a competitive process. Non-discretionary awards can be both formula and non-formula based.</p>
+                                            </div>
                                         </div>
                                         <div class="taggs-discretionaryExplainer">
                                         </div>
@@ -1752,9 +1752,12 @@ h2, .h2 {
                                             </ul>
                                         </div>
                                         <div class="taggs-discretionaryAside">
-                                            <h5>Discretionary award</h5>
+                                            <h5 id="typesFundTitleD">Discretionary award</h5>
                                             <p><strong style="font-size:16px;padding-bottom:4px;display:block;">total amount</strong></p>
-                                            <p>An award made by an HHS awarding agency in keeping with specific statutory authority which enables the agency to exercise judgment (“discretion”) in selecting the applicant/recipient organization through a competitive award process.</p>
+                                            <div id="typesFundTTcontD" tabindex="0">
+                                            </p>An award made by an HHS awarding agency in keeping with specific statutory authority which enables the agency to exercise judgment (“discretion”) in selecting the applicant/recipient organization through a competitive award process.</p>
+                                            </div>
+                                                
                                         </div>
                                     </div>
                                     <div class="taggs-overlay" id="taggs-discretionaryOverlay">
@@ -1801,7 +1804,7 @@ h2, .h2 {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-12 col-xs-12 mt-100" >
+                        <div class="col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-12 col-xs-12" >
                             <p class="Footnote"> 
                              During previous fiscal years, ONC awarded 18 grants totaling $9, 261,000.  Those awards were de-obligated during FY 2016, so the dollar figures in the ONC charts and tables appear as negative values.
                          </p>
@@ -10356,7 +10359,6 @@ if (!!document.createElementNS && !!document.createElementNS('http://www.w3.org/
 </div>
 </div>
 </div>
-<!-- >>>>>>> a70b017fe2573e58def177815be2e952612d8f4f -->
 </div>
 </div>
 
@@ -10674,6 +10676,7 @@ if (!!document.createElementNS && !!document.createElementNS('http://www.w3.org/
 <script src="js/plugins.js"></script>
 <script src="js/parallax.js"></script>
 <script src="js/main.js"></script>
+<script src="js/main2.js"></script>
 <script src="js/ScrollMagic.min.js"></script>
 <script src="js/velocity.min.js"></script>
 <script src="js/animation.velocity.min.js"></script>
