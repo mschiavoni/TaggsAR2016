@@ -12,7 +12,11 @@
 }
 
 .multiselect-container>li {
-    padding: 0
+    width: 100%;
+    box-sizing: border-box;
+    color: inherit;
+    padding: 8px;
+    line-height: 1.8em;
 }
 
 .multiselect-container>li>a.multiselect-all label {
