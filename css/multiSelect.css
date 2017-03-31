@@ -1,3 +1,6 @@
+.dropdown-menu {
+    font-size: 12px;
+}
 .multiselect-container {
     position: absolute;
     border: none;
