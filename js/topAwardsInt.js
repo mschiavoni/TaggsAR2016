@@ -37,7 +37,7 @@ $('#topAwardsLinkInt').attr("href", "/DataFiles/Maps/TopAwardRecipients/Top50Dis
 
 function getLinkTopInt(opdiv){
  var linkInt =  "Top50_Recipients_Discretionary_International_";
-linkInt = "/DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryWorld/" + linkInt + opdiv.toUpperCase() + ".html"
+linkInt = "DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryWorld/" + linkInt + opdiv.toUpperCase() + ".html"
 $('#topAwardsLinkInt').attr("href", linkInt)
 
 
