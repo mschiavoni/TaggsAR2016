@@ -120,7 +120,7 @@ var TAGGS = {};
             $t.addClass('swiper-' + index + ' initialized').attr('id', index);
             var $effect = ($t.data('effect')) ? $t.data('effect') : 'slide',
                 $crossfade = ($t.data('crossfade')) ? $t.data('crossfade') : true,
-                $loop = ($t.data('loop') == false) ? $t.data('loop') : true,
+                $loop = ($t.data('loop') === false) ? $t.data('loop') : true,
                 $showItems = ($t.data('show-items')) ? $t.data('show-items') : 1,
                 $scrollItems = ($t.data('scroll-items')) ? $t.data('scroll-items') : 1,
                 $scrollDirection = ($t.data('direction')) ? $t.data('direction') : 'horizontal',
@@ -138,7 +138,7 @@ var TAGGS = {};
                         slidesPerView: 2,
                         slidesPerGroup: 2
                     }
-                }
+                };
             }
             swipers['swiper-' + index] = new Swiper('.swiper-' + index, {
                 direction: $scrollDirection,
@@ -190,7 +190,7 @@ var TAGGS = {};
             s.draw('80% - 240', '80%', 0.3, {
                 delay: 0.1,
                 callback: function () {
-                    inAC2(s)
+                    inAC2(s);
                 }
             });
         }
@@ -202,7 +202,7 @@ var TAGGS = {};
         function inB(s) {
             s.draw(beginB - 60, endB + 60, 0.1, {
                 callback: function () {
-                    inB2(s)
+                    inB2(s);
                 }
             });
         }
@@ -215,14 +215,14 @@ var TAGGS = {};
             s.draw('90% - 240', '90%', 0.1, {
                 easing: ease.ease('elastic-in', 1, 0.3),
                 callback: function () {
-                    outAC2(s)
+                    outAC2(s);
                 }
             });
         }
         function outAC2(s) {
             s.draw('20% - 240', '20%', 0.3, {
                 callback: function () {
-                    outAC3(s)
+                    outAC3(s);
                 }
             });
         }
@@ -266,7 +266,7 @@ var TAGGS = {};
             }
             toCloseIcon2 = !toCloseIcon2;
             setTimeout(function () {
-                removeScale(wrapper2)
+                removeScale(wrapper2);
             }, 450);
         };
     };
@@ -299,11 +299,7 @@ var TAGGS = {};
             }
         }
     });
-    jQuery(".js-animate").on('click', function (event) {
-        event.stopPropagation();
-        $cartPopap.toggleClass('visible');
-        $cartPopap.fadeToggle(200);
-    });
+
     jQuery('.back-to-top').on('click', function () {
         $('html,body').animate({
             scrollTop: 0
@@ -341,7 +337,7 @@ var TAGGS = {};
         }
     });
 })(jQuery);
-taggs = (function (taggs, $, window, document){
+TAGGS = (function (taggs, $, window, document){
     "use strict";
     var documentReady = function($){
 	    $('.background-image-holder').each(function() {
@@ -349,16 +345,16 @@ taggs = (function (taggs, $, window, document){
 	        $(this).css('background', 'url("' + imgSrc + '")').css('background-position', 'initial').css('opacity','1');
 	    });
     };
-    taggs.backgrounds = {
+    TAGGS.backgrounds = {
         documentReady : documentReady        
     };
 
-    taggs.components.documentReady.push(documentReady);
+    TAGGS.components.documentReady.push(documentReady);
     return taggs;
 
-}(taggs, jQuery, window, document));			
+}(TAGGS, jQuery, window, document));			
 			
-taggs = (function (taggs, $, window, document){
+TAGGS = (function (taggs, $, window, document){
     "use strict";
     
     var documentReady = function($){
@@ -384,76 +380,18 @@ taggs = (function (taggs, $, window, document){
         }
     };
 
-    taggs.parallax = {
+    TAGGS.parallax = {
         documentReady : documentReady        
     };
 
-    taggs.components.documentReady.push(documentReady);
+    TAGGS.components.documentReady.push(documentReady);
     return taggs;
 
-}(taggs, jQuery, window, document));
-
-taggs = (function (taggs, $, window, document){
-    "use strict";
-    
-	  var documentReady = function($){
-	      
-
-			if($('.youtube-background').length){
-				$('.youtube-background').each(function(){
-					var player = $(this);
-					var vidURL = $(this).attr('data-video-url');
-					var startAt = $(this).attr('data-start-at');
-					player.attr('data-property','{videoURL:"'+vidURL+'",containment:"self",autoPlay:true, mute:true, startAt:'+startAt+', opacity:1}');
-					player.closest('.videobg').append('<div class="loading-indicator"></div>');
-					player.YTPlayer();
-					player.on("YTPStart",function(){
-				  		player.closest('.videobg').addClass('video-active');
-					});	
-				});
-			}
-
-			if($('.videobg').find('video').length){
-				$('.videobg').find('video').closest('.videobg').addClass('video-active');
-			} 
+}(TAGGS, jQuery, window, document));
 
 
-			$('.video-cover').each(function(){
-			    var videoCover = $(this);
-			    if(videoCover.find('iframe').length){
-			        videoCover.find('iframe').attr('data-src', videoCover.find('iframe').attr('src'));
-			        videoCover.find('iframe').attr('src','');
-			    }
-			});
 
-			$('.video-cover .video-play-icon').on("click", function(){
-			    var playIcon = $(this);
-			    var videoCover = playIcon.closest('.video-cover');
-			    if(videoCover.find('video').length){
-			        var video = videoCover.find('video').get(0);
-			        videoCover.addClass('reveal-video');
-			        video.play();
-			        return false;
-			    }else if(videoCover.find('iframe').length){
-			        var iframe = videoCover.find('iframe');
-			        iframe.attr('src',iframe.attr('data-src'));
-			        videoCover.addClass('reveal-video');
-			        return false;
-			    }
-			});
-	  };
-
-	  taggs.video = {
-	      documentReady : documentReady        
-	  };
-
-	  taggs.components.documentReady.push(documentReady);
-	  return taggs;
-
-}(taggs, jQuery, window, document));
-/// Notifications
-
-	taggs = (function (taggs, $, window, document){
+	TAGGS = (function (taggs, $, window, document){
     "use strict";
     
     taggs.notifications = {};
@@ -532,4 +470,4 @@ taggs = (function (taggs, $, window, document){
     taggs.components.documentReady.push(documentReady);
     return taggs;
 
-}(taggs, jQuery, window, document));
+}(TAGGS, jQuery, window, document));
