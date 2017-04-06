@@ -26,7 +26,7 @@ var topIntOptions = $('.topIntMapOpt input:checked')
 if (intOpdivsOn.length === 1){
   getLinkTopInt(intOpdivsOn[0])
 } else {
-$('#topAwardsLinkInt').attr("href", "/DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryWorld/Top50_Recipients_Discretionary_International_HHS.html")
+$('#topAwardsLinkInt').attr("href", "DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryWorld/Top50_Recipients_Discretionary_International_HHS.html")
 }
 
 
