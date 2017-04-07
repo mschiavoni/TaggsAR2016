@@ -2,7 +2,12 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw'
 
 
-var COLORS = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5'];
+// var COLORS = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5'];
+ // var COLORSORG = ['#f7fcf0', '#ccebc5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081'];
+ // var COLORSSTATE = ['#f7fcf0', '#ccebc5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081'];
+ // var COLORS = ['#f7fbff', '#b2dfdb', '#80cbc4', '#00838f', '#1976d2', '#1565c0', '#0d47a1'];
+// var COLORSWORLD = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5'];
+// var COLORSWORLD = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5'];
 
 function createMapBox2(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
 
@@ -54,13 +59,13 @@ function createMapBox2(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
           property: awarddollars_opdiv,
           type: 'interval',
           stops: [
-          [BREAKS_WORLD[0], COLORS[0]],
-          [BREAKS_WORLD[1], COLORS[1]],
-          [BREAKS_WORLD[2], COLORS[2]],
-          [BREAKS_WORLD[3], COLORS[3]],
-          [BREAKS_WORLD[4], COLORS[4]],
-          [BREAKS_WORLD[5], COLORS[5]],
-          [BREAKS_WORLD[6], COLORS[6]]
+          [BREAKS_WORLD[0], COLORSWORLD[0]],
+          [BREAKS_WORLD[1], COLORSWORLD[1]],
+          [BREAKS_WORLD[2], COLORSWORLD[2]],
+          [BREAKS_WORLD[3], COLORSWORLD[3]],
+          [BREAKS_WORLD[4], COLORSWORLD[4]],
+          [BREAKS_WORLD[5], COLORSWORLD[5]],
+          [BREAKS_WORLD[6], COLORSWORLD[6]]
           ]
 
         },
@@ -81,13 +86,13 @@ function createMapBox2(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
         'fill-color': {
           property: awarddollars_opdiv,
           stops: [
-          [BREAKS_USA[0], COLORS[0]],
-          [BREAKS_USA[1], COLORS[1]],
-          [BREAKS_USA[2], COLORS[2]],
-          [BREAKS_USA[3], COLORS[3]],
-          [BREAKS_USA[4], COLORS[4]],
-          [BREAKS_USA[5], COLORS[5]],
-          [BREAKS_USA[6], COLORS[6]]
+          [BREAKS_USA[0], COLORSSTATE[0]],
+          [BREAKS_USA[1], COLORSSTATE[1]],
+          [BREAKS_USA[2], COLORSSTATE[2]],
+          [BREAKS_USA[3], COLORSSTATE[3]],
+          [BREAKS_USA[4], COLORSSTATE[4]],
+          [BREAKS_USA[5], COLORSSTATE[5]],
+          [BREAKS_USA[6], COLORSSTATE[6]]
           ]
         },
         'fill-opacity': 1

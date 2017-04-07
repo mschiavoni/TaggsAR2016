@@ -1,7 +1,15 @@
  // 'use strict'
- mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw'
+ mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wOXA1emlyMTEifQ.FtviOLuh7BVrbQlZvwsTOw';
 
- var COLORS = ['#f7fcf0', '#ccebc5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081'];
+ // var COLORSORG = ['#f7fcf0', '#ccebc5', '#7bcc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081'];
+ // var COLORS = ['#f7fbff', '#b2dfdb', '#80cbc4', '#00838f', '#1976d2', '#1565c0', '#0d47a1'];
+// var COLORSWORLD = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5'];
+ // ).css({'background-color': "rgb(0,0,255)" })
+ // var COLORSSTATE = ['rgb(247, 252, 240)', 'rgb(206, 235, 197)', 'rgb(123, 204, 196)', 'rgb(104, 176, 196)', 'rgb(11, 146, 183)', 'rgb(0, 106, 155)', 'rgb(1, 82, 119)'];
+ // var COLORSSTATE = ['#fefeff', '#bfdcfa', '#7fb9f5', '#509ff2','#308eef', '#127cec', '#09427e'];
+ // var COLORSSTATE = ['#f7fcf0', '#ccebc5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081'];
+ var COLORSWORLD = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5'];
+ var COLORSSTATE = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5'];
 
  var allBreaks = {}
 
@@ -89,16 +97,7 @@ $('#mapDrop').multiselect({
   dropUp: true
 });
 
-function updateLegend(arrState, arrWorld) {
 
-  $(".stateLegendText").each(function(i){
-    $(this).text(arrState[i].toReducedFormat())
-  })
-
-  $(".worldLegendText").each(function(i){
-    $(this).text(arrWorld[i].toReducedFormat())
-  })
-}
 
 $('#mapDrop').on("change", function(){
 
@@ -158,9 +157,6 @@ function getLink(opdiv, type){
 linkState = "/DataFiles/Maps/AwardsByLocation/US/" + linkState + opdiv.toUpperCase() + ".html"
 linkWorld = "/DataFiles/Maps/AwardsByLocation/World/" + linkWorld + opdiv.toUpperCase() + ".html"
 
-// linkState = "CountryStateMapAwardsFiles_HTML/" + linkState + opdiv.toUpperCase() + ".html"
-// linkWorld = "CountryStateMapAwardsFiles_HTML/" + linkWorld + opdiv.toUpperCase() + ".html"
-
 
 $('#mapLinkWorld').attr("href", linkWorld)
 $('#mapLinkState').attr("href", linkState)
@@ -174,8 +170,8 @@ $('#mapLinkState').attr("href", linkState)
 
 function getLegend(opdiv, type) {
 
-  var legendWorld = 'Legend_World_'
-  var legendState = 'Legend_State_'
+  var legendWorld = 'Legend_World_';
+  var legendState = 'Legend_State_';
 
   if (type === "totalAwards") {
     legendWorld += "All_"
@@ -196,15 +192,39 @@ function getLegend(opdiv, type) {
     var arrWorld = data.split("|").map(toNumber)
     arrWorld[0]= 0;
 
+
     $.get('./Legend_World_Discretionary_aLL/' + legendState , function(data) {
+
       var arrState = data.split("|").map(toNumber)
       arrState[0]= 0;
       updateLegend(arrState, arrWorld)
+
     });
 
   });
 
 
+}
+
+function updateLegend(arrState, arrWorld) {
+
+  $('.stateLegendText').each(function(i){
+    $(this).text(arrState[i].toReducedFormat())
+
+  })
+
+  $('.worldLegendText').each(function(i){
+    $(this).text(arrWorld[i].toReducedFormat())
+
+  })
+
+  $('.stateLegendColor').each(function(i){
+    $(this).css('background-color', COLORSSTATE[i])
+  })
+
+  $('.worldLegendColor').each(function(i){
+     $(this).css('background-color', COLORSWORLD[i] )
+  })
 }
 
 function createMapBox(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
@@ -242,13 +262,13 @@ function createMapBox(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
         property: awarddollars_opdiv,
         type: 'interval',
         stops: [
-        [BREAKS_WORLD[0], COLORS[0]],
-        [BREAKS_WORLD[1], COLORS[1]],
-        [BREAKS_WORLD[2], COLORS[2]],
-        [BREAKS_WORLD[3], COLORS[3]],
-        [BREAKS_WORLD[4], COLORS[4]],
-        [BREAKS_WORLD[5], COLORS[5]],
-        [BREAKS_WORLD[6], COLORS[6]]
+        [BREAKS_WORLD[0], COLORSWORLD[0]],
+        [BREAKS_WORLD[1], COLORSWORLD[1]],
+        [BREAKS_WORLD[2], COLORSWORLD[2]],
+        [BREAKS_WORLD[3], COLORSWORLD[3]],
+        [BREAKS_WORLD[4], COLORSWORLD[4]],
+        [BREAKS_WORLD[5], COLORSWORLD[5]],
+        [BREAKS_WORLD[6], COLORSWORLD[6]]
         ]
 
       },
@@ -268,13 +288,13 @@ function createMapBox(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
                   'fill-color': {
                     property: awarddollars_opdiv,
                     stops: [
-                    [BREAKS_USA[0], COLORS[0]],
-                    [BREAKS_USA[1], COLORS[1]],
-                    [BREAKS_USA[2], COLORS[2]],
-                    [BREAKS_USA[3], COLORS[3]],
-                    [BREAKS_USA[4], COLORS[4]],
-                    [BREAKS_USA[5], COLORS[5]],
-                    [BREAKS_USA[6], COLORS[6]]
+                    [BREAKS_USA[0], COLORSSTATE[0]],
+                    [BREAKS_USA[1], COLORSSTATE[1]],
+                    [BREAKS_USA[2], COLORSSTATE[2]],
+                    [BREAKS_USA[3], COLORSSTATE[3]],
+                    [BREAKS_USA[4], COLORSSTATE[4]],
+                    [BREAKS_USA[5], COLORSSTATE[5]],
+                    [BREAKS_USA[6], COLORSSTATE[6]]
                     ]
                   },
                   'fill-opacity': 1

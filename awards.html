@@ -688,6 +688,18 @@ a#topAwardsLinkInt {
 .ml--10 {
     margin-left: -10px;
  }
+
+ .stateLegendColor, .worldLegendColor {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    margin: 10px;
+    line-height: 9px
+ }
+
+ .stateLegendText, .worldLegendText {
+    margin-left: 16px;
+ }
 </style>
 </head>
 
@@ -924,33 +936,78 @@ a#topAwardsLinkInt {
  </div>
 </div>
 
+ <!-- var COLORS = ['#f7fcf0', '#b2dfdb', '#80cbc4', '#00838f', '#1976d2', '#1565c0', '#0d47a1']; -->
 
+ <!-- // var COLORS = ['#f7fcf0', '#ccebc5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081']; -->
 
 <div id='map'>
     <div id='worldLegend' class='legend'>
         <h4>Award</h4>
         <h4>Spending</h4>
-        <div><span style='background-color: #f7fbff'></span>$10 k</div>
-        <div><span style='background-color: #deebf7'></span>$100 k</div>
-        <div><span style='background-color: #c6dbef'></span>$500 K</div>
-        <div><span style='background-color: #9ecae1'></span>$10 M</div>
-        <div><span style='background-color: #6baed6'></span>$50 M</div>
-        <div><span style='background-color: #4292c6'></span>$100 M</div>
-        <div><span style='background-color: #2171b5'></span>$500 M</div>
-        <div><span style='background-color: #084081'></span>$500 B</div>
+      <!--   <div class="worldLegendColor" style='background-color: #f7fbff; border: 1px solid #cccccc'><span class="worldLegendColor" ></span>
+        </div> -->
+
+        <div class="worldLegendColor" style='background-color: #f7fbff; border: 1px solid #cccccc'>
+            <span class="worldLegendText" ></span>
+            </div>
+
+        <div class="worldLegendColor">
+            <span class="worldLegendText"></span>
+            </div>
+
+        <div class="worldLegendColor">
+            <span class="worldLegendText"></span>
+            </div>
+
+        <div class="worldLegendColor">
+            <span class="worldLegendText"></span>
+            </div>
+
+        <div class="worldLegendColor">
+            <span class="worldLegendText"></span>
+            </div>
+
+        <div class="worldLegendColor">
+            <span class="worldLegendText"></span>
+            </div>
+
+        <div class="worldLegendColor">
+            <span class="worldLegendText"></span>
+            </div>
+
 
     </div>
 
     <div id='stateLegend' class='legend'>
         <h4>Award</h4>
         <h4>Spending</h4>
-        <div><span style='background-color: #f7fbff; border: 1px solid #cccccc'></span>$0 M</div>
-        <div><span style='background-color: #ccebc5'></span>$10 M</div>
-        <div><span style='background-color: #7bccc4'></span>$20 M</div>
-        <div><span style='background-color: #4eb3d3'></span>$50 M</div>
-        <div><span style='background-color: #2b8cbe'></span>$100 M</div>
-        <div><span style='background-color: #0868ac'></span>$500 M</div>
-        <div><span style='background-color: #084081'></span>$150 B</div>
+        <div class="stateLegendColor" style='background-color: #f7fbff; border: 1px solid #cccccc' >
+             <span class="stateLegendText"></span>
+        </div>
+
+        <div class="stateLegendColor" style='background-color: #ccebc5'>
+            <span class="stateLegendText" ></span>
+        </div>
+
+        <div class="stateLegendColor" style='background-color: #7bccc4'>
+            <span class="stateLegendText" ></span>
+        </div>
+
+        <div class="stateLegendColor" style='background-color: #4eb3d3'>
+            <span class="stateLegendText" ></span>
+        </div>
+
+        <div class="stateLegendColor" style='background-color: #2b8cbe'>
+            <span class="stateLegendText" ></span>
+        </div>
+
+        <div class="stateLegendColor" style='background-color: #0868ac'>
+            <span class="stateLegendText" ></span>
+        </div>
+
+        <div class="stateLegendColor" style='background-color: #084081'>
+            <span class="stateLegendText" ></span>
+        </div>
 
     </div>
 </div>
@@ -1067,6 +1124,7 @@ a#topAwardsLinkInt {
         <div><span style='background-color: #497AFF'></span>ACL</div>
         <div><span style='background-color: #245AFF'></span>AHRQ</div>
         <div><span style='background-color: #80C8F5'></span>ASPE</div>
+        <div><span style='background-color: #66a0c4'></span>ASPR</div>
         <div><span style='background-color: #0089E7'></span>CDC</div>
         <div><span style='background-color: #80DCEA'></span>CMS</div>
         <div><span style='background-color: #26C3DA'></span>FDA</div>
