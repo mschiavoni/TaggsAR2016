@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>HHS TAGGS 2016 Annual Report - Agencies</title>
@@ -171,13 +174,122 @@ h2, .h2 {
     font-size: 28px !important;
     line-height: 1.29565217em !important;
 }	    	
+	
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("img/load-page.gif") no-repeat center center #ffffff
+}
+@media (max-width: 1310px) {
+.scroll-down {
+    margin-bottom: -50px;
+}
+}
+@media (max-width: 1000px) {
+.cover-3 .pos-bottom {
+    margin-bottom: -13em;
+}
+}
+@media (max-width: 1000px) {
+.scroll-down {
+    margin-bottom: -70px;
+}
+}
+.container-fluid-navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1500px) {
+.container-fluid-navbar {
+    padding-right: 220px;
+    padding-left: 220px;
+    margin-right: auto;
+    margin-left: auto;
+}
+}
+@media (max-width: 840px) {
+.primary-menu-menu>li>a {
+    position: relative;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all .3s ease;
+    margin-right: 3px;
+    margin-left: 1px;
+}
+}
+@media (max-width: 768px){
+.header {
+    position: absolute !important;
+}
+}
+
+@media screen and (max-width: 890px) {
+    h2, .h2 {
+    font-size: 38px !important;
+    }
+}
+@media screen and (max-width: 890px) {
+   .imagebg:not(.image--light) p {
+    font-size: 18px !important;
+    }
+}
+@media screen and (max-width: 570px) {
+    h2, .h2 {
+    font-size: 22px !important;
+	margin-top: 10px;
+    }
+}
+@media screen and (max-width: 570px) {
+   .imagebg:not(.image--light) p {
+    font-size: 12px !important;
+    }
+}
+@media (max-width: 768px) {
+.primary-menu-responsive.primary-menu .showhide {
+    display: inline-block;
+    right: auto;
+    margin-right: 0;
+    float: right;
+    padding-right: 25px;
+}
+}
+@media (max-width: 768px) {
+.header .logo {
+    float: left;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+}	
 </style>
+	<script>
+	document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('contents').style.visibility="visible";
+      },2000);
+  }
+}
+	</script>
 </head>
+
 <body class=" ">
+    <div id="load"></div>
+	
 <a href="#maincontent">Skip to main content</a>
 
     <header class="header contacts-shadow" id="site-header">
-    <div class="container">
+    <div class="container-fluid-navbar">
 
             <div class="header-content-wrapper">
                 <div class="logo">
@@ -346,8 +458,9 @@ h2, .h2 {
 								</div>
 							<p class="heading-text">Mark Greenberg
 							</p>
-								<p class="heading-text directorPosition">Acting Assistant Secretary</i>
-                            </p>									
+								<br>
+								<p class="heading-text directorPosition">Acting Assistant Secretary
+                            </p>	<br>								
                             
 								<p>Mission:  To foster health and well-being by providing federal leadership,
 								partnership and resources for the compassionate and effective delivery of human
@@ -384,7 +497,7 @@ h2, .h2 {
 									<span class="short-line"></span>
 									<span class="long-line"></span>
 							<p class="heading-text">Kathy Greenlee
-							</p><p class="heading-text directorPosition">Administrator Assistant Secretary</i>
+							</p><br><p class="heading-text directorPosition">Administrator Assistant Secretary
                             </p>									
 								</div>
 								<p>Mission: Maximize the independence, well-being, and 
@@ -412,7 +525,7 @@ h2, .h2 {
 				</div>
 				<div class="hhsagency-description-border"></div>
 			</div>
-			</div
+		</div>
 		</div>
 	</div>
 </div>
@@ -436,7 +549,7 @@ h2, .h2 {
 									<span class="short-line"></span>
 									<span class="long-line"></span>
 							<p class="heading-text">Andrew B. Bindman, M.D.
-							</p><p class="heading-text directorPosition">Director</i>
+							</p><br><p class="heading-text directorPosition">Director
                             </p>	
 								</div>
 								<p>Mission: The Agency for Healthcare Research and Quality’s
@@ -475,7 +588,7 @@ h2, .h2 {
 									<span class="short-line"></span>
 									<span class="long-line"></span>
 							<p class="heading-text">Richard Frank, Ph.D. 
-							</p><p class="heading-text directorPosition">Assistant Secretary</i>
+							</p><br><p class="heading-text directorPosition">Assistant Secretary
                             </p>								
 								</div>
 								<p>Mission: The Assistant Secretary for Planning and Evaluation (ASPE) advises
@@ -535,7 +648,7 @@ h2, .h2 {
 									<span class="short-line"></span>
 									<span class="long-line"></span>
 							<p class="heading-text">Nicole Lurie, M.D., M.S.P.H.
-							</p><p class="heading-text directorPosition">Assistant Secretary</i>
+							</p><br><p class="heading-text directorPosition">Assistant Secretary
                             </p>
 								</div>
 								<p>Mission: To lead the country in preparing for, responding to, and recovering 
@@ -555,7 +668,7 @@ h2, .h2 {
 						</div>
 							<div class="widget w-tags">
 								<div class="tags-wrap">
-									<a href="awards.html?hhs" class="w-tags-item">Awards Page</a>
+									<a href="awards.html?aspr" class="w-tags-item">Awards Page</a>
 									<a href="https://www.phe.gov/preparedness/Pages/default.aspx" class="w-tags-item">Website</a>
 								</div>
 							</div>								
@@ -581,7 +694,7 @@ h2, .h2 {
 									<span class="short-line"></span>
 									<span class="long-line"></span>
 							<p class="heading-text">Dr. Tom Freiden
-							</p><p class="heading-text directorPosition">Director</i>
+							</p><br><p class="heading-text directorPosition">Director
                             </p>
 								</div>
 								<p>Mission: CDC works 24/7 keeping America safe from health, safety, and
@@ -640,7 +753,7 @@ h2, .h2 {
 									<span class="short-line"></span>
 									<span class="long-line"></span>
 							<p class="heading-text">Andy Slavit
-                            </p>
+                            </p><br>
                             <p class="heading-text directorPosition">Acting Administrator</p>
 								</div>
 								<p>Mission: To ensure effective, up-to-date healthcare coverage and to promote quality care for beneficiaries.
@@ -691,7 +804,7 @@ h2, .h2 {
 									<span class="short-line"></span>
 									<span class="long-line"></span>
 							<p class="heading-text">Robert M. Califf, M.D.
-							</p>
+							</p><br>
                             <p class="heading-text directorPosition">Commissioner
                             </p>
 								</div>
@@ -749,7 +862,7 @@ h2, .h2 {
 									<span class="short-line"></span>
 									<span class="long-line"></span>
 							<p class="heading-text">Jim Macrae, M.S., M.P.P.
-							</p><p class="heading-text directorPosition">Acting Commissioner</i>
+							</p><br><p class="heading-text directorPosition">Acting Commissioner
                             </p>
 								</div>
 								<p>Mission: To improve health and achieve health equity through access to
@@ -802,7 +915,7 @@ h2, .h2 {
 									<span class="short-line"></span>
 									<span class="long-line"></span>
 							<p class="heading-text">Mary L. Smith
-							</p><p class="heading-text directorPosition">Principal Deputy Director</i>
+							</p><br><p class="heading-text directorPosition">Principal Deputy Director
                             </p>
 								</div>
 								<p>Mission: To raise the physical, mental, social, and spiritual 
@@ -871,7 +984,7 @@ h2, .h2 {
 									<span class="short-line"></span>
 									<span class="long-line"></span>
 							<p class="heading-text">Francis S. Collins, M.D., Ph.D.
-							</p><p class="heading-text directorPosition">Director</i>
+							</p><br><p class="heading-text directorPosition">Director
                             </p>
 								</div>
 								<p>
@@ -916,7 +1029,7 @@ h2, .h2 {
 									<span class="short-line"></span>
 									<span class="long-line"></span>
 							<p class="heading-text">Karen B. DeSalvo, M.D., M.P.H., M.Sc.
-							</p><p class="heading-text directorPosition">Acting Assistant Secretary</i>
+							</p><br><p class="heading-text directorPosition">Acting Assistant Secretary
                             </p>
 								</div>
 								<p>Mission: Mobilizing leadership in science and prevention for a healthier nation. 
@@ -966,7 +1079,7 @@ h2, .h2 {
 									<span class="short-line"></span>
 									<span class="long-line"></span>
 							<p class="heading-text">Jimmy Kolker
-							</p><p class="heading-text directorPosition">Assistant Secretary</i>
+							</p><br><p class="heading-text directorPosition">Assistant Secretary
                             </p>
 								</div>
 								<p>Mission: To promote the health of people of the world by advancing the Department
@@ -1008,7 +1121,7 @@ h2, .h2 {
 									<span class="short-line"></span>
 									<span class="long-line"></span>
 							<p class="heading-text">Jon White, M.D.
-							</p><p class="heading-text directorPosition">Acting National Coordinator</i>
+							</p><br><p class="heading-text directorPosition">Acting National Coordinator
                             </p>
 								</div>
 								<p>Mission: ONC is the principal Federal entity charged with coordination of nationwide efforts to 
@@ -1021,7 +1134,7 @@ h2, .h2 {
 									Organization: The Office of the National Coordinator for Health Information Technology is at the forefront
 									of the administration’s health IT efforts and is a resource to the entire health system to support the 
 									adoption of health information technology and the promotion of nationwide health information exchange to 
-									improve healthcare. ON C is organizationally located within the Office of the Secretary for the U.S. 
+									improve healthcare. ONC is organizationally located within the Office of the Secretary for the U.S. 
 									Department of Health and Human Services.
 								</p>
 							</div>
@@ -1035,7 +1148,7 @@ h2, .h2 {
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="hhsagency-description-thumb">
-							<img src="img/onc.jpg" alt="ONC" class="shadow-image">
+							<img src="img/ONC.jpg" alt="ONC" class="shadow-image">
 						</div>
 					</div>
 				</div>
@@ -1064,7 +1177,7 @@ h2, .h2 {
 									<span class="short-line"></span>
 									<span class="long-line"></span>
 							<p class="heading-text">Kara Enomoto
-							</p><p class="heading-text directorPosition">Principal Deputy Administrator</i>
+							</p><br><p class="heading-text directorPosition">Principal Deputy Administrator
                             </p>
 								</div>
 								<p>

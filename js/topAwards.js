@@ -36,7 +36,7 @@ function changeOpdivs() {
   getLinkTop(opdivsOn[0])
 
 } else {
-  $('#topAwardsLink').attr("href", "/DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryUS/Top50_Recipients_Discretionary_US_HHS.html" )
+  $('#topAwardsLink').attr("href", "DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryUS/Top50_Recipients_Discretionary_US_HHS.html" )
 
 }
 
@@ -87,7 +87,7 @@ function changeOpdivs() {
 
 function getLinkTop(opdiv){
  var linkAll = "Top50_Recipients_Discretionary_US_";
-linkAll = "/DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryUS/" + linkAll + opdiv.toUpperCase() + ".html"
+linkAll = "DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryUS/" + linkAll + opdiv.toUpperCase() + ".html"
 $('#topAwardsLink').attr("href", linkAll)
 
 };

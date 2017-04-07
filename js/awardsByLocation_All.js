@@ -154,8 +154,8 @@ function getLink(opdiv, type){
 }
 
 
-linkState = "/DataFiles/Maps/AwardsByLocation/US/" + linkState + opdiv.toUpperCase() + ".html"
-linkWorld = "/DataFiles/Maps/AwardsByLocation/World/" + linkWorld + opdiv.toUpperCase() + ".html"
+linkState = "DataFiles/Maps/AwardsByLocation/US/" + linkState + opdiv.toUpperCase() + ".html"
+linkWorld = "DataFiles/Maps/AwardsByLocation/World/" + linkWorld + opdiv.toUpperCase() + ".html"
 
 
 $('#mapLinkWorld').attr("href", linkWorld)

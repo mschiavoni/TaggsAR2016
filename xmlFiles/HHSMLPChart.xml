@@ -1,9 +1,9 @@
 <chart 
-     bgColor="#fafafa"
-     fill="#fafafa" 
+     bgColor="#F9FBFF"
+     fill="#F9FBFF" 
      labelfontcolor='#ffffff'
      bgAlpha="100"
-     bordercolor='#fafafa'
+     bordercolor='#F9FBFF'
      borderthickness='0'
      legendBgAlpha="0"
      formatNumberScale="1"
@@ -12,7 +12,7 @@
      showShadow="0"
      plotHighlightEffect="1"
      thousandSeparator="1"
-     pieBorderColor="#fafafa"
+     pieBorderColor="#F9FBFF"
      exportAtClient="0"
      baseFontColor="#330000"
      hoverFillColor="#f15b26"
@@ -28,7 +28,7 @@
      baseFontSize="14"
       width="100%"
       height="870" 
-     ><category label='Discretionary Award Dollars{br}$52,790,366,508' Color="#fafafa">
+     ><category label='Discretionary Award Dollars{br}$52,790,366,508' Color="#F9FBFF">
      <category label='Other' value='8097509257' toolText='Other total is $8,097,509,257 {br}or 15.3 % of discretionary award dollars.  ' Color='#1fb6ff ' >
      <category value='2114813' toolText='EVALUATION total award amount is $2,114,813 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within Other.  ' Color='#1fb6ff '>
                <category  value='2114813' toolText='CMS EVALUATION total award amount is $2,114,813 {br}or 0.0 % of discretionary award dollars {br}and 100.0 % of award dollars within EVALUATION.  '  Color='#1fb6ff '/>

@@ -267,7 +267,7 @@ figure ul > li > ul > li > ul > li > ul > li {
 }
 
 #taggs-org-chart, figure ul > li > ul > li > ul > li.taggs-org-branch-end {
-    background: #FAFAFA;
+    background: #F9FBFF;
 }
 
 figure ul li a {
@@ -590,16 +590,132 @@ h2, .h2 {
     font-size: 28px !important;
     line-height: 1.29565217em !important;
 }	    
-	   
-</style>
+.mt-200 {
+    margin-top: 165px;
+}	
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("img/load-page.gif") no-repeat center center #ffffff
+}
+@media (max-width: 1310px) {
+.scroll-down {
+    margin-bottom: -50px;
+}
+}
+@media (max-width: 1000px) {
+.cover-3 .pos-bottom {
+    margin-bottom: -13em;
+}
+}
+@media (max-width: 1000px) {
+.scroll-down {
+    margin-bottom: -70px;
+}
+}
+.container-fluid-navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
+@media (min-width: 1500px) {
+.container-fluid-navbar {
+    padding-right: 220px;
+    padding-left: 220px;
+    margin-right: auto;
+    margin-left: auto;
+}
+}
+@media (max-width: 840px) {
+.primary-menu-menu>li>a {
+    position: relative;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all .3s ease;
+    margin-right: 3px;
+    margin-left: 1px;
+}
+}
+@media (max-width: 768px){
+.header {
+    position: absolute !important;
+}
+}	
+
+@media screen and (max-width: 890px) {
+    h2, .h2 {
+    font-size: 38px !important;
+    }
+}
+@media screen and (max-width: 890px) {
+   .imagebg:not(.image--light) p {
+    font-size: 18px !important;
+    }
+}
+@media screen and (max-width: 570px) {
+    h2, .h2 {
+    font-size: 22px !important;
+	margin-top: 10px;
+    }
+}
+@media screen and (max-width: 570px) {
+   .imagebg:not(.image--light) p {
+    font-size: 12px !important;
+    }
+}
+@media (max-width: 768px) {
+.primary-menu-responsive.primary-menu .showhide {
+    display: inline-block;
+    right: auto;
+    margin-right: 0;
+    float: right;
+    padding-right: 25px;
+}
+}
+@media (max-width: 768px) {
+.header .logo {
+    float: left;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+}	
+@media screen and (max-width: 805px) {
+#bottomImage {
+    display: none;
+}
+}
+.bg-border-color {
+    background-color: #F9FBFF !important;
+}	    
+</style>
+	<script>
+	document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('contents').style.visibility="visible";
+      },2000);
+  }
+}
+	</script>
 </head>
 
 <body class=" ">
+    <div id="load"></div>
+	
 <a href="#maincontent">Skip to main content</a>
 
     <header class="header contacts-shadow" id="site-header">
-        <div class="container">
+        <div class="container-fluid-navbar">
 
             <div class="header-content-wrapper">
                 <div class="logo">
@@ -1157,13 +1273,13 @@ h2, .h2 {
                  li#taggs-nav-mandatory.selected {
                      border-radius: 0px !important;
                      color: #ffffff;
-                     background: #a0aec5;
+                     background: #cfd8dc;
                  }
 
 
                  li#taggs-nav-deparment.selected {
                     color: #ffffff;
-                    background: #a0aec5;
+                    background: #cfd8dc;
                     border-radius: 0 60px 60px 0 !important;
                 }
 
@@ -1182,7 +1298,7 @@ h2, .h2 {
 
                 .taggs-navigation li.selected {
                     color: #ffffff;
-                    background: #a0aec5;
+                    background: #cfd8dc;
                     border-color: #a0aec5;
                     border-radius: 60px 0 0 60px;
                 }
@@ -1804,7 +1920,7 @@ h2, .h2 {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-12 col-xs-12" >
+                        <div class="col-lg-8 col-lg-offset-3 col-md-9 col-md-offset-2 col-sm-12 col-xs-12 mt-200" >
                             <p class="Footnote"> 
                              During previous fiscal years, ONC awarded 18 grants totaling $9, 261,000.  Those awards were de-obligated during FY 2016, so the dollar figures in the ONC charts and tables appear as negative values.
                          </p>
