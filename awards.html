@@ -556,9 +556,21 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
     color: #455A64;
     padding: 10px !important;
     text-align: center;
-    display: inline-block;
+    /*display: inline-block !important;*/
     border-radius: 25rem;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);
+}
+
+.secondTopRecipLinks{
+    margin-top: 1px;
+}
+
+.topRecipientsLinks{
+ margin: 25px;
+}
+
+.topAwardsLink {
+    margin-right: 10px;
 }
 	
 .logo .logo-text .logo-sub-title {
@@ -724,7 +736,9 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
 #bottomImage {
     display: none;
 }
-}	    
+}	
+
+
 
 </style>
 	<script>
@@ -1017,31 +1031,31 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
     <div id='stateLegend' class='legend'>
         <h4>Award</h4>
         <h4>Spending</h4>
-        <div class="stateLegendColor" style='background-color: #f7fbff; border: 1px solid #cccccc' >
+        <div class="stateLegendColor">
              <span class="stateLegendText"></span>
         </div>
 
-        <div class="stateLegendColor" style='background-color: #ccebc5'>
+        <div class="stateLegendColor">
             <span class="stateLegendText" ></span>
         </div>
 
-        <div class="stateLegendColor" style='background-color: #7bccc4'>
+        <div class="stateLegendColor">
             <span class="stateLegendText" ></span>
         </div>
 
-        <div class="stateLegendColor" style='background-color: #4eb3d3'>
+        <div class="stateLegendColor">
             <span class="stateLegendText" ></span>
         </div>
 
-        <div class="stateLegendColor" style='background-color: #2b8cbe'>
+        <div class="stateLegendColor">
             <span class="stateLegendText" ></span>
         </div>
 
-        <div class="stateLegendColor" style='background-color: #0868ac'>
+        <div class="stateLegendColor">
             <span class="stateLegendText" ></span>
         </div>
 
-        <div class="stateLegendColor" style='background-color: #084081'>
+        <div class="stateLegendColor">
             <span class="stateLegendText" ></span>
         </div>
 
@@ -1260,14 +1274,14 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
     </div>
 
     <div class="col-md-2 col-sm-3">
-        <a href="DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryUS/Top50_Recipients_Discretionary_US_HHS.html" id="topAwardsLink" target="_blank" content="html" charset="utf-8" class="tablelink2">View Table
+        <a href="DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryUS/Top50_Recipients_Discretionary_US_HHS.html" id="topAwardsLink" target="_blank" content="html" charset="utf-8" class="topRecipientsLinks">View Table
         </a>
-        <a href="DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryWorld/Top50_Recipients_Discretionary_International_HHS.html" id="topAwardsLinkInt" target="_blank" content="html" charset="utf-8" class="tablelink2">View Table
+        <a href="DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryWorld/Top50_Recipients_Discretionary_International_HHS.html" id="topAwardsLinkInt" target="_blank" content="html" charset="utf-8" class="topRecipientsLinks secondTopRecipLinks">View Table
         </a>
     </div>
     <div class="col-md-2 col-sm-3 ml--60">
-        <a href="DataFiles/Top50_Recipients_Discretionary_All/Top50_Recipients_Discretionary_HHS.html" id="topAwardsExcelLink" target="_blank" content="html" charset="utf-8" class="tablelink2">Excel Table</a>
-        <a href="DataFiles/International_Recipients_Discretionary_ALL/International_Recipients_DiscretionaryHHS.html" id="topAwardsExcelLinkInt" target="_blank" content="html" charset="utf-8" class="tablelink2">Excel Table</a>
+        <a href="DataFiles/Top50_Recipients_Discretionary_All/Top50_Recipients_Discretionary_HHS.html" id="topAwardsExcelLink" target="_blank" content="html" charset="utf-8" class="topRecipientsLinks">Excel Table</a>
+        <a href="DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryWorld/Top50_Recipients_Discretionary_International_HHS.html" id="topAwardsExcelLinkInt" target="_blank" content="html" charset="utf-8" class="topRecipientsLinks secondTopRecipLinks">Excel Table</a>
     </div>
 </div>
 </div>

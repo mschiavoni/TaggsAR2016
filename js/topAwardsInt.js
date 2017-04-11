@@ -24,8 +24,11 @@ var topIntOptions = $('.topIntMapOpt input:checked')
 
 
 if (intOpdivsOn.length === 1){
+  console.log(intOpdivsOn.length)
   getLinkTopInt(intOpdivsOn[0])
+  console.log('1')
 } else {
+    console.log('2')
 $('#topAwardsLinkInt').attr("href", "DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryWorld/Top50_Recipients_Discretionary_International_HHS.html")
 }
 

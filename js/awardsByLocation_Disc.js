@@ -7,7 +7,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wO
  // var COLORSSTATE = ['#f7fcf0', '#ccebc5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081'];
  // var COLORS = ['#f7fbff', '#b2dfdb', '#80cbc4', '#00838f', '#1976d2', '#1565c0', '#0d47a1'];
 // var COLORSWORLD = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5'];
-// var COLORSWORLD = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5'];
+// var COLORSTATE = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5'];
 
 function createMapBox2(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
 

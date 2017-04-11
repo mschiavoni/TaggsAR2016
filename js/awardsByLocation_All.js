@@ -7,7 +7,7 @@
  // ).css({'background-color': "rgb(0,0,255)" })
  // var COLORSSTATE = ['rgb(247, 252, 240)', 'rgb(206, 235, 197)', 'rgb(123, 204, 196)', 'rgb(104, 176, 196)', 'rgb(11, 146, 183)', 'rgb(0, 106, 155)', 'rgb(1, 82, 119)'];
  // var COLORSSTATE = ['#fefeff', '#bfdcfa', '#7fb9f5', '#509ff2','#308eef', '#127cec', '#09427e'];
- // var COLORSSTATE = ['#f7fcf0', '#ccebc5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081'];
+ // var COLORSSTATE = ['#eff3ff','#db4551','#d9434f','#d8404e','#d53d4d','#d43b4b','#d2384a'];
  var COLORSWORLD = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5'];
  var COLORSSTATE = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5'];
 

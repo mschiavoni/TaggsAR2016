@@ -66,6 +66,7 @@ function changeOpdivs() {
       $('.dropDown1').css("display", "block")
       $('#topAwardsLink').css('display', 'block')
       $('#topAwardsLinkInt').css('display', 'none')
+      $('#topAwardsLinkInt').css('display', 'none')
       $('#topAwardsExcelLink').css('display', 'block')
       $('#topAwardsExcelLinkInt').css('display', 'none')
 
