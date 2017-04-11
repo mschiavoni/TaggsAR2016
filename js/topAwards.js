@@ -50,6 +50,8 @@ function changeOpdivs() {
 
 
   
+  $('#topAwardsLink').css('display', 'block')
+  $('#topAwardsExcelLink').css('display', 'block')
   $('#topIntLegend').css("display", "none")
   $('#topAwardsLinkInt').css('display', 'none')
   $('#topAwardsExcelLinkInt').css('display', 'none')
