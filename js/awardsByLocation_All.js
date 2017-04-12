@@ -360,6 +360,8 @@ function createMapBox(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
   stateLegend.style.display = 'none';
   $(stateButton).css("display", "none");
   $(stateExcel).css("display", "none");
+  $(worldButton).css("display", "block");
+  $(worldExcel).css("display", "block");
   map.on('zoom', function() {
     if (map.getZoom() >= 3) {
      $(stateButton).css("display", "block");
