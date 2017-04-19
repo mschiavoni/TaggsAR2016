@@ -2,31 +2,31 @@
   {
     "progName": "Head Start",
     "programs": "93600",
-    "award.amount": "8386640194",
-    "award.number": "2168"
+    "award.amount": "8765121725",
+    "award.number": "2089"
+  },
+  {
+    "progName": "Affordable Care Act (ACA) Grants for New and Expanded Services under the Health Care Program",
+    "programs": "93527",
+    "award.amount": "4398383742",
+    "award.number": "1494"
   },
   {
     "progName": "Global Aids",
     "programs": "93067",
-    "award.amount": "1388924910",
-    "award.number": "480"
+    "award.amount": "2335168861",
+    "award.number": "543"
   },
   {
-    "progName": "Hospital Preparedness Program (HPP) and Public Health Emergency Preparedness (PHEP) Aligned Cooperative Agreements",
-    "programs": "93074",
-    "award.amount": "984444204",
-    "award.number": "62"
+    "progName": "Money Follows the Person Rebalancing Demonstration",
+    "programs": "93791",
+    "award.amount": "1423265631",
+    "award.number": "46"
   },
   {
-    "progName": "Substance Abuse and Mental Health Services: Projects Of Regional and National Significance",
-    "programs": "93243",
-    "award.amount": "773903656",
-    "award.number": "1441"
-  },
-  {
-    "progName": "Unaccompanied Alien Children Program",
-    "programs": "93676",
-    "award.amount": "478105180",
-    "award.number": "80"
+    "progName": "HIV Care Formula Grants",
+    "programs": "93917",
+    "award.amount": "1164875958",
+    "award.number": "106"
   }
 ]

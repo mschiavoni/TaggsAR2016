@@ -34,8 +34,8 @@
     <set isSliced='1' label='ASPR' value='119990' />
     <set isSliced='1' label='HRSA' value='217194' />
     <set isSliced='1' label='FDA' value='5574162' />
-    <set isSliced='1' label='NIH' value='170869579' />
-    <set isSliced='1' label='CDC' value='1595200570' />
+    <set isSliced='1' label='NIH' value='171253321' />
+    <set isSliced='1' label='CDC' value='1598527555' />
     <styles>
         <definition>
             <style name='CaptionFont' type='font' size='22' color='FFFFFF' bgColor='2467A7' />

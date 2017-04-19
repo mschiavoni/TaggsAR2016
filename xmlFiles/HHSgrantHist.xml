@@ -9,11 +9,11 @@
         <vLine />
     </categories>
     <dataset renderAs='Column' parentYAxis='S' seriesName='Number of Awards' color="#1fb6ff">
-        <set value='77319' color='#1fb6ff' alpha='75' />
-        <set value='75862' color='#1fb6ff' alpha='75' />
-        <set value='75522' color='#1fb6ff' alpha='75' />
-        <set value='76608' color='#1fb6ff' alpha='75' />
-        <set value='78341' color='#1fb6ff' />
+        <set value='76360' color='#1fb6ff' alpha='75' />
+        <set value='74423' color='#1fb6ff' alpha='75' />
+        <set value='74536' color='#1fb6ff' alpha='75' />
+        <set value='75613' color='#1fb6ff' alpha='75' />
+        <set value='76897' color='#1fb6ff' />
     </dataset>
     <dataset renderAs='Column' parentYAxis='P' seriesName='Total Award Amount' color="#13ce67">
         <set value='3.47195343E+11' color='#13ce67' alpha='75' />

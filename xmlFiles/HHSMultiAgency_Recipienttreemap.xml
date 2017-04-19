@@ -51,7 +51,7 @@
                     numberScaleValue='1, 1000, 1000, 1000'
                     forcenmberscale='1'>
   <set label='HHS' fillcolor='#ffffff' value='3969041390'>
-    <set label='CURATORS OF THE UNIVERSITY OF MISSOURI' fillcolor='#F44336' value='48242941' svalue='-1.9'>
+    <set label='CURATORS OF THE UNIVERSITY OF MISSOURI' fillcolor='#F44336' value='48477114' svalue='-1.45'>
       <set label='SAMHSA' value='1001044' svalue='-57.3' fillcolor='#d64646'></set>
       <set label='OASH' value='500000' svalue=''></set>
       <set label='NIH' value='39726923' svalue='7.9'></set>
@@ -100,7 +100,7 @@
       <set label='ACL' value='586999' svalue='-39.1' fillcolor='#d64646'></set>
       <set label='ACF' value='1432910' svalue=''></set>
     </set>
-    <set label='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' value='660761822' svalue='5.9'>
+    <set label='UNIVERSITY OF CALIFORNIA-SAN FRANCISCO' value='660761822' svalue='5.92'>
       <set label='SAMHSA' value='1411875' svalue='2'></set>
       <set label='OASH' value='1912185' svalue='25.8' fillcolor='#2962FF'></set>
       <set label='NIH' value='576375917' svalue='3'></set>
@@ -156,7 +156,7 @@
       <set label='AHRQ' value='541951' svalue='-3.9'></set>
       <set label='ACL' value='-21921' svalue=''></set>
     </set>
-    <set label='UNIVERSITY OF WASHINGTON' value='517008496' svalue='1.3'>
+    <set label='UNIVERSITY OF WASHINGTON' value='517008496' svalue='1.32'>
       <set label='SAMHSA' value='313927' svalue=''></set>
       <set label='OASH' value='163222' svalue='1.7'></set>
       <set label='NIH' value='400416050' svalue='-5.5'></set>
@@ -169,7 +169,7 @@
       <set label='ACL' value='4544675' svalue='-48.2' fillcolor='#d64646'></set>
       <set label='ACF' value='839974' svalue='.2'></set>
     </set>
-    <set label='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' value='300128763' svalue='4.2'>
+    <set label='UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS' value='300128763' svalue='4.23'>
       <set label='SAMHSA' value='1079945' svalue='10.2'></set>
       <set label='OASH' value='0' svalue='-100' fillcolor='#d64646'></set>
       <set label='NIH' value='281749238' svalue='5'></set>
