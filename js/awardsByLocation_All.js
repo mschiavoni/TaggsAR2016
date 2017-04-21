@@ -106,11 +106,11 @@ $('#mapDrop').on("change", function(){
   var selectedKey = selectedOpdiv.split("_")[1]
   getLegend(selectedKey,selectedAwardType)
   getLink(selectedKey, selectedAwardType)
+  getExcel(selectedKey, selectedAwardType)
   if (selectedAwardType === "totalAwards"){
     var stateBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_USA"]
     var worldBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_WORLD"]
     createMapBox(selectedOpdiv, worldBreaks, stateBreaks)
-
 
   } else {
     var stateBreaks = allBreaks["BREAKS_DISC_" + selectedKey.toUpperCase() + "_USA"]
@@ -127,7 +127,7 @@ $('input[name="awards"]').click(function(){
   var selectedKey = selectedOpdiv.split("_")[1]
 
   getLegend(selectedKey,selectedAwardType)
-  getLink(selectedKey, selectedAwardType)
+  getExcel(selectedKey, selectedAwardType)
 
   if (selectedAwardType === "totalAwards"){
     var stateBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_USA"]
@@ -160,6 +160,29 @@ linkWorld = "DataFiles/Maps/AwardsByLocation/World/" + linkWorld + opdiv.toUpper
 
 $('#mapLinkWorld').attr("href", linkWorld)
 $('#mapLinkState').attr("href", linkState)
+
+};
+
+function getExcel(opdiv, type){
+ var excelLinkState = "USA_";
+ var excelLinkWorld = "World_";
+ 
+ if (type === "totalAwards") {
+  excelLinkState += "All/USA_All_"
+  excelLinkWorld += "All/World_All_"
+
+} else {
+  excelLinkState += "Discretionary/USA_Discretionary_"
+  excelLinkWorld += "Discretionary/World_Discretionary_"
+}
+
+
+excelLinkState = "DataFiles_Excel/Maps/AwardsByLocation/US/" + excelLinkState + opdiv.toUpperCase() + ".xlsx"
+excelLinkWorld = "DataFiles_Excel/Maps/AwardsByLocation/World/" + excelLinkWorld + opdiv.toUpperCase() + ".xlsx"
+
+
+$('#mapExcelLinkWorld').attr("href", excelLinkWorld)
+$('#mapExcelLinkState').attr("href", excelLinkState)
 
 };
 
@@ -378,7 +401,6 @@ function createMapBox(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
     $(worldExcel).css("display", "block");
     worldLegend.style.display = 'block';
     stateLegend.style.display = 'none';
-   
   }
 });
 

@@ -1113,9 +1113,9 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
                     <a id="mapLinkState" target="_blank" class="tablelink2" content="html" charset="utf-8" href="DataFiles/Maps/AwardsByLocation/US/USA_ALL/USA_All_HHS.html">State Table View</a>
                 </div>
                 <div class="col-md-2 col-sm-3">
-                    <a id="mapExcelLinkWorld" target="_blank" class="tablelink2" content="html" charset="utf-8" href="CountryStateMapAwardsFiles_HTML/World_All_HHS.html"> Excel Table</a> 
+                    <a id="mapExcelLinkWorld" class="tablelink2" content="html" charset="utf-8" href="DataFiles_Excel/Maps/AwardsByLocation/World/World_All/World_All_HHS.xlsx"> Excel Table W</a> 
 
-                    <a id="mapExcelLinkState" target="_blank" class="tablelink2" content="html" charset="utf-8" href="CountryStateMapAwardsFiles_HTML/World_All_HHS.html">Excel Table</a>
+                    <a id="mapExcelLinkState" class="tablelink2" content="html" charset="utf-8" href="DataFiles_Excel/Maps/AwardsByLocation/US/USA_ALL/USA_All_HHS.xlsx">Excel Table S</a>
                 </div>
 
             </div>						
@@ -1276,8 +1276,9 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
         </a>
     </div>
     <div class="col-md-2 col-sm-3 ml--60">
-        <a href="DataFiles/Top50_Recipients_Discretionary_All/Top50_Recipients_Discretionary_HHS.html" id="topAwardsExcelLink" target="_blank" content="html" charset="utf-8" class="topRecipientsLinks">Excel Table</a>
-        <a href="DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryWorld/Top50_Recipients_Discretionary_International_HHS.html" id="topAwardsExcelLinkInt" target="_blank" content="html" charset="utf-8" class="topRecipientsLinks secondTopRecipLinks">Excel Table</a>
+        <a href="DataFiles_Excel/Maps/TopAwardRecipients/Top50DiscretionaryUS/Top50_Recipients_Discretionary_US_HHS.xlsx" id="topAwardsExcelLink" class="topRecipientsLinks">Excel Table</a>
+
+        <a href="DataFiles_Excel/Maps/TopAwardRecipients/Top50DiscretionaryWorld/Top50_Recipients_Discretionary_International_HHS.xlsx" id="topAwardsExcelLinkInt" content="xlsx" charset="utf-8" class="topRecipientsLinks secondTopRecipLinks">Excel Table</a>
     </div>
 </div>
 </div>
@@ -1576,14 +1577,15 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
                     var activityTypes = ["Training", "Training (International)", "Research", "Research (International)", "Services", "Services (International)", "Other", "Other (International)"];
 
                     var tableLinks = ['<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscTraining.html" target="_blank" class="cfdaTableLink">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalTraining.html" target="_blank" class="cfdaTableLink">View Table</a>','<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscResearch.html" class="cfdaTableLink" target="blank">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalResearch.html" class="cfdaTableLink" target="blank">View Table</a>','<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscServices.html" class="cfdaTableLink" target="_blank">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalServices.html" class="cfdaTableLink" target="_blank">View Table</a>','<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscOther.html" class="cfdaTableLink" target="_blank">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalOther.html" class="cfdaTableLink" target="_blank">View Table</a>' ];
-                    var cfdaExcelLinks = ['<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>',
-                    '<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>',
-                    '<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>',
-                    '<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>',
-                    '<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>',
-                    '<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>',
-                    '<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>',
-                    '<a href="" class="cfdaExcelLink excelLink" target="_blank">View Excel</a>'];
+                    var cfdaExcelLinks = [
+                    '<a href="DataFiles_Excel/Top5CFDABarChart/topFiveCFDAdiscTraining.xlsx" class="cfdaExcelLink excelLink">View Excel</a>',
+                    '<a href="DataFiles_Excel/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalTraining.xlsx" class="cfdaExcelLink excelLink">View Excel</a>',
+                    '<a href="DataFiles_Excel/Top5CFDABarChart/topFiveCFDAdiscResearch.xlsx" class="cfdaExcelLink excelLink">View Excel</a>',
+                    '<a href="DataFiles_Excel/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalResearch.xlsx" class="cfdaExcelLink excelLink">View Excel</a>',
+                    '<a href="DataFiles_Excel/Top5CFDABarChart/topFiveCFDAdiscServices.xlsx" class="cfdaExcelLink excelLink">View Excel</a>',
+                    '<a href="DataFiles_Excel/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalServices.xlsx" class="cfdaExcelLink excelLink">View Excel</a>',
+                    '<a href="DataFiles_Excel/Top5CFDABarChart/topFiveCFDAdiscOther.xlsx" class="cfdaExcelLink excelLink">View Excel</a>',
+                    '<a href="DataFiles_Excel/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalOther.xlsx" class="cfdaExcelLink excelLink">View Excel</a>'];
 
                     fileNames.forEach(function(fileName, i) {
                         var activityType = activityTypes[i]
@@ -1644,7 +1646,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
                 </div>  
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <a href="DataFiles/MulitLevelPieChart" target="_blank" id="mlpcTableLink">View Table</a>
-                    <a href="" target="_blank" class="excelLink" id="mlpcExcelLink">View Excel</a>
+                    <a href="DataFiles_Excel/MulitLevelPieChart/HHSMLPChartTable.xlsx"  class="excelLink" id="mlpcExcelLink">View Excel</a>
                 </div>
             </div>
         </div>
@@ -1722,7 +1724,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
 
                     <div id="HHSgrantHist-link">
                     <a class="grantHistLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" id="HHSLink">View Table</a>
-                     <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" id="HHSLink">View Excel</a>
+                     <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/HHSgrantHistTable.xlsx">View Excel</a>
                     </div>
 
 
@@ -1732,65 +1734,67 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
                     <div id="ACFgrantHist-link" class="grantHistLink hidden">
 
                     <a href="/DataFiles/GrantHistoryBarChart/ACFgrantHistTable.html" target="_blank"  id="ACFLink">View Table</a> 
-                    <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" >View Excel</a>
+                    <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/ACFgrantHistTable.xlsx" >View Excel</a>
                     </div>
 
 
 
                     <div id="ACLgrantHist">
                     </div>
-                    <div id="ACLgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/ACLgrantHistTable.html" target="_blank"  id="ACLLink">View Table</a></div>
+                    <div id="ACLgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/ACLgrantHistTable.html" target="_blank"  id="ACLLink">View Table</a>
+                    <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/ACLgrantHistTable.xlsx" >View Excel</a>
+                    </div>
                     <div id="AHRQgrantHist">
                     </div>
-                    <div id="AHRQgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/AHRQgrantHistTable.html" target="_blank"  id="AHRQLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" >View Excel</a>
+                    <div id="AHRQgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/AHRQgrantHistTable.html" target="_blank"  id="AHRQLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/AHRQgrantHistTable.xlsx" >View Excel</a>
                     </div>
                     <div id="ASPEgrantHist">
                     </div>
-                    <div id="ASPEgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/ASPEgrantHistTable.html" target="_blank"  id="ASPELink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" >View Excel</a>
+                    <div id="ASPEgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/ASPEgrantHistTable.html" target="_blank"  id="ASPELink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/ASPEgrantHistTable.xlsx" >View Excel</a>
                     </div>
                     <div id="ASPRgrantHist">
                     </div>
-                    <div id="ASPRgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/ASPRgrantHistTable.html" target="_blank"  id="ASPRLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" >View Excel</a>
+                    <div id="ASPRgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/ASPRgrantHistTable.html" target="_blank"  id="ASPRLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/ASPRgrantHistTable.xlsx" >View Excel</a>
                     </div>
                     <div id="CDCgrantHist">
                     </div>
-                    <div id="CDCgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/CDCgrantHistTable.html" target="_blank"  class="CDCLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" >View Excel</a>
+                    <div id="CDCgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/CDCgrantHistTable.html" target="_blank"  class="CDCLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/CDCgrantHistTable.xlsx" >View Excel</a>
                     </div>
                     <div id="CMSgrantHist">
                     </div>
-                    <div id="CMSgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/CMSgrantHistTable.html" target="_blank"  class="CDSLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" >View Excel</a>
+                    <div id="CMSgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/CMSgrantHistTable.html" target="_blank"  class="CMSLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/CMSgrantHistTable.xlsx" >View Excel</a>
                     </div>
                     <div id="FDAgrantHist">
                     </div>
-                    <div id="FDAgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/FDAgrantHistTable.html" target="_blank"  class="FDALink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" >View Excel</a>
+                    <div id="FDAgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/FDAgrantHistTable.html" target="_blank"  class="FDALink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/FDAgrantHistTable.xlsx" >View Excel</a>
                     </div>
                     <div id="HRSAgrantHist">
                     </div>
-                    <div id="HRSAgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/HRSAgrantHistTable.html" target="_blank"  class="HRSALink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" >View Excel</a>
+                    <div id="HRSAgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/HRSAgrantHistTable.html" target="_blank"  class="HRSALink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/HRSAgrantHistTable.xlsx" >View Excel</a>
                     </div>
                     <div id="IHSgrantHist">
                     </div>
-                    <div id="IHSgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/IHSgrantHistTable.html" target="_blank"  class="IHSLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" >View Excel</a>
+                    <div id="IHSgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/IHSgrantHistTable.html" target="_blank"  class="IHSLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/IHSgrantHistTable.xlsx" >View Excel</a>
                     </div>
                     <div id="NIHgrantHist">
                     </div>
-                    <div id="NIHgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/NIHgrantHistTable.html" target="_blank"  class="NIHLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" >View Excel</a>
+                    <div id="NIHgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/NIHgrantHistTable.html" target="_blank"  class="NIHLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/NIHgrantHistTable.xlsx" >View Excel</a>
                     </div>
                     <div id="OASHgrantHist">
                     </div>
-                    <div id="OASHgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/OASHgrantHistTable.html" target="_blank"  class="OASHLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" >View Excel</a>
+                    <div id="OASHgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/OASHgrantHistTable.html" target="_blank"  class="OASHLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/OASHgrantHistTable.xlsx" >View Excel</a>
                     </div>
                     <div id="OGAgrantHist">
                     </div>
-                    <div id="OGAgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/OGAgrantHistTable.html" target="_blank"  class="OGALink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" >View Excel</a>
+                    <div id="OGAgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/OGAgrantHistTable.html" target="_blank"  class="OGALink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/OGAgrantHistTable.xlsx" >View Excel</a>
                     </div>
                     <div id="ONCgrantHist">
                     </div>
-                    <div id="ONCgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/ONCgrantHistTable.html" target="_blank"  class="ONCLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" >View Excel</a>
+                    <div id="ONCgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/ONCgrantHistTable.html" target="_blank"  class="ONCLink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/ONCgrantHistTable.xlsx" >View Excel</a>
                     </div>
                     <div id="SAMHSAgrantHist">
                     </div>
-                    <div id="SAMHSAgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/SAMHSAgrantHistTable.html" target="_blank"  class="SAMHSALink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles/GrantHistoryBarChart/HHSgrantHistTable.html" target="_blank" >View Excel</a>
+                    <div id="SAMHSAgrantHist-link" class="grantHistLink hidden"><a href="/DataFiles/GrantHistoryBarChart/SAMHSAgrantHistTable.html" target="_blank"  class="SAMHSALink">View Table</a> <a class="grantHistExcelLink" href="/DataFiles_Excel/GrantHistoryBarChart/SAMHSAgrantHistTable.xlsx" >View Excel</a>
                     </div>               
                 </div>
 
@@ -1829,14 +1833,14 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div id="HHSawardsNumber">HHS Total International Number of Awards</div>
                 <a href="DataFiles/InternationalPieChart/HHSawardsNumberInternationalPieTable.html" target="_blank" class="pieChartLinks pieTableLink">View Table</a>
-                <a href="" class="pieChartLinks pieExcelLink excelLink">View Excel</a>
+                <a href="DataFiles_Excel/InternationalPieChart/HHSawardsNumberInternationalPieTable.xlsx" class="pieChartLinks pieExcelLink excelLink">View Excel</a>
             </div>                              
         </div>
         <div class="row medium-margin60">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div id="HHSgrantDollars">HHS Total International Award Amounts</div>
                 <a href="DataFiles/InternationalPieChart/HHSgrantDollarsInternationalPieTable.html" target="_blank" class="pieChartLinks pieTableLink">View Table</a>
-                <a href="" class="pieChartLinks pieExcelLink excelLink">View Excel</a>
+                <a href="DataFiles_Excel/InternationalPieChart/HHSgrantDollarsInternationalPieTable.xlsx" class="pieChartLinks pieExcelLink excelLink">View Excel</a>
             </div>
         </div>
     </div>
@@ -1870,7 +1874,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
             <div id="HHSMultiAgency">HHS Agencies with Multiple Recipients</div>                             
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <a href="DataFiles/MultiAgencyRecipientTreeMap/RecipientsMultiAgency508table.html" target="_blank" class="treemapTableLink">View Table</a>
-            <a href="" target="_blank" class="treemapExcelLink">View Excel</a>
+            <a href="DataFiles_Excel/MultiAgencyRecipientTreeMap/RecipientsMultiAgency508table.xlsx" class="treemapExcelLink">View Excel</a>
             <div>
 
             </div>

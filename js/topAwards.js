@@ -34,9 +34,11 @@ function changeOpdivs() {
 
  if (opdivsOn.length === 1){
   getLinkTop(opdivsOn[0])
+  getExcelTop(opdivsOn[0])
 
 } else {
   $('#topAwardsLink').attr("href", "DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryUS/Top50_Recipients_Discretionary_US_HHS.html" )
+  $('#topAwardsExcelLink').attr("href", "DataFiles_Excel/Maps/TopAwardRecipients/Top50DiscretionaryUS/Top50_Recipients_Discretionary_US_HHS.xlsx" )
 
 }
 
@@ -44,12 +46,9 @@ function changeOpdivs() {
   map2.setFilter('us_recipients', ["in", 'org_acronym'].concat(opdivsOn))
     return false;
 
-
   }
 
 
-
-  
   $('#topAwardsLink').css('display', 'block')
   $('#topAwardsExcelLink').css('display', 'block')
   $('#topIntLegend').css("display", "none")
@@ -92,6 +91,13 @@ function getLinkTop(opdiv){
  var linkAll = "Top50_Recipients_Discretionary_US_";
 linkAll = "DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryUS/" + linkAll + opdiv.toUpperCase() + ".html"
 $('#topAwardsLink').attr("href", linkAll)
+
+};
+
+function getExcelTop(opdiv){
+ var excelLinkAll = "Top50_Recipients_Discretionary_US_";
+excelLinkAll = "DataFiles_Excel/Maps/TopAwardRecipients/Top50DiscretionaryUS/" + excelLinkAll + opdiv.toUpperCase() + ".xlsx"
+$('#topAwardsExcelLink').attr("href", excelLinkAll)
 
 };
 

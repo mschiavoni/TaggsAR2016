@@ -26,9 +26,8 @@ var topIntOptions = $('.topIntMapOpt input:checked')
 if (intOpdivsOn.length === 1){
   console.log(intOpdivsOn.length)
   getLinkTopInt(intOpdivsOn[0])
-  console.log('1')
+  getExcelTopInt(intOpdivsOn[0])
 } else {
-    console.log('2')
 $('#topAwardsLinkInt').attr("href", "DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryWorld/Top50_Recipients_Discretionary_International_HHS.html")
 }
 
@@ -42,8 +41,12 @@ function getLinkTopInt(opdiv){
  var linkInt =  "Top50_Recipients_Discretionary_International_";
 linkInt = "DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryWorld/" + linkInt + opdiv.toUpperCase() + ".html"
 $('#topAwardsLinkInt').attr("href", linkInt)
+};
 
-
+function getExcelTopInt(opdiv){
+ var ExcelInt =  "Top50_Recipients_Discretionary_International_";
+ExcelInt = "DataFiles_Excel/Maps/TopAwardRecipients/Top50DiscretionaryWorld/" + ExcelInt + opdiv.toUpperCase() + ".xlsx"
+$('#topAwardsExcelLinkInt').attr("href", ExcelInt)
 };
 
  function createMapBoxTopInt() {
