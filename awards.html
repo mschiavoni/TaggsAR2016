@@ -1363,7 +1363,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
                         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                             <div class="heading align-center">
                                 <div class="heading">
-                                    <h4 class="heading-title" style="font-size: 48px; color: #2f2c2c; margin-bottom: 20px;">Top 5 Discretionary Grants</h4>
+                                    <h4 class="heading-title" style="font-size: 48px; color: #2f2c2c; margin-bottom: 20px;">Top 5 Discretionary Awards</h4>
                                     <div class="heading-line">
                                         <span class="short-line"></span>
                                         <span class="long-line"></span>
@@ -1376,7 +1376,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
                              </p>
                              <p class="heading-text">
                                  The interactive bar charts below show the Top 5 CFDA awards for each major activity type.  The blue bars 
-                                 indicate the award dollars.  The red bars show the number of awards.  Hover over a bar to view the CFDA name.                                 
+                                 indicate the award dollars; red bars indicate the number of awards.  Hover over a bar to view the CFDA name.                                 
                              </p>
                          </div>
                      </div>
@@ -1496,7 +1496,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
             .attr("text-anchor", "end")
             .attr('class', 'leftscore')
             .text(function(d) {
-                return d['formattedAwardAmount'];
+                return "$" + d['formattedAwardAmount'];
             })
 
                     // .attr("tabindex", "0");
@@ -1514,10 +1514,10 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
                         return d.programs;
                     })
                     .on("mouseover", function(d) {
-                        return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + d["award.number"] + " Awards <br>" + d.formattedAwardAmount + "\nin USD");
+                        return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + d["award.number"] + " Awards <br>" + '$' + d.formattedAwardAmount + "\nin USD");
                     })
                     .on("focus", function(d) {
-                        return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + + d["award.number"] + " Awards <br>" + d.formattedAwardAmount + "\nin USD");
+                        return tooltip.style("visibility", "visible").html("Program: " + d.progName + "<br>" + + d["award.number"] + " Awards <br>" + '$' + d.formattedAwardAmount + "\nin USD");
                     })
                     .on("mousemove", function() {
                         return tooltip.style("top", (d3.event.pageY - 10) + "px").style("left", (d3.event.pageX + 10) + "px");
@@ -1666,7 +1666,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
                                 </div>
                                 <p class="heading-text">
                                     The Total Award Amounts and Award Number chart shows the number of and the amount of award 
-                                    dollars that HHS granted during the last 6 fiscal years. The number of awards is shown in the
+                                    dollars that HHS granted during the last 5 fiscal years. The number of awards is shown in the
                                     blue bars. The award dollars are represented as gold bars. Data for the current fiscal year, at
                                     the far right of the chart, are depicted in brighter colors. Hover over any bar to see a tool tip
                                     that shows award or dollar data. In the legend, click on Number of Awards to see only the gold bars

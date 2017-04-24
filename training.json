@@ -1,31 +1,31 @@
 [
   {
     "progName": "Childrens Hospitals Graduate Medical Education Payment",
-    "programs": "93255",
+    "programs": "93.255",
     "award.amount": "280631563",
     "award.number": "58"
   },
   {
     "progName": "Biomedical Research and Research Training",
-    "programs": "93859",
+    "programs": "93.859",
     "award.amount": "199323567",
     "award.number": "486"
   },
   {
     "progName": "Diabetes, Digestive, and Kidney Diseases Extramural Research",
-    "programs": "93847",
+    "programs": "93.847",
     "award.amount": "119142325",
     "award.number": "674"
   },
   {
     "progName": "Cancer Research Manpower",
-    "programs": "93398",
+    "programs": "93.398",
     "award.amount": "118434887",
     "award.number": "541"
   },
   {
     "progName": "Cardiovascular Diseases Research",
-    "programs": "93837",
+    "programs": "93.837",
     "award.amount": "116723150",
     "award.number": "525"
   }
