@@ -733,9 +733,27 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
     display: none;
 }
 }	
-
-
-
+p.heading-text {
+  margin-bottom: 30px !important;
+}
+p.Footnote {
+    font-size: 13px !important;
+    padding: 10px 0 0px;
+} 
+.mt-200 {
+    margin-top: 165px;
+}	
+	    
+.mt-50 {
+    margin-top: 50px;
+}	
+	    
+.mb-30 {
+    margin-bottom: 30px;
+}	
+.mb-50 {
+    margin-bottom: 50px;
+}	
 </style>
 	<script>
 	document.onreadystatechange = function () {
@@ -971,7 +989,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                  <p class="heading-text">
-                     The maps in this section show data for awards that HHS made in FY 2016. Darker colors indicate larger dollar amounts, 
+                     The maps in this section show data for grants that HHS awarded in FY 2016. Darker colors indicate larger dollar amounts, 
                      according to the legend below. Hover over a country to view the award dollars and number of awards. For discretionary
                      award data, click on the Discretionary Awards radio button below. To view award data by agency, click on an agency name in the dropdown box.   				 
                  </p>
@@ -1145,21 +1163,28 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <p class="heading-text">
-                   The U.S. map  shows the top discretionary award recipients by agency and location<sup>1</sup>. Hover over a colored dot to 
-                   see award detail, including the recipient rank within the agency. The legend at lower right shows agency colors. 
-               </p>
-               <p class="heading-text">
-                   Awards By State: From the map of the United States, zoom down to an individual state. Award data will display in a 
-                   tooltip.  International Awards: View top international discretionary awards by clicking on the Top International 
-                   radio button.  North American awards will display.  Drag the screen to the left or right to see other continents.  Hover over a colored dot to see award detail.
-               </p>
-               <p class="heading-text">
-                   <sup>1</sup>Within this report, the recipient’s location is determined by their legal business address, which does not necessarily reflect the location where the performance occurred.
-               </p>
+                      The world map below shows the top discretionary award recipients by agency and location1.  Agencies are identified by colored dots in the legend. Hover over any dot to view award detail.
+                  </p>
+		<p class="heading-text">
+                     U.S. and Territories Awards: To view top recipients, zoom down to an individual state or territory on the map of the United States. Award data, including the recipient’s rank within the agency, will display in a tooltip.
+                 </p>
+		<p class="heading-text">
+                       Regional and International Awards: To view top recipients; click on the Top International radio button. Awards issued in North America will display first; drag the screen to the left or right to view awards in other continents.
+		  </p>    
            </div>
        </div>
+
    </div>
 </div>
+ <div class="row mb-50">		
+                        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12" >
+                            <p class="Footnote"> 
+                             <sup>1</sup>Within this report, the recipient’s location is determined by their legal business address, which does not necessarily reflect the location where the performance occurred. 	  
+                         </p>
+                         
+                     </div> 
+</div>	
+		
 </div>
 
 <div id='map2'>
@@ -1297,7 +1322,7 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
                     <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                         <div class="heading align-center">
                             <div class="heading">
-                                <h4 class="heading-title" style="font-size: 48px; color: #2f2c2c; margin-bottom: 20px;">TAGGS AWARDS</h4>
+                                <h4 class="heading-title" style="font-size: 48px; color: #2f2c2c; margin-bottom: 20px;">HHS Awards Overview</h4>
                                 <div class="heading-line">
                                     <span class="short-line"></span>
                                     <span class="long-line"></span>
@@ -1323,8 +1348,6 @@ a#mapLinkWorld, a#mapLinkState, a#topAwardsLink, a#topAwardsLinkInt, a#topAwards
         </div>
     </div>
 </div>
-
-
 
 <div id="imageWrapper">
     <img src="img/graph2.png" width="100" height="100" id="bottomImage" alt="" />
