@@ -5021,15 +5021,16 @@ body.overlay-enable:before {
     .activityTypeTitle {
       font-size: 30px;
       color: #0D47A1;
-      margin-left: -45%;
+      margin-left: 5%;
       position: absolute;
 
     }
 
+
     .cfdaTableLink  {
       font-size: 18px;
       color: black;
-      margin-left: -10%;
+      margin-left: 5%;
       margin-top: 18%;
       position: absolute;
     }
@@ -5037,7 +5038,7 @@ body.overlay-enable:before {
     .cfdaExcelLink {
       font-size: 18px;
       color: black;
-      margin-left: -4%;
+      margin-left: 4%;
       margin-top: 18%;
       position: absolute;
     }
