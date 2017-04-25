@@ -1,4 +1,68 @@
-.tableHeader {
-  text-align: center;
-  font-size: 30px;
+
+.accesstable {
+    border-collapse: collapse;
+    text-transform: uppercase;
+}
+
+tr {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+ th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+}
+tr {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+
+th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+}
+th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+}
+ td {
+    text-align: center;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: black;
+    text-align: left;
+    line-height: 1.5;
+}
+body {
+    background-color: #98b3dd;
+    width: 1028px;
+    background-color: #FFF;
+    margin: 0;
+    min-height: 25em;
+    height: 100%;
+    z-index: 0;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: black;
+    text-align: left;
+    line-height: 1.5;
 }
