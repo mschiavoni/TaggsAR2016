@@ -1437,7 +1437,11 @@ p.Footnote {
             return (this / 1000).toFixed(3) + "K"
         }  else if (this <= 1000) {
             return (this / 1000).toFixed(3) + "K"
-}
+} else if (this <= 1000000000) {
+            return (this / 1000000000).toFixed(3) + "B"
+        } else if (this <= 1000000) {
+            return (this / 1000000).toFixed(3) + "M"
+        }
         return this;
     }
 
