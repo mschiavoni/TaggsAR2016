@@ -5280,7 +5280,7 @@ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     visibility: hidden;
 }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
       .cfdaTableLink,  {
          margin-top: 24%;
     }
