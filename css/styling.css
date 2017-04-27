@@ -5035,6 +5035,12 @@ body.overlay-enable:before {
       position: absolute;
     }
 
+    @media only screen and (min-width: 768px) {
+      .cfdaTableLink, .cfdaExcelLink  {
+         margin-top: 24%;
+    }
+  }
+
     .cfdaExcelLink {
       font-size: 18px;
       color: black;
