@@ -5036,7 +5036,7 @@ body.overlay-enable:before {
     }
 
     @media only screen and (max-width: 768px) {
-      .cfdaTableLink, .cfdaExcelLink  {
+      .cfdaTableLink, .cfdaExcelLink {
          margin-top: 24%;
     }
   }
