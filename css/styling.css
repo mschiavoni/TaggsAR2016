@@ -5280,5 +5280,13 @@ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     visibility: hidden;
 }
 
-  
+  @media  (max-width: 1600px) {
+      .cfdaTableLink {
+         margin-top: 30%;
+    }
+      .cfdaExcelLink{
+         margin-top: 30%;
+      }
+    
+  }
 
