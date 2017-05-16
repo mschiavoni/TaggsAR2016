@@ -731,7 +731,11 @@ a:after:focus {outline: blue solid 2px;}
     line-height: 1.6;
     color: #ffffff;
 	
-}	    
+}	
+.primary-menu-menu>li>a:focus + ul	
+	    {	    
+display: block;
+	    }
 </style>
 	<script>
 	document.onreadystatechange = function () {
@@ -785,9 +789,9 @@ a:after:focus {outline: blue solid 2px;}
                         <li class="">
                             <a href="awards.html" role="menuitem" tabindex="0">Awards</a>
                         </li>
-                        <li class="has-megamenu menu-item-has-children">
+                        <li class="has-megamenu menu-item-has-children" tabindex="0" aria-haspopup="true">
                             <a href="agencies.html" role="menuitem" tabindex="0">Agencies</a>
-                            <div class="megamenu"  tabindex="0" aria-haspopup="true" style="background-image: url('img/menu-bg.png');">
+                            <div class="megamenu" style="background-image: url('img/menu-bg.png');">
                                 <div class="megamenu-row">
                                     <div class="col4">
                                         <ul role="menu">
