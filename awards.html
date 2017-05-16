@@ -1192,13 +1192,13 @@ p.Footnote {
                    <div class="col-md-5 col-sm-6">
                     <form>
                         <div class="radio radio-info radio-inline">
-                            <input type="radio" name="totalAwards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="awardRadioBtn" id="totalAwards">
+                            <input tabindex="0" type="radio" name="totalAwards" checked="checked" value="mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e" class="awardRadioBtn" id="totalAwards">
                             <label for="totalAwards">
                                 Total Awards
                             </label>
                         </div>
                         <div class="radio radio-inline">
-                            <input type="radio" name="discretionaryAwards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="discAwards">
+                            <input tabindex="0" type="radio" name="discretionaryAwards" value="mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h" class="awardRadioBtn" id="discAwards">
                             <label for="discretionaryAwards">
                                 Discretionary Awards
                             </label>
@@ -1206,14 +1206,14 @@ p.Footnote {
                     </form>
                 </div>
                 <div class="col-md-2 col-sm-3">
-                    <a id="mapLinkWorld" target="_blank" class="tablelink2" content="html" charset="utf-8" href="DataFiles/Maps/AwardsByLocation/World/World_All/World_All_HHS.html"> World Table View</a> 
+                    <a tabindex="0" id="mapLinkWorld" target="_blank" class="tablelink2" content="html" charset="utf-8" href="DataFiles/Maps/AwardsByLocation/World/World_All/World_All_HHS.html"> World Table View</a> 
 
-                    <a id="mapLinkState" target="_blank" class="tablelink2" content="html" charset="utf-8" href="DataFiles/Maps/AwardsByLocation/US/USA_ALL/USA_All_HHS.html">State Table View</a>
+                    <a tabindex="0" id="mapLinkState" target="_blank" class="tablelink2" content="html" charset="utf-8" href="DataFiles/Maps/AwardsByLocation/US/USA_ALL/USA_All_HHS.html">State Table View</a>
                 </div>
                 <div class="col-md-2 col-sm-3">
-                    <a id="mapExcelLinkWorld" class="tablelink2" content="html" charset="utf-8" href="DataFiles_Excel/Maps/AwardsByLocation/World/World_All/World_All_HHS.xlsx"> Excel Table </a> 
+                    <a tabindex="0" id="mapExcelLinkWorld" class="tablelink2" content="html" charset="utf-8" href="DataFiles_Excel/Maps/AwardsByLocation/World/World_All/World_All_HHS.xlsx"> Excel Table </a> 
 
-                    <a id="mapExcelLinkState" class="tablelink2" content="html" charset="utf-8" href="DataFiles_Excel/Maps/AwardsByLocation/US/USA_ALL/USA_All_HHS.xlsx">Excel Table</a>
+                    <a tabindex="0" id="mapExcelLinkState" class="tablelink2" content="html" charset="utf-8" href="DataFiles_Excel/Maps/AwardsByLocation/US/USA_ALL/USA_All_HHS.xlsx">Excel Table</a>
                 </div>
 
             </div>						
@@ -1375,15 +1375,15 @@ p.Footnote {
     </div>
 
     <div class="col-md-2 col-sm-3">
-        <a href="DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryUS/Top50_Recipients_Discretionary_US_HHS.html" id="topAwardsLink" target="_blank" content="html" charset="utf-8" class="topRecipientsLinks">View Table
+        <a href="DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryUS/Top50_Recipients_Discretionary_US_HHS.html" id="topAwardsLink" target="_blank" content="html" charset="utf-8" class="topRecipientsLinks" tabindex="0">View Table
         </a>
-        <a href="DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryWorld/Top50_Recipients_Discretionary_International_HHS.html" id="topAwardsLinkInt" target="_blank" content="html" charset="utf-8" class="topRecipientsLinks secondTopRecipLinks">View Table
+        <a href="DataFiles/Maps/TopAwardRecipients/Top50DiscretionaryWorld/Top50_Recipients_Discretionary_International_HHS.html" id="topAwardsLinkInt" target="_blank" content="html" charset="utf-8" class="topRecipientsLinks secondTopRecipLinks" tabindex="0">View Table
         </a>
     </div>
     <div class="col-md-2 col-sm-3 ml--60">
-        <a href="DataFiles_Excel/Maps/TopAwardRecipients/Top50DiscretionaryUS/Top50_Recipients_Discretionary_US_HHS.xlsx" id="topAwardsExcelLink" class="topRecipientsLinks">Excel Table</a>
+        <a href="DataFiles_Excel/Maps/TopAwardRecipients/Top50DiscretionaryUS/Top50_Recipients_Discretionary_US_HHS.xlsx" id="topAwardsExcelLink" class="topRecipientsLinks" tabindex="0">Excel Table</a>
 
-        <a href="DataFiles_Excel/Maps/TopAwardRecipients/Top50DiscretionaryWorld/Top50_Recipients_Discretionary_International_HHS.xlsx" id="topAwardsExcelLinkInt" content="xlsx" charset="utf-8" class="topRecipientsLinks secondTopRecipLinks">Excel Table</a>
+        <a href="DataFiles_Excel/Maps/TopAwardRecipients/Top50DiscretionaryWorld/Top50_Recipients_Discretionary_International_HHS.xlsx" id="topAwardsExcelLinkInt" content="xlsx" charset="utf-8" class="topRecipientsLinks secondTopRecipLinks" tabindex="0">Excel Table</a>
     </div>
 </div>
 </div>
@@ -1528,7 +1528,7 @@ p.Footnote {
                 return xFrom(d[lCol]);
             })
             .attr("height", y.rangeBand())
-            .attr("tabindex", "0");
+            // .attr("tabindex", "0");
             chart.selectAll("text.leftscore")
             .data(data)
             .enter().append("text")
@@ -1596,7 +1596,7 @@ p.Footnote {
                             return xTo(d[rCol]);
                         })
                         .attr("height", y.rangeBand())
-                        .attr("tabindex", "0");
+                        // .attr("tabindex", "0");
                         chart.selectAll("text.score")
                         .data(data)
                         .enter().append("text")
@@ -1623,16 +1623,16 @@ p.Footnote {
                     var fileNames = ["training.json", "trainingInt.json","research.json", "researchInt.json", "services.json", "servicesInt.json", "other.json",  "otherInt.json"];
                     var activityTypes = ["Training", "Training (International)", "Research", "Research (International)", "Services", "Services (International)", "Other", "Other (International)"];
 
-                    var tableLinks = ['<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscTraining.html" target="_blank" class="cfdaTableLink">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalTraining.html" target="_blank" class="cfdaTableLink">View Table</a>','<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscResearch.html" class="cfdaTableLink" target="blank">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalResearch.html" class="cfdaTableLink" target="blank">View Table</a>','<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscServices.html" class="cfdaTableLink" target="_blank">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalServices.html" class="cfdaTableLink" target="_blank">View Table</a>','<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscOther.html" class="cfdaTableLink" target="_blank">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalOther.html" class="cfdaTableLink" target="_blank">View Table</a>' ];
+                    var tableLinks = ['<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscTraining.html" target="_blank" class="cfdaTableLink" tabindex="0">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalTraining.html" target="_blank" class="cfdaTableLink" tabindex="0">View Table</a>','<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscResearch.html" class="cfdaTableLink" target="blank" tabindex="0">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalResearch.html" class="cfdaTableLink" target="blank" tabindex="0">View Table</a>','<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscServices.html" class="cfdaTableLink" target="_blank" tabindex="0">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalServices.html" class="cfdaTableLink" target="_blank" tabindex="0">View Table</a>','<a href="DataFiles/Top5CFDABarChart/topFiveCFDAdiscOther.html" class="cfdaTableLink" target="_blank" tabindex="0">View Table</a>','<a href="DataFiles/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalOther.html" class="cfdaTableLink" target="_blank" tabindex="0">View Table</a>' ];
                     var cfdaExcelLinks = [
-                    '<a href="DataFiles_Excel/Top5CFDABarChart/topFiveCFDAdiscTraining.xlsx" class="cfdaExcelLink excelLink">View Excel</a>',
-                    '<a href="DataFiles_Excel/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalTraining.xlsx" class="cfdaExcelLink excelLink">View Excel</a>',
-                    '<a href="DataFiles_Excel/Top5CFDABarChart/topFiveCFDAdiscResearch.xlsx" class="cfdaExcelLink excelLink">View Excel</a>',
-                    '<a href="DataFiles_Excel/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalResearch.xlsx" class="cfdaExcelLink excelLink">View Excel</a>',
-                    '<a href="DataFiles_Excel/Top5CFDABarChart/topFiveCFDAdiscServices.xlsx" class="cfdaExcelLink excelLink">View Excel</a>',
-                    '<a href="DataFiles_Excel/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalServices.xlsx" class="cfdaExcelLink excelLink">View Excel</a>',
-                    '<a href="DataFiles_Excel/Top5CFDABarChart/topFiveCFDAdiscOther.xlsx" class="cfdaExcelLink excelLink">View Excel</a>',
-                    '<a href="DataFiles_Excel/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalOther.xlsx" class="cfdaExcelLink excelLink">View Excel</a>'];
+                    '<a href="DataFiles_Excel/Top5CFDABarChart/topFiveCFDAdiscTraining.xlsx" class="cfdaExcelLink excelLink" tabindex="0">View Excel</a>',
+                    '<a href="DataFiles_Excel/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalTraining.xlsx" class="cfdaExcelLink excelLink" tabindex="0">View Excel</a>',
+                    '<a href="DataFiles_Excel/Top5CFDABarChart/topFiveCFDAdiscResearch.xlsx" class="cfdaExcelLink excelLink" tabindex="0">View Excel</a>',
+                    '<a href="DataFiles_Excel/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalResearch.xlsx" class="cfdaExcelLink excelLink" tabindex="0">View Excel</a>',
+                    '<a href="DataFiles_Excel/Top5CFDABarChart/topFiveCFDAdiscServices.xlsx" class="cfdaExcelLink excelLink" tabindex="0">View Excel</a>',
+                    '<a href="DataFiles_Excel/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalServices.xlsx" class="cfdaExcelLink excelLink" tabindex="0">View Excel</a>',
+                    '<a href="DataFiles_Excel/Top5CFDABarChart/topFiveCFDAdiscOther.xlsx" class="cfdaExcelLink excelLink" tabindex="0">View Excel</a>',
+                    '<a href="DataFiles_Excel/Top5CFDAInternationalBarChart/topFiveCFDAdiscInternationalOther.xlsx" class="cfdaExcelLink excelLink" tabindex="0">View Excel</a>'];
 
                     fileNames.forEach(function(fileName, i) {
                         var activityType = activityTypes[i]
