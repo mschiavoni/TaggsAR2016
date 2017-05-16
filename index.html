@@ -769,13 +769,13 @@ button:focus {outline: blue solid 2px;}
                     </a>
                     <ul class="primary-menu-menu">
                         <li class="menu-item-has-children">
-                            <a href="index.html" tabindex="0" class="blue">Home</a>
+                            <a href="index.html" role="menuitem" tabindex="0" class="blue">Home</a>
                         </li>
                         <li class="">
-                            <a href="awards.html" tabindex="0">Awards</a>
+                            <a href="awards.html" role="menuitem" tabindex="0">Awards</a>
                         </li>
                         <li class="has-megamenu menu-item-has-children">
-                            <a href="agencies.html" tabindex="0">Agencies</a>
+                            <a href="agencies.html" role="menuitem" tabindex="0" aria-haspopup="true">Agencies</a>
                             <div class="megamenu" style="background-image: url('img/menu-bg.png');">
                                 <div class="megamenu-row">
                                     <div class="col4">
@@ -785,32 +785,32 @@ button:focus {outline: blue solid 2px;}
                                                 <p class="megamenu-item-info-text"> </p>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#ACF" tabindex="0">ACF<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#ACF" role="menu" aria-hidden="true" tabindex="-1">ACF<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#ACL" tabindex="0">ACL<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#ACL" role="menu" aria-hidden="true" tabindex="-1">ACL<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#AHRQ" tabindex="0">AHRQ<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#AHRQ" role="menu" aria-hidden="true" tabindex="-1">AHRQ<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#ASPE" tabindex="0">ASPE<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="agencies.html#ASPR" tabindex="0">ASPR<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#ASPE" role="menu" aria-hidden="true" tabindex="-1">ASPE<i class="taggsicon-right-arrow"></i></a>
                                             </li>
 
                                             <li>
-                                                <a href="agencies.html#CDC" tabindex="0">CDC<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#ASPR" role="menu" aria-hidden="true" tabindex="-1">ASPR<i class="taggsicon-right-arrow"></i></a>
                                             </li>
 
                                             <li>
-                                                <a href="agencies.html#CMS" tabindex="0">CMS<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#CDC" role="menu" aria-hidden="true" tabindex="-1">CDC<i class="taggsicon-right-arrow"></i></a>
                                             </li>
 
                                             <li>
-                                                <a href="agencies.html#FDA" tabindex="0">FDA<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#CMS" role="menu" aria-hidden="true" tabindex="-1">CMS<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="agencies.html#FDA" role="menu" aria-hidden="true" tabindex="-1">FDA<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -822,26 +822,26 @@ button:focus {outline: blue solid 2px;}
                                             </li>
 
                                             <li>
-                                                <a href="agencies.html#HRSA" tabindex="-1">HRSA<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#HRSA" role="menu" aria-hidden="true" tabindex="-1">HRSA<i class="taggsicon-right-arrow"></i></a>
                                             </li>
 
                                             <li>
-                                                <a href="agencies.html#IHS" tabindex="-1">IHS<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#IHS" role="menu" aria-hidden="true" tabindex="-1">IHS<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#NIH" tabindex="-1">NIH<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#NIH" role="menu" aria-hidden="true" tabindex="-1">NIH<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#OASH" tabindex="-1">OASH<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#OASH" role="menu" aria-hidden="true" tabindex="-1">OASH<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#OGA" tabindex="-1">OGA<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#OGA" role="menu" aria-hidden="true" tabindex="-1">OGA<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#ONC" tabindex="-1">ONC<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#ONC" role="menu" aria-hidden="true" tabindex="-1">ONC<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#SAMHSA" tabindex="-1">SAMHSA<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#SAMHSA" role="menu" aria-hidden="true" tabindex="-1">SAMHSA<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -860,7 +860,7 @@ button:focus {outline: blue solid 2px;}
                             </div>
                         </li>
                         <li class="">
-                            <a href="#" tabindex="0">Download</a>
+                            <a href="#" role="menuitem" tabindex="0">Download</a>
                         </li>
                     </ul>
                 </nav>
