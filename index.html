@@ -720,7 +720,22 @@ p.Footnote {
 }
 div:focus {outline: blue solid 2px;}	
 a:focus {outline: blue solid 2px;}	
-button:focus {outline: blue solid 2px;}		    
+btn:focus {outline: blue solid 2px;}
+radio:focus {outline: blue solid 2px;}
+btn-group:focus {outline: blue solid 2px;}	
+a:before:focus {outline: blue solid 2px;}	
+a:after:focus {outline: blue solid 2px;}	
+	    
+.heading .heading-text-footer {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ffffff;
+	
+}	
+.primary-menu-menu>li>a:focus + ul	
+	    {	    
+display: block;
+	    }
 </style>
 	<script>
 	document.onreadystatechange = function () {
@@ -774,12 +789,12 @@ button:focus {outline: blue solid 2px;}
                         <li class="">
                             <a href="awards.html" role="menuitem" tabindex="0">Awards</a>
                         </li>
-                        <li class="has-megamenu menu-item-has-children">
-                            <a href="agencies.html" role="menuitem" tabindex="0" aria-haspopup="true">Agencies</a>
+                        <li class="has-megamenu menu-item-has-children" tabindex="0" aria-haspopup="true">
+                            <a href="agencies.html" role="menuitem" tabindex="0">Agencies</a>
                             <div class="megamenu" style="background-image: url('img/menu-bg.png');">
                                 <div class="megamenu-row">
                                     <div class="col4">
-                                        <ul role="menu" aria-hidden="true">
+                                        <ul role="menu">
                                             <li>
                                                 <a href="agencies.html#ACF" role="menuitem" tabindex="-1">ACF<i class="taggsicon-right-arrow"></i></a>
                                             </li>
@@ -920,35 +935,37 @@ button:focus {outline: blue solid 2px;}
                                 <ul class="list list--secondary">
                                     <li>
                                         <i class="taggsicon-check"></i>
-                                        <a href="#">HHS awarded approximately 77,000 grants to over 11,000 recipients.</a>
+                                        
+                                        <span>HHS awarded approximately 77,000 grants to over 11,000 recipients.</span>
+
                                     </li>
                                     <li>
                                         <i class="taggsicon-check"></i>
-                                        <a href="#">HHS awarded approximately $462 billion in grants.</a>
+                                        <span>HHS awarded approximately $462 billion in grants.</span>
                                     </li>
                                     <li>
                                         <i class="taggsicon-check"></i>
-                                        <a href="#">88% of HHS’s grant funds for FY 2016 were allocated to entitlement grants.</a>
+                                        <span>88% of HHS’s grant funds for FY 2016 were allocated to entitlement grants.</span>
                                     </li>
                                     <li>
                                         <i class="taggsicon-check"></i>
-                                        <a href="#">Universities and colleges represent 34 of the top 50 HHS discretionary grant recipients.</a>
+                                        <span>Universities and colleges represent 34 of the top 50 HHS discretionary grant recipients.</span>
                                     </li>
                                     <li>
                                         <i class="taggsicon-check"></i>
-                                        <a href="#">The 6 states receiving the most HHS grant funds were California, New York, Texas, Pennsylvania, Florida, and Michigan.</a>
+                                        <span>The 6 states receiving the most HHS grant funds were California, New York, Texas, Pennsylvania, Florida, and Michigan.</span>
                                     </li>
                                     <li>
                                         <i class="taggsicon-check"></i>
-                                        <a href="#">The Centers for Medicare and Medicaid (CMS) awarded over 78% of all HHS grant dollars.</a>
+                                        <span>The Centers for Medicare and Medicaid (CMS) awarded over 78% of all HHS grant dollars.</span>
                                     </li>
                                     <li>
                                         <i class="taggsicon-check"></i>
-                                        <a href="#">The National Institutes of Health (NIH) awarded about 43% of all HHS awards.</a>
+                                        <span>The National Institutes of Health (NIH) awarded about 43% of all HHS awards.</span>
                                     </li>
                                     <li>
                                         <i class="taggsicon-check"></i>
-                                        <a href="#">HHS agencies awarded grants to 105 regional and international recipients.</a>
+                                        <span>HHS agencies awarded grants to 105 regional and international recipients.</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1797,9 +1814,9 @@ button:focus {outline: blue solid 2px;}
                         <div class="taggs-navBar">
                             <div id="taggs-search" style="display:none;"></div>
                             <ul class="taggs-navigation clearfix">
-                                <li id="taggs-nav-all"><a href="#oview" tabindex="0">Overview</a></li>
-				    <li id="taggs-nav-mandatory"><a href="#fund" tabindex="0">Types of Funding</a></li>
-				    <li id="taggs-nav-deparment"><a href="#totals" tabindex="0">Agency Totals</a></li>
+                                <li id="taggs-nav-all"><a href="#oview">Overview</a></li>
+				    <li id="taggs-nav-mandatory"><a href="#fund">Types of Funding</a></li>
+				    <li id="taggs-nav-deparment"><a href="#totals">Agency Totals</a></li>
                             </ul>
                         </div>
                         <div id="taggs-tooltip">
@@ -10504,7 +10521,7 @@ if (!!document.createElementNS && !!document.createElementNS('http://www.w3.org/
                             <span class="short-line"></span> 
                             <span class="long-line"></span>
                         </div>
-                        <p class="heading-text">HHS’ Tracking Accountability in Government Grants System (TAGGS) website provides access to detailed descriptions of grants, loans, aggregated direct payments and other types of financial assistance awarded by the HHS Operating Divisions (OPDIVs) and the Office of the Secretary Staff Divisions (STAFFDIVs).
+                        <p class="heading-text-footer">HHS’ Tracking Accountability in Government Grants System (TAGGS) website provides access to detailed descriptions of grants, loans, aggregated direct payments and other types of financial assistance awarded by the HHS Operating Divisions (OPDIVs) and the Office of the Secretary Staff Divisions (STAFFDIVs).
                         </p>
                     </div>
                     <div class="socials">
