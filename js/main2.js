@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
 
+
   var typesFundTitleND = $('#typesFundTitleND')
      var typesFundTitleD = $('#typesFundTitleD')
   var typesFundToolTipND =   $('#typesFundTTcontND')

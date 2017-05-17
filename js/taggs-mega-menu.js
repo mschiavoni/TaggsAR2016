@@ -85,6 +85,13 @@
 				});
 			}
 			else{
+				$('.agenciesAgency').focus(function(){
+					console.log("HHIHIII")
+					showDropdown();
+					console.log('after')
+					
+				})
+
 				$(menu_li).bind("mouseenter", function(){
 					showDropdown(this);
 				}).bind("mouseleave", function(){
@@ -92,6 +99,10 @@
 				});
 			}
 		}		
+
+
+
+
 		function portraitMode(){
 			$(menu).find(".dropdown, .megamenu").hide(0);
 			$(menu).find(".indicator").each(function(){
