@@ -7,11 +7,14 @@
 
   <vLine /></categories><dataset renderAs='Column' parentYAxis='S' seriesName='Number of Awards' color="#1fb6ff">
 
-  <set value='3870' color='#1fb6ff' alpha='50' />
-  <set value='3676' color='#1fb6ff' alpha='50' />
-  <set value='3540' color='#1fb6ff' alpha='50' />
-  <set value='3544' color='#1fb6ff' alpha='50' />
-  <set value='4100' color='#1fb6ff' /></dataset><dataset renderAs='Column' parentYAxis='P' color="#13ce67" seriesName='Total Award Amount'>
+  <set value='3896' color='#1fb6ff' alpha='50' />
+  <set value='3708' color='#1fb6ff' alpha='50' />
+  <set value='3565' color='#1fb6ff' alpha='50' />
+  <set value='3559' color='#1fb6ff' alpha='50' />
+  <set value='4141' color='#1fb6ff' /></dataset><dataset renderAs='Column' parentYAxis='P' color="#13ce67" seriesName='Total Award Amount'>
 
-  <set value='4.99330867E+09' color='#13ce67' alpha='50' />
-  <set value='4.936586E+09' color='#13ce67' alpha='50' /><set value='5.128118E+09' color='#13ce67' alpha='50' /><set value='5.62915635E+09' color='#13ce67' alpha='50' /><set value='6.57319629E+09' color='#13ce67' /></dataset><trendLines /><styles><definition><style name='PlotShadow' type='Shadow' color='e9e7df' distance='10' angle='45' alpha='50' /><style name='CaptionFont' type='font' font='Segoe UI' size='30' color='FFFFFF' /><style name='PlotBevel' type='Bevel' color='e9e7df' angle='290' /><style name='LabelFont' type='font' font='Verdana' size='15' color='505050' bold='1' /></definition><application><apply toObject='DATAPLOTCOLUMN' styles='PlotShadow' /><apply toObject='CAPTION' styles='CaptionFont' /><apply toObject='DataLabels' styles='LabelFont' /></application></styles></chart>
+  <set value='4993308851' color='#13ce67' alpha='50' />
+  <set value='4936586311' color='#13ce67' alpha='50' />
+  <set value='5128117929' color='#13ce67' alpha='50' />]
+  <set value='5631656248' color='#13ce67' alpha='50' />
+  <set value='6573196239' color='#13ce67' /></dataset><trendLines /><styles><definition><style name='PlotShadow' type='Shadow' color='e9e7df' distance='10' angle='45' alpha='50' /><style name='CaptionFont' type='font' font='Segoe UI' size='30' color='FFFFFF' /><style name='PlotBevel' type='Bevel' color='e9e7df' angle='290' /><style name='LabelFont' type='font' font='Verdana' size='15' color='505050' bold='1' /></definition><application><apply toObject='DATAPLOTCOLUMN' styles='PlotShadow' /><apply toObject='CAPTION' styles='CaptionFont' /><apply toObject='DataLabels' styles='LabelFont' /></application></styles></chart>
