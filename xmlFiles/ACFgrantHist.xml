@@ -16,10 +16,10 @@
 <set value='7164' color='#1fb6ff' /></dataset>
 <dataset renderAs='Column' parentYAxis='P' color="#13ce67" seriesName='Total Award Amount'>
 
-<set value='4.790812E+10' color='#13ce67' alpha='50' />
-<set value='4.75184824E+10' color='#13ce67' alpha='50' />
-<set value='4.95838126E+10' color='#13ce67' alpha='50' />
-<set value='5.003882E+10' color='#13ce67' alpha='50' />
-<set value='5.13722573E+10' color='#13ce67' />
+<set value='47908116593' color='#13ce67' alpha='50' />
+<set value='47518482031' color='#13ce67' alpha='50' />
+<set value='49583810932' color='#13ce67' alpha='50' />
+<set value='50038822759' color='#13ce67' alpha='50' />
+<set value='51372256944' color='#13ce67' />
 
 </dataset><trendLines /><styles><definition><style name='PlotShadow' type='Shadow' color='e9e7df' distance='10' angle='45' alpha='50' /><style name='CaptionFont' type='font' font='Segoe UI' size='30' color='FFFFFF' /><style name='PlotBevel' type='Bevel' color='e9e7df' angle='290' /><style name='LabelFont' type='font' font='Verdana' size='15' color='505050' bold='1' /></definition><application><apply toObject='DATAPLOTCOLUMN' styles='PlotShadow' /><apply toObject='CAPTION' styles='CaptionFont' /><apply toObject='DataLabels' styles='LabelFont' /></application></styles></chart>
