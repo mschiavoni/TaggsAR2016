@@ -1960,6 +1960,7 @@ display: block;
                                 </div>
 
                                 <div id="taggs-chartCanvas">
+                                    <a id="clickBubble" href=""></a>
 
                                 </div>
                             </div>
@@ -9597,424 +9598,424 @@ d3.geom.hull = function(a) {
                                                                                                                                     l = 1 / 0,
                                                                                                                                     n = Math.min(g.dx, g.dy);
                                                                                                                                     for (a(i, g.dx * g.dy / c.value), h.area = 0;
-                                                                                                                                        (o = i.length) > 0;) h.push(j = i[o - 1]), h.area += j.area, (m = d(h, n)) <= l ? (i.pop(), l = m) : (h.area -= h.pop().area, e(h, n, g, !1), n = Math.min(g.dx, g.dy), h.length = h.area = 0, l = 1 / 0);
-                                                                                                                                        h.length && (e(h, n, g, !0), h.length = h.area = 0), f.forEach(b)
-                                                                                                                                }
-                                                                                                                            }
+                                            (o = i.length) > 0;) h.push(j = i[o - 1]), h.area += j.area, (m = d(h, n)) <= l ? (i.pop(), l = m) : (h.area -= h.pop().area, e(h, n, g, !1), n = Math.min(g.dx, g.dy), h.length = h.area = 0, l = 1 / 0);
+                                            h.length && (e(h, n, g, !0), h.length = h.area = 0), f.forEach(b)
+                                    }
+                                }
 
-                                                                                                                            function c(b) {
-                                                                                                                                var d = b.children;
-                                                                                                                                if (d && d.length) {
-                                                                                                                                    var h, f = k(b),
-                                                                                                                                    g = d.slice(),
-                                                                                                                                    i = [];
-                                                                                                                                    for (a(g, f.dx * f.dy / b.value), i.area = 0; h = g.pop();) i.push(h), i.area += h.area, null != h.z && (e(i, h.z ? f.dx : f.dy, f, !g.length), i.length = i.area = 0);
-                                                                                                                                        d.forEach(c)
-                                                                                                                                }
-                                                                                                                            }
+                                function c(b) {
+                                    var d = b.children;
+                                    if (d && d.length) {
+                                        var h, f = k(b),
+                                        g = d.slice(),
+                                        i = [];
+                                        for (a(g, f.dx * f.dy / b.value), i.area = 0; h = g.pop();) i.push(h), i.area += h.area, null != h.z && (e(i, h.z ? f.dx : f.dy, f, !g.length), i.length = i.area = 0);
+                                            d.forEach(c)
+                                    }
+                                }
 
-                                                                                                                            function d(a, b) {
-                                                                                                                                for (var d, c = a.area, e = 0, f = 1 / 0, g = -1, h = a.length; ++g < h;)(d = a[g].area) && (d < f && (f = d), d > e && (e = d));
-                                                                                                                                    return c *= c, b *= b, c ? Math.max(b * e * n / c, c / (b * f * n)) : 1 / 0
-                                                                                                                            }
+                                function d(a, b) {
+                                    for (var d, c = a.area, e = 0, f = 1 / 0, g = -1, h = a.length; ++g < h;)(d = a[g].area) && (d < f && (f = d), d > e && (e = d));
+                                        return c *= c, b *= b, c ? Math.max(b * e * n / c, c / (b * f * n)) : 1 / 0
+                                }
 
-                                                                                                                            function e(a, b, c, d) {
-                                                                                                                                var k, e = -1,
-                                                                                                                                f = a.length,
-                                                                                                                                g = c.x,
-                                                                                                                                i = c.y,
-                                                                                                                                j = b ? h(a.area / b) : 0;
-                                                                                                                                if (b == c.dx) {
-                                                                                                                                    for ((d || j > c.dy) && (j = c.dy); ++e < f;) k = a[e], k.x = g, k.y = i, k.dy = j, g += k.dx = Math.min(c.x + c.dx - g, j ? h(k.area / j) : 0);
-                                                                                                                                        k.z = !0, k.dx += c.x + c.dx - g, c.y += j, c.dy -= j
-                                                                                                                                } else {
-                                                                                                                                    for ((d || j > c.dx) && (j = c.dx); ++e < f;) k = a[e], k.x = g, k.y = i, k.dx = j, i += k.dy = Math.min(c.y + c.dy - i, j ? h(k.area / j) : 0);
-                                                                                                                                        k.z = !1, k.dy += c.y + c.dy - i, c.x += j, c.dx -= j
-                                                                                                                                }
-                                                                                                                            }
+                                function e(a, b, c, d) {
+                                    var k, e = -1,
+                                    f = a.length,
+                                    g = c.x,
+                                    i = c.y,
+                                    j = b ? h(a.area / b) : 0;
+                                    if (b == c.dx) {
+                                        for ((d || j > c.dy) && (j = c.dy); ++e < f;) k = a[e], k.x = g, k.y = i, k.dy = j, g += k.dx = Math.min(c.x + c.dx - g, j ? h(k.area / j) : 0);
+                                            k.z = !0, k.dx += c.x + c.dx - g, c.y += j, c.dy -= j
+                                    } else {
+                                        for ((d || j > c.dx) && (j = c.dx); ++e < f;) k = a[e], k.x = g, k.y = i, k.dx = j, i += k.dy = Math.min(c.y + c.dy - i, j ? h(k.area / j) : 0);
+                                            k.z = !1, k.dy += c.y + c.dy - i, c.x += j, c.dx -= j
+                                    }
+                                }
 
-                                                                                                                            function f(d) {
-                                                                                                                                var e = m || g(d),
-                                                                                                                                f = e[0];
-                                                                                                                                return f.x = 0, f.y = 0, f.dx = i[0], f.dy = i[1], m && g.revalue(f), a([f], f.dx * f.dy / f.value), (m ? c : b)(f), l && (m = e), e
-                                                                                                                            }
-                                                                                                                            var m, g = d3.layout.hierarchy(),
-                                                                                                                            h = Math.round,
-                                                                                                                            i = [1, 1],
-                                                                                                                            j = null,
-                                                                                                                            k = Y,
-                                                                                                                            l = !1,
-                                                                                                                            n = .5 * (1 + Math.sqrt(5));
-                                                                                                                            return f.size = function(a) {
-                                                                                                                                return arguments.length ? (i = a, f) : i
-                                                                                                                            }, f.padding = function(a) {
-                                                                                                                                function b(b) {
-                                                                                                                                    var c = a.call(f, b, b.depth);
-                                                                                                                                    return null == c ? Y(b) : Z(b, "number" == typeof c ? [c, c, c, c] : c)
-                                                                                                                                }
+                                function f(d) {
+                                    var e = m || g(d),
+                                    f = e[0];
+                                    return f.x = 0, f.y = 0, f.dx = i[0], f.dy = i[1], m && g.revalue(f), a([f], f.dx * f.dy / f.value), (m ? c : b)(f), l && (m = e), e
+                                }
+                                var m, g = d3.layout.hierarchy(),
+                                h = Math.round,
+                                i = [1, 1],
+                                j = null,
+                                k = Y,
+                                l = !1,
+                                n = .5 * (1 + Math.sqrt(5));
+                                return f.size = function(a) {
+                                    return arguments.length ? (i = a, f) : i
+                                }, f.padding = function(a) {
+                                    function b(b) {
+                                                    var c = a.call(f, b, b.depth);
+                                                    return null == c ? Y(b) : Z(b, "number" == typeof c ? [c, c, c, c] : c)
+                                                }
 
-                                                                                                                                function c(b) {
-                                                                                                                                    return Z(b, a)
-                                                                                                                                }
-                                                                                                                                if (!arguments.length) return j;
-                                                                                                                                var d;
-                                                                                                                                return k = null == (j = a) ? Y : "function" == (d = typeof a) ? b : "number" === d ? (a = [a, a, a, a], c) : c, f
-                                                                                                                            }, f.round = function(a) {
-                                                                                                                                return arguments.length ? (h = a ? Math.round : Number, f) : h != Number
-                                                                                                                            }, f.sticky = function(a) {
-                                                                                                                                return arguments.length ? (l = a, m = null, f) : l
-                                                                                                                            }, f.ratio = function(a) {
-                                                                                                                                return arguments.length ? (n = a, f) : n
-                                                                                                                            }, u(f, g)
-                                                                                                                        }
-                                                                                                                    }();
-                                                                                                                    var taggs = taggs || {};
-                                                                                                                    taggs.formatNumber = function(n, decimals) {
-                                                                                                                        var s, remainder, num, negativePrefix, negativeSuffix, prefix, suffix;
-                                                                                                                        suffix = ""
-                                                                                                                        negativePrefix = ""
-                                                                                                                        negativeSuffix = ""
-                                                                                                                        if (n < 0) {
-                                                                                                                            negativePrefix = "";
-                                                                                                                            negativeSuffix = " below zero"
-                                                                                                                            n = -n
-                                                                                                                        };
-                                                                                                                        if (n >= 1000000000000) {
-                                                                                                                            suffix = " trillion"
-                                                                                                                            n = n / 1000000000000
-                                                                                                                            decimals = 2
-                                                                                                                        } else if (n >= 1000000000) {
-                                                                                                                            suffix = " billion"
-                                                                                                                            n = n / 1000000000
-                                                                                                                            decimals = 1
-                                                                                                                        } else if (n >= 1000000) {
-                                                                                                                            suffix = " million"
-                                                                                                                            n = n / 1000000
-                                                                                                                            decimals = 1
-                                                                                                                        }
-                                                                                                                        prefix = ""
-                                                                                                                        if (decimals > 0) {
-                                                                                                                            if (n < 1) {
-                                                                                                                                prefix = "0"
-                                                                                                                            };
-                                                                                                                            s = String(Math.round(n * (Math.pow(10, decimals))));
-                                                                                                                            if (s < 10) {
-                                                                                                                                remainder = "0" + s.substr(s.length - (decimals), decimals);
-                                                                                                                                num = "";
-                                                                                                                            } else {
-                                                                                                                                remainder = s.substr(s.length - (decimals), decimals);
-                                                                                                                                num = s.substr(0, s.length - decimals);
-                                                                                                                            }
-                                                                                                                            return negativePrefix + prefix + num.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "." + remainder + suffix + negativeSuffix;
-                                                                                                                        } else {
-                                                                                                                            s = String(Math.round(n));
-                                                                                                                            s = s.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
-                                                                                                                            return negativePrefix + s + suffix + negativeSuffix;
-                                                                                                                        }
-                                                                                                                    };
-                                                                                                                    var taggs = taggs || {};
-                                                                                                                    taggs.Chart = function() {
-                                                                                                                        return {
-                                                                                                                            $j: jQuery,
-                                                                                                                            width: 1100,
-                                                                                                                            height: 1000,
-                                                                                                                            groupPadding: 10,
-                                                                                                                            totalValue: 3700000000,
-                                                                                                                            deficitValue: 901000000,
-                                                                                                                            MANDATORY: "Non-Discretionary",
-                                                                                                                            DISCRETIONARY: "Discretionary",
-                                                                                                                            NET_INTEREST: "Net interest",
-                                                                                                                            boundingRadius: null,
-                                                                                                                            maxRadius: null,
-                                                                                                                            centerX: null,
-                                                                                                                            centerY: null,
-                                                                                                                            scatterPlotY: null,
-                                                                                                                            defaultGravity: 0.1,
-                                                                                                                            defaultCharge: function(d) {
-                                                                                                                                if (d.value < 0) {
-                                                                                                                                    return 0
-                                                                                                                                } else {
-                                                                                                                                    return -Math.pow(d.radius, 2.0) / 8
-                                                                                                                                };
-                                                                                                                            },
-                                                                                                                            links: [],
-                                                                                                                            nodes: [],
-                                                                                                                            positiveNodes: [],
-                                                                                                                            force: {},
-                                                                                                                            svg: {},
-                                                                                                                            circle: {},
-                                                                                                                            gravity: null,
-                                                                                                                            charge: null,
-                                                                                                                            changeTickValues: [-0.12, -0.08, -0.04, 0.04, 0.8, 0.12],
-                                                                                                                            categorizeChange: function(c) {
-                                                                                                                                if (isNaN(c)) {
-                                                                                                                                    return 0;
-                                                                                                                                } else if (c < -0.08) {
-                                                                                                                                    return -3;
-                                                                                                                                } else if (c < -0.04) {
-                                                                                                                                    return -2;
-                                                                                                                                } else if (c < -0.001) {
-                                                                                                                                    return -1;
-                                                                                                                                } else if (c <= 0.001) {
-                                                                                                                                    return 0;
-                                                                                                                                } else if (c <= 0.04) {
-                                                                                                                                    return 1;
-                                                                                                                                } else if (c <= 0.08) {
-                                                                                                                                    return 2;
-                                                                                                                                } else {
-                                                                                                                                    return 3;
-                                                                                                                                }
-                                                                                                                            },
-                                                                                                                            fillColor: d3.scale.ordinal().domain([-3, -2, -1, 0, 1, 2, 3]).range(["#f44336", "#ff8a80", "#ffcdd2", "#c5d8de", "#bbdefb", "#6998ff", "#2962ff"]),
-                                                                                                                            strokeColor: d3.scale.ordinal().domain([-3, -2, -1, 0, 1, 2, 3]).range(["#ffcdd2", "#ffcdd2", "#f44336", "#c5d8de", "#2962ff", "#2962ff", "#bbdefb"]),
-                                                                                                                            getFillColor: null,
-                                                                                                                            getStrokeColor: null,
-                                                                                                                            pFormat: d3.format("+.1%"),
-                                                                                                                            pctFormat: function() {
-                                                                                                                                return false
-                                                                                                                            },
-                                                                                                                            tickChangeFormat: d3.format("+%"),
-                                                                                                                            simpleFormat: d3.format(","),
-                                                                                                                            simpleDecimal: d3.format(",.2f"),
-                                                                                                                            bigFormat: function(n) {
-                                                                                                                                return taggs.formatNumber(n * 1000)
-                                                                                                                            },
-                                                                                                                            nameFormat: function(n) {
-                                                                                                                                return n
-                                                                                                                            },
-                                                                                                                            numFormat: function(n) {
-                                                                                                                                return taggs.formatNumber(n)
-                                                                                                                            },
-                                                                                                                            discretionFormat: function(d) {
-                                                                                                                                if (d == 'Discretionary' || d == 'Non-Discretionary') {
-                                                                                                                                    return d + " spending"
-                                                                                                                                } else {
-                                                                                                                                    return d
-                                                                                                                                }
-                                                                                                                            },
-                                                                                                                            rScale: d3.scale.pow().exponent(0.2).domain([100, 1000000000]).range([1, 182]),
-                                                                                                                            radiusScale: null,
-                                                                                                                            changeScale: d3.scale.linear().domain([-0.28, 0.28]).range([620, 180]).clamp(true),
-                                                                                                                            sizeScale: d3.scale.linear().domain([0, 110]).range([0, 1]),
-                                                                                                                            groupScale: {},
-                                                                                                                            currentYearDataColumn: 'budget_2016',
-                                                                                                                            previousYearDataColumn: 'budget_2015',
-                                                                                                                            data: taggs.budget_array_data,
-                                                                                                                            categoryPositionLookup: {},
-                                                                                                                            categoriesList: [],
-                                                                                                                            init: function() {
-                                                                                                                                var that = this;
-                                                                                                                                this.scatterPlotY = this.changeScale(0);
-                                                                                                                                this.pctFormat = function(p) {
-                                                                                                                                    if (p === Infinity || p === -Infinity) {
-                                                                                                                                        return "N.A."
-                                                                                                                                    } else {
-                                                                                                                                        return that.pFormat(p)
-                                                                                                                                    }
-                                                                                                                                }
-                                                                                                                                this.radiusScale = function(n) {
-                                                                                                                                    return that.rScale(Math.abs(n));
-                                                                                                                                };
-                                                                                                                                this.getStrokeColor = function(d) {
-                                                                                                                                    return that.strokeColor(d.changeCategory);
-                                                                                                                                };
-                                                                                                                                this.getFillColor = function(d) {
-                                                                                                                                    if (d.isNegative) {
-                                                                                                                                        return "#fff"
-                                                                                                                                    }
-                                                                                                                                    return that.fillColor(d.changeCategory);
-                                                                                                                                };
-                                                                                                                                this.boundingRadius = this.radiusScale(this.totalValue);
-                                                                                                                                this.centerX = this.width / 2;
-                                                                                                                                this.centerY = 300;
-                                                                                                                                taggs.category_data.sort(function(a, b) {
-                                                                                                                                    return b['total'] - a['total'];
-                                                                                                                                });
-                                                                                                                                var columns = [4, 5, 6, 9]
-                                                                                                                                rowPadding = [150, 120, 100, 80, 70],
-                                                                                                                                rowPosition = [250, 580, 760, 80, 890],
-                                                                                                                                rowOffsets = [130, 80, 60, 45, 48]
-                                                                                                                                currentX = 0,
-                                                                                                                                currentY = 0;
-                                                                                                                                for (var i = 0; i < taggs.category_data.length; i++) {
-                                                                                                                                    var t = 0,
-                                                                                                                                    w,
-                                                                                                                                    numInRow = -1,
-                                                                                                                                    positionInRow = -1,
-                                                                                                                                    currentRow = -1,
-                                                                                                                                    cat = taggs.category_data[i]['label'];
-                                                                                                                                    for (var j = 0; j < columns.length; j++) {
-                                                                                                                                        if (i < (t + columns[j])) {
-                                                                                                                                            numInRow = columns[j];
-                                                                                                                                            positionInRow = i - t;
-                                                                                                                                            currentRow = j;
-                                                                                                                                            break;
-                                                                                                                                        };
-                                                                                                                                        t += columns[j];
-                                                                                                                                    };
-                                                                                                                                    if (numInRow === -1) {
-                                                                                                                                        numInRow = taggs.category_data.length - d3.sum(columns);
-                                                                                                                                        currentRow = columns.length;
-                                                                                                                                        positionInRow = i - d3.sum(columns)
-                                                                                                                                    };
-                                                                                                                                    taggs.category_data[i].row = currentRow;
-                                                                                                                                    taggs.category_data[i].column = positionInRow;
-                                                                                                                                    w = (this.width - 2 * rowPadding[currentRow]) / (numInRow - 1)
-                                                                                                                                    currentX = w * positionInRow + rowPadding[currentRow];
-                                                                                                                                    currentY = rowPosition[currentRow];
-                                                                                                                                    this.categoriesList.push(cat);
-                                                                                                                                    this.categoryPositionLookup[cat] = {
-                                                                                                                                        x: currentX,
-                                                                                                                                        y: currentY,
-                                                                                                                                        w: w * 0.9,
-                                                                                                                                        offsetY: rowOffsets[currentRow],
-                                                                                                                                        numInRow: numInRow,
-                                                                                                                                        positionInRow: positionInRow
-                                                                                                                                    }
-                                                                                                                                };
-                                                                                                                                this.groupScale = d3.scale.ordinal().domain(this.categoriesList).rangePoints([0, 1]);
-                                                                                                                                for (var i = 0; i < this.data.length; i++) {
-                                                                                                                                    var n = this.data[i];
-                                                                                                                                    var out = {
-                                                                                                                                        sid: n['id'],
-                                                                                                                                        radius: this.radiusScale(n[this.currentYearDataColumn]),
-                                                                                                                                        group: n['department'],
-                                                                                                                                        change: n['change'],
-                                                                                                                                        changeCategory: this.categorizeChange(n['change']),
-                                                                                                                                        value: n[this.currentYearDataColumn],
-                                                                                                                                        typeFund: n['discretion'],
-                                                                                                                                        name: n['name'],
-                                                                                                                                        discretion: n['discretion'],
-                                                                                                                                        percentTotal:n['percentTotal'],
-                                                                                                                                        totalNumAwards16: n['totalNumAwards16'],
-                                                                                                                                        percentTotalNum: n['percentTotalNum'],
-                                                                                                                                        isNegative: (n[this.currentYearDataColumn] < 0),
-                                                                                                                                        positions: n.positions,
-                                                                                                                                        x: Math.random() * 1000,
-                                                                                                                                        y: Math.random() * 1000
-                                                                                                                                    }
-                                                                                                                                    if (n.positions.total) {
-                                                                                                                                        out.x = n.positions.total.x + (n.positions.total.x - (that.width / 2)) * 0.5;
-                                                                                                                                        out.y = n.positions.total.y + (n.positions.total.y - (150)) * 0.5;
-                                                                                                                                    };
-                                                                                                                                    if ((n[this.currentYearDataColumn] > 0) !== (n[this.previousYearDataColumn] > 0)) {
-                                                                                                                                        out.change = "N.A.";
-                                                                                                                                        out.changeCategory = 0;
-                                                                                                                                    };
-                                                                                                                                    this.nodes.push(out)
-                                                                                                                                };
-                                                                                                                                this.nodes.sort(function(a, b) {
-                                                                                                                                    return Math.abs(b.value) - Math.abs(a.value);
-                                                                                                                                });
-                                                                                                                                for (var i = 0; i < this.nodes.length; i++) {
-                                                                                                                                    if (!this.nodes[i].isNegative) {
-                                                                                                                                        this.positiveNodes.push(this.nodes[i])
-                                                                                                                                    }
-                                                                                                                                };
-                                                                                                                                this.svg = d3.select("#taggs-chartCanvas").append("svg:svg")
-                                                                                                                                .attr("width", this.width);
-                                                                                                                                for (var i = 0; i < this.changeTickValues.length; i++) {
-                                                                                                                                    d3.select("#taggs-discretionaryOverlay").append("div")
-                                                                                                                                    .html("<p>" + this.tickChangeFormat(this.changeTickValues[i]) + "</p>")
-                                                                                                                                    .style("top", this.changeScale(this.changeTickValues[i]) + 'px')
-                                                                                                                                    .classed('taggs-discretionaryTick', true)
-                                                                                                                                    .classed('taggs-discretionaryZeroTick', (this.changeTickValues[i] === 0))
-                                                                                                                                };
-                                                                                                                                d3.select("#taggs-discretionaryOverlay").append("div")
-                                                                                                                                .html("<p></p>")
-                                                                                                                                .style("top", this.changeScale(0) + 'px')
-                                                                                                                                .classed('taggs-discretionaryTick', true)
-                                                                                                                                .classed('taggs-discretionaryZeroTick', true)
-                                                                                                                                d3.select("#taggs-discretionaryOverlay").append("div")
-                                                                                                                                .html("<p>+26% or higher</p>")
-                                                                                                                                .style("top", this.changeScale(50) + 'px')
-                                                                                                                                .classed('taggs-discretionaryTickLabel', true)
-                                                                                                                                d3.select("#taggs-discretionaryOverlay").append("div")
-                                                                                                                                .html("<p>&minus;26% or lower</p>")
-                                                                                                                                .style("top", this.changeScale(-50) + 'px')
-                                                                                                                                .classed('taggs-discretionaryTickLabel', true)
-                                                                                                                                d3.select("#taggs-deficitCircle").append("circle")
-                                                                                                                                .attr('r', this.radiusScale(this.deficitValue))
-                                                                                                                                .attr('class', "taggs-deficitCircle")
-                                                                                                                                .attr('cx', 190)
-                                                                                                                                .attr('cy', 190);
-                                                                                                                                d3.select("#taggs-scaleKey").append("circle")
-                                                                                                                                .attr('r', this.radiusScale(100000000))
-                                                                                                                                .attr('class', "taggs-scaleKeyCircle")
-                                                                                                                                .attr('cx', 30)
-                                                                                                                                .attr('cy', 30);
-                                                                                                                                d3.select("#taggs-scaleKey").append("circle")
-                                                                                                                                .attr('r', this.radiusScale(10000000))
-                                                                                                                                .attr('class', "taggs-scaleKeyCircle")
-                                                                                                                                .attr('cx', 30)
-                                                                                                                                .attr('cy', 50);
-                                                                                                                                d3.select("#taggs-scaleKey").append("circle")
-                                                                                                                                .attr('r', this.radiusScale(1000000))
-                                                                                                                                .attr('class', "taggs-scaleKeyCircle")
-                                                                                                                                .attr('cx', 30)
-                                                                                                                                .attr('cy', 55);
-                                                                                                                                var departmentOverlay = $j("#taggs-departmentOverlay")
-                                                                                                                                for (var i = 0; i < taggs.category_data.length; i++) {
-                                                                                                                                    var cat = taggs.category_data[i]['label']
-                                                                                                                                    var catLabel = taggs.category_data[i]['short_label']
-                                                                                                                                    var catTot = this.bigFormat(taggs.category_data[i]['total'])
-                                                                                                                                    var catWidth = this.categoryPositionLookup[cat].w
-                                                                                                                                    var catYOffset = this.categoryPositionLookup[cat].offsetY;
-                                                                                                                                    var catNode;
-                                                                                                                                    if (catLabel === "Other") {
-                                                                                                                                        catNode = $j("<div class='taggs-departmentAnnotation taggs-row" + taggs.category_data[i]['row'] + "'><p class='department'>" + catLabel + "</p></div>")
-                                                                                                                                    } else {
-                                                                                                                                        catNode = $j("<div class='taggs-departmentAnnotation taggs-row" + taggs.category_data[i]['row'] + "'><p class='total'>$" + catTot + "</p><p class='department'>" + catLabel + "</p></div>")
-                                                                                                                                    }
-                                                                                                                                    catNode.css({
-                                                                                                                                        'left': this.categoryPositionLookup[cat].x - catWidth / 2,
-                                                                                                                                        'top': this.categoryPositionLookup[cat].y - catYOffset,
-                                                                                                                                        'width': catWidth
-                                                                                                                                    })
-                                                                                                                                    departmentOverlay.append(catNode)
-                                                                                                                                };
-                                                                                                                                this.circle = this.svg.selectAll("circle")
-                                                                                                                                .data(this.nodes, function(d) {
-                                                                                                                                    return d.sid;
-                                                                                                                                });
-                                                                                                                                this.circle.enter().append("svg:circle")
-                                                                                                                                .attr('tabindex', "-1")
-                                                                                                                                .attr("r", function(d) {
-                                                                                                                                    return 0;
-                                                                                                                                })
-                                                                                                                                .style("fill", function(d) {
-                                                                                                                                    return that.getFillColor(d);
-                                                                                                                                })
-                                                                                                                                .style("stroke-width", 2)
-                                                                                                                                .attr('id', function(d) {
-                                                                                                                                    return 'taggs-circle' + d.sid
-                                                                                                                                })
-                                                                                                                                .style("stroke", function(d) {
-                                                                                                                                    return that.getStrokeColor(d);
-                                                                                                                                })
-                                                                                                                                .on("mouseover", function(d, i) {
-                                                                                                                                    var el = d3.select(this)
-                                                                                                                                    var xpos = Number(el.attr('cx'))
+                                                function c(b) {
+                                                    return Z(b, a)
+                                                }
+                                                if (!arguments.length) return j;
+                                                var d;
+                                                return k = null == (j = a) ? Y : "function" == (d = typeof a) ? b : "number" === d ? (a = [a, a, a, a], c) : c, f
+                                            }, f.round = function(a) {
+                                                return arguments.length ? (h = a ? Math.round : Number, f) : h != Number
+                                            }, f.sticky = function(a) {
+                                                return arguments.length ? (l = a, m = null, f) : l
+                                            }, f.ratio = function(a) {
+                                                return arguments.length ? (n = a, f) : n
+                                            }, u(f, g)
+                                        }
+                                    }();
+                                    var taggs = taggs || {};
+                                    taggs.formatNumber = function(n, decimals) {
+                                        var s, remainder, num, negativePrefix, negativeSuffix, prefix, suffix;
+                                        suffix = ""
+                                        negativePrefix = ""
+                                        negativeSuffix = ""
+                                        if (n < 0) {
+                                            negativePrefix = "";
+                                            negativeSuffix = " below zero"
+                                            n = -n
+                                        };
+                                        if (n >= 1000000000000) {
+                                            suffix = " trillion"
+                                            n = n / 1000000000000
+                                            decimals = 2
+                                        } else if (n >= 1000000000) {
+                                            suffix = " billion"
+                                            n = n / 1000000000
+                                            decimals = 1
+                                        } else if (n >= 1000000) {
+                                            suffix = " million"
+                                            n = n / 1000000
+                                            decimals = 1
+                                        }
+                                        prefix = ""
+                                        if (decimals > 0) {
+                                            if (n < 1) {
+                                                prefix = "0"
+                                            };
+                                            s = String(Math.round(n * (Math.pow(10, decimals))));
+                                            if (s < 10) {
+                                                remainder = "0" + s.substr(s.length - (decimals), decimals);
+                                                num = "";
+                                            } else {
+                                                remainder = s.substr(s.length - (decimals), decimals);
+                                                num = s.substr(0, s.length - decimals);
+                                            }
+                                            return negativePrefix + prefix + num.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "." + remainder + suffix + negativeSuffix;
+                                        } else {
+                                            s = String(Math.round(n));
+                                            s = s.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+                                            return negativePrefix + s + suffix + negativeSuffix;
+                                        }
+                                        };
+                                        var taggs = taggs || {};
+                                        taggs.Chart = function() {
+                                            return {
+                                                $j: jQuery,
+                                                width: 1100,
+                                                height: 1000,
+                                                groupPadding: 10,
+                                                totalValue: 3700000000,
+                                                deficitValue: 901000000,
+                                                MANDATORY: "Non-Discretionary",
+                                                DISCRETIONARY: "Discretionary",
+                                                NET_INTEREST: "Net interest",
+                                                boundingRadius: null,
+                                                maxRadius: null,
+                                                centerX: null,
+                                                centerY: null,
+                                                scatterPlotY: null,
+                                                defaultGravity: 0.1,
+                                                defaultCharge: function(d) {
+                                                    if (d.value < 0) {
+                                                        return 0
+                                                    } else {
+                                                        return -Math.pow(d.radius, 2.0) / 8
+                                                    };
+                                                },
+                                                links: [],
+                                                nodes: [],
+                                                positiveNodes: [],
+                                                force: {},
+                                                svg: {},
+                                                circle: {},
+                                                gravity: null,
+                                                charge: null,
+                                                changeTickValues: [-0.12, -0.08, -0.04, 0.04, 0.8, 0.12],
+                                                categorizeChange: function(c) {
+                                                    if (isNaN(c)) {
+                                                        return 0;
+                                                    } else if (c < -0.08) {
+                                                        return -3;
+                                                    } else if (c < -0.04) {
+                                                        return -2;
+                                                    } else if (c < -0.001) {
+                                                        return -1;
+                                                    } else if (c <= 0.001) {
+                                                        return 0;
+                                                    } else if (c <= 0.04) {
+                                                        return 1;
+                                                    } else if (c <= 0.08) {
+                                                        return 2;
+                                                    } else {
+                                                        return 3;
+                                                    }
+                                                },
+                                                fillColor: d3.scale.ordinal().domain([-3, -2, -1, 0, 1, 2, 3]).range(["#f44336", "#ff8a80", "#ffcdd2", "#c5d8de", "#bbdefb", "#6998ff", "#2962ff"]),
+                                                strokeColor: d3.scale.ordinal().domain([-3, -2, -1, 0, 1, 2, 3]).range(["#ffcdd2", "#ffcdd2", "#f44336", "#c5d8de", "#2962ff", "#2962ff", "#bbdefb"]),
+                                                getFillColor: null,
+                                                getStrokeColor: null,
+                                                pFormat: d3.format("+.1%"),
+                                                pctFormat: function() {
+                                                    return false
+                                                },
+                                                tickChangeFormat: d3.format("+%"),
+                                                simpleFormat: d3.format(","),
+                                                simpleDecimal: d3.format(",.2f"),
+                                                bigFormat: function(n) {
+                                                    return taggs.formatNumber(n * 1000)
+                                                },
+                                                nameFormat: function(n) {
+                                                    return n
+                                                },
+                                                numFormat: function(n) {
+                                                    return taggs.formatNumber(n)
+                                                },
+                                                discretionFormat: function(d) {
+                                                    if (d == 'Discretionary' || d == 'Non-Discretionary') {
+                                                        return d + " spending"
+                                                    } else {
+                                                        return d
+                                                    }
+                                                },
+                                                rScale: d3.scale.pow().exponent(0.2).domain([100, 1000000000]).range([1, 182]),
+                                                radiusScale: null,
+                                                changeScale: d3.scale.linear().domain([-0.28, 0.28]).range([620, 180]).clamp(true),
+                                                sizeScale: d3.scale.linear().domain([0, 110]).range([0, 1]),
+                                                groupScale: {},
+                                                currentYearDataColumn: 'budget_2016',
+                                                previousYearDataColumn: 'budget_2015',
+                                                data: taggs.budget_array_data,
+                                                categoryPositionLookup: {},
+                                                categoriesList: [],
+                                                init: function() {
+                                                    var that = this;
+                                                    this.scatterPlotY = this.changeScale(0);
+                                                    this.pctFormat = function(p) {
+                                                        if (p === Infinity || p === -Infinity) {
+                                                            return "N.A."
+                                                        } else {
+                                                            return that.pFormat(p)
+                                                        }
+                                                    }
+                                                    this.radiusScale = function(n) {
+                                                        return that.rScale(Math.abs(n));
+                                                    };
+                                                    this.getStrokeColor = function(d) {
+                                                        return that.strokeColor(d.changeCategory);
+                                                    };
+                                                    this.getFillColor = function(d) {
+                                                        if (d.isNegative) {
+                                                            return "#fff"
+                                                        }
+                                                        return that.fillColor(d.changeCategory);
+                                                    };
+                                                    this.boundingRadius = this.radiusScale(this.totalValue);
+                                                    this.centerX = this.width / 2;
+                                                    this.centerY = 300;
+                                                    taggs.category_data.sort(function(a, b) {
+                                                        return b['total'] - a['total'];
+                                                    });
+                                                    var columns = [4, 5, 6, 9]
+                                                    rowPadding = [150, 120, 100, 80, 70],
+                                                    rowPosition = [250, 580, 760, 80, 890],
+                                                    rowOffsets = [130, 80, 60, 45, 48]
+                                                    currentX = 0,
+                                                    currentY = 0;
+                                                    for (var i = 0; i < taggs.category_data.length; i++) {
+                                                        var t = 0,
+                                                        w,
+                                                        numInRow = -1,
+                                                        positionInRow = -1,
+                                                        currentRow = -1,
+                                                        cat = taggs.category_data[i]['label'];
+                                                        for (var j = 0; j < columns.length; j++) {
+                                                            if (i < (t + columns[j])) {
+                                                                numInRow = columns[j];
+                                                                positionInRow = i - t;
+                                                                currentRow = j;
+                                                                break;
+                                                            };
+                                                            t += columns[j];
+                                                        };
+                                                        if (numInRow === -1) {
+                                                            numInRow = taggs.category_data.length - d3.sum(columns);
+                                                            currentRow = columns.length;
+                                                            positionInRow = i - d3.sum(columns)
+                                                        };
+                                                        taggs.category_data[i].row = currentRow;
+                                                        taggs.category_data[i].column = positionInRow;
+                                                        w = (this.width - 2 * rowPadding[currentRow]) / (numInRow - 1)
+                                                        currentX = w * positionInRow + rowPadding[currentRow];
+                                                        currentY = rowPosition[currentRow];
+                                                        this.categoriesList.push(cat);
+                                                        this.categoryPositionLookup[cat] = {
+                                                            x: currentX,
+                                                            y: currentY,
+                                                            w: w * 0.9,
+                                                            offsetY: rowOffsets[currentRow],
+                                                            numInRow: numInRow,
+                                                            positionInRow: positionInRow
+                                                        }
+                                                    };
+                                                    this.groupScale = d3.scale.ordinal().domain(this.categoriesList).rangePoints([0, 1]);
+                                                    for (var i = 0; i < this.data.length; i++) {
+                                                        var n = this.data[i];
+                                                        var out = {
+                                                            sid: n['id'],
+                                                            radius: this.radiusScale(n[this.currentYearDataColumn]),
+                                                            group: n['department'],
+                                                            change: n['change'],
+                                                            changeCategory: this.categorizeChange(n['change']),
+                                                            value: n[this.currentYearDataColumn],
+                                                            typeFund: n['discretion'],
+                                                            name: n['name'],
+                                                            discretion: n['discretion'],
+                                                            percentTotal:n['percentTotal'],
+                                                            totalNumAwards16: n['totalNumAwards16'],
+                                                            percentTotalNum: n['percentTotalNum'],
+                                                            isNegative: (n[this.currentYearDataColumn] < 0),
+                                                            positions: n.positions,
+                                                            x: Math.random() * 1000,
+                                                            y: Math.random() * 1000
+                                                        }
+                                                        if (n.positions.total) {
+                                                            out.x = n.positions.total.x + (n.positions.total.x - (that.width / 2)) * 0.5;
+        out.y = n.positions.total.y + (n.positions.total.y - (150)) * 0.5;
+    };
+    if ((n[this.currentYearDataColumn] > 0) !== (n[this.previousYearDataColumn] > 0)) {
+        out.change = "N.A.";
+        out.changeCategory = 0;
+    };
+    this.nodes.push(out)
+};
+this.nodes.sort(function(a, b) {
+    return Math.abs(b.value) - Math.abs(a.value);
+});
+for (var i = 0; i < this.nodes.length; i++) {
+    if (!this.nodes[i].isNegative) {
+        this.positiveNodes.push(this.nodes[i])
+    }
+};
+this.svg = d3.select("#clickBubble").append("svg:svg")
+.attr("width", this.width);
+for (var i = 0; i < this.changeTickValues.length; i++) {
+    d3.select("#taggs-discretionaryOverlay").append("div")
+    .html("<p>" + this.tickChangeFormat(this.changeTickValues[i]) + "</p>")
+    .style("top", this.changeScale(this.changeTickValues[i]) + 'px')
+    .classed('taggs-discretionaryTick', true)
+    .classed('taggs-discretionaryZeroTick', (this.changeTickValues[i] === 0))
+};
+d3.select("#taggs-discretionaryOverlay").append("div")
+.html("<p></p>")
+.style("top", this.changeScale(0) + 'px')
+.classed('taggs-discretionaryTick', true)
+.classed('taggs-discretionaryZeroTick', true)
+d3.select("#taggs-discretionaryOverlay").append("div")
+.html("<p>+26% or higher</p>")
+.style("top", this.changeScale(50) + 'px')
+.classed('taggs-discretionaryTickLabel', true)
+d3.select("#taggs-discretionaryOverlay").append("div")
+.html("<p>&minus;26% or lower</p>")
+.style("top", this.changeScale(-50) + 'px')
+.classed('taggs-discretionaryTickLabel', true)
+d3.select("#taggs-deficitCircle").append("circle")
+.attr('r', this.radiusScale(this.deficitValue))
+.attr('class', "taggs-deficitCircle")
+.attr('cx', 190)
+.attr('cy', 190);
+d3.select("#taggs-scaleKey").append("circle")
+.attr('r', this.radiusScale(100000000))
+.attr('class', "taggs-scaleKeyCircle")
+.attr('cx', 30)
+.attr('cy', 30);
+d3.select("#taggs-scaleKey").append("circle")
+.attr('r', this.radiusScale(10000000))
+.attr('class', "taggs-scaleKeyCircle")
+.attr('cx', 30)
+.attr('cy', 50);
+d3.select("#taggs-scaleKey").append("circle")
+.attr('r', this.radiusScale(1000000))
+.attr('class', "taggs-scaleKeyCircle")
+.attr('cx', 30)
+.attr('cy', 55);
+var departmentOverlay = $j("#taggs-departmentOverlay")
+for (var i = 0; i < taggs.category_data.length; i++) {
+    var cat = taggs.category_data[i]['label']
+    var catLabel = taggs.category_data[i]['short_label']
+    var catTot = this.bigFormat(taggs.category_data[i]['total'])
+    var catWidth = this.categoryPositionLookup[cat].w
+    var catYOffset = this.categoryPositionLookup[cat].offsetY;
+    var catNode;
+    if (catLabel === "Other") {
+        catNode = $j("<div class='taggs-departmentAnnotation taggs-row" + taggs.category_data[i]['row'] + "'><p class='department'>" + catLabel + "</p></div>")
+    } else {
+        catNode = $j("<div class='taggs-departmentAnnotation taggs-row" + taggs.category_data[i]['row'] + "'><p class='total'>$" + catTot + "</p><p class='department'>" + catLabel + "</p></div>")
+    }
+    catNode.css({
+        'left': this.categoryPositionLookup[cat].x - catWidth / 2,
+        'top': this.categoryPositionLookup[cat].y - catYOffset,
+        'width': catWidth
+    })
+    departmentOverlay.append(catNode)
+};
+this.circle = this.svg.selectAll("circle")
+.data(this.nodes, function(d) {
+    return d.sid;
+});
+this.circle.enter().append("svg:circle")
+.attr('tabindex', "-1")
+.attr("r", function(d) {
+    return 0;
+})
+.style("fill", function(d) {
+    return that.getFillColor(d);
+})
+.style("stroke-width", 2)
+.attr('id', function(d) {
+    return 'taggs-circle' + d.sid
+})
+.style("stroke", function(d) {
+    return that.getStrokeColor(d);
+})
+.on("mouseover", function(d, i) {
+    var el = d3.select(this)
+    var xpos = Number(el.attr('cx'))
 
-                                                                                                                                    var ypos = (el.attr('cy') - d.radius - 10)
-                                                                                                                                    console.log(ypos)
-                                                                                                                                    el.style("stroke", "#27b4ff").style("stroke-width", 2);
-                                                                                                                                    d3.select("#taggs-tooltip").style('top', ypos + 120 + "px").style('left', xpos + "px").style('display', 'block')
-                                                                                                                                    .classed('taggs-plus', (d.changeCategory > 0))
-                                                                                                                                    .classed('taggs-minus', (d.changeCategory < 0));
-                                                                                                                                    d3.select("#taggs-tooltip .taggs-name").html(that.nameFormat(d.name))
-                                                                                                                                    d3.select("#taggs-tooltip .taggs-discretion").text(that.discretionFormat(d.discretion))
-                                                                                                                                    d3.select("#taggs-tooltip .taggs-department").text(d.group)
-                                                                                                                                    d3.select("#taggs-tooltip .taggs-value").html("$" + that.bigFormat(d.value))
-                                                                                                                                    d3.select("#taggs-tooltip .taggs-percentTotal").text("% of HHS Total " + d.typeFund + " " + that.numFormat(d.percentTotal) + "%")
-                                                                                                                                    d3.select("#taggs-tooltip .taggs-totalNumAwards16").text("Total No. of Awards: " + that.numFormat(d.totalNumAwards16))
-                                                                                                                                    d3.select("#taggs-tooltip .taggs-percentTotalNum").text("% of Total No. of Awards: " + that.numFormat(d.percentTotalNum) + "%")
-                                                                                                                                    var pctchngout = that.pctFormat(d.change)
-                                                                                                                                    if (d.change == "N.A.") {
-                                                                                                                                        pctchngout = "N.A."
-                                                                                                                                    };
-                                                                                                                                    d3.select("#taggs-tooltip .taggs-change").html(pctchngout)
-                                                                                                                                })
+    var ypos = (el.attr('cy') - d.radius - 10)
+    console.log(ypos)
+    el.style("stroke", "#27b4ff").style("stroke-width", 2);
+    d3.select("#taggs-tooltip").style('top', ypos + 120 + "px").style('left', xpos + "px").style('display', 'block')
+    .classed('taggs-plus', (d.changeCategory > 0))
+    .classed('taggs-minus', (d.changeCategory < 0));
+    d3.select("#taggs-tooltip .taggs-name").html(that.nameFormat(d.name))
+    d3.select("#taggs-tooltip .taggs-discretion").text(that.discretionFormat(d.discretion))
+    d3.select("#taggs-tooltip .taggs-department").text(d.group)
+    d3.select("#taggs-tooltip .taggs-value").html("$" + that.bigFormat(d.value))
+    d3.select("#taggs-tooltip .taggs-percentTotal").text("% of HHS Total " + d.typeFund + " " + that.numFormat(d.percentTotal) + "%")
+    d3.select("#taggs-tooltip .taggs-totalNumAwards16").text("Total No. of Awards: " + that.numFormat(d.totalNumAwards16))
+    d3.select("#taggs-tooltip .taggs-percentTotalNum").text("% of Total No. of Awards: " + that.numFormat(d.percentTotalNum) + "%")
+    var pctchngout = that.pctFormat(d.change)
+    if (d.change == "N.A.") {
+        pctchngout = "N.A."
+    };
+    d3.select("#taggs-tooltip .taggs-change").html(pctchngout)
+})
 .on("mouseout", function(d, i) {
     d3.select(this)
     .style("stroke-width", 1)
