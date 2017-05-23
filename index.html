@@ -1960,7 +1960,6 @@ display: block;
                                 </div>
 
                                 <div id="taggs-chartCanvas">
-                                    
 
                                 </div>
                             </div>
@@ -9896,126 +9895,126 @@ d3.geom.hull = function(a) {
                                                         }
                                                         if (n.positions.total) {
                                                             out.x = n.positions.total.x + (n.positions.total.x - (that.width / 2)) * 0.5;
-        out.y = n.positions.total.y + (n.positions.total.y - (150)) * 0.5;
-    };
-    if ((n[this.currentYearDataColumn] > 0) !== (n[this.previousYearDataColumn] > 0)) {
-        out.change = "N.A.";
-        out.changeCategory = 0;
-    };
-    this.nodes.push(out)
-};
-this.nodes.sort(function(a, b) {
-    return Math.abs(b.value) - Math.abs(a.value);
-});
-for (var i = 0; i < this.nodes.length; i++) {
-    if (!this.nodes[i].isNegative) {
-        this.positiveNodes.push(this.nodes[i])
-    }
-};
-this.svg = d3.select("#taggs-chartCanvas").append("svg:svg")
-.attr("width", this.width);
-for (var i = 0; i < this.changeTickValues.length; i++) {
-    d3.select("#taggs-discretionaryOverlay").append("div")
-    .html("<p>" + this.tickChangeFormat(this.changeTickValues[i]) + "</p>")
-    .style("top", this.changeScale(this.changeTickValues[i]) + 'px')
-    .classed('taggs-discretionaryTick', true)
-    .classed('taggs-discretionaryZeroTick', (this.changeTickValues[i] === 0))
-};
-d3.select("#taggs-discretionaryOverlay").append("div")
-.html("<p></p>")
-.style("top", this.changeScale(0) + 'px')
-.classed('taggs-discretionaryTick', true)
-.classed('taggs-discretionaryZeroTick', true)
-d3.select("#taggs-discretionaryOverlay").append("div")
-.html("<p>+26% or higher</p>")
-.style("top", this.changeScale(50) + 'px')
-.classed('taggs-discretionaryTickLabel', true)
-d3.select("#taggs-discretionaryOverlay").append("div")
-.html("<p>&minus;26% or lower</p>")
-.style("top", this.changeScale(-50) + 'px')
-.classed('taggs-discretionaryTickLabel', true)
-d3.select("#taggs-deficitCircle").append("circle")
-.attr('r', this.radiusScale(this.deficitValue))
-.attr('class', "taggs-deficitCircle")
-.attr('cx', 190)
-.attr('cy', 190);
-d3.select("#taggs-scaleKey").append("circle")
-.attr('r', this.radiusScale(100000000))
-.attr('class', "taggs-scaleKeyCircle")
-.attr('cx', 30)
-.attr('cy', 30);
-d3.select("#taggs-scaleKey").append("circle")
-.attr('r', this.radiusScale(10000000))
-.attr('class', "taggs-scaleKeyCircle")
-.attr('cx', 30)
-.attr('cy', 50);
-d3.select("#taggs-scaleKey").append("circle")
-.attr('r', this.radiusScale(1000000))
-.attr('class', "taggs-scaleKeyCircle")
-.attr('cx', 30)
-.attr('cy', 55);
-var departmentOverlay = $j("#taggs-departmentOverlay")
-for (var i = 0; i < taggs.category_data.length; i++) {
-    var cat = taggs.category_data[i]['label']
-    var catLabel = taggs.category_data[i]['short_label']
-    var catTot = this.bigFormat(taggs.category_data[i]['total'])
-    var catWidth = this.categoryPositionLookup[cat].w
-    var catYOffset = this.categoryPositionLookup[cat].offsetY;
-    var catNode;
-    if (catLabel === "Other") {
-        catNode = $j("<div class='taggs-departmentAnnotation taggs-row" + taggs.category_data[i]['row'] + "'><p class='department'>" + catLabel + "</p></div>")
-    } else {
-        catNode = $j("<div class='taggs-departmentAnnotation taggs-row" + taggs.category_data[i]['row'] + "'><p class='total'>$" + catTot + "</p><p class='department'>" + catLabel + "</p></div>")
-    }
-    catNode.css({
-        'left': this.categoryPositionLookup[cat].x - catWidth / 2,
-        'top': this.categoryPositionLookup[cat].y - catYOffset,
-        'width': catWidth
-    })
-    departmentOverlay.append(catNode)
-};
-this.circle = this.svg.selectAll("circle")
-.data(this.nodes, function(d) {
-    return d.sid;
-});
-this.circle.enter().append("svg:circle")
-.attr('tabindex', "-1")
-.attr("r", function(d) {
-    return 0;
-})
-.style("fill", function(d) {
-    return that.getFillColor(d);
-})
-.style("stroke-width", 2)
-.attr('id', function(d) {
-    return 'taggs-circle' + d.sid
-})
-.style("stroke", function(d) {
-    return that.getStrokeColor(d);
-})
-.on("mouseover", function(d, i) {
-    var el = d3.select(this)
-    var xpos = Number(el.attr('cx'))
+                                                            out.y = n.positions.total.y + (n.positions.total.y - (150)) * 0.5;
+                                                        };
+                                                        if ((n[this.currentYearDataColumn] > 0) !== (n[this.previousYearDataColumn] > 0)) {
+                                                            out.change = "N.A.";
+                                                            out.changeCategory = 0;
+                                                        };
+                                                        this.nodes.push(out)
+                                                    };
+                                                    this.nodes.sort(function(a, b) {
+                                                        return Math.abs(b.value) - Math.abs(a.value);
+                                                    });
+                                                    for (var i = 0; i < this.nodes.length; i++) {
+                                                        if (!this.nodes[i].isNegative) {
+                                                            this.positiveNodes.push(this.nodes[i])
+                                                        }
+                                                    };
+                                                    this.svg = d3.select("#taggs-chartCanvas").append("svg:svg")
+                                                    .attr("width", this.width);
+                                                    for (var i = 0; i < this.changeTickValues.length; i++) {
+                                                        d3.select("#taggs-discretionaryOverlay").append("div")
+                                                        .html("<p>" + this.tickChangeFormat(this.changeTickValues[i]) + "</p>")
+                                                        .style("top", this.changeScale(this.changeTickValues[i]) + 'px')
+                                                        .classed('taggs-discretionaryTick', true)
+                                                        .classed('taggs-discretionaryZeroTick', (this.changeTickValues[i] === 0))
+                                                    };
+                                                    d3.select("#taggs-discretionaryOverlay").append("div")
+                                                    .html("<p></p>")
+                                                    .style("top", this.changeScale(0) + 'px')
+                                                    .classed('taggs-discretionaryTick', true)
+                                                    .classed('taggs-discretionaryZeroTick', true)
+                                                    d3.select("#taggs-discretionaryOverlay").append("div")
+                                                    .html("<p>+26% or higher</p>")
+                                                    .style("top", this.changeScale(50) + 'px')
+                                                    .classed('taggs-discretionaryTickLabel', true)
+                                                    d3.select("#taggs-discretionaryOverlay").append("div")
+                                                    .html("<p>&minus;26% or lower</p>")
+                                                    .style("top", this.changeScale(-50) + 'px')
+                                                    .classed('taggs-discretionaryTickLabel', true)
+                                                    d3.select("#taggs-deficitCircle").append("circle")
+                                                    .attr('r', this.radiusScale(this.deficitValue))
+                                                    .attr('class', "taggs-deficitCircle")
+                                                    .attr('cx', 190)
+                                                    .attr('cy', 190);
+                                                    d3.select("#taggs-scaleKey").append("circle")
+                                                    .attr('r', this.radiusScale(100000000))
+                                                    .attr('class', "taggs-scaleKeyCircle")
+                                                    .attr('cx', 30)
+                                                    .attr('cy', 30);
+                                                    d3.select("#taggs-scaleKey").append("circle")
+                                                    .attr('r', this.radiusScale(10000000))
+                                                    .attr('class', "taggs-scaleKeyCircle")
+                                                    .attr('cx', 30)
+                                                    .attr('cy', 50);
+                                                    d3.select("#taggs-scaleKey").append("circle")
+                                                    .attr('r', this.radiusScale(1000000))
+                                                    .attr('class', "taggs-scaleKeyCircle")
+                                                    .attr('cx', 30)
+                                                    .attr('cy', 55);
+                                                    var departmentOverlay = $j("#taggs-departmentOverlay")
+                                                    for (var i = 0; i < taggs.category_data.length; i++) {
+                                                        var cat = taggs.category_data[i]['label']
+                                                        var catLabel = taggs.category_data[i]['short_label']
+                                                        var catTot = this.bigFormat(taggs.category_data[i]['total'])
+                                                        var catWidth = this.categoryPositionLookup[cat].w
+                                                        var catYOffset = this.categoryPositionLookup[cat].offsetY;
+                                                        var catNode;
+                                                        if (catLabel === "Other") {
+                                                            catNode = $j("<div class='taggs-departmentAnnotation taggs-row" + taggs.category_data[i]['row'] + "'><p class='department'>" + catLabel + "</p></div>")
+                                                        } else {
+                                                            catNode = $j("<div class='taggs-departmentAnnotation taggs-row" + taggs.category_data[i]['row'] + "'><p class='total'>$" + catTot + "</p><p class='department'>" + catLabel + "</p></div>")
+                                                        }
+                                                        catNode.css({
+                                                            'left': this.categoryPositionLookup[cat].x - catWidth / 2,
+                                                            'top': this.categoryPositionLookup[cat].y - catYOffset,
+                                                            'width': catWidth
+                                                        })
+                                                        departmentOverlay.append(catNode)
+                                                    };
+                                                    this.circle = this.svg.selectAll("circle")
+                                                    .data(this.nodes, function(d) {
+                                                        return d.sid;
+                                                    });
+                                                    this.circle.enter().append("svg:circle")
+                                                    .attr('tabindex', "-1")
+                                                    .attr("r", function(d) {
+                                                        return 0;
+                                                    })
+                                                    .style("fill", function(d) {
+                                                        return that.getFillColor(d);
+                                                    })
+                                                    .style("stroke-width", 2)
+                                                    .attr('id', function(d) {
+                                                        return 'taggs-circle' + d.sid
+                                                    })
+                                                    .style("stroke", function(d) {
+                                                        return that.getStrokeColor(d);
+                                                    })
+                                                    .on("mouseover", function(d, i) {
+                                                        var el = d3.select(this)
+                                                        var xpos = Number(el.attr('cx'))
 
-    var ypos = (el.attr('cy') - d.radius - 10)
-    console.log(ypos)
-    el.style("stroke", "#27b4ff").style("stroke-width", 2);
-    d3.select("#taggs-tooltip").style('top', ypos + 120 + "px").style('left', xpos + "px").style('display', 'block')
-    .classed('taggs-plus', (d.changeCategory > 0))
-    .classed('taggs-minus', (d.changeCategory < 0));
-    d3.select("#taggs-tooltip .taggs-name").html(that.nameFormat(d.name))
-    d3.select("#taggs-tooltip .taggs-discretion").text(that.discretionFormat(d.discretion))
-    d3.select("#taggs-tooltip .taggs-department").text(d.group)
-    d3.select("#taggs-tooltip .taggs-value").html("$" + that.bigFormat(d.value))
-    d3.select("#taggs-tooltip .taggs-percentTotal").text("% of HHS Total " + d.typeFund + " " + that.numFormat(d.percentTotal) + "%")
-    d3.select("#taggs-tooltip .taggs-totalNumAwards16").text("Total No. of Awards: " + that.numFormat(d.totalNumAwards16))
-    d3.select("#taggs-tooltip .taggs-percentTotalNum").text("% of Total No. of Awards: " + that.numFormat(d.percentTotalNum) + "%")
-    var pctchngout = that.pctFormat(d.change)
-    if (d.change == "N.A.") {
-        pctchngout = "N.A."
-    };
-    d3.select("#taggs-tooltip .taggs-change").html(pctchngout)
-})
+                                                        var ypos = (el.attr('cy') - d.radius - 10)
+                                                        console.log(ypos)
+                                                        el.style("stroke", "#27b4ff").style("stroke-width", 2);
+                                                        d3.select("#taggs-tooltip").style('top', ypos + 120 + "px").style('left', xpos + "px").style('display', 'block')
+                                                        .classed('taggs-plus', (d.changeCategory > 0))
+                                                        .classed('taggs-minus', (d.changeCategory < 0));
+                                                        d3.select("#taggs-tooltip .taggs-name").html(that.nameFormat(d.name))
+                                                        d3.select("#taggs-tooltip .taggs-discretion").text(that.discretionFormat(d.discretion))
+                                                        d3.select("#taggs-tooltip .taggs-department").text(d.group)
+                                                        d3.select("#taggs-tooltip .taggs-value").html("$" + that.bigFormat(d.value))
+                                                        d3.select("#taggs-tooltip .taggs-percentTotal").text("% of HHS Total " + d.typeFund + " " + that.numFormat(d.percentTotal) + "%")
+                                                        d3.select("#taggs-tooltip .taggs-totalNumAwards16").text("Total No. of Awards: " + that.numFormat(d.totalNumAwards16))
+                                                        d3.select("#taggs-tooltip .taggs-percentTotalNum").text("% of Total No. of Awards: " + that.numFormat(d.percentTotalNum) + "%")
+                                                        var pctchngout = that.pctFormat(d.change)
+                                                        if (d.change == "N.A.") {
+                                                            pctchngout = "N.A."
+                                                        };
+                                                        d3.select("#taggs-tooltip .taggs-change").html(pctchngout)
+                                                    })
 .on("mouseout", function(d, i) {
     d3.select(this)
     .style("stroke-width", 1)
