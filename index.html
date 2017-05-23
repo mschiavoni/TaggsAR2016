@@ -1819,7 +1819,7 @@ display: block;
 				    <li id="taggs-nav-deparment"><a  tabindex="0" href="#totals">Agency Totals</a></li>
                             </ul>
                         </div>
-                        <div tabindex="1"  id="taggs-tooltip">
+                        <div id="taggs-tooltip">
                             <div id="taggs-tooltipContainer">
                                 <div class="taggs-department"></div>
                                 <div class="taggs-rule"></div>
@@ -9988,6 +9988,7 @@ d3.geom.hull = function(a) {
                                                                                                                                 .attr('id', function(d) {
                                                                                                                                     return 'taggs-circle' + d.sid
                                                                                                                                 })
+                                                                                                                                .attr('tabindex', "1")
                                                                                                                                 .style("stroke", function(d) {
                                                                                                                                     return that.getStrokeColor(d);
                                                                                                                                 })
