@@ -9974,6 +9974,7 @@ d3.geom.hull = function(a) {
                                                                                                                                     departmentOverlay.append(catNode)
                                                                                                                                 };
                                                                                                                                 this.circle = this.svg.selectAll("circle")
+                                                                                                                                .attr('tabindex', "1")
                                                                                                                                 .data(this.nodes, function(d) {
                                                                                                                                     return d.sid;
                                                                                                                                 });
@@ -9988,7 +9989,6 @@ d3.geom.hull = function(a) {
                                                                                                                                 .attr('id', function(d) {
                                                                                                                                     return 'taggs-circle' + d.sid
                                                                                                                                 })
-                                                                                                                                .attr('tabindex', "1")
                                                                                                                                 .style("stroke", function(d) {
                                                                                                                                     return that.getStrokeColor(d);
                                                                                                                                 })
