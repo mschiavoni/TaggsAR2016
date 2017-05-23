@@ -9912,7 +9912,7 @@ d3.geom.hull = function(a) {
                                                                                                                                     }
                                                                                                                                 };
                                                                                                                                 this.svg = d3.select("#taggs-chartCanvas").append("svg:svg")
-                                                                                                                                .attr("width", this.width);
+                                                                                                                                .attr("width", this.width).append("<a href=""></a>");
                                                                                                                                 for (var i = 0; i < this.changeTickValues.length; i++) {
                                                                                                                                     d3.select("#taggs-discretionaryOverlay").append("div")
                                                                                                                                     .html("<p>" + this.tickChangeFormat(this.changeTickValues[i]) + "</p>")
