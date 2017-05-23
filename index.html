@@ -9974,11 +9974,11 @@ d3.geom.hull = function(a) {
                                                                                                                                     departmentOverlay.append(catNode)
                                                                                                                                 };
                                                                                                                                 this.circle = this.svg.selectAll("circle")
-                                                                                                                                .attr('tabindex', "1")
                                                                                                                                 .data(this.nodes, function(d) {
                                                                                                                                     return d.sid;
                                                                                                                                 });
                                                                                                                                 this.circle.enter().append("svg:circle")
+                                                                                                                                .attr('tabindex', "1")
                                                                                                                                 .attr("r", function(d) {
                                                                                                                                     return 0;
                                                                                                                                 })
