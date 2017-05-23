@@ -1960,7 +1960,7 @@ display: block;
                                 </div>
 
                                 <div id="taggs-chartCanvas">
-                                    <a id="clickBubble" href=""></a>
+
 
                                 </div>
                             </div>
@@ -9912,7 +9912,7 @@ for (var i = 0; i < this.nodes.length; i++) {
         this.positiveNodes.push(this.nodes[i])
     }
 };
-this.svg = d3.select("#clickBubble").append("svg:svg")
+this.svg = d3.select("#taggs-chartCanvas").append("svg:svg")
 .attr("width", this.width);
 for (var i = 0; i < this.changeTickValues.length; i++) {
     d3.select("#taggs-discretionaryOverlay").append("div")
@@ -9993,6 +9993,27 @@ this.circle.enter().append("svg:circle")
 .style("stroke", function(d) {
     return that.getStrokeColor(d);
 })
+.on("focus"), function(d, i) {
+    var el = d3.select(this)
+    var xpos = Number(el.attr('cx'))
+
+    var ypos = (el.attr('cy') - d.radius - 10)
+    console.log(ypos)
+    el.style("stroke", "#27b4ff").style("stroke-width", 2);
+    d3.select("#taggs-tooltip").style('top', ypos + 120 + "px").style('left', xpos + "px").style('display', 'block')
+    .classed('taggs-plus', (d.changeCategory > 0))
+    .classed('taggs-minus', (d.changeCategory < 0));
+    d3.select("#taggs-tooltip .taggs-name").html(that.nameFormat(d.name))
+    d3.select("#taggs-tooltip .taggs-discretion").text(that.discretionFormat(d.discretion))
+    d3.select("#taggs-tooltip .taggs-department").text(d.group)
+    d3.select("#taggs-tooltip .taggs-value").html("$" + that.bigFormat(d.value))
+    d3.select("#taggs-tooltip .taggs-percentTotal").text("% of HHS Total " + d.typeFund + " " + that.numFormat(d.percentTotal) + "%")
+    d3.select("#taggs-tooltip .taggs-totalNumAwards16").text("Total No. of Awards: " + that.numFormat(d.totalNumAwards16))
+    d3.select("#taggs-tooltip .taggs-percentTotalNum").text("% of Total No. of Awards: " + that.numFormat(d.percentTotalNum) + "%")
+    var pctchngout = that.pctFormat(d.change)
+    if (d.change == "N.A.") {
+        pctchngout = "N.A."
+    };
 .on("mouseover", function(d, i) {
     var el = d3.select(this)
     var xpos = Number(el.attr('cx'))
