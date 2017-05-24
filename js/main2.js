@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 
-$('.blue.agenciesAgency').keydown(function(e){
+$('.agenciesAgency').keydown(function(e){
    
    if(e.keyCode == 32){
       e.preventDefault();
