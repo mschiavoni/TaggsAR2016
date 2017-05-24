@@ -718,24 +718,7 @@ p.Footnote {
     line-height: 30px;
     color: #232323 !important;
 }
-div:focus {outline: blue solid 2px;}	
-a:focus {outline: blue solid 2px;}	
-btn:focus {outline: blue solid 2px;}
-radio:focus {outline: blue solid 2px;}
-btn-group:focus {outline: blue solid 2px;}	
-a:before:focus {outline: blue solid 2px;}	
-a:after:focus {outline: blue solid 2px;}	
-	    
-.heading .heading-text-footer {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #ffffff;
-	
-}	
-.primary-menu-menu>li>a:focus + ul	
-	    {	    
-display: block;
-	    }
+
 </style>
 	<script>
 	document.onreadystatechange = function () {
@@ -760,7 +743,7 @@ display: block;
 <a href="#maincontent">Skip to main content</a>
 
     <header class="header contacts-shadow" id="site-header">
-        <div class="container-fluid-navbar" role="navigation" aria-label="Main menu">
+        <div class="container-fluid-navbar">
 
             <div class="header-content-wrapper">
                 <div class="logo">
@@ -782,77 +765,81 @@ display: block;
                             </svg>
                         </span>
                     </a>
-                    <ul class="primary-menu-menu" role="menubar">
+                    <ul class="primary-menu-menu">
                         <li class="menu-item-has-children">
-                            <a href="index.html" role="menuitem" tabindex="0" class="blue">Home</a>
+                            <a href="index.html" class="blue">Home</a>
                         </li>
                         <li class="">
-                            <a href="awards.html" role="menuitem" tabindex="0">Awards</a>
+                            <a href="awards.html" class="blue">Awards</a>
                         </li>
-                        <li class="has-megamenu menu-item-has-children" tabindex="0" aria-haspopup="true">
-                            <a href="agencies.html" role="menuitem" class="blue agenciesAgency" tabindex="0">Agencies</a>
+                        <li class="has-megamenu menu-item-has-children">
+                            <a href="agencies.html" class="agenciesAgency">Agencies</a>
                             <div class="megamenu" style="background-image: url('img/menu-bg.png');">
                                 <div class="megamenu-row">
                                     <div class="col4">
-                                        <ul role="menu">
-                                            <li>
-                                                <a href="agencies.html#ACF" role="menuitem" tabindex="-1">ACF<i class="taggsicon-right-arrow"></i></a>
+                                        <ul>
+                                            <li class="megamenu-item-info">
+                                                <p class="megamenu-item-info-title">HHS Agencies</p>
+                                                <p class="megamenu-item-info-text"> </p>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#ACL" role="menuitem" tabindex="-1">ACL<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#ACF">ACF<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#AHRQ" role="menuitem" tabindex="-1">AHRQ<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#ACL">ACL<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#ASPE" role="menuitem" tabindex="-1">ASPE<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#AHRQ">AHRQ<i class="taggsicon-right-arrow"></i></a>
                                             </li>
-
                                             <li>
-                                                <a href="agencies.html#ASPR" role="menuitem" tabindex="-1">ASPR<i class="taggsicon-right-arrow"></i></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="agencies.html#CDC" role="menuitem" tabindex="-1">CDC<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#ASPE">ASPE<i class="taggsicon-right-arrow"></i></a>
                                             </li>
 
                                             <li>
-                                                <a href="agencies.html#CMS" role="menuitem" tabindex="-1">CMS<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#ASPR">ASPR<i class="taggsicon-right-arrow"></i></a>
                                             </li>
 
                                             <li>
-                                                <a href="agencies.html#FDA" role="menuitem" tabindex="-1">FDA<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#CDC">CDC<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="agencies.html#CMS">CMS<i class="taggsicon-right-arrow"></i></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="agencies.html#FDA">FDA<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="col4">
-                                        <ul role="menu" aria-hidden="true">
+                                        <ul>
                                             <li class="megamenu-item-info">
                                                 <p class="megamenu-item-info-title"> </p>
                                                 <p class="megamenu-item-info-text"> </p>
                                             </li>
 
                                             <li>
-                                                <a href="agencies.html#HRSA" role="menuitem" tabindex="-1">HRSA<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#HRSA">HRSA<i class="taggsicon-right-arrow"></i></a>
                                             </li>
 
                                             <li>
-                                                <a href="agencies.html#IHS" role="menuitem" tabindex="-1">IHS<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#IHS">IHS<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#NIH" role="menuitem" tabindex="-1">NIH<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#NIH">NIH<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#OASH" role="menuitem" tabindex="-1">OASH<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#OASH">OASH<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#OGA" role="menuitem" tabindex="-1">OGA<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#OGA">OGA<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#ONC" role="menuitem" tabindex="-1">ONC<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#ONC">ONC<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
-                                                <a href="agencies.html#SAMHSA" role="menuitem" tabindex="-1">SAMHSA<i class="taggsicon-right-arrow"></i></a>
+                                                <a href="agencies.html#SAMHSA">SAMHSA<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -871,7 +858,7 @@ display: block;
                             </div>
                         </li>
                         <li class="">
-                            <a href="#" role="menuitem" tabindex="0">Download</a>
+                            <a href="#">Download</a>
                         </li>
                     </ul>
                 </nav>
