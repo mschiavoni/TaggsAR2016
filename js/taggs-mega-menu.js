@@ -1,5 +1,7 @@
 (function($){
 	jQuery.fn.taggsmenu = function(options){
+
+
 		var settings;
 		$.extend( settings = {
 			showSpeed: 400,
@@ -63,6 +65,7 @@
 			$(item).children(".dropdown, .megamenu").find(".dropdown, .megamenu").stop(true, true).delay(settings.hideDelay).fadeOut(settings.hideSpeed);
 		}		 
 		function landscapeMode(){
+		
 			$(menu).find(".dropdown, .megamenu").hide(0);
 			if(navigator.userAgent.match(/Mobi/i) || window.navigator.msMaxTouchPoints > 0 || settings.trigger == "click"){
 				$(".primary-menu-menu > li > a, .primary-menu ul.dropdown li a").bind("click touchstart", function(e){
@@ -85,13 +88,6 @@
 				});
 			}
 			else{
-				$('.agenciesAgency').focus(function(){
-					console.log("HHIHIII")
-					showDropdown();
-					console.log('after')
-					
-				})
-
 				$(menu_li).bind("mouseenter", function(){
 					showDropdown(this);
 				}).bind("mouseleave", function(){
@@ -99,10 +95,6 @@
 				});
 			}
 		}		
-
-
-
-
 		function portraitMode(){
 			$(menu).find(".dropdown, .megamenu").hide(0);
 			$(menu).find(".indicator").each(function(){

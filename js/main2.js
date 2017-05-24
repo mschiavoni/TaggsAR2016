@@ -2,6 +2,26 @@
 
 $(document).ready(function() {
 
+$('.blue.agenciesAgency').keydown(function(e){
+   
+   if(e.keyCode == 32){
+      e.preventDefault();
+       $(".megamenu").css("display", "block")
+   } else {
+
+   }
+});
+
+  // var agencyLink = $(".agenciesAgency")
+  //       console.log(agencyLink)
+
+  //       if (agencyLink.hasFocus()) {
+  //         console.log('true')
+
+  //       }
+
+
+
 
   var typesFundTitleND = $('#typesFundTitleND')
      var typesFundTitleD = $('#typesFundTitleD')
