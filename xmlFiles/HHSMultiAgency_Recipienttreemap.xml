@@ -50,28 +50,28 @@
                     numberScaleUnit=',K,M,B'
                     numberScaleValue='1,1000,1000,1000'
                     forcenmberscale='1'>
-  <set label='HHS' fillcolor='#F9FBFF' value='3969041390' svalue=''>
+  <set label='HHS' fillcolor='#1976d2' value='3969041390' svalue=''>
     <set label='CURATORS OF THE UNIVERSITY OF MISSOURI' fillcolor='#F44336' value='48477114' svalue='-1.45'>
       <set label='SAMHSA' value='1001044' svalue='-57.3' fillcolor='#d64646'></set>
       <set label='OASH' value='500000' svalue=''></set>
       <set label='NIH' value='39726923' svalue='7.9'></set>
-      <set label='HRSA' value='3189463' svalue='42.3' fillcolor='#0D47A1'></set>
-      <set label='FDA' value='26499' svalue='27.4' fillcolor='#0D47A1'></set>
+      <set label='HRSA' value='3189463' svalue='42.3' fillcolor='#1976d2'></set>
+      <set label='FDA' value='26499' svalue='27.4' fillcolor='#1976d2'></set>
       <set label='CMS' value='1074154' svalue='-71.8' fillcolor='#d64646'></set>
       <set label='CDC' value='275000' svalue=''></set>
       <set label='AHRQ' value='1350300' svalue='2.2'></set>
       <set label='ACL' value='999926' svalue='-35.9' fillcolor='#d64646'></set>
       <set label='ACF' value='99632' svalue='-66.7' fillcolor='#d64646'></set>
     </set>
-    <set label='JOHNS HOPKINS UNIVERSITY' fillcolor='#0D47A1' value='725511404' svalue='18.5'>
-      <set label='SAMHSA' value='598934' svalue='43' fillcolor='#0D47A1'></set>
+    <set label='JOHNS HOPKINS UNIVERSITY' fillcolor='#1976d2' value='725511404' svalue='18.5'>
+      <set label='SAMHSA' value='598934' svalue='43' fillcolor='#1976d2'></set>
       <set label='ONC' value='0' svalue=''></set>
       <set label='OASH' value='880072' svalue='-79.3' fillcolor='#d64646'></set>
       <set label='NIH' value='616254670' svalue='13.4'></set>
       <set label='HRSA' value='7586557' svalue='-6.2'></set>
       <set label='FDA' value='1708546' svalue='.3'></set>
       <set label='CMS' value='1866790' svalue='-39.7' fillcolor='#d64646'></set>
-      <set label='CDC' value='85749787' svalue='93.1' fillcolor='#0D47A1'></set>
+      <set label='CDC' value='85749787' svalue='93.1' fillcolor='#1976d2'></set>
       <set label='ASPR' value='4589000' svalue='218.7' fillcolor='#0D47A1'></set>
       <set label='AHRQ' value='6079048' svalue='19.8'></set>
       <set label='ACL' value='198000' svalue='-50' fillcolor='#d64646'></set>
