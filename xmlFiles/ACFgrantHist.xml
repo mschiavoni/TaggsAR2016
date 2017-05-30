@@ -9,11 +9,11 @@
 
 <dataset renderAs='Column' parentYAxis='S' seriesName='Number of Awards' color="#1fb6ff">
 
-<set value='7986' color='#1fb6ff' alpha='50' />
-<set value='7442' color='#1fb6ff' alpha='50' />
-<set value='7304' color='#1fb6ff' alpha='50' />
-<set value='7557' color='#1fb6ff' alpha='50' />
-<set value='7164' color='#1fb6ff' /></dataset>
+<set value='7977' color='#1fb6ff' alpha='50' />
+<set value='7436' color='#1fb6ff' alpha='50' />
+<set value='7297' color='#1fb6ff' alpha='50' />
+<set value='7544' color='#1fb6ff' alpha='50' />
+<set value='7154' color='#1fb6ff' /></dataset>
 <dataset renderAs='Column' parentYAxis='P' color="#13ce67" seriesName='Total Award Amount'>
 
 <set value='47908116593' color='#13ce67' alpha='50' />

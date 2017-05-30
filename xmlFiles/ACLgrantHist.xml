@@ -10,10 +10,10 @@
   <dataset renderAs='Column' parentYAxis='S' seriesName='Number of Awards' color="#1fb6ff">
 
   <set value='1421' color='#1fb6ff' alpha='50' />
-  <set value='1744' color='#1fb6ff' alpha='50' />
-  <set value='2114' color='#1fb6ff' alpha='50' />
-  <set value='3093' color='#1fb6ff' alpha='50' />
-  <set value='2652' color='#1fb6ff' />
+  <set value='1741' color='#1fb6ff' alpha='50' />
+  <set value='2108' color='#1fb6ff' alpha='50' />
+  <set value='3075' color='#1fb6ff' alpha='50' />
+  <set value='2637' color='#1fb6ff' />
 
 </dataset><dataset renderAs='Column' parentYAxis='P' color="#13ce67" seriesName='Total Award Amount'>
   <set value='1461721177' color='#13ce67' alpha='50' />

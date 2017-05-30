@@ -6,11 +6,11 @@
   <category label='2016' />
   <vLine /></categories><dataset renderAs='Column' parentYAxis='S' seriesName='Number of Awards' color="#1fb6ff">
 
-  <set value='410' color='#1fb6ff' alpha='50' />
-  <set value='332' color='#1fb6ff' alpha='50' />
-  <set value='470' color='#1fb6ff' alpha='50' />
-  <set value='545' color='#1fb6ff' alpha='50' />
-  <set value='583' color='#1fb6ff' /></dataset>
+  <set value='407' color='#1fb6ff' alpha='50' />
+  <set value='329' color='#1fb6ff' alpha='50' />
+  <set value='467' color='#1fb6ff' alpha='50' />
+  <set value='542' color='#1fb6ff' alpha='50' />
+  <set value='577' color='#1fb6ff' /></dataset>
   <dataset renderAs='Column' parentYAxis='P' color="#13ce67" seriesName='Total Award Amount'>
     <set value='114070061' color='#13ce67' alpha='50' />
     <set value='87394821' color='#13ce67' alpha='50' />

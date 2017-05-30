@@ -7,11 +7,11 @@
 
   <vLine /></categories><dataset renderAs='Column' parentYAxis='S' seriesName='Number of Awards' color="#1fb6ff">
 
-  <set value='3896' color='#1fb6ff' alpha='50' />
-  <set value='3708' color='#1fb6ff' alpha='50' />
-  <set value='3565' color='#1fb6ff' alpha='50' />
-  <set value='3559' color='#1fb6ff' alpha='50' />
-  <set value='4141' color='#1fb6ff' /></dataset><dataset renderAs='Column' parentYAxis='P' color="#13ce67" seriesName='Total Award Amount'>
+  <set value='3870' color='#1fb6ff' alpha='50' />
+  <set value='3676' color='#1fb6ff' alpha='50' />
+  <set value='3540' color='#1fb6ff' alpha='50' />
+  <set value='3544' color='#1fb6ff' alpha='50' />
+  <set value='4100' color='#1fb6ff' /></dataset><dataset renderAs='Column' parentYAxis='P' color="#13ce67" seriesName='Total Award Amount'>
 
   <set value='4993308851' color='#13ce67' alpha='50' />
   <set value='4936586311' color='#13ce67' alpha='50' />
