@@ -3,97 +3,935 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css"    href="/css/tableStyles.css">
+    <link rel="stylesheet" type="text/css" href="/css/tableStyles.css">
 
 </head>
 <style type="text/css">
+    .accesstable {
+        border-collapse: collapse;
+        text-transform: uppercase;
+    }
     
-
-.accesstable {
-    border-collapse: collapse;
-    text-transform: uppercase;
-}
-
-tr {
-    border: 1px solid #000;
-    border-collapse: collapse;
-}
-
- th {
-    border: 1px solid #000;
-    border-collapse: collapse;
-    text-align: center;
-}
-tr {
-    border: 1px solid #000;
-    border-collapse: collapse;
-}
-
-
-th {
-    border: 1px solid #000;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-td {
-    text-align: center;
-    border: 1px solid #000;
-    border-collapse: collapse;
-    padding: 0;
-    margin: 0;
-}
-th {
-    border: 1px solid #000;
-    border-collapse: collapse;
-    text-align: center;
-}
- td {
-    text-align: center;
-    border: 1px solid #000;
-    border-collapse: collapse;
-    padding: 0;
-    margin: 0;
-}
-body {
-    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    color: black;
-    text-align: left;
-    line-height: 1.5;
-}
-body {
-    background-color: #98b3dd;
-    width: 1028px;
-    background-color: #FFF;
-    margin: 0;
-    min-height: 25em;
-    height: 100%;
-    z-index: 0;
-    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    color: black;
-    text-align: left;
-    line-height: 1.5;
-}
+    tr {
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
     
+    th {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    tr {
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
+    
+    th {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    td {
+        text-align: center;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        padding: 0;
+        margin: 0;
+    }
+    
+    th {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    td {
+        text-align: center;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        color: black;
+        text-align: left;
+        line-height: 1.5;
+    }
+    
+    body {
+        background-color: #98b3dd;
+        width: 1028px;
+        background-color: #FFF;
+        margin: 0;
+        min-height: 25em;
+        height: 100%;
+        z-index: 0;
+        font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        color: black;
+        text-align: left;
+        line-height: 1.5;
+    }
 </style>
+
 <body>
-<h1>HHS Multi Agency Recipients</h1>
-<p>This table shows award data about recipients that received grants from 10 or more agencies in FY 2016.  It is provided as a text alternative to the interactive chart on the Awards page of this website.</p>
-<table>
-    <caption>Recipients receiving awards from 10 or more agencies
-    <details>
-        <summary>The table shows recipient award dollars by agency and the percent change from FY 2015.</summary>
-    </details>
-    </caption>
-    <tr>
-        <th scope='col' style='width:12%;'>FY 2015 Award Dollars</th><th scope='col' style='width:8%;'>FY 2016 Award Dollars</th><th scope='col' style='width:15%;'>% Change 2016 Dollars</th>
-    </tr>
-    <tbody>
+    <h1>HHS Multi Agency Recipients</h1>
+    <p>This table shows award data about recipients that received grants from 10 or more agencies in FY 2016. It is provided as a text alternative to the interactive chart on the Awards page of this website.</p>
+    <table>
+        <caption>Recipients receiving awards from 10 or more agencies
+            <details>
+                <summary>The table shows recipient award dollars by agency and the percent change from FY 2015.</summary>
+            </details>
+        </caption>
         <tr>
-        <th scope='row' class='treemaprow'>NA</th><td>CURATORS OF THE UNIVERSITY OF MISSOURI - Subtotal</td><td   >$49,192,325</td><td   >$48,242,941</td><td>-1.9 %</td></tr><tr><th scope='row' class='treemaprow'>NA</th><td>JOHNS HOPKINS UNIVERSITY - Subtotal</td><td   >$612,225,083</td><td   >$725,511,404</td><td>18.5 %</td></tr><tr><th scope='row' class='treemaprow'>NA</th><td>UNIVERSITY OF ARIZONA - Subtotal</td><td   >$87,144,359</td><td   >$95,748,378</td><td>9.9 %</td></tr><tr><th scope='row' class='treemaprow'>NA</th><td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS - Subtotal</td><td   >$396,248,523</td><td   >$403,039,987</td><td>1.7   %</td></tr><tr><th scope='row' class='treemaprow'>NA</th><td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO - Subtotal</td><td   >$623,807,045</td><td   >$660,761,822</td><td>5.9 %</td></tr><tr><th scope='row' class='treemaprow'>NA</th><td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION - Subtotal</td><td   >$111,731,746</td><td   >$120,218,641</td><td>7.6 %</td></tr><tr><th scope='row' class='treemaprow'>NA</th><td>UNIVERSITY OF MICHIGAN - Subtotal</td><td   >$481,307,819</td><td   >$502,771,970</td><td>4.5 %</td></tr><tr><th scope='row' class='treemaprow'>NA</th><td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL - Subtotal</td><td   >$407,224,362</td><td   >$437,554,577</td><td>7.4 %</td></tr><tr><th scope='row' class='treemaprow'>NA</th><td>UNIVERSITY OF UTAH - Subtotal</td><td   >$143,921,134</td><td   >$158,054,411</td><td>9.8 %</td></tr><tr><th scope='row' class='treemaprow'>NA</th><td>UNIVERSITY OF WASHINGTON - Subtotal</td><td   >$510,290,231</td><td   >$517,008,496</td><td>1.3 %</td></tr><tr><th scope='row' class='treemaprow'>NA</th><td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS - Subtotal</td><td   >$287,944,527</td><td   >$300,128,763</td><td>4.2 %</td></tr><tr><th scope='row' class='treemaprow'>ACF</th><td>CURATORS OF THE UNIVERSITY OF MISSOURI</td><td   >$299,409</td><td   >$99,632</td><td>-66.7 %</td></tr><tr><th scope='row' class='treemaprow'>ACF</th><td>UNIVERSITY OF ARIZONA</td><td   >$1,200,000</td><td   >$731,618</td><td>-39.0 %</td></tr><tr><th scope='row' class='treemaprow'>ACF</th><td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td><td   >$1,433,173</td><td   >$1,432,910</td><td>0.0 %</td></tr><tr><th scope='row' class='treemaprow'>ACF</th><td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td><td   >$301,340</td><td   >$1,124,390</td><td>273.1 %</td></tr><tr><th scope='row' class='treemaprow'>ACF</th><td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td><td   >$0</td><td   >$25,000</td><td>100.0 %</td></tr><tr><th scope='row' class='treemaprow'>ACF</th><td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td><td   >$247,258</td><td   >$249,063</td><td>0.7 %</td></tr><tr><th scope='row' class='treemaprow'>ACF</th><td>UNIVERSITY OF WASHINGTON</td><td   >$838,678</td><td   >$839,974</td><td>0.2 %</td></tr><tr><th scope='row' class='treemaprow'>ACL</th><td>CURATORS OF THE UNIVERSITY OF MISSOURI</td><td   >$1,560,347</td><td   >$999,926</td><td>-35.9 %</td></tr><tr><th scope='row' class='treemaprow'>ACL</th><td>JOHNS HOPKINS UNIVERSITY</td><td   >$396,000</td><td   >$198,000</td><td>-50.0 %</td></tr><tr><th scope='row' class='treemaprow'>ACL</th><td>UNIVERSITY OF ARIZONA</td><td   >$983,592</td><td   >$40,000</td><td>-95.9 %</td></tr><tr><th scope='row' class='treemaprow'>ACL</th><td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td><td   >$963,644</td><td   >$586,999</td><td>-39.1 %</td></tr><tr><th scope='row' class='treemaprow'>ACL</th><td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td><td   >$1,778,248</td><td   >$2,024,998</td><td>13.9 %</td></tr><tr><th scope='row' class='treemaprow'>ACL</th><td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td><td   >$586,186</td><td   >$796,526</td><td>35.9 %</td></tr><tr><th scope='row' class='treemaprow'>ACL</th><td>UNIVERSITY OF MICHIGAN</td><td   >$3,881,234</td><td   >$1,469,946</td><td>-62.1 %</td></tr><tr><th scope='row' class='treemaprow'>ACL</th><td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td><td   >$545,919</td><td   >$547,000</td><td>0.2 %</td></tr><tr><th scope='row' class='treemaprow'>ACL</th><td>UNIVERSITY OF UTAH</td><td   >$0</td><td   >($21,921)</td><td>0.0 %</td></tr><tr><th scope='row' class='treemaprow'>ACL</th><td>UNIVERSITY OF WASHINGTON</td><td   >$8,777,763</td><td   >$4,544,675</td><td>-48.2 %</td></tr><tr><th scope='row' class='treemaprow'>ACL</th><td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td><td   >$3,731,145</td><td   >$2,669,092</td><td>-28.5 %</td></tr><tr><th scope='row' class='treemaprow'>AHRQ</th><td>CURATORS OF THE UNIVERSITY OF MISSOURI</td><td   >$1,320,735</td><td   >$1,350,300</td><td>2.2 %</td></tr><tr><th scope='row' class='treemaprow'>AHRQ</th><td>JOHNS HOPKINS UNIVERSITY</td><td   >$5,073,607</td><td   >$6,079,048</td><td>19.8 %</td></tr><tr><th scope='row' class='treemaprow'>AHRQ</th><td>UNIVERSITY OF ARIZONA</td><td   >$928,307</td><td   >($5,656)</td><td>-100.0 %</td></tr><tr><th scope='row' class='treemaprow'>AHRQ</th><td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td><td   >$908,761</td><td   >$1,491,511</td><td>64.1 %</td></tr><tr><th scope='row' class='treemaprow'>AHRQ</th><td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td><td   >$3,064,837</td><td   >$4,028,510</td><td>31.4 %</td></tr><tr><th scope='row' class='treemaprow'>AHRQ</th><td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td><td   >$0</td><td   >$47,864</td><td>100.0 %</td></tr><tr><th scope='row' class='treemaprow'>AHRQ</th><td>UNIVERSITY OF MICHIGAN</td><td   >$9,289,200</td><td   >$5,625,038</td><td>-39.4 %</td></tr><tr><th scope='row' class='treemaprow'>AHRQ</th><td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td><td   >$6,674,847</td><td   >$10,139,592</td><td>51.9 %</td></tr><tr><th scope='row' class='treemaprow'>AHRQ</th><td>UNIVERSITY OF UTAH</td><td   >$564,119</td><td   >$541,951</td><td>-3.9 %</td></tr><tr><th scope='row' class='treemaprow'>AHRQ</th><td>UNIVERSITY OF WASHINGTON</td><td   >$4,520,046</td><td   >$3,797,713</td><td>-16.0 %</td></tr><tr><th scope='row' class='treemaprow'>AHRQ</th><td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td><td   >$5,054,430</td><td   >$3,393,362</td><td>-32.9 %</td></tr><tr><th scope='row' class='treemaprow'>ASPE</th><td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td><td   >$1,130,506</td><td   >$1,900,000</td><td>68.1 %</td></tr><tr><th scope='row' class='treemaprow'>ASPR</th><td>JOHNS HOPKINS UNIVERSITY</td><td   >$1,440,000</td><td   >$4,589,000</td><td>218.7 %</td></tr><tr><th scope='row' class='treemaprow'>CDC</th><td>CURATORS OF THE UNIVERSITY OF MISSOURI</td><td   >$275,000</td><td   >$275,000</td><td>0.0 %</td></tr><tr><th scope='row' class='treemaprow'>CDC</th><td>JOHNS HOPKINS UNIVERSITY</td><td   >$44,402,974</td><td   >$85,749,787</td><td>93.1 %</td></tr><tr><th scope='row' class='treemaprow'>CDC</th><td>UNIVERSITY OF ARIZONA</td><td   >$1,913,791</td><td   >$1,700,471</td><td>-11.1 %</td></tr><tr><th scope='row' class='treemaprow'>CDC</th><td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td><td   >$3,747,205</td><td   >$2,691,007</td><td>-28.2 %</td></tr><tr><th scope='row' class='treemaprow'>CDC</th><td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td><td   >$28,949,541</td><td   >$46,519,883</td><td>60.7 %</td></tr><tr><th scope='row' class='treemaprow'>CDC</th><td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td><td   >$8,799,843</td><td   >$10,090,350</td><td>14.7 %</td></tr><tr><th scope='row' class='treemaprow'>CDC</th><td>UNIVERSITY OF MICHIGAN</td><td   >$9,207,507</td><td   >$9,446,756</td><td>2.6 %</td></tr><tr><th scope='row' class='treemaprow'>CDC</th><td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td><td   >$8,897,386</td><td   >$9,525,518</td><td>7.1 %</td></tr><tr><th scope='row' class='treemaprow'>CDC</th><td>UNIVERSITY OF UTAH</td><td   >$5,370,772</td><td   >$3,222,450</td><td>-40.0 %</td></tr><tr><th scope='row' class='treemaprow'>CDC</th><td>UNIVERSITY OF WASHINGTON</td><td   >$31,835,181</td><td   >$61,795,782</td><td>94.1 %</td></tr><tr><th scope='row' class='treemaprow'>CDC</th><td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td><td   >$2,111,017</td><td   >$2,696,682</td><td>27.7 %</td></tr><tr><th scope='row' class='treemaprow'>CMS</th><td>CURATORS OF THE UNIVERSITY OF MISSOURI</td><td   >$3,812,439</td><td   >$1,074,154</td><td>-71.8 %</td></tr><tr><th scope='row' class='treemaprow'>CMS</th><td>JOHNS HOPKINS UNIVERSITY</td><td   >$3,097,730</td><td   >$1,866,790</td><td>-39.7 %</td></tr><tr><th scope='row' class='treemaprow'>CMS</th><td>UNIVERSITY OF ARIZONA</td><td   >$677,941</td><td   >$537,916</td><td>-20.7 %</td></tr><tr><th scope='row' class='treemaprow'>CMS</th><td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td><td   >$0</td><td   >($91,677)</td><td>0.0 %</td></tr><tr><th scope='row' class='treemaprow'>CMS</th><td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td><td   >$3,535,059</td><td   >$3,734,742</td><td>5.6 %</td></tr><tr><th scope='row' class='treemaprow'>CMS</th><td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td><td   >$700,307</td><td   >$530,784</td><td>-24.2 %</td></tr><tr><th scope='row' class='treemaprow'>CMS</th><td>UNIVERSITY OF MICHIGAN</td><td   >$3,678,619</td><td   >$2,711,231</td><td>-26.3 %</td></tr><tr><th scope='row' class='treemaprow'>CMS</th><td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td><td   >$1,684,598</td><td   >$1,104,189</td><td>-34.5 %</td></tr><tr><th scope='row' class='treemaprow'>CMS</th><td>UNIVERSITY OF WASHINGTON</td><td   >$5,479,501</td><td   >$9,919,102</td><td>81.0 %</td></tr><tr><th scope='row' class='treemaprow'>CMS</th><td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td><td   >$997,863</td><td   >$998,960</td><td>0.1 %</td></tr><tr><th scope='row' class='treemaprow'>FDA</th><td>CURATORS OF THE UNIVERSITY OF MISSOURI</td><td   >$20,800</td><td   >$26,499</td><td>27.4 %</td></tr><tr><th scope='row' class='treemaprow'>FDA</th><td>JOHNS HOPKINS UNIVERSITY</td><td   >$1,703,365</td><td   >$1,708,546</td><td>0.3 %</td></tr><tr><th scope='row' class='treemaprow'>FDA</th><td>UNIVERSITY OF ARIZONA</td><td   >$250,000</td><td   >$350,000</td><td>40.0 %</td></tr><tr><th scope='row' class='treemaprow'>FDA</th><td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td><td   >$1,413,028</td><td   >$0</td><td>-100.0 %</td></tr><tr><th scope='row' class='treemaprow'>FDA</th><td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td><td   >$3,368,214</td><td   >$3,940,416</td><td>17.0 %</td></tr><tr><th scope='row' class='treemaprow'>FDA</th><td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td><td   >$1,119,433</td><td   >$4,425,424</td><td>295.3 %</td></tr><tr><th scope='row' class='treemaprow'>FDA</th><td>UNIVERSITY OF MICHIGAN</td><td   >$861,876</td><td   >$1,138,482</td><td>32.1 %</td></tr><tr><th scope='row' class='treemaprow'>FDA</th><td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td><td   >$490,943</td><td   >$888,921</td><td>81.1 %</td></tr><tr><th scope='row' class='treemaprow'>FDA</th><td>UNIVERSITY OF UTAH</td><td   >$450,000</td><td   >$450,000</td><td>0.0 %</td></tr><tr><th scope='row' class='treemaprow'>FDA</th><td>UNIVERSITY OF WASHINGTON</td><td   >$49,880</td><td   >$424,680</td><td>751.4 %</td></tr><tr><th scope='row' class='treemaprow'>FDA</th><td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td><td   >$261,385</td><td   >$142,068</td><td>-45.6 %</td></tr><tr><th scope='row' class='treemaprow'>HRSA</th><td>CURATORS OF THE UNIVERSITY OF MISSOURI</td><td   >$2,241,170</td><td   >$3,189,463</td><td>42.3 %</td></tr><tr><th scope='row' class='treemaprow'>HRSA</th><td>JOHNS HOPKINS UNIVERSITY</td><td   >$8,091,945</td><td   >$7,586,557</td><td>-6.2 %</td></tr><tr><th scope='row' class='treemaprow'>HRSA</th><td>UNIVERSITY OF ARIZONA</td><td   >$5,817,789</td><td   >$7,906,929</td><td>35.9 %</td></tr><tr><th scope='row' class='treemaprow'>HRSA</th><td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td><td   >$8,700,132</td><td   >$8,690,941</td><td>-0.1 %</td></tr><tr><th scope='row' class='treemaprow'>HRSA</th><td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td><td   >$20,501,772</td><td   >$19,688,906</td><td>-4.0 %</td></tr><tr><th scope='row' class='treemaprow'>HRSA</th><td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td><td   >$7,048,556</td><td   >$7,243,226</td><td>2.8 %</td></tr><tr><th scope='row' class='treemaprow'>HRSA</th><td>UNIVERSITY OF MICHIGAN</td><td   >$6,452,804</td><td   >$1,918,858</td><td>-70.3 %</td></tr><tr><th scope='row' class='treemaprow'>HRSA</th><td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td><td   >$11,595,192</td><td   >$10,539,700</td><td>-9.1 %</td></tr><tr><th scope='row' class='treemaprow'>HRSA</th><td>UNIVERSITY OF UTAH</td><td   >$8,061,373</td><td   >$7,477,751</td><td>-7.2 %</td></tr><tr><th scope='row' class='treemaprow'>HRSA</th><td>UNIVERSITY OF WASHINGTON</td><td   >$34,737,177</td><td   >$34,793,371</td><td>0.2 %</td></tr><tr><th scope='row' class='treemaprow'>HRSA</th><td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td><td   >$5,026,261</td><td   >$5,300,734</td><td>5.5 %</td></tr><tr><th scope='row' class='treemaprow'>IHS</th><td>UNIVERSITY OF ARIZONA</td><td   >$198,682</td><td   >$0</td><td>-100.0 %</td></tr><tr><th scope='row' class='treemaprow'>IHS</th><td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td><td   >$198,682</td><td   >$198,682</td><td>0.0 %</td></tr><tr><th scope='row' class='treemaprow'>NIH</th><td>CURATORS OF THE UNIVERSITY OF MISSOURI</td><td   >$36,817,445</td><td   >$39,726,923</td><td>7.9 %</td></tr><tr><th scope='row' class='treemaprow'>NIH</th><td>JOHNS HOPKINS UNIVERSITY</td><td   >$543,352,864</td><td   >$616,254,670</td><td>13.4 %</td></tr><tr><th scope='row' class='treemaprow'>NIH</th><td>UNIVERSITY OF ARIZONA</td><td   >$74,774,684</td><td   >$84,087,527</td><td>12.5 %</td></tr><tr><th scope='row' class='treemaprow'>NIH</th><td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td><td   >$370,579,074</td><td   >$378,608,844</td><td>2.2 %</td></tr><tr><th scope='row' class='treemaprow'>NIH</th><td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td><td   >$559,404,587</td><td   >$576,375,917</td><td>3.0 %</td></tr><tr><th scope='row' class='treemaprow'>NIH</th><td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td><td   >$92,546,032</td><td   >$96,082,286</td><td>3.8 %</td></tr><tr><th scope='row' class='treemaprow'>NIH</th><td>UNIVERSITY OF MICHIGAN</td><td   >$447,936,579</td><td   >$479,792,542</td><td>7.1 %</td></tr><tr><th scope='row' class='treemaprow'>NIH</th><td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td><td   >$375,368,469</td><td   >$404,436,399</td><td>7.7 %</td></tr><tr><th scope='row' class='treemaprow'>NIH</th><td>UNIVERSITY OF UTAH</td><td   >$127,848,341</td><td   >$144,053,026</td><td>12.7 %</td></tr><tr><th scope='row' class='treemaprow'>NIH</th><td>UNIVERSITY OF WASHINGTON</td><td   >$423,577,655</td><td   >$400,416,050</td><td>-5.5 %</td></tr><tr><th scope='row' class='treemaprow'>NIH</th><td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td><td   >$268,353,285</td><td   >$281,749,238</td><td>5.0 %</td></tr><tr><th scope='row' class='treemaprow'>OASH</th><td>CURATORS OF THE UNIVERSITY OF MISSOURI</td><td   >$500,000</td><td   >$500,000</td><td>0.0 %</td></tr><tr><th scope='row' class='treemaprow'>OASH</th><td>JOHNS HOPKINS UNIVERSITY</td><td   >$4,261,539</td><td   >$880,072</td><td>-79.3 %</td></tr><tr><th scope='row' class='treemaprow'>OASH</th><td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td><td   >$499,511</td><td   >$499,709</td><td>0.0 %</td></tr><tr><th scope='row' class='treemaprow'>OASH</th><td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td><td   >$1,519,572</td><td   >$1,912,185</td><td>25.8 %</td></tr><tr><th scope='row' class='treemaprow'>OASH</th><td>UNIVERSITY OF MICHIGAN</td><td   >$0</td><td   >$567,117</td><td>100.0 %</td></tr><tr><th scope='row' class='treemaprow'>OASH</th><td>UNIVERSITY OF UTAH</td><td   >$599,441</td><td   >$300,000</td><td>-50.0 %</td></tr><tr><th scope='row' class='treemaprow'>OASH</th><td>UNIVERSITY OF WASHINGTON</td><td   >$160,501</td><td   >$163,222</td><td>1.7 %</td></tr><tr><th scope='row' class='treemaprow'>OASH</th><td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td><td   >$100,000</td><td   >$0</td><td>-100.0 %</td></tr><tr><th scope='row' class='treemaprow'>ONC</th><td>JOHNS HOPKINS UNIVERSITY</td><td   >($13,855)</td><td   >$0</td><td>0.0 %</td></tr><tr><th scope='row' class='treemaprow'>ONC</th><td>UNIVERSITY OF UTAH</td><td   >$0</td><td   >$404,110</td><td>100.0 %</td></tr><tr><th scope='row' class='treemaprow'>SAMHSA</th><td>CURATORS OF THE UNIVERSITY OF MISSOURI</td><td   >$2,344,980</td><td   >$1,001,044</td><td>-57.3 %</td></tr><tr><th scope='row' class='treemaprow'>SAMHSA</th><td>JOHNS HOPKINS UNIVERSITY</td><td   >$418,914</td><td   >$598,934</td><td>43.0 %</td></tr><tr><th scope='row' class='treemaprow'>SAMHSA</th><td>UNIVERSITY OF ARIZONA</td><td   >$399,573</td><td   >$399,573</td><td>0.0 %</td></tr><tr><th scope='row' class='treemaprow'>SAMHSA</th><td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td><td   >$8,003,995</td><td   >$9,129,743</td><td>14.1 %</td></tr><tr><th scope='row' class='treemaprow'>SAMHSA</th><td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td><td   >$1,383,875</td><td   >$1,411,875</td><td>2.0 %</td></tr><tr><th scope='row' class='treemaprow'>SAMHSA</th><td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td><td   >$931,389</td><td   >$977,181</td><td>4.9 %</td></tr><tr><th scope='row' class='treemaprow'>SAMHSA</th><td>UNIVERSITY OF MICHIGAN</td><td   >$0</td><td   >$102,000</td><td>100.0 %</td></tr><tr><th scope='row' class='treemaprow'>SAMHSA</th><td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td><td   >$1,719,750</td><td   >$124,195</td><td>-92.8 %</td></tr><tr><th scope='row' class='treemaprow'>SAMHSA</th><td>UNIVERSITY OF UTAH</td><td   >$1,027,088</td><td   >$1,627,044</td><td>58.4 %</td></tr><tr><th scope='row' class='treemaprow'>SAMHSA</th><td>UNIVERSITY OF WASHINGTON</td><td   >$313,849</td><td   >$313,927</td><td>0.0 %</td></tr><tr><th scope='row' class='treemaprow'>SAMHSA</th><td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td><td   >$979,953</td><td   >$1,079,945</td><td>10.2 %</td></tr>
-    </tbody>
-</table>
+		    <th scope='col' style='width:12%;'>Agency</th>
+            <th scope='col' style='width:20%;'>Recipient</th>
+            <th scope='col' style='width:15%;'>FY 2015 Award Dollars</th>
+            <th scope='col' style='width:20%;'>FY 2016 Award Dollars</th>
+            <th scope='col' style='width:20%;'>% Change 2016 Dollars</th>
+        </tr>
+        <tbody>
+            <tr>
+                <th scope='row' class='treemaprow'></th>
+                <td>CURATORS OF THE UNIVERSITY OF MISSOURI - Subtotal</td>
+                <td>$49,192,325</td>
+                <td>$48,242,941</td>
+                <td>-1.9 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'></th>
+                <td>JOHNS HOPKINS UNIVERSITY - Subtotal</td>
+                <td>$612,225,083</td>
+                <td>$725,511,404</td>
+                <td>18.5 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'></th>
+                <td>UNIVERSITY OF ARIZONA - Subtotal</td>
+                <td>$87,144,359</td>
+                <td>$95,748,378</td>
+                <td>9.9 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'></th>
+                <td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS - Subtotal</td>
+                <td>$396,248,523</td>
+                <td>$403,039,987</td>
+                <td>1.7 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'></th>
+                <td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO - Subtotal</td>
+                <td>$623,807,045</td>
+                <td>$660,761,822</td>
+                <td>5.9 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'></th>
+                <td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION - Subtotal</td>
+                <td>$111,731,746</td>
+                <td>$120,218,641</td>
+                <td>7.6 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'></th>
+                <td>UNIVERSITY OF MICHIGAN - Subtotal</td>
+                <td>$481,307,819</td>
+                <td>$502,771,970</td>
+                <td>4.5 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'></th>
+                <td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL - Subtotal</td>
+                <td>$407,224,362</td>
+                <td>$437,554,577</td>
+                <td>7.4 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'></th>
+                <td>UNIVERSITY OF UTAH - Subtotal</td>
+                <td>$143,921,134</td>
+                <td>$158,054,411</td>
+                <td>9.8 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'></th>
+                <td>UNIVERSITY OF WASHINGTON - Subtotal</td>
+                <td>$510,290,231</td>
+                <td>$517,008,496</td>
+                <td>1.3 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'></th>
+                <td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS - Subtotal</td>
+                <td>$287,944,527</td>
+                <td>$300,128,763</td>
+                <td>4.2 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACF</th>
+                <td>CURATORS OF THE UNIVERSITY OF MISSOURI</td>
+                <td>$299,409</td>
+                <td>$99,632</td>
+                <td>-66.7 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACF</th>
+                <td>UNIVERSITY OF ARIZONA</td>
+                <td>$1,200,000</td>
+                <td>$731,618</td>
+                <td>-39.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACF</th>
+                <td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td>
+                <td>$1,433,173</td>
+                <td>$1,432,910</td>
+                <td>0.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACF</th>
+                <td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td>
+                <td>$301,340</td>
+                <td>$1,124,390</td>
+                <td>273.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACF</th>
+                <td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td>
+                <td>$0</td>
+                <td>$25,000</td>
+                <td>100.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACF</th>
+                <td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td>
+                <td>$247,258</td>
+                <td>$249,063</td>
+                <td>0.7 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACF</th>
+                <td>UNIVERSITY OF WASHINGTON</td>
+                <td>$838,678</td>
+                <td>$839,974</td>
+                <td>0.2 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACL</th>
+                <td>CURATORS OF THE UNIVERSITY OF MISSOURI</td>
+                <td>$1,560,347</td>
+                <td>$999,926</td>
+                <td>-35.9 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACL</th>
+                <td>JOHNS HOPKINS UNIVERSITY</td>
+                <td>$396,000</td>
+                <td>$198,000</td>
+                <td>-50.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACL</th>
+                <td>UNIVERSITY OF ARIZONA</td>
+                <td>$983,592</td>
+                <td>$40,000</td>
+                <td>-95.9 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACL</th>
+                <td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td>
+                <td>$963,644</td>
+                <td>$586,999</td>
+                <td>-39.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACL</th>
+                <td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td>
+                <td>$1,778,248</td>
+                <td>$2,024,998</td>
+                <td>13.9 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACL</th>
+                <td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td>
+                <td>$586,186</td>
+                <td>$796,526</td>
+                <td>35.9 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACL</th>
+                <td>UNIVERSITY OF MICHIGAN</td>
+                <td>$3,881,234</td>
+                <td>$1,469,946</td>
+                <td>-62.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACL</th>
+                <td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td>
+                <td>$545,919</td>
+                <td>$547,000</td>
+                <td>0.2 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACL</th>
+                <td>UNIVERSITY OF UTAH</td>
+                <td>$0</td>
+                <td>($21,921)</td>
+                <td>0.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACL</th>
+                <td>UNIVERSITY OF WASHINGTON</td>
+                <td>$8,777,763</td>
+                <td>$4,544,675</td>
+                <td>-48.2 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ACL</th>
+                <td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td>
+                <td>$3,731,145</td>
+                <td>$2,669,092</td>
+                <td>-28.5 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>AHRQ</th>
+                <td>CURATORS OF THE UNIVERSITY OF MISSOURI</td>
+                <td>$1,320,735</td>
+                <td>$1,350,300</td>
+                <td>2.2 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>AHRQ</th>
+                <td>JOHNS HOPKINS UNIVERSITY</td>
+                <td>$5,073,607</td>
+                <td>$6,079,048</td>
+                <td>19.8 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>AHRQ</th>
+                <td>UNIVERSITY OF ARIZONA</td>
+                <td>$928,307</td>
+                <td>($5,656)</td>
+                <td>-100.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>AHRQ</th>
+                <td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td>
+                <td>$908,761</td>
+                <td>$1,491,511</td>
+                <td>64.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>AHRQ</th>
+                <td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td>
+                <td>$3,064,837</td>
+                <td>$4,028,510</td>
+                <td>31.4 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>AHRQ</th>
+                <td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td>
+                <td>$0</td>
+                <td>$47,864</td>
+                <td>100.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>AHRQ</th>
+                <td>UNIVERSITY OF MICHIGAN</td>
+                <td>$9,289,200</td>
+                <td>$5,625,038</td>
+                <td>-39.4 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>AHRQ</th>
+                <td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td>
+                <td>$6,674,847</td>
+                <td>$10,139,592</td>
+                <td>51.9 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>AHRQ</th>
+                <td>UNIVERSITY OF UTAH</td>
+                <td>$564,119</td>
+                <td>$541,951</td>
+                <td>-3.9 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>AHRQ</th>
+                <td>UNIVERSITY OF WASHINGTON</td>
+                <td>$4,520,046</td>
+                <td>$3,797,713</td>
+                <td>-16.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>AHRQ</th>
+                <td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td>
+                <td>$5,054,430</td>
+                <td>$3,393,362</td>
+                <td>-32.9 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ASPE</th>
+                <td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td>
+                <td>$1,130,506</td>
+                <td>$1,900,000</td>
+                <td>68.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ASPR</th>
+                <td>JOHNS HOPKINS UNIVERSITY</td>
+                <td>$1,440,000</td>
+                <td>$4,589,000</td>
+                <td>218.7 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CDC</th>
+                <td>CURATORS OF THE UNIVERSITY OF MISSOURI</td>
+                <td>$275,000</td>
+                <td>$275,000</td>
+                <td>0.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CDC</th>
+                <td>JOHNS HOPKINS UNIVERSITY</td>
+                <td>$44,402,974</td>
+                <td>$85,749,787</td>
+                <td>93.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CDC</th>
+                <td>UNIVERSITY OF ARIZONA</td>
+                <td>$1,913,791</td>
+                <td>$1,700,471</td>
+                <td>-11.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CDC</th>
+                <td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td>
+                <td>$3,747,205</td>
+                <td>$2,691,007</td>
+                <td>-28.2 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CDC</th>
+                <td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td>
+                <td>$28,949,541</td>
+                <td>$46,519,883</td>
+                <td>60.7 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CDC</th>
+                <td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td>
+                <td>$8,799,843</td>
+                <td>$10,090,350</td>
+                <td>14.7 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CDC</th>
+                <td>UNIVERSITY OF MICHIGAN</td>
+                <td>$9,207,507</td>
+                <td>$9,446,756</td>
+                <td>2.6 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CDC</th>
+                <td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td>
+                <td>$8,897,386</td>
+                <td>$9,525,518</td>
+                <td>7.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CDC</th>
+                <td>UNIVERSITY OF UTAH</td>
+                <td>$5,370,772</td>
+                <td>$3,222,450</td>
+                <td>-40.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CDC</th>
+                <td>UNIVERSITY OF WASHINGTON</td>
+                <td>$31,835,181</td>
+                <td>$61,795,782</td>
+                <td>94.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CDC</th>
+                <td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td>
+                <td>$2,111,017</td>
+                <td>$2,696,682</td>
+                <td>27.7 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CMS</th>
+                <td>CURATORS OF THE UNIVERSITY OF MISSOURI</td>
+                <td>$3,812,439</td>
+                <td>$1,074,154</td>
+                <td>-71.8 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CMS</th>
+                <td>JOHNS HOPKINS UNIVERSITY</td>
+                <td>$3,097,730</td>
+                <td>$1,866,790</td>
+                <td>-39.7 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CMS</th>
+                <td>UNIVERSITY OF ARIZONA</td>
+                <td>$677,941</td>
+                <td>$537,916</td>
+                <td>-20.7 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CMS</th>
+                <td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td>
+                <td>$0</td>
+                <td>($91,677)</td>
+                <td>0.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CMS</th>
+                <td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td>
+                <td>$3,535,059</td>
+                <td>$3,734,742</td>
+                <td>5.6 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CMS</th>
+                <td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td>
+                <td>$700,307</td>
+                <td>$530,784</td>
+                <td>-24.2 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CMS</th>
+                <td>UNIVERSITY OF MICHIGAN</td>
+                <td>$3,678,619</td>
+                <td>$2,711,231</td>
+                <td>-26.3 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CMS</th>
+                <td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td>
+                <td>$1,684,598</td>
+                <td>$1,104,189</td>
+                <td>-34.5 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CMS</th>
+                <td>UNIVERSITY OF WASHINGTON</td>
+                <td>$5,479,501</td>
+                <td>$9,919,102</td>
+                <td>81.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>CMS</th>
+                <td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td>
+                <td>$997,863</td>
+                <td>$998,960</td>
+                <td>0.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>FDA</th>
+                <td>CURATORS OF THE UNIVERSITY OF MISSOURI</td>
+                <td>$20,800</td>
+                <td>$26,499</td>
+                <td>27.4 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>FDA</th>
+                <td>JOHNS HOPKINS UNIVERSITY</td>
+                <td>$1,703,365</td>
+                <td>$1,708,546</td>
+                <td>0.3 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>FDA</th>
+                <td>UNIVERSITY OF ARIZONA</td>
+                <td>$250,000</td>
+                <td>$350,000</td>
+                <td>40.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>FDA</th>
+                <td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td>
+                <td>$1,413,028</td>
+                <td>$0</td>
+                <td>-100.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>FDA</th>
+                <td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td>
+                <td>$3,368,214</td>
+                <td>$3,940,416</td>
+                <td>17.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>FDA</th>
+                <td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td>
+                <td>$1,119,433</td>
+                <td>$4,425,424</td>
+                <td>295.3 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>FDA</th>
+                <td>UNIVERSITY OF MICHIGAN</td>
+                <td>$861,876</td>
+                <td>$1,138,482</td>
+                <td>32.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>FDA</th>
+                <td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td>
+                <td>$490,943</td>
+                <td>$888,921</td>
+                <td>81.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>FDA</th>
+                <td>UNIVERSITY OF UTAH</td>
+                <td>$450,000</td>
+                <td>$450,000</td>
+                <td>0.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>FDA</th>
+                <td>UNIVERSITY OF WASHINGTON</td>
+                <td>$49,880</td>
+                <td>$424,680</td>
+                <td>751.4 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>FDA</th>
+                <td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td>
+                <td>$261,385</td>
+                <td>$142,068</td>
+                <td>-45.6 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>HRSA</th>
+                <td>CURATORS OF THE UNIVERSITY OF MISSOURI</td>
+                <td>$2,241,170</td>
+                <td>$3,189,463</td>
+                <td>42.3 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>HRSA</th>
+                <td>JOHNS HOPKINS UNIVERSITY</td>
+                <td>$8,091,945</td>
+                <td>$7,586,557</td>
+                <td>-6.2 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>HRSA</th>
+                <td>UNIVERSITY OF ARIZONA</td>
+                <td>$5,817,789</td>
+                <td>$7,906,929</td>
+                <td>35.9 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>HRSA</th>
+                <td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td>
+                <td>$8,700,132</td>
+                <td>$8,690,941</td>
+                <td>-0.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>HRSA</th>
+                <td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td>
+                <td>$20,501,772</td>
+                <td>$19,688,906</td>
+                <td>-4.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>HRSA</th>
+                <td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td>
+                <td>$7,048,556</td>
+                <td>$7,243,226</td>
+                <td>2.8 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>HRSA</th>
+                <td>UNIVERSITY OF MICHIGAN</td>
+                <td>$6,452,804</td>
+                <td>$1,918,858</td>
+                <td>-70.3 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>HRSA</th>
+                <td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td>
+                <td>$11,595,192</td>
+                <td>$10,539,700</td>
+                <td>-9.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>HRSA</th>
+                <td>UNIVERSITY OF UTAH</td>
+                <td>$8,061,373</td>
+                <td>$7,477,751</td>
+                <td>-7.2 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>HRSA</th>
+                <td>UNIVERSITY OF WASHINGTON</td>
+                <td>$34,737,177</td>
+                <td>$34,793,371</td>
+                <td>0.2 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>HRSA</th>
+                <td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td>
+                <td>$5,026,261</td>
+                <td>$5,300,734</td>
+                <td>5.5 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>IHS</th>
+                <td>UNIVERSITY OF ARIZONA</td>
+                <td>$198,682</td>
+                <td>$0</td>
+                <td>-100.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>IHS</th>
+                <td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td>
+                <td>$198,682</td>
+                <td>$198,682</td>
+                <td>0.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>NIH</th>
+                <td>CURATORS OF THE UNIVERSITY OF MISSOURI</td>
+                <td>$36,817,445</td>
+                <td>$39,726,923</td>
+                <td>7.9 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>NIH</th>
+                <td>JOHNS HOPKINS UNIVERSITY</td>
+                <td>$543,352,864</td>
+                <td>$616,254,670</td>
+                <td>13.4 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>NIH</th>
+                <td>UNIVERSITY OF ARIZONA</td>
+                <td>$74,774,684</td>
+                <td>$84,087,527</td>
+                <td>12.5 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>NIH</th>
+                <td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td>
+                <td>$370,579,074</td>
+                <td>$378,608,844</td>
+                <td>2.2 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>NIH</th>
+                <td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td>
+                <td>$559,404,587</td>
+                <td>$576,375,917</td>
+                <td>3.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>NIH</th>
+                <td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td>
+                <td>$92,546,032</td>
+                <td>$96,082,286</td>
+                <td>3.8 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>NIH</th>
+                <td>UNIVERSITY OF MICHIGAN</td>
+                <td>$447,936,579</td>
+                <td>$479,792,542</td>
+                <td>7.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>NIH</th>
+                <td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td>
+                <td>$375,368,469</td>
+                <td>$404,436,399</td>
+                <td>7.7 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>NIH</th>
+                <td>UNIVERSITY OF UTAH</td>
+                <td>$127,848,341</td>
+                <td>$144,053,026</td>
+                <td>12.7 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>NIH</th>
+                <td>UNIVERSITY OF WASHINGTON</td>
+                <td>$423,577,655</td>
+                <td>$400,416,050</td>
+                <td>-5.5 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>NIH</th>
+                <td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td>
+                <td>$268,353,285</td>
+                <td>$281,749,238</td>
+                <td>5.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>OASH</th>
+                <td>CURATORS OF THE UNIVERSITY OF MISSOURI</td>
+                <td>$500,000</td>
+                <td>$500,000</td>
+                <td>0.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>OASH</th>
+                <td>JOHNS HOPKINS UNIVERSITY</td>
+                <td>$4,261,539</td>
+                <td>$880,072</td>
+                <td>-79.3 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>OASH</th>
+                <td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td>
+                <td>$499,511</td>
+                <td>$499,709</td>
+                <td>0.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>OASH</th>
+                <td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td>
+                <td>$1,519,572</td>
+                <td>$1,912,185</td>
+                <td>25.8 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>OASH</th>
+                <td>UNIVERSITY OF MICHIGAN</td>
+                <td>$0</td>
+                <td>$567,117</td>
+                <td>100.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>OASH</th>
+                <td>UNIVERSITY OF UTAH</td>
+                <td>$599,441</td>
+                <td>$300,000</td>
+                <td>-50.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>OASH</th>
+                <td>UNIVERSITY OF WASHINGTON</td>
+                <td>$160,501</td>
+                <td>$163,222</td>
+                <td>1.7 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>OASH</th>
+                <td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td>
+                <td>$100,000</td>
+                <td>$0</td>
+                <td>-100.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ONC</th>
+                <td>JOHNS HOPKINS UNIVERSITY</td>
+                <td>($13,855)</td>
+                <td>$0</td>
+                <td>0.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>ONC</th>
+                <td>UNIVERSITY OF UTAH</td>
+                <td>$0</td>
+                <td>$404,110</td>
+                <td>100.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>SAMHSA</th>
+                <td>CURATORS OF THE UNIVERSITY OF MISSOURI</td>
+                <td>$2,344,980</td>
+                <td>$1,001,044</td>
+                <td>-57.3 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>SAMHSA</th>
+                <td>JOHNS HOPKINS UNIVERSITY</td>
+                <td>$418,914</td>
+                <td>$598,934</td>
+                <td>43.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>SAMHSA</th>
+                <td>UNIVERSITY OF ARIZONA</td>
+                <td>$399,573</td>
+                <td>$399,573</td>
+                <td>0.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>SAMHSA</th>
+                <td>UNIVERSITY OF CALIFORNIA-LOS ANGELES, BOARD OF REGENTS</td>
+                <td>$8,003,995</td>
+                <td>$9,129,743</td>
+                <td>14.1 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>SAMHSA</th>
+                <td>UNIVERSITY OF CALIFORNIA-SAN FRANCISCO</td>
+                <td>$1,383,875</td>
+                <td>$1,411,875</td>
+                <td>2.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>SAMHSA</th>
+                <td>UNIVERSITY OF KENTUCKY, RESEARCH FOUNDATION</td>
+                <td>$931,389</td>
+                <td>$977,181</td>
+                <td>4.9 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>SAMHSA</th>
+                <td>UNIVERSITY OF MICHIGAN</td>
+                <td>$0</td>
+                <td>$102,000</td>
+                <td>100.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>SAMHSA</th>
+                <td>UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</td>
+                <td>$1,719,750</td>
+                <td>$124,195</td>
+                <td>-92.8 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>SAMHSA</th>
+                <td>UNIVERSITY OF UTAH</td>
+                <td>$1,027,088</td>
+                <td>$1,627,044</td>
+                <td>58.4 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>SAMHSA</th>
+                <td>UNIVERSITY OF WASHINGTON</td>
+                <td>$313,849</td>
+                <td>$313,927</td>
+                <td>0.0 %</td>
+            </tr>
+            <tr>
+                <th scope='row' class='treemaprow'>SAMHSA</th>
+                <td>UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS</td>
+                <td>$979,953</td>
+                <td>$1,079,945</td>
+                <td>10.2 %</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
+
 </html>
