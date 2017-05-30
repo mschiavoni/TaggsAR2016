@@ -122,6 +122,7 @@ $('#mapDrop').on("change", function(){
 
 
 $('input[name="awards"]').click(function(){
+  console.log("clicked button")
   var selectedAwardType = this.id
   var selectedOpdiv = $('.radioOpt:checked').val().toLowerCase()
   var selectedKey = selectedOpdiv.split("_")[1]
@@ -130,13 +131,16 @@ $('input[name="awards"]').click(function(){
   getExcel(selectedKey, selectedAwardType)
 
   if (selectedAwardType === "totalAwards"){
+    console.log('selected award type total awards')
     var stateBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_USA"]
     var worldBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_WORLD"]
     createMapBox(selectedOpdiv, worldBreaks, stateBreaks)
   } else {
+    console.log('selected award type disc award')
     var stateBreaks = allBreaks["BREAKS_DISC_" + selectedKey.toUpperCase() + "_USA"]
     var worldBreaks = allBreaks["BREAKS_DISC_" + selectedKey.toUpperCase() + "_WORLD"]
     createMapBox2(selectedOpdiv, worldBreaks, stateBreaks)
+    console.log('after mapbox2')
   }
 });
 
@@ -251,7 +255,7 @@ function updateLegend(arrState, arrWorld) {
 }
 
 function createMapBox(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
-
+console.log('create mapbox')
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v9',
@@ -264,7 +268,6 @@ function createMapBox(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
 
   map.addControl(new mapboxgl.NavigationControl());
 
- //***** CREATE THE NEW TABLE HERE ******
 
  map.on('load', function () {
 

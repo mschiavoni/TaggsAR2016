@@ -10,7 +10,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wO
 // var COLORSTATE = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5'];
 
 function createMapBox2(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
-
+console.log('crate mapbox2')
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v9',
