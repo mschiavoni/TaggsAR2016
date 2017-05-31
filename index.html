@@ -46,11 +46,15 @@
             display: block;
             border: 2px solid;
             text-align: center;
-            color: #fff;
+            color: #000000;
             font-size: 0.85em;
             height: 80px;
             overflow: hidden;
         }
+		figure ul li a, figure > ul > li > ul, figure > ul > li > ul:after, figure > ul > li > div:after, figure > ul > li > ul > li, figure > ul > li > ul > li:before, figure > ul > li > ul > li > ul, figure > ul > li > ul > li > ul > li, figure > ul > li ul > li > ul > li > ul, figure ul > li > ul > li > ul > li > ul > li {
+    border-color: #13cd67;
+    border-radius: 28px;
+}
         
         figure ul li a:hover {
             color: #fff;
@@ -153,12 +157,12 @@
         width: calc(100% + 4px);
     }
 
-    /*figure ul > li > ul > li > ul > li > ul > li {
+    figure ul > li > ul > li > ul > li > ul > li {
         border-top: 4px solid;
         top: 50px;
-    }*/
+    }
 
-   /* @media all and (max-width: 1200px) {
+    @media all and (max-width: 1200px) {
         figure > ul > li > div > a {
             width: 100%;
             margin: 0 auto;
@@ -190,9 +194,57 @@
             right: 4px;
             width: calc(100% + 4px);
         }
+        /*<<<<<<< HEAD*/
+    }
 
-    }*/
+    figure ul li a,
+    figure > ul > li > ul {
+      border-color: #2757DA;
+      border-radius: 28px;
+  }
+    figure > ul > li > ul:after{
+      border-color: #13CD67;
+      border-radius: 28px;
+  }
+    figure > ul > li > div:after{
+      border-color: #13CD67;
+      border-radius: 28px;
+  }
+    figure > ul > li > ul > li{
+      border-color: #1FB6FF;
+      border-radius: 28px;
+  }
+    figure > ul > li > ul > li:before{
+      border-color: #13CD67;
+      border-radius: 28px;
+  }
+    figure > ul > li > ul > li > ul{
+      border-color: #13CD67;
+      border-radius: 28px;
+  }
+    figure > ul > li > ul > li > ul > li{
+      border-color: #FEC200;
+      border-radius: 28px;
+  }
+    figure > ul > li ul > li > ul > li > ul{
+      border-color: #5A2DEA;
+      border-radius: 28px;
+  }
+    figure ul > li > ul > li > ul > li > ul > li {
+      border-color: #FF5216;
+      border-radius: 28px;
+  }
 
+
+
+
+
+
+  #taggs-org-chart,
+  figure ul > li > ul > li > ul > li.taggs-org-branch-end {
+    background: #dae3e6;
+}
+/*=======*/
 
 figure ul > li > ul > li > ul > li > ul > li {
     border-top: 4px solid;
@@ -233,66 +285,54 @@ figure ul > li > ul > li > ul > li > ul > li {
     }
 }
 
-figure ul li a,
-figure > ul > li > ul,
-figure > ul > li > ul:after,
-figure > ul > li > div:after,
-figure > ul > li > ul > li,
-figure > ul > li > ul > li:before,
-figure > ul > li > ul > li > ul,
-figure > ul > li > ul > li > ul > li,
-figure > ul > li ul > li > ul > li > ul,
-figure ul > li > ul > li > ul > li > ul > li {
-  border-color: #ffffff;
-  border-radius: 28px;
-}
+
 
 #taggs-org-chart, figure ul > li > ul > li > ul > li.taggs-org-branch-end {
     background: #F9FBFF;
 }
 
 figure ul li a {
-    background: #2E3E4E;
+    background: #ffffff;
 }
 
 figure > ul > li > ul > li:nth-of-type(1) a {
-    background: #00adef;
+    background: #ffffff;
 }
 
 figure > ul > li > ul > li:nth-of-type(1) a:hover {
-    color: #00adef;
+    color: #f7f7f7;
 }
 
 figure > ul > li > ul > li:nth-of-type(2) a {
-    background: #3cb879;
+    background: #ffffff;
 }
 
 figure > ul > li > ul > li:nth-of-type(2) a:hover {
-    color: #3cb879;
+    color: #f7f7f7;
 }
 
 figure > ul > li > ul > li:nth-of-type(3) a {
-    background: #fcaf3b;
+    background: #ffffff;
 }
 
 figure > ul > li > ul > li:nth-of-type(3) a:hover {
-    color: #fcaf3b;
+    color: #f7f7f7;
 }
 
 figure > ul > li > ul > li:nth-of-type(4) a {
-    background: #6739b6;
+    background: #ffffff;
 }
 
 figure > ul > li > ul > li:nth-of-type(4) a:hover {
-    color: #bf75df;
+    color: #f7f7f7;
 }
 
 figure > ul > li > ul > li:nth-of-type(5) a {
-    background: #f15b26;
+    background: #ffffff;
 }
 
 figure > ul > li > ul > li:nth-of-type(5) a:hover {
-    color: #ef6544;
+    color: #f7f7f7;
 }
 /* 1 step lighter */
 
@@ -311,7 +351,6 @@ figure > ul > li > ul > li > ul > li > ul > li > a > span {
 figure > ul > li > ul > li > ul > li > ul > li > ul > li > a > span {
     background: rgba(0, 0, 0, 0);
 }
-
 [data-overlay="8"]:before {
     content: '';
     position: absolute;
