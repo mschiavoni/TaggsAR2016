@@ -9104,15 +9104,7 @@ h1 a,
         font-size: 24px;
     }
 }
-h2,
-.h2 {
-    margin: 0;
-    font-size: 84px;
-    font-weight: bold;
-    color: #2196F3;
-    font-family: 'Montserrat',
-    sans-serif;
-}
+
 h2 a,
 .h2 a {
     color: inherit;
