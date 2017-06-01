@@ -770,17 +770,11 @@ p.Footnote {
     line-height: 30px;
     color: #232323 !important;
 }  
-/*div:focus {outline: blue solid 2px;}	*/
+div:focus {outline: blue solid 2px;}	
 a:focus {outline: blue solid 2px;}	
-.btn:focus {outline: blue solid 2px;}
+btn:focus {outline: blue solid 2px;}
 radio:focus {outline: blue solid 2px;}
-
-.masterSelect:focus {
-    background-color: black;
-    /*outline: blue solid 2px;*/
-    border: 2px solid green;
-}
-select:focus {outline: blue solid 200px;}
+btn-group:focus {outline: blue solid 2px;}
 .heading .heading-text-footer {
     font-size: 15px;
     line-height: 1.6;
@@ -962,7 +956,7 @@ select:focus {outline: blue solid 200px;}
 
                               <div style="">
 
-                                <select aria-label="masterSelect" id="masterSelect" style="display: block">
+                                <select aria-label="masterSelect" id="masterSelect" style="display: block" tabindex="0">
                                     <option class="masterOpt" checked="checked" value="hhs">HHS</option>
                                     <option class="masterOpt" value="ACF">ACF</option>
                                     <option class="masterOpt" value="ACL">ACL</option>
@@ -1167,7 +1161,7 @@ select:focus {outline: blue solid 200px;}
                 <div class="row">
                     <div class="col-md-3 col-sm-3">
 
-                        <div style= "width:150px" tabindex="0">
+                        <div style= "width:150px ; ">
                             <select id="mapDrop">
 
                                <option class="radioOpt" value="awarddollars_HHS">HHS</option>
