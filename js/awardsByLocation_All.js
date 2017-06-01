@@ -122,7 +122,7 @@ $('#mapDrop').on("change", function(){
 
 
 $('input[name="awards"]').click(function(){
-  console.log("clicked button")
+
   var selectedAwardType = this.id
   var selectedOpdiv = $('.radioOpt:checked').val().toLowerCase()
   var selectedKey = selectedOpdiv.split("_")[1]
@@ -131,16 +131,16 @@ $('input[name="awards"]').click(function(){
   getExcel(selectedKey, selectedAwardType)
 
   if (selectedAwardType === "totalAwards"){
-    console.log('selected award type total awards')
+
     var stateBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_USA"]
     var worldBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_WORLD"]
     createMapBox(selectedOpdiv, worldBreaks, stateBreaks)
   } else {
-    console.log('selected award type disc award')
+
     var stateBreaks = allBreaks["BREAKS_DISC_" + selectedKey.toUpperCase() + "_USA"]
     var worldBreaks = allBreaks["BREAKS_DISC_" + selectedKey.toUpperCase() + "_WORLD"]
     createMapBox2(selectedOpdiv, worldBreaks, stateBreaks)
-    console.log('after mapbox2')
+
   }
 });
 
