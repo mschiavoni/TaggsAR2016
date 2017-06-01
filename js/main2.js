@@ -2,9 +2,10 @@
 
 $(document).ready(function() {
 
-$('.agenciesAgency').keydown(function(e){
-   
+$('.agenciesAgency').keypress(function(e){
+   console.log('keydown')
    if(e.keyCode === 32){
+    console.log('code')
       e.preventDefault();
        $(".megamenu").css("display", "block")
    } 
