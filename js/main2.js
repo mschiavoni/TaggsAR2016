@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 
-$('.agenciesAgency').keypress(function(e){
+$('.agenciesAgency').keydown(function(e){
    console.log('keydown')
    if(e.keyCode === 32){
     console.log('code')
