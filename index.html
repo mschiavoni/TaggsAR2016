@@ -700,6 +700,7 @@ radio:focus {outline: blue solid 2px;}
 btn-group:focus {outline: blue solid 2px;}	
 a:before:focus {outline: blue solid 2px;}	
 a:after:focus {outline: blue solid 2px;}	
+
 	    
 .heading .heading-text-footer {
     font-size: 15px;
@@ -717,6 +718,48 @@ display: block;
     opacity: .9;
     color: #ffffff !important;
 }	
+.accessibility{
+	position: absolute;
+	left: -99999px;
+	height: 10px;
+	width: 10px
+}
+
+#skip{
+    position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+        margin-left: 0;
+	text-align: center;
+	list-style: outside none;
+}
+
+#skip li{ list-style-type: none }
+
+#skip a{
+	position: absolute;
+	left: -99999px;
+	top: 30px;
+}
+
+#skip a:focus, #skip a:active{
+	position: relative;
+	left: 0;
+	z-index:9999;
+	width: 75%;
+	height: auto;
+	margin: 0 auto;
+	padding: 30px 45px;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: -4px !important;
+	font: bold 50px;
+        color: #AEAEFE;
+	background: transparent url(img/transparent.png) repeat scroll 0 0;
+	border: 1px dotted #ffb4db;
+}	    	    
+	    
 </style>
 	
 </head>
@@ -737,6 +780,9 @@ display: block;
                         <div class="logo-sub-title hidden-sm">Tracking Accountability in Government Grant Spending</div>
                     </div>
                 </div>
+<div id="skiptocontent" title="link to skip to the main content of the page">
+<a href="#main">Skip to main content</a>
+</div>			    
                 <nav id="primary-menu" class="primary-menu">
                     <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
                         <span class="mob-menu--title">Menu</span>
@@ -841,14 +887,13 @@ display: block;
                             </div>
                         </li>
                         <li class="">
-                            <a href="#">Download</a>
+                             <a href="downloads.html">Download</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-<a href="#maincontent" tabindex="-1">Skip to main content</a>
 
     <div class="content-wrapper">
 	
@@ -866,13 +911,14 @@ display: block;
                                 Department of Health & Human Services
                             </p>
                              <span class="scroll-down" address="true"></span>
+                           <a href="#maincontent" class="skip" tabindex="-1">Skip to main content</a>
 
                         </div>
                     </div>
                 </div>
             </section>        
 
-        <div class="container-fluid " id="maincontent">
+        <div class="container-fluid " id="main">
             <div class="row medium-padding120 bg-white-color ">
                 <div class="container">
                     <div class="taggs-facts-ver2">
@@ -10631,6 +10677,7 @@ if (!!document.createElementNS && !!document.createElementNS('http://www.w3.org/
                             </li>
                             <li>
                                 <i class="fa fa-caret-right" aria-hidden="true"></i>
+<<<<<<< HEAD
                                 <a href="http://www.hhs.gov/about/" target="_blank
                                 ">Office of the Assistant Secretary for Planning & Evaluation (ASPE)</a>
                             </li>
@@ -10638,6 +10685,9 @@ if (!!document.createElementNS && !!document.createElementNS('http://www.w3.org/
                                 <i class="fa fa-caret-right" aria-hidden="true"></i>
                                 <a href="http://www.hhs.gov/about/orgchart/" target="_blank
                                 ">Office of the Assistant Secretary for Planning & Evaluation (ASPE)</a>
+=======
+                                <a href="http://www.hhs.gov/about/orgchart/">Office of the Assistant Secretary for Planning & Evaluation (ASPE)</a>
+>>>>>>> ab767ebc2f02a831daaa29107369737639a6d46a
                             </li>
                             <li>
                                 <i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -10725,7 +10775,7 @@ if (!!document.createElementNS && !!document.createElementNS('http://www.w3.org/
                             </svg>
                         </div>
                         <div class="content">
-                            <a href="#" class="title">1-877-696-6775​</a>
+                            <span class="title">1-877-696-6775</span>
                             <p class="sub-title">Toll Free Call</p>
                         </div>
                     </div>
@@ -10746,7 +10796,7 @@ if (!!document.createElementNS && !!document.createElementNS('http://www.w3.org/
                             </svg>
                         </div>
                         <div class="content">
-                            <a href="#" class="title">Email HHS</a>
+                            <span class="title">Email HHS</span>
                             <p class="sub-title">Email Us</p>
                         </div>
                     </div>
@@ -10764,7 +10814,7 @@ if (!!document.createElementNS && !!document.createElementNS('http://www.w3.org/
                             </svg>
                         </div>
                         <div class="content">
-                            <a href="#" class="title">S.W. Washington, D.C.</a>
+                            <span class="title">S.W. Washington, D.C.</span>
                             <p class="sub-title">200 Independence Avenue, 20201</p>
                         </div>
                     </div>
@@ -10777,7 +10827,7 @@ if (!!document.createElementNS && !!document.createElementNS('http://www.w3.org/
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <span>
-                        Copyright © 2016 <a href="index.html" class="sub-footer__link">Taggs.HHS.gov</a>
+                        Copyright © 2016 <a href="http://taggs.hhs.gov" class="sub-footer__link">Taggs.HHS.gov</a>
                     </span>
                     <a class="back-to-top" href="#">
                         <svg class="back-to-top">
