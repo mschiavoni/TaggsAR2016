@@ -700,7 +700,7 @@ radio:focus {outline: blue solid 2px;}
 btn-group:focus {outline: blue solid 2px;}	
 a:before:focus {outline: blue solid 2px;}	
 a:after:focus {outline: blue solid 2px;}	
-a:skip:focus {outline: blue solid 2px;}	
+
 	    
 .heading .heading-text-footer {
     font-size: 15px;
@@ -718,6 +718,48 @@ display: block;
     opacity: .9;
     color: #ffffff !important;
 }	
+.accessibility{
+	position: absolute;
+	left: -99999px;
+	height: 10px;
+	width: 10px
+}
+
+#skip{
+    position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+        margin-left: 0;
+	text-align: center;
+	list-style: outside none;
+}
+
+#skip li{ list-style-type: none }
+
+#skip a{
+	position: absolute;
+	left: -99999px;
+	top: 30px;
+}
+
+#skip a:focus, #skip a:active{
+	position: relative;
+	left: 0;
+	z-index:9999;
+	width: 75%;
+	height: auto;
+	margin: 0 auto;
+	padding: 30px 45px;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: -4px !important;
+	font: bold 50px;
+        color: #AEAEFE;
+	background: transparent url(img/transparent.png) repeat scroll 0 0;
+	border: 1px dotted #ffb4db;
+}	    	    
+	    
 </style>
 	
 </head>
@@ -738,6 +780,9 @@ display: block;
                         <div class="logo-sub-title hidden-sm">Tracking Accountability in Government Grant Spending</div>
                     </div>
                 </div>
+<div id="skiptocontent" title="link to skip to the main content of the page">
+<a href="#main">Skip to main content</a>
+</div>			    
                 <nav id="primary-menu" class="primary-menu">
                     <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
                         <span class="mob-menu--title">Menu</span>
@@ -873,7 +918,7 @@ display: block;
                 </div>
             </section>        
 
-        <div class="container-fluid " id="maincontent">
+        <div class="container-fluid " id="main">
             <div class="row medium-padding120 bg-white-color ">
                 <div class="container">
                     <div class="taggs-facts-ver2">
