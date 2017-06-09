@@ -781,15 +781,55 @@ btn:focus {outline: blue solid 2px;}
 radio:focus {outline: blue solid 2px;}
 button:focus {outline: blue solid 2px;}    
 html [type="button"]:focus {outline: blue solid 2px;}
-  
-	    
-	    
-	    
+  	    
 .heading .heading-text-footer {
     font-size: 15px;
     line-height: 1.6;
     color: #ffffff !important;
-}		    
+}	
+.accessibility{
+	position: absolute;
+	left: -99999px;
+	height: 10px;
+	width: 10px
+}
+
+#skip{
+    position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+        margin-left: 0;
+	text-align: center;
+	list-style: outside none;
+}
+
+#skip li{ list-style-type: none }
+
+#skip a{
+	position: absolute;
+	left: -99999px;
+	top: 30px;
+}
+	    
+#skip a:focus, #skip a:active {
+    position: relative;
+    left: 0;
+    z-index: 9999;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 45px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: -4px !important;
+    font-size: 40px;
+    color: #262626;
+    background: #ffffff;
+    border: 1px dotted #ffb4db;
+}	    	    
+	   	    
+	    
 </style>
 	
 </head>
@@ -797,9 +837,8 @@ html [type="button"]:focus {outline: blue solid 2px;}
 <body class=" ">
     <div id="load"></div>
 	
-
     <header class="header contacts-shadow" id="site-header">
-        <div class="container-fluid-navbar">
+    <div class="container-fluid-navbar">
 
             <div class="header-content-wrapper">
                 <div class="logo">
@@ -810,7 +849,10 @@ html [type="button"]:focus {outline: blue solid 2px;}
                         <div class="logo-sub-title hidden-sm">Tracking Accountability in Government Grant Spending</div>
                     </div>
                 </div>
-                <nav id="primary-menu" class="primary-menu">
+	<ul id="skip">
+		<li><a href="#content-anchor">Skip to content</a></li>
+	</ul>			    
+                 <nav id="primary-menu" class="primary-menu">
                     <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
                         <span class="mob-menu--title">Menu</span>
                         <span id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
@@ -825,7 +867,7 @@ html [type="button"]:focus {outline: blue solid 2px;}
                         <li class="menu-item-has-children">
                             <a href="index.html">Home</a>
                         </li>
-                        <li class="">
+						<li class="">
                             <a href="awards.html" class="blue">Awards</a>
                         </li>
                         <li class="has-megamenu menu-item-has-children">
@@ -844,7 +886,7 @@ html [type="button"]:focus {outline: blue solid 2px;}
                                             <li>
                                                 <a href="agencies.html#ACL">ACL<i class="taggsicon-right-arrow"></i></a>
                                             </li>
-                                            <li>
+											<li>
                                                 <a href="agencies.html#AHRQ">AHRQ<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
@@ -862,7 +904,7 @@ html [type="button"]:focus {outline: blue solid 2px;}
                                             <li>
                                                 <a href="agencies.html#CMS">CMS<i class="taggsicon-right-arrow"></i></a>
                                             </li>
-
+											
                                             <li>
                                                 <a href="agencies.html#FDA">FDA<i class="taggsicon-right-arrow"></i></a>
                                             </li>
@@ -875,6 +917,7 @@ html [type="button"]:focus {outline: blue solid 2px;}
                                                 <p class="megamenu-item-info-text"> </p>
                                             </li>
 
+
                                             <li>
                                                 <a href="agencies.html#HRSA">HRSA<i class="taggsicon-right-arrow"></i></a>
                                             </li>
@@ -882,7 +925,7 @@ html [type="button"]:focus {outline: blue solid 2px;}
                                             <li>
                                                 <a href="agencies.html#IHS">IHS<i class="taggsicon-right-arrow"></i></a>
                                             </li>
-                                            <li>
+											 <li>
                                                 <a href="agencies.html#NIH">NIH<i class="taggsicon-right-arrow"></i></a>
                                             </li>
                                             <li>
@@ -905,7 +948,9 @@ html [type="button"]:focus {outline: blue solid 2px;}
                                                 <div class="hhs-logo">
                                                     <img src="img/logo.png" alt="taggs">
                                                 </div>
-                                                <p class="hhstaggs-text">HHS’ Tracking Accountability in Government Grants System (TAGGS) website provides access to detailed information on government grants awarded.
+                                                <p class="hhstaggs-text">HHS’ Tracking Accountability in Government Grants 
+												System (TAGGS) website provides access to detailed information on government grants
+												awarded.
                                                 </p>
                                             </li>
                                         </ul>
@@ -914,15 +959,14 @@ html [type="button"]:focus {outline: blue solid 2px;}
                             </div>
                         </li>
                         <li class="">
-                             <a href="downloads.html">Download</a>
+                           <a href="downloads.html">Download</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-        </div>
-    </header>
+    </div>
+</header>
 
-<a href="#maincontent" tabindex="-1">Skip to main content</a>
 	
 <div class="content-wrapper">
  <section class="height-100 imagebg cover cover-3 shadow-3" data-overlay="4" >
@@ -946,9 +990,9 @@ html [type="button"]:focus {outline: blue solid 2px;}
                 </div>
     </section>
 
+<a name="content-anchor" class="accessibility">Main Content</a>
 
-
-    <div class="container-fluid" id="maincontent">
+    <div class="container-fluid" id="main">
         <div class="row medium-padding20 bg-navblue-color shadow-2">
             <div class="container">
                 <div class="row">
