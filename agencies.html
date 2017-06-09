@@ -282,7 +282,48 @@ btn-group:focus {outline: blue solid 2px;}
     font-size: 15px;
     line-height: 1.6;
     color: #ffffff !important;
-}		
+}	
+.accessibility{
+	position: absolute;
+	left: -99999px;
+	height: 10px;
+	width: 10px
+}
+
+#skip{
+    position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+        margin-left: 0;
+	text-align: center;
+	list-style: outside none;
+}
+
+#skip li{ list-style-type: none }
+
+#skip a{
+	position: absolute;
+	left: -99999px;
+	top: 30px;
+}
+	    
+#skip a:focus, #skip a:active {
+    position: relative;
+    left: 0;
+    z-index: 9999;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 45px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: -4px !important;
+    font-size: 40px;
+    color: #262626;
+    background: #ffffff;
+    border: 1px dotted #ffb4db;
+}	    	    	  	
 </style>
 
 </head>
@@ -303,6 +344,9 @@ btn-group:focus {outline: blue solid 2px;}
                         <div class="logo-sub-title hidden-sm">Tracking Accountability in Government Grant Spending</div>
                     </div>
                 </div>
+	<ul id="skip">
+		<li><a href="#content-anchor">Skip to content</a></li>
+	</ul>			    
                  <nav id="primary-menu" class="primary-menu">
                     <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
                         <span class="mob-menu--title">Menu</span>
@@ -418,7 +462,6 @@ btn-group:focus {outline: blue solid 2px;}
     </div>
 </header>
 
-<a href="#maincontent" tabindex="-1">Skip to main content</a>	
 	
 <div class="content-wrapper">
 
@@ -441,8 +484,9 @@ btn-group:focus {outline: blue solid 2px;}
                     </div>
                 </div>
             </section>
+<a name="content-anchor" class="accessibility">Main Content</a>
 	  
-<div class="container" id="maincontent">
+<div class="container" id="main">
 	<div id="ACF">
 	<div class="row pt120 pb30">
 		<div class="col-lg-12">
