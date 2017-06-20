@@ -50,7 +50,7 @@
                 <category value="82323278" toolText="CDC KDA (KNOWLEDGE/DEVELOPMENT/APPLICATION) total award amount is $82,323,278 {br}or 0.2 % of discretionary award dollars {br}and 6.4 % of award dollars within KDA (KNOWLEDGE/DEVELOPMENT/APPLICATION).  " Color="#1fb6ff " />
                 <category value="98205621" toolText="FDA KDA (KNOWLEDGE/DEVELOPMENT/APPLICATION) total award amount is $98,205,621 {br}or 0.2 % of discretionary award dollars {br}and 7.6 % of award dollars within KDA (KNOWLEDGE/DEVELOPMENT/APPLICATION).  " Color="#1fb6ff " />
             </category>
-            <category label="OTHER" value="$789776579" toolText="OTHER total award amount is $789,776,579 {br}or 1.5 % of discretionary award dollars {br}and 61.2 % of award dollars within Other.  " Color="#1fb6ff ">
+            <category label="OTHER" value="789776579" toolText="OTHER total award amount is $789,776,579 {br}or 1.5 % of discretionary award dollars {br}and 61.2 % of award dollars within Other.  " Color="#1fb6ff ">
 
                 <category value="7294979" toolText="DHHS/OS OTHER total award amount is $7,294,979 {br}or 0.0 % of discretionary award dollars {br}and 0.1 % of award dollars within OTHER.  " Color="#1fb6ff " />
                 <category value="35108536" toolText="NIH OTHER total award amount is $35,108,536 {br}or 0.1 % of discretionary award dollars {br}and 2.7 % of award dollars within OTHER.  " Color="#1fb6ff " />
