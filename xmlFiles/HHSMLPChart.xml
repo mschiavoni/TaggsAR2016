@@ -38,6 +38,7 @@
           </category>
           <category value='203554485' toolText='FELLOWSHIP/SCHOLARSHIP/STUDENT LOANS total award amount is $203,554,485 {br}or 0.4 % of discretionary award dollars {br}and 15.8 % of award dollars within Other.  ' Color='#1fb6ff '>
                <category  value='425001' toolText='AHRQ FELLOWSHIP/SCHOLARSHIP/STUDENT LOANS total award amount is $425,001 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within FELLOWSHIP/SCHOLARSHIP/STUDENT LOANS.  '  Color='#1fb6ff '/>
+
                <category  value='139245062' toolText='NIH FELLOWSHIP/SCHOLARSHIP/STUDENT LOANS total award amount is $139,245,062 {br}or 0.3 % of discretionary award dollars {br}and 10.8 % of award dollars within FELLOWSHIP/SCHOLARSHIP/STUDENT LOANS.  '  Color='#1fb6ff '/></category>
                <category value='283778289' toolText='KDA (KNOWLEDGE/DEVELOPMENT/APPLICATION) total award amount is $283,778,289 {br}or 0.5 % of discretionary award dollars {br}and 22.0 % of award dollars within Other.  ' Color='#1fb6ff '>
                <category  value='850000' toolText='SAMHSA KDA (KNOWLEDGE/DEVELOPMENT/APPLICATION) total award amount is $850,000 {br}or 0.0 % of discretionary award dollars {br}and 0.1 % of award dollars within KDA (KNOWLEDGE/DEVELOPMENT/APPLICATION).  '  Color='#1fb6ff '/>
@@ -65,7 +66,7 @@
                          <category  value='14917917' toolText='ACL SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $14,917,917 {br}or 0.0 % of discretionary award dollars {br}and 0.1 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  '  Color='#fec200 '/>
                          <category  value='33370793' toolText='ACF SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $33,370,793 {br}or 0.1 % of discretionary award dollars {br}and 0.1 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  '  Color='#fec200 '/>
                               
-                         </category>
+
 
                          <category label='SCIENTIFIC/HEALTH RESEARCH (INCLUDES SURVEYS)' value='$22622611523' toolText='SCIENTIFIC/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $22,622,611,523 {br}or 42.8 % of discretionary award dollars {br}and 99.8 % of award dollars within Research.  ' Color='#fec200 '/>
 
@@ -80,8 +81,6 @@
                               <category label='NIH' value='21521118626' toolText='NIH SCIENTIFIC/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $21,521,118,626 {br}or 40.7 % of discretionary award dollars {br}and 94.9 % of award dollars within SCIENTIFIC/HEALTH RESEARCH (INCLUDES SURVEYS).  ' Color='#fec200 '/>
                                    
 
-                              </category>
-                         </category>
 
                          <category label='Services' value='19875978678' toolText='Services total is $26,513,749,217 {br}or 50.2 % of discretionary award dollars.  ' Color='#13ce67 '/>
 
@@ -105,7 +104,7 @@
                                         <category label='SAMHSA' value='994909236' toolText='SAMHSA HEALTH SERVICES total award amount is $994,909,236 {br}or 1.9 % of discretionary award dollars {br}and 3.8 % of award dollars within HEALTH SERVICES.  ' Color='#13ce67 '/>
                                         <category label='CDC' value='5134653514' toolText='CDC HEALTH SERVICES total award amount is $5,134,653,514 {br}or 9.7 % of discretionary award dollars {br}and 19.4 % of award dollars within HEALTH SERVICES.  ' Color='#13ce67 '/>
                                              
-                                        </category>
+
                                         <category label='SOCIAL SERVICES' value='10567768820' toolText='SOCIAL SERVICES total award amount is $10,567,768,820 {br}or 20.0 % of discretionary award dollars {br}and 39.9 % of award dollars within Services.  ' Color='#13ce67 '/>
 
                                              <category  value='-159790349' toolText='CMS SOCIAL SERVICES total award amount is ($159,790,349) {br}or -0.3 % of discretionary award dollars {br}and -0.6 % of award dollars within SOCIAL SERVICES.  '  Color='#13ce67 '/>
@@ -120,7 +119,7 @@
 
                                              <category label='ACF' value='9617050528' toolText='ACF SOCIAL SERVICES total award amount is $9,617,050,528 {br}or 18.2 % of discretionary award dollars {br}and 36.3 % of award dollars within SOCIAL SERVICES.  ' Color='#13ce67 '/></category>
 
-                                        </category>
+
 
                                         <category label='Training' value='2163387540' toolText='Training total is $2,336,973,138 {br}or 4.4 % of discretionary award dollars.  ' Color='#5a2dea ' >
 
@@ -138,7 +137,7 @@
 
                                                   <category  value='149954780' toolText='HRSA TECHNICAL ASSISTANCE total award amount is $149,954,780 {br}or 0.3 % of discretionary award dollars {br}and 6.4 % of award dollars within TECHNICAL ASSISTANCE.  '  Color='#5a2dea '/>
                                                        
-                                                  </category>
+
                                                   <category label='TRAINING/TRAINEESHIP' value='2164781850' toolText='TRAINING/TRAINEESHIP total award amount is $2,164,781,850 {br}or 4.1% of discretionary award dollars {br}and 92.6 % of award dollars within Training.  ' Color='#5a2dea '>
 
                                                   <category  value='4956546' toolText='DHHS/OS TRAINING/TRAINEESHIP total award amount is $4,956,546 {br}or 0.0 % of discretionary award dollars {br}and 0.2 % of award dollars within TRAINING/TRAINEESHIP.  '  Color='#5a2dea '/>
@@ -155,7 +154,8 @@
 
                                                   <category label='HRSA' value='628306446' toolText='HRSA TRAINING/TRAINEESHIP total award amount is $687,306,446 {br}or 1.3 % of discretionary award dollars {br}and 29.4 % of award dollars within TRAINING/TRAINEESHIP.  ' Color='#5a2dea '/>
 
-                                                  <category label='NIH' value='1347323136' toolText='NIH TRAINING/TRAINEESHIP total award amount is $1,347,323,136 {br}or 2.6 % of discretionary award dollars {br}and 57.7 % of award dollars within TRAINING/TRAINEESHIP.  ' Color='#5a2dea '/></category></category>
+                                                  <category label='NIH' value='1347323136' toolText='NIH TRAINING/TRAINEESHIP total award amount is $1,347,323,136 {br}or 2.6 % of discretionary award dollars {br}and 57.7 % of award dollars within TRAINING/TRAINEESHIP.  ' Color='#5a2dea '/>
 
-                                             </category><definition><style name='MyFirstBevel' type='Bevel' shadowColor='890EC1' shadowAlpha='80' distance='20' angle='45'/><style name='CaptionFont' type='font' font='Montserrat' size='22' color='FFFFFF' bgColor='333333' /></definition><application><apply toObject='DataPlot' styles='MyFirstBevel' />
+<definition><style name='MyFirstBevel' type='Bevel' shadowColor='890EC1' shadowAlpha='80' distance='20' angle='45'/><style name='CaptionFont' type='font' font='Montserrat' size='22' color='FFFFFF' bgColor='333333' /></definition><application><apply toObject='DataPlot' styles='MyFirstBevel' />
+
                <apply toObject='CAPTION' styles='CaptionFont' /></application> </chart>
