@@ -61,6 +61,8 @@
                 <category label="HRSA" value="41550228" toolText="HRSA OTHER total award amount is $41,550,228 {br}or 0.1 % of discretionary award dollars {br}and 3.2 % of award dollars within OTHER.  " Color="#1fb6ff " />
             </category>
         </category>
+
+
         <category label="Research" value="$22673200521" toolText="Research total is $22,673,200,521 {br}or 42.9 % of discretionary award dollars.  " Color="#fec200 ">
             <category value="50438998" toolText="SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $50,588,998 {br}or 0.1 % of discretionary award dollars {br}and 0.2 % of award dollars within Research.  " Color="#fec200 ">
                 <category value="120000" toolText="HRSA SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $120,000 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  " Color="#fec200 " />
@@ -78,7 +80,9 @@
                 <category label="NIH" value="21521118626" toolText="NIH SCIENTIFIC/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $21,521,118,626 {br}or 40.7 % of discretionary award dollars {br}and 94.9 % of award dollars within SCIENTIFIC/HEALTH RESEARCH (INCLUDES SURVEYS).  " Color="#fec200 " />
             </category>
         </category>
-        <!-- ??? -->
+
+
+
         <category label="Services" value="19875978678" toolText="Services total is $26,513,749,217 {br}or 50.2 % of discretionary award dollars.  " Color="#13ce67 ">
             <category label="DEMONSTRATION" value="2505956838" toolText="DEMONSTRATION total award amount is $2,512,306,339 {br}or 4.8 % of discretionary award dollars {br}and 9.5 % of award dollars within Services.  " Color="#13ce67 ">
                 <category value="110549590" toolText="ACL DEMONSTRATION total award amount is $110,549,590 {br}or 0.2 % of discretionary award dollars {br}and 0.4 % of award dollars within DEMONSTRATION.  " Color="#13ce67 " />
