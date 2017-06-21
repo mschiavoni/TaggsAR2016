@@ -58,7 +58,7 @@
                 <category value='148440111' toolText='CMS OTHER total award amount is $148,440,111 {br}or 0.3 % of discretionary award dollars {br}and 18.8 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
                 <category value='181935692' toolText='ACF OTHER total award amount is $181,935,692 {br}or 0.3 % of discretionary award dollars {br}and 23.0 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
                 <category label='CDC' value='240878069' toolText='CDC OTHER total award amount is $240,878,069 {br}or 0.5 % of discretionary award dollars {br}and 30.50 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
-                <category label='HRSA' value='41550228' toolText='HRSA OTHER total award amount is $41,550,228 {br}or 0.1 % of discretionary award dollars {br}and 3.2 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
+                <category value='41550228' toolText='HRSA OTHER total award amount is $41,550,228 {br}or 0.1 % of discretionary award dollars {br}and 3.2 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
             </category>
         </category>
 
