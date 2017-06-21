@@ -54,10 +54,10 @@
 
                 <category value='7294979' toolText='DHHS/OS OTHER total award amount is $7,294,979 {br}or 0.0 % of discretionary award dollars {br}and 0.1 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
                 <category value='35108536' toolText='NIH OTHER total award amount is $35,108,536 {br}or 0.1 % of discretionary award dollars {br}and 2.7 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
-                <category value='134568964' toolText='ACL OTHER total award amount is $134,568,964 {br}or 0.3 % of discretionary award dollars {br}and 10.4 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
-                <category value='148440111' toolText='CMS OTHER total award amount is $148,440,111 {br}or 0.3 % of discretionary award dollars {br}and 11.5 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
-                <category value='181935692' toolText='ACF OTHER total award amount is $181,935,692 {br}or 0.3 % of discretionary award dollars {br}and 14.1 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
-                <category value='240878069' toolText='CDC OTHER total award amount is $240,878,069 {br}or 0.5 % of discretionary award dollars {br}and 18.7 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
+                <category value='134568964' toolText='ACL OTHER total award amount is $134,568,964 {br}or 0.2 % of discretionary award dollars {br}and 17.0 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
+                <category value='148440111' toolText='CMS OTHER total award amount is $148,440,111 {br}or 0.3 % of discretionary award dollars {br}and 18.8 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
+                <category value='181935692' toolText='ACF OTHER total award amount is $181,935,692 {br}or 0.3 % of discretionary award dollars {br}and 23.0 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
+                <category label='CDC' value='240878069' toolText='CDC OTHER total award amount is $240,878,069 {br}or 0.5 % of discretionary award dollars {br}and 30.50 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
                 <category label='HRSA' value='41550228' toolText='HRSA OTHER total award amount is $41,550,228 {br}or 0.1 % of discretionary award dollars {br}and 3.2 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
             </category>
         </category>
