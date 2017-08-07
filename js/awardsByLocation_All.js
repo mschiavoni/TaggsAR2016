@@ -102,11 +102,14 @@ $('#mapDrop').multiselect({
 $('#mapDrop').on("change", function(){
 
   var selectedAwardType = $('input[name="awards"]:checked').attr("id")
+
   var selectedOpdiv = this.value.toLowerCase();
   var selectedKey = selectedOpdiv.split("_")[1]
   getLegend(selectedKey,selectedAwardType)
   getLink(selectedKey, selectedAwardType)
   getExcel(selectedKey, selectedAwardType)
+
+
   if (selectedAwardType === "totalAwards"){
     var stateBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_USA"]
     var worldBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_WORLD"]
@@ -121,14 +124,16 @@ $('#mapDrop').on("change", function(){
 });
 
 
-$('input[name="awards"]').click(function(){
 
+$('input[name="awards"]').click(function(){
+console.log('hi')
   var selectedAwardType = this.id
   var selectedOpdiv = $('.radioOpt:checked').val().toLowerCase()
   var selectedKey = selectedOpdiv.split("_")[1]
 
   getLegend(selectedKey,selectedAwardType)
   getExcel(selectedKey, selectedAwardType)
+  getLink(selectedKey, selectedAwardType)
 
   if (selectedAwardType === "totalAwards"){
 
@@ -136,6 +141,7 @@ $('input[name="awards"]').click(function(){
     var worldBreaks = allBreaks["BREAKS_ALL_" + selectedKey.toUpperCase() + "_WORLD"]
     createMapBox(selectedOpdiv, worldBreaks, stateBreaks)
   } else {
+
 
     var stateBreaks = allBreaks["BREAKS_DISC_" + selectedKey.toUpperCase() + "_USA"]
     var worldBreaks = allBreaks["BREAKS_DISC_" + selectedKey.toUpperCase() + "_WORLD"]
