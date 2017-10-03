@@ -5,7 +5,7 @@
  numberPrefix='$'
  numberScaleValue='1000,1000,1000'
  numberScaleUnit='K,M,B'
- formatNumberScale='1'      
+ formatNumberScale='0'      
  baseFontColor='#55554A'
  baseFontSize='16'
  decimals='0'
