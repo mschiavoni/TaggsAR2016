@@ -27,6 +27,7 @@
      showToolTipShadow='1'
      canvasBgAlpha='0'
      baseFontSize='14'
+     basefont='Varela Round'
      width='100%'
      height='870' 
      >
