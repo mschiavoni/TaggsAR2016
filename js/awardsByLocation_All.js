@@ -126,7 +126,7 @@ $('#mapDrop').on("change", function(){
 
 
 $('input[name="awards"]').click(function(){
-console.log('hi')
+
   var selectedAwardType = this.id
   var selectedOpdiv = $('.radioOpt:checked').val().toLowerCase()
   var selectedKey = selectedOpdiv.split("_")[1]
@@ -155,8 +155,9 @@ function getLink(opdiv, type){
  var linkWorld = "World_";
  
  if (type === "totalAwards") {
-  linkState += "All/USA_All_"
-  linkWorld += "All/World_All_"
+  console.log('type', type)
+  linkState += "ALL/USA_All_"
+  linkWorld += "ALL/World_All_"
 
 } else {
   linkState += "Discretionary/USA_Discretionary_"
@@ -166,7 +167,7 @@ function getLink(opdiv, type){
 
 linkState = "DataFiles/Maps/AwardsByLocation/US/" + linkState + opdiv.toUpperCase() + ".html"
 linkWorld = "DataFiles/Maps/AwardsByLocation/World/" + linkWorld + opdiv.toUpperCase() + ".html"
-
+console.log(linkState)
 
 $('#mapLinkWorld').attr("href", linkWorld)
 $('#mapLinkState').attr("href", linkState)
