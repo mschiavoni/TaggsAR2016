@@ -157,7 +157,7 @@ function getLink(opdiv, type){
  if (type === "totalAwards") {
   console.log('type', type)
   linkState += "ALL/USA_All_"
-  linkWorld += "ALL/World_All_"
+  linkWorld += "All/World_All_"
 
 } else {
   linkState += "Discretionary/USA_Discretionary_"
