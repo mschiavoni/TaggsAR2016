@@ -37,7 +37,7 @@
             <category value='14315766' toolText='EVALUATION total award amount is $14,315,766 {br}or 0.0 % of discretionary award dollars {br}and 1.1 % of award dollars within Other.  ' Color='#1fb6ff '>
                 <category value='2114813' toolText='CMS EVALUATION total award amount is $2,114,813 {br}or 0.0 % of discretionary award dollars {br}and 0.2 % of award dollars within EVALUATION.  ' Color='#1fb6ff ' />
             </category>
-            <category value='11846838' toolText='PLANNING total award amount is $11,846,838 {br}or 0.0 % of discretionary award dollars {br}and 0.9 % of award dollars within Other.  ' Color='#1fb6ff '>
+            <category value='11846838' toolText='Planning total award amount is $11,846,838 {br}or 0.0 % of discretionary award dollars {br}and 0.9 % of award dollars within Other.  ' Color='#1fb6ff '>
                 <category value='4332233' toolText='CDC PLANNING total award amount is $4,332,233 {br}or 0.0 % of discretionary award dollars {br}and 0.3 % of award dollars within PLANNING.  ' Color='#1fb6ff ' />
             </category>
             <category value='203554485' toolText='FELLOWSHIP/SCHOLARSHIP/STUDENT LOANS total award amount is $203,554,485 {br}or 0.4 % of discretionary award dollars {br}and 15.8 % of award dollars within Other.  ' Color='#1fb6ff '>
@@ -51,7 +51,7 @@
                 <category value='82323278' toolText='CDC KDA (KNOWLEDGE/DEVELOPMENT/APPLICATION) total award amount is $82,323,278 {br}or 0.2 % of discretionary award dollars {br}and 6.4 % of award dollars within KDA (KNOWLEDGE/DEVELOPMENT/APPLICATION).  ' Color='#1fb6ff ' />
                 <category value='98205621' toolText='FDA KDA (KNOWLEDGE/DEVELOPMENT/APPLICATION) total award amount is $98,205,621 {br}or 0.2 % of discretionary award dollars {br}and 7.6 % of award dollars within KDA (KNOWLEDGE/DEVELOPMENT/APPLICATION).  ' Color='#1fb6ff ' />
             </category>
-            <category label='OTHER' value='789776579' toolText='OTHER total award amount is $789,776,579 {br}or 1.5 % of discretionary award dollars {br}and 61.2 % of award dollars within Other.  ' Color='#1fb6ff '>
+            <category label='Other' value='789776579' toolText='OTHER total award amount is $789,776,579 {br}or 1.5 % of discretionary award dollars {br}and 61.2 % of award dollars within Other.  ' Color='#1fb6ff '>
 
                 <category value='7294979' toolText='DHHS/OS OTHER total award amount is $7,294,979 {br}or 0.0 % of discretionary award dollars {br}and 0.1 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
                 <category value='35108536' toolText='NIH OTHER total award amount is $35,108,536 {br}or 0.1 % of discretionary award dollars {br}and 2.7 % of award dollars within OTHER.  ' Color='#1fb6ff ' />
@@ -94,7 +94,7 @@
 
 
         <category label='Services' value='19875978678' toolText='Services total is $26,513,749,217 {br}or 50.2 % of discretionary award dollars.  ' Color='#13ce67 '>
-            <category label='DEMONSTRATION' value='2505956838' toolText='DEMONSTRATION total award amount is $2,512,306,339 {br}or 4.8 % of discretionary award dollars {br}and 9.5 % of award dollars within Services.  ' Color='#13ce67 '>
+            <category label='Demonstration' value='2505956838' toolText='DEMONSTRATION total award amount is $2,512,306,339 {br}or 4.8 % of discretionary award dollars {br}and 9.5 % of award dollars within Services.  ' Color='#13ce67 '>
                 <category value='110549590' toolText='ACL DEMONSTRATION total award amount is $110,549,590 {br}or 0.2 % of discretionary award dollars {br}and 0.4 % of award dollars within DEMONSTRATION.  ' Color='#13ce67 ' />
                 <category value='116073096' toolText='HRSA DEMONSTRATION total award amount is $122,422,597 {br}or 0.2 % of discretionary award dollars {br}and 0.5 % of award dollars within DEMONSTRATION.  ' Color='#13ce67 ' />
              
@@ -103,7 +103,7 @@
                 <category value='261594897' toolText='ACF DEMONSTRATION total award amount is $261,594,897 {br}or 0.5 % of discretionary award dollars {br}and 1.0 % of award dollars within DEMONSTRATION.  ' Color='#13ce67 ' />
                 <category label='CMS' value='1671814562' toolText='CMS DEMONSTRATION total award amount is $1,671,814,562 {br}or 3.2 % of discretionary award dollars {br}and 6.3 % of award dollars within DEMONSTRATION.  ' Color='#13ce67 ' />
             </category>
-            <category label='HEALTH SERVICES' value='13433674058' toolText='HEALTH SERVICES total award amount is $13,433,674,058 {br}or 25.4 % of discretionary award dollars {br}and 50.7 % of award dollars within Services.  ' Color='#13ce67 '>
+            <category label='Health Services' value='13433674058' toolText='HEALTH SERVICES total award amount is $13,433,674,058 {br}or 25.4 % of discretionary award dollars {br}and 50.7 % of award dollars within Services.  ' Color='#13ce67 '>
 
 
                 <category value='428766' toolText='CMS HEALTH SERVICES total award amount is $428,766 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within HEALTH SERVICES.  ' Color='#13ce67 ' />
@@ -115,7 +115,7 @@
                 <category label='SAMHSA' value='994909236' toolText='SAMHSA HEALTH SERVICES total award amount is $994,909,236 {br}or 1.9 % of discretionary award dollars {br}and 3.8 % of award dollars within HEALTH SERVICES.  ' Color='#13ce67 ' />
                 <category label='CDC' value='5134653514' toolText='CDC HEALTH SERVICES total award amount is $5,134,653,514 {br}or 9.7 % of discretionary award dollars {br}and 19.4 % of award dollars within HEALTH SERVICES.  ' Color='#13ce67 ' />
             </category>
-            <category label='SOCIAL SERVICES' value='10567768820' toolText='SOCIAL SERVICES total award amount is $10,567,768,820 {br}or 20.0 % of discretionary award dollars {br}and 39.9 % of award dollars within Services.  ' Color='#13ce67 '>
+            <category label='Social Services' value='10567768820' toolText='SOCIAL SERVICES total award amount is $10,567,768,820 {br}or 20.0 % of discretionary award dollars {br}and 39.9 % of award dollars within Services.  ' Color='#13ce67 '>
                 <category value='-159790349' toolText='CMS SOCIAL SERVICES total award amount is ($159,790,349) {br}or -0.3 % of discretionary award dollars {br}and -0.6 % of award dollars within SOCIAL SERVICES.  ' Color='#13ce67 ' />
                 <category value='2727237' toolText='ACL SOCIAL SERVICES total award amount is $2,727,237 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within SOCIAL SERVICES.  ' Color='#13ce67 ' />
                 <category value='30418467' toolText='CDC SOCIAL SERVICES total award amount is $30,418,467 {br}or 0.1 % of discretionary award dollars {br}and 0.1 % of award dollars within SOCIAL SERVICES.  ' Color='#13ce67 ' />
@@ -135,7 +135,7 @@
                 <category value='16496839' toolText='SAMHSA TECHNICAL ASSISTANCE total award amount is $16,496,839 {br}or 0.0 % of discretionary award dollars {br}and 0.7 % of award dollars within TECHNICAL ASSISTANCE.  ' Color='#5a2dea ' />
                 <category value='149954780' toolText='HRSA TECHNICAL ASSISTANCE total award amount is $149,954,780 {br}or 0.3 % of discretionary award dollars {br}and 6.4 % of award dollars within TECHNICAL ASSISTANCE.  ' Color='#5a2dea ' />
             </category>
-            <category label='TRAINING/TRAINEESHIP' value='2164781850' toolText='TRAINING/TRAINEESHIP total award amount is $2,164,781,850 {br}or 4.1% of discretionary award dollars {br}and 92.6 % of award dollars within Training.  ' Color='#5a2dea '>
+            <category label='Training/ {br} Traineeship' value='2164781850' toolText='TRAINING/TRAINEESHIP total award amount is $2,164,781,850 {br}or 4.1% of discretionary award dollars {br}and 92.6 % of award dollars within Training.  ' Color='#5a2dea '>
                 <category value='4956546' toolText='DHHS/OS TRAINING/TRAINEESHIP total award amount is $4,956,546 {br}or 0.0 % of discretionary award dollars {br}and 0.2 % of award dollars within TRAINING/TRAINEESHIP.  ' Color='#5a2dea ' />
                 <category value='9837557' toolText='SAMHSA TRAINING/TRAINEESHIP total award amount is $9,837,557 {br}or 0.0 % of discretionary award dollars {br}and 0.4 % of award dollars within TRAINING/TRAINEESHIP.  ' Color='#5a2dea ' />
                 <category value='26380748' toolText='AHRQ TRAINING/TRAINEESHIP total award amount is $26,380,748 {br}or 0.0 % of discretionary award dollars {br}and 1.1 % of award dollars within TRAINING/TRAINEESHIP.  ' Color='#5a2dea ' />
