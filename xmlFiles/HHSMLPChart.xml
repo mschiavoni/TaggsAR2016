@@ -65,7 +65,7 @@
 
 
         <category label='Research' value='22673200521' toolText='Research total is $22,673,200,521 {br}or 42.9 % of discretionary award dollars.  ' Color='#fec200 '>
-            <category value='50438998' toolText='SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $50,588,998 {br}or 0.1 % of discretionary award dollars {br}and 0.2 % of award dollars within Research.  ' Color='#fec200 '>
+            <category value='50438998' toolText='Social Science Research &#13; (Includes Surveys) total award amount is $50,588,998 {br}or 0.1 % of discretionary award dollars {br}and 0.2 % of award dollars within Research.  ' Color='#fec200 '>
                 <category value='120000' toolText='HRSA SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $120,000 {br}or 0.0 % of discretionary award dollars {br}and 0.0% of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  ' Color='#fec200 ' />
                 <category value='1761000' toolText='DHHS/OS SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $1,761,000 {br}or 0.0 % of discretionary award dollars {br}and 3.5 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  ' Color='#fec200 ' />
                 <category value='419288' toolText='CMS SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS) total award amount is $419,288 {br}or 0.0 % of discretionary award dollars {br}and 0.0 % of award dollars within SOCIAL SCIENCE RESEARCH (INCLUDES SURVEYS).  ' Color='#fec200 ' />
@@ -77,7 +77,7 @@
 
 
 
-            <category label='SCIENTIFIC/HEALTH RESEARCH (INCLUDES SURVEYS)' value='22622611523' toolText='SCIENTIFIC/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $22,622,611,523 {br}or 42.8 % of discretionary award dollars {br}and 99.8 % of award dollars within Research.  ' Color='#fec200 '>
+            <category label='Scientific/Health Research &#13; (Includes Surveys)' value='22622611523' toolText='SCIENTIFIC/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $22,622,611,523 {br}or 42.8 % of discretionary award dollars {br}and 99.8 % of award dollars within Research.  ' Color='#fec200 '>
 
 
                 <category value='20795' toolText='HRSA SCIENTIFIC/HEALTH RESEARCH (INCLUDES SURVEYS) total award amount is $19,580,283 {br}or 0.0 % of discretionary award dollars {br}and 0.1 % of award dollars within SCIENTIFIC/HEALTH RESEARCH (INCLUDES SURVEYS).  ' Color='#fec200 ' />
