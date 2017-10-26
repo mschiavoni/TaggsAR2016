@@ -118,13 +118,16 @@ $('#topAwardsExcelLink').attr("href", excelLinkAll)
       map2.on('load', function () {
         map2.addSource('USRecip', {
           type: 'vector',
-          url: 'mapbox://gcline001.ciynofkku00203upim49ilv7s-0m2mz'
+          // url: 'mapbox://gcline001.ciynofkku00203upim49ilv7s-0m2mz'
+           url: 'mapbox://gcline001.cj98n1ocs0c3g2qlgvl13cpuu-9ls2c'
+
+
         });
 
         map2.addLayer({
           'id': 'us_recipients',
           'source': 'USRecip',
-          'source-layer': 'USRecipLatLong_R1',
+          'source-layer': 'USRecipLatLong_R2',
           'type': 'circle',
                 'paint': {
                     'circle-opacity': 0.48,

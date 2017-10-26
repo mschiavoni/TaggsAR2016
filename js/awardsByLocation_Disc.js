@@ -10,7 +10,6 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZ2NsaW5lMDAxIiwiYSI6ImNpd3o1aG9kdTAxOGgydG8wO
 // var COLORSTATE = ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5'];
 
 function createMapBox2(awarddollars_opdiv, BREAKS_WORLD, BREAKS_USA){
-console.log('crate mapbox2')
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v9',
@@ -42,7 +41,8 @@ console.log('crate mapbox2')
 
     map.addSource('HHSWorld', {
       type: 'vector',
-      url: 'mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h'
+      url: 'mapbox://gcline001.cj98oz0un0k3532lsv42tejqj-4p708'
+      // url: 'mapbox://gcline001.ciz3dx5yp04no2wo41us21wdl-4zq5h'
     });
 
 
@@ -50,7 +50,7 @@ console.log('crate mapbox2')
     map.addLayer({
       'id': 'worldAward',
       'source': 'HHSWorld',
-      'source-layer': 'WorldAndUSStates_Discretionary',
+      'source-layer': 'WorldAndUSStatesDiscretionary2',
       'maxzoom': zoomThreshold,
       'type': 'fill',
       'filter': ['==', 'class', 'country'],
@@ -77,7 +77,7 @@ console.log('crate mapbox2')
     map.addLayer({
       'id': 'USStateAward',
       'source': 'HHSWorld',
-      'source-layer': 'WorldAndUSStates_Discretionary',
+      'source-layer': 'WorldAndUSStatesDiscretionary2',
       'minzoom': zoomThreshold,
       'type': 'fill',
       'filter': ['==', 'class', 'state'],

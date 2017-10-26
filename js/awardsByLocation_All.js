@@ -167,7 +167,7 @@ function getLink(opdiv, type){
 
 linkState = "DataFiles/Maps/AwardsByLocation/US/" + linkState + opdiv.toUpperCase() + ".html"
 linkWorld = "DataFiles/Maps/AwardsByLocation/World/" + linkWorld + opdiv.toUpperCase() + ".html"
-console.log(linkState)
+
 
 $('#mapLinkWorld').attr("href", linkWorld)
 $('#mapLinkState').attr("href", linkState)
@@ -280,13 +280,14 @@ console.log('create mapbox')
 
   map.addSource('HHSWorld', {
     type: 'vector',
-    url: 'mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e'
+    url: 'mapbox://gcline001.cj98p49dq0kt732p9sungsrsd-3a2qn'
+    // url: 'mapbox://gcline001.ciz3dumig043b2wpxomrckf4e-4zm1e'
   });
 
   map.addLayer({
     'id': 'worldAward',
     'source': 'HHSWorld',
-    'source-layer': 'WorldAndUSStates_All',
+    'source-layer': 'WorldAndUSStates_All2',
     'maxzoom': zoomThreshold,
     'type': 'fill',
     'filter': ['==', 'class', 'country'],
@@ -312,7 +313,7 @@ console.log('create mapbox')
   map.addLayer({
     'id': 'USStateAward',
     'source': 'HHSWorld',
-    'source-layer': 'WorldAndUSStates_All',
+    'source-layer': 'WorldAndUSStates_All2',
     'minzoom': zoomThreshold,
     'type': 'fill',
     'filter': ['==', 'class', 'state'],

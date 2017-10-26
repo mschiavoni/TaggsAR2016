@@ -65,12 +65,14 @@ $('#topAwardsExcelLinkInt').attr("href", ExcelInt)
         map2.on('load', function () {
             map2.addSource('foreign_recip', {
                 type: 'vector',
-                url: 'mapbox://gcline001.cizijsc9u002x2qt9pj9jrtkn-16hy4'
+                // url: 'mapbox://gcline001.cizijsc9u002x2qt9pj9jrtkn-16hy4'
+                url: 'mapbox://gcline001.cj98oj9i00cvj2ylgbwcq4cwe-9tkjo'
+               
             });
             map2.addLayer({
                 'id': 'foreign_recipients',
                 'source': 'foreign_recip',
-                'source-layer': 'ForeignRecipLatLong',
+                'source-layer': 'ForeignRecipLatLong_2',
                 //'maxzoom': zoomThreshold,
                'type': 'circle',
                 'paint': {
