@@ -91,7 +91,7 @@ FusionCharts.ready(function () {
     "width": '100%',
     "height": '850',
     "dataFormat": 'xmlurl',
-    "dataSource": 'xmlFiles/HHSMultiAgency_Recipienttreemap.xml'
+    "dataSource": 'xmlFiles/HHSMultiAgency_Recipienttreemap.xml' 
   });
   multiAgencyChart.render();
 });
