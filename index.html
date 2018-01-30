@@ -9789,7 +9789,7 @@ d3.geom.hull = function(a) {
                                                         return d
                                                     }
                                                 },
-                                                rScale: d3.scale.pow().exponent(0.2).domain([100, 1000000000]).range([1, 182]),
+                                                rScale: d3.scale.pow().exponent(0.6).domain([100, 1000000000]).range([1, 182]),
                                                 radiusScale: null,
                                                 changeScale: d3.scale.linear().domain([-0.28, 0.28]).range([620, 180]).clamp(true),
                                                 sizeScale: d3.scale.linear().domain([0, 110]).range([0, 1]),
