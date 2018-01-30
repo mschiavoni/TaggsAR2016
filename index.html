@@ -768,7 +768,8 @@ display: block;
     color: #262626;
     background: #ffffff;
     border: 1px dotted #ffb4db;
-}	    	    	    
+}	    
+	    
 </style>
 	
 </head>
@@ -9789,9 +9790,14 @@ d3.geom.hull = function(a) {
                                                         return d
                                                     }
                                                 },
-                                                rScale: d3.scale.pow().exponent(0.6).domain([100, 1000000000]).range([1, 182]),
-                                                radiusScale: null,
-                                                changeScale: d3.scale.linear().domain([-0.28, 0.28]).range([620, 180]).clamp(true),
+				    rScale: d3.scale.pow().exponent(.6).domain([1, 100000000]).range([1, 120]),
+                                    //rScale: d3.scale.pow().exponent(.7).domain([1, 100000000]).range([1, 140]),
+                                    //true scale?
+                                    //rScale: d3.scale.linear().domain([1, 100000000]).range([1, 120]),
+                                    radiusScale: null,
+                                    //blank w/o the following:
+                                    //changeScale: d3.scale.linear().domain([-0.28, 0.28]).range([620, 180]).clamp(true),
+                                    changeScale: d3.scale.linear().domain([-0.28, 0.28]).range([920, 140]).clamp(true),
                                                 sizeScale: d3.scale.linear().domain([0, 110]).range([0, 1]),
                                                 groupScale: {},
                                                 currentYearDataColumn: 'budget_2016',
